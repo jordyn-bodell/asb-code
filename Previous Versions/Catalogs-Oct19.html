@@ -1,0 +1,556 @@
+<style>
+.rowContainer>.row.margin-true.slots2 {
+    background-color:#fff;
+}
+
+.header-text {
+	text-transform: uppercase;
+	text-decoration: underline;
+    color: black;
+	font-family: "AvenirNextB";
+	font-size: 26px;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+}
+.subheader-text {
+	position: relative;
+	max-width: 1920px;
+	font-size: 15px;
+	text-align: center;
+	color: black;
+	border-bottom: 1px solid black;
+	margin: 30px auto;
+	padding-left: 5px;
+	padding-bottom: 15px;
+}
+.subheader-text h3 {
+	font-family: "AvenirNextB";
+	font-size: 18px;
+}
+
+.form-title {
+    position: relative;
+	max-width: 1920px;
+	width: 100%;
+	font-size: 15px;
+	text-align: center;
+	color: black;
+	border-bottom: 1px solid black;
+	margin: 30px auto;
+	padding-bottom: 15px;
+	}
+.form-title h3 {
+	font-family: "AvenirNextB";
+	font-size: 18px;
+}
+.form-title p {
+	padding: 0 20px;
+}
+
+.catalog-title {
+    font-weight: bold;
+    font-size: 17px;
+    padding-bottom: 15px;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.1;
+    width: 250px;
+    margin: auto;
+}
+.catalog-entry {
+    margin: 0 auto;
+    display: block;
+    width: 250px;
+}
+.catalog-entry a img {
+	outline: 2px solid black!important;
+    display: block;
+    width: 250px!important;
+    margin: 0 auto 10px;
+}
+.catalog-entry a:hover img {
+	outline: 2px solid #50a4d9!important;
+}
+.catalog-entry a img.hi5 {
+    width: 72% !important
+}
+.catalog-button-container {
+    text-align: center;
+    width: 250px;
+    margin: auto;
+    padding-bottom: 15px;
+}
+.catalog-button {
+    font-size: 12px;
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #50a4d9;
+    color: #50a4d9;
+    text-transform: uppercase;
+    padding: 5px 0;
+    margin: 2px auto;
+    width: 250px;
+}
+.catalog-button:hover {
+	color:black;
+	border: 1px solid black;
+}
+.signup.jotform {
+    overflow: hidden;
+    width: 50%;
+    margin: 0 auto; 
+    padding-bottom: 30px;
+}
+.entry-content {
+    color: #828282;
+    float: none;
+    width: 100%;
+    margin-left: -20%;
+    padding-top: 40px;
+}
+
+
+.blankbtn {
+	color: white;
+    border: white;
+}
+.blankbtn:hover {
+	color: white;
+	border: white;
+	cursor: initial;
+}
+
+@media screen and (max-width: 600px) {
+.entry-content {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    padding-top: 0;
+}
+}
+</style>
+
+<div class="header-text">
+<h2>Catalogs</h2>
+</div>
+<div class="subheader-text">
+<h3>Download, View, Customize, and Request a Catalog.</h3>
+<br>
+All catalogs are in pdf format. They have been sized for quick downloads with options to customize and are email ready.</div>
+
+
+
+<!-- New 2019 -->
+
+<h2 class="catalog-title">New 2019 Catalog</h2>
+
+<iframe style="display: inline-block; width: 95%; height: 800px; border: none; overflow: auto; margin-left:25px; margin-bottom:10px; max-width:1200px;" src="//www.zoomcatalog.com/catalogs/augusta-sportswear-2019" frameborder="0" marginheight="0" marginwidth="0" width="700px" height="800px" scrolling="auto" allowtransparency="true"></iframe>
+
+
+<p style="font-size:10px; text-align:center; margin-bottom:10px;">If you do not see the catalog above, <a href="http://www.zoomcatalog.com/catalogs/augusta-sportswear-2019" target="blank">click here</a> to view the flipbook catalog.</p>
+
+<div class="catalog-button-container main-buttons">
+<a class="catalog-button" 
+href="https://static.augustasportswear.com/marketing/ASB_2019_Catalogpdf.PDF" alt="Download pdf Version" target="blank">
+Download</a>
+<br>
+<a class="catalog-button" href="https://augustasportswear.zoomcustom.com/add/catalog-cover?parent=1023138" alt="Personalize this Catalog" target="blank">
+Personalize</a>
+
+<a class="catalog-button" href="#catalogform" alt="Request Catalog">
+Request Catalog</a>
+
+
+</div>
+
+<script>
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+  
+</script>
+
+
+
+<!-- 2020 Base/Soft Catalog -->
+<h2 class="catalog-title" id="ladies-catalog">Baseball/Softball 2020</h2>
+
+<div class="catalog-entry">
+<a href="https://static.augustasportswear.com/marketing/2019 WEBSITE/Catalogs/Base_Soft_Catalog_2020.PDF" target="blank">
+<img src="https://static.augustasportswear.com/marketing/2019 WEBSITE/Catalogs/BaseSoft-2020-Cover.jpg"></a>
+
+<div class="catalog-button-container">
+
+
+<a class="catalog-button" href="https://static.augustasportswear.com/marketing/2019 WEBSITE/Catalogs/Base_Soft_Catalog_2020.PDF" alt="View Online" target="blank">View & Download</a>
+
+</div>
+</div>
+
+
+
+<!-- Pacific Catalog -->
+<h2 class="catalog-title" id="ladies-catalog">Pacific Headwear 2019</h2>
+
+<div class="catalog-entry">
+<a href="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Catalogs/2019-2020%20Custom%20Catalog%209-24-19%20-%20final.pdf" target="blank">
+<img src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Catalogs/19-20-PH-Catalog-Cover.jpg"></a>
+
+<div class="catalog-button-container">
+
+
+<a class="catalog-button" href="https://viewer.zoomcatalog.com/pacific-headwear-by-augusta-2019-2020" alt="view pdf Version" target="blank">
+View
+</a>
+
+<a class="catalog-button" href="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Catalogs/2019-2020%20Custom%20Catalog%209-24-19%20-%20final.pdf" alt="View Online" target="blank">Download</a>
+
+</div>
+</div>
+
+
+<!-- Ladies -->
+<h2 class="catalog-title" id="ladies-catalog">Ladies Catalog 2019</h2>
+
+<div class="catalog-entry">
+<a href="https://static.augustasportswear.com/marketing/Ladies_Catalog_2019pdf.PDF" target="blank">
+<img src="https://static.augustasportswear.com/marketing/Ladies_Catalog_2019.jpg"></a>
+
+<div class="catalog-button-container">
+
+
+<a class="catalog-button" href="https://static.augustasportswear.com/marketing/Ladies_Catalog_2019pdf.PDF" alt="Download pdf Version" target="blank">
+View & Download
+</a>
+
+</div>
+</div>
+
+
+<!-- Fanwear -->
+<h2 class="catalog-title">Fanwear 2019</h2>
+
+<div class="catalog-entry">
+<a href="https://static.augustasportswear.com/marketing/Fanwear_2019pdf.PDF" target="blank">
+<img src="https://static.augustasportswear.com/marketing/Fanwear_2019.jpg"></a>
+
+<div class="catalog-button-container">
+
+
+<a class="catalog-button" href="https://static.augustasportswear.com/marketing/Fanwear_2019pdf.PDF" alt="Download pdf Version" target="blank">
+View & Download
+</a>
+<p class="catalog-button blankbtn">A</p>
+
+</div>
+</div>
+
+
+<!-- Soccer -->
+<h2 class="catalog-title">Soccer 2019</h2>
+
+<div class="catalog-entry">
+<a href="https://static.augustasportswear.com/marketing/Soccer_2019pdf.PDF" target="blank">
+<img src="https://static.augustasportswear.com/marketing/Soccer_2019.jpg"></a>
+
+<div class="catalog-button-container">
+
+
+<a class="catalog-button" href="https://static.augustasportswear.com/marketing/Soccer_2019pdf.PDF" alt="Download pdf Version" target="blank">
+View & Download
+</a>
+
+<p class="catalog-button blankbtn">A</p>
+
+</div>
+</div>
+
+
+<!-- Volleyball -->
+
+<h2 class="catalog-title">Volleyball</h2>
+
+<div class="catalog-entry">
+<a href="https://static.augustasportswear.com/marketing/2019%5FVolleyballpdf.PDF" target="blank">
+<img src="https://static.augustasportswear.com/marketing/volleyball%2Dcover.png">
+</a>
+
+<div class="catalog-button-container">
+
+<a class="catalog-button" 
+href="https://static.augustasportswear.com/marketing/2019%5FVolleyballpdf.PDF" alt="View Flipbook Version" target="blank">
+View & Download</a>
+
+</div> </div>
+
+
+
+<!-- Cheer -->
+<h2 class="catalog-title">Cheer 2019</h2>
+
+<div class="catalog-entry">
+<a href="https://static.augustasportswear.com/marketing/Cheer_2019pdf.PDF" target="blank">
+<img src="https://static.augustasportswear.com/marketing/Cheer_2019.jpg"></a>
+
+<div class="catalog-button-container">
+
+
+<a class="catalog-button" href="https://static.augustasportswear.com/marketing/Cheer_2019pdf.PDF" alt="Download pdf Version" target="blank">
+View & Download
+</a>
+
+</div>
+</div>
+
+
+<!-- Football -->
+<h2 class="catalog-title">Football 2019</h2>
+
+<div class="catalog-entry">
+<a href="https://static.augustasportswear.com/marketing/Football2019pdf.PDF" target="blank">
+<img src="https://static.augustasportswear.com/marketing/Football2019.jpg"></a>
+
+<div class="catalog-button-container">
+
+
+<a class="catalog-button" href="https://static.augustasportswear.com/marketing/Football2019pdf.PDF" alt="Download pdf Version" target="blank">
+View & Download
+</a>
+
+</div>
+</div>
+
+
+<!-- Base/Soft -->
+<h2 class="catalog-title">Baseball/Softball 2019</h2>
+
+<div class="catalog-entry">
+<a href="https://static.augustasportswear.com/marketing/BaseSoft_2019pdf.PDF" target="blank">
+<img src="https://static.augustasportswear.com/marketing/BaseSoft_2019.jpg"></a>
+
+<div class="catalog-button-container">
+
+
+<a class="catalog-button" href="https://static.augustasportswear.com/marketing/BaseSoft_2019pdf.PDF" alt="Download pdf Version" target="blank">
+View & Download
+</a>
+
+</div>
+</div>
+
+
+<!-- Lacrosse -->
+<h2 class="catalog-title">Lacrosse 2019</h2>
+
+<div class="catalog-entry">
+<a href="https://static.augustasportswear.com/marketing/Lacrosse_2019pdf.PDF" target="blank">
+<img src="https://static.augustasportswear.com/marketing/Lacrosse_2019.jpg"></a>
+
+<div class="catalog-button-container">
+
+
+<a class="catalog-button" href="https://static.augustasportswear.com/marketing/Lacrosse_2019pdf.PDF" alt="Download pdf Version" target="blank">
+View & Download
+</a>
+
+</div>
+</div>
+
+
+<!-- Tennis -->
+<h2 class="catalog-title">Tennis 2019</h2>
+
+<div class="catalog-entry">
+<a href="https://static.augustasportswear.com/marketing/Tennis-2019pdf.PDF" target="blank">
+<img src="https://static.augustasportswear.com/marketing/Tennis_2019_cover.jpg"></a>
+
+<div class="catalog-button-container">
+
+
+<a class="catalog-button" href="https://static.augustasportswear.com/marketing/Tennis-2019pdf.PDF" alt="Download pdf Version" target="blank">
+View & Download
+</a>
+
+</div>
+</div>
+
+
+<!-- Track -->
+<h2 class="catalog-title">Track & Field 2019</h2>
+
+<div class="catalog-entry">
+<a href="https://static.augustasportswear.com/marketing/Track_2019pdf.PDF" target="blank">
+<img src="https://static.augustasportswear.com/marketing/Track_2019.jpg"></a>
+
+<div class="catalog-button-container">
+
+
+<a class="catalog-button" href="https://static.augustasportswear.com/marketing/Track_2019pdf.PDF" alt="Download pdf Version" target="blank">
+View & Download
+</a>
+
+</div>
+</div>
+
+
+<!-- Polos -->
+<h2 class="catalog-title">Polos 2019</h2>
+
+<div class="catalog-entry">
+<a href="https://static.augustasportswear.com/marketing/Polos2019pdf.PDF" target="blank">
+<img src="https://static.augustasportswear.com/marketing/Polos2019.jpg"></a>
+
+<div class="catalog-button-container">
+
+
+<a class="catalog-button" href="https://static.augustasportswear.com/marketing/Polos2019pdf.PDF" alt="Download pdf Version" target="blank">
+View & Download
+</a>
+
+</div>
+</div>
+
+
+<!-- Outerwear -->
+<h2 class="catalog-title">Outerwear 2019</h2>
+
+<div class="catalog-entry">
+<a href="https://static.augustasportswear.com/marketing/Outerwear2019pdf.PDF" target="blank">
+<img src="https://static.augustasportswear.com/marketing/Outerwear2019.jpg"></a>
+
+<div class="catalog-button-container">
+
+
+<a class="catalog-button" href="https://static.augustasportswear.com/marketing/Outerwear2019pdf.PDF" alt="Download pdf Version" target="blank">
+View & Download
+</a>
+
+</div>
+</div>
+
+
+<!-- Fleece -->
+<h2 class="catalog-title">Fleece 2019</h2>
+
+<div class="catalog-entry">
+<a href="https://static.augustasportswear.com/marketing/Fleece_2019pdf.PDF" target="blank">
+<img src="https://static.augustasportswear.com/marketing/Fleece_2019.jpg"></a>
+
+<div class="catalog-button-container">
+
+
+<a class="catalog-button" href="https://static.augustasportswear.com/marketing/Fleece_2019pdf.PDF" alt="Download pdf Version" target="blank">
+View & Download
+</a>
+<p class="catalog-button blankbtn">A</p>
+<p class="catalog-button blankbtn">A</p>
+
+</div>
+</div>
+
+
+<!-- Basketball -->
+<h2 class="catalog-title">Basketball 2019</h2>
+
+<div class="catalog-entry">
+<a href="https://static.augustasportswear.com/marketing/Basketball-2019pdf.PDF" target="blank">
+<img src="https://static.augustasportswear.com/marketing/Basketball-cover-19.jpg">
+</a>
+
+<div class="catalog-button-container">
+
+<a class="catalog-button" href="https://static.augustasportswear.com/marketing/Basketball-2019pdf.PDF" alt="Download pdf Version" target="blank">
+View & Download</a>
+
+</div> </div>
+
+
+<!-- Corporate -->
+<h2 class="catalog-title">Corporate Catalog 2019</h2>
+
+<div class="catalog-entry">
+<a href="https://viewer.zoomcatalog.com/augusta-sportswear-corporate-collection-2019" target="blank">
+<img src="https://static.augustasportswear.com/marketing/Corporate_Catalog_2019.jpg"   target="blank"></a>
+
+<div class="catalog-button-container">
+
+<a class="catalog-button" href="https://viewer.zoomcatalog.com/augusta-sportswear-corporate-collection-2019" alt="View Online" target="blank">View</a>
+
+<a class="catalog-button" href="https://static.augustasportswear.com/marketing/Corporate_Catalog_2019pdf.PDF" alt="View Online" target="blank">Download</a>
+
+<a class="catalog-button" href="https://augustasportswear.zoomcustom.com/add/catalog-cover?parent=986025"  target="blank">
+Personalize
+</a>
+
+</div>
+</div>
+
+
+<!-- Net Price List -->
+<h2 class="catalog-title">2019 Net Price List</h2>
+
+<div class="catalog-entry">
+<a href="https://static.augustasportswear.com/marketing/Price_List_2019pdf.PDF" target="blank">
+<img src="https://static.augustasportswear.com/marketing/Price%2DList%2DCover%2D2019.png">
+</a>
+
+<div class="catalog-button-container">
+
+<a class="catalog-button" 
+href="https://static.augustasportswear.com/marketing/Price_List_2019pdf.PDF" alt="Download pdf Version" target="blank">
+View & Download</a>
+
+ </div> 
+</div>
+
+
+<!-- Jotform -->
+
+<div class="form-title" id="catalogform">
+<h3>Catalog Request Form</h3>
+<br>
+<p>Need additional printed catalogs for your use or to hand out? They are a great resource to aid in your sales process and we will send them to you at no charge! <br>To request a printed catalog, please fill out and submit this form.</p>
+</div>
+
+<div class="signup jotform">
+<script type="text/javascript" src="https://form.jotform.com/jsform/73516681882163"></script>
+
+
+</div>
+
+

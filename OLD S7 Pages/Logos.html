@@ -1,0 +1,784 @@
+<!-- Media Page -->
+<style>
+/* Header Tabs */
+.tabwrapper {
+	max-width: 1920px;
+	margin: auto;
+}
+.tabwrapper img {
+	max-width: 100%;
+}
+.media-tab-buttons {
+    overflow: hidden;
+    margin: 30px auto;
+    position: relative;
+    top: 27%;
+    max-width: 80%;
+    display: flex;
+}
+
+.media-tab-buttons button {
+    float: left;
+    border: 1px solid #50a4d9;
+    cursor: pointer;
+    padding: 12px 9px;
+    margin: 1px;
+    transition: 0.3s;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #50a4d9;
+    background-color: rgba(71,71,71, 0);
+    font-family: "Avenir", "Helvetica Neue", Helvetica, sans-serif;
+    letter-spacing: 1px;
+    width: 50%;
+}
+.media-tab-buttons button:hover {
+    background-color: #50a4d9;
+    border: 1px solid #50a4d9;
+    color: white;
+}
+.media-tab-buttons button.active {
+    background-color: #50a4d9;
+    color: white;
+	font-weight: 600;
+	font-size:16px;
+}
+
+/* Tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    letter-spacing: 1px;
+    min-height: 300px;
+}
+.guides-content-wrapper {
+	width: 95%;
+	margin: 10px auto;
+}
+.logos-content {
+	display: none;
+	height: 400px;
+	overflow: scroll;
+	border: 1px solid #e7e7e8;
+}
+.brandguides-content {
+	display: block;
+}
+#brandguides-content {
+	position: relative;
+    margin-bottom: 10%;
+    width: fit-content;
+    margin: auto;
+    height: 100px;
+}
+
+.tabcontent h3 {
+	text-transform: uppercase;
+	background-color: #e7e7e8;
+	color: black;
+	padding: 10px 30px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 300;
+}
+.tabcontent p {
+	margin: 10px;
+}
+.logosheader {
+	line-height: 1.4;
+}
+
+/* Brand Guides boxes */
+ .brandguides-box {
+ 	float: left;
+ 	background-color: lightgray;
+ 	color: black;
+ 	margin: 5px;
+ 	border: 1px solid black;
+ 	width: 250px;
+ 	height: auto;
+ }
+ .brandguides-box img {
+ 	width: 100%;
+	vertical-align: text-top;
+	cursor: pointer;
+ }
+.brandguides-box-text {
+ 	text-align: left;
+ 	font-size: 11px;
+ 	text-transform: uppercase;
+ 	float: left;
+ }
+/* .brandguides-box-text p {
+ 	float: left;
+ 	width: 47%;
+ } */
+.brandguides-box-text button {
+ 	font-size: 12px;
+ 	margin: 0 10px 20px 10px;
+ }
+ 
+/* Logo boxes */
+.logos-container {
+    margin: 10px auto;
+    display: inline-block;
+    width: 24%;
+    vertical-align: middle;
+}
+.logo-box {
+	background-color: white;
+    color: black;
+    margin: 5px auto;
+    border: 1px solid black;
+    padding: 10px;
+    width: 85%;
+    height: 100%;
+    display: -webkit-box;
+ }
+.logo-box img {
+ 	width: 100%;
+	vertical-align: text-top;
+ }
+.logo-box p {
+ 	text-transform: uppercase;
+ 	margin: 2px auto;
+ 	width: inherit;
+ 	text-align: center;
+ 	font-size: 12px;
+ }
+.logo-box-text {
+ 	text-align: center;
+ 	font-size: 13px;
+ 	text-transform: uppercase;
+ 	margin-top: 20px;
+ 	color: black;
+ } 
+.logo-box-text h2 {
+	font-family:'AvenirNextB';
+	margin: 5px 10px;
+}
+.logo-box-text button {
+	font-size: 12px;
+	margin: 20px 10px;
+	cursor: pointer;
+}
+
+#ph_horz_white > .logo-box, #ph_icon_white > .logo-box, #ph_stack_white > .logo-box, #ph_stack_white_red > .logo-box {
+	background-color: black;
+}
+
+ #onlinelinks-content {
+ 	width: 80%;
+ 	  border-bottom: 2px solid;
+ }
+ #Online-Links h2 {
+ 	margin-bottom: 40px;
+ 	text-align: center;
+ 	font-size: 17px;
+ 	text-transform: uppercase;
+ 	color: black;
+ }
+ .onlinelinks-box {
+ 	display: inline-block;
+ 	width: 40%;
+ 	margin: 0 10px 20px auto;
+ }
+ .onlinelinks-box img {
+ 	width: 100%;
+ }
+ .onlinelinks-box-text {
+ 	text-align: left;
+ 	font-size: 11px;
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+ }
+
+#contactus-content p, #contactus-content a {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+    }
+
+@media screen and (max-width: 1024px) {
+	.logos-container {
+		width: 32%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.media-tab-buttons {
+		max-width: 96%;
+	}
+	#brandguides-content {
+	    margin: auto;
+    	float: none;
+	}
+	.brandguides-box {
+	    margin: auto;
+   	 	width: 100%;
+    	max-width: 250px;
+    	float: none;
+	}
+	.brandguides-box-text {
+		text-align: center;
+	}
+		.logos-container {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 620px) {
+	.media-tab-buttons {
+		top: 4%;
+		display: block;
+	}
+	.media-tab-buttons button {
+		width: 99%;
+		padding: 10px;
+		font-size: 14px;
+	}
+	.logos-content {
+		width: 100%;
+	}
+}
+</style>
+
+<div class="tabwrapper">
+	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/PO1-DecorationPage-header1?wid=1920">
+</div>
+<div class="media-tab-buttons">
+  <button class="tablinks" onclick="openMedia(event, 'Brand-Guides')" id="defaultOpen">Brand Guidelines</button>
+  <button class="tablinks" onclick="openMedia(event, 'Logos')">Logos</button>
+<!--    <button class="tablinks" onclick="openMedia(event, 'Online-Links')">Link To Our Website</button> -->
+  <button class="tablinks" onclick="openMedia(event, 'Brand-Contact')">Contact Us</button>
+</div>
+
+<!-- Brand Guidelines Tab Content -->
+<div id="Brand-Guides" class="tabcontent">
+  
+<div class="guides-content-wrapper" id="brandguides-content">
+
+  <div class="brandguides-box">
+  	<img src="https://s7d1.scene7.com/is/image/OnlineSportswear/Branding_Update_CF?wid=1000">
+  	</div>
+  	<div class="brandguides-box-text"> 
+  	 <p>Follow brand guidelines when using Augusta Sportswear Brands media.</p>
+  	 <a class="button primary" href="https://s7d1.scene7.com/is/content/OnlineSportswear/Branding_Update_CFpdf" target="blank">Download Brand Guidelines</a>
+  	 </div>
+  	 
+  </div>
+  
+</div>
+
+<!-- Logos Tab Content -->
+<div id="Logos" class="tabcontent">
+  
+<div class="guides-content-wrapper" id="all-brands">
+ <h3 class="logosheader">Augusta Sportswear Brands</h3>
+  <div class="logos-content">
+   
+ 	<div class="logos-container" id="brands_stack_icons"> 	
+  <div class="logo-box">
+  	<img src="https://s7d1.scene7.com/is/image/OnlineSportswear/AugustaSportswearBrands_Stacked_withIcons?wid=900">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Stacked with Icons</h2>
+  	 <a href="https://s7d1.scene7.com/is/content/OnlineSportswear/AugustaSportswearBrands_Stacked_withIconspdf" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+    
+   	<div class="logos-container" id="brands_stack_two"> 	
+  <div class="logo-box">
+  	<img src="https://s7d1.scene7.com/is/image/OnlineSportswear/AugustaSportswearBrands_Stacked_TwoLines?wid=900">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>stacked in 2 lines</h2>
+  	 <a href="https://s7d1.scene7.com/is/content/OnlineSportswear/AugustaSportswearBrands_Stacked_TwoLinespdf" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+  	<div class="logos-container" id="brands_stack_three"> 	
+  <div class="logo-box">
+  	<img src="https://s7d1.scene7.com/is/image/OnlineSportswear/AugustaSportswearBrands_Stacked_ThreeLines?wid=900">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Stacked in 3 lines</h2>
+  	 <a href="https://s7d1.scene7.com/is/content/OnlineSportswear/AugustaSportswearBrands_Stacked_ThreeLinespdf" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+    <div class="logos-container" id="brands_stack_threeicons"> 	
+  <div class="logo-box">
+  	<img src="https://s7d1.scene7.com/is/image/OnlineSportswear/AugustaSportswearBrands_Stacked_ThreeLines_withIcons?wid=900">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>stacked in three lines with icons</h2>
+  	 <a href="https://s7d1.scene7.com/is/content/OnlineSportswear/AugustaSportswearBrands_Stacked_ThreeLines_withIconspdf" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+  	<div class="logos-container" id="brands_horz"> 	
+  <div class="logo-box">
+  	<img src="https://s7d1.scene7.com/is/image/OnlineSportswear/AugustaSportswearBrands_Horizontal?wid=900">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Horizontal</h2>
+  	 <a href="https://s7d1.scene7.com/is/content/OnlineSportswear/AugustaSportswearBrands_Horizontalpdf" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+  	<div class="logos-container" id="brands_horz_logos"> 	
+  <div class="logo-box">
+  	<img src="https://s7d1.scene7.com/is/image/OnlineSportswear/AugustaSportswearBrands_Horizontal_withLogos?wid=900">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Horizontal with Logos</h2>
+  	 <a href="https://s7d1.scene7.com/is/content/OnlineSportswear/AugustaSportswearBrands_Horizontal_withLogospdf" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+
+  	<div class="logos-container" id="brands_horz_nvylogos"> 	
+  <div class="logo-box">
+  	<img src="https://s7d1.scene7.com/is/image/OnlineSportswear/AugustaSportswearBrands_Horizontal_withlogos_navy?wid=900">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>horizontal with navy logos</h2>
+  	 <a href="https://s7d1.scene7.com/is/content/OnlineSportswear/AugustaSportswearBrands_Horizontal_withlogos_navypdf" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+   </div>
+  </div>
+  
+<div class="guides-content-wrapper" id="augusta-logos">
+ <h3 class="logosheader">Augusta Sportswear</h3>
+  <div class="logos-content">
+ 
+ <div class="logos-container" id="aug_color"> 	
+  <div class="logo-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/AugustaSportswear_colorjpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Primary - Color - Augusta Sportswear</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://s7d4.scene7.com/is/image/OnlineSportswear/AugustaSportswear_colorjpg?wid=1000" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+ <div class="logos-container" id="aug_black"> 	
+  <div class="logo-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/AugustaSportswear_blackjpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Primary - Black - Augusta Sportswear</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://s7d4.scene7.com/is/image/OnlineSportswear/AugustaSportswear_blackjpg?wid=1000" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+ <div class="logos-container" id="aug_color_stack"> 	
+  <div class="logo-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/AugustaSportswear_stacked_colorjpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Stacked - Color - Augusta Sportswear</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://s7d4.scene7.com/is/image/OnlineSportswear/AugustaSportswear_stacked_colorjpg?wid=1000" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+ <div class="logos-container" id="aug_black_stack"> 	
+  <div class="logo-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/AugustaSportswear_stacked_blackjpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Stacked - Black - Augusta Sportswear</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://s7d4.scene7.com/is/image/OnlineSportswear/AugustaSportswear_stacked_blackjpg?wid=1000" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+   </div>
+  </div>
+  
+<div class="guides-content-wrapper" id="holloway-logos">
+ <h3 class="logosheader">Holloway Sportswear</h3>
+  <div class="logos-content">
+ 
+  <div class="logos-container" id="hol_color"> 	
+  <div class="logo-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/Holloway_colorjpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Primary - Color - Holloway Sportswear</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://s7d4.scene7.com/is/image/OnlineSportswear/Holloway_colorjpg?wid=1000" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+ <div class="logos-container" id="hol_black"> 	
+  <div class="logo-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/Holloway_blackjpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Primary - Black - Holloway Sportswear</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://s7d4.scene7.com/is/image/OnlineSportswear/Holloway_blackjpg?wid=1000" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+ <div class="logos-container" id="hol_color_stack"> 	
+  <div class="logo-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/Holloway_stacked_colorjpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Stacked - Color - Holloway Sportswear</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://s7d4.scene7.com/is/image/OnlineSportswear/Holloway_stacked_colorjpg?wid=1000" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+ <div class="logos-container" id="hol_black_stack"> 	
+  <div class="logo-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/Holloway_stacked_blackjpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Stacked - Black - Holloway Sportswear</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://s7d4.scene7.com/is/image/OnlineSportswear/Holloway_stacked_blackjpg?wid=1000" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+   </div>
+  </div>
+  
+<div class="guides-content-wrapper" id="h5-logos">
+ <h3 class="logosheader">High Five Sportswear</h3>
+  <div class="logos-content">
+ 
+  <div class="logos-container" id="h5_color"> 	
+  <div class="logo-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/HighFive_colorjpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Primary - Color - High Five Sportswear</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://s7d4.scene7.com/is/image/OnlineSportswear/HighFive_colorjpg?wid=1000" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+ <div class="logos-container" id="h5_black"> 	
+  <div class="logo-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/HighFive_blackjpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Primary - Black - High Five Sportswear</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://s7d4.scene7.com/is/image/OnlineSportswear/HighFive_blackjpg?wid=1000" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+ <div class="logos-container" id="h5_color_stack"> 	
+  <div class="logo-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/HighFive_stacked_colorjpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Stacked - Color - High Five Sportswear</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://s7d4.scene7.com/is/image/OnlineSportswear/HighFive_stacked_colorjpg?wid=1000" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+ <div class="logos-container" id="h5_black_stack"> 	
+  <div class="logo-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/HighFive_stacked_blackjpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Stacked - Black - High Five Sportswear</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://s7d4.scene7.com/is/image/OnlineSportswear/HighFive_stacked_blackjpg?wid=1000" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+   </div>
+  </div>
+  
+<div class="guides-content-wrapper" id="russell-logos">
+ <h3 class="logosheader">Russell Athletic</h3>
+  <div class="logos-content">
+ 
+<div class="logos-container" id="rus_color"> 	
+  <div class="logo-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/RussellAthletic_colorjpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Primary - Color - Russell Athletic</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://s7d4.scene7.com/is/image/OnlineSportswear/RussellAthletic_colorjpg?wid=1000" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+ <div class="logos-container" id="rus_black"> 	
+  <div class="logo-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/RussellAthletic_blackjpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Primary - Black - Russell Athletic</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://s7d4.scene7.com/is/image/OnlineSportswear/RussellAthletic_blackjpg?wid=1000" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+ <div class="logos-container" id="rus_color_stack"> 	
+  <div class="logo-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/RussellAthletic_stacked_colorjpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Stacked - Color - Russell Athletic</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://s7d4.scene7.com/is/image/OnlineSportswear/RussellAthletic_stacked_colorjpg?wid=1000" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+   <div class="logos-container" id="rus_black_stack"> 	
+  <div class="logo-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/RussellAthletic_stacked_blackjpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Stacked - Black - Russell Athletic</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://s7d4.scene7.com/is/image/OnlineSportswear/RussellAthletic_stacked_blackjpg?wid=1000" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+   </div>
+  </div>
+  
+<div class="guides-content-wrapper" id="pacific-logos">
+ <h3 class="logosheader">Pacific Headwear</h3>
+  <div class="logos-content">
+ 
+	<div class="logos-container" id="ph_color_withicon"> 	
+  <div class="logo-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/Pacific%5FwithIcon%5FColor?$PNG%2DALPHA%2D600$&wid=900">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Color Logo with Icon</h2>
+  	 <a href="https://s7d4.scene7.com/is/content/OnlineSportswear/Pacific_withIcon_Colorpdf" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+	<div class="logos-container" id="ph_horz_color"> 	
+  <div class="logo-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/PacificHeadwear%5FLogo%5FHorizontal%5FColor?$PNG%2DALPHA%2D600$&wid=900">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>horizontal - color</h2>
+  	 <a href="http://s7d1.scene7.com/is/content/OnlineSportswear/PacificHeadwear_Logo_Horizontal_Colorpdf" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+  	<div class="logos-container" id="ph_horz_white"> 	
+  <div class="logo-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/PacificHeadwear%5FLogo%5FHorizontal%5FWhite?$PNG%2DALPHA%2D600$&wid=300">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>horizontal - white</h2>
+  	 <a href="https://s7d4.scene7.com/is/image/OnlineSportswear/PacificHeadwear%5FLogo%5FHorizontal%5FWhite?$PNG%2DALPHA%2D600$&wid=900" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+
+  	<div class="logos-container" id="ph_horz_navy"> 	
+  <div class="logo-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/PacificHeadwear%5FLogo%5FHorizontal%5FNavy?$PNG%2DALPHA%2D600$&wid=900">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>horizontal - navy</h2>
+  	 <a href="http://s7d4.scene7.com/is/image/OnlineSportswear/PacificHeadwear%5FLogo%5FHorizontal%5FNavy?$PNG%2DALPHA%2D600$&wid=900" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+  	<div class="logos-container" id="ph_icon_color"> 	
+  <div class="logo-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/PacificHeadwear%5FLogo%5FIcon%5FColor?$PNG%2DALPHA%2D600$&wid=900">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>color icon</h2>
+  	 <a href="https://s7d1.scene7.com/is/content/OnlineSportswear/PacificHeadwear_Logo_Icon_Colorpdf" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+  	<div class="logos-container" id="ph_icon_navy"> 	
+  <div class="logo-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/PacificHeadwear%5FLogo%5FIcon%5Fnavy?$PNG%2DALPHA%2D600$&wid=900">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>navy icon</h2>
+  	 <a href="https://s7d1.scene7.com/is/content/OnlineSportswear/PacificHeadwear_Logo_Icon_navypdf" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+  	<div class="logos-container" id="ph_icon_white"> 	
+  <div class="logo-box">
+  	<img src="http://s7d4.scene7.com/is/image/OnlineSportswear/PacificHeadwear%5FLogo%5FIcon%5Fwhite?$PNG%2DALPHA%2D600$&wid=300">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>white icon</h2>
+  	 <a href="http://s7d4.scene7.com/is/image/OnlineSportswear/PacificHeadwear%5FLogo%5FIcon%5Fwhite?$PNG%2DALPHA%2D600$&wid=900" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+  	<div class="logos-container" id="ph_stack_color"> 	
+  <div class="logo-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/PacificHeadwear%5FLogo%5FStacked%5FColor?$PNG%2DALPHA%2D600$&wid=900">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>stacked - color</h2>
+  	 <a href="https://s7d1.scene7.com/is/content/OnlineSportswear/PacificHeadwear_Logo_Stacked_Colorpdf" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+  	<div class="logos-container" id="ph_stack_white"> 	
+  <div class="logo-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/PacificHeadwear%5FLogo%5FStacked%5FWhite?$PNG%2DALPHA%2D600$&wid=300">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>stacked - white</h2>
+  	 <a href="https://s7d4.scene7.com/is/image/OnlineSportswear/PacificHeadwear%5FLogo%5FStacked%5FWhite?$PNG%2DALPHA%2D600$&wid=900" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+  	<div class="logos-container" id="ph_stack_white_red"> 	
+  <div class="logo-box">
+  	<img src="http://s7d4.scene7.com/is/image/OnlineSportswear/PacificHeadwear%5FLogo%5FStacked%5FWhitewRed?$PNG%2DALPHA%2D600$&wid=300">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>White & Red Stack</h2>
+  	 <a href="http://s7d4.scene7.com/is/image/OnlineSportswear/PacificHeadwear%5FLogo%5FStacked%5FWhitewRed?$PNG%2DALPHA%2D600$&wid=900" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+  	<div class="logos-container" id="ph_asb_color"> 	
+  <div class="logo-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/PacificHeadwear%5FwithASBlogo%5FColor%2D15?$PNG%2DALPHA%2D600$&wid=500">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Pacific Logo with ASB</h2>
+  	 <a href="https://s7d1.scene7.com/is/content/OnlineSportswear/PacificHeadwear_withASBlogo_Colorpdf" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>  
+   </div>
+  </div>
+  
+</div>
+
+<!-- HTML Image Links Tab Content -->
+<div id="Online-Links" class="tabcontent">
+  <h2>Send users to our website when they click on the logo shown.</h2>
+<div class="guides-content-wrapper" id="onlinelinks-content">
+  <div class="onlinelinks-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/Brand_Family_Stacked_Color?wid=1000">
+  	</div>
+  	<div class="onlinelinks-box-text"> 
+  	 <p style="font-family:'AvenirNextB';">Copy the code below and place on your website.</p>
+  	 <p>
+  	 &lt;div style="width:40%;margin:20px auto;padding:10px;">&lt;a href="https://www.augustasportswear.com" target="blank">&lt;img src="https://s7d4.scene7.com/is/image/OnlineSportswear/Brand_Family_Stacked_Color?wid=1000" style="width:100%;">&lt;/a>&lt;/div>
+  	 </p>
+  	 </div>
+  	 
+  </div>
+  
+<div class="guides-content-wrapper" id="onlinelinks-content">
+
+  <div class="onlinelinks-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/Brand_family_Color_bar-v2?$png-alpha-400$&wid=1000">
+  	</div>
+  	<div class="onlinelinks-box-text"> 
+  	 <p style="font-family:'AvenirNextB';">Copy the code below and place on your website.</p>
+  	 <p>
+  	 &lt;div style="width:50%;margin:20px auto;padding:10px;">&lt;a href="https://www.augustasportswear.com" target="blank">&lt;img src="http://s7d4.scene7.com/is/image/OnlineSportswear/Brand_family_Color_bar-v2?$png-alpha-400$&wid=1000" style="width:100%;">&lt;/a>&lt;/div>
+  	 </p>
+  	 </div>
+  	 
+  </div>
+  
+<div class="guides-content-wrapper" id="onlinelinks-content">
+
+  <div class="onlinelinks-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/Sub_graphic_button?wid=600">
+  	</div>
+  	<div class="onlinelinks-box-text"> 
+  	 <p style="font-family:'AvenirNextB';">Copy the code below and place on your website.</p>
+  	 <p>
+  	 &lt;div style="width:40%;margin:20px auto;padding:10px;">&lt;a href="https://www.augustasportswear.com/webapp/wcs/stores/servlet/ConfiguratorStartView?langId=-1&storeId=10252&catalogId=10101&categoryId=14001&configuratorType=uniforms&utm_source=web-graphic-link&utm_medium=customer_banner&utm_campaign=custom_sub" target="blank">&lt;img src="https://s7d4.scene7.com/is/image/OnlineSportswear/Sub_graphic_button?wid=600" style="width:100%;">&lt;/a>&lt;/div>
+  	 </p>
+  	 </div>
+  	 
+  </div>
+  
+<div class="guides-content-wrapper" id="onlinelinks-content">
+
+  <div class="onlinelinks-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/ASWB_Wool_Graphic?wid=600">
+  	</div>
+  	<div class="onlinelinks-box-text"> 
+  	 <p style="font-family:'AvenirNextB';">Copy the code below and place on your website.</p>
+  	 <p>
+  	 &lt;div style="width:40%;margin:20px auto;padding:10px;">&lt;a href="https://www.augustasportswear.com/webapp/wcs/stores/servlet/ConfiguratorStartView?langId=-1&storeId=10252&catalogId=10101&categoryId=11501&configuratorType=jackets&utm_source=web-graphic-link&utm_medium=customer_banner&utm_campaign=custom_jkt" target="blank">&lt;img src="https://s7d4.scene7.com/is/image/OnlineSportswear/ASWB_Wool_Graphic?wid=600" style="width:100%;">&lt;/a>&lt;/div>
+  	 </p>
+  	 </div>
+  	 
+  </div>
+  
+  <div class="guides-content-wrapper" id="onlinelinks-content">
+
+  <div class="onlinelinks-box">
+  	<img src="https://s7d4.scene7.com/is/image/OnlineSportswear/ASWB_Wool_Graphic2?wid=600">
+  	</div>
+  	<div class="onlinelinks-box-text"> 
+  	 <p style="font-family:'AvenirNextB';">Copy the code below and place on your website.</p>
+  	 <p>
+  	 &lt;div style="width:40%;margin:20px auto;padding:10px;">&lt;a href="https://www.augustasportswear.com/webapp/wcs/stores/servlet/ConfiguratorStartView?langId=-1&storeId=10252&catalogId=10101&categoryId=11501&configuratorType=jackets&utm_source=web-graphic-link&utm_medium=customer_banner&utm_campaign=custom_jkt" target="blank">&lt;img src="https://s7d4.scene7.com/is/image/OnlineSportswear/ASWB_Wool_Graphic2?wid=600" style="width:100%;">&lt;/a>&lt;/div>
+  	 </p>
+  	 </div>
+  	 
+  </div>
+  
+</div>
+
+<!-- Contact Us Tab Content -->
+<div id="Brand-Contact" class="tabcontent">
+  
+<div class="guides-content-wrapper" id="contactus-content">
+<p>Contact us with any questions regarding our brand media. Email <a href="mailto:PR@augustasportswear.com" style="color:#50a4d9;">PR@augustasportswear.com</a></p>
+  </div>
+  
+</div>
+
+
+<script>
+function openMedia(evt, mediaTab) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(mediaTab).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+//Open content blocks by clicking header
+$(document).ready(function(){	$('.guides-content-wrapper').find('.logosheader').click(function(){
+
+      //Expand or collapse this panel
+      $(this).next().slideToggle('slow');
+
+      //Hide the other panels
+      $(".logos-content").not($(this).next()).slideUp('slow');
+    }); 
+  });
+
+</script>

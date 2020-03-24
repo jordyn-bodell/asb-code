@@ -1,0 +1,658 @@
+<!-- FOOTER -->
+<style>
+.footer-wrapper {
+	background-color: rgb(0,20,58);
+}
+
+/* Brand logos */
+.brand-logos-footer {
+	padding: 10px 0;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+	max-width: 1200px;
+	width: 90%;
+	margin: auto;
+}
+.footer-logos { 
+	width: 100%;
+	max-width: 1400px;
+	margin: auto;
+	padding: 25px 0;
+}
+.brandlogo {
+	width: 20%;
+	margin: 0 15px;
+	vertical-align: middle;
+}
+.indivlogo {
+	width: 12%;
+}
+#asblogo-f {
+	 margin-right: 25px;
+}
+
+/* Email Subscribe */
+.email-social-wrapper {
+	width: 90%;
+	max-width: 1200px;
+	margin: 25px auto;
+	padding-top: 20px;
+}
+.email-wrapper {
+	padding-right: 8px;
+	width: 75%;
+	display: inline-block;
+	text-transform: uppercase;
+	vertical-align: top;
+}
+.mailing-list {
+	padding: 20px;
+}
+.mailing-list > * {
+	float: left;
+}
+.emailsignuptext {
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+}
+#emailbold {
+	color: white;
+	font-family: "AvenirNextB";
+}
+
+#emailadd-input {
+	min-width: 250px;
+    width: 350px;
+    text-transform: uppercase;
+    padding: 8px 10px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border: 1px solid #bcbdc0;
+    color: white;
+    background-color: transparent;
+}
+.email-input-box input::placeholder {
+	color: #bcbdc0;
+	background-color: transparent;
+}
+.emailclear {
+	display: inline-block;
+	font-family: "AvenirNextB";
+}
+.submitbutton {
+	background-color: white;
+	color: #001d4d;
+	padding: 9px 27px!important;
+	border: none;
+	border-radius: none;
+	text-transform: uppercase;
+	font-size: 12px!important;
+	letter-spacing: .6px;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+.submitbutton:hover {
+	color: white;
+	outline: 1px solid white;
+	cursor: pointer;
+	background-color: transparent;
+	transition: .1s ease;
+}
+
+
+/* Social */
+.social-icons {
+	display: inline-block;
+}
+.social-container {
+	width: fit-content;
+}
+.social-container h3 {
+	color: white;
+	font-family: 'AvenirNextB';
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	font-size: 12px;
+	padding-left: 11px;
+}
+.social-icons a {
+	width: 25px;
+	display: inline-block;
+	height: fit-content;
+	padding: 0 4px;
+}
+.social-icons img {
+	width: 25px;
+	display: inline-block;
+}
+#fb-white, #ig-white, #li-white, #tw-white, #yt-white {
+	display: none;
+}
+
+#fb-icon:hover #fb-grey, #ig-icon:hover #ig-grey, #li-icon:hover #li-grey, #tw-icon:hover #tw-grey, #yt-icon:hover #yt-grey {
+	display: none;
+}
+#fb-icon:hover #fb-white, #ig-icon:hover #ig-white, #li-icon:hover #li-white, #tw-icon:hover #tw-white, #yt-icon:hover #yt-white {
+	display: inline-block;
+}
+
+
+/* Footer Links */
+.footer-container {
+    border-top: none !important;
+    color: #bcbdc0;
+    padding: 40px 0;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto 30px;
+    text-transform: uppercase;
+}
+.footer-links-wrapper {
+	width: 100%;
+	display: inline-block;
+}  
+.span2 {
+	float: left;
+	padding-right: 19px;
+	width: 19%;
+}
+.footer-links-header {
+	color: white;
+	font-family: 'AvenirNextB';
+}
+.span2 ul {
+	padding: 0;
+	list-style: none;
+	font-size: 11px;
+}
+.span2 li {
+	padding: 2px 0;
+	color: #bcbdc0;
+}
+.span2 li a {
+	color: #bcbdc0;
+}
+.span2 li a:hover {
+	color: white;
+}
+
+h4.footer-links-header {
+	font-size: 13px;
+	text-transform: uppercase;
+	font-family:'AvenirNextB';
+	padding-bottom: 10px;
+}
+
+#resources-span {
+	width: 16%;
+    max-width: 140px;
+        padding-left: 30px;
+}
+#help-span {
+	padding-right: 0;
+	float: right;
+}
+#help-span-m {
+	display: none;
+}
+#blankheader {
+	height: 17px;
+}
+
+.copyright-footer {
+	padding: 100px 0;
+	text-align: center;
+	vertical-align: top;
+	font-size: 11px;
+    margin: auto;
+    display: inline-block;
+    width: 100%;
+}
+.copyright-links {
+	width: 100%;
+}
+#asb-text {
+	color: white;
+	display:inline-block;
+	font-size: 10px;
+	margin:0 10px 10px 5px;
+	text-align: center;
+}
+.copyright-footer a {
+	color: #bcbdc0;
+	display:inline-block;
+	font-size:10px;
+	margin:0 5px 10px 5px;
+	padding:0 20px 0px 10px;
+	border-right:1px solid #bcbdc0;
+	vertical-align:middle;
+	text-transform: uppercase;
+}
+.copyright-footer a:last-of-type {
+	border-right:none;
+	padding-right: 0px;
+}
+.copyright-footer a:hover {
+	color: white;
+}
+
+@media screen and (max-width: 1200px) {
+	.brandlogo {
+		width: 16%;
+	}
+	.indivlogo {
+		width: 12%;
+	}
+	.span2 {
+		width: 18%;
+	}
+}
+@media screen and (max-width:1080px) {
+
+	.span2 {
+		width: 17%
+	}
+}
+@media screen and (max-width: 1023px) {
+	.brandlogo {
+		margin: 0 10px;
+	}
+	.indivlogo {
+		width: 13%;
+	}
+}
+@media screen and (max-width:950px) {
+	.brandlogo {
+		margin: 0 9px;
+	}
+	#phonenumber {
+		text-decoration:underline;
+	}
+}
+@media screen and (max-width: 900px) {
+	.footer-logos {
+		width: 55%;
+	}
+	.brandlogo {
+	margin: 15px auto;
+	display: block;
+	width: 75%;
+	}
+	.indivlogo {
+		width: 45%;
+		padding: 5px 0;
+	}
+	#asblogo-f {
+		margin-right: auto;
+		margin-bottom: 30px;
+	}
+	
+	.email-wrapper {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.social-icons {
+		width: 100%;
+		text-align: center;
+	}
+	.social-container {
+		width: 100%;
+		margin-top: 20px;
+	}
+	
+	#help-span-m {
+		display: inherit;
+	}
+	#help-span {
+		display: none;
+	}
+	.footer-container {
+		width: 65%;
+	}
+	.span2 {
+		width: 31%;
+		padding-right: 10px;
+	}
+	#resources-span {
+		width: 32%;
+		max-width: 200px;
+		margin-top: 10px;
+		padding-left: 0;
+	}
+	#resources-span2 {
+		margin-top: 10px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.indivlogo {
+		width: 50%;
+	}
+	
+	.email-wrapper {
+		padding-right: 0;
+	}
+	#emailbold {
+		display: block;
+		margin-bottom: 5px;
+	}
+	#emailadd-input {
+		font-size: 16px;
+	}
+	.emailsignuptext, .social-container h3 {
+		font-size: 14px;
+	}
+	
+	.social-icons a {
+		width: 35px;
+		padding: 0 10px;
+	}
+	.social-icons img {
+		width: 35px;
+	}
+	
+	.footer-container {
+		width: 100%;
+	}
+	h4.footer-links-header {
+		font-size: 16px;
+	}
+	.span2 {
+		width: 100%;
+		padding-right: 0;
+		text-align: center;
+		margin-bottom: 50px;
+		font-size: 16px;
+	}
+	.span2 ul {
+		display: block;
+	}
+	.span2 li {
+		padding: 4px 0;
+		font-size: 14px;
+	}
+	.span2 li a {
+		font-size: 14px;
+	}
+	#resources-span {
+		width: 100%;
+		text-align: center;
+		max-width: none;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	#resources-span2 {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	#blankheader {
+		height: 0;
+		padding: 0;
+	}
+	
+	.copyright-links {
+		width: 450px;
+		margin: auto;
+	}
+	#tos-link {
+		border-right: none;
+	}
+}
+@media screen and (max-width: 600px) {
+	.brandlogo {
+		width: 90%;
+	}
+	.indivlogo {
+		width: 65%;
+	}
+	#emailadd-input {
+		width: 90%;
+	}
+	.submitbutton {
+		width: 100%;
+    	margin: auto;
+    	padding: 14px 27px!important;
+    	font-size: 14px!important;
+	}
+	.emailclear {
+		width: 94%;
+	}
+	.email-wrapper {
+	    margin-bottom: 20px auto 50px;
+	}
+}
+@media screen and (max-width:450px) {
+	.brandlogo {
+		width: 100%;
+	}
+	.indivlogo {
+		width: 75%;
+	}
+	.emailclear {
+		width: 96%;
+	}
+	.copyright-links {
+		width: 320px;
+	}
+	#tos-link {
+		border-right:1px solid #bcbdc0;
+	}
+	#sitemap-link, #code-link {
+		border: none;
+	}
+	#asb-text {
+		margin: 0;
+	}
+}
+@media screen and (max-width:400px) {
+	.social-icons a, .social-icons img {
+		width: 33px;
+	}
+}
+</style>
+
+<div id='zsiqwidget'></div>
+
+<div class="footer-wrapper">
+
+<!-- brand logos -->
+<div class="brand-logos-footer">
+  <div class="footer-logos">
+    <img class="brandlogo" id="asblogo-f" src="https://static.augustasportswear.com/marketing/NEW%5FASB%5FBRANDING%5Flogos%5FAugustaSportswearBrands.png">
+    <img class="brandlogo indivlogo" id="augustalogo-f" src="https://static.augustasportswear.com/marketing/NEW%5FASB%5FBRANDING%5Flogos%5FAugusta.png">
+    <img class="brandlogo indivlogo" id="hollowaylogo-f"src="https://static.augustasportswear.com/marketing/NEW%5FASB%5FBRANDING%5Flogos%5FHolloway.png">
+    <img class="brandlogo indivlogo" id="highgfive-f" src="https://static.augustasportswear.com/marketing/NEW%5FASB%5FBRANDING%5Flogos%5FHighFive.png">
+    <img class="brandlogo indivlogo" id="pacificlogo-f" src="https://static.augustasportswear.com/marketing/NEW%5FASB%5FBRANDING%5Flogos%5FPacific.png">
+    <img class="brandlogo indivlogo" id="russelllogo-f" src="https://static.augustasportswear.com/marketing/NEW%5FASB%5FBRANDING%5Flogos%5FRussell.png">
+  </div>
+</div>
+
+
+<div class="footer-container">    
+    <div class="footer-links-wrapper">          
+		<div class="span2" id="contact-span">            	
+		<h4 class="footer-links-header">CONTACT US</h4>
+			<ul>
+			    <li><a href="tel:8002376695" id="phonenumber">800-237-6695</a></li>							 
+				<li>8am - 7pm EST <br>Monday - Friday</li> 		
+				<li><a href="/help#contact-anchor">Holiday Hours</a></li>	           			         			        		
+			</ul> 
+
+			</div>
+			
+		<div class="span2" id="about-span">            	
+			<h4 class="footer-links-header">COMPANY INFO</h4>           		
+			<ul class="about-us">            			
+				<li><a href="/about-us1">About Us</a></li>
+				<li><a href="http://news.augustasportswear.com" target="blank">News</a></li>
+				<li><a href="/russell-athletic">Russell Athletic</a></li>
+				<li><a href="/pacific-headwear">Pacific Headwear</a></li>
+				<li><a href="/careers">Careers</a></li>	
+				<li><a href="/logos">Logos</a></li>			
+			</ul>
+		</div>
+		
+		<div class="span2" id="help-span-m">            	
+			<h4 class="footer-links-header" >HELP</h4>
+
+			<ul class="contact-us">            			
+	<li><a href="/faq">FAQ</a></li>	
+	<li><a href="/help#returns-anchor">Returns</a></li>
+	<li><a href="/help#samples-anchor">Samples</a></li>
+	<li><a href="/TrackOrderStatus">Orders</a></li>
+	<li><a href="/help#dataanchor">Product Data</a></li>
+	<li><a href="/sizes-and-fits">Sizes & Fits</a></li>      			           			         			        		
+			</ul> 
+			</div>
+		
+		<div class="span2" id="resources-span">            	
+			<h4 class="footer-links-header">RESOURCES</h4>          		
+			<ul class="marketing-tools">    
+				<li><a href="/New-Account">New Account</a></li>       			
+				<li><a href="/credit">Apply For Credit</a></li>
+				<li><a href="https://secure2.billtrust.com/augustasportswear/ig/signin" target="blank">Online Bill Pay</a></li>
+				<li><a href="/catalog">Catalogs</a></li>
+				<li><a href="/prebuilt-flyers">Prebuilt Flyers</a></li>
+				<li><a href="/varsity-jacket">Varsity Jackets</a></li>
+			</ul>
+		</div>
+		
+		<div class="span2" id="resources-span2">            	
+			<h4 class="footer-links-header" id="blankheader"> </h4>
+			<ul>
+				<li><a href="/videos">Videos</a></li>
+				<li><a href="/fabric-technologies">Fabrics & Technologies</a></li>
+				<li><a href="/package-program">Package Program</a></li> 
+				<li><a href="/pe-program">PE Program</a></li>
+				<li><a href="/team-store">Build A Store</a></li>
+				<li><a href="/ASGInventoryLookupView">Inventory Lookup</a></li>
+			</ul>
+		</div>
+		
+		<div class="span2" id="help-span">            	
+			<h4 class="footer-links-header">HELP</h4>
+			<ul class="contact-us">            			
+	<li><a href="/faq">FAQ</a></li>	
+	<li><a href="/help#returns-anchor">Returns</a></li>
+	<li><a href="/help#samples-anchor">Samples</a></li>
+	<li><a href="/TrackOrderStatus">Orders</a></li>
+	<li><a href="/help#dataanchor">Product Data</a></li>
+	<li><a href="/sizes-and-fits">Sizes & Fits</a></li>      			           			         			        		
+			</ul> 
+			</div>
+	</div>
+</div>
+
+
+<!-- Email & Social -->
+<div class="email-social-wrapper">
+  <div class="email-wrapper">
+
+	<div class="emailsignuptext"><b id="emailbold">Be the first to know!</b> Subscribe to get all the latest news and exclusive offers.</div>
+	  <div id="email-signup">
+				<form action="//augustasportswear.us1.list-manage.com/subscribe/post?u=2cbe98ff1619ba9916266f837&amp;id=94f6b60279" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<div id="mc_embed_signup_scroll">
+							<div class="email-input-box">
+								<input type="email" value="" name="EMAIL" class="email-input" id="emailadd-input" placeholder="Email Address">
+			<div id="mce-responses" class="emailclear">
+			<div class="response" id="mce-error-response" style="display:none"></div>
+			<div class="response" id="mce-success-response" style="display:none"></div>
+							</div>
+	<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				<div style="position: absolute; left: -5000px;"><input type="text" name="b_2cbe98ff1619ba9916266f837_94f6b60279" tabindex="-1" value=""></div>
+				<div class="emailclear"><input type="submit" value="Subscribe" name="subscribe" id="subscribe-button" class="submitbutton"></div>
+						</div>
+					</div>
+				</form>
+			</div><!--End mc_embed_signup-->
+
+		</div>
+		
+   <div class="social-icons">
+	  <div class="social-container">
+		  <h3>STAY CONNECTED!</h3>
+		  <a href="https://www.facebook.com/augustaactive/" target="blank" id="fb-icon">
+		  <img src="https://static.augustasportswear.com/marketing/Social_Icon_Grey_.png" id="fb-grey" alt="Facebook Icon">
+		  <img src="https://static.augustasportswear.com/marketing/Social_Icon_White_.png" id="fb-white" alt="Facebook Icon">
+		  </a>
+		  
+		  <a href="https://www.instagram.com/augustaactive/" target="blank" id="ig-icon">
+		  <img src="https://static.augustasportswear.com/marketing/Social_Icon_Grey_2.png" id="ig-grey" alt="Instagram Icon">
+		  <img src="https://static.augustasportswear.com/marketing/Social_Icon_White_2.png" id="ig-white" alt="Instagram Icon">
+		  </a>
+		  
+		  <a href="https://www.linkedin.com/company/augusta-sportswear/" target="blank" id="li-icon">
+		  <img src="https://static.augustasportswear.com/marketing/Social_Icon_Grey_3.png" id="li-grey" alt="LinkedIn Icon">
+		  <img src="https://static.augustasportswear.com/marketing/Social_Icon_White_3.png" id="li-white" alt="LinkedIn Icon">
+		  </a>
+		  
+		  <a href="https://twitter.com/augustaactive" target="blank" id="tw-icon">
+		  <img src="https://static.augustasportswear.com/marketing/Social_Icon_Grey_4.png" id="tw-grey" alt="Twitter Icon">
+		  <img src="https://static.augustasportswear.com/marketing/Social_Icon_White_4.png" id="tw-white"  alt="Twitter Icon">
+		  </a>
+		  
+		  <a href="https://www.youtube.com/user/augustasportswear" target="blank" id="yt-icon">
+		  <img src="https://static.augustasportswear.com/marketing/Social_Icon_Grey_5.png" id="yt-grey" alt="YouTube Icon">
+		  <img src="https://static.augustasportswear.com/marketing/Social_Icon_White_5.png" id="yt-white" alt="YouTube Icon">
+		  </a>    
+		  	</div> 		          
+   </div>
+</div>
+
+
+<!-- copyright content below -->
+<div class="copyright-footer">
+  <div class="copyright-links">
+	<a href="/privacy-policy1">Privacy Policy</a>
+	<a href="/code-of-conduct" id="code-link">Code of Conduct</a>
+	<a href="/terms-of-service" id="tos-link">Terms of Service</a>
+	<a href="/sitemap" id="sitemap-link">Site Map</a>
+	<a href="/website-survey">Website Feedback Survey</a>
+	<br>
+	<span id="asb-text">©2019 Augusta Sportswear Brands. All Rights Reserved.</span>
+  </div>
+</div>
+<!-- End copyright content -->
+
+</div>
+
+<!--  Velaro Live chat code in footer -->
+<script type="text/javascript">
+(function(){
+var globals = document.createElement('script');
+globals.src = 'https://galleryuseastprod.blob.core.windows.net/velaroscripts/20182/globals.js';
+var inline = document.createElement('script');
+inline.src = 'https://eastprodcdn.azureedge.net/bundles/velaro.inline.js';
+var scriptNode = document.getElementsByTagName('script')[0];
+scriptNode.parentNode.insertBefore(globals, scriptNode)
+globals.onload = function() {
+scriptNode.parentNode.insertBefore(inline, scriptNode)
+}
+inline.onload = function() {
+Velaro.Globals.ActiveSite = 20182;
+Velaro.Globals.ActiveGroup = 5920;
+Velaro.Globals.InlineEnabled = true;
+Velaro.Globals.VisitorMonitoringEnabled = true;
+Velaro.Globals.InlinePosition = 0;
+}
+}())
+</script>
+<noscript>
+<a href="https://www.velaro.com" title="Contact us" target="_blank">Questions?</a>
+powered by <a href="http://www.velaro.com" title="Velaro live chat">velaro live chat</a>
+</noscript>
+ <!-- end Live chat code -->
+
+<script>
+$(document).ready(function(openFooterSpan){	$('.footer-row').find('.span2').click(function(){
+
+      //Expand or collapse this panel
+      $(this).find('.open-span').toggle();
+      $(this).find('.close-span').toggle();
+    }); 
+  });
+
+</script>

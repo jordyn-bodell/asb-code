@@ -1,0 +1,953 @@
+<!-- Digital Colab ipad test-->
+<style>
+b {
+	font-family: "AvenirNextB";
+}
+
+/* shop buttons B&W */
+.hp-btn-black {
+	background: black;
+	color: white;
+	padding: 7px 15px;
+	margin: 10px 0;
+	font-family: "AvenirNextB";
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+}
+.hp-btn-white {
+	background: white;
+	color: black;
+	padding: 7px 10px;
+	margin: 5px auto;
+	font-family: "AvenirNextB";
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+}
+.hp-btn-black:hover, .hp-btn-white:hover {
+	text-decoration: underline;
+}
+.shop-arrow {
+  width: 0; 
+  height: 0; 
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid black;
+  display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-left: 10px;
+}
+.shop-arrow-white {
+  width: 0; 
+  height: 0; 
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid white;
+  display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-left: 10px;
+}
+.shop-arrow-sm {
+  width: 0; 
+  height: 0; 
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid black;
+  display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-left: 5px;
+}
+.btnlinktext {
+	color: white;
+	text-decoration: underline;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+/* Header with Icons */
+/*.header-container {
+	background-color: white;
+	color: rgb(44,61,78);
+	width: 100%;
+	display: inline-block;
+	padding: 40px 0;
+}
+.header-container h2 {
+	text-transform: uppercase;
+	text-align: center;
+	margin: 20px auto;
+	font-size: 25px;
+}
+.icons-wrapper {
+	width: fit-content;
+	margin: 0 auto;
+	display: block;
+}
+.icon-container {
+	width: 15%;
+	margin: 20px 5px;
+	vertical-align: top;
+    display: inline-block;
+}
+.icon-container:hover .section-title {
+	color: #50a4d9;
+	cursor: pointer;
+}
+.icon-container img {
+	width: 100px;
+	height: auto;
+	margin: 0 auto 10px auto;
+	display: block;
+}
+.icon-title {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 16px;
+	margin: 10px auto;
+}
+.section-title {
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 18px;
+	margin: 10px auto;
+}
+.stickyheader {
+	position: fixed;
+	top: 90px;
+	width: 100%;
+	padding: 40px 0 0;
+}
+.stickyheader h2 {
+	font-size: 20px ;
+	margin: 20px auto 3px;
+}
+.stickyheader + .digco-section {
+  padding-top: 330px;
+}
+
+.icon-container-sticky {
+	width: 120px;
+    margin: 5px 0;
+}
+.icon-container-sticky img {
+	width: 0px;
+    margin: 0 auto 0px auto;
+    display: none;
+}
+.icon-container-sticky h3 {
+	font-size: 12px;
+    margin: 4px auto;
+}
+
+
+Icons
+#images-hover, #videos-hover, #catalogs-hover, #flyers-hover, #logos-hover, #social-hover {
+	display: none;
+}
+#images-icon:hover #images-hover {
+	display: block;
+}
+#images-icon:hover #images-nohover {
+	display: none;
+}
+#videos-icon:hover #videos-hover {
+	display: block;
+}
+#videos-icon:hover #videos-nohover {
+	display: none;
+}
+#catalogs-icon:hover #catalogs-hover {
+	display: block;
+}
+#catalogs-icon:hover #catalogs-nohover {
+	display: none;
+}
+#flyers-icon:hover #flyers-hover {
+	display: block;
+}
+#flyers-icon:hover #flyers-nohover {
+	display: none;
+}
+#logos-icon:hover #logos-hover {
+	display: block;
+}
+#logos-icon:hover #logos-nohover {
+	display: none;
+}
+#social-icon:hover #social-hover {
+	display: block;
+}
+#social-icon:hover #social-nohover {
+	display: none;
+}
+*/
+
+
+/* Header no Icon */
+.dig-header {
+	background-color: #00143a;
+	background: linear-gradient(0deg, rgba(10,37,56,1) 0%, rgba(10,37,56,1) 20%, rgba(6,120,144,1) 55%, rgba(25,147,171,1) 100%);
+	width: 100%;
+	max-height: 1100px;
+	overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 200px 0 130px;
+}
+.dig-header-text {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
+.dig-header h2 {
+	text-transform: uppercase;
+	font-size: 25px;
+	padding: 30px 0;
+}
+.dig-header p {
+	font-size: 15px;
+	padding: 10px 0;
+}
+
+
+/* Sections */
+.digco-section {
+	color: rgb(44,61,78);
+	width: 100%;
+	margin: auto;
+	padding: 30px 0;
+}
+.section-title {
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 18px;
+	margin: 10px auto;
+	color: black;
+}
+.digco-container {
+	width: 1000px;
+	margin: auto;
+}
+.section-headers {
+	font-size: 15px;
+	margin-bottom: 10px;
+	color: black;
+}
+.viewall {
+    margin-left: 5px;
+}
+.viewall:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+/* Images & Product Data */
+#images-section {
+}
+.product-data {
+	margin: 25px 0;
+	line-height: 1.7;
+}
+.product-box {
+	background-color: white;
+    padding: 10px 20px;
+    border: 1px solid grey;
+    display: inline-block;
+    width: 43%;
+    vertical-align: top;
+    height: 360px;
+}
+.product-box h3 {
+	text-transform: uppercase;
+	font-size: 16px;
+	padding: 10px 5px;
+}
+#data-header {
+	font-family: "AvenirNextB";
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+#inventory-feed {
+	float: right;
+}
+.library-button, .data-button {
+	font-size: 12px;
+    margin: 10px 0;
+    vertical-align: top;
+    width: 100px;
+}
+.product-box ul {
+	margin-bottom: 10px;
+}
+#sublist>li {
+	list-style-type: none;
+}
+#sublist > li > span {
+	margin: 0 5px;
+    margin-left: -25px;
+}
+#data-feed-jotform {
+	width: 600px;
+	margin: auto;
+}
+#addt-asset-request {
+	margin: 10px 0;
+	text-align: center;
+	font-size: 15px;
+	color: black;
+}
+#addt-asset-request a {
+	font-family: "AvenirNextB";
+	cursor: pointer;
+	font-size: 15px;
+	color: #50a4d9;
+}
+#addt-asset-request a:hover {
+	text-decoration: underline;
+}
+
+/* Videos */
+.videos-wrapper {
+	margin-top: 10px;
+}
+.video-container {
+	width: 24.7%;
+	display: inline-block;
+	vertical-align: text-top;
+	margin-bottom: 25px;
+}
+.video-container > iframe {
+	width: 100%;
+	height: auto;
+}
+.thumboverlay {
+	width: 245px;
+	height: 150px;
+	position: absolute;
+}
+.video-text {
+	width: 90%;
+	margin: auto;
+}
+.video-text h2 {
+	font-size: 13px;
+    margin: 5px 0;
+    text-align: center;
+    color: black;
+}
+
+/* Video Popup */
+.video-popup {
+    z-index: 999;
+    display: none;
+}
+.video-popup .vidoverlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.66);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.video-popup .vid-show {
+    width: 600px;
+    height: 350px;
+    background: black;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden
+}
+.vid-show span{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    cursor: pointer;
+}
+.vid-show iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Catalogs & Flyers */
+.catalog-flyer-wrapper {
+	width: 100%;
+	margin: 10px auto;
+}
+.catalog-flyer-block {
+	width: 48%;
+	display: inline-block;
+	vertical-align: top;
+}
+.catalog-flyer-block img {
+	width: 85%;
+}
+
+
+/* Logos & Web Banners */
+.logos-banners-wrapper {
+	margin-top: 15px;
+}
+.logobanner-container {
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+.logos-banners-block {
+	width: 32%;
+    display: inline-block;
+    margin: 10px 10px 10px 0;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.logos-banners-block img {
+	width: 100%;
+}
+
+
+
+/* Social */
+.social-follow {
+    background-color: rgb(0,20,58);
+    padding: 30px 0;
+    margin-bottom: 10px;
+}
+.social-follow-icons {
+	width: fit-content;
+	margin: auto;
+	display: block;
+}
+.social-follow h3 {
+    color: white;
+    font-family: 'AvenirNextB';
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 22px;
+    text-align: center;
+    }
+.social-follow a {
+    width: 55px;
+    display: inline-block;
+    height: fit-content;
+    padding: 0 4px;
+}
+.social-follow img {
+    width: 55px;
+    display: inline-block;
+    }
+
+#fb-white-dc, #ig-white-dc, #li-white-dc, #tw-white-dc, #yt-white-dc {
+	display: none;
+}
+
+#fb-icon-dc:hover #fb-grey-dc, #ig-icon-dc:hover #ig-grey-dc, #li-icon-dc:hover #li-grey-dc, #tw-icon-dc:hover #tw-grey-dc, #yt-icon-dc:hover #yt-grey-dc {
+	display: none;
+}
+#fb-icon-dc:hover #fb-white-dc, #ig-icon-dc:hover #ig-white-dc, #li-icon-dc:hover #li-white-dc, #tw-icon-dc:hover #tw-white-dc, #yt-icon-dc:hover #yt-white-dc {
+	display: inline-block;
+}
+
+  
+    
+.social-posts h3 {
+    color: black;
+    font-family: 'AvenirNextB';
+    margin: 15px auto 5px;
+    font-size: 18px;
+    text-align: center;
+    }
+.social-posts p {
+	color: black;
+	font-size: 12px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.social-post-block {
+	width: 24.7%;
+	display: inline-block;
+}
+.social-post-block img {
+	width: 100%;
+	display: inherit;
+}
+
+</style>
+
+<div class="digco-wrapper">
+
+<!-- Header 
+<div class="header-container" id="header-container">
+	<h2>Your online resource for tools you can use</h2>
+	
+	<div class="icons-wrapper">	
+	
+	  <div class="icon-container" id="images-icon">
+	    <a href="#images-anchor">
+	    <img src="https://static.augustasportswear.com/marketing/CS-Icons-7-HOVER.png" id="images-hover">
+	    <img src="https://static.augustasportswear.com/marketing/CS-Icons-7.png" id="images-nohover">
+		<h3 class="icon-title">Images & Product Data</h3>
+		</a>
+	  </div>
+	  
+	  <div class="icon-container" id="videos-icon">
+	    <a href="#videos-anchor">
+	    <img src="https://static.augustasportswear.com/marketing/CS-Icons-2-HOVER.png" id="videos-hover">
+	    <img src="https://static.augustasportswear.com/marketing/CS-Icons-2.png" id="videos-nohover">
+		<h3 class="icon-title">Videos</h3>
+		</a>
+	  </div>
+	  
+	  <div class="icon-container" id="catalogs-icon">
+	    <a href="#catalogs-anchor">
+	    <img src="https://static.augustasportswear.com/marketing/CS-Icons-3-HOVER.png" id="catalogs-hover">
+	    <img src="https://static.augustasportswear.com/marketing/CS-Icons-3.png" id="catalogs-nohover">
+		<h3 class="icon-title">Catalogs</h3>
+		</a>
+	  </div>
+	  
+	  <div class="icon-container" id="flyers-icon">
+	    <a href="#flyers-anchor">
+	    <img src="https://static.augustasportswear.com/marketing/CS-Icons-4-HOVER.png" id="flyers-hover">
+	    <img src="https://static.augustasportswear.com/marketing/CS-Icons-4.png" id="flyers-nohover">
+		<h3 class="icon-title">Prebuilt Flyers</h3>
+		</a>
+	  </div>
+	  
+	  <div class="icon-container" id="logos-icon">
+	   <a href="#logos-anchor">
+	   <img src="https://static.augustasportswear.com/marketing/CS-Icons-5-HOVER.png" id="logos-hover">
+	   <img src="https://static.augustasportswear.com/marketing/CS-Icons-5.png" id="logos-nohover">
+		<h3 class="icon-title">Logos & Web Banners</h3>
+		</a>
+	  </div>
+	  
+	  <div class="icon-container" id="social-icon">
+	    <a href="#social-anchor">
+	    <img src="https://static.augustasportswear.com/marketing/CS-Icons-6-HOVER.png" id="social-hover">
+	    <img src="https://static.augustasportswear.com/marketing/CS-Icons-6.png" id="social-nohover">
+		<h3 class="icon-title">Social</h3>
+		</a>
+	  </div>
+	  
+	</div>
+</div>
+-->
+
+<!-- Header no icons -->
+<div class="dig-header">
+	<div class="dig-header-text">
+	<h2>Your online resource for tools you can use</h2>
+	<p>Discover all of the digital tools Augusta Sportswear Brands has to offer</p>
+	</div>
+</div>
+
+<!-- Sections -->
+<div class="digco-section" id="images-section">
+	<span id="images-anchor"></span>
+	
+	<div class="digco-container">
+	<h3 class="section-title">images & product data</h3>
+	<p>Download full product data</p>
+	
+	<div class="product-data">
+	  <div class="product-box" id="data-library">
+		<a target="_blank" class="button secondary library-button" href="https://augustasportswear.inrivercloud.com:8088/">Get Started</a>
+		<h3>Content Store - Product Images and Data</h3>
+		<p>
+		<ul>
+<li>Full product specifications</li>
+<li>Full size product images in every color</li>
+<li>Build your own product file</li>
+<li>Best used for:</li>
+<ul id="sublist">
+<li><span>&mdash; </span>Custom websites</li>
+<li><span>&mdash; </span>Digital content</li>
+<li><span>&mdash; </span>Printable sales material</li>
+</ul></ul>
+		Find product specifications like SKU, style, style name, UPC, size, and weight to include on your website. With the ability to download full size product images in every color. Our Data Library makes it easier for you to create your custom website, digital content, and printable sales material.
+		</p>
+	</div>
+
+	  <div class="product-box" id="inventory-feed">
+	  <a class="button secondary data-button">Request Feed</a>
+	<h3>Data, Inventory & Image Feed (FTP)</h3>
+		<p><ul>
+<li>Full product specifications</li>
+<li>Full size product images in every color</li>
+<li>Customize to e-commerce platform</li>
+<li>Best used for:</li>
+<ul id="sublist">
+<li><span>&mdash; </span>Include current inventory</li>
+<li><span>&mdash; </span>Bulk upload to specific platforms</li>
+</ul></ul>
+		We recognize the times are changing and that some of our best business partners have a strong digital playbook. We have created a standard data feed file to help you upload product information and images for each and every single SKU. The current information includes: Style #, Item #, Item Name, Brand, Item Description, Category, MSRP, Product Image, and more…</p>
+	</div>
+			<h4 id="addt-asset-request">Couldn't find the images or data you were looking for in our <a target="_blank" href="https://augustasportswear.inrivercloud.com:8088/">Content store</a>? Fill out <a href="https://form.jotform.com/91475266958170" target="blank">this form</a> to request product assets.
+		</h4>
+	</div>
+
+<div class="data-feed-jotform" id="data-feed-jotform" style="display: none;">
+<div id="feed-form">
+
+
+    <iframe
+      id="JotFormIFrame-73638705269164"
+      allowtransparency="true"
+      allowfullscreen="true"
+      allow="geolocation; microphone; camera"
+      src="https://form.jotform.com/73638705269164"
+      frameborder="0"
+      style="width: 1px;
+      min-width: 100%;
+      height:957px;
+      border:none;"
+      scrolling="no"
+    >
+    </iframe>
+
+</div></div>
+	
+</div>
+</div>
+
+
+<div class="digco-section" id="videos-section">
+	<span id="videos-anchor"></span>
+	
+	<div class="digco-container">
+	<h3 class="section-title">Videos <a href="/catalogs"><span class="viewall">View All <span class="shop-arrow-sm"></span></span></a></h3>
+	<p>Some real neat vids</p>
+	
+	
+	 <div class="videos-wrapper">
+		
+	 <!-- FreeStyle Promo -->
+ 	<div class="video-container">
+    <div class="thumboverlay">
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QvI0zIDY9Ps?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>FreeStyle Sublimation | The Next Generation Design Experience</h2>
+ </div>
+</div> 
+
+	 <!-- Connected By Team 2.0 -->
+ 	<div class="video-container">
+    <div class="thumboverlay">
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/K2jsRG8WfMM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>Connected by Team</h2>
+ </div>
+</div>
+
+	<!-- Custom Solutions -->
+ 	<div class="video-container">
+    <div class="thumboverlay">
+    </div>
+    <iframe id="connected-team" width="560" height="315" src="https://www.youtube.com/embed/8rUdHUv2tIw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>Custom Solutions</h2>
+
+ </div>
+</div>
+
+     <!-- Full on Fleece -->
+ 	<div class="video-container">
+    <div class="thumboverlay">
+    </div>
+    
+    <iframe id="connected-team" width="560" height="315" src="https://www.youtube.com/embed/FBD1iipFVgc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>Full On Fleece</h2>
+ </div>
+ 
+</div>
+
+	 </div> <!-- end videos-wrapper -->
+	
+	<div class="video-popup">
+  <div class="vidoverlay"></div>
+  <div class="vid-show">
+    <span>X</span>
+    <iframe id="popup-video-box" src="" width="560" height="315" frameborder="0" autoplay encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
+
+<script>
+//Open video thumbnails
+$(function () {
+    "use strict";
+    
+    $(".thumboverlay").click(function () {
+        var $src = $(this).next("iframe").attr("src");
+        $(".video-popup").fadeIn();
+        $("#popup-video-box").attr("src", $src);
+    });
+    
+    $("span, .vidoverlay").click(function () {
+        $(".video-popup").fadeOut();
+    });
+    
+});
+</script>
+	
+	</div>
+
+</div>
+
+
+<div class="digco-section" id="catalogs-flyers-section">
+	<span id="videos-anchor"></span>
+	
+	<div class="digco-container">
+	<h3 class="section-title">Catalogs & Flyers</h3>
+	<p>View, download & customize our catalogs and flyers</p>
+	
+	
+	 <div class="catalog-flyer-wrapper">
+
+		<div class="catalog-flyer-block">
+		 <h3 class="section-headers">Catalogs <a href="/catalogs"><span class="viewall">View All <span class="shop-arrow-sm"></span></span></a></h3>
+			
+			<a href="https://static.augustasportswear.com/marketing/2019 WEBSITE/Catalogs/ASB-2020-Catalog.pdf" target="blank">
+<img src="https://static.augustasportswear.com/marketing/2019 WEBSITE/Catalogs/ASB-2020-Catalog-Cover.png"></a>
+		</div>
+		
+		
+		<div class="catalog-flyer-block">
+		  <h3 class="section-headers">Flyers <a href="/prebuilt-flyers"><span class="viewall">View All <span class="shop-arrow-sm"></span></span></a></h3>
+		  <a href="https://static.augustasportswear.com/marketing/2019 WEBSITE/Prebuilt Flyers/Tonal-Fleece-2020-editable.pdf" target="blank">
+<img src="https://static.augustasportswear.com/marketing/2019 WEBSITE/Prebuilt Flyers/Tonal-Fleece-2020-editable.png" >
+</a>
+		</div>
+
+	 </div> <!-- end catalogs & flyers wrapper -->
+
+	
+	</div>
+
+</div>
+
+
+<div class="digco-section" id="logos-section">
+	<span id="logos-anchor"></span>
+	
+	<div class="digco-container">
+	<h3 class="section-title">Logos & Web Banners</h3>
+	<p>Download our logos and brand guidelines or embed web banners on your own website</p>
+	
+
+		<div class="logos-banners-wrapper">
+		 <h3 class="section-headers">Logos <a href="/logos"><span class="viewall">View All <span class="shop-arrow-sm"></span></span></a></h3>
+
+<div class="logobanner-container">
+	<div class="logos-banners-block">
+ 	 <a href="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Stacked_withIcons.jpg" target="blank">
+  	<img src="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Stacked_withIcons.jpg">
+  	</a>
+</div>
+  	<div class="logos-banners-block">
+  	<a href="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Stacked_TwoLines.jpg" target="blank">
+  	<img src="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Stacked_TwoLines.jpg">
+  	 </a>
+  	 </div>
+	<div class="logos-banners-block">
+  	 <a href="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Stacked_ThreeLines_withIcons.jpg" target="blank">
+  	 <img src="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Stacked_ThreeLines_withIcons.jpg">
+  	 </a>
+  	 </div>
+</div> 
+
+  	 </div>
+		
+		
+		<div class="logos-banners-wrapper">
+		  <h3 class="section-headers">Web Banners <a href="/logos"><span class="viewall">View All <span class="shop-arrow-sm"></span></span></a></h3>
+		
+		
+<div class="logobanner-container">
+		<div class="logos-banners-block">
+		 <a href="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Stacked_withIcons.jpg" target="blank">
+  	<img src="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Stacked_withIcons.jpg">
+  	</a>
+  	</div>
+  		<div class="logos-banners-block">
+  	<a href="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Stacked_TwoLines.jpg" target="blank">
+  	<img src="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Stacked_TwoLines.jpg">
+  	 </a>
+  	 </div>
+  	 	<div class="logos-banners-block">
+  	 <a href="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Stacked_ThreeLines_withIcons.jpg" target="blank">
+  	 <img src="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Stacked_ThreeLines_withIcons.jpg">
+  	 </a>
+  	 </div>
+</div>	
+		
+		</div>
+
+
+	
+	</div>
+
+</div>
+
+
+<div class="digco-section" id="social-section">
+<span id="social-anchor"></span>
+	
+	<div class="digco-container">
+	<h3 class="section-title">Social</h3>
+
+		<div class="social-follow">
+		  <h3>STAY CONNECTED!</h3>
+		   <div class="social-follow-icons">
+		 <a href="https://www.facebook.com/augustaactive/" target="blank" id="fb-icon-dc">
+		  <img src="https://static.augustasportswear.com/marketing/Social_Icon_Grey_.png" id="fb-grey-dc">
+		  <img src="https://static.augustasportswear.com/marketing/Social_Icon_White_.png" id="fb-white-dc">
+		  </a>
+		  
+		  <a href="https://www.instagram.com/augustaactive/" target="blank" id="ig-icon-dc">
+		  <img src="https://static.augustasportswear.com/marketing/Social_Icon_Grey_2.png" id="ig-grey-dc">
+		  <img src="https://static.augustasportswear.com/marketing/Social_Icon_White_2.png" id="ig-white-dc">
+		  </a>
+		  
+		  <a href="https://www.linkedin.com/company/augusta-sportswear/" target="blank" id="li-icon-dc">
+		  <img src="https://static.augustasportswear.com/marketing/Social_Icon_Grey_3.png" id="li-grey-dc">
+		  <img src="https://static.augustasportswear.com/marketing/Social_Icon_White_3.png" id="li-white-dc">
+		  </a>
+		  
+		  <a href="https://twitter.com/augustaactive" target="blank" id="tw-icon-dc">
+		  <img src="https://static.augustasportswear.com/marketing/Social_Icon_Grey_4.png" id="tw-grey-dc">
+		  <img src="https://static.augustasportswear.com/marketing/Social_Icon_White_4.png" id="tw-white-dc">
+		  </a>
+		  
+		  <a href="https://www.youtube.com/user/augustasportswear" target="blank" id="yt-icon-dc">
+		  <img src="https://static.augustasportswear.com/marketing/Social_Icon_Grey_5.png" id="yt-grey-dc">
+		  <img src="https://static.augustasportswear.com/marketing/Social_Icon_White_5.png" id="yt-white-dc">
+		  </a>   
+		  	</div>
+		  </div>
+		  	
+		  	<div class="social-posts">
+		  	<h3>Use these social posts in your own social media</h3>
+		  	<p>Click to view image in a new tab or right-click and save image</p>
+		  	
+		<div class="social-post-block">
+		 <a href="https://static.augustasportswear.com/marketing/FabricsTech%2DAlternative%2D3DRegulateSoftshell.png" target="blank">
+		  <img src="https://static.augustasportswear.com/marketing/FabricsTech%2DAlternative%2DStormDfend.png">
+		 </a>
+		</div>
+		
+		<div class="social-post-block">
+		 <a href="https://static.augustasportswear.com/marketing/FabricsTech%2DAlternative%2D3DRegulateSoftshell.png" target="blank">
+		  <img src="https://static.augustasportswear.com/marketing/FabricsTech%2DAlternative%2D3DRegulateSoftshell.png">
+		 </a>
+		</div>
+		
+		<div class="social-post-block">
+		 <a href="https://static.augustasportswear.com/marketing/FabricsTech%2DAlternative%2D3DRegulateLightweightKnit.png" target="blank">
+		  <img src="https://static.augustasportswear.com/marketing/FabricsTech%2DAlternative%2D3DRegulateLightweightKnit.png">
+		 </a>
+		</div>
+		
+		<div class="social-post-block">
+		 <a href="https://static.augustasportswear.com/marketing/FabricsTech%2DAlternative%2Dtruehuetech.png" target="blank">
+		  <img src="https://static.augustasportswear.com/marketing/FabricsTech%2DAlternative%2Dtruehuetech.png">
+		 </a>
+		</div>
+		
+		<div class="social-post-block">
+		 <a href="https://static.augustasportswear.com/marketing/FabricsTech%2DAlternative%2DConvergeEKnit.png" target="blank">
+		  <img src="https://static.augustasportswear.com/marketing/FabricsTech%2DAlternative%2DConvergeEKnit.png">
+		 </a>
+		</div>
+		
+		<div class="social-post-block">
+		 <a href="https://static.augustasportswear.com/marketing/FabricsTech%2DAlternative%2D3DRegulateSIKnit.png" target="blank">
+		  <img src="https://static.augustasportswear.com/marketing/FabricsTech%2DAlternative%2D3DRegulateSIKnit.png">
+		 </a>
+		</div>
+		
+		<div class="social-post-block">
+		 <a href="https://static.augustasportswear.com/marketing/FabricsTech%2DAlternative%2D3DRegulateSIKnit.png" target="blank">
+		  <img src="https://static.augustasportswear.com/marketing/FabricsTech%2DAlternative%2D3DRegulateSIKnit.png">
+		 </a>
+		</div>
+			</div>
+</div>
+</div>
+
+</div> <!-- end page wrapper -->
+
+<script>
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 600, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+  
+
+$(document).ready(function(openFeedrequest){	
+    $('.data-button').click(function(){
+      $('.data-feed-jotform').slideToggle();
+    }); 
+  });
+
+
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 100 && $(window).width() >= 769) {
+       $('.header-container').addClass('stickyheader');   
+       $('.icon-container').addClass('icon-container-sticky')        
+    }
+    else {
+       $('.header-container').removeClass('stickyheader');
+       $('.icon-container').removeClass('icon-container-sticky')   
+    }
+});
+
+</script>

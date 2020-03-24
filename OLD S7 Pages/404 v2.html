@@ -1,0 +1,82 @@
+<!-- 404 v2 -->
+
+<style>
+.containerBox {
+  position: relative;
+  display: inline-block;
+  background-color: rgb(82, 192, 205);
+  width: 100%;
+  height: 500px;
+}
+
+.text-box {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  top: 8px;
+  left: 16px;
+  padding: 50px;
+  overflow: auto;
+  color: white;
+}
+.text-box h1 {
+	font-size: 50px;
+	font-weight: 800; 
+}
+.img-responsive {
+  display: block;
+  float: right;
+  height: 500px;
+  margin: auto;
+  padding: auto;
+}
+.errorparas {
+  font-size: 16px;
+  width: 65%;
+  margin-top: auto;
+  margin-left: 5px;
+}
+.shop-now {
+	padding: 10px;
+	margin: 10px;
+	background: #9c131a;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 420px){
+.img-responsive {
+  	  display: none;
+	}
+.text-box {
+  	position: absolute;
+  	top: 4px;
+  	left: 6px;
+  	padding: 10px;
+}
+.text-box h1 {
+	  font-size: 35px;
+	  padding: 5px;
+	}
+.errorparas {
+	width: 80%;
+   }
+}
+</style>
+
+
+<div class="containerBox">
+  <img class="img-responsive" src="http://s7d4.scene7.com/is/image/OnlineSportswear/404_runner-01?&fmt=png-alpha">
+  <div class='text-box'>
+  <h1>Oops! Looks like we ran into a problem!</h1>
+    <p class='errorparas'> We can't seem to find the page you are looking for. 
+  	  <br>Perhaps the URL is misspelled, or you clicked on a broken link.
+  	  <br>No worries! Utilize the search bar or menu above.</p>
+  	  <a href="https://www.augustasportswear.com"><button class="shop-now">Shop Now</button></a>
+  	  <p class='errorparas' style="font-size: 14px;">Still can't find what you are looking for or need additional help? 
+  	  <br>Contact us at <a href="tel:800-237-6695" style="color: #9c131a";>800-237-6695</a>
+  	  <br>Email <a href="mailto:sales@augustasportswear.com" style="color: #9c131a";>Customer Care</a>
+  	  <br>Hours: 8am-7pm EST Mon-Fri </p>
+  </div>
+</div>

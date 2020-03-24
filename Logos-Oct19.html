@@ -1,0 +1,753 @@
+<!-- Media Page -->
+<style>
+/* Header Tabs */
+.tabwrapper {
+	max-width: 1920px;
+	margin: auto;
+}
+.tabwrapper img {
+	max-width: 100%;
+}
+.media-tab-buttons {
+    overflow: hidden;
+    margin: 30px auto;
+    position: relative;
+    top: 27%;
+    max-width: 80%;
+    display: flex;
+}
+
+.media-tab-buttons button {
+    float: left;
+    border: 1px solid #50a4d9;
+    cursor: pointer;
+    padding: 12px 9px;
+    margin: 1px;
+    transition: 0.3s;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #50a4d9;
+    background-color: rgba(71,71,71, 0);
+    font-family: "Avenir", "Helvetica Neue", Helvetica, sans-serif;
+    letter-spacing: 1px;
+    width: 50%;
+}
+.media-tab-buttons button:hover {
+    background-color: #50a4d9;
+    border: 1px solid #50a4d9;
+    color: white;
+}
+.media-tab-buttons button.active {
+    background-color: #50a4d9;
+    color: white;
+	font-weight: 600;
+	font-size:16px;
+}
+
+/* Tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    letter-spacing: 1px;
+    min-height: 300px;
+}
+.guides-content-wrapper {
+	width: 95%;
+	margin: 10px auto;
+}
+.logos-content {
+	display: none;
+	height: 400px;
+	overflow: scroll;
+	border: 1px solid #e7e7e8;
+}
+.brandguides-content {
+	display: block;
+}
+#brandguides-content {
+	position: relative;
+    margin-bottom: 10%;
+    width: fit-content;
+    margin: auto;
+    height: 100px;
+}
+
+.tabcontent h3 {
+	text-transform: uppercase;
+	background-color: #e7e7e8;
+	color: black;
+	padding: 10px 30px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 300;
+}
+.tabcontent p {
+	margin: 10px;
+}
+.logosheader {
+	line-height: 1.4;
+}
+
+/* Brand Guides boxes */
+ .brandguides-box {
+ 	float: left;
+ 	background-color: lightgray;
+ 	color: black;
+ 	margin: 5px;
+ 	border: 1px solid black;
+ 	width: 250px;
+ 	height: auto;
+ }
+ .brandguides-box img {
+ 	width: 100%;
+	vertical-align: text-top;
+	cursor: pointer;
+ }
+.brandguides-box-text {
+ 	text-align: left;
+ 	font-size: 11px;
+ 	text-transform: uppercase;
+ 	float: left;
+ }
+/* .brandguides-box-text p {
+ 	float: left;
+ 	width: 47%;
+ } */
+.brandguides-box-text button {
+ 	font-size: 12px;
+ 	margin: 0 10px 20px 10px;
+ }
+ 
+/* Logo boxes */
+.logos-container {
+    margin: 10px auto;
+    display: inline-block;
+    width: 24%;
+    vertical-align: middle;
+}
+.logo-box {
+	background-color: white;
+    color: black;
+    margin: 5px auto;
+    border: 1px solid black;
+    padding: 10px;
+    width: 85%;
+    height: 100%;
+    display: -webkit-box;
+ }
+.logo-box img {
+ 	width: 100%;
+	vertical-align: text-top;
+ }
+.logo-box p {
+ 	text-transform: uppercase;
+ 	margin: 2px auto;
+ 	width: inherit;
+ 	text-align: center;
+ 	font-size: 12px;
+ }
+.logo-box-text {
+ 	text-align: center;
+ 	font-size: 13px;
+ 	text-transform: uppercase;
+ 	margin-top: 20px;
+ 	color: black;
+ } 
+.logo-box-text h2 {
+	font-family:'AvenirNextB';
+	margin: 5px 10px;
+}
+.logo-box-text button {
+	font-size: 12px;
+	margin: 20px 10px;
+	cursor: pointer;
+}
+
+#ph_horz_white > .logo-box, #ph_icon_white > .logo-box, #ph_stack_white > .logo-box, #ph_stack_white_red > .logo-box {
+	background-color: black;
+}
+
+ #onlinelinks-content {
+ 	width: 80%;
+ 	  border-bottom: 2px solid;
+ }
+ #Online-Links h2 {
+ 	margin-bottom: 40px;
+ 	text-align: center;
+ 	font-size: 17px;
+ 	text-transform: uppercase;
+ 	color: black;
+ }
+ .onlinelinks-box {
+ 	display: inline-block;
+ 	width: 40%;
+ 	margin: 0 10px 20px auto;
+ }
+ .onlinelinks-box h4 {
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
+ }
+ .onlinelinks-box img {
+ 	width: 100%;
+ }
+ .onlinelinks-box-text {
+ 	text-align: left;
+ 	font-size: 11px;
+	display: inline-block;
+	width: 50%;
+	vertical-align: middle;
+	color: black;
+ }
+
+#contactus-content p, #contactus-content a {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+    }
+    
+    
+    
+    #logohowto {
+    	    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+    }
+
+@media screen and (max-width: 1024px) {
+	.logos-container {
+		width: 32%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.media-tab-buttons {
+		max-width: 96%;
+	}
+	#brandguides-content {
+	    margin: auto;
+    	float: none;
+	}
+	.brandguides-box {
+	    margin: auto;
+   	 	width: 100%;
+    	max-width: 250px;
+    	float: none;
+	}
+	.brandguides-box-text {
+		text-align: center;
+	}
+		.logos-container {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 620px) {
+	.media-tab-buttons {
+		top: 4%;
+		display: block;
+	}
+	.media-tab-buttons button {
+		width: 99%;
+		padding: 10px;
+		font-size: 14px;
+	}
+	.logos-content {
+		width: 100%;
+	}
+}
+</style>
+
+<div class="tabwrapper">
+	<img src="https://static.augustasportswear.com/marketing/PO1-DecorationPage-header1.jpg">
+</div>
+<div class="media-tab-buttons">
+  <button class="tablinks" onclick="openMedia(event, 'Brand-Guides')" id="defaultOpen">Brand Guidelines</button>
+  <button class="tablinks" onclick="openMedia(event, 'Logos')">Logos</button>
+<button class="tablinks" onclick="openMedia(event, 'Online-Links')">Link To Our Website</button> 
+  <button class="tablinks" onclick="openMedia(event, 'Brand-Contact')">Contact Us</button>
+</div>
+
+<!-- Brand Guidelines Tab Content -->
+<div id="Brand-Guides" class="tabcontent">
+  
+<div class="guides-content-wrapper" id="brandguides-content">
+
+  <div class="brandguides-box">
+  	<img src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Branding%20&%20Logos/ASB_BrandGuides_2019.jpg">
+  	</div>
+  	<div class="brandguides-box-text"> 
+  	 <p>Follow brand guidelines when using Augusta Sportswear Brands media.</p>
+  	 <a class="button primary" href="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Branding%20&%20Logos/ASB_BrandGuides_2019.pdf" target="blank">Download Brand Guidelines</a>
+  	 </div>
+  	 
+  </div>
+  
+</div>
+
+<!-- Logos Tab Content -->
+<div id="Logos" class="tabcontent">
+  
+  <p id="logohowto">To download logos, click download button to open the image. Then right-click and save.</p>
+  
+<div class="guides-content-wrapper" id="all-brands">
+ <h3 class="logosheader">Augusta Sportswear Brands</h3>
+  <div class="logos-content">
+   
+ 	<div class="logos-container" id="brands_stack_icons"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Stacked_withIcons.jpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Stacked with Icons</h2>
+  	 <a href="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Stacked_withIcons.jpg" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+    
+   	<div class="logos-container" id="brands_stack_two"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Stacked_TwoLines.jpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>stacked in 2 lines</h2>
+  	 <a href="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Stacked_TwoLines.jpg" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+  	<div class="logos-container" id="brands_stack_three"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Stacked_ThreeLines.jpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Stacked in 3 lines</h2>
+  	 <a href="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Stacked_ThreeLines.jpg" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+    <div class="logos-container" id="brands_stack_threeicons"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Stacked_ThreeLines_withIcons.jpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>stacked in three lines with icons</h2>
+  	 <a href="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Stacked_ThreeLines_withIcons.jpg" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+  	<div class="logos-container" id="brands_horz"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Horizontal.jpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Horizontal</h2>
+  	 <a href="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Horizontal.jpg" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+  	<div class="logos-container" id="brands_horz_logos"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Horizontal_withLogos.jpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Horizontal with Logos</h2>
+  	 <a href="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Horizontal_withLogos.jpg" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+
+  	<div class="logos-container" id="brands_horz_nvylogos"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Horizontal_withlogos_navy.jpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>horizontal with navy logos</h2>
+  	 <a href="https://static.augustasportswear.com/marketing/AugustaSportswearBrands_Horizontal_withlogos_navy.jpg" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+   </div>
+  </div>
+  
+<div class="guides-content-wrapper" id="augusta-logos">
+ <h3 class="logosheader">Augusta Sportswear</h3>
+  <div class="logos-content">
+ 
+ <div class="logos-container" id="aug_color"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/AugustaSportswear_colorjpg.jpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Primary - Color - Augusta Sportswear</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://static.augustasportswear.com/marketing/AugustaSportswear_colorjpg.jpg" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+ <div class="logos-container" id="aug_black"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/AugustaSportswear_blackjpg.jpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Primary - Black - Augusta Sportswear</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://static.augustasportswear.com/marketing/AugustaSportswear_blackjpg.jpg" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+ <div class="logos-container" id="aug_color_stack"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/AugustaSportswear_stacked_colorjpg.jpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Stacked - Color - Augusta Sportswear</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://static.augustasportswear.com/marketing/AugustaSportswear_stacked_colorjpg.jpg" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+ <div class="logos-container" id="aug_black_stack"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/AugustaSportswear_stacked_blackjpg.jpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Stacked - Black - Augusta Sportswear</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://static.augustasportswear.com/marketing/AugustaSportswear_stacked_blackjpg.jpg" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+   </div>
+  </div>
+  
+<div class="guides-content-wrapper" id="holloway-logos">
+ <h3 class="logosheader">Holloway Sportswear</h3>
+  <div class="logos-content">
+ 
+  <div class="logos-container" id="hol_color"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/Holloway_colorjpg.jpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Primary - Color - Holloway Sportswear</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://static.augustasportswear.com/marketing/Holloway_colorjpg.jpg" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+ <div class="logos-container" id="hol_black"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/Holloway_blackjpg.jpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Primary - Black - Holloway Sportswear</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://static.augustasportswear.com/marketing/Holloway_blackjpg.jpg" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+ <div class="logos-container" id="hol_color_stack"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/Holloway_stacked_colorjpg.jpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Stacked - Color - Holloway Sportswear</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://static.augustasportswear.com/marketing/Holloway_stacked_colorjpg.jpg" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+ <div class="logos-container" id="hol_black_stack"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/Holloway_stacked_blackjpg.jpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Stacked - Black - Holloway Sportswear</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://static.augustasportswear.com/marketing/Holloway_stacked_blackjpg.jpg" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+   </div>
+  </div>
+  
+<div class="guides-content-wrapper" id="h5-logos">
+ <h3 class="logosheader">High Five Sportswear</h3>
+  <div class="logos-content">
+ 
+  <div class="logos-container" id="h5_color"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/HighFive_colorjpg.jpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Primary - Color - High Five Sportswear</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://static.augustasportswear.com/marketing/HighFive_colorjpg.jpg" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+ <div class="logos-container" id="h5_black"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/HighFive_blackjpg.jpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Primary - Black - High Five Sportswear</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://static.augustasportswear.com/marketing/HighFive_blackjpg.jpg" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+ <div class="logos-container" id="h5_color_stack"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/HighFive_stacked_colorjpg.jpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Stacked - Color - High Five Sportswear</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://static.augustasportswear.com/marketing/HighFive_stacked_colorjpg.jpg" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+ <div class="logos-container" id="h5_black_stack"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/HighFive_stacked_blackjpg.jpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Stacked - Black - High Five Sportswear</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://static.augustasportswear.com/marketing/HighFive_stacked_blackjpg.jpg" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+   </div>
+  </div>
+  
+<div class="guides-content-wrapper" id="russell-logos">
+ <h3 class="logosheader">Russell Athletic</h3>
+  <div class="logos-content">
+ 
+<div class="logos-container" id="rus_color"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/RussellAthletic_colorjpg.jpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Primary - Color - Russell Athletic</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://static.augustasportswear.com/marketing/RussellAthletic_colorjpg.jpg" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+ <div class="logos-container" id="rus_black"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/RussellAthletic_blackjpg.jpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Primary - Black - Russell Athletic</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://static.augustasportswear.com/marketing/RussellAthletic_blackjpg.jpg" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+ <div class="logos-container" id="rus_color_stack"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/RussellAthletic_stacked_colorjpg.jpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Stacked - Color - Russell Athletic</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://static.augustasportswear.com/marketing/RussellAthletic_stacked_colorjpg.jpg" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+   <div class="logos-container" id="rus_black_stack"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/RussellAthletic_stacked_blackjpg.jpg">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Stacked - Black - Russell Athletic</h2>
+  	 <p>Reference the Brand Guidelines for use</p>
+  	 <a href="https://static.augustasportswear.com/marketing/RussellAthletic_stacked_blackjpg.jpg" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+   </div>
+  </div>
+  
+<div class="guides-content-wrapper" id="pacific-logos">
+ <h3 class="logosheader">Pacific Headwear</h3>
+  <div class="logos-content">
+ 
+	<div class="logos-container" id="ph_color_withicon"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/Pacific%5FwithIcon%5FColor.png">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Color Logo with Icon</h2>
+  	 <a href="https://static.augustasportswear.com/marketing/Pacific_withIcon_Color.png" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+	<div class="logos-container" id="ph_horz_color"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/PacificHeadwear%5FLogo%5FHorizontal%5FColor.png">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>horizontal - color</h2>
+  	 <a href="https://static.augustasportswear.com/marketing/PacificHeadwear_Logo_Horizontal_Color.png" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+  	<div class="logos-container" id="ph_horz_white"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/PacificHeadwear%5FLogo%5FHorizontal%5FWhite.png">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>horizontal - white</h2>
+  	 <a href="https://static.augustasportswear.com/marketing/PacificHeadwear%5FLogo%5FHorizontal%5FWhite.png" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+
+  	<div class="logos-container" id="ph_horz_navy"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/PacificHeadwear%5FLogo%5FHorizontal%5FNavy.png">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>horizontal - navy</h2>
+  	 <a href="https://static.augustasportswear.com/marketing/PacificHeadwear%5FLogo%5FHorizontal%5FNavy.png" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+  	<div class="logos-container" id="ph_icon_color"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/PacificHeadwear%5FLogo%5FIcon%5FColor.png">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>color icon</h2>
+  	 <a href="https://static.augustasportswear.com/marketing/PacificHeadwear_Logo_Icon_Color.png" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+  	<div class="logos-container" id="ph_icon_navy"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/PacificHeadwear%5FLogo%5FIcon%5Fnavy.png">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>navy icon</h2>
+  	 <a href="https://static.augustasportswear.com/marketing/PacificHeadwear_Logo_Icon_navy.png" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+  	<div class="logos-container" id="ph_icon_white"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/PacificHeadwear%5FLogo%5FIcon%5Fwhite.png">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>white icon</h2>
+  	 <a href="https://static.augustasportswear.com/marketing/PacificHeadwear%5FLogo%5FIcon%5Fwhite.png" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+  	<div class="logos-container" id="ph_stack_color"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/PacificHeadwear%5FLogo%5FStacked%5FColor.png">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>stacked - color</h2>
+  	 <a href="https://static.augustasportswear.com/marketing/PacificHeadwear_Logo_Stacked_Color.png" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+  	<div class="logos-container" id="ph_stack_white"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/PacificHeadwear%5FLogo%5FStacked%5FWhite.png">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>stacked - white</h2>
+  	 <a href="https://static.augustasportswear.com/marketing/PacificHeadwear%5FLogo%5FStacked%5FWhite.png" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+  	<div class="logos-container" id="ph_stack_white_red"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/PacificHeadwear%5FLogo%5FStacked%5FWhitewRed.png">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>White & Red Stack</h2>
+  	 <a href="https://static.augustasportswear.com/marketing/PacificHeadwear%5FLogo%5FStacked%5FWhitewRed.png" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>
+  
+  	<div class="logos-container" id="ph_asb_color"> 	
+  <div class="logo-box">
+  	<img src="https://static.augustasportswear.com/marketing/PacificHeadwear%5FwithASBlogo%5FColor%2D15.png">
+  	</div>
+  	<div class="logo-box-text"> 
+  	 <h2>Pacific Logo with ASB</h2>
+  	 <a href="https://static.augustasportswear.com/marketing/PacificHeadwear_withASBlogo_Color-15.png" target="blank"><button class="button primary">Download Logo</button></a>
+  	 </div>
+  </div>  
+   </div>
+  </div>
+  
+</div>
+
+<!-- HTML Image Links Tab Content -->
+<div id="Online-Links" class="tabcontent">
+  <h2>Send users to our website when they click on the logo shown.</h2>
+
+  
+<div class="guides-content-wrapper" id="onlinelinks-content">
+
+  <div class="onlinelinks-box">
+  	
+  	<h4>Banner Preview:</h4>
+  	<img src="https://static.augustasportswear.com/marketing/ASB_Horizontal_withLogos.png">
+  	</div>
+  	<div class="onlinelinks-box-text"> 
+  	 <p style="font-family:'AvenirNextB';">Copy the code below and place on your website.</p>
+  	 <p>
+
+  	 &lt;div style="width:50%;margin:20px auto;padding:10px;">&lt;a href="https://www.augustasportswear.com/?utm_source=ExtWebBanners&utm_medium=banner&utm_campaign=brand_logo_banner" target="blank">&lt;img src="https://static.augustasportswear.com/marketing/ASB_Horizontal_withLogos.png" style="width:100%; background-color:white;">&lt;/a>&lt;/div>
+
+  	 </p>
+  	 </div>
+  	 
+  </div>
+  
+  
+  
+</div>
+
+<!-- Contact Us Tab Content -->
+<div id="Brand-Contact" class="tabcontent">
+  
+<div class="guides-content-wrapper" id="contactus-content">
+<p>Contact us with any questions regarding our brand media. Email <a href="mailto:PR@augustasportswear.com" style="color:#50a4d9;">PR@augustasportswear.com</a></p>
+  </div>
+  
+</div>
+
+
+<script>
+function openMedia(evt, mediaTab) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(mediaTab).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+//Open content blocks by clicking header
+$(document).ready(function(){	$('.guides-content-wrapper').find('.logosheader').click(function(){
+
+      //Expand or collapse this panel
+      $(this).next().slideToggle('slow');
+
+      //Hide the other panels
+      $(".logos-content").not($(this).next()).slideUp('slow');
+    }); 
+  });
+
+</script>

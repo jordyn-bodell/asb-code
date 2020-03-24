@@ -1,0 +1,431 @@
+<!-- Fabric Content Pages --> 
+<style>
+.headerimg {
+	width: 100%;
+	margin: auto;
+}
+
+.tech-links {
+	margin: 30px auto 0;
+    width: 90%;
+    text-align: left;
+    max-width: 1100px;
+}
+.tablinks {
+    cursor: pointer;
+    width: 30%;
+    padding: 3px 10px;
+    transition: 0.3s;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: black;
+    display: inline-block;
+}
+.tablinks:hover {
+	text-decoration: underline;
+	font-family: "AvenirNextB";
+}
+.leftlink {
+	width: 33%;
+}
+.centerlink {
+	width: 38%;
+}
+.rightlink {
+	width: 22%;
+}
+.truehue-link  {
+	text-transform: lowercase;
+}
+.headerlink {
+	font-size: 15px;
+	font-family: "AvenirNextB";
+}
+.active-link {
+	text-decoration: underline;
+	font-family: "AvenirNextB";
+}
+
+/* Mobile Links */
+.tech-links-m {
+	margin: 30px auto 0;
+    width: 90%;
+    text-align: center;
+    display: none;
+    border-top: 1px solid darkgrey;
+    border-bottom: 1px solid darkgrey;
+    padding: 10px 0;
+}
+.tablinks-m {
+    cursor: pointer;
+    padding: 3px 5px;
+    transition: 0.3s;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: black;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.hideme {
+    opacity: 0;
+}
+
+.section-headers {
+	text-transform: uppercase;
+	font-size: 16px;
+	border-bottom: 1px solid darkgrey;
+	padding-bottom: 5px;
+	color: black;
+	margin-top: 20px;
+}
+
+.fabric-detail-header {
+	text-align: center;
+	font-size: 20px;
+	color:black;
+	margin: 50px auto;
+}
+.fabric-detail-header h2 {
+	text-transform: uppercase;
+	font-family: "AvenirNextB";
+}
+.fabric-detail-header p {
+	font-size: 16px;
+	width: 45%;
+	margin: 10px auto;
+}
+.shopcoll {
+	padding: 5px 25px!important;
+    margin-top: 16px;
+    font-size: 12px;
+}
+
+.fabric-detail-content {
+	color: black;
+	width: 90%;
+	max-width: 1000px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+/* Description info */
+.fabric-description-text {
+	width: 100%;
+	display: inline-block;
+}
+.fabric-description-text p {
+	margin: 10px 0 15px;
+	font-size: 14px;
+}
+.fabric-description-text ul {
+	line-height: 1.5;
+}
+
+.dfend-fabric-wrapper {
+	width: 100%;
+	margin: 20px auto;
+	display: -webkit-box;
+}
+.dfend-fabric-text {
+    width: 40%;
+    margin-left: 20px;
+    display: inline-block;
+    font-size: 15px;
+    vertical-align: top;
+    position: relative;
+    top: 40px;
+}
+.dfend-fabric-text p {
+	width: 80%;
+}
+.dfend-fabric-img {
+	width: 49%;
+}
+.dfend-img-right {
+	float: right;
+}
+.deviate-heather {
+	margin-top: 70px;
+}
+
+/*benefits*/
+.fabric-benefits {
+	width: 100%;
+	display: inline-block;
+	margin: 30px 0;
+	vertical-align: top;
+}
+.fabric-benefits ul {
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+/* Alt Techs*/
+.alt-techs {
+	margin: 20px auto 10px;
+	width: 90%;
+	max-width: 1000px;
+}
+.alt-techs h3 {
+	margin-bottom: 25px;
+}
+.alt-tech-wrapper {
+	box-sizing: border-box;
+	position: relative;
+    bottom: 0;
+    display: flex;
+    z-index: 2000;
+}
+.alt-block {
+	width: 97%;
+	margin: 3px;
+	vertical-align: top;
+	display: grid;
+	float: left;
+    position: relative;
+    left: 0%;
+}
+.alt-block img {
+	width: 100%;
+	max-width: 200px;
+}
+.alt-block:hover .alt-overlay {
+	opacity: 0;
+	transition: 0.1s;
+}
+.alt-block:hover h4 {
+	position: absolute;
+	bottom: 13px;
+	transition: 0.2s;
+}
+.alt-block h4 {
+	text-transform: uppercase;
+	color: white;
+    width: 130px;
+    position: absolute;
+    bottom: 10px;
+    margin-left: 7px;
+}
+.alt-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: inline-block;
+}
+.truehue-alt h4 {
+	text-transform: lowercase;	
+}
+.discover-prods {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+@media screen and (max-width: 1100px) {
+	.leftlink {
+	width: 25%;
+	}
+.centerlink {
+	width: 37%;
+	}
+.rightlink {
+	width: 27%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.hideme {
+	  opacity: 1;
+	}
+	.banner-text, .tech-links, .invert-knit-text {
+	  display: none;
+	}
+	.header-text-m, .tech-links-m {
+		display: block;
+	}
+	.thumb-image, .thumbnail-content-text {
+		width: 100%;
+	}
+	.thumb-image {
+		margin-bottom: 10px;
+	}
+	.right-thumb-img {
+	  float: left;
+	}
+	.thumbnail-content-text {
+		margin-left: 0;
+	}
+	.learnmore {
+	  width: -webkit-fill-available;
+	}
+	
+	.fabric-detail-header {
+		width: 90%;
+	}
+	.fabric-detail-header p {
+		width: 90%;
+	}
+	.shopcoll {
+	  width: -webkit-fill-available;
+	  margin-top: 0;
+	}
+	
+	.alt-tech-wrapper {
+		display: inline-block;
+	}
+	.alt-block {
+	  width: 48%;
+	}
+	
+	.discover-prods {
+	  display: none;
+	}
+}
+@media screen and (max-width: 350px) {
+	.tablinks-m {
+	  font-size: 12px;
+	}
+	.alt-block {
+	  width: 47%;
+	}
+}
+</style>
+
+
+<div class="fabric-detail-page" id="reg-softshell">
+	
+	  <img class="headerimg" src="https://static.augustasportswear.com/marketing/FabricsTech%2DBanner%2D3DRegulateLightweightKnit.png">
+	  
+ <div class="tech-links">
+  <a class="tablinks leftlink headerlink">BE DRY</a>
+  <a class="tablinks centerlink headerlink">BE WARM</a>
+  <a class="tablinks rightlink headerlink">BE ACTIVE</a>
+  
+  <a class="tablinks leftlink" href="/storm-dfend">STORM DFEND™</a>
+    <a class="tablinks centerlink active-link" href="/3d-regulate-lightweight-knit">3D Regulate Lightweight Knit</a>
+    <a class="tablinks rightlink" class="truehue-link" href="/true-hue-technology">true hue technology®</a>
+  
+  <a class="tablinks leftlink" href="/3d-regulate-softshell">3D Regulate Softshell</a>
+  <a class="tablinks centerlink" href="/3d-regulate-seamless-knit">3D Regulate Seamless Insulated Knit</a>
+  <a class="tablinks rightlink" href="/converge-embossed-knit">Converge Embossed Knit</a>
+  </div>
+    
+    <div class="tech-links-m">
+  <a class="tablinks-m" href="/storm-dfend">STORM DFEND™</a>
+    <a class="tablinks-m active-link" href="/3d-regulate-lightweight-knit">3D Regulate Lightweight Knit</a>
+    <a class="tablinks-m" class="truehue-link" href="/true-hue-tech2">true hue technology®</a>
+  
+  <a class="tablinks-m" href="/3d-regulate-softshell">3D Regulate Softshell</a>
+  <a class="tablinks-m" href="/3d-regulate-seamless-knit">3D Regulate Seamless Insulated Knit</a>
+  <a class="tablinks-m" href="/converge-embossed-knit">Converge Embossed Knit</a>
+  </div>
+  
+	<div class="fabric-detail-header hideme">
+	 <h2>3D Regulate  Lightweight Knit</h2>
+	 <p>3D Fabric technology with patterned brushed back engineered to keep you comfortable in motion.</p>
+	
+	<a href="/SearchDisplayView?categoryId=&beginIndex=0&pageSize=20&searchTerm=3d+lightweight+knit" class="button primary shopcoll">SHOP THE COLLECTION</a>
+	</div>
+	
+	<div class="fabric-detail-content">
+	  <div class="fabric-description-text hideme">
+	  	<h3 class="section-headers">what is 3d regulate lightweight knit?</h3>
+	  	 	<p>3D Regulate Lightweight fabric features engineered brushed knit construction which traps body heat, while its grid design lets excess heat escape. It’s perfect for lightweight layering all year long. Its tonal heathered super-soft brushed waffle textured back gives the fabric a three dimensional look and luxurious feel unlike anything you’ve experienced before.
+    	</p>
+	</div>
+	
+	  <div class="fabric-benefits hideme">
+	    <h3 class="section-headers">Benefits:</h3>
+	    <ul>
+	    	<li>3D Fabric designed for breathable warmth</li>
+	    	<li>Wicks away sweat</li>
+	    	<li>High stretch for maximum performance comfort</li>
+	    	<li>Lightweight layering warmth</li>
+	    	<li>Heathered appearance for subtle textured look</li>
+	    </ul>
+	</div>
+</div>
+
+	<div class="discover-prods hideme">
+	  <h3 class="section-headers">DISCOVER 3D REGULATE LIGHTWEIGHT KNIT PRODUCTS</h3>
+	</div>
+	
+	
+	<div class="alt-techs hideme">
+	  <h3 class="section-headers">ALTERNATIVE TECHNOLOGIES</h3>
+	  <div class="alt-tech-wrapper">
+		  
+	  <a href="/storm-dfend">
+	    <div  class="alt-block storm-block">
+	    <img src="https://static.augustasportswear.com/marketing/FabricsTech%2DAlternative%2DStormDfend.png">
+	    <span class="alt-overlay"></span>
+	    <h4>STORM DFEND™</h4>
+	    </div>
+	  </a>
+	  
+	  <a href="/3d-regulate-softshell">
+	    <div  class="alt-block soft-block">
+	    <img src="https://static.augustasportswear.com/marketing/FabricsTech%2DAlternative%2D3DRegulateSoftshell.png">
+	    <span class="alt-overlay"></span>
+	    <h4>3D Regulate Softshell</h4>
+	    </div>
+	  </a>  
+	 
+	  <a href="/3d-regulate-seamless-knit">
+	   <div  class="alt-block seamless-block">
+	    <img src="https://static.augustasportswear.com/marketing/FabricsTech%2DAlternative%2D3DRegulateSIKnit.png">
+	    <span class="alt-overlay"></span>
+	    <h4>3D Regulate Seamless Insulated Knit</h4>
+	    </div>
+	  </a>
+	  
+	  <a href="/true-hue-technology">
+	   <div class="alt-block truehue-alt">
+	    <img src="https://static.augustasportswear.com/marketing/FabricsTech%2DAlternative%2Dtruehuetech.png">
+	    <span class="alt-overlay"></span>
+	    <h4>true hue technology®</h4>
+	    </div>
+	  </a>
+	  
+	  <a href="/converge-embossed-knit">
+	  <div class="alt-block converge-block">
+	    <img src="https://static.augustasportswear.com/marketing/FabricsTech%2DAlternative%2DConvergeEKnit.png">
+	    <span class="alt-overlay"></span>
+	    <h4>Converge Embossed Knit</h4>
+	    </div>
+	  </a>
+	  
+	  </div>
+	  
+	</div>
+</div>
+
+<script>
+//fade in
+$(document).ready(function() {
+    
+/* Every time the window is scrolled ... */
+$(window).scroll( function(){
+    
+/* Check the location of each desired element */
+$('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height() + 300;
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1000);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+</script>

@@ -1,0 +1,1042 @@
+<!-- Help Page -->
+
+<style>
+.header-container {
+	background-color: white;
+	color: rgb(44,61,78);
+	width: 100%;
+	display: inline-block;
+	z-index: 1;
+	position: fixed;
+	padding: 40px 0 10px;
+}
+.header-container h3 {
+	font-size: 12px;
+	margin: 4px auto;
+}
+.header-container + .help-section {
+  padding-top: 220px;
+}
+.header-container h2 {
+	text-transform: uppercase;
+	text-align: center;
+	margin: 20px auto;
+	font-size: 25px;
+}
+.icons-wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	display: block;
+}
+.icon-container {
+	width: 10.5%;
+	margin: 5px;
+	vertical-align: top;
+    display: inline-block;
+}
+.icon-container:hover .section-title {
+	color: #50a4d9;
+	cursor: pointer;
+}
+.icon-container img {
+	width: 60px;
+    margin: 0 auto 0px auto;
+    height: auto;
+	display: block;
+}
+.section-title {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 18px;
+    margin: 10px auto;
+}
+
+
+
+
+
+/* Icons */
+#faqhover, #returnshover, #sampleshover, #contacthover, #orderhover, #inventoryhover, #datahover, #sizeshover {
+	display: none;
+}
+#faq-icon:hover #faqhover {
+	display: block;
+}
+#faq-icon:hover #faqnohover {
+	display: none;
+}
+#returns-icon:hover #returnshover {
+	display: block;
+}
+#returns-icon:hover #returnsnohover {
+	display: none;
+}
+#samples-icon:hover #sampleshover {
+	display: block;
+}
+#samples-icon:hover #samplesnohover {
+	display: none;
+}
+#contact-icon:hover #contacthover {
+	display: block;
+}
+#contact-icon:hover #contactnohover {
+	display: none;
+}
+#order-icon:hover #orderhover {
+	display: block;
+}
+#order-icon:hover #ordernohover {
+	display: none;
+}
+#inventory-icon:hover #inventoryhover {
+	display: block;
+}
+#inventory-icon:hover #inventorynohover {
+	display: none;
+}
+#product-data-icon:hover #datahover {
+	display: block;
+}
+#product-data-icon:hover #datanohover {
+	display: none;
+}
+#sizes-icon:hover #sizeshover {
+	display: block;
+}
+#sizes-icon:hover #sizesnohover {
+	display: none;
+}
+
+.help-section {
+	color: rgb(44,61,78);
+	width: 100%;
+	margin: auto;
+	padding: 30px 0;
+}
+.help-section-m {
+	margin-top: 30px;
+}
+.section-header {
+	text-align: left;
+}
+.help-container {
+	width: 1000px;
+	margin: auto;
+}
+
+#faq-section-m, #returns-section-m, #samples-section-m, #product-data-section-m {
+	display: none;
+}
+
+#view-all {
+	text-transform: uppercase;
+	text-align: center;
+    margin: 40px 0 -10px 0;
+    cursor: pointer;
+    height: 31px;
+}
+#view-all-color {
+	font-family: "AvenirNextB";
+	color: #50a4d9;
+}
+.down-arrow {
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: relative;
+    left: 50%;
+}
+.up-arrow {
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    position: relative;
+    left: 50%;
+}
+.viewalltext {
+	color: inherit;
+	margin-bottom: 5px;
+}
+
+.helpanchor {
+	position: relative;
+	top: -320px;
+	display: block;
+}
+
+.form-container {
+	width: 550px;
+	margin: 10px auto;
+}
+.form-container-m {
+	display: block;
+	width: 80%;
+	margin: 10px auto;
+}
+.returns-form {
+	width: 100%;
+	border-top: 1px solid grey;
+	margin-top: 25px;
+}
+
+/* Sections */
+#faq-section {
+	background-color:rgb(240,247,251);
+}
+.faq-question {
+	width: 46%;
+    display: inline-block;
+    margin: 15px 30px 15px 0;
+    vertical-align: text-top;
+}
+#faq-q-header {
+	font-family: "AvenirNextB";
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+.plus-minus {
+		display: none;
+}
+
+
+#returns-container h4 {
+	text-transform: uppercase;
+	margin: 35px auto 10px auto;
+	font-size: 17px;
+	text-align: center;
+}
+.return-list {
+	width: 45%;
+	display: inline-block;
+	line-height: 1.4;
+	vertical-align: top;
+}
+
+#samples-section {
+	background-color:rgb(240,247,251);
+}
+#samples-container h3 {
+	margin-top: 30px;
+}
+#samples-detail {
+	color: #c72c34;
+	font-style: italic;
+	font-size: 11px;
+}
+
+.contact-form {
+	width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+.contact-form h4 {
+	text-transform: uppercase;
+	margin: 35px auto 10px auto;
+	font-size: 17px;
+}
+.contact-form p {
+	margin: 15px 0;
+}
+.contact-info-container {
+	margin: 60px 0 40px 0;
+}
+.contact-info {
+	width: 17%;
+	display: inline-block;
+	vertical-align: text-top;
+    height: 230px;
+    padding: 15px;
+    margin: 0 15px;
+}
+#customer-care-info, .care-info {
+	border-right: 1px solid grey;
+	margin: 0 20px;
+	width: 30%;
+}
+.contact-info img {
+	width: 40px;
+}
+#phoneicon {
+	position: relative;
+	left: -10px;
+	    z-index: -1;
+}
+#contact-info-header {
+	text-transform: uppercase;
+	margin: 15px 0;
+	font-size: 15px;
+}
+.contact-info p {
+	font-size: 11px;
+}
+#contact-email {
+	color: #50a4d9;
+	margin: 10px 0;
+}
+#cc-hours {
+	margin-top: 10px;
+}
+#boldheader {
+	font-family: "AvenirNextB";
+}
+.chatnow {
+	font-size: 12px;
+	margin-top: 15px;
+	width: 100px;
+}
+#holidayhours {
+	margin: 10px auto;
+	line-height: 1.5;
+}
+
+#product-data-section {
+	background-color:rgb(240,247,251);
+}
+.product-data {
+	margin: 25px 0;
+	line-height: 1.7;
+}
+.product-box {
+	background-color: white;
+    padding: 10px 20px;
+    border: 1px solid grey;
+    display: inline-block;
+    width: 43%;
+    vertical-align: top;
+    height: 360px;
+}
+.product-box h3 {
+	text-transform: uppercase;
+	font-size: 16px;
+	padding: 10px 5px;
+}
+#data-header {
+	font-family: "AvenirNextB";
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+#inventory-feed {
+	float: right;
+}
+.library-button, .data-button {
+	font-size: 12px;
+    margin: 10px 0;
+    vertical-align: top;
+    width: 100px;
+}
+.product-box ul {
+	margin-bottom: 10px;
+}
+#sublist>li {
+	list-style-type: none;
+}
+#sublist > li > span {
+	margin: 0 5px;
+    margin-left: -25px;
+}
+#data-feed-jotform {
+	width: 600px;
+	margin: auto;
+}
+#addt-asset-request {
+	margin: 10px 0;
+	text-align: center;
+	font-size: 15px;
+}
+#addt-asset-request a {
+	font-family: "AvenirNextB";
+	text-decoration: underline;
+	font-size: 15px;
+}
+
+b {
+	font-family: "AvenirNextB";
+}
+
+@media screen and (max-width: 1023px) {
+	.icons-wrapper {
+		width: 100%;
+	}
+	.help-container {
+		width: 95%;
+	}
+	.stickyheader {
+    top: 60px;
+    padding: 10px 0 10px;
+	}
+	 
+	#customer-care-info {
+		width: 25%;
+	}
+}
+@media screen and (max-width: 900px) {
+	.faq-question {
+		margin: 15px 20px 15px 0;
+	}
+}
+@media screen and (max-width: 768px) {
+.header-container {
+		background-color:rgb(240,247,251);
+		position: unset;
+	}
+	.header-container h2 {
+		max-width: 400px;
+	}
+	.header-container h3 {
+		font-size: 18px;
+		margin: 10px auto;
+	}
+	.icons-wrapper {
+		width: 300px;
+		margin: 0 auto 20px auto;
+	}
+	.icon-container {
+		width: 150px;
+		height: 150px;
+		border: 1px white solid;
+		margin: 0 -2px;
+	}
+	.icon-container img {
+		width: 100px;
+		margin: 0 auto 10px auto;
+	}
+	.care-info {
+	padding-bottom: 25px;
+}
+	#contact-anchor {
+		top: -10px;
+	}
+	.helpanchor {
+	top: -10px;
+	}
+	#faq-section, #returns-section, #samples-section, #product-data-section, .contact-form, .contactus-header, #contact-intro {
+		display: none;
+	}
+	#contact-section, .contact-info-container, .contact-info {
+		width: 300px;
+	}
+	#customer-care-info {
+		max-width: 300px;
+		width: 90%;
+		margin: auto;
+		border-right: none;
+		border-bottom: 1px solid grey;
+		height: 180px;
+	}
+	.contact-info img {
+	width: 55px;
+	float: left;
+	margin: 13px 13px 106px 0
+}
+	.contact-info-container {
+		margin-top: 30px;
+	}
+	#contact-email {
+		    display: -webkit-box;
+	}
+	
+	#faq-section-m {
+	 	width: 85%;
+	 	margin: 25px auto 0 auto;
+	 }
+	.faq-question {
+		width: 100%;
+	}
+	#faq-q-header {
+		padding: 10px 0;
+		cursor: pointer;
+	}
+	.faq-question p {
+		display: none;
+	}
+	.open-faq, .close-faq {
+		color: #50a4d9;
+		float: right;
+		font-size: 14px;
+		padding-left: 5px;
+	}
+	.open-faq {
+	display: inline-block;
+	}
+	.close-faq {
+	display: none;
+	}
+	
+	
+	.return-list {
+		width: 100%;
+	}
+	
+	.product-data, .data-feed-jotform {
+		width: 75%;
+		margin: auto;
+	}
+	.product-box {
+		width: 100%;
+		height: auto;
+		margin: 20px auto;
+	}
+	.library-button, .data-button {
+		width: 150px;
+	}
+}
+
+</style>
+
+<div class="header-container" id="header-container">
+	<h2>Let us help find you what you're looking for</h2>
+	
+	<div class="icons-wrapper">	
+	
+	  <div class="icon-container" id="faq-icon">
+	    <a href="#faq-anchor">
+	    <img src="https://static.augustasportswear.com/marketing/CS-Icons-hover.png" id="faqhover">
+	    <img src="https://static.augustasportswear.com/marketing/CS-Icons-.png" id="faqnohover">
+		<h3 class="section-title">FAQs</h3>
+		</a>
+	  </div>
+	  
+	  <div class="icon-container" id="returns-icon">
+	    <a href="#returns-anchor">
+	    <img src="https://static.augustasportswear.com/marketing/CS-Icons-2-HOVER.png" id="returnshover">
+	    <img src="https://static.augustasportswear.com/marketing/CS-Icons-2.png" id="returnsnohover">
+		<h3 class="section-title">Returns</h3>
+		</a>
+	  </div>
+	  
+	  <div class="icon-container" id="samples-icon">
+	    <a href="#samples-anchor">
+	    <img src="https://static.augustasportswear.com/marketing/CS-Icons-3-HOVER.png" id="sampleshover">
+	    <img src="https://static.augustasportswear.com/marketing/CS-Icons-3.png" id="samplesnohover">
+		<h3 class="section-title">Samples</h3>
+		</a>
+	  </div>
+	  
+	  <div class="icon-container" id="contact-icon">
+	    <a href="#contact-anchor">
+	    <img src="https://static.augustasportswear.com/marketing/CS-Icons-4-HOVER.png" id="contacthover">
+	    <img src="https://static.augustasportswear.com/marketing/CS-Icons-4.png" id="contactnohover">
+		<h3 class="section-title">Contact Us</h3>
+		</a>
+	  </div>
+	  
+	  <div class="icon-container" id="order-icon">
+	   <a href="/TrackOrderStatus">
+	   <img src="https://static.augustasportswear.com/marketing/CS-Icons-5-HOVER.png" id="orderhover">
+	   <img src="https://static.augustasportswear.com/marketing/CS-Icons-5.png" id="ordernohover">
+		<h3 class="section-title">Orders</h3>
+		</a>
+	  </div>
+	  
+	  <div class="icon-container" id="inventory-icon">
+	    <a href="/ASGInventoryLookupView">
+	    <img src="https://static.augustasportswear.com/marketing/CS-Icons-6-HOVER.png" id="inventoryhover">
+	    <img src="https://static.augustasportswear.com/marketing/CS-Icons-6.png" id="inventorynohover">
+		<h3 class="section-title">Inventory Lookup</h3>
+		</a>
+	  </div>
+	  
+	  <div class="icon-container" id="product-data-icon">
+	    <a href="#dataanchor">
+	    <img src="https://static.augustasportswear.com/marketing/CS-Icons-7-HOVER.png" id="datahover">
+	    <img src="https://static.augustasportswear.com/marketing/CS-Icons-7.png" id="datanohover">
+		<h3 class="section-title">Product Data</h3>
+		</a>
+	  </div>
+	  
+	  <div class="icon-container" id="sizes-icon">
+	    <a href="/sizes-and-fits">
+	    <img src="https://static.augustasportswear.com/marketing/CS-Icons-8-HOVER.png" id="sizeshover">
+	    <img src="https://static.augustasportswear.com/marketing/CS-Icons-8.png" id="sizesnohover">
+		<h3 class="section-title">Sizes & Fits</h3>
+		</a>
+	  </div>
+	  
+	</div>
+</div>
+
+<div class="help-section" id="faq-section">
+		 	<span class="helpanchor" id="faq-anchor"></span>
+	<div class="help-container">
+	
+	<h3 class="section-title section-header">FAQs</h3>
+	
+	<div class="faq-question">
+	  <h4 id="faq-q-header">How do i become a customer?</h4>
+	  <p><a href="/New-Account" style="color:#50a4d9;">Click here</a> to complete the “New Customer Request” form. Along with the request form, you will be asked to submit your Certificate of Business and state-appropriate tax forms.</p>
+	</div>
+	
+	<div class="faq-question">
+	  <h4 id="faq-q-header">I forgot my password, what do I do?</h4>
+	  <p><a href="/ResetPasswordErrorView" style="color:#50a4d9;">Click here</a> or click the “forgot password” link on the sign-in screen. Then you will have options to reset your password.</p>
+	</div>
+	
+	<div class="faq-question">
+	  <h4 id="faq-q-header">How do I track my order?</h4>
+	  <p>Order tracking is available in <a href="/TrackOrderStatus" style="color:#50a4d9;">Order History</a> under My Account or you can contact Customer Care for an update.</p>
+	</div>
+	
+	<div class="faq-question">
+	  <h4 id="faq-q-header">How do I request an RA (Return Authorization)?</h4>
+	  <p><a href="#returns-anchor" style="color:#50a4d9;">Click here</a> to begin the returns process.</p>
+	</div>
+	
+	<div class="faq-question">
+	  <h4 id="faq-q-header">How do I get free shipping?</h4>
+	  <p>Any order shipping via UPS Ground with an Order Total over $200 qualifies for free shipping.</p>
+	</div>
+	
+	<div class="faq-question">
+	  <h4 id="faq-q-header">How much is shipping?</h4>
+	  <p>Order Total of less than $200 = $15 Flat Rate Shipping<br>
+Order Total over $200 = FREE Shipping</p>
+	</div>
+	
+	<p id="view-all">
+	<a href="/faq"><span id="view-all-color">view all</span> of our FAQs</a>
+	</p>
+	
+	</div>	
+</div>
+
+<div class="help-section" id="returns-section">
+ 	<span class="helpanchor" id="returns-anchor"></span>
+	<div class="help-container" id="returns-container">
+	<h3 class="section-title section-header">Returns</h3>
+	
+	<p>We will gladly replace merchandise or provide a refund if the order has shortages, damages, or for items no longer needed.</p>
+	
+	<h4>Return/Refund Policy</h4>
+	 	<div>
+	 	  <div class="return-list">
+	 	<ul>
+<li>Claims for damages or shortages must be made within 10 days of receipt of the order.</li>
+<li>Requests for returns must be made within 30 days from date of shipment and returned in the original packaging.</li>
+<li>Closeout merchandise may not be returned; all sales final.</li>
+<li>Decorated, Wool and Sublimated products may not be returned including third party shipments.</li>
+<li>Returns are subject to a 15% restocking charge.</li>
+	</ul>
+  </div>
+  		  <div class="return-list">
+		<ul>
+<li>All returns require a Return Authorization. To request a return, call Customer Care at 800-237-6695 or fill out the form below.</li>
+<li>Returned merchandise must be received within 30 days of receiving the Return Authorization.</li>
+<li>Restock fee will be waived if a replacement order of equal or greater value is placed at the time the Return Authorization is issued.</li>
+	</ul>
+		  </div>
+		  </div>
+	
+	<div class="form-container returns-form">
+		<h4>Return Authorization Form</h4>
+	 	<p style="text-align: center;margin-bottom:10px;">To request a Return Authorization, please enter the information requested below and a Customer Care specialist will respond back as soon as possible.</p>
+
+ <iframe id="JotFormIFrame-80384623115149" allowtransparency="true" allowfullscreen="true" allow="geolocation; microphone; camera" src="https://form.jotform.com/80384623115149" frameborder="0" style="width: 1px; min-width: 100%; height:1300px; border:none;" scrolling="no" > </iframe> 
+
+	</div>	
+
+</div>
+</div>
+
+<div class="help-section" id="samples-section">
+ 	<span class="helpanchor" id="samples-anchor"></span>
+	
+	<div class="help-container" id="samples-container">
+	<h3 class="section-title section-header">Samples</h3>
+	
+	<p>Sample pricing is offered for 1 piece per style/color and does not apply to full-size runs. To request a sample, please enter the information requested in the form below. A Customer Care specialist will enter your order and will contact you with any questions that should arise. <br><span id="samples-detail">*12 Piece maximum. Discontinued items do not apply to sample policy.</span></p>
+	
+		<div class="form-container samples-form">
+		
+		 <iframe id="JotFormIFrame-73453643315152" allowtransparency="true" allowfullscreen="true" allow="geolocation; microphone; camera" src="https://form.jotform.com/73453643315152" frameborder="0" style="width: 1px; min-width: 100%; height:720px; border:none;" scrolling="no" > </iframe> 
+		
+		</div>	
+	
+	</div>
+</div>
+
+<div class="help-section-m-container">
+ 	<span class="helpanchor" id="helpanchor"></span>
+
+
+	<div class="help-section-m" id="faq-section-m">
+		 	<span class="helpanchor" id="faq-anchor"></span>
+	<div class="help-container">
+	
+	<h3 class="section-title section-header">FAQs</h3>
+	
+	<div class="faq-question">
+	  <h4 id="faq-q-header">How do i become a customer? <span class="open-faq"">+</span><span class="close-faq">&mdash;</span></h4>
+	  <p id="faq1"><a href="/New-Account" style="color:#50a4d9;">Click here</a> to complete the “New Customer Request” form. Along with the request form, you will be asked to submit your Certificate of Business and state-appropriate tax forms.
+	  </p>
+	</div>
+	
+	<div class="faq-question">
+	  <h4 id="faq-q-header">Forgot my password <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h4>
+	  <p><a href="/ResetPasswordErrorView" style="color:#50a4d9;">Click here</a> or click the “forgot password” link on the sign-in screen. Then you will have options to reset your password.</p>
+	</div>
+	
+	<div class="faq-question">
+	  <h4 id="faq-q-header">How do I track my order? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h4>
+	  <p>Order tracking is available in <a href="/TrackOrderStatus" style="color:#50a4d9;">Order History</a> under My Account or you can contact Customer Care for an update.</p>
+	</div>
+	
+	<div class="faq-question">
+	  <h4 id="faq-q-header">How do I request an RA? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h4>
+	  <p><a href="/returns" style="color:#50a4d9;">Click here</a> to begin the returns process.</p>
+	</div>
+	
+	<div class="faq-question">
+	  <h4 id="faq-q-header">How do I get free shipping? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h4>
+	  <p>Any order shipping via UPS Ground with an Order Total over $200 qualifies for free shipping.</p>
+	</div>
+	
+	<div class="faq-question">
+	  <h4 id="faq-q-header">How much is shipping? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h4>
+	  <p>Order Total of less than $200 = $15 Flat Rate Shipping<br>
+Order Total over $200 = FREE Shipping</p>
+	</div>
+	
+	<p id="view-all">
+	<a href="/faq"><span id="view-all-color">view all</span> of our FAQs</a>
+	</p>
+	
+	</div>	
+</div>
+
+	<div class="help-section-m" id="returns-section-m">
+ 	<span class="helpanchor" id="returns-anchor"></span>
+	<div class="help-container" id="returns-container">
+	<h3 class="section-title section-header">Returns</h3>
+	
+	<p>We will gladly replace merchandise or provide a refund if the order has shortages, damages, or for items no longer needed.</p>
+	
+	<div>
+	 	  <div class="return-list">
+	 	<ul>
+<li>Claims for damages or shortages must be made within 10 days of receipt of the order.</li>
+<li>Requests for returns must be made within 30 days from date of shipment and returned in the original packaging.</li>
+<li>Closeout merchandise may not be returned; all sales final.</li>
+<li>Decorated, Wool and Sublimated products may not be returned including third party shipments.</li>
+<li>Returns are subject to a 15% restocking charge.</li>
+	</ul>
+  </div>
+  		  <div class="return-list">
+		<ul>
+<li>All returns require a Return Authorization. To request a return, call Customer Care at 800-237-6695 or fill out the form below.</li>
+<li>Returned merchandise must be received within 30 days of receiving the Return Authorization.</li>
+<li>Restock fee will be waived if a replacement order of equal or greater value is placed at the time the Return Authorization is issued.</li>
+	</ul>
+  <div class="return-list">
+	
+	<div class="form-container returns-form">
+		<script type="text/javascript" src="https://form.jotform.com/jsform/80384623115149"></script>
+	</div>	
+	
+		<div id="view-all" class="returns-view-all">
+		<p class="viewalltext viewall-text">request a return authorization</p>
+		</div>
+		<span class="returns-arrow down-arrow"></span>
+	</div>
+</div>
+		</div>
+		
+	<div class="form-container-m returns-form-m">
+		<script type="text/javascript" src="https://form.jotform.com/jsform/80384623115149"></script>
+	</div>	
+	</div>
+</div>
+
+	<div class="help-section-m" id="samples-section-m">
+ 	<span class="helpanchor" id="samples-anchor"></span>
+	
+	<div class="help-container" id="samples-container">
+	<h3 class="section-title section-header">Samples</h3>
+	
+	<p>Sample pricing is offered for 1 piece per style/color and does not apply to full-size runs. To request a sample, please enter the information requested in the form below. A Customer Care specialist will enter your order and will contact you with any questions that should arise. <br><span id="samples-detail">*12 Piece maximum. Discontinued items do not apply to sample policy.</span></p>
+	
+		<div class="form-container-m samples-form-m">
+		<script type="text/javascript" src="https://form.jotform.com/jsform/73453643315152"></script>
+		</div>	
+	</div>
+</div>
+
+	<div class="help-section-m" id="product-data-section-m">
+	<span class="helpanchor" id="data-anchor"></span>
+	
+	<div class="help-container">
+	<h3 class="section-title section-header">product data</h3>
+	<p>Download full product data</p>
+	
+	<div class="product-data">
+	  <div class="product-box" id="data-library">
+		<a target="_blank" class="button secondary library-button" href="https://augustasportswear.inrivercloud.com:8088/">Get Started</a>
+		<h3>Image & Data Library (Online)</h3>
+		<p>
+		<ul>
+<li>Full product specifications</li>
+<li>Full size product images in every color</li>
+<li>Build your own product file</li>
+<li>Best used for:</li>
+<ul id="sublist">
+<li><span>&mdash; </span>Custom websites</li>
+<li><span>&mdash; </span>Digital content</li>
+<li><span>&mdash; </span>Printable sales material</li>
+</ul></ul>
+		Find product specifications like SKU, style, style name, UPC, size, and weight to include on your website. With the ability to download full size product images in every color. Our Data Library makes it easier for you to create your custom website, digital content, and printable sales material.
+		</p>
+	</div>
+
+	  <div class="product-box" id="inventory-feed">
+	  <a class="button secondary data-button">Request Feed</a>
+	<h3>Data, Inventory & Image Feed (FTP)</h3>
+		<p><ul>
+<li>Full product specifications</li>
+<li>Full size product images in every color</li>
+<li>Customize to e-commerce platform</li>
+<li>Best used for:</li>
+<ul id="sublist">
+<li><span>&mdash; </span>Include current inventory</li>
+<li><span>&mdash; </span>Bulk upload to specific platforms</li>
+</ul></ul>
+		We recognize the times are changing and that some of our best business partners have a strong digital playbook. We have created a standard data feed file to help you upload product information and images for each and every single SKU. The current information includes: Style #, Item #, Item Name, Brand, Item Description, Category, MSRP, Product Image, and more…</p>
+	</div>
+	</div>
+
+<div class="data-feed-jotform" id="data-feed-jotform" style="display: none;">
+<div id="feed-form">
+<script type="text/javascript" src="https://form.jotform.com/jsform/73638705269164"></script>
+</div></div>
+	
+</div>
+</div>
+
+</div>
+
+<div class="help-section" id="contact-section">
+	<span class="helpanchor" id="contact-anchor"></span>
+	
+	<div class="help-container">
+	
+	<h3 class="section-title section-header contactus-header">Contact Us</h3>
+	 <p id="contact-intro">At Augusta Sportswear Brands, everything we do is motivated by our desire to provide the best experience possible for our customers. Our best-in-class Customer Care Center is available to help you Monday - Friday, from 8 am - 7 pm EST.</p>
+
+	 
+	 <div class="contact-form">
+	 	<h4>Let's get in touch</h4>
+	 	<p>Please complete the form below and a Customer Care representative will be with you shortly.</p>
+	 	
+	<script type="text/javascript" src="https://form.jotform.com/jsform/90934087386165"></script>
+	 </div>
+	 
+	<div class="contact-info-container">
+	 
+	   <div class="contact-info care-info" id="customer-care-info">
+	  <img src="https://static.augustasportswear.com/marketing/CS-Icons-mobilephone.png" id="phoneicon">
+	  <h4 id="contact-info-header">Customer Care</h4>
+	  <p>800-237-6695</p>
+	  <p>Spanish Ext: 6418</p>
+	  <p>Fax: 888-432-9749</p>
+	  <p id="cc-hours">Hours: 8am-5pm EST<br>Mon-Fri</p>
+	  <p id="contact-email"><a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a></p>
+	</div>
+	
+	  <div class="contact-info" id="customer-care-info">
+	  <img src="https://static.augustasportswear.com/marketing/CS-Icons-locations.png">
+	  <h4 id="contact-info-header">Return Address</h4>
+	  <p>
+	  <span id="boldheader">Augusta Sportswear Returns</span><br>
+	   425 Park West Drive <br>
+	   Grovetown, GA 30813
+	  </p>
+	  <br>
+	  <p>
+	  <span id="boldheader">Holloway Returns</span><br>
+	   600 N. Stolle Ave. <br>
+	   Sidney, Ohio 45365
+	  </p>
+	</div>
+	
+	  <div class="contact-info">
+	  <img src="https://static.augustasportswear.com/marketing/CS-Icons-chatbubbles.png">
+	  <h4 id="contact-info-header">Live Chat</h4>
+	  <p>Chat with us<br>
+	  Hours: 8am-5pm EST<br>
+	  Mon-Fri
+	  </p>
+	  <a class="button secondary chatnow" id="chat-button">Chat Now</a>
+	</div>
+	
+	 </div>
+	</div>
+</div>
+
+<div class="help-section" id="product-data-section">
+	<span class="helpanchor" id="dataanchor"></span>
+	
+	<div class="help-container">
+	<h3 class="section-title section-header">product data</h3>
+	<p>Download full product data</p>
+	
+	<div class="product-data">
+	  <div class="product-box" id="data-library">
+		<a target="_blank" class="button secondary library-button" href="https://augustasportswear.inrivercloud.com:8088/">Get Started</a>
+		<h3>Content Store - Product Images and Data</h3>
+		<p>
+		<ul>
+<li>Full product specifications</li>
+<li>Full size product images in every color</li>
+<li>Build your own product file</li>
+<li>Best used for:</li>
+<ul id="sublist">
+<li><span>&mdash; </span>Custom websites</li>
+<li><span>&mdash; </span>Digital content</li>
+<li><span>&mdash; </span>Printable sales material</li>
+</ul></ul>
+		Find product specifications like SKU, style, style name, UPC, size, and weight to include on your website. With the ability to download full size product images in every color. Our Data Library makes it easier for you to create your custom website, digital content, and printable sales material.
+		</p>
+	</div>
+
+	  <div class="product-box" id="inventory-feed">
+	  <a class="button secondary data-button">Request Feed</a>
+	<h3>Data, Inventory & Image Feed (FTP)</h3>
+		<p><ul>
+<li>Full product specifications</li>
+<li>Full size product images in every color</li>
+<li>Customize to e-commerce platform</li>
+<li>Best used for:</li>
+<ul id="sublist">
+<li><span>&mdash; </span>Include current inventory</li>
+<li><span>&mdash; </span>Bulk upload to specific platforms</li>
+</ul></ul>
+		We have created a standard data feed file to help you upload product information and images for each and every single SKU. The current information includes: Style #, Item #, Item Name, Brand, Item Description, Category, MSRP, Product Image, and more…
+		
+		<br><br>
+		<span style="font-size:11px;">*Feed will not have account level discounts.</span>
+		
+		</p>
+	</div>
+			<h4 id="addt-asset-request">Couldn't find the images or data you were looking for in our <a target="_blank" href="https://augustasportswear.inrivercloud.com:8088/">Content store</a>? Fill out <a href="https://form.jotform.com/91475266958170" target="blank">this form</a> to request product assets.
+		</h4>
+	</div>
+
+<div class="data-feed-jotform" id="data-feed-jotform" style="display: none;">
+<div id="feed-form">
+
+
+    <iframe
+      id="JotFormIFrame-73638705269164"
+      allowtransparency="true"
+      allowfullscreen="true"
+      allow="geolocation; microphone; camera"
+      src="https://form.jotform.com/73638705269164"
+      frameborder="0"
+      style="width: 1px;
+      min-width: 100%;
+      height:957px;
+      border:none;"
+      scrolling="no"
+    >
+    </iframe>
+
+</div></div>
+	
+</div>
+</div>
+
+<script>
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 600, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+  
+
+$(document).ready(function(openFeedrequest){	
+    $('.data-button').click(function(){
+      $('.data-feed-jotform').slideToggle();
+    }); 
+  });
+  
+$(document).ready(function(faqMobile) {
+    if($(window).width() <= 1023) {
+        $('#faq-icon').click(function(){
+          $('#faq-section-m').toggle();
+        $('.help-section-m').not($('#faq-section-m')).hide();
+        });
+    }
+});
+$(document).ready(function(openFaqAnswer){	$('.faq-question').find('#faq-q-header').click(function(){
+
+      //Expand or collapse this panel
+      $(this).next().slideToggle('slow');
+      $(this).find('.open-faq').toggle();
+      $(this).find('.close-faq').toggle();
+    }); 
+  });
+
+$(document).ready(function(dataMobile) {
+    if($(window).width() <= 1023) {
+        $('#product-data-icon').click(function(){
+          $('#product-data-section-m').toggle();
+            $('.help-section-m').not($('#product-data-section-m')).hide();
+        });
+    }
+});
+
+$(document).ready(function() {
+    if($(window).width() <= 1023) {
+        $('#samples-icon').click(function(){
+          $('#samples-section-m').toggle();
+            $('.help-section-m').not($('#samples-section-m')).hide();
+        });
+    }
+});
+$(document).ready(function() {
+    if($(window).width() <= 1023) {
+        $('#returns-icon').click(function(){
+          $('#returns-section-m').toggle();
+            $('.help-section-m').not($('#returns-section-m')).hide();
+        });
+    }
+});
+
+
+</script>

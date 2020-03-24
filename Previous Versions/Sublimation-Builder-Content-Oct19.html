@@ -1,0 +1,504 @@
+<!-- Sublimation Builder LP Content -->
+<style>
+.choose-category {
+	text-align: center;
+	width: 100%;
+	background-color: rgb(44,61,78);
+	padding: 20px 0;
+	color: white;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+.choose-category h3 {
+	font-size: 25px;
+}
+.choose-category h3, .choose-category h2 {
+	color: white;
+}
+
+.lead-alert {
+	width: 100%;
+	background-color: lightgray;
+	z-index: -10;
+	padding: 10px 0;
+}
+.lead-alert h3 {
+	font-size: 16px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: auto;
+	color: black;
+}
+.lead-alert h4 {
+	font-size: 13px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 5px auto 0 auto;
+	color: black;
+}
+
+.header-wrapper {
+	display:inline-block;
+	width:100%;
+	background-image: url(https://static.augustasportswear.com/marketing/CustomSubPlus-ASB-bkgd.jpg);
+	background-size:cover;
+	height: 250px;
+    background-position: center;
+}
+.header-wrapper img {
+	max-width: 300px;
+	position:relative;
+    margin: 10px auto;
+}
+#customsublogo {
+	display: block;
+	padding: 10px;
+}
+.threebrands {
+	display: block;
+	width: fit-content;
+	margin: auto;
+}
+.brandlogos {
+	width: 150px;
+	padding: 10px 15px;
+}
+#auglogo, #hollogo {
+	border-right: 1px lightgray solid;
+}
+
+.subl-hero-banner {
+	width: 100%;
+	display: -webkit-inline-box;
+}
+.subl-hero-banner h2 {
+    width: fit-content;
+    height: 50%;
+    font-size: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    color: lightgrey;
+    -webkit-text-stroke: lightgray 4px;
+    font-weight: 900;
+    display: -webkit-box;
+    position: relative;
+    left: 22%;
+    top: 65px;
+    line-height: 0.9;
+    margin: 0 40px;
+}
+.subl-hero-banner img {
+	position: relative;
+	top: 3px;
+	left: 49%;
+	z-index: 100;
+	width: 550px;
+}
+#subl-designs {
+	color: rgb(233,224,90);
+	-webkit-text-stroke: rgb(233,224,90) 4px;
+}
+
+.threesteps {
+	background-color: rgb(240, 241, 243);
+	text-transform: uppercase;
+	margin: auto;
+	display: inline-block;
+    color: black;
+    padding: 80px 0;
+    width: 100%;
+}
+.threesteps h2 {
+	color: black;
+	margin: 10px 0;
+	font-size: 20px;
+}
+.stepswrapper {
+	width: fit-content;
+	margin: auto;
+	display: -webkit-box;
+}
+.ordersteps {
+	width: 27%;
+	margin: 0 30px;
+	max-width: 300px;
+}
+
+.build-it-gif {
+	width: 100%;
+	margin: 40px auto;
+}
+.build-it-gif img {
+	width: 100%;
+}
+
+.rapid-turn {
+	width: 100%;
+	background-image: url(https://static.augustasportswear.com/marketing/CustomSubPlus-ASB-RapidPlus-Banner1920.jpg);
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	text-align: right;
+	padding: 40px 0;
+	color: white;
+	margin: 20px 0;
+}
+.rapid-turn h2 {
+	font-family: "AvenirNextB";
+	font-size: 27px;
+	margin: 20px auto;
+}
+.rapid-turn p {
+	margin: 10px auto;
+	font-size: 13px;
+	color: rgb(153, 215, 219);
+	position: relative;
+	right: 4%;
+}
+#rapid-logo {
+	width: 250px;
+	position: relative;
+	right: 4%;	
+}
+#shipdays {
+	font-family: "AvenirNextB";
+}
+#design-button {
+	color: white;
+	margin: 5px 0;
+	background-color: transparent;
+	border: 1px solid white;
+	padding: 7px;
+	font-size: 11px;
+	position: relative;
+	right: 4%;
+}
+
+.image-examples {
+	height: 350px;
+	display: flex;
+	margin: 20px auto;
+}
+.example-1a {
+	background-image: url(https://static.augustasportswear.com/marketing/PO1_Hero1_AUG_r2.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 250px;
+	height: 350px;
+	margin: 0 5px;
+	position: relative;
+	animation: scrolldown .7s ease;
+	z-index: -1000;
+}
+.example-1b {
+	background-image: url(https://static.augustasportswear.com/marketing/PO1_Hero1_AUG_Hover_r2.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 250px;
+	height: 350px;
+	margin: 0 5px;
+	position: relative;
+	animation: scrollup .7s ease;
+	z-index: -1000;
+}
+@keyframes scrollup {
+    from {top: 110%;}
+    to {top: 0;}
+}
+@keyframes scrolldown {
+    from {top: -110%;}
+    to {top: 0;}
+}
+
+.order-details {
+	width: 100%;
+	background-color: rgb(240, 241, 243);
+	text-align: center;
+	padding: 55px 0;
+	color: black;
+}
+.order-details h2 {
+	font-weight: 900;
+	font-size: 27px;
+	margin: 10px auto;
+}
+.order-details p {
+	width: 50%;
+	margin: 10px auto;
+	font-size: 13px;
+}
+#rushoptions {
+	font-size: 11px;
+	font-family: "AvenirNextB";
+	margin-top: 10px;
+}
+
+.vball-blocks {
+    height: auto;
+    margin: 20px 10px;
+    position: relative;
+    display: -webkit-box;
+}
+.design-vball {
+	background-image: url(https://static.augustasportswear.com/marketing/CustomSubPlus-ASB-H5-VB.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 37%;
+	height: 400px;
+	position: relative;
+	color: white;
+	margin-right: 5px;
+    display: block;
+}
+.design-vball p {
+	position: absolute;
+    top: 69%;
+    left: 15px;
+}
+#custom-button {
+	margin: 5px 0;
+	background-color: transparent;
+	border: 1px solid white;
+	padding: 7px;
+	font-size: 11px;
+	text-align: left;
+	position: absolute;
+    top: 82%;
+    left: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.vball-video {
+    width: 80%;
+    height: auto;
+    position: relative;
+}
+
+
+@media screen and (max-width: 1650px) {
+.subl-hero-banner img {
+     		left: 10%;
+     	}
+     	.subl-hero-banner h2 {
+     		left: 15%;
+     	}
+}
+@media screen and (max-width: 1280px) {
+     	.subl-hero-banner img {
+     		left: -30%;
+     	}
+     	.subl-hero-banner h2 {
+     		left: 0;
+     	}
+     /*	.design-vball {
+     		width: 500px;
+     		height: 400px;
+     	} */
+     	.vball-video, #videocode {
+     		width: 79%;
+     		height: 400px;
+     	}
+    }
+@media screen and (max-width: 1023px) {
+     	.subl-hero-banner img {
+     		left: -40%;
+     		width: 500px;
+     	}
+     	.subl-hero-banner h2 {
+     		font-size: 70px;
+     	}
+     	.vball-blocks {
+     		width: fit-content;
+     		margin: auto;
+     	}
+     	  	.design-vball {
+     		width: 99%;
+     		height: 400px;
+     		display: -webkit-inline-box;
+     	}
+     	.vball-video, #videocode {
+     		width: 500px;
+     		height: 400px;
+     		display: -webkit-inline-box;
+     	}
+    }
+@media screen and (max-width: 950px) {
+     	.threesteps,
+     	.stepswrapper {
+     		width: 88%;
+     	}
+     	.ordersteps {
+     		margin: 0 10px;
+     	}
+    }
+@media screen and (max-width: 768px) {
+     	.subl-hero-banner img {
+     		left: -46%;
+     	}
+     	.subl-hero-banner h2 {
+     		font-size: 55px;
+     		top: 20%;
+     	}
+     	.stepswrapper {
+     		display: inline-flex;
+     	}
+    }
+@media screen and (max-width: 620px) {
+     	.threesteps {
+     		width: 100%;
+     		display: block;
+     		margin-left: -10px;
+     	}
+     	.stepswrapper {
+     		display: block;
+     		width: auto;
+     		margin-left: 10px;
+     	}
+     	.ordersteps {
+     		width: 100%;
+     	}
+    }
+@media screen and (max-width: 550px) {
+     	.brandlogos {
+     		width: 100px;
+     	}
+     	.subl-hero-banner img {
+     		left: -50%;
+     	}
+     	.subl-hero-banner h2 {
+     		font-size: 48px;
+     		left: -24px;
+     	}
+     	.vball-video, #videocode {
+     		width: 400px;
+     		height: 400px;
+     	}
+    }
+
+</style>
+
+<div class="choose-category">
+	<h3>&uarr;</h3>
+	<h2>start here by choosing your category</h2>
+</div>
+
+
+<div class="header-wrapper">
+	<img id="customsublogo" src="https://static.augustasportswear.com/marketing/CustomPlusSublimation-Logo-Black.png">
+	<br>
+	<div class="threebrands">
+	<img class="brandlogos" id="auglogo" src="https://static.augustasportswear.com/marketing/B_AugustaSportswear.png">
+	<img class="brandlogos" id="hollogo" src="https://static.augustasportswear.com/marketing/B_Holloway.png">
+	<img class="brandlogos" id="h5logo" src="https://static.augustasportswear.com/marketing/B_HighFive.png">
+	</div>
+</div>
+
+<div class="subl-hero-banner">
+<h2>unlimited <br><span id="subl-designs">sublimated <br>design</span><br> options</h2>
+<img src="https://static.augustasportswear.com/marketing/SoftballSublimation-ANIMATION-R1.gif">
+</div>
+
+<div class="threesteps">
+ <div class="stepswrapper">
+  <div class="ordersteps stepone">
+	<h2>1<br>DESIGN IT</h2>
+	<p>Use our design templates online or call us for the custom design experience</p>
+   </div>
+   
+    <div class="ordersteps steptwo">
+	<h2>2<br>ORDER IT</h2>
+	<p>Utilize our builder for the most complete ordering experience.</p>
+   </div>
+   
+   <!-- <div class="ordersteps stepthree">
+	<h2>3<br>SHIPS FAST</h2>
+	<p>Get Custom Uniforms in as fast as 10 days.*
+	<br>
+	<span style="font-size:9px;">*Lead times based on order. Standard builder orders ship 15 business days after order is placed, orders with custom art ship 20 business days from approval. <br>
+Faster delivery methods available on seasonal fast turn programs or rush services with fees.</span>  
+	</p>
+   </div> -->
+   <div class="ordersteps stepthree">
+	<h2>3<br>SHIP IT</h2>
+	<p>Get your custom uniforms.
+	<br>
+	<span style="font-size:9px;">*Lead times based on order. Standard builder orders ship 15 business days after order is placed, orders with custom art ship 20 business days from approval. <br> 
+Faster delivery methods are available. Rush for $5/garment.</span>
+	</p>
+   </div>
+  </div>
+
+</div>
+
+<div class="build-it-gif">
+<img src="https://static.augustasportswear.com/marketing/ASB-BlankCanvas-white.gif">
+</div>
+
+<!--
+<div class="image-examples">
+	<div class="animated-image example-1a">
+	</div>
+	<div class="animated-image example-1a">
+	</div>
+	<div class="animated-image example-1a">
+	</div>
+	<div class="animated-image example-1a">
+	</div>
+	<div class="animated-image example-1a">
+	</div>
+</div>
+-->
+
+<!--
+<div class="rapid-turn">
+   <img id="rapid-logo" src="https://static.augustasportswear.com/marketing/CustomSubPlus-ASB-RapidPlus-LOGO.png">
+   <p>QUICK-TURN PRE-SEWN SUBLIMATED TEE.<br>PERFECT FOR YOUR BASE-LINE NEEDS.
+   <br>
+   <span id="shipdays">SHIPS IN 5 DAYS.</span>
+   </p>
+   <a id="design-button">START BUILDING NOW</a>
+   
+</div>
+-->
+
+<div class="order-details">
+
+<h2>NO CUSTOM ART FEES & NO MINIMUMS</h2>
+<p>We eliminate the roadblocks to ordering custom uniforms<br>
+Need a faster lead time? Ask about our rush options.
+</p>
+
+</div>
+
+<div class="vball-blocks">
+	<div class="design-vball">
+	   <p>LADIES VOLLEYBALL
+	     <BR>
+	     LONG SLEEVE JERSEY
+	   </p>
+	   <a id="custom-button" href="webapp/wcs/stores/servlet/ConfiguratorCategoryView?storeId=10252&langId=-1&catalogId=10101&categoryId=19025&configuratorType=uniforms&categoryName=Volleyball&subCategoryName=Ladies+%26+Girls">CUSTOMIZE</a>
+	</div>
+	
+	
+    <div class="vball-video">
+    <iframe id="videocode" width="560" height="315" src="https://www.youtube.com/embed/Tfo80GRbuBc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+
+
+<script>
+$(function() {
+    var ex1 = $(".example-1a");
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+    
+        if (scroll >= 1020) {
+            ex1.removeClass('example-1a').addClass("example-1b");
+        } else {
+            ex1.removeClass("example-1b").addClass('example-1a');
+        }
+    });
+});
+
+</script>

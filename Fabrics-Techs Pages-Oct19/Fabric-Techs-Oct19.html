@@ -1,0 +1,565 @@
+<!-- Fabric Content Pages --> 
+<style>
+.banner-wrapper {
+		max-width: 1920px;
+		width: 100%;
+		position: relative;
+    	margin: 0 auto 31px auto;	
+	}
+.banner-wrapper img {
+	width: 100%;
+	margin: auto;
+}
+.banner-text {
+	text-transform: uppercase;
+    color: white;
+	font-size: 35px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 35%;
+    letter-spacing: 1.5px;
+    width: 100%;
+}
+#subhead-text {
+	font-size: 22px;
+	font-family: "AvenirNextN";
+}
+
+.tech-links {
+	margin: 30px auto 0;
+    width: 90%;
+    text-align: left;
+    max-width: 1100px;
+}
+.tablinks {
+    cursor: pointer;
+    width: 30%;
+    padding: 3px 10px;
+    transition: 0.3s;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: black;
+    display: inline-block;
+    vertical-align: top;
+}
+.tablinks:hover {
+	text-decoration: underline;
+	font-family: "AvenirNextB";
+}
+.leftlink {
+	width: 33%;
+}
+.centerlink {
+	width: 38%;
+}
+.rightlink {
+	width: 22%;
+}
+.truehue-link  {
+	text-transform: lowercase;
+}
+.headerlink {
+	font-size: 15px;
+	font-family: "AvenirNextB";
+}
+
+/* Mobile Tech Links */
+.header-text-m, .tech-links-m {
+	display: none;
+}
+.tech-links-m {
+	margin: 30px auto 0;
+    width: 90%;
+    text-align: center;
+}
+.tablinks-m {
+    cursor: pointer;
+    padding: 3px 5px;
+    transition: 0.3s;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: black;
+    display: inline-block;
+    margin-right: 15px;
+}
+.header-text-m h1 {
+	color: black;
+	text-align: center;
+	border-bottom: 1px solid darkgrey;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+    line-height: 1.2;
+}
+#subhead-text-m {
+	font-size: 20px;
+	font-family: "AvenirNextN";
+}
+
+.anchor-header {
+	position: relative;
+	top: -100px;
+}
+
+.hideme {
+    opacity: 0;
+}
+
+.thumbnail-content-wrapper {
+	display: inline-block;
+    width: 100%;
+    max-width: 1920px;
+    margin: 30px auto 0 auto;
+    text-align: center;
+}
+.thumbnail-header {
+	text-transform: uppercase;
+	color: black;
+	font-size: 22px;
+    padding: 20px 0;
+    letter-spacing: 1.4px;
+    width: 90%;
+	max-width: 1100px;
+    margin: auto;
+    border-top: 1px solid darkgrey;
+}
+.thumbnail-content {
+	width: 90%;
+	max-width: 1100px;
+    vertical-align: text-top;
+    margin: 30px auto;
+    display: inline-block;
+}
+.thumbnail-content:hover .thumb-overlay{
+	opacity: 1;
+    transition: 0.5s ease;
+    }
+.thumb-image {
+    width: 50%;
+}
+.left-thumb-img {
+	float: left;
+}
+.right-thumb-img {
+	float: right;
+}
+
+.thumbnail-content-text {
+	margin: 10px 0 10px 10px;
+	color: black;
+	display: inline-block;
+	text-align: left;
+	width: 42%;
+	font-size: 14px;
+}
+.thumbnail-content-text h3 {
+	text-transform: uppercase;
+	font-size: 17px;
+	margin-bottom: 5px;
+}
+.thumbnail-content-text p {
+	line-height: 1.2;
+	font-size: 14px;
+}
+
+/*benefits*/
+.fabric-benefits {
+	display: inline-block;
+	margin-top: 20px;
+	width: 100%;
+}
+.fabric-benefits h3 {
+	text-transform: uppercase;
+	font-size: 15px;
+}
+.fabric-benefits ul {
+	margin-top: 10px;
+	padding-inline-start: 20px;
+	line-height: 1.5;
+}
+
+.learnmore {
+	padding: 5px 25px!important;
+    margin-top: 16px;
+    font-size: 12px;
+}
+
+.content-page {
+    color: black;
+}
+.content-header-image {
+	width: 500px;
+	height: 300px;
+	margin: auto;
+	display:block;
+}
+.content-header-text h1 {
+	text-transform: uppercase;
+	font-size: 26px;
+	text-decoration: underline;
+    text-align: center;
+}
+.content-header p {
+	text-align: center;
+	font-size: 20px;
+	margin: 20px auto;
+}
+.content-details img {
+	float: left;
+	max-width: 300px;
+	width: 100%;
+	height: 300px;
+}
+.content-details-text h2 {
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 600;
+}
+.content-details-text p {
+	font-size: 15px;
+	font-weight: 600;
+	line-height: auto;
+}
+
+#truehue-title {
+	text-transform: lowercase;
+}
+
+@media screen and (max-width: 1100px) {
+	.leftlink {
+	width: 25%;
+	}
+.centerlink {
+	width: 37%;
+	}
+.rightlink {
+	width: 27%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.hideme {
+	  opacity: 1;
+	}
+	.banner-text, .tech-links {
+	  display: none;
+	}
+	.header-text-m, .tech-links-m {
+		display: block;
+	}
+	.thumb-image, .thumbnail-content-text {
+		width: 100%;
+	}
+	.thumb-image {
+		margin-bottom: 10px;
+	}
+	.right-thumb-img {
+	  float: left;
+	}
+	.thumbnail-content-text {
+		margin-left: 0;
+	}
+	.learnmore {
+	  width: -webkit-fill-available;
+	}
+}
+@media screen and (max-width: 350px) {
+	.tablinks-m {
+	  font-size: 12px;
+	}
+}
+</style>
+
+<!-- Header -->
+<div class="banner-wrapper">
+  	<img src="https://static.augustasportswear.com/marketing/FabricsTech%2DLandingPage%2DHEADBANNER.jpg">
+  	
+  	<div class="banner-text">
+  	<h1>FABRICS & TECHNOLOGIES
+  	<br>
+  	<span id="subhead-text">TO KEEP YOU WARM, DRY & ACTIVE</span></h1>
+  	</div>
+</div>
+
+<!-- Tech Links -->
+  <div class="tech-links">
+  <a class="tablinks leftlink headerlink" href="#be-dry">BE DRY</a>
+  <a class="tablinks centerlink headerlink" href="#be-warm">BE WARM</a>
+  <a class="tablinks rightlink headerlink" href="#be-active">BE ACTIVE</a>
+  
+  <a class="tablinks leftlink" href="/storm-dfend">STORM DFEND™</a>
+    <a class="tablinks centerlink" href="/3d-regulate-lightweight-knit">3D Regulate Lightweight Knit</a>
+    <a class="tablinks rightlink" class="truehue-link" href="/true-hue-technology">true hue technology®</a>
+  
+  <a class="tablinks leftlink" href="/3d-regulate-softshell">3D Regulate Softshell</a>
+  <a class="tablinks centerlink" href="/3d-regulate-seamless-knit">3D Regulate Seamless Insulated Knit</a>
+  <a class="tablinks rightlink" href="/converge-embossed-knit">Converge Embossed Knit</a>
+  </div>
+  
+<!-- Mobile Header -->
+<div class="header-text-m">
+  	<h1>FABRICS & TECHNOLOGIES
+  	<br>
+  	<span id="subhead-text-m">TO KEEP YOU WARM, DRY & ACTIVE</span></h1>
+</div>
+
+<div class="tech-links-m">
+  <a class="tablinks-m" href="/storm-dfend">STORM DFEND™</a>
+    <a class="tablinks-m" href="/3d-regulate-lightweight-knit">3D Regulate Lightweight Knit</a>
+    <a class="tablinks-m" class="truehue-link" href="/true-hue-technology">true hue technology®</a>
+  
+  <a class="tablinks-m" href="/3d-regulate-softshell">3D Regulate Softshell</a>
+  <a class="tablinks-m" href="/3d-regulate-seamless-knit">3D Regulate Seamless Insulated Knit</a>
+  <a class="tablinks-m" href="/converge-embossed-knit">Converge Embossed Knit</a>
+  </div>
+  
+
+<!-- Technology thumbnails -->
+<div class="thumbnail-wrapper" id="thumbnails">
+  
+   <!-- Be Cool Thumbs 
+<div class="thumbnail-content-wrapper">
+ <span class="anchor-header" id="be-cool"></span>
+ <h2 class="thumbnail-header">BE COOL</h2>
+ 	
+  <div class="thumbnail-content">
+    <div class="thumb-overlay">
+    	<a class="button primary learnmore">Learn More</a>
+      </div>
+      <img>
+    <div class="thumbnail-content-text">
+     <h2>TECHNOLOGY TITLE</h2>
+     <p>Technology short text description</p>
+    </div>
+  </div>
+  
+  <div class="thumbnail-content">
+    <div class="thumb-overlay">
+    	<a class="button primary learnmore" href="">Learn More</a>
+      </div>
+      <img>
+    <div class="thumbnail-content-text">
+     <h2>TECHNOLOGY TITLE 2</h2>
+     <p>Technology short text description</p>
+    </div>
+  </div>
+
+  </div>
+-->
+	<!-- Be Dry Thumbs -->
+<div class="thumbnail-content-wrapper">
+ 	<span class="anchor-header" id="be-dry"></span>
+ 	<h3 class="thumbnail-header">BE DRY</h3>
+ 	
+  <div class="thumbnail-content hideme" id="storm-dfend">
+    <img class="thumb-image left-thumb-img" src="https://static.augustasportswear.com/marketing/FabricsTech%2DLandingPage%2DStormDfend.png">
+    
+    <div class="thumbnail-content-text">
+     <h3>STORM DFEND™</h3>
+     <p>Durable water resistant finish keeps you dry, while knit softshell breathes to keep you comfortable.</p>
+     
+      <div class="fabric-benefits">
+	    <h3>Benefits:</h3>
+	    <ul>
+	    	<li>Durable water resistance protection (10-15 launderings)</li>
+	    	<li>High breathability comfort</li>
+	    	<li>Midweight warmth</li>
+	    	<li>Allows for motion</li>
+	    </ul>
+	</div>
+     
+    <a class="button primary learnmore" href="/storm-dfend">Learn More</a>
+    </div>
+  </div>
+  
+  <div class="thumbnail-content hideme" id="3d-softshell">
+    <img class="thumb-image right-thumb-img" src="https://static.augustasportswear.com/marketing/FabricsTech%2DLandingPage%2D3DRegulateSoftshell.png">
+    
+    <div class="thumbnail-content-text">
+     <h3>3D Regulate Softshell</h3>
+     <p>3D fabric technology with patterned brushed back engineered to keep you comfortable in motion and Durable Water Resistance for protection.</p>
+     
+     <div class="fabric-benefits">
+	    <h3>Benefits:</h3>
+	    <ul>
+	    	<li>Durable water resistance protection (10-15 launderings)</li>
+	    	<li>3D Fabric lining designed for breathable warmth</li>
+	    	<li>High breathability comfort</li>
+	    	<li>Midweight warmth</li>
+	    </ul>
+	</div>
+     
+     <a class="button primary learnmore" href="/3d-regulate-softshell">Learn More</a>
+    </div>
+    
+  </div>
+
+  </div>
+
+   <!-- Be Warm Thumbs -->
+<div class="thumbnail-content-wrapper">
+ 	<span class="anchor-header" id="be-warm"></span>
+ 	<h3 class="thumbnail-header">BE WARM</h3>
+ 	
+  <div class="thumbnail-content hideme" id="3d-lightweight">
+      <img class="thumb-image left-thumb-img" src="https://static.augustasportswear.com/marketing/FabricsTech%2DLandingPage%2D3DRegulateLightweightKnit.png">
+    	
+    <div class="thumbnail-content-text">
+     <h3>3D Regulate Lightweight Knit</h3>
+     <p>3D fabric technology with patterned brushed back engineered to keep you comfortable in motion.</p>
+     
+     <div class="fabric-benefits">
+	    <h3>Benefits:</h3>
+	    <ul>
+	    	<li>3D Fabric designed for breathable warmth</li>
+	    	<li>Wicks away sweat</li>
+	    	<li>High stretch for maximum performance comfort</li>
+	    	<li>Lightweight layering warmth</li>
+	    	<li>Heathered appearance for subtle textured look</li>
+	    </ul>
+	</div>
+     
+	<a class="button primary learnmore" href="/3d-regulate-lightweight-knit">Learn More</a>
+    </div>
+  </div>
+  
+  <div class="thumbnail-content hideme" id="3d-seamless">
+   	<img class="thumb-image right-thumb-img" src="https://static.augustasportswear.com/marketing/FabricsTech%2DLandingPage%2D3DRegulateSIKnit.png">
+    	
+    <div class="thumbnail-content-text">
+     <h3>3D Regulate Seamless Insulated Knit</h3>
+     <p>3D fabric technology with seamless quilted insulation engineered to keep you warm without sacrificing breathability.</p>
+     
+     <div class="fabric-benefits">
+	    <h3>Benefits:</h3>
+	    <ul>
+	    	<li>3D fabric designed for breathable warmth</li>
+	    	<li>Wicks away sweat</li>
+	    	<li>Midweight layering warmth</li>
+	    	<li>Heathered appearance for subtle textured look</li>
+	    	<li>Pairs well with any performance fleece bottoms</li>
+	    </ul>
+	</div>
+     
+     <a class="button primary learnmore" href="/3d-regulate-seamless-knit">Learn More</a>
+    </div>
+  </div>
+
+  </div>
+
+   <!-- Be Active Thumbs -->
+<div class="thumbnail-content-wrapper">
+ 	<span class="anchor-header" id="be-active"></span>
+ 	<h2 class="thumbnail-header">BE ACTIVE</h2>
+ 	
+  <div class="thumbnail-content hideme" id="truehue">
+    <img class="thumb-image left-thumb-img" src="https://static.augustasportswear.com/marketing/FabricsTech%2DLandingPage%2Dtruehuetech.png">
+    
+    <div class="thumbnail-content-text">
+     <h3 id="truehue-title">true hue technology®</h3>
+     <p>true hue technology®  helps prevent dye migration so you can decorate confidently with color reliability you can count on, guaranteed!</p>
+     
+     <div class="fabric-benefits">
+	    <h3>Benefits:</h3>
+	    <ul>
+	    	<li>Prevent dye migration</li>
+	    	<li>Decorate with confidence</li>
+	    	<li>Bright decorations stay bright</li>
+	    	<li>Excellent color retention over time</li>
+	    </ul>
+	</div>
+     
+     <a class="button primary learnmore" href="/true-hue-technology">Learn More</a>
+    </div>
+  </div>
+  
+  <div class="thumbnail-content hideme" id="converge-embossed">
+    <img class="thumb-image right-thumb-img" src="https://static.augustasportswear.com/marketing/FabricsTech%2DLandingPage%2DConvergeEKnit.png">
+    
+    <div class="thumbnail-content-text">
+     <h3>Converge Embossed Knit</h3>
+     <p> Embossed active knit with subtle texture featuring true hue technology®.</p>
+     
+     <div class="fabric-benefits">
+	    <h3>Benefits:</h3>
+	    <ul>
+	    	<li>Subtle trend forward embossed print</li>
+			<li>true hue technology® which prevents dye migration</li>
+			<li>Wicks away sweat</li>
+			<li>Active lightweight layer</li>
+	    </ul>
+	</div>
+     
+     <a class="button primary learnmore" href="/converge-embossed-knit">Learn More</a>
+    </div>
+  </div>
+
+  </div>
+
+</div>
+
+
+<script>
+//fade in
+$(document).ready(function() {
+    
+/* Every time the window is scrolled ... */
+$(window).scroll( function(){
+    
+/* Check the location of each desired element */
+$('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height() + 300;
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1000);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 600, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
+</script>

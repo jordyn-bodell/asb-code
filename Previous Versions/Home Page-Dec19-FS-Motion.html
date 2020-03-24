@@ -1,0 +1,2413 @@
+<!-- Homepage -->
+<style>
+.left-espot {
+        position: relative;
+        margin: auto;
+    }
+
+/* shop buttons B&W */
+.hp-btn-black {
+	background: black;
+	color: white;
+	padding: 7px 15px;
+	margin: 10px 0;
+	font-family: "AvenirNextB";
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+}
+.hp-btn-white {
+	background: white;
+	color: black;
+	padding: 7px 10px;
+	margin: 5px auto;
+	font-family: "AvenirNextB";
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+}
+.hp-btn-black:hover, .hp-btn-white:hover {
+	text-decoration: underline;
+}
+.shop-arrow {
+  width: 0; 
+  height: 0; 
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid black;
+  display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-left: 10px;
+}
+.shop-arrow-white {
+  width: 0; 
+  height: 0; 
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid white;
+  display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-left: 10px;
+}
+.shop-arrow-grey {
+  width: 0; 
+  height: 0; 
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 11px solid #c8c8c8;
+  display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-left: 10px;
+}
+.btnlinktext {
+	color: white;
+	text-decoration: underline;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.hideme, .hideme2, .hideme3 {
+    opacity:0;
+}
+b {
+	font-family: "AvenirNextB";
+}
+
+
+/* Video Popup */
+.video-popup {
+	display: none;
+	 z-index: 999;
+}
+.vidoverlay {
+ 	width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.66);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.video-container iframe {
+	width: 75%;
+    max-width: 900px;
+    min-height: 500px;
+    height: auto;
+    background: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden
+}
+.video-container span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 99;
+    cursor: pointer;
+    color: white;
+    font-family: AvenirNextB;
+    font-size: 17px;
+}
+
+
+/* Shipping/Promo Top Bar */
+.top-promo-bar {
+	width: 100%;
+	background-color: rgb(240,241,243);
+	color: black;
+	position: sticky;
+	z-index: 100;
+	padding: 10px 0;
+	border: gray 1px solid;
+}
+.shipping-bar-wrapper {
+	width: 60%;
+	margin: auto;
+	display: flex;
+	max-width: 1100px;
+}
+.shipping-bar-wrapper-m {
+	width: 100%;
+	margin: auto;
+	display: none;
+}
+
+#left-arrow-ship {
+  width: 0; 
+  height: 0; 
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent; 
+  border-right: 8px solid black; 
+  display: inline-block;
+  margin: 0 15px;
+}
+#right-arrow-ship {
+  width: 0; 
+  height: 0; 
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid black;
+    display: inline-block;
+}
+#left-arrow-ship:hover, #right-arrow-ship:hover {
+	cursor: pointer;
+}
+.ship-divider {
+	margin: 0 8px;
+}
+
+.ship-text-wrapper {
+	display: block;
+	width: auto;
+	margin: auto;
+	height: 16px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.ship-msgs {
+	display: inline-block;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-family: "AvenirNextN";
+	text-align: center;
+}
+.ship-msgs-m {
+	font-size: 11px;
+	text-transform: uppercase;
+	font-family: "AvenirNextN";
+	text-align: center;
+}
+
+.ship-details-link {
+	text-decoration: underline;
+	cursor: pointer;
+	vertical-align: bottom;
+}
+#ship-details-box a {
+	color: #50a4d9;
+	text-decoration: underline;
+}
+.ship-detail-box p {
+	padding: 25px;
+	width: 75%;
+	margin: auto;
+	color: black;
+}
+.ship-detail-box h4 {
+	text-transform: uppercase;
+	margin: 6px auto;
+	color: black;
+	font-family: "AvenirNextN";
+}
+
+#free-ship-box, #ordertoday-details-box, #save-5-details-box {
+	display: none;
+    width: 45%;
+    position: fixed;
+    top: 35%;
+    left: 28%;
+    z-index: 1000;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px black solid;
+}
+.detailsoverlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.66);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+#close-details {
+	cursor: pointer;
+    left: 49%;
+    top: -3px;
+    position: relative;
+	padding: 8px;
+}
+
+.ship-details-graphic {
+	width: 16%;
+	margin: auto;
+	display: block;
+}
+#save-5-subtext {
+	font-size: 10px;
+	margin: 5px auto;
+}
+.details-subtext {
+	font-size: 9px;
+	margin: 5px auto;
+}
+.details-subtext a {
+	font-size: 9px;
+	color: #50a4d9;
+}
+.details-subtext a:hover {
+	text-decoration: underline;
+}
+.got-it {
+	text-align: center;
+	margin: 15px 10px;
+	border: 2px solid #50a4d9;
+	background: white;
+	color: #50a4d9;
+	font-family: "AvenirNextB";
+    font-size: 12px;
+}
+.got-it:hover {
+	background-color: #50a4d9;
+	color: white;
+	cursor: pointer;
+}
+
+#free-ship-box p {
+	padding: 10px 15px;
+}
+#save-5-details-box p {
+	padding: 15px 0;
+    width: 100%;
+}
+
+/* Hero 1 Banner */
+.hero1-banner {
+	background: rgb(10,37,56);
+	background: linear-gradient(0deg, rgba(10,37,56,1) 0%, rgba(4,77,84,1) 25%, rgba(25,147,171,1) 50%, rgba(6,120,144,1) 75%, rgba(0,20,58,1) 100%);
+	padding: 50px 0 0;
+}
+#fs-ribbon {
+	width: 100%;
+	position: absolute;
+	top: 6%;
+}
+.hero1-section-wrapper {
+	padding-bottom: 40px;
+}
+.hero1-section {
+	z-index: 27;
+    position: relative;
+    display: block;
+    margin: 0 auto 30px;
+    padding: 30px 0;
+}
+
+
+/* freestyle hero1 top */
+.fs-top {
+    margin-bottom: 50px;
+    top: 30px;
+}
+.fs-top img {
+	position:relative;
+    margin: 0 auto 15px;
+    display: block;
+}
+.fs-top p {
+	color: white;
+	text-align: center;
+	font-size: 18px;
+	margin: 15px auto;
+	opacity: 0;
+	animation: fadeInUp 1.5s ease-in 0.7s forwards;
+}
+#freestyle-logo {
+	width: 50%;
+	animation: fadeInUp 1.5s ease-in forwards;
+	opacity: 0;
+}
+#nextgen-text {
+	width: 62%;
+	padding: 20px 0;
+    animation: fadeInUp 1.5s ease-in .5s forwards;
+    opacity: 0;
+}
+#nextgen-text-m {
+	width: 75%;
+	padding: 20px 0;
+    animation: fadeInUp 1.5s ease-in .5s forwards;
+    opacity: 0;
+    display: none;
+}
+#hero1-btn {
+  color: white;
+  background: rgb(20, 155, 82);
+  padding: 8px 12px;
+  margin: 10px auto;
+  display: block;
+  width: fit-content;
+  width: -moz-fit-content;
+   width: fit-content;
+   text-align: center;
+   font-size: 12px;
+  text-transform: uppercase;
+  font-family: "AvenirNextB";
+    animation: fadeInUp 1.5s ease-in .9s forwards;
+    opacity: 0;
+}
+#hero1-btn:hover {
+	text-decoration: underline;
+}
+.shop-arrow-white-hollow {
+	-webkit-text-stroke: 1px white;
+}
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+
+/* freestyle hero1 screens */
+.fs-screens-block {
+    position: relative;
+    width: 75%;
+    margin: 0 auto 400px;
+}
+.fs-screens-block img {
+	position: relative;
+}
+#fs-laptop {
+	width: 100%;
+	margin: auto;
+	top: 150px;
+}
+#fs-ipad {
+    position: absolute;
+    top: 70%;
+    right: 19%;
+    width: 35%;
+}
+#fs-phone {
+    position: absolute;
+    top: 68%;
+    left: 11%;
+    width: 18%;
+}
+
+
+/* freestyle hero1 video */
+.fs-video-block {
+	width: 100%;
+	top: 40px;
+}
+.fs-video-wrapper {
+	width: 75%;
+	margin: 10px auto;
+}
+#fs-video {
+	width: 100%;
+    display: block;
+    margin: auto;
+}
+.fs-play-btn {
+	display: block;
+	margin: 20px auto 10px;
+	width: fit-content;
+}
+#playbutton2 {
+	vertical-align: middle;
+}
+#playarrow2 {
+ 	width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 20px solid white;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 15px 0 0 7px;
+}
+#playbutton2:hover .play-circle {
+	background-color: white;
+	transition: 0.1s;
+}
+#playbutton2:hover #playarrow2 {
+	border-left: 20px solid black;
+	transition: .1s;
+}
+.play-circle {
+	width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: transparent;
+    border: 3px solid white;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+.fs-play-btn p {
+	color: white;
+	text-transform: uppercase;
+    display: inherit;
+    text-decoration: underline;
+    font-size: 14px;
+    font-family: "AvenirNextB";
+    margin-left: 10px;
+}
+
+
+/* holiday sale */
+.holiday-promo {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(10,37,56,1) 100%);
+    position: relative;
+    padding-top: 50px;
+}
+.snowflakes-header {
+	position: relative;
+	top: 100px;
+}
+#holiday-flakes {
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+.holiday-middle {
+	position: relative;
+}
+#holiday-snowflake {
+	width: 50%;
+	margin: auto;
+	padding: 60px 0;
+	display: block;
+}
+.holiday-text-box {
+	width: 100%;
+	margin: 20px auto;
+	padding: 20px 0;
+	color: white;
+	position: absolute;
+	top: 8%;
+	text-align: center;
+}
+#holidaytext {
+	width: 25%;
+	display: inline;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.holiday-text-box h2 {
+	color: rgb(233	92	89);
+	display: block;
+	font-size: 3.5vw;
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+}
+.holiday-text-box h3 {
+	display: inline-block;
+	font-size: 7vw;
+	font-family: "AvenirNextN";
+	vertical-align: middle;
+}
+.holiday-text-box p {
+	font-size: 20px;
+	margin: 0 auto;
+}
+#promoexclude {
+	font-size: 12px;
+	margin: 0 auto 20px;
+}
+
+.holiday-text-box h4 {
+	display: block;
+	font-size: 3vw;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "AvenirNextN";
+	top: -40px;
+	position: relative;
+}
+#percentoff {
+    width: 40%;
+    bottom: 20px;
+    position: relative;
+}
+.holidaybtn {
+
+}
+
+#holiday-flakes-m {
+	display: None;
+	width: 100%;
+}
+
+
+
+/* new styles */
+.new-styles-banner {
+background-color: #00143a;
+background-image:  linear-gradient(95deg, #00143a,#00143a 46%, black 46%, black 77%, white 77%);
+position: relative;
+display: grid;
+}
+#newstyles-models {
+	width: 60%;
+	position: relative;
+	bottom: 0;
+	left: 40%;
+}
+
+.newstyles-text {
+    position: absolute;
+    bottom: 35%;
+    left: 0%;
+    width: 35%;
+}
+.newstyles-text img {
+	width: 100%;
+	margin: 0 auto 25px;
+}
+.newstyles-btn {
+    font-size: 1vw;
+    margin: auto;
+    width: fit-content;
+    display: block;
+}
+.newstyles-text h2 {
+	color: white;
+	line-height: 1;
+	margin-bottom: 15px;
+	font-size: 4vw;
+	text-shadow: rgba(0,0,0,0.4) -4px 0px 5px;
+}
+#download-cat-btn {
+	font-size: 16px;
+	position: relative;
+	top: 25%;
+	display: block;
+	text-align: center;
+	margin: auto;
+}
+
+.newstyles-text-m {
+	display: none;
+	position: relative;
+}
+#newstyles-models-m {
+	display: none;
+	width: 100%;
+	margin: auto;
+}
+
+
+/* Hero 2 Banner Full on Fleece */
+.hero2-banner {
+	box-sizing: border-box;
+	position: relative;
+    width: 100%;
+    margin: auto;
+    display: grid;
+}
+.hero2-banner img {
+	width: 100%;
+}
+.hero2-text {
+    position: absolute;
+    top: 33%;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+.hero2-btn {
+	color: #c8c8c8;
+	text-align: center;
+	font-size: 20px;
+	border-bottom: 5px solid #c8c8c8;
+}
+.hero2-btn:hover {
+	border-bottom: 5px solid white;
+	transition: .1s;
+}
+#fof-mobile {
+  display: none;
+}
+
+/* Pacific Free Ship */
+.ph-ship-wrapper {
+	width: 100%;
+	max-height: 1100px;
+
+	overflow: hidden;
+	background: url(https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/NOVEMBER%202019/homepage_FreeStyle-desktop-pacific.jpg);
+    background-position: center 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 130px 0;
+}
+
+.ph-free-container {
+	width: 40%;
+    position: relative;
+    left: 57%;
+    top: 0px;
+    display: block;
+    text-align: center;
+}
+#ph-ship-logo {
+    width: 50%;
+    position: relative;
+    margin: auto;
+    display: block;
+}
+.ph-free-container h3 {
+    font-size: 3vw;
+    margin: 30px auto 50px;
+    line-height: 1;
+    color: white;
+}
+.ph-free-container p {
+	margin: auto;
+    color: white;
+    line-height: 1.3;
+    font-size: 14px;
+    top: 40px;
+}
+#ph-ship-details {
+    position: relative;
+    bottom: -375px;
+    font-size: 14px;
+}
+#ph-ship-btn {
+	background-color: white;
+	color: black;
+	font-family: "AvenirNextB";
+    padding: 8px 15px; 
+    top: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: relative;
+}
+#ph-ship-btn:hover, #ph-ship-btn-m:hover {
+text-decoration: underline;
+}
+
+.ph-text-m {
+	display: none;
+	top: 70px;
+    position: relative;
+}
+.ph-text-m p {
+	margin: auto;
+    color: white;
+    line-height: 1.3;
+    font-size: 20px;
+    top: 40px;
+}
+#ph-ship-details-m {
+	position: relative;
+    top: 110px;
+    font-size: 14px;
+    right: 36%;
+}
+#ph-ship-btn-m {
+	background-color: white;
+	color: black;
+	font-family: "AvenirNextB";
+    padding: 8px 15px; 
+    top: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+/*Brand Text*/
+.brand-text {
+	background-color: #00143a;
+	width: auto;
+	position: relative;
+	z-index: 1000;
+	padding: 100px 50px;
+}
+#asb-logo {
+    width: 60%;
+    margin: 0 auto 75px;
+    display: block;
+}
+#asb-logo-m {
+	display: none;
+	width: 90%;
+    margin: 40px auto;
+    padding-top: 30px;
+}
+
+.brand-text h1 {
+	text-align: center;
+	color: white;
+	width: 52%;
+	margin: 45px auto;
+	max-width: 75%;
+	font-family: "AvenirNextN";
+	font-size: 16px;
+	line-height: 1.4;
+	text-transform: uppercase;
+}
+#brand-text-lowercase {
+	text-transform: none;
+}
+.brand-text a {
+	display: block;
+    margin: auto;
+    width: fit-content;
+}
+
+
+/* Wool */
+.wool-container {
+	margin-bottom: -4px;
+	position: relative;
+}
+.wool-container img {
+	width: 100%;
+	display: -webkit-box;
+}
+.wool-text {
+	position: absolute;
+	bottom: 12%;
+	right: 8%;
+	color: white;
+	width: 25%;
+	text-align: center;
+}
+.wool-text h2 {
+	text-transform: uppercase;
+	font-size: 27px;
+}
+.wool-text p {
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 10px 0 20px;
+}
+#wool-btn {
+	border: 1px white solid;
+	padding: 10px;
+	text-transform: uppercase;
+	color: white;
+	margin: 10px auto;
+	font-family: "AvenirNextB";
+}
+#wool-btn:hover {
+	background-color: black;
+	border: none;
+	cursor: pointer;
+}
+#wool-mobile {
+	display: none;
+}
+
+/* News */
+.news-container {
+    margin: 40px auto 20px;
+    width: 90%;
+}
+.news-container h2 {
+	margin: 10px 30px;
+	color: black;
+	font-size: 30px;
+	text-align: left;
+}
+
+/* boxes/wrappers */
+.news-left {
+	width: 30%;
+	display: inline-block;
+	margin-right: 15px;
+	vertical-align: top;
+	overflow: hidden;
+}
+.news-right {
+	width: 66%;
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+}
+.news-box {
+	color: black;
+	text-align: center;
+	background: rgba(0,0,0,0.05);
+	margin: 10px auto;
+	overflow: hidden;
+}
+.left-news-box {
+
+}
+.right-news-box {
+
+}
+
+/* News Box Elements */
+.newsimage-box {
+	width: 100%;
+	overflow: hidden;
+}
+.newsimage {
+	width: 100%;
+ 	transition: all 2.5s ease-in-out;
+ 	display: block;
+ 	z-index: 3;
+}
+.news-text {
+	padding: 16px 5px;
+	z-index: 4;
+	position: relative;
+}
+.news-box p {
+	text-transform: uppercase;
+	font-size: 12px;
+	color: rgba(0,0,0,0.7);
+	margin: 10px auto 5px;
+}
+.category-divider {
+	display: block;
+	width: 80px;
+	margin: auto;
+	border-bottom: 1px solid darkgrey;
+}
+.news-box h3 {
+	line-height: 1.2;
+	font-size: 14px;
+	margin: 20px auto 15px;
+	width: 90%;
+}
+.read-link {
+	color: black;
+	text-align: left;
+	position: relative;
+    top: 7px;
+    left: 7px;
+}
+
+/* News IDs */
+#samedayship-news {
+    background-color: black;
+    width: 100%;
+    display: block;
+    padding: 110px 0;
+}
+#samedayship-news img {
+    width: 75%;
+    margin: auto;
+    display: block;
+}
+#learn-ship-news {
+	top: 30px;
+}
+#shipping-details {
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+    text-align: center;
+    margin: 10px auto;
+    position: relative;
+    bottom: -100px;
+    width: 90%;
+}
+
+/* News Hovers */
+.newsimage-box:hover .newsimage {
+ 	transform: scale(1.1);
+}
+.read-link:hover, .news-box h3:hover {
+	text-decoration: underline;
+}
+.news-box:hover {
+	background: rgba(0,0,0,0.1);
+}
+
+/* promo */
+.promo-banner {
+	width: 100%;
+	position: relative;
+}
+.promo-logo-text {
+	width: 35%;
+	position: relative;
+	top: 10px;
+	display: inline-block;
+}
+.promo-logo-text img {
+	width: 100%;
+}
+.promo-logo-text p {
+	font-size: 17px;
+	color: white;
+	text-align: center;
+	margin: -13px auto 10px;
+	text-transform: uppercase;
+	font-family: "AvenirNextN";
+	line-height: 1.2;
+}
+#promo-text-all {
+	font-size:15px;
+}
+
+.promo-text-btn {
+	text-align: center;
+	color: white;
+    width: 20%;
+    display: inline-block;
+    text-transform: uppercase;
+    position: absolute;
+    top: 22%;
+    right: 8%;
+}
+.promo-text-btn p {
+	margin-bottom: 20px;
+	font-family: "AvenirNextB";
+	line-height: 1;
+	font-size: 1vw;
+}
+.promo-text-btn h3 {
+	font-family: "AvenirNextN";
+	margin: 10px auto;
+	font-size: 1.5vw;
+    line-height: 1.1;
+}
+#promocode {
+	color: rgb(20	81	58);
+	font-family: "AvenirNextB";
+	font-size: 2vw;
+}
+#promobtn {
+
+	font-size: 1vw;
+}
+
+#promodetails {
+	color: lightgray;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-align: center;
+    position: relative;
+    top: 150px;
+    width: 100%;
+    line-height: 1.3;
+    font-family: AvenirNextN;
+}
+.detail-divider {
+	margin: 0 10px;
+    font-size: 23px;
+    vertical-align: super;
+    position: relative;
+    top: 8px;
+}
+#valid-text {
+	display: none;
+	margin: 5px auto;
+	width: 100%;
+}
+
+.promo-banner-preview {
+	width: 100%;
+	display: grid;
+}
+#promo-preview {
+	width: 100%;
+}
+#promo-banner {
+	width: 100%;
+	display: block;
+}
+#promo-banner-m, .promo-text-btn-m {
+	display: none;
+}
+
+        
+        /*Media Queries*/
+        @media screen and (max-width: 1600px) {
+        .fs-screens-block {
+    margin: 0 auto 150px;
+}
+        }
+        @media screen and (max-width: 1500px) {
+ .hero1-text {
+   	 	position: absolute;
+		}
+.hero1btn {
+	display: block;
+	font-size: 14px;
+}
+#download-cat-btn {
+	font-size: 12px;
+}
+#hero2-image {
+    width: 64%;
+    right: -20%;
+}
+#hero2-image img {
+	left: -4%;
+}
+
+#promodetails {
+	top: 70px;
+}
+        }
+        @media screen and (max-width: 1320px) {
+
+        }
+        @media screen and (max-width: 1280px) {
+      
+        .promo-text-btn {
+        	width: 300px;
+        }
+        #promodetails {
+        	top: 50px;
+        }
+        }
+        @media screen and (max-width: 1080px) {
+        	.shipping-bar-wrapper {
+        		width: 85%;
+        	}
+.fs-screens-block {
+	margin: 0 auto 50px;
+}
+#fs-ipad {
+	top: 63%;
+    right: 16%;
+}
+#fs-phone {
+    top: 70%;
+}
+
+		.ph-ship-wrapper {
+    background-position: center;
+    background-size: cover;
+    padding: 135px 0;
+        background-attachment: scroll;
+    }
+    #ph-ship-logo {
+    	top: -56px;
+    }
+    
+    .promo-text-btn {
+    	top: 22%;
+    	right: 4%;
+    }
+        }
+        @media screen and (max-width: 1023px) {		       
+.hero2-container {
+	background-position: center 50px;
+}
+#hero2-banner {
+	width: 100%;
+}
+.hero2-section {
+	width: 100%;
+}
+#hero2-mid, #hero2-right {
+	display: none;
+}
+
+	.ph-ship-wrapper {
+    background-position: center -15px;
+    background-size: cover;
+    padding: 160px 0;
+    }
+#ph-ship-btn {
+    padding: 10px 13px;
+    font-size: 13px;
+    }
+
+.brands-text-wrapper {
+    	background-position: center 75px;
+    }
+#brands-text-logo {
+	width:100%;
+}
+#promobtn {
+	font-size: 12px;
+}   
+ .promo-text-btn {
+top: 16%;
+right: 4%;
+        }
+      
+
+        }
+        @media screen and (max-width:950px) {
+.hero1-text {
+	left: 5.5%;
+}
+			#hero2-image {
+				height: 550px;
+			}
+			#hero2-image img {
+				top: -15%;
+				left: -18%;
+				width: 700px;
+			}
+			.hero2-text h2 {
+				font-size: 40px;				
+			}
+			
+			
+			.brand-text h1 {
+				width: 75%;
+			}
+			
+			.wool-text {
+				width: 35%;
+				bottom: 7%;
+				right: 4%;
+			}
+			.wool-text h2 {
+				font-size: 23px;
+			}
+            
+        }
+        @media screen and (max-width:900px) {
+    #ordertoday-details-box, #free-ship-box, #save-5-details-box {
+    top: 25%;
+    width: 55%;
+    left: 22%;
+}
+
+
+#fs-ipad {
+	top: 75%;
+}
+
+      #hero3-model {
+	right: 10%;
+}
+      
+            .promo-text-btn {
+            	right: 0%;
+            }
+            #promocode {
+            	font-size: 25px;
+            }
+
+        }
+		@media screen and (max-width: 768px) {
+        	.shipping-bar-wrapper {
+        		width: 100%;
+        	}
+        	#left-arrow-ship {
+        		margin: 0 0 0 10px;
+        	}
+        	#right-arrow-ship {
+        		margin-right: 10px;
+        	}    	
+
+#freestyle-logo {
+	width: 75%;
+}
+#nextgen-text {
+	display: none;
+}
+#nextgen-text-m {
+	display: block;
+}
+#fs-ribbon {
+	top: 5%;
+}
+.fs-top {
+	margin-bottom: 25px;
+}
+.fs-top p {
+	font-size: 14px;
+}
+.fs-screens-block {
+	width: 100%;
+}
+#fs-laptop {
+	top: 150px;
+}
+#fs-ipad {
+    width: 41%;
+    top: 80%;
+}
+#fs-phone {
+    top: 70%;
+    width: 22%;
+}
+.fs-video-wrapper {
+	width: 95%;
+}
+
+
+.snowflakes-header {
+	top: 30px;
+}
+#holiday-flakes {
+	display: none;
+}
+#holiday-flakes-m {
+	display: block;
+}
+#holiday-snowflake {
+	width: 80%;
+}
+.holiday-middle {
+	padding-bottom: 200px;
+}
+.holiday-text-box {
+	top: 7%;
+}
+#holidaytext {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.holiday-text-box h2 {
+font-size: 6.5vw;
+}
+.holiday-text-box p {
+font-size: 15px;
+}
+.holiday-text-box h3 {
+    font-size: 14vw;
+    width: 60%;
+    bottom: 30px;
+    position: relative;
+    line-height: 1;
+}
+.holiday-text-box h4 {
+    font-size: 6vw;
+    bottom: 0;
+    position: relative;
+    margin: 5px auto;
+}
+#percentoff {
+	width: 60%;
+}
+    
+
+.new-styles-banner {
+	background-image: linear-gradient(186deg, #00143a,#00143a 56%, white 56%, white 100%);
+}
+#newstyles-models {
+	display: none;
+}
+#newstyles-models-m, .newstyles-text-m  {
+	display: block;
+}
+.newstyles-text {
+	position: relative;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+}
+.newstyles-text img {
+    width: 70%;
+    margin: 10px auto;
+    display: block;
+}
+.newstyles-btn {
+	font-size: 12px;
+}
+#download-cat-btn  {
+	display: none;
+}
+#download-cat-btn-m {
+    padding: 25px 0;
+    background: #00143a;
+    text-align: center;
+}
+
+
+.ph-ship-wrapper {
+	background-position: center 0;
+    padding: 200px 0 30px;
+    background-attachment: unset;
+}
+#ph-ship-logo {
+	width: 250px;
+	top: 0;
+}
+.ph-free-container {
+    top: -170px;
+    width: 100%;
+    left: 0;
+    }
+#ph-ship-details {
+    bottom: -115px;
+    color: white;
+    font-family: "AvenirNextN";
+}
+.ph-free-container h3 {
+    font-size: 6vw;
+}
+.ph-text-m {
+	display: block;
+}
+#ph-ship-btn, #ph-ship-details, #ph-freeship {
+	display: none;
+}
+
+
+
+.hero2-text {
+	top: 40%;
+}
+.hero2-btn {
+
+    font-size: 4vw;
+}
+#fof-desk {
+	display: none;
+}
+#fof-mobile {
+	display: block;
+	width: 100%;
+	margin: auto;
+}
+
+
+.video-container iframe {
+	min-width: 200px;
+    min-height: 200px;
+    width: 90%;
+}
+
+#asb-logo {
+	display: none;
+}
+#asb-logo-m {
+	display: block;
+}
+.brand-text {
+	padding: 30px;
+	margin-top: -4px;
+}
+.brand-text h1 {
+	width: 80%;
+	max-width: 100%;
+	font-size: 20px;
+}
+
+.three-block-wrapper {
+	display: inline-block;
+}
+.three-block-image {
+	width: 100%;
+	margin-right: 0;
+}
+.three-block-image-d {
+	display: none
+}
+.three-block-image-m {
+	display: block;
+}
+
+.three-block-btn {
+    text-align: center;
+}
+
+
+#wool-mobile {
+	display: block;
+}
+#wool-desk {
+	display: none;
+}
+.wool-text {
+	width: 100%;
+    bottom: 12%;
+    right: 0;
+}
+.wool-text h2 {
+	font-size: 36px;
+	margin: 0 20px;
+}
+
+.news-left, .news-right {
+	width: 100%;
+}
+
+
+#promo-banner {
+	display: none;
+}
+.promo-banner {
+	background: black;
+    padding: 30px 0;
+}
+#promo-banner-m {
+	display: block;
+	width: 80%;
+	margin: 15px auto;
+}
+
+.promo-text-btn {
+	display: none;
+}
+.promo-text-btn-m {
+	display: block;
+	width: 100%;
+	margin: 10px auto;
+	text-align: center;
+	position: absolute;
+	bottom: 15%;
+	color: white;
+	padding: 20px 0;
+}
+.promo-text-btn-m h3 {
+    font-size: 7vw;
+    font-family: "AvenirNextN";
+}
+#promocode-m {
+	color: rgb(20	81	58);
+	font-family: "AvenirNextB";
+	font-size: 8vw;
+    line-height: 1.1;
+}
+.promo-text-btn-m  p {
+	margin-bottom: 20px;
+	line-height: 1.2;
+	font-size: 2.5vw;
+}
+#promobtn-m {
+	border: 1px solid rgb(20,81,58);
+	color: white;
+	font-family: "AvenirNextB";
+	padding: 7px 18px;
+	position: relative;
+	top: 15px;
+	font-size: 16px;
+}
+
+        }        
+        @media screen and (max-width:660px) {
+.shipping-bar-wrapper-m {
+	display: flex;
+}
+.shipping-bar-wrapper {
+	display: none;
+}
+#ordertoday-details-box, #free-ship-box, #save-5-details-box {
+    top: 17%;
+    width: 85%;
+    left: 5%;
+}
+#tenship {
+	width: 245px;
+	margin-bottom: 10px;
+}
+#fifteenship {
+	margin-bottom: 10px;
+	width: 237px;	
+}
+#freeship {
+	width: 182px;
+}
+#free-ship-box p {
+    padding-bottom: 0;
+}
+
+
+#fs-ipad {
+	top: 90%;
+}
+
+.play-circle {
+    width: 40px;
+    height: 40px;
+}
+#playarrow2 {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid white;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 0 0 6px;
+}
+
+.ph-ship-wrapper {
+    background-position: -145px 0;
+    padding: 200px 0;
+}
+.ph-text-m {
+	top: 210px;
+}
+#ph-ship-details-m {
+	right: 32%;
+}
+
+
+.hero2-container {
+	height: 465px;
+	background-size: cover;
+	background-position: center;
+}
+
+
+.brand-text h1 {
+	width: 95%;
+}
+#asb-logo {
+	margin: 30px auto;
+}
+
+.wool-text {
+	bottom: 9%;
+}
+#promodetails {
+	top: 120px;
+}
+        }
+        @media screen and (max-width:500px) {
+#asb-logo-m {
+	margin: 20px auto;
+}
+
+#freestyle-logo, #nextgen-text {
+	width: 85%;
+}
+.fs-top p {
+	width: 300px;
+}
+#fs-ribbon {
+	top: 6%;
+}
+#fs-ipad {
+    top: 115%;
+    right: 9%;
+    width: 44%;
+}
+#fs-phone {
+    top: 82%;
+}
+
+
+.holiday-middle {
+    padding-bottom: 150px;
+}
+.ph-ship-wrapper {
+	background-position: -135px 0
+}
+.ph-ship-wrapper {
+	padding: 150px 0;
+}
+.ph-free-container {
+	top: -100px;
+}
+.ph-free-container h3 {
+    font-size: 30px;
+}
+.ph-text-m {
+    top: 110px;
+}
+#ph-ship-details-m {
+    right: 29%;
+}
+
+#hero2-mobile-img img {
+	left: -51%;
+}
+ship-details {
+    bottom: -116px;
+    font-size: 11px;
+}
+   
+
+.wool-button {
+    left: 28%;
+}
+.wool-text {
+	bottom: 9%;
+}
+.wool-text h2 {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.news-container h2 {
+	text-align: center;
+	margin: 15px 0;
+}
+
+#promodetails {
+	top: 60px;
+}
+        }
+        @media screen and (max-width: 450px) {
+        #ship-details-box, #ordertoday-details-box {
+        	    width: 300px;
+    	left: 9%;
+    	top: 17%;
+        }
+
+        #hero3-btn {
+        	font-size: 9px;
+        }
+        
+        .brand-text h1 {
+	font-size: 14px;
+}
+          
+          .wool-text h2 {
+          	font-size: 25px;
+    		width: 70%;
+          }
+
+.promo-text-btn-m h3 {
+    font-size: 25px;
+}
+#promocode-m {
+	font-size: 38px;
+}
+        }
+        @media screen and (max-width: 400px) {
+
+.hero1-text h2 {
+	font-size: 26px;
+	width: 315px;
+}
+
+
+.newstyles-text img {
+	width: 300px;
+}
+
+
+.ph-ship-wrapper {
+    background-position: -175px 0;
+}
+
+.hero2-text-m h2 {
+	font-size: 44px;
+}
+.hero2-text-m p {
+	font-size: 16px;
+}
+.hero2-btn-m {
+	    font-size: 14px;
+    padding: 6px;
+}
+
+
+.hero3-text {
+	top: 65px;
+}
+.hero3-text p {
+	font-size: 12px;
+}
+
+
+.wool-text {
+	bottom: 5%;
+}
+.wool-text h2 {
+	font-size: 21px;
+}
+#promodetails {
+	top: 50px;
+}
+    }
+		@media screen and (max-width: 320px) {
+#freestyle-logo, #nextgen-text {
+	width: 90%;
+}
+#fs-ribbon {
+	top: 5%;
+}
+.fs-top {
+	margin-bottom: 25px;
+}
+.fs-top p {
+	font-size: 14px;
+}
+.fs-screens-block {
+	width: 100%;
+}
+#fs-ipad {
+    top: 130%;
+    right: 7%;
+    width: 45%;
+}
+#fs-phone {
+    top: 105%;
+    left: 14%;
+    width: 25%;
+}
+.fs-video-wrapper {
+	width: 95%;
+}
+
+.play-circle {
+    width: 40px;
+    height: 40px;
+}
+#playarrow2 {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid white;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 0 0 6px;
+}
+
+.ph-ship-wrapper {
+    background-position: -90px 0px;
+    padding: 70px 0 40px;
+    background-size: 190%;
+}
+.ph-free-container {
+    top: -50px;
+}
+#ph-ship-logo {
+    width: 150px;
+}
+.ph-free-container h3 {
+	margin: 30px auto;
+}
+.ph-text-m {
+    top: 30px;
+}
+.ph-text-m p {
+	font-size: 16px;
+}
+#ph-ship-details-m {
+    right: 27%;
+    top: 50px;
+    font-size: 12px;
+}
+
+    }
+
+
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+	.ph-ship-wrapper {
+		background-attachment: scroll;
+		background-size: 100%;
+		background-position: center;
+	}
+}
+
+</style>
+
+<!-- Shipping/Promo Bar -->
+<div class="top-promo-bar">
+  <div class="shipping-bar-wrapper">
+  
+	<div class="shipping-arrows left-arrow" onclick="plusDivs(-1)">
+		<span id="left-arrow-ship"></span>
+	</div>
+	
+<div class="ship-text-wrapper">
+	
+	<div id="ship-msg-1" class="ship-msgs">
+		<b>free shipping</b> on orders over $200* 
+		<span class="ship-divider">|</span> 
+		<span class="free-ship ship-details-link" onclick="openDetails('free-ship-box')">Details</span>
+	</div>	
+
+	<div id="ship-msg-2" class="ship-msgs">
+	
+		Same day shipping on in-stock orders placed by 6PM EST 
+		<span class="ship-divider">|</span> 
+		<span class="ordertoday-details ship-details-link" onclick="openDetails('ordertoday-details-box')">Details</span>
+	
+	</div>
+	
+	<div id="ship-msg-3" class="ship-msgs">
+	<b>save 5%</b> on orders over $3,000* 
+	<span class="ship-divider">|</span> 
+	<span class="save-5 ship-details-link" onclick="openDetails('save-5-details-box')">Details</span>
+	</div>
+	
+</div>
+	
+	  <div class="shipping-arrows right-arrow" onclick="plusDivs(1)" >
+		<span id="right-arrow-ship"></span>
+		</div>
+	</div>
+	
+    <div class="shipping-bar-wrapper-m">
+  
+	<div class="shipping-arrows left-arrow" onclick="plusDivsM(-1)">
+		<span id="left-arrow-ship"></span>
+	</div>
+	
+<div class="ship-text-wrapper">
+	
+	<div id="ship-msg-1-m" class="ship-msgs-m">
+		<b>free shipping</b> 
+		<span class="ship-divider">|</span> 
+		<span class="free-ship ship-details-link" onclick="openDetails('free-ship-box')">Details</span>
+	</div>
+
+	<div id="ship-msg-2-m" class="ship-msgs-m">	
+	
+	  Same day shipping*
+		<span class="ship-divider">|</span> 
+		<span class="ordertoday-details ship-details-link" onclick="openDetails('ordertoday-details-box')">Details</span>
+	</div>
+	
+	<div id="ship-msg-3-m" class="ship-msgs-m">
+	<b>save 5%</b> 
+	<span class="ship-divider">|</span> 
+	<span class="save-5 ship-details-link" onclick="openDetails('save-5-details-box')">Details</span>
+	</div>
+	
+</div>
+	
+	  <div class="shipping-arrows right-arrow" onclick="plusDivsM(1)" >
+		<span id="right-arrow-ship"></span>
+		</div>
+	</div>
+</div>
+
+<div class="detailsoverlay" id="detail-overlay"></div>
+
+<div class="ship-detail-box" id="ordertoday-details-box">
+	<span class="closeDetails" id="close-details" onclick="closeDetails('ordertoday-details-box')">X</span>
+	<img class="ship-details-graphic ordertoday-graphic lazyload" data-src="https://static.augustasportswear.com/marketing/ShippingBanner-Icon-3.jpg" alt="Shipping Icon">
+	<p>
+	In-stock orders for the following services/carriers will ship same day if placed by: <br>
+	USPS – 2 P.M. EST <br>
+Fed Ex (all services) – 3 P.M. EST<br>
+International – 4 P.M. EST<br>
+UPS Air – 5 P.M. EST <br>
+UPS Ground - 6 P.M. EST
+	<br><span class="details-subtext"><a href="/faq#shipping-faqs">Learn more about our shipping</a></span>
+	</p>
+	<button class="got-it">got it, thanks!</button>
+</div>
+
+<div class="ship-detail-box" id="free-ship-box">
+	<span class="closeDetails" id="close-details" onclick="closeDetails('ship-details-box')">X</span>
+	<img class="ship-details-graphic free-ship-graphic lazyload" data-src="https://static.augustasportswear.com/marketing/ShippingBanner-Icon-2.jpg" alt="Shipping Icon">
+	<p>Any order over $200 shipping UPS Ground<br>
+	qualifies* for <b>FREE</b> shipping.
+	<br>
+	<span class="details-subtext">*Excludes taxes, shipping and applicable discounts or promo codes. <br> This applies to only standard UPS shipments shipped to a single contiguous US Address and 3rd Day Priority USPS for Puerto Rico, Alaska & Hawaii shipments. Orders shipped via air freight, special ground freight, and COD are not eligible. 
+	<br>
+	For information regarding shipping our products to Canada, please contact us at <a href="mailto:canadasales@augustasportswear.com">canadasales@augustasportswear.com</a>.
+	</span>
+	</p>
+	<br>
+	<h4 id="tenship">Order Total of $200 or less = <b>$15 Flat Rate Shipping</b></h4>
+	
+	<h4 id="freeship">Order Total over $200 = <span style="color:#579a55;"><b>FREE Shipping</b></span></h4>
+	<button class="got-it">got it, thanks!</button>
+</div>
+
+<div class="ship-detail-box" id="save-5-details-box">
+	<span class="closeDetails" id="close-details" onclick="closeDetails('save-5-details-box')">X</span>
+<img class="ship-details-graphic save-5-graphic lazyload" data-src="https://static.augustasportswear.com/marketing/ShippingBanner-Icon-.jpg" alt="Shipping Icon">
+<p>
+Any order over $3,000 qualifies* for an additional 5% discount.
+<br>
+<span class="details-subtext">*Excludes taxes, shipping and applicable discounts or promo codes.</span>
+	</p>
+	<button class="got-it">got it, thanks!</button>
+</div>
+
+<script>
+function openDetails(target){
+document.getElementById(target).style.display = 'block';
+document.getElementById('detail-overlay').style.display = 'block';
+}
+function closeDetails(target){
+document.getElementById(target).style.display = 'none';
+document.getElementById('detail-overlay').style.display = 'none';
+}
+$(function () {
+  
+    $(".free-ship, .ordertoday-details, .save-5").click(function () {
+        $(".detailsoverlay").css('display', 'block');
+    });
+      
+    $(".closeDetails, .detailsoverlay, .got-it").click(function () {
+        $(".ship-detail-box").fadeOut();
+        $(".detailsoverlay").fadeOut();
+    });
+    
+});
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("ship-msgs");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+showDivsM(slideIndex);
+function plusDivsM(n) {
+  showDivsM(slideIndex += n);
+}
+function showDivsM(n) {
+  var i;
+  var x = document.getElementsByClassName("ship-msgs-m");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+<div id="homepagecontainer">
+
+<!-- Hero 1 -->
+<div class="hero1-banner">
+
+	<div class="hero1-section-wrapper">
+			
+	<img id="fs-ribbon" class="lax" data-lax-translate-y="0 0,700 400"  src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/NOVEMBER%202019/FreeStyle%20Launch/freestyle_ribbon.png" alt="Freestyle background ribbons">
+		
+		<div class="hero1-section fs-top lax" data-lax-translate-y="0 0,500 50" >
+	<img src="https://static.augustasportswear.com/marketing/2019 WEBSITE/Sublimation/Landing-Page/FreeStyle_logo_stacked.png" id="freestyle-logo" alt="FreeStyle Sublimation logo">
+	
+	<img src="https://static.augustasportswear.com/marketing/2019 WEBSITE/Sublimation/Landing-Page/FreeStyle_nextgen_text.png" id="nextgen-text" alt="The next generation design experience">
+	
+	<img src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/NOVEMBER%202019/FreeStyle%20Launch/FreeStyle-tagline-stacked.png" id="nextgen-text-m" alt="The next generation design experience">
+	
+	<p>Flawlessly design, save and share your designs from anywhere.</p>
+	
+	<a id="hero1-btn" href="/custom-sublimation?promo_name=nov_hp&promo_id=fs_launch&promo_creative=gradient_screens&promo_position=hero1">shop all FreeStyle <span class="shop-arrow-white-hollow">&#9655;</span></a>
+	</div>
+		
+		<div class="hero1-section fs-screens-block">
+	  <img id="fs-laptop" class="lax" data-lax-translate-y="0 100,400 -150"  src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/NOVEMBER%202019/FreeStyle%20Launch/freestyle-laptop-bd.png" alt="FreeStyle builder on laptop screen">
+	  <img id="fs-ipad" class="lax" data-lax-translate-y="0 0,1000 -230" src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/NOVEMBER%202019/FreeStyle%20Launch/freestyle-ipad-bd.png" alt="FreeStyle builder on iPad screen">
+	  <img id="fs-phone" class="lax"  data-lax-translate-y="0 200, 700 -125"  src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/NOVEMBER%202019/FreeStyle%20Launch/freestyle-mobile-bd.png" alt="FreeStyle builder on mobile phone screen">
+	</div>
+	
+		<div class="hero1-section fs-video-block lax"  data-lax-translate-y="0 300, 900 -50">
+	
+	   <div class="fs-video-wrapper">
+	  <video autoplay muted loop playsinline id="fs-video">
+  	  <source src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/NOVEMBER%202019/FreeStyle%20Launch/Freestyle-Promo-Video-homepage.mp4" type="video/mp4" alt="FreeStyle Sublimation looping video preview">
+	  </video>
+	</div>
+
+		<div class="fs-play-btn">
+		<a id="playbutton2">
+		<span class="play-circle"><span id="playarrow2"></span></span>
+		<p>watch freestyle video</p>
+		</a>
+	</div>
+	
+		<div class="video-popup">
+  <div class="vidoverlay"></div>
+  <div class="video-container">
+    <span>X</span>
+	<iframe id="connectedvid" width="560" height="315" src="https://www.youtube.com/embed/QvI0zIDY9Ps?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+	
+	</div>
+	</div>
+</div> 
+
+
+<!-- new Styles -->
+<div class="new-styles-banner">
+
+   <img id="newstyles-models" src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/NOVEMBER%202019/homepage_FreeStyle-desktop-newstyles-models.png" alt="3 Models in Retro Collection">
+
+
+   <div class="newstyles-text">	
+		<img src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/NOVEMBER%202019/homepage_FreeStyle-desktop-newstyles-text.png" alt="New Styles">
+		
+		<a class="hp-btn-white newstyles-btn" href="/SearchDisplayView?tag=new-2020&promo_name=nov_hp&promo_id=new_prods&promo_creative=retro_coll&promo_position=hero1">EXPLORE NEW PRODUCTS <span class="shop-arrow"></span></a>
+	
+	<a id="download-cat-btn" class="btnlinktext" href="/catalogs?promo_name=nov_hp&promo_id=new_prods&promo_creative=retro_coll&promo_position=hero3">download new 2020 catalog</a>
+	</div>
+   
+   <img id="newstyles-models-m" src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/NOVEMBER%202019/homepage_FreeStyle-mobile-newstyles-models.png" alt="3 Models in Retro Collection">
+   
+	<div class="newstyles-text-m">
+	
+	<p id="download-cat-btn-m">
+	<a class="btnlinktext" href="/catalogs?promo_name=nov_hp&promo_id=new_catalog&promo_creative=retro_coll&promo_position=hero3">download new 2020 catalog</a>
+	</p>
+	</div>
+
+
+</div>
+
+<!-- Pacific Free Ship -->
+<div class="ph-ship-wrapper">	
+
+	   <div class="ph-free-container">
+	   <img id="ph-ship-logo" src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/OCTOBER%202019/2019October-homepage-10-PacificLogo.png" alt="Pacific Headwear logo">
+	   
+	 <h3>FREE FREIGHT<br>EVERY DAY!</h3>
+	 <p id="ph-freeship"><b>FREE</b> Ground Shipping<br>on orders over $200*</p>
+
+	<a id="ph-ship-btn" href="https://www.pacificheadwear.com" target="blank">
+	shop pacificheadwear.com <span class="shop-arrow"></span></a>
+
+	
+	<p id="ph-ship-details">Applies to the contiguous USA only.<br>Excludes Canada.</p>
+
+
+	<div class="ph-text-m">
+	
+	 	 <p><b>FREE</b> Ground Shipping<br>on orders over $200*</p>
+
+	<a id="ph-ship-btn-m" href="https://www.pacificheadwear.com" target="blank">
+	shop pacificheadwear.com <span class="shop-arrow"></span></a>
+
+	
+	<p id="ph-ship-details-m">*Excludes Canada.</p>
+	
+	</div>
+
+	</div>
+
+</div>
+
+<!-- Hero 2 FoF -->
+<div class="hero2-banner">
+		<img id="fof-desk" class="lazyload" data-src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/NOVEMBER%202019/NOVEMBER-homepageRefresh_Fleece.jpg" alt="Full on Fleece">
+		<img id="fof-mobile" class="lazyload" data-src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/NOVEMBER%202019/FreeStyle%20Launch/NOVEMBER-homepageRefresh_Fleece_mobile.jpg" alt="Full on Fleece">
+		
+		<div class="hero2-text">
+		<a href="/SearchDisplayView?tag=full-on-fleece-all" class="hero2-btn"><b>ALL COZY FLEECE THIS WAY</b> <span class="shop-arrow-grey"></span></a>
+		</div>
+</div>
+
+
+<!-- Brand Text -->
+<div class="brand-text">
+	<img class="hideme lazyload" data-src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/NOVEMBER%202019/AugustaSportswearBrands_Horizontal_withLogos_WHITE.svg" id="asb-logo" alt="Augusta Sportswear Brands Logo">
+	<img class="hideme lazyload" data-src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/NOVEMBER%202019/AugustaSportswearBrands_Stacked_withIcons_WHITE.svg" id="asb-logo-m" alt="Augusta Sportswear Brands Logo">
+	<h1 class="hideme">
+	<b>we are driven by a mission to inspire a physically fit lifestyle, healthy families and connected communities.</b>
+	<br><br>
+<span id="brand-text-lowercase">As a leading designer, manufacturer and marketer of
+high-performance active wear and spirit wear for
+teams, coaches, athletes, fans and corporate needs,
+our family of brands offers a complete source for
+performance and athletic apparel and uniforms.</span></h1>
+
+
+	<a href="/about-us1"><button class="hp-btn-white">LEARN MORE<span class="shop-arrow"></span></button></a>
+</div>
+
+<!-- Wool Section -->
+<div class="wool-container">
+		
+	<img id="wool-desk" class="lazyload" data-src="https://static.augustasportswear.com/marketing/Homepage%5FDesktop%5FVarsityJacket.png" alt="Wool Jacket Image">
+	<div class="wool-text">
+	<h2>The Original Varsity Jacket</h2>
+	<p>Stock or Customize</p>
+	<a id="wool-btn" href="/varsity-jacket">
+	LEARN MORE
+	</a>
+	</div>
+	
+	<img id="wool-mobile" class="lazyload" data-src="https://static.augustasportswear.com/marketing/Homepage%5FMobile%5Fvarsityjacket%5Fmay.png">
+</div>
+
+<!-- News -->
+<div class="news-container">
+	<h2>NEWS</h2>
+	
+<!-- Left News Boxes -->
+  <div class="news-left">
+	
+		  
+	 <!-- FreeStyle Press Release --> 	
+	  <div class="news-box left-news-box hideme2">
+	  
+	    <div class="newsimage-box">
+	    <a href="http://news.augustasportswear.com/augusta-sportswear-brands-announces-the-launch-of-freestyle-sublimation" target="blank">
+	    <img class="newsimage lazyload" data-src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/NOVEMBER%202019/FreeStyle%20Launch/NOVEMBER-homepagerefresh_FreeStyle_blog.jpg" alt="FreeStyle Press Release">
+	    </a>
+	    </div>
+	    
+	  	<div class="news-text">
+	  	  <p>announcement</p>
+	  	  <span class="category-divider"></span>
+	  	  <a href="http://news.augustasportswear.com/augusta-sportswear-brands-announces-the-launch-of-freestyle-sublimation" target="blank"><h3>FreeStyle Sublimation - The Next Generation Design Experience</h3></a>
+	  	  <a class="read-link" href="http://news.augustasportswear.com/augusta-sportswear-brands-announces-the-launch-of-freestyle-sublimation" target="blank"><h4>&#9776; READ</h4></a>
+	  	</div>
+	  	
+	  </div>	 
+	  
+	 <!-- pacific announce --> 
+	  <div class="news-box left-news-box hideme2">
+	  
+	    <div class="newsimage-box">
+	    <a href="http://news.augustasportswear.com/augusta-sportswear-brands-announces-acquisition-of-pacific-headwear/" target="blank"><img class="newsimage lazyload" data-src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/OCTOBER%202019/2019October-homepage-9-PacificBlog.jpg" alt="Pacific Headwear Blog"></a>
+	    </div>
+	    
+	  	<div class="news-text">
+	  	  <p>announcement</p>
+	  	  <span class="category-divider"></span>
+	  	  <a href="http://news.augustasportswear.com/augusta-sportswear-brands-announces-acquisition-of-pacific-headwear/"  target="blank"><h3>Augusta Sportswear Brands Announces Acquisition of Pacific Headwear</h3></a>
+	  	  <a class="read-link" href="http://news.augustasportswear.com/augusta-sportswear-brands-announces-acquisition-of-pacific-headwear/" target="blank"><h4>&#9776; READ</h4></a>
+	  	</div>
+	  	
+	  </div>
+	
+	<!-- AYSO -->
+	  <div class="news-box left-news-box hideme2">
+	  
+	    <div class="newsimage-box">
+	    <a href="http://news.augustasportswear.com/american-youth-soccer-organization-augusta-sportswear-brands-and-soccer-com-team-up-for-recreational-team-grassroots-partnership/" target="blank">
+	    <img class="newsimage lazyload" data-src="https://static.augustasportswear.com/marketing/August%5FHomepage%5FBlogs%5FAYSO.png" alt="AYSO blog">
+	    </a>
+	    </div>
+	    
+	  	<div class="news-text">
+	  	  <p>announcement</p>
+	  	  <span class="category-divider"></span>
+	  	  <a href="http://news.augustasportswear.com/american-youth-soccer-organization-augusta-sportswear-brands-and-soccer-com-team-up-for-recreational-team-grassroots-partnership/" target="blank"><h3>American Youth Soccer Organization, Augusta Sportswear Brands and SOCCER.COM Team Up</h3></a>
+	  	  <a class="read-link" href="http://news.augustasportswear.com/american-youth-soccer-organization-augusta-sportswear-brands-and-soccer-com-team-up-for-recreational-team-grassroots-partnership/" target="blank"><h4>&#9776; READ</h4></a>
+	  	</div>
+	  	
+	  </div>
+
+
+  </div>
+	
+<!-- Right News Boxes -->
+  <div class="news-right">
+	
+	<!-- Same Day Ship -->
+	  <div class="news-box right-news-box hideme2"  id="samedayship-news">
+	 	 <img class="newsimage lazyload" data-src="https://static.augustasportswear.com/marketing/Homepage%5FDesktop%5Fnewdeadline.png" alt="Same Day Shipping">
+	  	<a class="hp-btn-white" id="learn-ship-news" href="/faq#shipping-faqs" alt="Learn more about same day shipping">LEARN MORE <span class="shop-arrow"></span></a>
+	<p id="shipping-details">*SAME DAY SHIPPING ON IN-STOCK ORDERS PLACED BY 6:00 P.M. EST</p>
+	  
+	  </div>
+	  
+	<!-- 2xl Charges -->
+	  <div class="news-box right-news-box hideme2">
+	    <img class="newsimage lazyload" data-src="https://static.augustasportswear.com/marketing/August%5FHomepage%5FBlogs%5F2XL.png" alt="No upcharges on 2XL">
+	  </div>
+	
+  </div>
+
+</div>
+
+</div>
+
+<script>
+
+//Open video
+$(function () {
+    "use strict";
+    
+    $("#playbutton").click(function () {
+        $(".video-popup").fadeIn();
+    });
+    
+    $("span, .vidoverlay").click(function () {
+        $(".video-popup").fadeOut();
+    });
+    
+});
+
+//Open Connected video
+$(function () {
+    "use strict";
+    
+    $("#playbutton2").click(function () {
+        $(".video-popup").fadeIn();
+    });
+    
+    $("span, .vidoverlay").click(function () {
+        $(".video-popup").fadeOut();
+    });
+    
+});
+
+//fade in
+$(document).ready(function() {
+    
+/* Every time the window is scrolled ... */
+$(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},800);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
+//fade in 2
+$(document).ready(function() {
+    
+/* Every time the window is scrolled ... */
+$(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme2').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height() + 300;
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object){
+                
+                $(this).animate({'opacity':'1'},900);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
+//fade in 3
+$(document).ready(function() {
+    
+/* Every time the window is scrolled ... */
+$(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme3').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height() + 500;
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},800);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
+
+
+// laxx parallax script load
+window.onload = function() {
+	lax.setup() // init
+
+	const updateLax = () => {
+		lax.update(window.scrollY)
+		window.requestAnimationFrame(updateLax)
+	}
+
+	window.requestAnimationFrame(updateLax)
+}
+</script>
+
+<!-- lazy load -->
+<script>
+/*! lazysizes - v4.1.1 */
+!function(a,b){var c=b(a,a.document);a.lazySizes=c,"object"==typeof module&&module.exports&&(module.exports=c)}(window,function(a,b){"use strict";if(b.getElementsByClassName){var c,d,e=b.documentElement,f=a.Date,g=a.HTMLPictureElement,h="addEventListener",i="getAttribute",j=a[h],k=a.setTimeout,l=a.requestAnimationFrame||k,m=a.requestIdleCallback,n=/^picture$/i,o=["load","error","lazyincluded","_lazyloaded"],p={},q=Array.prototype.forEach,r=function(a,b){return p[b]||(p[b]=new RegExp("(\\s|^)"+b+"(\\s|$)")),p[b].test(a[i]("class")||"")&&p[b]},s=function(a,b){r(a,b)||a.setAttribute("class",(a[i]("class")||"").trim()+" "+b)},t=function(a,b){var c;(c=r(a,b))&&a.setAttribute("class",(a[i]("class")||"").replace(c," "))},u=function(a,b,c){var d=c?h:"removeEventListener";c&&u(a,b),o.forEach(function(c){a[d](c,b)})},v=function(a,d,e,f,g){var h=b.createEvent("CustomEvent");return e||(e={}),e.instance=c,h.initCustomEvent(d,!f,!g,e),a.dispatchEvent(h),h},w=function(b,c){var e;!g&&(e=a.picturefill||d.pf)?(c&&c.src&&!b[i]("srcset")&&b.setAttribute("srcset",c.src),e({reevaluate:!0,elements:[b]})):c&&c.src&&(b.src=c.src)},x=function(a,b){return(getComputedStyle(a,null)||{})[b]},y=function(a,b,c){for(c=c||a.offsetWidth;c<d.minSize&&b&&!a._lazysizesWidth;)c=b.offsetWidth,b=b.parentNode;return c},z=function(){var a,c,d=[],e=[],f=d,g=function(){var b=f;for(f=d.length?e:d,a=!0,c=!1;b.length;)b.shift()();a=!1},h=function(d,e){a&&!e?d.apply(this,arguments):(f.push(d),c||(c=!0,(b.hidden?k:l)(g)))};return h._lsFlush=g,h}(),A=function(a,b){return b?function(){z(a)}:function(){var b=this,c=arguments;z(function(){a.apply(b,c)})}},B=function(a){var b,c=0,e=d.throttleDelay,g=d.ricTimeout,h=function(){b=!1,c=f.now(),a()},i=m&&g>49?function(){m(h,{timeout:g}),g!==d.ricTimeout&&(g=d.ricTimeout)}:A(function(){k(h)},!0);return function(a){var d;(a=a===!0)&&(g=33),b||(b=!0,d=e-(f.now()-c),0>d&&(d=0),a||9>d?i():k(i,d))}},C=function(a){var b,c,d=99,e=function(){b=null,a()},g=function(){var a=f.now()-c;d>a?k(g,d-a):(m||e)(e)};return function(){c=f.now(),b||(b=k(g,d))}};!function(){var b,c={lazyClass:"lazyload",loadedClass:"lazyloaded",loadingClass:"lazyloading",preloadClass:"lazypreload",errorClass:"lazyerror",autosizesClass:"lazyautosizes",srcAttr:"data-src",srcsetAttr:"data-srcset",sizesAttr:"data-sizes",minSize:40,customMedia:{},init:!0,expFactor:1.5,hFac:.8,loadMode:2,loadHidden:!0,ricTimeout:0,throttleDelay:125};d=a.lazySizesConfig||a.lazysizesConfig||{};for(b in c)b in d||(d[b]=c[b]);a.lazySizesConfig=d,k(function(){d.init&&F()})}();var D=function(){var g,l,m,o,p,y,D,F,G,H,I,J,K,L,M=/^img$/i,N=/^iframe$/i,O="onscroll"in a&&!/(gle|ing)bot/.test(navigator.userAgent),P=0,Q=0,R=0,S=-1,T=function(a){R--,a&&a.target&&u(a.target,T),(!a||0>R||!a.target)&&(R=0)},U=function(a,c){var d,f=a,g="hidden"==x(b.body,"visibility")||"hidden"!=x(a.parentNode,"visibility")&&"hidden"!=x(a,"visibility");for(F-=c,I+=c,G-=c,H+=c;g&&(f=f.offsetParent)&&f!=b.body&&f!=e;)g=(x(f,"opacity")||1)>0,g&&"visible"!=x(f,"overflow")&&(d=f.getBoundingClientRect(),g=H>d.left&&G<d.right&&I>d.top-1&&F<d.bottom+1);return g},V=function(){var a,f,h,j,k,m,n,p,q,r=c.elements;if((o=d.loadMode)&&8>R&&(a=r.length)){f=0,S++,null==K&&("expand"in d||(d.expand=e.clientHeight>500&&e.clientWidth>500?500:370),J=d.expand,K=J*d.expFactor),K>Q&&1>R&&S>2&&o>2&&!b.hidden?(Q=K,S=0):Q=o>1&&S>1&&6>R?J:P;for(;a>f;f++)if(r[f]&&!r[f]._lazyRace)if(O)if((p=r[f][i]("data-expand"))&&(m=1*p)||(m=Q),q!==m&&(y=innerWidth+m*L,D=innerHeight+m,n=-1*m,q=m),h=r[f].getBoundingClientRect(),(I=h.bottom)>=n&&(F=h.top)<=D&&(H=h.right)>=n*L&&(G=h.left)<=y&&(I||H||G||F)&&(d.loadHidden||"hidden"!=x(r[f],"visibility"))&&(l&&3>R&&!p&&(3>o||4>S)||U(r[f],m))){if(ba(r[f]),k=!0,R>9)break}else!k&&l&&!j&&4>R&&4>S&&o>2&&(g[0]||d.preloadAfterLoad)&&(g[0]||!p&&(I||H||G||F||"auto"!=r[f][i](d.sizesAttr)))&&(j=g[0]||r[f]);else ba(r[f]);j&&!k&&ba(j)}},W=B(V),X=function(a){s(a.target,d.loadedClass),t(a.target,d.loadingClass),u(a.target,Z),v(a.target,"lazyloaded")},Y=A(X),Z=function(a){Y({target:a.target})},$=function(a,b){try{a.contentWindow.location.replace(b)}catch(c){a.src=b}},_=function(a){var b,c=a[i](d.srcsetAttr);(b=d.customMedia[a[i]("data-media")||a[i]("media")])&&a.setAttribute("media",b),c&&a.setAttribute("srcset",c)},aa=A(function(a,b,c,e,f){var g,h,j,l,o,p;(o=v(a,"lazybeforeunveil",b)).defaultPrevented||(e&&(c?s(a,d.autosizesClass):a.setAttribute("sizes",e)),h=a[i](d.srcsetAttr),g=a[i](d.srcAttr),f&&(j=a.parentNode,l=j&&n.test(j.nodeName||"")),p=b.firesLoad||"src"in a&&(h||g||l),o={target:a},p&&(u(a,T,!0),clearTimeout(m),m=k(T,2500),s(a,d.loadingClass),u(a,Z,!0)),l&&q.call(j.getElementsByTagName("source"),_),h?a.setAttribute("srcset",h):g&&!l&&(N.test(a.nodeName)?$(a,g):a.src=g),f&&(h||l)&&w(a,{src:g})),a._lazyRace&&delete a._lazyRace,t(a,d.lazyClass),z(function(){(!p||a.complete&&a.naturalWidth>1)&&(p?T(o):R--,X(o))},!0)}),ba=function(a){var b,c=M.test(a.nodeName),e=c&&(a[i](d.sizesAttr)||a[i]("sizes")),f="auto"==e;(!f&&l||!c||!a[i]("src")&&!a.srcset||a.complete||r(a,d.errorClass)||!r(a,d.lazyClass))&&(b=v(a,"lazyunveilread").detail,f&&E.updateElem(a,!0,a.offsetWidth),a._lazyRace=!0,R++,aa(a,b,f,e,c))},ca=function(){if(!l){if(f.now()-p<999)return void k(ca,999);var a=C(function(){d.loadMode=3,W()});l=!0,d.loadMode=3,W(),j("scroll",function(){3==d.loadMode&&(d.loadMode=2),a()},!0)}};return{_:function(){p=f.now(),c.elements=b.getElementsByClassName(d.lazyClass),g=b.getElementsByClassName(d.lazyClass+" "+d.preloadClass),L=d.hFac,j("scroll",W,!0),j("resize",W,!0),a.MutationObserver?new MutationObserver(W).observe(e,{childList:!0,subtree:!0,attributes:!0}):(e[h]("DOMNodeInserted",W,!0),e[h]("DOMAttrModified",W,!0),setInterval(W,999)),j("hashchange",W,!0),["focus","mouseover","click","load","transitionend","animationend","webkitAnimationEnd"].forEach(function(a){b[h](a,W,!0)}),/d$|^c/.test(b.readyState)?ca():(j("load",ca),b[h]("DOMContentLoaded",W),k(ca,2e4)),c.elements.length?(V(),z._lsFlush()):W()},checkElems:W,unveil:ba}}(),E=function(){var a,c=A(function(a,b,c,d){var e,f,g;if(a._lazysizesWidth=d,d+="px",a.setAttribute("sizes",d),n.test(b.nodeName||""))for(e=b.getElementsByTagName("source"),f=0,g=e.length;g>f;f++)e[f].setAttribute("sizes",d);c.detail.dataAttr||w(a,c.detail)}),e=function(a,b,d){var e,f=a.parentNode;f&&(d=y(a,f,d),e=v(a,"lazybeforesizes",{width:d,dataAttr:!!b}),e.defaultPrevented||(d=e.detail.width,d&&d!==a._lazysizesWidth&&c(a,f,e,d)))},f=function(){var b,c=a.length;if(c)for(b=0;c>b;b++)e(a[b])},g=C(f);return{_:function(){a=b.getElementsByClassName(d.autosizesClass),j("resize",g)},checkElems:g,updateElem:e}}(),F=function(){F.i||(F.i=!0,E._(),D._())};return c={cfg:d,autoSizer:E,loader:D,init:F,uP:w,aC:s,rC:t,hC:r,fire:v,gW:y,rAF:z}}});
+
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/lax.js" >
+
+
+<!-- PROMO  content recommendation widget
+	 
+	 <div class="promo-banner">
+		
+		 <img id="promo-banner" src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/December-2019/MWM-Dec-Desktop.jpg"> 
+		 
+		 <img id="promo-banner-m" src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/December-2019/MWM-Dec-Mobile.jpg"> 
+		 
+
+	 	 
+	 <div class="promo-text-btn">
+	 	<p>VALID UNTIL THURSDAY, DECEMBER 5TH
+			<br>
+			ENDING AT 11:59 PM</p>
+	 	<h3>USE PROMO CODE:<br> <span id="promocode">MMDEC35</span></h3>	 	
+	 	
+	 	<a id="promobtn" class="hp-btn-white" href="/SearchDisplayView?tag=midweek-madness&tag=midweek-madness&promo_name=MWM&promo_id=dec19&promo_position=hp_login">SHOP NOW<span class="shop-arrow"></span></a>	
+	 	<p id="promodetails">
+	blank stock <span class="detail-divider">&#183;</span> online orders only
+	<br>standard freight policies apply 
+	<br>max 72 pieces per order
+	</p>
+	
+	</div>
+	
+		 <div class="promo-text-btn-m">
+	 	<h3>USE PROMO CODE:<br> <span id="promocode-m">MMDEC35</span></h3>
+	 	<p>VALID UNTIL THURSDAY,<br>
+	 	DEC. 5TH AT 11:59 PM</p>
+	 		 	
+	 	
+	 	<a id="promobtn-m" href="/SearchDisplayView?tag=midweek-madness&tag=midweek-madness&promo_name=MWM&promo_id=dec19&promo_position=hp_login-mobile">SHOP SALE <span class="shop-arrow-white"></span></a>	
+	 
+	
+	</div>
+	 </div> -->
+	 
+<!-- 
+<div class="promo-banner-preview">
+	<a href="/SearchDisplayView?tag=midweek-madness&tag=midweek-madness&promo_name=MWM&promo_id=sept19&promo_position=hp_login">	
+		 <img id="promo-preview" src="https://static.augustasportswear.com/marketing/CS-3730-MidweekMadness-Sept-landingpage-banner1.jpg"> 
+		 
+		<img id="promo-preview-m" src="https://static.augustasportswear.com/marketing/CS-3730-MidweekMadness-Sept-MOBILEBANNER.jpg"> 
+	</a>
+	 
+</div> 
+-->
+<!-- preview 
+<div class="promo-banner-preview">
+		 <img id="promo-preview" src="https://static.augustasportswear.com/marketing/CS-3730-MidweekMadness-Sept-Comingsoon_banner.jpg"> 
+</div>
+-->

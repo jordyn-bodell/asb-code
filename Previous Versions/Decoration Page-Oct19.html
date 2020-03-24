@@ -1,0 +1,5554 @@
+<!-- Decoration LP -->
+<style>
+/* Header Tabs */
+.tabwrapper {
+	max-width: 1920px;
+	margin: auto;
+	background: url(https://static.augustasportswear.com/marketing/PO1-DecorationPage-header1.jpg);
+	background-size: cover;
+	height: 220px;
+}
+.tabwrapper-overlay {
+	max-width: 1920px;
+	width: 100%;
+	height: 220px;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+}
+.tabwrapper h1 {
+	text-transform: uppercase;
+	text-align:center;
+	font-size: 23px;
+    top: 45%;
+    position: relative;
+    color: white;
+}
+
+.decoration-tab {
+    overflow: hidden;
+    margin: 30px auto;
+    position: relative;
+    top: 27%;
+    max-width: 95%;
+    display: flex;
+}
+.decoration-tab button {
+    float: left;
+    border: 1px solid #50a4d9;
+    cursor: pointer;
+    padding: 12px 9px;
+    margin: 1px;
+    transition: 0.3s;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #50a4d9;
+    background-color: rgba(71,71,71, 0);
+    font-family: "Avenir", "Helvetica Neue", Helvetica, sans-serif;
+    letter-spacing: 1px;
+    width: 25%;
+}
+.decoration-tab button:hover {
+    background-color: #50a4d9;
+    border: 1px solid #50a4d9;
+    color: white;
+}
+.decoration-tab button.active {
+    background-color: #50a4d9;
+    color: white;
+	font-weight: 600;
+	font-size:16px;
+}
+
+/* Tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+}
+.technique-content, .faq-content, .decorations-content {
+	width: 95%;
+	margin: 10px auto;
+}
+.technique-info, .faq-info {
+	display: none;
+	height: 400px;
+	overflow: scroll;
+	border: 1px solid #e7e7e8;
+	padding: 10px;
+}
+.decorations-info {
+	height: 410px;
+	overflow: scroll;
+	display: none;
+	border: 1px solid #e7e7e8;
+}
+
+
+.tabcontent h3 {
+	text-transform: uppercase;
+	background-color: #e7e7e8;
+	color: black;
+	padding: 10px 30px;
+	cursor: pointer;
+	font-size: 20px;
+}
+.tabcontent p {
+	margin: 10px;
+}
+
+.faq-info p > a {
+	color: #50a4d9;
+	cursor: pointer;
+}
+#specialprices a {
+	text-transform: uppercase;
+	font-size: 15px;
+	font-family: "AvenirNextB";
+}
+#specialprices a:hover {
+	text-decoration: underline;
+}
+
+/* Order Now */
+.ordertab-wrapper {
+    max-width: 1920px;
+    margin: auto;
+    }
+.ordertab {
+	margin: 15px auto;
+	width: 400px;
+}
+.ordertab button {
+    background-color: #e7e7e8;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 1px;
+    transition: 0.3s;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: black;
+    font-family: "AvenirNextB";
+    letter-spacing: 1px;
+    width: 100%;
+}
+.ordertab button:hover {
+    background-color: rgba(199, 44, 52, 1);
+}
+.ordertab button.active {
+    background-color: rgba(199, 44, 52, 1);
+	font-weight: 800;
+	color: white;
+}
+.order-content {
+	width: fit-content;
+	margin: 10px auto;
+}
+.order-info {
+	border: 1px solid #e7e7e8;
+    overflow: scroll;
+    height: 500px;
+}
+#soccer-order {
+	text-align: center;
+    font-family: "AvenirNextB";
+    margin: 20px auto;
+    text-transform: uppercase;
+    width: 75%;
+    color: black;
+}
+#soccer-order a {
+	color: #50a4d9;
+	font-family: "AvenirNextB";
+    text-transform: uppercase;
+}
+#order-stock {
+	margin-top: -15px;
+}
+#order-stock h3 {
+	font-size: 17px;
+}
+
+/* Techniques Content */
+#stock-decor-link {
+	color: #50a4d9;
+}
+.pricing {
+	display: inline;
+	clear: left;
+}
+.stitch-request {
+	width: 300px;
+    display: block;
+}
+.price-chart {
+	font-size: 12px;
+	float: left;
+	margin: 0 10px;
+	color: black;
+	width: 350px;
+	text-align: center;
+}
+.tablehead {
+	background-color: black;
+	color: white;
+}
+.alt-row-1 {
+	background-color: rgba(0,0,0,0.2);
+}
+.alt-row-2 {
+	background-color: white;
+}
+#embroid-details {
+		display: inline-block;
+    	width: 90%;
+    	margin: 10px;
+	}
+.russell-numbers {
+	float:left;
+	margin-top:10px;
+}
+
+/* Lead Times */
+/*.lead-times {
+	min-width: 640px;
+	width: 59%;
+	margin: 0 20px 0 auto;
+	float: left;
+}
+#lead-sheet {
+	width: 100%;
+	height: 525px;
+}*/
+
+.lead-times {
+	/*min-width: 640px;*/
+	width: 750px;
+	margin: 0 auto;
+}
+#lead-sheet {
+	width: 100%;
+	height: 1200px;
+}
+.lead-time-wrapper {
+	max-width: 1100px;
+	margin: auto;
+}
+.lead-time-info {
+	width: 39%;
+	margin: 10px auto;
+	float: left;
+	color: black;
+	vertical-align: top;
+}
+.lead-time-details {
+	margin: 10px auto;
+}
+.repair-time-details {
+	display: none;
+}
+.repair-time-details iframe {
+	width: 100%;
+    max-width: 355px;
+    margin: auto;
+    display: block;
+    height: 95px;
+}
+.lead-time-details p {
+	text-align: center;
+	font-size: 11px;
+    margin-top: 5px;
+    width: 80%;
+    margin: 5px auto;
+}
+.lead-time-list {
+	line-height: 1.3;
+}
+.lead-time-list li {
+	margin-bottom: 10px;
+}
+
+/* Twill Colors */
+.twill-colors {
+      width: 98%;
+      margin: auto;	 
+      display: table;
+	}	
+.twill-color-block {
+	 float: left;
+	 margin: 2px;
+	 width: 80px;
+	 height: 40px;
+	 border: 1px solid black;
+	 text-align: center;
+	 color: white;
+	 font-size: 10px;
+	}
+.twill-color-block p {
+		position: relative;
+		top: 30%;
+		margin: 0;
+		line-height: 10px;
+	}
+ #c6, #c9, #c10, #c11, #c16, #c21, #c23, #c24, #c25 {
+ 	color: black;
+ }
+
+/* Jersey Colors */
+.jersey-colors {
+      width: 98%;
+      margin: 10px;
+      float: left;
+      clear: both;	 
+	}	
+.jersey-color-block {
+	 float: left;
+	 margin: 2px;
+	 width: 80px;
+	 height: 40px;
+	 border: 1px solid black;
+	 text-align: center;
+	 color: white;
+	 font-size: 10px;
+	}
+.jersey-color-block p {
+		position: relative;
+		top: 30%;
+		margin: 0;
+		line-height: 10px;
+	}
+ #j1, #j2, #j5, #j7, #j11, #j15, #j17 {
+ 	color: black;
+ }
+ 
+/* Aquatru Colors */
+.aquatru-colors {
+      width: 98%;
+      margin: 10px;
+      float: left;
+      clear: both;	 
+	}	
+.aquatru-block {
+	 float: left;
+	 margin: 2px;
+	 width: 80px;
+	 height: 40px;
+	 border: 1px solid black;
+	 text-align: center;
+	 color: white;
+	 font-size: 10px;
+	}
+.aquatru-block p {
+		position: relative;
+		top: 30%;
+		margin: auto;
+		line-height: 13px;
+		font-size:11px;
+	}
+	#at-2 p, #at-4 p {
+		top:20%;
+	}
+ 
+ #uniform-numbers, #uniform-letters {
+ 	width: 100%;
+    max-width: 600px;
+    display: block;
+ }
+ 
+ /* Template boxes */
+ .template-box {
+ 	float: left;
+ 	height: 105px;
+ 	width: 175px;
+ 	background-color: lightgray;
+ 	color: black;
+ 	margin: 5px;
+ 	border: 1px solid black;
+ 	overflow: hidden;
+ }
+ .template-box img {
+ 	width: 100%;
+ 	max-height: 83px;
+ 	min-height: 83px;
+	vertical-align: text-top;
+	cursor: pointer;
+    transition: 0.3s;
+ }
+ .template-box p {
+ 	text-transform: uppercase;
+ 	margin: 2px auto;
+ 	width: inherit;
+ 	text-align: center;
+ 	font-size: 12px;
+ }
+ .embroid-box img {
+ 	background-color: white;
+ 	padding-top: 23px;
+ }
+ .viewall-temps-link {
+ 	margin: 40px auto;
+ 	display: block;
+    text-align: center;
+ }
+ .viewall-temps-link:hover {
+ 	color: rgb(199,44,52);
+ 	text-decoration: underline;
+ 	cursor: pointer;
+ } 
+ .patt-app-container {
+ 	width: 100%;
+ 	float: left;
+ 	clear: both;
+ 	margin: 5px 0;
+ }
+ .patt-app-box {
+ 	width: 46%;
+ 	height:100%;
+ 	float: left;
+ 	background-color: white;
+ }
+ .patt-app-box img {
+ 	min-height: 200px;
+ }
+.patt-app-text {
+ 	text-align: left;
+ 	font-size: 11px;
+ 	text-transform: uppercase;
+ }
+ .laser-etch-box {
+ 	height: 125px;
+ }
+ .laser-etch-box img {
+ 	 min-height: 100px;
+ }
+ .template-box-m {
+ 	float: left;
+ 	height: 105px;
+ 	width: 175px;
+ 	background-color: lightgray;
+ 	color: black;
+ 	margin: 5px;
+ 	border: 1px solid black;
+ 	overflow: hidden;
+ }
+  .template-box-m img {
+ 	width: 100%;
+	vertical-align: text-top;
+	cursor: pointer;
+    transition: 0.3s;
+ }
+ .template-box-m p {
+ 	text-transform: uppercase;
+ 	margin: 2px auto;
+ 	width: inherit;
+ 	text-align: center;
+ 	font-size: 12px;
+ }
+ .mascot-temps {
+ 	height: 208px;
+ 	width: 140px;
+ }
+ .mascot-temps img {
+ 	height: 89%;
+    object-fit: contain;
+    background-color: white;
+ }
+  .russell-temps {
+ 	height: 145px;
+ 	width: 145px;
+ }
+ .russell-temps img {
+ 	height: 85%;
+    object-fit: cover;
+    background-color: white;
+ }
+ 
+ .template-box-all {
+ 	display: inline-block;
+ 	height: auto;
+ 	width: 280px;
+ 	background-color: lightgray;
+ 	color: black;
+ 	margin: 5px;
+ 	border: 1px solid black;
+ 	overflow: hidden;
+ }
+ .template-box-all img {
+ 	width: 100%;
+	vertical-align: text-top;
+	cursor: pointer;
+    transition: 0.3s;
+ }
+ .template-box-all p {
+ 	text-transform: uppercase;
+ 	margin: 2px auto;
+ 	width: inherit;
+ 	text-align: center;
+ 	font-size: 12px;
+ }
+
+.view-all-temps {
+	display: none;
+	width: 95%;
+    margin: auto;
+}
+.view-all-header {
+	text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 10px 0;
+    color: black;
+}
+ 
+ .breadcrumb-trail {
+	margin: 0 10px;
+	width: fit-content;
+}
+.breadcrumb-trail:hover {
+	color: #50a4d9;
+	cursor: pointer;
+}
+ .custom-braid {
+ 	width: 99%;
+ 	margin: auto;
+ }
+ .custom-braid h2 {
+ 	margin: 10px 0;
+ }
+ .braid-options {
+ 	float: left;
+ 	margin: 5px;
+ 	font-size: 11px;
+ 	letter-spacing: 0;
+ }
+ .braid-options > p {
+ 	float: inherit;
+ 	width:40px;
+ 	height:15px;
+ 	margin:0;
+ 	outline: 1px solid black;
+ }
+ #braid-price-chart {
+		width: 430px;
+	}
+
+.colornames > td {
+	padding-bottom: 5px;
+}
+ .ra-braid-options {
+	display: inline-block;
+	vertical-align: top;
+ 	margin: 5px;
+ 	font-size: 11px;
+ 	letter-spacing: 0;
+ }
+ .ra-braid-options > p {
+ 	display: table-cell;
+ 	width: 40px;
+ 	height:15px;
+ 	margin:0;
+ 	outline: 1px solid black;
+ }
+ .ra-braid-options > span {
+ 	display: inline-block;
+ 	width: 120px;
+ 	margin: -5px 0;
+ }
+ .football-stripes {
+ 	margin: 10px 0;
+ }
+ .football-stripes img {
+ 	width: 75%;
+ 	display: inherit;
+ }
+ .ra-pricing {
+ 	display: inline-block;
+ 	margin: 10px 0;
+ }
+	
+#guidelines li {
+	margin-left: 15px;
+}
+
+b {
+	color: black;
+	font-family: "AvenirNextB";
+}
+ 
+/* Show Templates */
+.show{
+    z-index: 999;
+    display: none;
+}
+.show .imgoverlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.66);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.show .img-show{
+    width: 600px;
+    height: 400px;
+    background: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden
+}
+.img-show span{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    cursor: pointer;
+}
+.img-show img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Show Mascots */
+.show-mascots{
+    z-index: 999;
+    display: none;
+}
+.show-mascots .imgoverlay2 {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.66);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.show-mascots .img-show2 {
+    width: 675px;
+    height: 550px;
+    background: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden
+}
+.img-show2 span{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    cursor: pointer;
+}
+.img-show2 img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Show Russell */
+.show-russell{
+    z-index: 999;
+    display: none;
+}
+.show-russell .imgoverlay3 {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.66);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.show-russell .img-show3 {
+    width: 650px;
+    height: 250px;
+    background: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden
+}
+.img-show3 span{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    cursor: pointer;
+}
+.img-show3 img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#listContainer.add {
+	display:none;
+}
+
+#decplace-guide {
+	width: 400px;
+	height: auto;
+	margin: 10px auto;
+}
+b {
+	font-family: "AvenirNextB";
+}
+.font-options {
+	display: block;
+    width: 55%;
+    vertical-align: top;
+    margin: 0 5px;
+}
+#emb-font {
+	width: 45%;
+}
+ 
+@media screen and (max-width: 1130px) {
+	.lead-time-info {
+		width: 55%;
+		float: none;
+	}
+	.lead-times {
+		margin: auto;
+		float: none;
+	}
+}
+@media screen and (max-width: 850px) {
+	.lead-time-info {
+		width: 55%;
+		float: none;
+	}
+	.lead-times {
+		margin: auto;
+		float: none;
+	}
+	
+	.stitch-request {
+		margin-top: 0;
+		margin-bottom: 20px;
+		height: 1050px;
+	}
+	.price-chart {
+		width: 325px;
+	}
+	#jersey-braid-image, #vest-braid-image, #side-panel-image {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.decoration-tab {
+		max-width: 96%;
+	}
+	.ordertab-wrapper {
+		margin-bottom: 30px;
+	}
+	.ordertab {
+		width: 97%;
+		margin-left: 0;
+	}
+	.ordertab button, #leadtime-button {
+		width: 100%;
+	}
+	.lead-times {
+		width: 640px;
+	}
+	.lead-time-info {
+		width: 75%;
+	}
+}
+@media screen and (max-width: 620px) {
+	.decoration-tab {
+		top: 4%;
+		display: block;
+	}
+	.decoration-tab button {
+		width: 99%;
+		padding: 10px;
+		font-size: 14px;
+	}
+	.order-content, .technique-content, .faq-content, .decorations-content {
+		width: 100%;
+	}
+	.template-box {
+		width: 160px;
+		margin: 5px 2px;
+		
+	}
+	.stitch-request {
+		width: 250px;
+	}
+	#technique2.technique-info {
+		height: 350px;
+	}
+	#braid-price-chart {
+		width: 95%;
+	}
+	#basketball-guide {
+		width: 96%;
+	}
+}
+</style>
+
+<div class="tabwrapper">
+	<div class="tabwrapper-overlay"></div>
+	<h1>Augusta Sportswear Brands Decoration</h1>
+</div>
+<div class="decoration-tab">
+  <button class="tablinks" onclick="openDecoration(event, 'Order-Now')" id="defaultOpen">Order Now</button>
+  <button class="tablinks" onclick="openDecoration(event, 'Techniques')">Techniques</button>
+  <button class="tablinks" onclick="openDecoration(event, 'Decorations')" >Templates & Mascots</button>
+  <button class="tablinks" onclick="openDecoration(event, 'FAQs')">FAQs</button>
+</div>
+
+<!-- Order Now -->
+<div id="Order-Now" class="tabcontent">
+
+<div class="ordertab-wrapper">
+  <div class="ordertab">
+ <!--  <a href="#lead-sheet"><button class="ordertablinks" id="leadtime-button">View Current Lead Times</button></a> -->
+ </div>
+</div>
+
+<div class="order-content" id="order-stock">
+  <a href="https://form.jotform.com/90843645413155" target="blank">
+  <h3 class="button primary">Order Decorated Product</h3>
+  </a>
+  <!-- <div class="order-info" id="stock-order-form">
+    
+    <iframe
+      id="JotFormIFrame-81236279276161"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allowfullscreen="true"
+      allow="geolocation; microphone; camera"
+      src="https://form.jotform.com/81236279276161"
+      frameborder="0"
+      style="width: 1px;
+      min-width: 100%;
+      height:539px;
+      border:none;"
+      scrolling="no"
+    >
+    </iframe>
+    <script type="text/javascript">
+      var ifr = document.getElementById("JotFormIFrame-81236279276161");
+      if(window.location.href && window.location.href.indexOf("?") > -1) {
+        var get = window.location.href.substr(window.location.href.indexOf("?") + 1);
+        if(ifr && get.length > 0) {
+          var src = ifr.src;
+          src = src.indexOf("?") > -1 ? src + "&" + get : src  + "?" + get;
+          ifr.src = src;
+        }
+      }
+      window.handleIFrameMessage = function(e) {
+        var args = e.data.split(":");
+        if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+        if (!iframe) { return; }
+        switch (args[0]) {
+          case "scrollIntoView":
+            iframe.scrollIntoView();
+            break;
+          case "setHeight":
+            iframe.style.height = args[1] + "px";
+            break;
+          case "collapseErrorPage":
+            if (iframe.clientHeight > window.innerHeight) {
+              iframe.style.height = window.innerHeight + "px";
+            }
+            break;
+          case "reloadPage":
+            window.location.reload();
+            break;
+          case "loadScript":
+            var src = args[1];
+            if (args.length > 3) {
+                src = args[1] + ':' + args[2];
+            }
+            var script = document.createElement('script');
+            script.src = src;
+            script.type = 'text/javascript';
+            document.body.appendChild(script);
+            break;
+          case "exitFullscreen":
+            if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+            else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+            else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+            else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+            else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+            break;
+        }
+        var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+        if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+          var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+          iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+        }
+      };
+      if (window.addEventListener) {
+        window.addEventListener("message", handleIFrameMessage, false);
+      } else if (window.attachEvent) {
+        window.attachEvent("onmessage", handleIFrameMessage);
+      }
+      </script>
+   </div> -->
+</div>
+<p id="soccer-order">To order decorated soccer that needs bagged by Team/Player, please email Customer Care at at <a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a> to request an order form.
+</p>
+  
+<div class="lead-time-wrapper">
+
+<!-- New Sheet
+<div class="lead-times">
+  
+  <iframe  id="lead-sheet" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSkG849kC4_icxMR4hqfQAi36KNDo3nnzoZF2-Sk4G6EH796cpbIlSIIO2S-hZ7x5dYBwo7VqQv2gXU/pubhtml?gid=622888734&amp;single=true&amp;widget=false&amp;headers=false&chrome=false&range=b2:f21"></iframe>
+
+  </div>
+  
+  <div class="lead-time-info" id="lead-rules">
+  <h3 class="leadtimeheader" style="font-size:18px;">Lead Time Rules</h3>
+  <div class="lead-time-details">
+     <ul class="lead-time-list">
+      <li>Reorders will not receive an art proof. If requested, your lead time will require the new art proof time.</li>
+       <ul>
+         <li> To be considered a Reorder, the order must use the same logo, text, colors, size and placement from the original order and be on the same garment, or a garment that allows for the same logo placement and technique, as the original order.</li>
+        </ul>
+     <li>Lead times subject to change based on current capacity.</li>
+      <li>Add two days for multiple decoration techniques. This does not include screen print orders featuring stock transfer #'s which get 1 day.</li>
+      
+        <ul>
+      <li>Example: A new ASB screen print order with stock heat transfer numbers will ship in the lead time date shown for screen print, plus 1 business day. A new ASB screen print order with an embroidered name will ship in the lead time date shown (whichever Decoration Type, screen print or embroidery personalization,  has the longest lead time), plus 2 business days.</li>
+      </ul>
+      
+       <li>Heat transfer #'s are stocked in Pro Block and Champ font in white and black, 4", 6", and 8" numbers</li>
+     </ul>
+  </div>
+ </div>
+ 
+<div class="lead-time-info" id="repair-time">
+  <h3 class="leadtimeheader" style="font-size:18px;">Repair/Replacement Lead Times</h3>
+  <div class="lead-time-details repair-time-details">
+ 		<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSkG849kC4_icxMR4hqfQAi36KNDo3nnzoZF2-Sk4G6EH796cpbIlSIIO2S-hZ7x5dYBwo7VqQv2gXU/pubhtml?gid=622888734&amp;single=true&amp;widget=false&amp;headers=false&chrome=false&range=d26:g28"></iframe>
+ 		 	<ul>
+ 		 	 <li>For wool jackets add 5 days if raw material is unavailable</li>
+ 		 	 <li>Lead time for repairs starts once we receive the garment(s)</li>
+ 		 	 <li>Russell Football is excluded from current published lead times. Call Customer Service for Russell Football Repair/Replacement times.</li>
+ 		 	</ul>
+  </div>
+ </div>
+  -->
+
+<!-- Old Sheet -->  
+<div class="lead-times">
+  
+  <iframe id="lead-sheet" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSkG849kC4_icxMR4hqfQAi36KNDo3nnzoZF2-Sk4G6EH796cpbIlSIIO2S-hZ7x5dYBwo7VqQv2gXU/pubhtml?gid=0&amp;single=true&widget=false&headers=false&chrome=false&range=b1:e55"></iframe>
+
+  </div>
+
+
+</div>
+  
+</div>
+
+<!-- Techniques -->
+<div id="Techniques" class="tabcontent">
+
+  <div class="technique-content" id="screen-print">
+  <h3 class="techheader">Screen Print</h3>
+  <div class="technique-info" id="technique1">
+  <p>Whether you want to say something simple or complex, Screen Print is a popular way to express yourself! Check our selection of Neon Inks in Pink, Orange, Yellow and Green. 
+<br><br>
+Add mascots to your designs. Choose from our Stock Decoration Library of Mascots or send us your own. We’re happy to work with you and your teams!
+<br><br>
+We encourage you to consult our knowledgeable Customer Service Representatives about the latest specialty treatments, products and other trends in Screen Printing before finalizing project ideas.<br>
+  <a id="stock-decor-link" onclick="openDecoration(event, 'Decorations')">Stock Decorations ></a>
+  <br>
+ <div class="pricing"> 
+ <table cellpadding="4" cellspacing="0" class="price-chart">
+  	<thead>	
+  		<tr class="tablehead">
+  			<th class="quantity">Screen Print</th>
+  			<th class="quantity" colspan="5">Run Size</th>
+  		</tr>
+  	</thead>
+  			<tbody>
+             <tr class="alt-row-1">
+  				<th># of Colors</th>
+  				<td>24-50</td>
+  				<td>51-149</td>
+  				<td>150-500</td>
+  				<td>501-1000</td>
+  				<td>1000+</td>
+  			 </tr>
+             <tr class="alt-row-2">
+  				<th>1-2 colors</th>
+  				<td>$10.00</td>
+  				<td>$6.00</td>
+  				<td>$4.00</td>
+  				<td>$2.00</td>
+  				<td>Email</td>
+  			 </tr>
+  			 <tr class="alt-row-1">
+  				<th>3-color</th>
+  				<td>$11.00</td>
+  				<td>$7.00</td>
+  				<td>$5.00</td>
+  				<td>$3.00</td>
+  				<td>Email</td>
+  			 </tr>
+  			 <tr class="alt-row-2">
+  				<th>4-color</th>
+  				<td>$12.00</td>
+  				<td>$8.00</td>
+  				<td>$6.00</td>
+  				<td>$4.00</td>
+  				<td>Email</td>
+  			 </tr>
+  			 <tr class="alt-row-2" style="font-size: 10px;">
+  				<th colspan="3">Each additional color, add $1.00 per piece (Limit 6 Colors)</th>
+  				<td colspan="3">Minimum Run = 24 pieces</td>
+  			 </tr>  			 
+  			</tbody>
+  		</table>
+  			 
+	<p style="font-size:12px;">Additional Screen Print Options: Color changes, $20.00 per color <br>15% upcharge applies for 1-color Billboard prints.<br>
+ *Distressed templates – These templates are not recommended for garments with fabric patterns. <br>
+- 24 piece minimum for all screen print orders<br>
+- 25% surcharge for metallic ink <br>
+- $50 charge will be applied to create multiple
+screens for various sizes</p>
+</div>
+  </div>
+  </div>
+  
+  <div class="technique-content" id="embroidery">
+  <h3 class="techheader">embroidery</h3>
+  <div class="technique-info" id="technique2"><p>With Embroidery, it's all in the details. Augusta Sportswear's expert Embroidery department employs the latest technologies and fully controls every aspect of production. That way, you can be assured of superior products and the highest standards with every stitch, on every order.
+<br><br>
+Add mascots to your designs. Choose from our library of mascots or send us your own. Customer Service Representatives are happy to work with you and your teams!  <br>
+  <a id="stock-decor-link" onclick="openDecoration(event, 'Decorations')">Stock Decorations ></a>
+  </p>
+    <div class="pricing" id="embroid-price-chart"> 
+ <table cellpadding="4" cellspacing="0" class="price-chart">
+  	<thead>	
+  		<tr class="tablehead">
+  			<th class="quantity">Embroidery</th>
+  			<th class="quantity" colspan="5">Run Size</th>
+  		</tr></thead>
+  			<tbody>
+             <tr class="alt-row-1">
+  				<th># of Stitches</th>
+  				<td>1-36</td>
+  				<td>37-144</td>
+  				<td>145-500</td>
+  				<td>501+</td>
+  				<td>1000+</td>
+  			 </tr>
+  			 <tr class="alt-row-2">
+  				<th>Up to 7k stitches</th>
+  				<td>$10.00</td>
+  				<td>$8.00</td>
+  				<td>$6.00</td>
+  				<td>$4.00</td>
+  				<td>Email</td>
+  			 </tr>
+  			 <tr class="alt-row-1">
+  				<th>7,001 to 15k stitches</th>
+  				<td>$14.00</td>
+  				<td>$12.00</td>
+  				<td>$10.00</td>
+  				<td>$8.00</td>
+  				<td>Email</td>
+  			 </tr>
+
+  			 <tr class="alt-row-2" style="font-size: 10px;">
+  			 <td colspan="2">Each additional 2k stitch - add $1.00 per piece</td>
+  			 <td colspan="4">Run size < 12 = $50.00 LTM fee per hit</td>
+  			 </tr>
+  			 
+  			</tbody>
+  		</table>
+</div>
+
+<div class="pricing" id="embroid-personal-letters"> 
+ <table cellpadding="4" cellspacing="0" class="price-chart">
+  	<thead>	
+  		<tr class="tablehead">
+  		  <th class="quantity" colspan="4">Embroidery Personalized Letters (1-color only)
+  		  </th></tr>
+  		<tr class="tablehead">
+  			<th class="quantity" colspan="4">Full-Size Lettering (1 Piece Min.)</th>
+  		</tr>
+  		</thead>
+  			<tbody>
+             <tr class="alt-row-1">
+  				<th colspan="2">1" letters (max 15 letters per line*)</th>
+  				<td colspan="2">$10.00 per line</td>
+  			 </tr>
+ 			 <tr class="alt-row-2">
+  				<th colspan="2">2" letters (max 10 letters per line*)</th>
+  				<td colspan="2">$12.00 per line</td>
+  			 </tr>
+  			  <tr class="alt-row-1">
+  				<th colspan="2">3" letters (max 8 letters per line*)</th>
+  				<td colspan="2">$14.00 per line</td>
+  			 </tr>
+  			 <tr class="alt-row-1">
+  			 <th colspan="4">*When determining letters per line, remember spaces count as letters</th>
+  			</tbody>
+  		</table>
+</div>
+
+	<span id="embroid-details">For additional information, <span onclick="openDecoration(event, 'FAQs'); openOrder(event, 'guidelines-faq');" style="color:rgb(199,44,52);text-decoration:underline;cursor:pointer;">view Order Guidelines</span> in our FAQs.</span>
+	<span class="stitch-request">
+	
+    <iframe
+      id="JotFormIFrame-81153804415148"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allowfullscreen="true"
+      allow="geolocation; microphone; camera"
+      src="https://form.jotform.com/81153804415148"
+      frameborder="0"
+      style="width: 1px;
+      min-width: 100%;
+      height:539px;
+      border:none;"
+      scrolling="yes"
+    >
+    </iframe>
+    <script type="text/javascript">
+      var ifr = document.getElementById("JotFormIFrame-81153804415148");
+      if(window.location.href && window.location.href.indexOf("?") > -1) {
+        var get = window.location.href.substr(window.location.href.indexOf("?") + 1);
+        if(ifr && get.length > 0) {
+          var src = ifr.src;
+          src = src.indexOf("?") > -1 ? src + "&" + get : src  + "?" + get;
+          ifr.src = src;
+        }
+      }
+      window.handleIFrameMessage = function(e) {
+        var args = e.data.split(":");
+        if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+        if (!iframe) { return; }
+        switch (args[0]) {
+          case "scrollIntoView":
+            iframe.scrollIntoView();
+            break;
+          case "setHeight":
+            iframe.style.height = args[1] + "px";
+            break;
+          case "collapseErrorPage":
+            if (iframe.clientHeight > window.innerHeight) {
+              iframe.style.height = window.innerHeight + "px";
+            }
+            break;
+          case "reloadPage":
+            window.location.reload();
+            break;
+          case "loadScript":
+            var src = args[1];
+            if (args.length > 3) {
+                src = args[1] + ':' + args[2];
+            }
+            var script = document.createElement('script');
+            script.src = src;
+            script.type = 'text/javascript';
+            document.body.appendChild(script);
+            break;
+          case "exitFullscreen":
+            if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+            else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+            else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+            else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+            else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+            break;
+        }
+        var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+        if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+          var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+          iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+        }
+      };
+      if (window.addEventListener) {
+        window.addEventListener("message", handleIFrameMessage, false);
+      } else if (window.attachEvent) {
+        window.attachEvent("onmessage", handleIFrameMessage);
+      }
+      </script>
+      </span>
+  </div>
+  </div>
+  
+ <div class="technique-content" id="heat-transfer">
+  <h3 class="techheader">Premium Heat Transfers</h3>
+  <div class="technique-info" id="technique8">
+  <p>Decorate team name and numbers using Heat Transfer. Premium Transfers are an upgrade on traditional film that looks and feels like screen print. <br>
+  </p><br>
+ <div class="pricing"> 
+ <table cellpadding="4" cellspacing="0" class="price-chart">
+  	<thead>	
+  		<tr class="tablehead">
+  			<th class="quantity" rowspan="2">Premium Transfers</th>
+  			<th class="quantity" colspan="5">Run Size</th>
+  		</tr>
+  		  	<tr class="tablehead">
+  			<th class="quantity" colspan="3" style="border: 1px solid;">Logos</th>
+  			<th class="quantity" style="border: 1px solid;">Names</th>
+  			<th class="quantity" style="border: 1px solid;">Numbers</th>
+  		</tr>
+  	</thead>
+  			<tbody>
+             <tr class="alt-row-1">
+  				<th># of Colors/Logo Size</th>
+  				<th style="border-left: 2px solid; border-right: 1px solid;">1-11</th>
+  				<th>12+</th>
+  				<th style="border-left: 1px solid; border-right: 2px solid;">1000+</th>
+  				<th style="border-right: 2px solid;">All</th>
+  				<th style="border-right: 2px solid;">All</th>
+  			 </tr>
+			<tr class="alt-row-2">
+  				<th>1-color</th>
+  				<td style="border-left: 2px solid; border-right: 1px solid;">$20.00</td>
+  				<td>$8.00</td>
+  				<td style="border-left: 1px solid; border-right: 2px solid;">Email</td>
+  				<td style="border-right: 2px solid;">$8.00</td>
+  				<td style="border-right: 2px solid;">$6.00</td>
+  			 </tr>
+  			 <tr class="alt-row-1">
+  				<th>2-color</th>
+  				<td style="border-left: 2px solid; border-right: 1px solid;">$24.00</td>
+  				<td>$14.00</td>
+  				<td style="border-left: 1px solid; border-right: 2px solid;">Email</td>
+  				<td style="border-right: 2px solid;">N/A</td>
+  				<td style="border-right: 2px solid;">$10.00</td>
+  			 </tr>
+  			 <tr class="alt-row-2" style="font-size: 10px;">
+  			<td>Each additional color, add $2.00 per piece</td>
+  			<td colspan="5">Run size < 12 = $50.00 LTM fee per hit</td>
+  			</tr>
+  			</tbody>
+  		</table>
+  			 
+	
+	<p>Recommendation is a screen-printed team name and premium transfer numbers. <br>Please refer to Screen Print pricing.</p>
+	
+	<p>Large Logo (greater than 4x10) - $10.00 addt'l per piece</p>
+
+	<p>Name/Number - Full or Block font</p>
+	
+	<p>For logos with 3+ colors, please email <a href="mailto:sales@augustasportswear.com" style="text-decoration:underline;">sales@augustasportswear.com</a> for a quote
+  	</p>
+</div>
+  </div>
+  </div>
+  
+<!--  <div class="technique-content" id="aquatru">
+  <h3 class="techheader">Aquatru™ Screen Printed Transfer FOR UNIFORM DECORATION
+  </h3>
+  <div class="technique-info" id="technique8">
+  <p>This screen printed, water-based product is our premium heat transfer technology. Aquatru™ offers superior stretch and rebound, with up to 80% stretch for maximum performance. Carried in 11 fonts and all your team colors it is the perfect option to decorate your next uniform.
+  <br>
+  <a id="stock-decor-link" onclick="openDecoration(event, 'Decorations')">Decoration Templates ></a>
+  </p>
+  <br>
+ <div class="pricing"> 
+ <table cellpadding="4" cellspacing="0" class="price-chart">
+  	<thead>	
+  		<tr class="tablehead">
+  			<th class="quantity" colspan="3"> </th>
+  			<th class="quantity">1 Color</th>
+  			<th class="quantity">2 Color</th>
+  		</tr>
+  	</thead>
+  		<tbody>
+             <tr class="alt-row-1">
+  				<th colspan="3">Team name</th>
+  				<td>$6.50</td>
+  				<td>$9.00</td>
+  			 </tr>
+  			 <tr class="alt-row-2">
+  				<th colspan="3">Player name</th>
+  				<td>$8.00</td>
+  				<td>$11.00</td>
+  			 </tr>
+			<tr class="alt-row-1">
+  				<th colspan="3">Front number, any size</th>
+  				<td>$4.50</td>
+  				<td>$7.50</td>
+  			 </tr>
+  			 <tr class="alt-row-2">
+  				<th colspan="3">Back number, any size</th>
+  				<td>$4.50</td>
+  				<td>$7.50</td>
+  			 </tr>
+  			 <tr class="alt-row-1">
+  				<th colspan="3">Total</th>
+  				<td>$23.50</td>
+  				<td>$35.00</td>
+  			 </tr>
+  			 <tr class="alt-row-2">
+  				<th colspan="5">Prices are MSRP.</th>
+  			 </tr>
+  		 </tbody>
+  		</table>
+</div>
+	<p>Numbers are available in 4”, 6”, or 8” sizes
+	<br>
+	No Minimum quantities.
+	<br>
+	Team names will always target a 3” height unless otherwise specified by the customer. In certain cases the number and size of the letters may dictate a slightly smaller scale, but the height will always be greater than 2.5”. Before each order, the customer will receive a proof that specifies text height.</p>
+
+<div class="aquatru-colors">	
+	<p>Aquatru™ Colors</p>
+		<div class="aquatru-block" id="at-1" style="background-color:rgb(0,0,0);"><p>BLACK</p></div>
+		<div class="aquatru-block" id="at-2" style="background-color:rgb(181,72,50);"><p>BURNT ORANGE</p></div>
+		<div class="aquatru-block" id="at-3" style="background-color:rgb(119,49,62);"><p>CARDINAL</p></div>
+		<div class="aquatru-block" id="at-4" style="background-color:rgb(131,142,207);"><p>COLUMBIA BLUE</p></div>
+		<div class="aquatru-block" id="at-5" style="background-color:rgb(10,69,20);"><p>DARK GREEN</p></div>
+		<div class="aquatru-block" id="at-6" style="background-color:rgb(255,161,25);"><p>GOLD</p></div>
+		<div class="aquatru-block" id="at-7" style="background-color:rgb(86,7,58);"><p>MAROON</p></div>
+		<div class="aquatru-block" id="at-8" style="background-color:rgb(5,5,69);"><p>NAVY</p></div>
+		<div class="aquatru-block" id="at-9" style="background-color:rgb(69,12,97);"><p>PURPLE</p></div>
+		<div class="aquatru-block" id="at-10" style="background-color:rgb(34,17,163);"><p>ROYAL</p></div>
+		<div class="aquatru-block" id="at-12" style="background-color:rgb(216,49,53);"><p>TRUE RED</p></div>
+		<div class="aquatru-block" id="at-13" style="background-color: rgb(255,255,255);"><p style="color:black;">WHITE</p></div>
+	</div>
+	<br>
+ 	 <div class="russell-numbers">
+ 	  <p>Russell Athletic numbering styles are offered in Aquatru™ Screen Printed only. Lettering can be done in Screen Print or Aquatru™.
+     </p>
+    <img style="max-width:900px;" id="uniform-numbers" src="https://static.augustasportswear.com/marketing/Russell-Numbers-Letters.jpg">
+    	</div>
+    </div>
+  </div> -->
+  
+  <div class="technique-content" id="applique">
+  <h3 class="techheader">Traditional, Reverse Laser and Jersey Appliqué</h3>
+  <div class="technique-info" id="technique3"><p><b>Traditional:</b><br>
+  Achieve virtually any look with your apparel. Our fantastic Full-Size Appliqué on the front or back of a garment creates a substantial, collegiate look. 
+  <br>
+  <b>Reverse Laser and Jersey:</b><br>
+  Want to create that vintage look? Utilize our stock designs and our Jersey Appliqué process or add real dimension with our Reverse Laser Appliqué technique. For even more dimension, consider adding an Etch design behind your Laser Appliqué. Cutting-edge technology at its best.
+  <br>
+  <b>Patterned:</b>
+   <a id="stock-decor-link" onclick="openDecoration(event, 'Decorations'), openOrder(event, 'pattern-app-temps');">View available patterns</a>
+  <br>
+  
+  <br>
+  <a id="stock-decor-link" onclick="openDecoration(event, 'Decorations')">Stock Decorations ></a></p>
+    <div class="pricing"> 
+ <table cellpadding="4" cellspacing="0" class="price-chart">
+  	<thead>	
+  		<tr class="tablehead">
+  			<th class="quantity">Quantity</th>
+  			<th class="quantity">12-23</th>
+  			<th class="quantity">24-144</th>
+  			<th class="quantity">145+</th>
+  		</tr></thead>
+  			<tbody>
+             <tr class="alt-row-1">
+  				<th></th>
+  				<td>$19.00</td>
+  				<td>$18.00</td>
+  				<td>$16.00</td>
+  			 </tr>
+  			 <tr class="alt-row-2">
+  			 	<td colspan="4">Maximum of 12 letters in the main word, including spaces</td>
+  			 	</tr>
+  			 	 <tr class="alt-row-1">
+  			 	<td colspan="4"><b>Appliqué Add-ons:</b></td>
+  			 	</tr>
+				<tr class="alt-row-2">
+  			 	<td colspan="2">Screen Print Pattern</td>
+  			 	<td colspan="2">Refer to screen print pricing</td>
+  			 	</tr>
+  			 	<tr class="alt-row-1">
+  			 	<td colspan="2">Laser Etching</td>
+  			 	<td colspan="2">$2.00</td>
+  			 	</tr>
+  			 	<tr class="alt-row-2">
+  			 	<td colspan="2">Sublimated Image</td>
+  			 	<td colspan="2">$10.00</td>
+  			 	</tr>
+  			 	<tr class="alt-row-1">
+  			 	<td colspan="2">Sports add on Appliqué</td>
+  			 	<td colspan="2">$10.00</td>
+  			 	</tr>
+  			 	<tr class="alt-row-2">
+  			 	<td colspan="4">
+  			 	Additional embroidery to Appliqué is <br>$0.50 per 1,000 stitches
+  			 	</td>
+  			 	</tr>
+  			 	<tr class="alt-row-2">
+  			 	<td colspan="4">
+  			 	Custom Appliqué: Call for quote. <br>12 piece minimum for each design
+  			 	</td>
+  			 	</tr>
+  			 	
+  			 	<th class="tablehead" colspan="5">Upcharge for less than minimum orders</th>
+  			 </tr>
+  			 <tr class="alt-row-1">
+  				<td colspan="5">$50.00</td>
+  			 </tr>
+  			</tbody>
+  		</table>
+</div>
+	<div class="twill-colors">
+	<p>Twill Colors</p>	
+		<div class="twill-color-block" id="c1" style="background-color:rgb(18,21,21)"><p>BLACK</p></div>
+		<div class="twill-color-block" id="c2" style="background-color: rgb(73,56,51)"><p>BROWN</p></div>
+		<div class="twill-color-block" id="c3" style="background-color: rgb(119,49,62)"><p>CARDINAL</p></div>
+		<div class="twill-color-block" id="c4" style="background-color: rgb(123,158,209)"><p>COLUMBIA</p></div>
+		<div class="twill-color-block" id="c5" style="background-color: rgb(48,89,72)"><p>DARK GREEN</p></div>
+		<div class="twill-color-block" id="c6" style="background-color: rgb(178,183,182)"><p>GRAY</p></div>
+		<div class="twill-color-block" id="c7" style="background-color: rgb(201,71,137)"><p>GREEK PINK</p></div>
+		<div class="twill-color-block" id="c8" style="background-color: rgb(48,130,77)"><p>KELLY</p></div>
+		<div class="twill-color-block" id="c9" style="background-color: rgb(242,194,46)"><p>LIGHT GOLD</p></div>
+		<div class="twill-color-block" id="c10" style="background-color: rgb(163,199,74)"><p>LIME</p></div>
+		<div class="twill-color-block" id="c11" style="background-color: rgb(255,233,42)"><p>MAIZE</p></div>
+		<div class="twill-color-block" id="c12" style="background-color: rgb(80,52,64)"><p>MAROON</p></div>
+		<div class="twill-color-block" id="c13" style="background-color: rgb(38,53,77)"><p>NAVY</p></div>
+		<div class="twill-color-block" id="c14" style="background-color: rgb(173,140,62)"><p>OLD GOLD</p></div>
+		<div class="twill-color-block" id="c15" style="background-color: rgb(205,72,40)"><p>ORANGE</p></div>
+		<div class="twill-color-block" id="c16" style="background-color: rgb(243,215,222)"><p>PINK</p></div>
+		<div class="twill-color-block" id="c17" style="background-color: rgb(63,56,139)"><p>PURPLE</p></div>
+		<div class="twill-color-block" id="c18" style="background-color: rgb(155,36,53)"><p>RED</p></div>
+		<div class="twill-color-block" id="c19" style="background-color: rgb(48,88,150)"><p>ROYAL</p></div>
+		<div class="twill-color-block" id="c20" style="background-color: rgb(77,148,153)"><p>SHARK TEAL</p></div>
+		<div class="twill-color-block" id="c21" style="background-color: rgb(224,145,46)"><p>TENNESSEE ORANGE</p></div>
+		<div class="twill-color-block" id="c22" style="background-color: rgb(164,89,43)"><p>TEXAS ORANGE</p></div>
+		<div class="twill-color-block" id="c23" style="background-color: rgb(243,175,47)"><p>VARSITY BRIGHT GOLD</p></div>
+		<div class="twill-color-block" id="c24" style="background-color: rgb(223,202,139)"><p>VEGAS GOLD</p></div>
+		<div class="twill-color-block" id="c25" style="background-color: rgb(255,255,255)"><p>WHITE</p></div>
+	</div>
+	<div class="jersey-colors">	
+	<p>Jersey Colors</p>
+		<div class="jersey-color-block" id="j1" style="background-color: rgb(227,227,229)"><p>ASH HEATHER</p></div>
+		<div class="jersey-color-block" id="j2" style="background-color: rgb(178,181,183)"><p>ATHLETIC HEATHER</p></div>
+		<div class="jersey-color-block" id="j3" style="background-color: rgb(32,35,36)"><p>BLACK</p></div>
+		<div class="jersey-color-block" id="j4" style="background-color: rgb(45,77,66)"><p>DARK GREEN</p></div>
+		<div class="jersey-color-block" id="j5" style="background-color: rgb(231,167,49)"><p>GOLD</p></div>
+		<div class="jersey-color-block" id="j6" style="background-color: rgb(48,122,82)"><p>KELLY</p></div>	
+		<div class="jersey-color-block" id="j7" style="background-color: rgb(168,200,226)"><p>LIGHT BLUE</p></div>
+		<div class="jersey-color-block" id="j8" style="background-color: rgb(101,47,59)"><p>MAROON</p></div>
+		<div class="jersey-color-block" id="j9" style="background-color: rgb(35,53,81)"><p>NAVY</p></div>
+		<div class="jersey-color-block" id="j10" style="background-color: rgb(205,71,41)"><p>ORANGE</p></div>
+		<div class="jersey-color-block" id="j11" style="background-color: rgb(240,209,218)"><p>PINK</p></div>
+		<div class="jersey-color-block" id="j12" style="background-color: rgb(86,66,128)"><p>PURPLE</p></div>
+		<div class="jersey-color-block" id="j13" style="background-color: rgb(185,34,45)"><p>RED</p></div>
+		<div class="jersey-color-block" id="j14" style="background-color: rgb(60,95,149)"><p>ROYAL</p></div>
+		<div class="jersey-color-block" id="j15" style="background-color: rgb(198,198,197)"><p>SILVER</p></div>
+		<div class="jersey-color-block" id="j16" style="background-color: rgb(88,151,154)"><p>TEAL</p></div>
+		<div class="jersey-color-block" id="j17" style="background-color: rgb(255,255,255)"><p>WHITE</p></div>
+	</div>
+	<p style="font-size: 9px; clear:both;">Note: Jersey colors are not dye matched to one another and may have variance in shades and, therefore, may not match garment trim or specific PMS school colors.</p>
+</div>
+  </div>
+  
+  <div class="technique-content" id="laser-tonal-etch">
+  <h3 class="techheader">Laser Etch and Tonal Etch</h3>
+  <div class="technique-info" id="technique4"><p>The Tonal Etch technique gives a dimensional feel to your garment by using two (light and dark) contrasting tones. Our Single Tone Etch designs provide a more subtle tonal look or background. Choose stand-alone designs from our stock embroidery templates for Left Chest, Full-Size or even Jumbo Size. <br>
+  <a id="stock-decor-link" onclick="openDecoration(event, 'Decorations')">Stock Decorations &gt;</a></p>
+  <table cellpadding="4" cellspacing="0" class="price-chart">
+  	<thead>	
+  		<tr class="tablehead">
+  			<th class="quantity"></th>
+  			<th class="quantity">12-23</th>
+  			<th class="quantity">24-144</th>
+  			<th class="quantity">145+</th>
+  		</tr></thead>
+  			<tbody>
+             <tr class="alt-row-1">
+  				<th>Left Chest</th>
+  				<td>$8.00</td>
+  				<td>$7.00</td>
+  				<td>$6.00</td>
+  			 </tr>
+  			 <tr class="alt-row-2">
+  				<th>Full-Size</th>
+  				<td>$9.00</td>
+  				<td>$8.00</td>
+  				<td>$7.00</td>
+  			 </tr>
+  			 <tr class="alt-row-1">
+  				<th>Jumbo-Size</th>
+  				<td>$10.00</td>
+  				<td>$9.00</td>
+  				<td>$8.00</td>
+  			 </tr>
+  			 <tr class="alt-row-2">
+  				<th>Add to Embroidery or Appliqué</th>
+  				<td>$2.00</td>
+  				<td>$2.00</td>
+  				<td>$2.00</td>
+  			 </tr>
+  			</tbody>
+  		</table>
+  		
+  		<p style="font-size:12px;">- Minimum text height is 1/4"<br>
+- Visibility of fine detailed designs varies by fabric type<br>
+- Fabric must be 100% polyester; works best on mid-tone colors<br>
+- We do not recommend using this technique for:<br>
+&emsp;&emsp;&emsp;- Black, White or dark colors<br>
+&emsp;&emsp;&emsp;- Heathered fabrics<br>
+&emsp;&emsp;&emsp;- Blankets and high pile fleece garments</p>
+  </div>
+  </div>
+  
+  <div class="technique-content" id="combined-techs">
+  <h3 class="techheader">Combined Techniques</h3>
+  <div class="technique-info" id="technique5"><p>Get the biggest bang for your buck. Create your own designs and give your customers custom looks at incredible value – and we’re continually coming up with more and more options. Choose from six new unique designs that combine our latest techniques including Screen Print, Laser Etch, Embroidery and Reverse Laser Appliqué. The sky’s really the limit.
+<br><br>
+Best values? Combine a surface Laser Etch with Embroidery or Appliqué over top. These are just some of the ways you can add interest to your designs. Our experts are ready to help with suggestions – just ask us and we'll help you develop virtually anything you can think of.<br>
+  <a id="stock-decor-link" onclick="openDecoration(event, 'Decorations')">Stock Decorations ></a></p></div>
+  </div>
+  
+  <div class="technique-content" id="sports-techs">
+  <h3 class="techheader">Uniform Decoration Techniques</h3>
+  <div class="technique-info" id="technique6">
+  <p>Techniques for Baseball and Basketball <br></p>
+  
+  <p font-size:14px;><b>Baseball - Uniform Decoration (Minimum 12 Uniforms)</b></p>
+  
+   <div class="pricing"> 
+ <table cellpadding="4" cellspacing="0" class="price-chart" style="width:400px;">
+  	<thead>	
+  		<tr class="tablehead">
+  			<th class="quantity" colspan="6">Appliqué (Minimum 12 Uniforms)</th>
+  		</tr>
+  		</thead>
+  			<tbody>
+             <tr class="alt-row-2">
+  				<th colspan="4"></th>
+  				<th>Full Front</th>
+  				<th>Split Front</th>
+  			 </tr>
+             <tr class="alt-row-1">
+  				<th colspan="4">1-color front decoration</th>
+  				<td>$17.50</td>
+  				<td>$23.50</td>
+  			 </tr>
+			<tr class="alt-row-2">
+  				<th colspan="4">1-color 4" number</th>
+  				<td>$8.00</td>
+  				<td>$8.00</td>
+  			 </tr>
+  			 <tr class="alt-row-1">
+  				<th colspan="4">1-color 6" or 8" back number</th>
+  				<td>$10.50</td>
+  				<td>$10.50</td>
+  			 </tr>
+  			 <tr class="alt-row-2">
+  				<th colspan="4">TOTAL</th>
+  				<td>$36.00</td>
+  				<td>$42.00</td>
+  			 </tr>
+  			 
+             <tr class="alt-row-1">
+  				<th colspan="4">2-color front decoration</th>
+  				<td>$19.00</td>
+  				<td>$26.00</td>
+  			 </tr>
+			<tr class="alt-row-2">
+  				<th colspan="4">2-color 4" number</th>
+  				<td>$9.50</td>
+  				<td>$9.50</td>
+  			 </tr>
+  			 <tr class="alt-row-1">
+  				<th colspan="4">2-color 6" or 8" back number</th>
+  				<td>$11.50</td>
+  				<td>$11.50</td>
+  			 </tr>
+  			 <tr class="alt-row-2">
+  				<th colspan="4">TOTAL</th>
+  				<td>$40.00</td>
+  				<td>$47.00</td>
+  			 </tr>
+  			 <tr class="alt-row-1">
+  				<th colspan="4">Additional Embroidery</th>
+  				<td colspan="2">$10.00 per location</td>
+  			 </tr>
+  			</tbody>
+  		</table>
+
+  		
+  <div class="pricing" id="baseball-uniform-pricechart"> 
+ <table cellpadding="4" cellspacing="0" class="price-chart">
+  	<thead>	
+  		<tr class="tablehead">
+  			<th class="quantity" colspan="7" style="text-align:left;">CUSTOM BRAID</th>
+  			</tr>
+  			<tr>
+  			<th class="quantity"></th>
+  			<th class="quantity">Jersey 3/16"</th>
+  			<th class="quantity">Jersey 3/8"</th>
+  			<th class="quantity">Vest 3/16"</th>
+  			<th class="quantity">Vest 3/8"</th>
+  			<th class="quantity">Pant 3/16"</th>
+  			<th class="quantity">Pant 3/8"</th>
+  		</tr>
+  		</thead>
+  			<tbody>
+             <tr class="alt-row-1">
+  				<th>Option 1</th>
+  				<td>$11.00</td>
+  				<td>$12.00</td>
+  				<td>$11.00</td>
+  				<td>$12.00</td>
+  				<td>$10.50</td>
+  				<td>$13.00</td>
+  			 </tr>
+  			 <tr class="alt-row-2">
+  				<th>Option 2</th>
+  				<td>$12.00</td>
+  				<td>$13.00</td>
+  				<td>$12.00</td>
+  				<td>$13.00</td>
+  				<td>-</td>
+  				<td>-</td>
+  			 </tr>
+  			 <tr class="alt-row-1">
+  				<th>Option 3</th>
+  				<td>$16.00</td>
+  				<td>$18.00</td>
+  				<td>$16.00</td>
+  				<td>$18.00</td>
+  				<td>-</td>
+  				<td>-</td>
+  			 </tr>
+  			</tbody>
+  		</table>
+  			 
+	<p style="font-size:12px; display:inline-block;"><b>UNIFORM RE-ORDERS:</b>
+- Minimum 6 per style at current pricing at the time of re-order.
+<br>- 1–2 pieces incur a 50% upcharge on the decoration.
+<br>- 3–5 pieces incur a 25% upcharge on the decoration.
+<br>- Please provide previous P.O. number or Holloway order number.</p>
+</div>
+
+  		  <div class="leagueorders">
+  <p><b>League Orders</b></p>
+  <p>For over 50 players, a $20.00 set up fee will be assessed for each color, logo and/or team name change.
+  <br>
+  Excludes Russell Athletic.
+  </p>
+  </div>
+ 
+  <div id="basketball-decor-info" style="display:inline-block; margin-top:10px; font-size:12px;">  
+	<h4 style="font-size:14px; margin:10px;">BASKETBALL – UNIFORM DECORATION (MINIMUM 12 UNIFORMS)</h4>
+  <p><b>QUALIFYING REQUIREMENTS:</b> <br>
+- To decorate, you must place a minimum order of 12 uniform tops for Heat Transfer and 24 for Screen Print.
+<br><b>DECORATION GUIDELINES:</b> <br>
+- Decoration includes a school/team name and number on the
+front of the jersey and a number only on the back of the jersey.
+The number size is 4", 6" or 8" only in select fonts.
+<br><br><b>EMBROIDERY BELOW NECK OR ON SHORT VARIES BASED ON STITCH
+COUNT AND QUANTITY, BASE PRICE OF $10.00 UP TO 5,000 STITCHES.</b>
+<br><br><b>UNIFORM RE-ORDERS:</b>
+<br>- Minimum 6 per style at current pricing at the time of re-order.
+<br>- 1–2 pieces incur a 50% upcharge on the decoration.
+<br>- 3–5 pieces incur a 25% upcharge on the decoration.
+<br>- Please provide previous P.O. number or Holloway order number.</p>
+<br>
+	</div>
+  		</div>
+  		
+
+   </div>
+  </div>
+  
+</div>
+
+<!-- Templates & Mascots -->
+<div class="show">
+  <div class="imgoverlay"></div>
+  <div class="img-show">
+    <span>X</span>
+    <img src="">
+  </div>
+</div>
+<div class="show-mascots">
+  <div class="imgoverlay2"></div>
+  <div class="img-show2">
+    <span>X</span>
+    <img src="">
+  </div>
+</div>
+<div class="show-russell">
+  <div class="imgoverlay3"></div>
+  <div class="img-show3">
+    <span>X</span>
+    <img src="">
+  </div>
+</div>
+
+<div id="Decorations" class="tabcontent decorationstab">
+
+<!--  <div class="decorations-content" id="russell-temps">
+  <h3 class="decorheader">Russell Athletic Templates/Layouts</h3>
+  <div class="decorations-info">
+  	<p>Available in Aquatru™ Screen Printed Transfer</p>
+  	
+   <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-1.jpg">
+  	 <p>Template 1</p>
+  	</div>
+  	
+  	 <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-2.jpg">
+  	 <p>Template 2</p>
+  	</div>
+  	
+  	  <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-5.jpg">
+  	 <p>Template 5</p>
+  	</div>
+  	
+  	 <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-6.jpg">
+  	 <p>Template 6</p>
+  	</div>
+  	
+  	   <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-7.jpg">
+  	 <p>Template 7</p>
+  	</div>
+  	
+  	 <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp8.jpg">
+  	 <p>Template 8</p>
+  	</div>
+  	
+  	  <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-9.jpg">
+  	 <p>Template 9</p>
+  	</div>
+  	
+  	 <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-10.jpg">
+  	 <p>Template 10</p>
+  	</div>
+   
+      <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp11.jpg">
+  	 <p>Template 11</p>
+  	</div>
+  	
+  	 <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-13.jpg">
+  	 <p>Template 13</p>
+  	</div>
+  	
+  	  <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-14.jpg">
+  	 <p>Template 14</p>
+  	</div>
+  	
+  	 <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-15.jpg">
+  	 <p>Template 15</p>
+  	</div>
+  	
+  	   <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-17.jpg">
+  	 <p>Template 17</p>
+  	</div>
+  	
+  	 <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-23.jpg">
+  	 <p>Template 23</p>
+  	</div>
+  	
+  	  <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-27.jpg">
+  	 <p>Template 27</p>
+  	</div>
+  	
+  	 <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-28.jpg">
+  	 <p>Template 28</p>
+  	</div>
+  	
+  	 <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-29.jpg">
+  	 <p>Template 29</p>
+  	</div>
+  	
+  	 <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-30.jpg">
+  	 <p>Template 30</p>
+  	</div>
+  	
+  	  <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-31.jpg">
+  	 <p>Template 31</p>
+  	</div>
+  	
+  	 <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-35.jpg">
+  	 <p>Template 35</p>
+  	</div>
+  	
+  	   <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-36.jpg">
+  	 <p>Template 36</p>
+  	</div>
+  	
+  	 <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-37.jpg">
+  	 <p>Template 37</p>
+  	</div>
+  	
+  	  <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-38.jpg">
+  	 <p>Template 38</p>
+  	</div>
+  	
+  	 <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-40.jpg">
+  	 <p>Template 40</p>
+  	</div>
+   
+      <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-43.jpg">
+  	 <p>Template 43</p>
+  	</div>
+  	
+  	 <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-44.jpg">
+  	 <p>Template 44</p>
+  	</div>
+  	
+  	  <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-45.jpg">
+  	 <p>Template 45</p>
+  	</div>
+  	
+  	 <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-49.jpg">
+  	 <p>Template 49</p>
+  	</div>
+  	
+  	   <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-1L.jpg">
+  	 <p>Template 1L</p>
+  	</div>
+  	
+  	 <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-N0.jpg">
+  	 <p>Template N0</p>
+  	</div>
+  	
+  	  <div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Russell-Temp-DS.jpg">
+  	 <p>Template DS</p>
+  	</div>
+  	
+  	 <div class="template-box-m russell-temps">
+  	<img style="height:79%;" src="https://static.augustasportswear.com/marketing/Russell-Temp-R4.jpg">
+  	 <p style="line-height:1.1;">Template R4 - Screen Print Only</p>
+  	</div>
+  	
+  	<div class="template-box-m russell-temps">
+  	<img style="height:79%;"  src="https://static.augustasportswear.com/marketing/Russell-Temp-R5.jpg">
+  	 <p style="line-height:1.1;">Template R5 - Screen Print Only</p>
+  	</div>
+  	
+  	<div class="template-box-m russell-temps">
+  	<img style="height:79%;"  src="https://static.augustasportswear.com/marketing/Russell-Temp-R9.jpg">
+  	 <p style="line-height:1.1;">Template R9 - Screen Print Only</p>
+  	</div>
+  	
+  	<div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/rustemp_T1.jpg">
+  	 <p>Template T1</p>
+  	</div>
+  	
+  	<div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/rustemp_T2.jpg">
+  	 <p>Template T2</p>
+  	</div>
+  	
+  	<div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/rustemp_T3.jpg">
+  	 <p>Template T3</p>
+  	</div>
+  	
+  	<div class="template-box-m russell-temps">
+  	<img src="https://static.augustasportswear.com/marketing/rustemp_T4.jpg">
+  	 <p>Template T4</p>
+  	</div>
+  	
+  	<div class="template-box-m russell-temps">
+  	<img style="height:79%;"  src="https://static.augustasportswear.com/marketing/rustemp_8S.jpg">
+  	 <p style="line-height:1.1;">Template 8S - Sublimation Only</p>
+  	</div>
+  	
+  	<div class="template-box-m russell-temps">
+  	<img style="height:79%;"  src="https://static.augustasportswear.com/marketing/rustemp_9S.jpg">
+  	 <p style="line-height:1.1;">Template 9S - Sublimation Only</p>
+  	</div>
+  	
+  	<div class="template-box-m russell-temps">
+  	<img style="height:79%;"  src="https://static.augustasportswear.com/marketing/rustemp_3M.jpg">
+  	 <p style="line-height:1.1;">Template 3M - Sublimation Only</p>
+  	</div>
+   
+  </div>
+  </div> -->
+
+  <div class="decorations-content" id="screen-print-temps">
+  <h3 class="decorheader">Screen Print Templates</h3>
+  <div class="decorations-info">
+  	
+  <div class="template-box">
+  	<img src="https://static.augustasportswear.com/marketing/SP-168.jpg">
+  	 <p>SP168</p>
+  	</div>
+  	 <div class="template-box">
+  	<img src="https://static.augustasportswear.com/marketing/SP169_Page_1.jpg">
+  	 <p>SP169 - 1</p>
+  	</div>
+  	<div class="template-box">
+  	<img src="https://static.augustasportswear.com/marketing/SP169_Page_2.jpg">
+  	 <p>SP169 - 2</p>
+  	</div>
+  	<div class="template-box">
+  	<img src="https://static.augustasportswear.com/marketing/SP170.jpg">
+  	 <p>SP170</p>
+  	</div>
+  	<div class="template-box">
+  	<img src="https://static.augustasportswear.com/marketing/SP171.jpg">
+  	 <p>SP171</p>
+  	</div>
+  	<div class="template-box">
+  	<img src="https://static.augustasportswear.com/marketing/SP172.jpg">
+  	 <p>SP172</p>
+  	</div>
+  	<div class="template-box">
+  	<img src="https://static.augustasportswear.com/marketing/SP173.jpg">
+  	 <p>SP173</p>
+  	</div>
+  	<div class="template-box">
+  	<img src="https://static.augustasportswear.com/marketing/SP174.jpg">
+  	 <p>SP174</p>
+  	</div>
+  	<div class="template-box">
+  	<img src="https://static.augustasportswear.com/marketing/SP175.jpg">
+  	 <p>SP175</p>
+  	</div>
+  	<div class="template-box">
+  	<img src="https://static.augustasportswear.com/marketing/SP176.jpg">
+  	 <p>SP176</p>
+  	</div>
+  	<div class="template-box">
+  	<img src="https://static.augustasportswear.com/marketing/SP177.jpg">
+  	 <p>SP177</p>
+  	</div>
+
+
+  <div class="template-box">
+  	<img src="https://static.augustasportswear.com/marketing/SP2.jpg">
+  	 <p>SP2</p>
+  	</div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP9.jpg">
+   <p>SP9</p>
+   </div> 
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP76.jpg">
+   <p>SP76</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP80.jpg">
+   <p>SP80</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP95.jpg">
+   <p>SP95</p>
+   </div> 
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP103.jpg">
+   <p>SP103</p>
+   </div>
+   <div class="template-box">
+  	<img src="https://static.augustasportswear.com/marketing/SP109.jpg">
+   <p>SP109</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP110.jpg">
+   <p>SP110</p>
+   </div> 
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP133.jpg">
+   <p>SP133</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP134.jpg">
+   <p>SP134</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP135.jpg">
+   <p>SP135</p>
+   </div> 
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP136.jpg">
+   <p>SP136</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP138.jpg">
+   <p>SP138</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP139.jpg">
+   <p>SP139</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP140.jpg">
+   <p>SP140</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP145.jpg">
+   <p>SP145</p>
+   </div>
+  <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP146.jpg">
+   <p>SP146</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP147.jpg">
+   <p>SP147</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP148.jpg">
+   <p>SP148</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP149.jpg">
+   <p>SP149</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP150.jpg">
+   <p>SP150</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP151.jpg">
+   <p>SP151</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP152.jpg">
+   <p>SP152</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP153.jpg">
+   <p>SP153</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP154.jpg">
+   <p>SP154</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP156.jpg">
+   <p>SP156</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP157.jpg">
+   <p>SP157</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP158.jpg">
+   <p>SP158</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP159.jpg">
+   <p>SP159</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP160.jpg">
+   <p>SP160</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP162.jpg">
+   <p>SP162</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP163.jpg">
+   <p>SP163</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP165.jpg">
+   <p>SP165</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/SP166.jpg">
+   <p>SP166</p>
+   </div>
+   <div class="template-box">
+   <a class="viewall-temps-link" onclick="openAll(event, 'all-screen-print')">View All Templates ></a>
+   </div>
+   
+   
+  </div>
+ </div>
+  
+  <div class="decorations-content" id="embroidery-temps">
+  <h3 class="decorheader">Embroidery Templates</h3>
+  <div class="decorations-info">
+  	
+  	<div class="template-box embroid-box">
+  	<img src="https://static.augustasportswear.com/marketing/EMB19-1.jpg">
+  	 <p>EMB19-1</p>
+  	</div>
+  	<div class="template-box embroid-box">
+  	<img src="https://static.augustasportswear.com/marketing/EMB19-2.jpg">
+  	 <p>EMB19-2</p>
+  	</div>
+  	<div class="template-box embroid-box">
+  	<img src="https://static.augustasportswear.com/marketing/EMB19-3.jpg">
+  	 <p>EMB19-3</p>
+  	</div>
+  	<div class="template-box embroid-box">
+  	<img src="https://static.augustasportswear.com/marketing/EMB19-4.jpg">
+  	 <p>EMB19-4</p>
+  	</div>
+  	<div class="template-box embroid-box">
+  	<img src="https://static.augustasportswear.com/marketing/EMB19-5.jpg">
+  	 <p>EMB19-5</p>
+  	</div>
+  	<div class="template-box embroid-box">
+  	<img src="https://static.augustasportswear.com/marketing/EMB19-6.jpg">
+  	 <p>EMB19-6</p>
+  	</div>
+  	<div class="template-box embroid-box">
+  	<img src="https://static.augustasportswear.com/marketing/EMB19-7.jpg">
+  	 <p>EMB19-7</p>
+  	</div>
+  	<div class="template-box embroid-box">
+  	<img src="https://static.augustasportswear.com/marketing/EMB19-8.jpg">
+  	 <p>EMB19-8</p>
+  	</div>
+  	<div class="template-box embroid-box">
+  	<img src="https://static.augustasportswear.com/marketing/EMB19-9.jpg">
+  	 <p>EMB19-9</p>
+  	</div>
+  	<div class="template-box embroid-box">
+  	<img src="https://static.augustasportswear.com/marketing/EMB19-10.jpg">
+  	 <p>EMB19-10</p>
+  	</div>
+  	<div class="template-box embroid-box">
+  	<img src="https://static.augustasportswear.com/marketing/EMB19-11.jpg">
+  	 <p>EMB19-11</p>
+  	</div>
+  	
+  <div class="template-box embroid-box">
+  	<img src="https://static.augustasportswear.com/marketing/FS38.jpg">
+  	 <p>FS38</p>
+  	</div>
+   <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/MS46.jpg">
+   <p>MS46</p>
+   </div> 
+   <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/FS44.jpg">
+   <p>FS44</p>
+   </div>
+   <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/FS48.jpg">
+   <p>FS48</p>
+   </div>
+   <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/FS49.jpg">
+   <p>FS49</p>
+   </div> 
+   <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/A4.jpg">
+   <p><span style="color:rgb(199,44,52); font-weight:700;">NEW</span> A4</p>
+   </div>
+   <div class="template-box embroid-box">
+  	<img src="https://static.augustasportswear.com/marketing/B4.jpg">
+   <p><span style="color:rgb(199,44,52); font-weight:700;">NEW</span> B4</p>
+   </div>
+   <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/M3.jpg">
+   <p>M3</p>
+   </div> 
+   <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/D4.jpg">
+   <p><span style="color:rgb(199,44,52); font-weight:700;">NEW</span> D4</p>
+   </div>
+   <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/E4.jpg">
+   <p><span style="color:rgb(199,44,52); font-weight:700;">NEW</span> E4</p>
+   </div>
+   <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/G3.jpg">
+   <p>G3</p>
+   </div> 
+   <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/N3.jpg">
+   <p>N3</p>
+   </div>
+   <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/J3.jpg">
+   <p>J3</p>
+   </div>
+   <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/S2.jpg">
+   <p>S2</p>
+   </div>
+   <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/Q3.jpg">
+   <p>Q3</p>
+   </div>
+   <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/F3.jpg">
+   <p>F3</p>
+   </div>
+  <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/I3.jpg">
+   <p>I3</p>
+   </div>
+   <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/P3.jpg">
+   <p>P3</p>
+   </div>
+   <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/T2.jpg">
+   <p>T2</p>
+   </div>
+   <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/S3.jpg">
+   <p>S3</p>
+   </div>
+   <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/T3.jpg">
+   <p>T3</p>
+   </div>
+   <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/U3.jpg">
+   <p>U3</p>
+   </div>
+   <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/V2.jpg">
+   <p>V2</p>
+   </div>
+   <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/V3.jpg">
+   <p>V3</p>
+   </div>
+   <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/Y3.jpg">
+   <p>Y3</p>
+   </div>
+   <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/X3.jpg">
+   <p>X3</p>
+   </div>
+   <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/Z3.jpg">
+   <p>Z3</p>
+   </div>
+   <div class="template-box embroid-box">
+   <img src="https://static.augustasportswear.com/marketing/R3.jpg">
+   <p>R3</p>
+   </div>
+   <div class="template-box">
+   <a class="viewall-temps-link" onclick="openAll(event, 'all-embroidery')">View All Templates ></a>
+   </div>
+   
+  </div>
+  </div>
+  
+  <div class="decorations-content" id="applique-temps">
+  <h3 class="decorheader">Traditional Appliqué Templates</h3>
+  <div class="decorations-info">
+
+  <div class="template-box">
+  	<img src="https://static.augustasportswear.com/marketing/TW_77.jpg">
+  	 <p>TW77</p>
+  	</div>  
+  	 <div class="template-box">
+  	<img src="https://static.augustasportswear.com/marketing/TW78.jpg">
+  	 <p>TW78</p>
+  	</div>  
+  	 <div class="template-box">
+  	<img src="https://static.augustasportswear.com/marketing/TW79.jpg">
+  	 <p>TW79</p>
+  	</div>  
+  	 <div class="template-box">
+  	<img src="https://static.augustasportswear.com/marketing/TW80.jpg">
+  	 <p>TW80</p>
+  	</div>  	
+
+  <div class="template-box">
+  	<img src="https://static.augustasportswear.com/marketing/TW1.jpg">
+  	 <p>TW1</p>
+  	</div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/TW3.jpg">
+   <p>TW3</p>
+   </div> 
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/TW31.jpg">
+   <p>TW31</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/TW63.jpg">
+   <p>TW63</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/TW64.jpg">
+   <p>TW64</p>
+   </div> 
+     <div class="template-box">
+  	<img src="https://static.augustasportswear.com/marketing/TW65.jpg">
+  	 <p>TW65</p>
+  	</div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/TW67.jpg">
+   <p>TW67</p>
+   </div> 
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/TW71.jpg">
+   <p>TW71</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/TW70.jpg">
+   <p>TW70</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/TW73.jpg">
+   <p>TW73</p>
+   </div> 
+     <div class="template-box">
+  	<img src="https://static.augustasportswear.com/marketing/TW72.jpg">
+  	 <p>TW72</p>
+  	</div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/TW75.jpg">
+   <p>TW75</p>
+   </div> 
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/TW74.jpg">
+   <p>TW74</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/TW76.jpg">
+   <p>TW76</p>
+   </div>
+   <div class="template-box">
+   <a class="viewall-temps-link" onclick="openAll(event, 'all-applique')">View All Templates ></a>
+   </div>
+   <div class="template-box">
+   <a class="viewall-temps-link" onclick="openAll(event, 'all-patterns')">View All Patterns ></a>
+   </div>
+   <div class="template-box">
+   <a class="viewall-temps-link" onclick="openAll(event, 'all-subl-images')">View All Sublimated Images ></a>
+   </div>
+   
+  </div>
+  </div>
+  
+  <div class="decorations-content" id="rev-laser-temps">
+  <h3 class="decorheader">Reverse Laser and Jersey Appliqué Templates</h3>
+  <div class="decorations-info">
+
+  <div class="template-box">
+  	<img src="https://static.augustasportswear.com/marketing/RLB18.jpg">
+  	 <p>RLB18</p>
+  	</div>
+  	  <div class="template-box">
+  	<img src="https://static.augustasportswear.com/marketing/RLB19.jpg">
+  	 <p>RLB19</p>
+  	</div>
+  	  <div class="template-box">
+  	<img src="https://static.augustasportswear.com/marketing/RLB20.jpg">
+  	 <p>RLB20</p>
+  	</div>
+  	
+  <div class="template-box">
+  	<img src="https://static.augustasportswear.com/marketing/RLB1.jpg">
+  	 <p>RLB1</p>
+  	</div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/RLB3.jpg">
+   <p>RLB3</p>
+   </div> 
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/RLB9.jpg">
+   <p>RLB9</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/RLB15.jpg">
+   <p>RLB15</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/RLB16.jpg">
+   <p>RLB16</p>
+   </div> 
+   <div class="template-box">
+   <img style="height:69%" src="https://static.augustasportswear.com/marketing/TW59.jpg">
+   <p style="font-size:11px;">TW59-JERSEY APPLIQUÉ SAMPLE SHOWN</p>
+   </div>
+   <div class="template-box">
+   <img src="https://static.augustasportswear.com/marketing/RLB17.jpg">
+   <p>RLB17</p>
+   </div> 
+  <div class="template-box">
+   <a class="viewall-temps-link" onclick="openAll(event, 'all-laser-jersey')">View All Templates ></a>
+   </div>  
+   
+  </div>
+  </div>
+  
+<div class="decorations-content" id="pattern-app-temps">
+ <h3 class="decorheader">Patterned Appliqué Templates</h3>
+  <div class="decorations-info">
+ 
+ <div class="patt-app-container"> 	
+  <div class="template-box patt-app-box">
+  	<img src="https://static.augustasportswear.com/marketing/RLB17%5F%20RaiderFootball%5FPatterned.jpg">
+  	</div>
+  	<div class="patt-app-text patt-app-box"> 
+  	<p><b>RLB17 <br>1-COLOR APPLIQUé WITH DIGITAL CAMO</b></p>
+  	 <p><b>Available in</b><BR>BLACK/CARBON/WHITE F80, NAVY/CARBON/WHITE F81, ROYAL/CARBON/WHITE F83, SCARLET/CARBON/WHITE F84, MAROON/CARBON/WHITE F95, BLACK/SCARLET/WHITE R20, BLACK/ORANGE/WHITE 611, PURPLE/CARBON/WHITE H12, UNIVERSITY BLUE/CARBON/WHITE H13, FOREST/CARBON/WHITE F96</p>
+  	 </div>
+  </div>
+  	
+  <div class="patt-app-container"> 
+   <div class="template-box patt-app-box">
+  	<img src="https://static.augustasportswear.com/marketing/TW75%5FArtilleryCheerleading.jpg">
+  	</div>
+  	<div class="patt-app-text patt-app-box">
+  	 <p><b>TW75 <br>1-COLOR APPLIQUé WITH SPACE DYE</b></p>
+  	 <p><b>Available in</b><br>
+  	 BLACK 080, BLUE 054, GREEN 732, ORANGE 029, POWER PURPLE C82, RED 040, SILVER 099, YELLOW 020 <br>
+  	 <a href="holloway-ladies-space-dye-tank-222733">View Colorways</a></p>
+  	 </div>
+  </div>	
+
+  <div class="patt-app-container"> 
+  	<div class="template-box patt-app-box">
+  	<img src="https://static.augustasportswear.com/marketing/TW55%5FHawksMadison.jpg"></div>
+  	<div class="patt-app-text patt-app-box">
+  	 <p><b>TW55 <br>1-COLOR APPLIQUé WITH MAZE MESH</b></p>
+  	 <p><b>Available in</b><br>
+  	 BLACK 080, BRIGHT BLUE G25, BRIGHT ORANGE K48, BRIGHT YELLOW T50, GRAPHITE 059, LIME 096, NAVY 065, POWER PINK 809, ROYAL 060, SCARLET 083, WHITE 005 <br>
+  	 <a href="holloway-ladies-precision-tank-229367">View Colorways</a></p>
+  	 </div>
+  </div>
+  
+   </div>
+  </div>
+  
+  <div class="decorations-content" id="etch-temps">
+  <h3 class="decorheader">Laser Etch and Tonal Etch Templates</h3>
+  <div class="decorations-info">
+  	
+  <div class="template-box laser-etch-box">
+  	<img src="https://static.augustasportswear.com/marketing/ETCH19-1.jpg">
+  	 <p>ETCH19-1</p>
+  	</div>  	
+  	
+  <div class="template-box laser-etch-box">
+  	<img src="https://static.augustasportswear.com/marketing/ET1.jpg">
+  	 <p>ET1</p>
+  	</div>
+   <div class="template-box laser-etch-box">
+   <img src="https://static.augustasportswear.com/marketing/ET5.jpg">
+   <p>ET5</p>
+   </div> 
+   <div class="template-box laser-etch-box">
+   <img src="https://static.augustasportswear.com/marketing/ET9.jpg">
+   <p>ET9</p>
+   </div>
+   <div class="template-box laser-etch-box">
+   <img src="https://static.augustasportswear.com/marketing/ET3.jpg">
+   <p>ET3</p>
+   </div> 
+      <div class="template-box laser-etch-box">
+   <img src="https://static.augustasportswear.com/marketing/ET6.jpg">
+   <p>ET6</p>
+   </div>
+   <div class="template-box laser-etch-box">
+   <img src="https://static.augustasportswear.com/marketing/ET12.jpg">
+   <p>ET12</p>
+   </div> 
+      <div class="template-box laser-etch-box">
+   <img src="https://static.augustasportswear.com/marketing/ET24.jpg">
+   <p>ET24</p>
+   </div>
+   <div class="template-box laser-etch-box">
+   <img src="https://static.augustasportswear.com/marketing/ET25.jpg">
+   <p>ET25</p>
+   </div> 
+      <div class="template-box laser-etch-box">
+   <img src="https://static.augustasportswear.com/marketing/ET26.jpg">
+   <p>ET26</p>
+   </div> 
+  <div class="template-box laser-etch-box">
+   <a class="viewall-temps-link" onclick="openAll(event, 'all-etch')">View All Templates ></a>
+   </div>
+   
+  </div>
+  </div>
+  
+  <div class="decorations-content" id="mascot-temps">
+  <h3 class="decorheader">Mascots</h3>
+  <div class="decorations-info">
+  	
+   <div class="template-box-m mascot-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Baseball_Templates-Edit.jpg">
+  	 <p>Baseball - 1</p>
+  	</div>
+   <div class="template-box-m mascot-temps">
+  	<img src="https://static.augustasportswear.com/marketing/Baseball_Templates2-Edit.jpg">
+  	 <p>Baseball - 2</p>
+  	</div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Basketball_Templates-Edit.jpg">
+   <p>Basketball - 1</p>
+   </div> 
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Basketball_Templates2-Edit.jpg">
+   <p>Basketball - 2</p>
+   </div> 
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Bears_Templates-Edit.jpg">
+   <p>Bears</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+    <img src="https://static.augustasportswear.com/marketing/Beavers_Templates-Edit.jpg">
+   <p>Beavers</p>
+   </div> 
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Bees_Templates-Edit.jpg">
+   <p>Bees</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+    <img src="https://static.augustasportswear.com/marketing/Bobcats_Wildcats_Templates-Edit.jpg">
+   <p>Bobcats & Wildcats</p>
+   </div> 
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Braves_Templates-Edit.jpg">
+   <p>Braves</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Bulldogs_Templates-Edit.jpg">
+   <p>Bulldogs - 1</p>
+   </div> 
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Bulldogs_Templates2-Edit.jpg">
+   <p>Bulldogs - 2</p>
+   </div> 
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Cardinals_Templates-Edit.jpg">
+   <p>Cardinals</p>
+   </div> 
+   <div class="template-box-m mascot-temps">
+    <img src="https://static.augustasportswear.com/marketing/Cavaliers_Templates-Edit.jpg">
+   <p>Cavaliers</p>
+   </div> 
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Cheerleading_Templates-Edit.jpg">
+   <p>Cheerleading</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+    <img src="https://static.augustasportswear.com/marketing/Chiefs_Templates-Edit.jpg">
+   <p>Chiefs</p>
+   </div> 
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Cougars_Panthers_Templates-Edit.jpg">
+   <p>Cougars</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Cowboys_Templates-Edit.jpg">
+   <p>Cowboys</p>
+   </div> 
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Devils_Templates-Edit.jpg">
+   <p>Devils</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+    <img src="https://static.augustasportswear.com/marketing/Dragons_Templates-Edit.jpg">
+   <p>Dragons</p>
+   </div> 
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Eagles_Templates-Edit.jpg">
+   <p>Eagles</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Eagles_Templates2-Edit.jpg">
+   <p>Eagles</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+    <img src="https://static.augustasportswear.com/marketing/Football_Templates-Edit.jpg">
+   <p>Football</p>
+   </div> 
+   <div class="template-box-m mascot-temps">
+    <img src="https://static.augustasportswear.com/marketing/Football_Templates2-Edit.jpg">
+   <p>Football</p>
+   </div> 
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Frontiersman_Templates-Edit.jpg">
+   <p>Frontiersman</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Gators_Templates-Edit.jpg">
+   <p>Gators</p>
+   </div> 
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Golf_Templates-Edit.jpg">
+   <p>Golf</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+    <img src="https://static.augustasportswear.com/marketing/Hockey_Templates-Edit.jpg">
+   <p>Hockey</p>
+   </div> 
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Huskies_Templates-Edit.jpg">
+   <p>Huskies</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+    <img src="https://static.augustasportswear.com/marketing/Jaguars_Templates-Edit.jpg">
+   <p>Jaguars</p>
+   </div> 
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Jets_Templates-Edit.jpg">
+   <p>Jets</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Knights_Templates-Edit.jpg">
+   <p>Knights</p>
+   </div> 
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Lacrosse_Templates-Edit.jpg">
+   <p>Lacrosse</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Lions_Templates-Edit.jpg">
+   <p>Lions</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Misc-Mascots_Templates-Edit.jpg">
+   <p>Miscellaneous Mascots</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Misc-Sport-Object_Templates-Edit.jpg">
+   <p>Miscellaneous Sports-Objects</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Mustangs_Templates-Edit.jpg">
+   <p>Mustangs</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Patriots_Templates-Edit.jpg">
+   <p>Patriots</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Pawprints_Templates-Edit.jpg">
+   <p>Pawprints</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Pirates_Templates-Edit.jpg">
+   <p>Pirates</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Rams_Templates-Edit.jpg">
+   <p>Rams</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Razorbacks_Templates-Edit.jpg">
+   <p>Razorbacks</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Rockets_Templates-Edit.jpg">
+   <p>Rockets</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/running-mascots_Templates-Edit.jpg">
+   <p>Running Mascots - 1</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/running-mascots_Templates2-Edit.jpg">
+   <p>Running Mascots - 2</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Sharks_Templates-Edit.jpg">
+   <p>Sharks</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Soccer_Templates-Edits.jpg">
+   <p>Soccer</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Swimming_Templates-Edit.jpg">
+   <p>Swimming</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Tennis_Templates-Edit.jpg">
+   <p>Tennis</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Tigers_Templates-Edit.jpg">
+   <p>Tigers - 1</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Tigers_Templates2-Edit.jpg">
+   <p>Tigers - 2</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Track-Field_Templates-Edit.jpg">
+   <p>Track & Field</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Trojans_Templates-Edit.jpg">
+   <p>Trojans - 1</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Trojans_Templates2-Edit.jpg">
+   <p>Trojans - 2</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Vikings_Templates-Edit.jpg">
+   <p>Vikings</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Volleyball_Templates-Edit.jpg">
+   <p>Volleyball</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Wolves_Templates-Edit.jpg">
+   <p>Wolves</p>
+   </div>
+   <div class="template-box-m mascot-temps">
+   <img src="https://static.augustasportswear.com/marketing/Wrestling_Templates-Edit.jpg">
+   <p>Wrestling</p>
+   </div>
+  </div>
+  </div>
+  
+<div class="decorations-content" id="dakota-temps">
+  <h3 class="decorheader">Dakota Collectibles</h3>
+  <div class="decorations-info">
+  	<p><a href="https://www.dakotacollectibles.com/comm/default.asp" target="blank" style="text-decoration:underline;">Click here</a> to view all of The Dakota Collectibles.</p>
+  </div>
+  </div>
+  
+</div>
+
+
+<!-- FAQs -->
+<div id="FAQs" class="tabcontent">
+
+<div class="faq-content" id="general-faq">
+  <h3 class="faqheader">General</h3>
+   <div class="faq-info" id="general">
+    <p>
+    <b>How do I place a decorated order?</b><br>
+    You can submit an <span onclick="openDecoration(event, 'Order-Now')" style="color:#50a4d9;;text-decoration:underline;cursor:pointer;">order here</span> or you can email your PO and artwork to <a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a>.
+    <br><br>
+    
+    <b>Will an artwork proof be sent to me before production?</b><br>
+Yes. On any new art, a proof will be sent. A proof can also be requested for any existing designs as well requesting it on your P.O. 
+<br><br>
+<b>How many days until I receive a proof?</b><br>
+Lead times on proofs as well as production are updated nightly. They can be found <a href="#lead-sheet"><span onclick="openDecoration(event, 'Order-Now')" style="color:#50a4d9;">here</span></a>.
+<br><br>
+<b>Where are examples of available lettering styles for sports uniforms like Baseball, Basketball, Track, Hockey and Football?</b><br>
+Examples of available lettering styles for uniforms can be viewed on our website under the Uniform Decoration Guides below.
+<br><br>
+<b>Where can I view examples of available mascots?</b><br>
+A <a href="#mascot-temps"><span onclick="openDecoration(event, 'Decorations')" style="color:#50a4d9;">Mascot Library</span></a> is located under the Stock Decoration Library section of our website.
+<br><br>
+<b>Where can I find out information on what decoration placements are available?</b><br>
+Our online order form lists the most common areas for placement. If you want something that is not listed, just let us know where you’d like it placed in the “Additional Instructions” box on the Order Form. Or contact Customer Service at <a href="mailto:sales@augustasportswear.com" style="color:#50a4d9;">sales@augustasportswear.com</a> and we’ll be happy to help you finalize the lettering position.
+<br><br>
+<b>What is the normal turn time for a decoration order?</b><br>
+Lead times on garment decoration as well as art proofs are updated nightly. They can be found <a href="#lead-sheet"><span onclick="openDecoration(event, 'Order-Now')" style="color:#50a4d9;">here</span></a>.
+<br>
+If you need it faster, let us know. We can accommodate most requests. *Rush Fee may apply.
+<br><br>
+<b>Are there any set-up charges for decoration?</b><br>
+We offer Free Artwork Set Up on almost all decoration!<br>
+Custom Appliqué and embroidery stitch counts over 16,000 are charged a set up fee; please contact <a href="mailto:sales@augustasportswear.com" style="color:#50a4d9;">sales@augustasportswear.com</a> for a quote. When ordering a logo in multiple artwork sizes (to fit both Youth and Adult garments) a $25 fee is assessed. For multiple mock ups, a $10 fee per additional Mock Up is charged. 
+<br><br>
+<b>What are the prices for decorations?</b><br>
+A link to the retail decoration prices can be found at the bottom of each Decoration Technique tab. You can also request any decoration price through Customer Service by emailing your artwork to <a href="mailto:sales@augustasportswear.com" style="color:#50a4d9;)">sales@augustasportswear.com</a> and request a quote. Be sure to provide your account number and an estimation of how many garments you will be ordering. Quotes are usually provided within 1 business day.
+<br><br>
+<b>What is minimum order for a decoration? And is there a less-than-minimum order charge?</b><br>
+Minimums for <b>Laser Etch, Appliqué and Embroidery</b> are 12 pieces with an upcharge of $60.00 for 1-5 pieces and $30.00 for 6-11 pieces.
+<br>
+Minimums for <b>Screen Prints and Premium Transfer</b> are 12 pieces.
+<br>
+Minimums for <b>Combined Techniques</b> designs are contingent upon the types of techniques that you combine to create your design. Please <a href="mailto:sales@augustasportswear.com" style="color:#50a4d9;">contact Customer Service</a> to help determine the cost and minimums for your unique design.
+<br><br>
+<b>What is the stitch count of the design?</b><br>
+The stitch count is the number of stitches required to complete an embroidered design. The more stitches required, the more time needed to embellish the product. <a href="#embroidery"><span onclick="openDecoration(event, 'Techniques')" style="color:#50a4d9;">Submit your artwork here</span></a> to understand the estimated amount of stitches.
+<br><br>
+<b>On Appliqué, what colors are available for Jersey and Twill?</b><br>
+There are a variety of <a href="#applique"><span onclick="openDecoration(event, 'Techniques')" style="color:#50a4d9;">Jersey</span></a> and <a href="#reverse-laser-jersey"><span onclick="openDecoration(event, 'Techniques')" style="color:#50a4d9;">Twill</span></a> colors available to choose from that will add dimension to your garment.</p>
+   </div>
+</div>
+
+<div class="faq-content" id="glossary-faq">
+  <h3 class="faqheader">Glossary</h3>
+   <div class="faq-info" id="glossary">
+    <p><b style="font-size:18px;">Decorating Terms</b> <br><br>
+<b>APPLIQUÉ</b>: The process of stitching decoration or trimming, cut from one fabric piece, to another, to add dimension. 
+<br><br>
+<b>EMBROIDERY</b>: The process of decorating by using a special machine that is programmed to stitch a design combining texture, pattern and color. Holloway can match thread colors for any embroidery to your logo or artwork.
+<br><br>
+<b>JERSEY APPLIQUÉ</b>: The process of specifically stitching decoration or trimming, cut from Jersey Knit fabric, to another, adding dimension.
+<br><br>
+<b>LASER ETCH</b>: A process that uses laser technology to etch or burn a mark on a fabric surface. Holloway can apply Laser Etching on any polyester fabric and it looks great on mid-tone colors.
+<br><br>
+<b>MULTIMEDIA</b>: The process of applying two or more of the techniques by layering them on a single garment. This technique is a great way to create truly one-of-a-kind looks.
+<br><br>
+<b>REVERSE LASER APPLIQUÉ</b>: The process of using a laser beam to cut single or multiple fabric layers of fabric, revealing a fine, detailed design. Reverse Laser Appliqué is a great technique to add texture to Holloway sweatshirts.
+<br><br>
+<b>SCREEN PRINT</b>: The process of creating a printed design by squeezing ink through screens and allowing color to pass through open areas. Multi-colored designs are achieved using one screen for each color in the design.  
+<br><br>
+<!-- <b>Premium Transfer/Heat Transfer</b>: 
+<br></br>
+<b>Sim Stitch Transfer</b>: 
+<br></br> -->
+<b style="font-size:18px;">Embroidery Terms</b> <br><br>
+<b>BACKING</b>: Material used beneath the embroidered fabric to provide stability and support.
+<br><br>
+<b>DIGITIZING</b>: The process of converting artwork or logos into a series of stitch commands read by an embroidery machine’s computer.
+<br><br>
+<b>EMBLEM/PATCH</b>: An embroidered design with a finished edge, stitched independent of a garment.
+<br><br>
+<b>FELT</b>: A non-woven fabric made by layering thin sheets of fibers, then applying heat, moisture and pressure to shrink and compress the fibers into a thick matted cloth that will not ravel or fray. Often used for appliqué designs and letters.
+<br><br>
+<b>FINISHING</b>: Processes done after the embroidery is completed, including trimming loose threads, removing excess facing or backing, and pressing or steaming to remove puckers and hoop marks.
+<br><br>
+<b>LETTERING</b>: An embroidery that uses letters or words. Lettering, commonly called “keyboard lettering,” may be created using an embroidery lettering program on a computer or from circuit boards that allow variance of letter style, size, height, density and other characteristics. This technique is often seen on Augusta baseball and basketball jerseys.
+<br><br>
+<b>MONOGRAM</b>: An embroidered design composed of one or more letters, usually one’s initials or name.
+<br><br>
+<b>PUFF EMBROIDERY</b>: The process of stitching a dense motif over embroidery/craft foam to create a three-dimensional effect.
+<br><br>
+<b>SPECIALTY THREADS</b>: Threads designed for effects such as shine, glitter, iridescence or thickness. The threads are often are made from synthetic materials including rayon, metallic and textured nylon. Mercerized cotton is also often used.
+<br><br>
+<b>TACKLE TWILL</b>: Letters or numbers cut from Twill fabric that are commonly used for athletic teams and organizations. Tackle Twill Appliqués attach to a garment with an adhesive backing that tacks them in place; the edges of the Appliqués are then zigzag stitched.</p>
+   </div>
+</div>
+
+<div class="faq-content" id="guidelines-faq">
+  <h3 class="faqheader">Order Guidelines</h3>
+   <div class="faq-info" id="guidelines">
+    <a href="https://static.augustasportswear.com/marketing/decoration-guide-standard.pdf" target="blank">
+    <img id="decplace-guide" src="https://static.augustasportswear.com/marketing/decoration-guide-standard.jpg">
+    </a>
+    <p><b>Screen Print</b><br>
+Screen Print guidelines are dependent upon the individual design, size and construction of the garment. Multiple color options and a variety of designs are available.
+<br><br>
+Minimums: 12 pieces 
+<br><br>
+<b>Embroidery</b><br>
+Embroidery designs may have up to 12 colors at no extra cost. <br>
+Full-size application not available on bags. </p>
+<ul><li>25% surcharge for metallic thread on any type of embroidery.</li>
+<li>Puff embroidery is $1.50 additional per unit.</li>
+<li>Disk design charge $2.50 per 1,000 stitches, minimum of $40.00. Duplicated disk charges $25.00.<br>
+<li>The above disk design charges cover the time and labor involved in creation of such disks. The actual disk remains the property of Holloway Sportswear (to be used only by the customer who paid the design charge).</li>
+<li>Artwork Information: For best results, email finished artwork, provide a disk or supply camera-ready art to size. Preferred art for digitizing: .EPS, .AI or .CDR if possible or color composite. Send the customer supplied
+digitized disk in .DST (Tajima) format to: <a href="mailto:artwork@hollowayusa.com" style="text-decoration:underline;">artwork@hollowayusa.com</a>. For screen printing, send camera-ready art to size. Our Customer Service department will provide complete details to make your ordering fast and efficient.</li>
+<li>Less than minimum charge: minimum 12 pieces per logo. You can combine as many different styles to reach the 12 pieces as needed as long as they all feature the exact same logo.</li>
+<li>Fabric Sew-out: $30 per sew-out</li>
+<li>Designs over 10.5": $3.00 additional charges</li>
+</ul>
+<br>
+<p>Minimums: 12 pieces.</p>
+<br><br>
+<b>Reverse Laser and Jersey Appliqué</b><br>
+  Reverse Laser or Jersey Appliqué designs and lettering are available in outline stitch only (not to exceed 1” and 12 letters).<br><br>
+  Available in the following Jersey colors: White, Silver, Gold, Orange, Kelly, Dark Green, Red, Maroon, Purple, Light Blue, Royal, Navy, Black, Pink, Ash Heather, Teal and Athletic Heather.
+<br><br>
+Note – Jersey colors are not dye matched to one another and may have variance in shades and therefore may not match garment trim or specific PMS school colors.
+<br><br>
+Minimums: 12 pieces. Upcharge of $60.00 for 1-5 pieces and $30.00 for 6-11 pieces.
+<br><br>
+<b>Traditional Appliqué</b><br>
+Maximum number of letters is 12 (including spaces).
+<br><br>
+Choose from these available Twill Appliqué colors: Black, Brown, Cardinal, Columbia, Dark Green, Greek Pink, Kelly, Light Gold, Maize, Maroon, Navy, Old Gold, Orange, Pink, Purple, Red, Royal, Shark Teal, Tennessee Orange, Texas Orange, Varsity Bright Gold, Vegas Gold and White. <br><br>
+<br><br>
+Minimums: 12 pieces. Upcharge of $60.00 for 1-5 pieces and $30.00 for 6-11 pieces.
+<br><br>
+Additional Appliqué Add-on’s could include:
+<br><br>
+ Selecting any of the available stock (Printed Twill) patterns and print them on Jersey for enhanced Reverse Laser Appliqués.<br><br>
+ Adding a Laser Etch to any Appliqué for a minimal price but maximum impact. 
+ <br><br>
+<b>Tonal Etch and Laser Etch</b><br>
+Tonal etch gives a dimensional feel by using contrasting lighter and darker tones while Laser Etch provides a one-dimensional feel.
+Etching effects may vary with the color of the garment.<br><br>
+Fabric must be 100% polyester, with best results on mid-tone colors.<br>
+We do not recommend this for Black, White or Navy.
+<br><br>
+Minimums: 12 pieces. Upcharge of $60.00 for 1-5 pieces and $30.00 for 6-11 pieces.
+<br><br>
+<b>For any questions, please contact Customer Service or your sales rep.</b>
+<br><br>
+</p>
+   </div>
+   </div>
+   
+<!-- <div class="faq-content" id="russell-faq">
+  <h3 class="faqheader">Russell Athletic Uniform Decoration Guides</h3>
+   <div class="faq-info" id="uniform-decor">
+    <p>Russell Athletic numbering styles are offered in Aquatru™ Screen Printed only. Lettering can be done in Screen Print or Aquatru™.
+    <br>
+    <a href="#aquatru"><span onclick="openDecoration(event, 'Techniques')" style="color:#50a4d9;">View Aquatru™ technique here</span></a></p>
+    <br><br>
+    <img style="max-width:700px;" id="uniform-numbers" src="https://static.augustasportswear.com/marketing/Russell-Numbers-Letters.jpg">
+   </div>
+ </div> -->
+
+<div class="faq-content" id="uniform-faq">
+  <h3 class="faqheader">Uniform Decoration Guides</h3>
+   <div class="faq-info" id="uniform-decor">
+    <a href="https://static.augustasportswear.com/marketing/UNIFORM%20PLACEMENT%20GUIDE%20FOR%20WEBSITE.pdf" target="blank">
+    <img id="decplace-guide" src="https://static.augustasportswear.com/marketing/UNIFORM%20PLACEMENT%20GUIDE%20FOR%20WEBSITE.jpg">
+    </a>
+    <img class="font-options" src="https://static.augustasportswear.com/marketing/sp-ht-font.png">
+    <img class="font-options" src="https://static.augustasportswear.com/marketing/applique%2Dfonts.png">
+    <img class="font-options" id="emb-font" src="https://static.augustasportswear.com/marketing/emb%2Dfonts.png">
+    
+    <b style="font-size:20px;">Uniform Decoration Guides</b><br>
+    <b>Baseball/Softball</b> - Custom Braid Options + Pricing<br>
+    <div class="custom-braid" id="custom-braid-options">
+<h2>3/16" SOLID BRAID OPTIONS</h2>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td bgcolor="#242021" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#babbbd" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#98012e" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#005030" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#008752" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#ffcf07" width="12%">&nbsp;</td>
+</tr>
+<tr>
+<td width="12%" style="border: none;">Black</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Blue Grey</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Cardinal</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Forest</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Kelly</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Lt Gold</td>
+</tr>
+<tr>
+<td bgcolor="#762123" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#00264c" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#f57b20" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#652d8a" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#00549f" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#e51937" width="12%">&nbsp;</td>
+</tr>
+<tr>
+<td width="12%" style="border: none;">Maroon</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Navy</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Orange</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Purple</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Royal</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Scarlet</td>
+</tr>
+<tr>
+<td bgcolor="#008eb0" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#ba5915" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#749ed3" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#e1c097" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#ffffff" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">&nbsp;</td>
+</tr>
+<tr>
+<td width="12%" style="border: none;">Teal</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">TX Orange</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Univ Blue</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Vegas Gold</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">White</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<div class="3/8-braid">
+<h2 style="clear:both;">3/8" STRIPED BRAID OPTIONS</h2>
+<div class="braid-options">
+<p style="background-color:#231f20;"></p>
+<p style="background-color:#ffcf06;"></p>
+<p style="background-color:#231f20;"></p>
+<br><span style="width:100%;">Black/Lt Gold/Black</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#231f20;"></p>
+<p style="background-color:#f57b20;"></p>
+<p style="background-color:#231f20;"></p>
+<br><span style="width:100%;">Black/Orange/Black</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#231f20;"></p>
+<p style="background-color:#e51937;"></p>
+<p style="background-color:#231f20;"></p>
+<br><span style="width:100%;">Black/Scarlet/Black</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#231f20;"></p>
+<p style="background-color:#e0c298;"></p>
+<p style="background-color:#231f20;"></p>
+<br><span style="width:100%;">Black/Vegas Gold/Black</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#231f20;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#231f20;"></p>
+<br><span style="width:100%;">Black/White/Black</span>
+</div>
+<div class="braid-options" id="bgwhtbg">
+<p style="background-color:#bcbdc0;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#bcbdc0;"></p>
+<br><span style="width:100%;">Blue Grey/White/Blue Grey</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#98012e;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#98012e;"></p>
+<br><span style="width:100%;">Cardinal/White/Cardinal</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#005030;"></p>
+<p style="background-color:#ffcf06;"></p>
+<p style="background-color:#005030;"></p>
+<br><span style="width:100%;">Forest/Lt Gold/Forest</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#005030;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#005030;"></p>
+<br><span style="width:100%;">Forest/White/Forest</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#008752;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#008752;"></p>
+<br><span style="width:100%;">Kelly/White/Kelly</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#ffcf06;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#ffcf06;"></p>
+<br><span style="width:100%;">Lt Gold/White/Lt Gold</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#762123;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#762123;"></p>
+<br><span style="width:100%;">Maroon/White/Maroon</span>
+</div>
+<div class="braid-options" id="nvlgnv">
+<p style="background-color:#00264c;"></p>
+<p style="background-color:#ffcf06;"></p>
+<p style="background-color:#00264c;"></p>
+<br><span style="width:100%;">Navy/Lt Gold/Navy</span>
+</div>
+<div class="braid-options" id="nvorgnv">
+<p style="background-color:#00264c;"></p>
+<p style="background-color:#f57b20;"></p>
+<p style="background-color:#00264c;"></p>
+<br><span style="width:100%;">Navy/Orange/Navy</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#00264c;"></p>
+<p style="background-color:#e51937;"></p>
+<p style="background-color:#00264c;"></p>
+<br><span style="width:100%;">Navy/Scarlet/Navy</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#00264c;"></p>
+<p style="background-color:#e0c298;"></p>
+<p style="background-color:#00264c;"></p>
+<br><span style="width:100%;">Navy/Vegas Gold/Navy</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#00264c;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#00264c;"></p>
+<br><span style="width:100%;">Navy/White/Navy</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#f57b20;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#f57b20;"></p>
+<br><span style="width:100%;">Orange/White/Orange</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#652d8a;"></p>
+<p style="background-color:#ffcf06;"></p>
+<p style="background-color:#652d8a;"></p>
+<br><span style="width:100%;">Purple/Lt Gold/Purple</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#652d8a;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#652d8a;"></p>
+<br><span style="width:100%;">Purple/White/Purple</span>
+</div> 
+<div class="braid-options">
+<p style="background-color:#00549f;"></p>
+<p style="background-color:#ffcf06;"></p>
+<p style="background-color:#00549f;"></p>
+<br><span style="width:100%;">Royal/Lt Gold/Royal</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#00549f;"></p>
+<p style="background-color:#f57b20;"></p>
+<p style="background-color:#00549f;"></p>
+<br><span style="width:100%;">Royal/Orange/Royal</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#00549f;"></p>
+<p style="background-color:#e51937;"></p>
+<p style="background-color:#00549f;"></p>
+<br><span style="width:100%;">Royal/Scarlet/Royal</span>
+</div>
+<div class="braid-options" id="roywhtroy">
+<p style="background-color:#00549f;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#00549f;"></p>
+<br><span style="width:100%;">Royal/White/Royal</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#e51937;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#e51937;"></p>
+<br><span style="width:100%;">Scarlet/White/Scarlet</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#008eb0;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#008eb0;"></p>
+<br><span style="width:100%;">Teal/White/Teal</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#ba5915;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#ba5915;"></p>
+<br><span style="width:100%; font-size:9px;">Tx Orange/White/Tx Orange</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#231f20;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<br><span style="width:100%;">White/Black/White</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#008752;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<br><span style="width:100%;">White/Kelly/White</span>
+</div>
+<div class="braid-options" id="whtltgwht">
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#ffcf06;"></p>
+<p style="background-color:FFFFFF#;"></p>
+<br><span style="width:100%;">White/Lt Gold/White</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#762123;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<br><span style="width:100%;">White/Maroon/White</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#00264c;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<br><span style="width:100%;">White/Navy/White</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#652d8a;"></p>
+<p style="background-color:FFFFFF#;"></p>
+<br><span style="width:100%;">White/Purple/White</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#00549f;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<br><span style="width:100%;">White/Royal/White</span>
+</div>
+<div class="braid-options">
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#e51937;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<br><span style="width:100%;">White/Scarlet/White</span>
+</div>
+</div>
+<div class="braid-placement">
+<h2 style="clear:both;">PLACEMENT</h2>
+<b>Jersey Braid Options:</b>
+<p><img id="jersey-braid-image" src="https://static.augustasportswear.com/marketing/baseball%2Dplacement.jpg" max-width="600px"></p>
+<table width="652" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="left" width="400" style="border: none;">
+<b>Vest Braid Options:</b>
+</td>
+<td align="left" style="border: none;">
+<b>Pant Braid Option:</b>
+</td>
+</tr>
+</tbody>
+</table>
+<p><img id="vest-braid-image" src="https://static.augustasportswear.com/marketing/baseball%2Dvests.jpg" max-width="600px"></p>	
+  	</div>
+<div class="pricing"> 
+ <table cellpadding="4" cellspacing="0" class="price-chart" id="braid-price-chart">
+  	<thead>	
+  		<tr class="tablehead">
+  			<th class="quantity"></th>
+  			<th class="quantity" colspan="2">Jersey</th>
+  			<th class="quantity" colspan="2">Vest</th>
+  			<th class="quantity" colspan="2">Pant</th>
+  		</tr></thead>
+  			<tbody>
+             <tr class="alt-row-1">
+  				<th></th>
+  				<td>3/16"</td>
+  				<td>3/8"</td>
+  				<td>3/16"</td>
+  				<td>3/8"</td>
+  				<td>3/16"</td>
+  				<td>3/8"</td>
+  			 </tr>
+  			 <tr class="alt-row-2">
+  				<th>Option 1</th>
+  				<td>$11.00</td>
+  				<td>$12.00</td>
+  				<td>$11.00</td>
+  				<td>$12.00</td>
+  				<td>$10.50</td>
+  				<td>$13.00</td>
+  			 </tr>
+  			 <tr class="alt-row-1">
+  				<th>Option 2</th>
+  				<td>$12.00</td>
+  				<td>$13.00</td>
+  				<td>$12.00</td>
+  				<td>$13.00</td>
+  				<td></td>
+  				<td></td>
+  			 </tr>
+  			 <tr class="alt-row-2">
+  				<th>Option 3</th>
+  				<td>$16.00</td>
+  				<td>$18.00</td>
+  				<td>$16.00</td>
+  				<td>$18.00</td>
+  				<td></td>
+  				<td></td>
+  			 </tr>
+  			</tbody>
+  		</table>
+  		</div> 
+    </div>
+    
+    <br><br><br><br>
+    <p style="float:left; clear:both;" id="basketball-guide"><b>Basketball</b><br>
+    <img id="side-panel-image" src="https://static.augustasportswear.com/marketing/leg%2Dinserts.jpg"> 
+    <br>
+    1-color panel Screen Print priced 2 prints per short. 12 pc. minimum.
+<br>
+MSRP: $9.60
+    </p>
+   </div>
+ </div>
+ 
+<div class="faq-content" id="ra-uniform-faq">
+  <h3 class="faqheader">Russell Athletic Uniform Decoration Guides</h3>
+   <div class="faq-info" id="ra-uniform-decor">
+   
+    <b style="font-size:20px;">Uniform Decoration Guides</b><br>
+    <b>Baseball/Softball</b> - Custom Braid Options + Pricing<br>
+    <div class="custom-braid" id="custom-braid-options">
+<h2>BRAID PATTERNS</h2>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom:20px;">
+<tbody>
+<tr id="ra-braid-colors">
+<td bgcolor="#b4bbbf" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#000000" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#e8592d" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#942646" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#5d93c6" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#054623" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#fec92f" width="12%">&nbsp;</td>
+</tr>
+<tr id="ra-braid-colors" class="colornames">
+<td width="12%" style="border: none;">Baseball Grey</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Black</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Burnt Orange</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Cardinal</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Columbia Blue</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Dark Green</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Gold</td>
+</tr>
+
+<tr id="ra-braid-colors">
+<td bgcolor="#a5b4b5" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#e5d26f" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#0f7e40" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#19a1b0" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#922e60" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#02275f" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#52328f" width="12%">&nbsp;</td>
+</tr>
+<tr id="ra-braid-colors" class="colornames">
+<td width="12%" style="border: none;">Gridiron Silver</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">GT Gold</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Kelly</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Marlin Aqua</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Maroon</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Navy</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Purple</td>
+</tr>
+
+<tr id="ra-braid-colors">
+<td bgcolor="#0c5ca8" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#472d28" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#424e4e" width="12%">&nbsp;</td> 
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#b2523a" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#c21444" width="12%">&nbsp;</td>
+<td style="border: none;">&nbsp;</td>
+<td bgcolor="#ffffff" width="12%" style="border: 1px solid black;">&nbsp;</td>
+</tr>
+<tr id="ra-braid-colors" class="colornames">
+<td width="12%" style="border: none;">Royal</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Seal Brown</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Stealth</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">Texas Orange</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">True Red</td>
+<td style="border: none;">&nbsp;</td>
+<td width="12%" style="border: none;">White</td>
+</tr>
+</tbody>
+</table>
+
+<div class="3/8-braid">
+<div class="ra-braid-options">
+<p style="background-color:#000000;"></p>
+<p style="background-color:#ffffff;"></p>
+<p style="background-color:#000000;"></p>
+<br><span>Black/White/Black</span>
+</div>
+<div class="ra-braid-options">
+<p style="background-color:#942646;"></p>
+<p style="background-color:#ffffff;"></p>
+<p style="background-color:#942646;"></p>
+<br><span>Cardinal/White/Cardinal</span>
+</div>
+<div class="ra-braid-options">
+<p style="background-color:#5d93c6;"></p>
+<p style="background-color:#ffffff;"></p>
+<p style="background-color:#5d93c6;"></p>
+<br><span>Columbia Blue/White /Columbia Blue</span>
+</div>
+<div class="ra-braid-options">
+<p style="background-color:#054623;"></p>
+<p style="background-color:#ffffff;"></p>
+<p style="background-color:#054623;"></p>
+<br><span>Dark Green/White/Dark Green</span>
+</div>
+<div class="ra-braid-options">
+<p style="background-color:#e5d26f;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#e5d26f;"></p>
+<br><span>GT Gold/White/GT Gold</span>
+</div>
+<div class="ra-braid-options">
+<p style="background-color:#fec92f;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#fec92f;"></p>
+<br><span>Gold/White/Gold</span>
+</div>
+<div class="ra-braid-options">
+<p style="background-color:#0f7e40;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#0f7e40;"></p>
+<br><span>Kelly/White/Kelly</span>
+</div>
+<div class="ra-braid-options">
+<p style="background-color:#19a1b0;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#19a1b0;"></p>
+<br><span>Marlin Aqua/White/Marlin Aqua</span>
+</div>
+<div class="ra-braid-options">
+<p style="background-color:#922e60;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#922e60;"></p>
+<br><span>Maroon/White/Maroon</span>
+</div>
+<div class="ra-braid-options">
+<p style="background-color:#02275f;"></p>
+<p style="background-color:#c21444;"></p>
+<p style="background-color:#02275f;"></p>
+<br><span>Navy/True Red/Navy</span>
+</div>
+<div class="ra-braid-options">
+<p style="background-color:#02275f;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#02275f;"></p>
+<br><span>Navy/White/Navy</span>
+</div>
+<div class="ra-braid-options">
+<p style="background-color:#02275f;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#02275f;"></p>
+<br><span>Purple/White/Purple</span>
+</div> 
+<div class="ra-braid-options">
+<p style="background-color:#0c5ca8;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#0c5ca8;"></p>
+<br><span>Royal/White/Royal</span>
+</div>
+<div class="ra-braid-options">
+<p style="background-color:#424e4e;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#424e4e;"></p>
+<br><span>Stealth/White/Stealth</span>
+</div>
+<div class="ra-braid-options">
+<p style="background-color:#c21444;"></p>
+<p style="background-color:#FFFFFF;"></p>
+<p style="background-color:#c21444;"></p>
+<br><span>True Red/White/True Red</span>
+</div>
+</div>
+
+<div class="ra-pricing"> 
+ <table cellpadding="4" cellspacing="0" class="price-chart" id="braid-price-chart">
+  	<thead>	
+  		<tr class="tablehead">
+  			<th class="quantity"></th>
+  			<th class="quantity" colspan="2">Jersey</th>
+  			<th class="quantity" colspan="2">Vest</th>
+  			<th class="quantity" colspan="2">Pant</th>
+  		</tr></thead>
+  			<tbody>
+             <tr class="alt-row-1">
+  				<th></th>
+  				<td>3/16"</td>
+  				<td>3/8"</td>
+  				<td>3/16"</td>
+  				<td>3/8"</td>
+  				<td>3/16"</td>
+  				<td>3/8"</td>
+  			 </tr>
+  			 <tr class="alt-row-2">
+  				<th>Option 1</th>
+  				<td>$11.00</td>
+  				<td>$12.00</td>
+  				<td>$11.00</td>
+  				<td>$12.00</td>
+  				<td>$10.50</td>
+  				<td>$13.00</td>
+  			 </tr>
+  			 <tr class="alt-row-1">
+  				<th>Option 2</th>
+  				<td>$12.00</td>
+  				<td>$13.00</td>
+  				<td>$12.00</td>
+  				<td>$13.00</td>
+  				<td></td>
+  				<td></td>
+  			 </tr>
+  			 <tr class="alt-row-2">
+  				<th>Option 3</th>
+  				<td>$16.00</td>
+  				<td>$18.00</td>
+  				<td>$16.00</td>
+  				<td>$18.00</td>
+  				<td></td>
+  				<td></td>
+  			 </tr>
+  			</tbody>
+  		</table>
+  		</div> 
+  		
+<div class="football-stripes">  
+<b style="font-size:20px;">FOOTBALL</b>		
+<img src="https://static.augustasportswear.com/marketing/RA%20Football%20Stripe%20options.png">
+</div>
+
+    </div>
+   </div>
+ </div>
+ 
+ <div class="faq-content" id="uniform-order-faq">
+  <h3 class="faqheader">How to order Uniforms</h3>
+   <div class="faq-info" id="how-to-uniform">
+    <p>
+    	You can submit an <a href="https://form.jotform.com/90843645413155" target="blank" style="color:rgb(199,44,52);text-decoration:underline;cursor:pointer;">order here</a> or you can email your PO and Artwork to <a href="mailto:sales@augustasportswear.com" style="text-decoration:underline;">sales@augustasportswear.com</a>.
+    </p>
+    
+    <br><br>
+    
+    <p id="specialprices"><a href="https://form.jotform.com/90016109792152" target="blank">Request A Price Quote</a></p>
+   </div>
+ </div>
+ 
+</div>
+
+
+<!-- View All Templates -->
+
+<div class="view-all-temps" id="all-screen-print">
+
+ <div class="breadcrumb-trail" onclick="backButton()">< BACK</div>
+  <h3 class="view-all-header">Screen Print Templates</h3>
+  <div class="view-all-content">
+  
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP001.jpg">
+  	 <p>Template SP1</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP003.jpg">
+  	 <p>Template SP3</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP004.jpg">
+  	 <p>Template SP4</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP005.jpg">
+  	 <p>Template SP5</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP006.jpg">
+  	 <p>Template SP6</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP007.jpg">
+  	 <p>Template SP7</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP008.jpg">
+  	 <p>Template SP8</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP010.jpg">
+  	 <p>Template SP10</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP011.jpg">
+  	 <p>Template SP11</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP012.jpg">
+  	 <p>Template SP12</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP013.jpg">
+  	 <p>Template SP13</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP014.jpg">
+  	 <p>Template SP14</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP015.jpg">
+  	 <p>Template SP15</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP016.jpg">
+  	 <p>Template SP16</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP017.jpg">
+  	 <p>Template SP17</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP018.jpg">
+  	 <p>Template SP18</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP019.jpg">
+  	 <p>Template SP19</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP020.jpg">
+  	 <p>Template SP20</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP021.jpg">
+  	 <p>Template SP21</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP022.jpg">
+  	 <p>Template SP22</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP023.jpg">
+  	 <p>Template SP23</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP024.jpg">
+  	 <p>Template SP24</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP025.jpg">
+  	 <p>Template SP25</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP026.jpg">
+  	 <p>Template SP26</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP027.jpg">
+  	 <p>Template SP27</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP028.jpg">
+  	 <p>Template SP28</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP029.jpg">
+  	 <p>Template SP29</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP030.jpg">
+  	 <p>Template SP30</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP031.jpg">
+  	 <p>Template SP31</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP032.jpg">
+  	 <p>Template SP32</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP033.jpg">
+  	 <p>Template SP33</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP034.jpg">
+  	 <p>Template SP34</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP035.jpg">
+  	 <p>Template SP35</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP036.jpg">
+  	 <p>Template SP36</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP037.jpg">
+  	 <p>Template SP37</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP038.jpg">
+  	 <p>Template SP38</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP039.jpg">
+  	 <p>Template SP39</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP040.jpg">
+  	 <p>Template SP40</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP041.jpg">
+  	 <p>Template SP41</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP042.jpg">
+  	 <p>Template SP42</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP043.jpg">
+  	 <p>Template SP43</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP044.jpg">
+  	 <p>Template SP44</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP045.jpg">
+  	 <p>Template SP45</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP046.jpg">
+  	 <p>Template SP46</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP047.jpg">
+  	 <p>Template SP47</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP048.jpg">
+  	 <p>Template SP48</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP049.jpg">
+  	 <p>Template SP49</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP050.jpg">
+  	 <p>Template SP50</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP051.jpg">
+  	 <p>Template SP51</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP052.jpg">
+  	 <p>Template SP52</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP053.jpg">
+  	 <p>Template SP53</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP054.jpg">
+  	 <p>Template SP54</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP055.jpg">
+  	 <p>Template SP55</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP056.jpg">
+  	 <p>Template SP56</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP057.jpg">
+  	 <p>Template SP57</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP058.jpg">
+  	 <p>Template SP58</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP059.jpg">
+  	 <p>Template SP59</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP060.jpg">
+  	 <p>Template SP60</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP061.jpg">
+  	 <p>Template SP61</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP063.jpg">
+  	 <p>Template SP63</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP064.jpg">
+  	 <p>Template SP64</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP065.jpg">
+  	 <p>Template SP65</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP066.jpg">
+  	 <p>Template SP66</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP067.jpg">
+  	 <p>Template SP67</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP068.jpg">
+  	 <p>Template SP68</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP069.jpg">
+  	 <p>Template SP69</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP070.jpg">
+  	 <p>Template SP70</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP071.jpg">
+  	 <p>Template SP71</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP072.jpg">
+  	 <p>Template SP72</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP073.jpg">
+  	 <p>Template SP73</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP074.jpg">
+  	 <p>Template SP74</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP075.jpg">
+  	 <p>Template SP75</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP077.jpg">
+  	 <p>Template SP77</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP078.jpg">
+  	 <p>Template SP78</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP079.jpg">
+  	 <p>Template SP79</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP081.jpg">
+  	 <p>Template SP58</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP082.jpg">
+  	 <p>Template SP82</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP083.jpg">
+  	 <p>Template SP83</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP084.jpg">
+  	 <p>Template SP84</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP085.jpg">
+  	 <p>Template SP85</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP086.jpg">
+  	 <p>Template SP86</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP087.jpg">
+  	 <p>Template SP87</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP088.jpg">
+  	 <p>Template SP88</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP089.jpg">
+  	 <p>Template SP89</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP090.jpg">
+  	 <p>Template SP90</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP091.jpg">
+  	 <p>Template SP91</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP092.jpg">
+  	 <p>Template SP92</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP093.jpg">
+  	 <p>Template SP93</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP094.jpg">
+  	 <p>Template SP94</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP096.jpg">
+  	 <p>Template SP96</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP097.jpg">
+  	 <p>Template SP97</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP098.jpg">
+  	 <p>Template SP98</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP099.jpg">
+  	 <p>Template SP99</p>
+  	</div>
+  	<!-- SP100 -->
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP100.jpg">
+  	 <p>Template SP100</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP101.jpg">
+  	 <p>Template SP101</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP102.jpg">
+  	 <p>Template SP102</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP104.jpg">
+  	 <p>Template SP104</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP105.jpg">
+  	 <p>Template SP105</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP106.jpg">
+  	 <p>Template SP106</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP107.jpg">
+  	 <p>Template SP107</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP108.jpg">
+  	 <p>Template SP108</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP111.jpg">
+  	 <p>Template SP111</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP112.jpg">
+  	 <p>Template SP112</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP113.jpg">
+  	 <p>Template SP113</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP114.jpg">
+  	 <p>Template SP114</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP115.jpg">
+  	 <p>Template SP115</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP116.jpg">
+  	 <p>Template SP116</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP117.jpg">
+  	 <p>Template SP117</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP118.jpg">
+  	 <p>Template SP118</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP119.jpg">
+  	 <p>Template SP119</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP120.jpg">
+  	 <p>Template SP120</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP121.jpg">
+  	 <p>Template SP121</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP122.jpg">
+  	 <p>Template SP122</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP123.jpg">
+  	 <p>Template SP123</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP124.jpg">
+  	 <p>Template SP124</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP125.jpg">
+  	 <p>Template SP125</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP126.jpg">
+  	 <p>Template SP126</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP127.jpg">
+  	 <p>Template SP127</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP128.jpg">
+  	 <p>Template SP128</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP129.jpg">
+  	 <p>Template SP129</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP130.jpg">
+  	 <p>Template SP130</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP131.jpg">
+  	 <p>Template SP131</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP132.jpg">
+  	 <p>Template SP132</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP137.jpg">
+  	 <p>Template SP137</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP141.jpg">
+  	 <p>Template SP141</p>
+  	</div>
+  	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP144.jpg">
+  	 <p>Template SP144</p>
+  	</div>
+  	
+  	<div class="template-box-all" style="height: 198px;background-color: white;">
+  	<img src="https://static.augustasportswear.com/marketing/SP155.jpg" style="background-color: white;">
+  	 <p style="background-color: lightgrey; padding: 2px 0;">Template SP155</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP-168.jpg">
+  	 <p>SP168</p>
+  	</div>
+  	 <div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP169_Page_1.jpg">
+  	 <p>SP169 - 1</p>
+  	</div>
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP169_Page_2.jpg">
+  	 <p>SP169 - 2</p>
+  	</div>
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP170.jpg">
+  	 <p>SP170</p>
+  	</div>
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP171.jpg">
+  	 <p>SP171</p>
+  	</div>
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP172.jpg">
+  	 <p>SP172</p>
+  	</div>
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP173.jpg">
+  	 <p>SP173</p>
+  	</div>
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP174.jpg">
+  	 <p>SP174</p>
+  	</div>
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP175.jpg">
+  	 <p>SP175</p>
+  	</div>
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP176.jpg">
+  	 <p>SP176</p>
+  	</div>
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SP177.jpg">
+  	 <p>SP177</p>
+  	</div>
+
+  	   
+   </div>
+   
+</div>
+
+<div class="view-all-temps" id="all-embroidery">
+ 
+ <div class="breadcrumb-trail" onclick="backButton()">< BACK</div>
+  <h3 class="view-all-header">Embroidery Templates</h3>
+  <div class="view-all-content">
+  
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/A001.jpg">
+  	 <p>Template A1</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/A002.jpg">
+  	 <p>Template A2</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/A3.jpg">
+  	 <p>Template A3</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/B001.jpg">
+  	 <p>Template B1</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/B002.jpg">
+  	 <p>Template B2</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/C002.jpg">
+  	 <p>Template C2</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/C3.jpg">
+  	 <p>Template C3</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/D001.jpg">
+  	 <p>Template D1</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/D3.jpg">
+  	 <p>Template D3</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/E001.jpg">
+  	 <p>Template E1</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/E002.jpg">
+  	 <p>Template E2</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/E3.jpg">
+  	 <p>Template E3</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/F002.jpg">
+  	 <p>Template F2</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/FF.jpg">
+  	 <p>Template FF</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/FS018.jpg">
+  	 <p>Template FS18</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/FS019.jpg">
+  	 <p>Template FS19</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/FS023.jpg">
+  	 <p>Template FS23</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/FS024.jpg">
+  	 <p>Template FS24</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/FS025.jpg">
+  	 <p>Template FS25</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/FS027.jpg">
+  	 <p>Template FS27</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/FS030.jpg">
+  	 <p>Template FS30</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/FS031.jpg">
+  	 <p>Template FS31</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/FS032A.jpg">
+  	 <p>Template FS32A</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/FS032B.jpg">
+  	 <p>Template FS32B</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/FS033.jpg">
+  	 <p>Template FS33</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/FS034.jpg">
+  	 <p>Template FS34</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/FS035.jpg">
+  	 <p>Template FS35</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/FS037.jpg">
+  	 <p>Template FS37</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/FS039.jpg">
+  	 <p>Template FS39</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/FS040.jpg">
+  	 <p>Template FS40</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/FS041.jpg">
+  	 <p>Template FS41</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/FS042.jpg">
+  	 <p>Template FS42</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/FS043.jpg">
+  	 <p>Template FS43</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/FS044.jpg">
+  	 <p>Template FS44</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/FS045.jpg">
+  	 <p>Template FS45</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/FS047.jpg">
+  	 <p>Template FS47</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/G002.jpg">
+  	 <p>Template G2</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/H001.jpg">
+  	 <p>Template H1</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/H002.jpg">
+  	 <p>Template H2</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/H3.jpg">
+  	 <p>Template H3</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/I001.jpg">
+  	 <p>Template I1</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/J001.jpg">
+  	 <p>Template J1</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/J002.jpg">
+  	 <p>Template J2</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/K001.jpg">
+  	 <p>Template K1</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/K002.jpg">
+  	 <p>Template K2</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/K3.jpg">
+  	 <p>Template K3</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/L001.jpg">
+  	 <p>Template L1</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/L002.jpg">
+  	 <p>Template L2</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/L3.jpg">
+  	 <p>Template L3</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/M001.jpg">
+  	 <p>Template M1</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/M002.jpg">
+  	 <p>Template M2</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/MS38.jpg">
+  	 <p>Template MS38</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/N002.jpg">
+  	 <p>Template N2</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/O001.jpg">
+  	 <p>Template O1</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/O002.jpg">
+  	 <p>Template O2</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/O3.jpg">
+  	 <p>Template O3</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/P002.jpg">
+  	 <p>Template P2</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/Q001.jpg">
+  	 <p>Template Q1</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/Q002.jpg">
+  	 <p>Template Q2</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/R002.jpg">
+  	 <p>Template R2</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/S001.jpg">
+  	 <p>Template S1</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SS.jpg">
+  	 <p>Template SS</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/T001.jpg">
+  	 <p>Template T1</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/U001.jpg">
+  	 <p>Template U1</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/U002.jpg">
+  	 <p>Template U2</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/UU.jpg">
+  	 <p>Template UU</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/V001A.jpg">
+  	 <p>Template V1A</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/V001B.jpg">
+  	 <p>Template V1B</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/V2.jpg">
+  	 <p>Template V2</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/W001.jpg">
+  	 <p>Template W1</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/WW.jpg">
+  	 <p>Template WW</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/X001.jpg">
+  	 <p>Template X1</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/X002.jpg">
+  	 <p>Template X2</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/Y001.jpg">
+  	 <p>Template Y1</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/Y002.jpg">
+  	 <p>Template Y2</p>
+  	</div>
+	
+	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/Z001.jpg">
+  	 <p>Template Z1</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/Z002.jpg">
+  	 <p>Template Z2</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/EMB19-1.jpg">
+  	 <p>EMB19-1</p>
+  	</div>
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/EMB19-2.jpg">
+  	 <p>EMB19-2</p>
+  	</div>
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/EMB19-3.jpg">
+  	 <p>EMB19-3</p>
+  	</div>
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/EMB19-4.jpg">
+  	 <p>EMB19-4</p>
+  	</div>
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/EMB19-5.jpg">
+  	 <p>EMB19-5</p>
+  	</div>
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/EMB19-6.jpg">
+  	 <p>EMB19-6</p>
+  	</div>
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/EMB19-7.jpg">
+  	 <p>EMB19-7</p>
+  	</div>
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/EMB19-8.jpg">
+  	 <p>EMB19-8</p>
+  	</div>
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/EMB19-9.jpg">
+  	 <p>EMB19-9</p>
+  	</div>
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/EMB19-10.jpg">
+  	 <p>EMB19-10</p>
+  	</div>
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/EMB19-11.jpg">
+  	 <p>EMB19-11</p>
+  	</div>
+  	   
+   </div>
+   
+</div>
+
+<div class="view-all-temps" id="all-applique">
+
+<div class="breadcrumb-trail" onclick="backButton()">< BACK</div>
+  <h3 class="view-all-header">Traditional Appliqué Templates</h3>
+  <div class="view-all-content">
+  
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW006.jpg">
+  	 <p>Template TW6</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW009.jpg">
+  	 <p>Template TW9</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW010.jpg">
+  	 <p>Template TW10</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW011.jpg">
+  	 <p>Template TW11</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW015.jpg">
+  	 <p>Template TW15</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW018.jpg">
+  	 <p>Template TW18</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW020.jpg">
+  	 <p>Template TW20</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW021.jpg">
+  	 <p>Template TW21</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW022.jpg">
+  	 <p>Template TW22</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW023.jpg">
+  	 <p>Template TW23</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW024.jpg">
+  	 <p>Template TW24</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW025.jpg">
+  	 <p>Template TW25</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW026.jpg">
+  	 <p>Template TW26</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW027.jpg">
+  	 <p>Template TW27</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW028A.jpg">
+  	 <p>Template TW28A</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW028B.jpg">
+  	 <p>Template TW28B</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW029.jpg">
+  	 <p>Template TW29</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW030.jpg">
+  	 <p>Template TW30</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW032.jpg">
+  	 <p>Template TW32</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW033.jpg">
+  	 <p>Template TW33</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW034.jpg">
+  	 <p>Template TW34</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW035.jpg">
+  	 <p>Template TW35</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW037.jpg">
+  	 <p>Template TW37</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW038">
+  	 <p>Template TW38</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW039.jpg">
+  	 <p>Template TW39</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW040.jpg">
+  	 <p>Template TW40</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW041.jpg">
+  	 <p>Template TW41</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW042.jpg">
+  	 <p>Template TW42</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW043.jpg">
+  	 <p>Template TW43</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW044.jpg">
+  	 <p>Template TW44</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW045.jpg">
+  	 <p>Template TW45</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW046.jpg">
+  	 <p>Template TW46</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW047.jpg">
+  	 <p>Template TW47</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW048.jpg">
+  	 <p>Template TW48</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW049.jpg">
+  	 <p>Template TW49</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW050.jpg">
+  	 <p>Template TW50</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW051.jpg">
+  	 <p>Template TW51</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW052.jpg">
+  	 <p>Template TW52</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW053.jpg">
+  	 <p>Template TW53</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW054.jpg">
+  	 <p>Template TW54</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW056.jpg">
+  	 <p>Template TW56</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW057.jpg">
+  	 <p>Template TW57</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW058.jpg">
+  	 <p>Template TW58</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW066.jpg">
+  	 <p>Template TW66</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW068.jpg">
+  	 <p>Template TW68</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW069.jpg">
+  	 <p>Template TW69</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW_77.jpg">
+  	 <p>TW77</p>
+  	</div>  
+  	 <div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW78.jpg">
+  	 <p>TW78</p>
+  	</div>  
+  	 <div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW79.jpg">
+  	 <p>TW79</p>
+  	</div>  
+  	 <div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/TW80.jpg">
+  	 <p>TW80</p>
+  	</div>
+  	   
+   </div>
+   
+</div>
+
+<div class="view-all-temps" id="all-patterns">
+
+<div class="breadcrumb-trail" onclick="backButton()">< BACK</div>
+  <h3 class="view-all-header">Traditional Appliqué Pattern Templates</h3>
+  <div class="view-all-content">
+  
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/ST001-Pawprint.jpg">
+  	 <p>Template Pawprint</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/ST002-Diamond_Plate.jpg">
+  	 <p>Template Diamond Plate</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/ST003-Tiger_Stripe.jpg">
+  	 <p>Template Tiger Stripe</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/ST004-Crackle.jpg">
+  	 <p>Template Crackle</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/ST005-Net.jpg">
+  	 <p>Template Net</p>
+  	</div>
+  	
+   </div>
+   
+</div>
+
+<div class="view-all-temps" id="all-subl-images">
+
+<div class="breadcrumb-trail" onclick="backButton()">< BACK</div>
+  <h3 class="view-all-header">Traditional Appliqué Sublimation Image Templates</h3>
+  <div class="view-all-content">
+  
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM001.jpg">
+  	 <p>Template SM1</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM002.jpg">
+  	 <p>Template SM2</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM003.jpg">
+  	 <p>Template SM3</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM004.jpg">
+  	 <p>Template SM4</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM005.jpg">
+  	 <p>Template SM5</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM006.jpg">
+  	 <p>Template SM6</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM007.jpg">
+  	 <p>Template SM7</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM008.jpg">
+  	 <p>Template SM8</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM009.jpg">
+  	 <p>Template SM9</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM010.jpg">
+  	 <p>Template SM10</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM011.jpg">
+  	 <p>Template SM11</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM012.jpg">
+  	 <p>Template SM12</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM013.jpg">
+  	 <p>Template SM13</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM014.jpg">
+  	 <p>Template SM14</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM015.jpg">
+  	 <p>Template SM15</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM016.jpg">
+  	 <p>Template SM16</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM017.jpg">
+  	 <p>Template SM17</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM018.jpg">
+  	 <p>Template SM18</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM019.jpg">
+  	 <p>Template SM19</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM020.jpg">
+  	 <p>Template SM20</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM021.jpg">
+  	 <p>Template SM21</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM022.jpg">
+  	 <p>Template SM22</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM023.jpg">
+  	 <p>Template SM23</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM024.jpg">
+  	 <p>Template SM24</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM025.jpg">
+  	 <p>Template SM25</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM026.jpg">
+  	 <p>Template SM26</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM027.jpg">
+  	 <p>Template SM27</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM028.jpg">
+  	 <p>Template SM28</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM029.jpg">
+  	 <p>Template SM29</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM030.jpg">
+  	 <p>Template SM30</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM031.jpg">
+  	 <p>Template SM31</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM032.jpg">
+  	 <p>Template SM32</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SM033.jpg">
+  	 <p>Template SM33</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SN001.jpg">
+  	 <p>Template SN1</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SN002.jpg">
+  	 <p>Template SN2</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SN003.jpg">
+  	 <p>Template SN3</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SN004.jpg">
+  	 <p>Template SN4</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SN005.jpg">
+  	 <p>Template SN5</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SN006.jpg">
+  	 <p>Template SN6</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SN007.jpg">
+  	 <p>Template SN7</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SN008.jpg">
+  	 <p>Template SN8</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SN009.jpg">
+  	 <p>Template SN9</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SN010.jpg">
+  	 <p>Template SN10</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SN011.jpg">
+  	 <p>Template SN11</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SN012.jpg">
+  	 <p>Template SN12</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SN013.jpg">
+  	 <p>Template SN13</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SS001.jpg">
+  	 <p>Template SS1</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SS002.jpg">
+  	 <p>Template SS2</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SS003.jpg">
+  	 <p>Template SS3</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SS004.jpg">
+  	 <p>Template SS4</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SS005.jpg">
+  	 <p>Template SS5</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SS006.jpg">
+  	 <p>Template SS6</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SS007.jpg">
+  	 <p>Template SS7</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SS008.jpg">
+  	 <p>Template SS8</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/SS009.jpg">
+  	 <p>Template SS9</p>
+  	</div>
+  	   
+   </div>
+   
+</div>
+
+<div class="view-all-temps" id="all-laser-jersey">
+
+<div class="breadcrumb-trail" onclick="backButton()">< BACK</div>
+  <h3 class="view-all-header">Reverse Laser and Jersey Appliqué Templates</h3>
+ <div class="view-all-content">
+  
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/RLB002.jpg">
+  	 <p>Template RLB2</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/RLB004.jpg">
+  	 <p>Template RLB4</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/RLB007.jpg">
+  	 <p>Template RLB7</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/RLB008-1.jpg">
+  	 <p>Template RLB8-1</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/RLB008-2.jpg">
+  	 <p>Template RLB8-2</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/RLB011.jpg">
+  	 <p>Template RLB11</p>
+  	</div>
+  	   
+  	   <div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/RLB18.jpg">
+  	 <p>RLB18</p>
+  	</div>
+  	  <div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/RLB19.jpg">
+  	 <p>RLB19</p>
+  	</div>
+  	  <div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/RLB20.jpg">
+  	 <p>RLB20</p>
+  	</div>  
+  	   
+   </div>
+   
+</div>
+
+<div class="view-all-temps" id="all-etch">
+
+<div class="breadcrumb-trail" onclick="backButton()">< BACK</div>
+  <h3 class="view-all-header">Laser and Tonal Etch Templates</h3>
+  <div class="view-all-content">
+  
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/ET2.jpg">
+  	 <p>Template ET2</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/ET4.jpg">
+  	 <p>Template ET4</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/ET7.jpg">
+  	 <p>Template ET7</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/ET8.jpg">
+  	 <p>Template ET8</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/ET012.jpg">
+  	 <p>Template ET012</p>
+  	</div>
+  	
+  	<div class="template-box-all">
+  	<img src="https://static.augustasportswear.com/marketing/ETCH19-1.jpg">
+  	 <p>ETCH19-1</p>
+  	</div>  	
+  	
+  	   
+   </div>
+   
+</div>
+
+<script>
+function openDecoration(evt, decorationTab) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(decorationTab).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+function openOrder(evt, orderTab) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("order-content");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("ordertablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(orderTab).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+function openAll(evt, allTemplates) {
+    var i, tabcontent, pagelinks;
+    tabcontent = document.getElementsByClassName("decorationstab");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    pagelinks = document.getElementsByClassName("view-all-temps");
+    for (i = 0; i < pagelinks.length; i++) {
+        pagelinks[i].className = pagelinks[i].className.replace(" active", "");
+    }
+    document.getElementById(allTemplates).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+function backButton(evt, goBack) {
+    var i, tabcontent, thumblinks;
+    tabcontent = document.getElementsByClassName("view-all-temps");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    thumblinks = document.getElementsByClassName("breadcrumb-trail");
+    for (i = 0; i < thumblinks.length; i++) {
+        thumblinks[i].className = thumblinks[i].className.replace(" active", "");
+    }
+    
+    document.getElementById("Decorations").style.display = "block";
+    evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+//Open content blocks by clicking header
+$(document).ready(function(openTechs){	$('.technique-content').find('.techheader').click(function(){
+
+      //Expand or collapse this panel
+      $(this).next().slideToggle('slow');
+
+      //Hide the other panels
+      $(".technique-info").not($(this).next()).slideUp('slow');
+    }); 
+  });
+$(document).ready(function(){	$('.faq-content').find('.faqheader').click(function(){
+
+      //Expand or collapse this panel
+      $(this).next().slideToggle('slow');
+
+      //Hide the other panels
+      $(".faq-info").not($(this).next()).slideUp('slow');
+    }); 
+  });
+$(document).ready(function(){	$('.decorations-content').find('.decorheader').click(function(){
+
+      //Expand or collapse this panel
+      $(this).next().slideToggle('slow');
+
+      //Hide the other panels
+      $(".decorations-info").not($(this).next()).slideUp('slow');
+    }); 
+  });
+$(document).ready(function(){$('.lead-time-info').find('.leadtimeheader').click(function(){
+
+      //Expand or collapse this panel
+      $(this).next().slideToggle('slow');
+    }); 
+  });
+
+//Click to englarge template
+$(function () {
+    "use strict";
+    
+    $(".template-box img").click(function () {
+        var $src = $(this).attr("src");
+        $(".show").fadeIn();
+        $(".img-show img").attr("src", $src);
+    });
+    
+    $("span, .imgoverlay").click(function () {
+        $(".show").fadeOut();
+    });
+    
+});
+//Click to englarge Mascots
+$(function () {
+    "use strict";
+    
+    $(".mascot-temps img").click(function () {
+        var $src = $(this).attr("src");
+        $(".show-mascots").fadeIn();
+        $(".img-show2 img").attr("src", $src);
+    });
+    
+    $("span, .imgoverlay2").click(function () {
+        $(".show-mascots").fadeOut();
+    });
+    
+});
+//Click to englarge Russell Temps
+$(function () {
+    "use strict";
+    
+    $(".russell-temps img").click(function () {
+        var $src = $(this).attr("src");
+        $(".show-russell").fadeIn();
+        $(".img-show3 img").attr("src", $src);
+    });
+    
+    $("span, .imgoverlay3").click(function () {
+        $(".show-russell").fadeOut();
+    });
+    
+});
+
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+  
+
+</script>

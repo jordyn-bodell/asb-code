@@ -1,0 +1,86 @@
+<!-- Retreive FreeStyle Design -->
+<style>
+	.getdesign-header {
+		text-align: center;
+		margin-top: 80px;
+		color: black;
+	}
+	.getdesign-header h2 {
+		font-size: 18px;
+		margin: 10px auto;
+		text-transform: uppercase;
+	}
+	.getdesign-header p a {
+		text-decoration: underline;
+	}
+	
+	.row.asgGetDesign {
+		margin: 100px auto;
+		text-align: center;
+	}
+	.subErrorMsg{color:#c82d34; width:100%;}
+	.subErrorMsg .errorIco{
+	background: url("https://static.augustasportswear.com/static/Sub_Icon_Remove.png") no-repeat center;
+		background-size: contain;
+		display: inline-block;
+		width: 17px;
+		height: 17px;
+		top: 5px;
+		margin-right: 5px;
+		position: relative;
+	}
+	
+	#sNumber {
+    padding: 7px 15px;
+    margin-bottom: 20px;
+    width: 250px;
+    font-size: 15px;
+	}
+	#sNumber::placeholder {
+		color: grey;
+	}
+	#retrievebtn {
+		width: 150px;
+		cursor: pointer;
+	}
+</style>
+
+
+<div class="getdesign-header">
+	<h2>Looking for a design?</h2>
+	<p>Please type in your reference number below. If you have any questions, contact <a href="/freestyle-sublimation#contactus-fs">Customer Care</a>.</p>
+</div>
+
+<form method="get" action="Configurator" id="retrieveDesign">
+	<div class="row asgGetDesign">
+		<div style="width:100%;">
+			<input type="hidden" class="" name="storeId" value="10251"  />
+			<input type="hidden" class="" name="catalogId" value="10151"  />
+			<input type="text"  id="sNumber" name="sNumber" value="" placeholder="#" autofocus />
+			<input type="submit" class="button primary" id="retrievebtn" name="submit" value="retrieve" />
+		</div>
+		<div id="error-msg" style="display:none"; class="subErrorMsg">
+			<span class="errorIco"></span>The reference number is not correct. Please enter a valid reference number starting with S.
+		</div>
+	</div>
+	<script>  
+	$("#retrieveDesign").submit(function( event ) {
+		var hostName= window.location.hostname;
+		var sNum =  $("#sNumber").val();
+		sNum = sNum.replace(/S|s|J|j/g, "").trim();
+		 $.ajax({
+				type: "GET",
+				url : 'https://'+hostName+'/wcs/resources/store/10251/utilityservices/getSavedDesignData?sNumber='+sNum,
+				async: false,
+				cache: true,
+				success : function(data) {
+					 $("#error-msg").hide();
+					 return;
+				},error: function () {
+					 $("#error-msg").show();
+					 event.preventDefault(); 
+				}
+			});
+		});  
+	</script>
+</form>

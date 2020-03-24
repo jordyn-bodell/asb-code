@@ -1,0 +1,2311 @@
+<!-- Varsity Jacket Page -->
+
+<style>
+b {
+	font-family: "AvenirNextB";
+}
+.bottom-divider-full {
+	border-bottom: 1px solid black;
+	width: 100%;
+	margin: 30px auto;
+	display: block;
+}
+button:hover {
+	cursor: pointer;
+}
+
+.header-container {
+	background-image: url(https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fbannerimg.png);
+	background-size: 90%;
+	background-position: top center;
+	background-repeat: no-repeat;
+	color: black;
+	width: 100%;
+	display: inline-block;
+	padding: 60px 0;
+}
+#header-banner {
+	width: 90%;
+	margin: auto;
+}
+.header-container h2 {
+	text-transform: uppercase;
+	text-align: center;
+	margin: 40px auto;
+	padding: 30px 0;
+	font-size: 40px;
+	text-decoration: underline;
+	color: white;
+}
+.icons-wrapper {
+	width: 85%;
+	margin: 10px auto;
+	display: block;
+}
+.icon-container {
+	width: 30%;
+	margin: 20px 10px;
+	vertical-align: bottom;
+    display: inline-block;
+}
+.icon-container:hover .section-title {
+	color: #50a4d9;
+	cursor: pointer;
+}
+.icon-container img {
+	width: 100px;
+	height: auto;
+	margin: 0 auto 10px auto;
+	display: block;
+}
+.section-title {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 18px;
+	margin: 10px auto;
+	color: black;
+	width: 65%;
+}
+
+/* Icons */
+#stockhover, #swatcheshover, #sizeshover, #builderhover, #customhover, #accessorieshover {
+	display: none;
+}
+#stock-icon:hover #stockhover {
+	display: block;
+}
+#stock-icon:hover #stocknohover {
+	display: none;
+}
+#swatches-icon:hover #swatcheshover {
+	display: block;
+}
+#swatches-icon:hover #swatchesnohover {
+	display: none;
+}
+#sizes-icon:hover #sizeshover {
+	display: block;
+}
+#sizes-icon:hover #sizesnohover {
+	display: none;
+}
+#builder-icon:hover #builderhover {
+	display: block;
+}
+#builder-icon:hover #buildernohover {
+	display: none;
+}
+#custom-icon:hover #customhover {
+	display: block;
+}
+#custom-icon:hover #customnohover {
+	display: none;
+}
+#accessories-icon:hover #accessorieshover {
+	display: block;
+}
+#accessories-icon:hover #accessoriesnohover {
+	display: none;
+}
+
+#stock-icon img {
+	width: 200px;
+}
+
+.wool-section {
+	color: black;
+	width: 100%;
+	margin: auto;
+	padding: 30px 0;
+}
+.wool-section-m {
+	margin-top: 30px;
+}
+.section-header {
+	text-align: left;
+	text-decoration: underline;
+	width: 100%;
+	font-size: 24px;
+}
+.wool-container {
+	width: 1000px;
+	margin: auto;
+}
+
+#stock-section-m, #swatches-section-m, #sizes-section-m, #builder-section-m {
+	display: none;
+}
+
+#stock-anchor, #swatches-anchor, #sizes-anchor {
+	position: relative;
+	top: -150px;
+}
+#builder-anchor, #custom-anchor, #access-anchor  {
+	position: relative;
+	top: -162px;
+}
+
+
+/* Sections */
+#heritage-section, #stock-section, #sizes-section, #custom-section {
+	background-color:rgb(240,247,251);
+}
+.stock-detail {
+	width: 46%;
+    display: inline-block;
+    margin: 15px 30px 15px 0;
+    vertical-align: text-top;
+}
+#stock-detail-header {
+	font-family: "AvenirNextB";
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+/* Stock Jackets */
+.stock-container {
+	width: fit-content;
+	display: block;
+	margin: auto;
+}
+.stock-jkt-wrapper {
+	background-color: white;
+    border: 1px solid lightgrey;
+	border-radius: 25px;
+	box-shadow: 1px 1px 14px lightgrey;
+	width: 28%;
+	margin: 0 10px;
+	padding: 10px 10px 20px;
+	display: inline-block;
+    vertical-align: top;
+}
+.stock-jkt-image {
+	height: 275px;
+    margin: 5px auto;
+    position: relative;
+    left: -20px;
+}
+#wool-slv img {
+	left: -13px;
+}
+.in-stock-colors {
+	text-align: center;
+	height: 35px;
+	padding-top: 20px;
+}
+.stock-colors-number {
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-right: 5px;
+    vertical-align: middle;
+    font-family: "AvenirNextN";
+}
+.stock-jkt-wrapper h3 {
+	font-family: "AvenirNextN";
+	text-align: center;
+	margin: 15px auto;
+	font-size: 17px;
+}
+.stock-jkt-wrapper h4 {
+	text-align: justify;
+	font-size: 20px;
+	vertical-align: middle;
+	width: 80%;
+	margin: auto;
+	letter-spacing: 1.3px;
+}
+.stock-jkt-wrapper p {
+	width: 80%;
+	margin: 0 auto 10px;
+}
+.stock-jkt-wrapper a {
+	width: fit-content;
+	margin: auto;
+	display: block;
+}
+.stock-btn {
+    font-size: 12px;
+    padding: 5px 10px!important;
+    margin: 10px auto;
+}
+#leather-jkt-divider {
+	border-bottom: 1px solid black;
+	width: 95%;
+	margin: 25px auto;
+	display: block;
+}
+
+/* Flyer */
+.flyer-container {
+	width: 80%;
+	margin: auto;
+}
+.flyer-button-container {
+    text-align: center;
+    width: 30%;
+    padding-bottom: 15px;
+    display: grid;
+    position: absolute;
+    top: 30%;
+    left: 52%;
+}
+.flyer-button-container a {
+	margin: 10px 0;
+}
+#flyer-image {
+	width: 40%;
+    border: 1px solid;
+    margin: 10px auto;
+}
+
+/* swatches */
+.swatch-header {
+	text-decoration: none;
+}
+.swatch-color-header {
+	text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 10px 0 15px;
+}
+#swatches-container p {
+	text-align: center;
+	font-family: "AvenirNextN";
+	width: 95%;
+	margin: 15px auto;
+	font-size: 12px;
+}
+#custom-color-contact {
+	font-family: "AvenirNextN";
+}
+#custom-color-contact a {
+	color: #50a4d9;
+}
+#swatches-container img {
+	width: 100%;
+}
+#wool-snap-mobile, #vinyl-snap-mobile, #leather-snap-mobile {
+	display: none;
+}
+
+/* sizes */
+.size-wrapper {
+	width: 24%;
+	display: inline-block;
+	vertical-align: top;
+}
+#adult-size, #youth-size {
+	margin-right: 9px;
+}
+.size-box-container {
+	width: fit-content;
+	margin: auto;
+	display: block;
+}
+.size-wrapper img {
+	width: 111%;
+	position: relative;
+	left: -19px;
+}
+.sizes-text-box {
+	background-color: white;
+    border: 1px solid lightgrey;
+	border-radius: 0 0 25px 25px;
+	box-shadow: 1px 1px 14px lightgrey;
+    vertical-align: top;
+    width: 65%;
+    margin-top: -3px;
+    padding: 20px;
+    min-height: 200px;
+}
+.sizes-text-box ul {
+	padding-inline-start: 17px;
+}
+.sizes-text-box ul>li {
+	margin: 8px 0;
+}
+
+/* Builder area */
+#builder-img {
+	width: 50%;
+	display: inline-block;
+}
+.builder-text {
+	width: 45%;
+	min-height: 200px;
+	padding: 20px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	top: 125px;
+}
+#custom-jkt-logo {
+	width: 65%;
+	margin: 20px auto;
+}
+.builder-text h3 {
+	font-size: 17px;
+	margin-bottom: 10px;
+	height: 100px;
+}
+#discount-text {
+	font-family: "AvenirNextN";
+	letter-spacing: 2px;
+	font-size: 40px;
+	position: relative;
+	top: 15px;
+}
+#builder-note {
+	font-size: 10px;
+	font-family: "AvenirNextN";
+	position: relative;
+	top: 14px;
+}
+#builder-btn {
+	font-size: 12px;
+}
+
+/* Custom Jacket Section */
+.custom-order h2 {
+	font-family: "AvenirNextN";
+	text-transform: uppercase;
+	margin: 20px auto;
+	font-size: 20px;
+}
+.custom-jkt-list {
+	width: 45%;
+	display: inline-block;
+	line-height: 1.4;
+	vertical-align: top;
+	font-size: 13px;
+}
+
+/*Custom Options */
+.three-block-wrapper {
+	box-sizing: border-box;
+	position: relative;
+    bottom: 0;
+    width: 100%;
+    margin: 30px auto 10px;
+    display: inline-block;
+    z-index: 2000;
+    background-color: white;
+    border: 1px solid lightgrey;
+	border-radius: 25px;
+	box-shadow: 1px 1px 14px lightgrey;
+	padding: 20px 15px;
+}
+.three-block-wrapper h3 {
+	margin: 0 3px 8px;
+	font-family: "AvenirNextN";
+	font-size: 17px;
+}
+.three-block-image {
+    float: left;
+    width: 33%;
+    position: relative;
+    left: 0%;
+    min-height: 500px;
+}
+.three-block-image img {
+	width: auto;
+	height: 250px;
+	display: block;
+	margin: 10px auto;
+}
+#left-block, #mid-block {
+	border-right: 1px solid black;
+}
+.custom-opts-text-box {
+	font-size: 11px;
+	padding: 5px;
+	margin-left: 10px;
+	vertical-align: top;
+	width: 85%;
+}
+.custom-opts-text-box h4 {
+	font-size: 15px;
+	margin: 5px 0;
+}
+.custom-opts-text-box p, .custom-opts-table {
+	font-size: 12px;
+	margin-top: 10px;
+	text-align: left;
+}
+.custom-opts-table-inserts {
+	font-size: 14px;
+	margin-top: 10px;
+	text-align: left;
+}
+.custom-opts-table th, .custom-opts-table-inserts th {
+	text-transform: uppercase;
+	font-family: "AvenirNextB";
+}
+.custom-opts-table th:first-of-type, .custom-opts-table-inserts th:first-of-type {
+	padding-right: 15px;
+}
+.custom-opts-table img {
+	width: 
+}
+
+/*full leather options */
+.custom-order {
+	margin-top: 50px;
+}
+.custom-order img {
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+}
+.custom-leather-options {
+	font-size: 11px;
+	padding: 5px;
+	margin: 15px auto;
+	vertical-align: top;
+	width: 100%;
+}
+.leather-inserts-opts {
+	width: 22%;
+	display: inline-block;
+	vertical-align: top;
+	border-right: 1px solid black;
+	padding: 10px;
+	vertical-align: top;
+	margin-left: 6px;
+}
+.leather-inserts-opts:last-of-type {
+	border: none;
+}
+.leather-inserts-opts h3 {
+	font-size: 15px;
+	margin-bottom: 5px;
+	height: 35px;
+}
+.leather-inserts-opts img {
+	width: 60%;
+	margin: 0;
+}
+
+/*hoods*/
+.hoods-section {
+	display: inline-block;
+	width: 100%;
+	max-width: 1920px;
+}
+.hoods-wrapper {
+	box-sizing: border-box;
+	position: relative;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+    display: inline-block;
+}
+#top-hoods-row {
+	border-bottom: 1px solid black;
+}
+.hoods-block {
+    float: left;
+    width: 46.5%;
+    position: relative;
+    left: 0%;
+    margin-bottom: -5px;
+    padding: 15px;
+}
+.hoods-block h2 {
+	font-size: 15px;
+	font-family: "AvenirNextB";
+	margin-left: 15px;
+}
+.hoods-block img {
+	width: 80%;
+    height: auto;
+}
+.shallow-scallop-block, .straight-zip-block {
+	border-right: 1px solid black;
+}
+.hoods-section p {
+	text-align: center;
+	margin-top: 30px;
+	font-family: "AvenirNextB";
+}
+
+/* knit collars */
+.knit-collars {
+	margin: 10px auto;
+}
+.knit-wrapper {
+	width: 80%;
+	margin: auto;
+	display: block;
+}
+.knit-block {
+	width: 30%;
+	padding: 0 10px;
+	display: inline-block;
+	min-height: 215px;
+}
+.knit-block h3 {
+	width: 75%;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 15px;
+	height: 35px;
+}
+.knit-block img {
+	width: 100%;
+	margin: 0;
+	display: -webkit-inline-box;
+	vertical-align: top;
+}
+#stand-up-knit img {
+	height: 180px;
+	width: auto;
+}
+#hug-knit {
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+}
+#hug-knit img {
+	height: 182px;
+	width: auto;
+}
+#convert-knit img {
+	height: 176px;
+	width: auto;
+}
+
+/* collar inserts */
+.collar-inserts-wrapper {
+	display: -webkit-box;
+	margin: 40px auto 27px;
+}
+.collar-block {
+	width: 24%;
+	padding: 0 10px;
+}
+.collar-block h3 {
+	font-family: "AvenirNextB";
+	margin-bottom: 5px;
+	font-size: 15px;
+}
+.collar-block p {
+	font-size: 11px;
+	min-height: 40px;
+}
+.collar-block img {
+	width: auto;
+	height: 185px;
+	margin: 30px auto 20px;
+}
+.collar-block {
+	border-right: 1px solid black;
+}
+.collar-block:last-of-type {
+	border: none;
+}
+
+/*byron collars*/
+.byron-collars {
+	margin: 10px auto;
+}
+.byron-wrapper {
+	width: 80%;
+	margin: 50px auto;
+	display: block;
+}
+.byron-block {
+	width: 30%;
+	padding: 0 10px;
+	display: inline-block;
+	min-height: 215px;
+}
+.byron-block h3 {
+	width: 75%;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 15px;
+	height: 35px;
+}
+.byron-block img {
+	width: 100%;
+	margin: 0;
+	display: -webkit-inline-box;
+	vertical-align: top;
+}
+.byron-block {
+	border-right: 1px solid black;
+}
+.byron-block:last-of-type {
+	border: none;
+}
+
+/* Stripe Patterns */
+#stripe-patterns {
+	text-transform: uppercase;
+	color: black;
+	width: 80%;
+	margin: 20px auto;
+	text-align: left;
+}
+#stripe-patterns th {
+	font-family: "AvenirNextB";
+	font-size: 14px;
+}
+#stripe-patterns td {
+	font-size: 11px;
+	text-transform: uppercase;
+}
+#stripe-patterns img {
+	margin: 25px 0;
+	left: -10px;
+	position: relative;
+	margin-top: 0;
+}
+.stripe-patterns p {
+	text-align: center;
+}
+
+#byron-collars {
+	width: 75%;
+	margin: 10px auto;
+}
+#middle-knit {
+	border-right: 1px solid darkgrey;
+	border-left: 1px solid darkgrey;
+}
+
+/* Addt'l Opts */
+.addt-custom-opt {
+	width: 46%;
+    display: inline-block;
+    margin: 15px 30px 15px 0;
+    vertical-align: text-top;
+}
+.addt-custom-opt h3 {
+	font-family: "AvenirNextB";
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+.pocket-opts {
+	width: 46%;
+	margin-top: 20px;
+	display: inline-block;
+	vertical-align: top;
+}
+.pocket-opts h3 {
+	height: 35px;
+	width: 90%;
+}
+.pocket-opts img {
+	width: 85%;
+	margin: 5px 0;
+}
+#single-welt {
+	padding-left: 25px;
+}
+#single-welt h3 {
+	height: 32px;
+}
+
+/* Accessories */
+#access-header {
+	margin: 20px auto 40px;
+}
+.access-wrapper {
+	background-color: rgb(240,247,251);
+	border: 1px solid lightgrey;
+	border-radius: 25px;
+	box-shadow: 1px 1px 7px lightgrey;
+	width: 46%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    text-align: center;
+}
+.access-wrapper h2 {
+	font-size: 20px;
+	margin: 20px 0;
+	font-family: "AvenirNextN";
+}
+.custom-blkt {
+	margin-right: 15px;
+}
+.access-wrapper img {
+    width: 80%;
+    margin: 10px 0;
+}
+.banners-wrappers {
+	margin-bottom: 25px;
+}
+.banners-wrappers img {
+	width: 57%;
+}
+.access-text {
+	text-align: left;
+	padding: 0 40px;
+}
+.access-text h4 {
+	font-size: 18px;
+	margin-top: 15px;
+	text-align: left;
+}
+.access-text p {
+	margin-bottom: 15px;
+}
+.access-text ul {
+	padding-inline-start: 15px;
+	margin: 10px auto 20px;
+}
+.access-text li {
+	margin: 10px 0;
+}
+
+/* More Info bottom */
+#more-info {
+	text-align: center;
+	padding-top: 0;
+    margin-bottom: 25px;
+}
+#more-info h2 {
+	font-size: 22px;
+	margin: 15px 0;
+}
+#more-info p {
+	font-size: 14px;
+}
+#more-info a {
+	color: #50a4d9;
+	text-decoration: underline;
+	margin: 10px 0;
+	font-size: 14px;
+}
+
+@media screen and (max-width: 1023px) {
+	.icons-wrapper {
+		width: 100%;
+	}
+	.wool-container {
+		width: 95%;
+	}
+	
+	.header-container {
+		background-size: 100%;
+	}
+	.size-wrapper { 
+		width: 23%; 
+	}
+	
+	.stock-jkt-image {
+		height: 250px;
+		left: -10px;
+	}
+	.three-block-image img {
+		height: 235px;
+	}
+	
+	.leather-inserts-opts {
+		width: 21%;
+	}
+	.collar-block {
+		width: 22%;
+	}
+	.collar-block img {
+		height: 160px;
+	}
+	#stripe-patterns {
+		width: 90%;
+	}
+	
+}
+@media screen and (max-width: 950px) {
+	.stock-detail {
+		width: 44%;
+	}
+	.stock-jkt-image {
+		height: 225px;
+		left: 0;
+	}
+	#wool-slv img {
+		left: -4px;
+	}
+	#stand-up-knit img {
+		height: 166px;
+	}
+	#hug-knit img {
+		height: 170px;
+	}
+	#convert-knit img {
+		height: 167px;
+	}
+	.knit-wrapper, .byron-wrapper {
+		width: 90%;
+	}
+	.hoods-block {
+		width: 40%;
+	}
+	.builder-text {
+		width: 43%;
+	}
+}
+@media screen and (max-width: 900px) {
+	.header-container {
+		padding: 0 0 25px;
+	}
+	#stock-section {
+		padding: 10px 0 30px; 
+	}
+	.stock-container {
+		width: 65%;
+	}
+	#stock-header {
+		text-align: center;
+    	margin: 0 0 25px;
+   	 	font-size: 32px;
+	}
+	.stock-jkt-wrapper {
+		width: 85%;
+		margin: 10px 0;
+	}
+	.stock-jkt-image {
+		width: 100%;
+		height: auto;
+	}
+	.stock-jkt-wrapper h4, .stock-jkt-wrapper p {
+		text-align: center;
+	}
+	#wool-slv img {
+		left: 0;
+	}
+	.size-wrapper img {
+		width: 120%;
+	}
+	
+	.three-block-wrapper {
+		width: 65%;
+		margin: 30px auto;
+		display: grid;
+	}
+	.three-block-image {
+		width: 100%;
+	}
+	.three-block-image img {
+		width: 100%;
+		height: auto;
+	}
+	#left-block, #mid-block {
+		border-right: none;
+		border-bottom: 1px solid black;
+    	padding-bottom: 10px;
+	}
+	
+	.custom-order h2 {
+		text-align: center;
+	}
+	
+	.custom-opts-text-box {
+		    text-align: center;
+    	width: 100%;
+    	margin: 0;
+	}
+	.custom-opts-text-box p, .custom-opts-table {
+		margin: auto;
+	}
+	.custom-opts-text-box p {
+		text-align: center;
+	}
+	.leather-inserts-opts {
+		width: 20%;
+	}
+	.leather-inserts-opts img {
+		margin: auto;
+	}
+	
+	.collar-block img {
+		height: 130px;
+	}
+	
+	.knit-wrapper, .byron-wrapper {
+		width: 95%;
+	}
+	.knit-block, .byron-block {
+		width: 29%;
+	}
+	#stand-up-knit img {
+		height: 141px;
+	}
+	#hug-knit img {
+		height: 140px;
+	}
+	#convert-knit img {
+		height: 137px;
+	}
+	.addt-custom-opt {
+		width: 44%;
+	}
+	#single-welt {
+		padding-left: 14px;
+	}
+	
+	.access-wrapper {
+		width: 44%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.icons-wrapper {
+		width: 460px;
+		margin: 0 auto 20px auto;
+	}
+	.icon-container {
+		width: 200px;
+		border: 1px white solid;
+		margin: 0 10px;
+	}
+	#stock-icon img {
+		width: 150px;
+	}
+	
+	.wool-container {
+		width: 95%;
+	}
+	.stock-container {
+		width: 80%;
+	}
+	
+	#flyer-header {
+		text-align: center;
+    	margin: 0 0 25px;
+    	font-size: 32px;
+	}
+	#flyer-image {
+		width: 100%;
+	}
+	.flyer-button-container {
+    text-align: center;
+    width: 50%;
+    padding-bottom: 15px;
+    display: grid;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
+	
+	.size-wrapper {
+		width: 48%;
+		margin-bottom: 20px;
+	}
+	.size-wrapper img {
+		width: 119%;
+    	left: -29px;
+	}
+	.sizes-text-box {
+		width: 75%;
+	}
+	#adult-size, #youth-size {
+		margin-right: 20px;
+	}
+	
+	#wool-snap-mobile, #vinyl-snap-mobile, #leather-snap-mobile {
+	display: block;
+	width: 100%;
+}
+#wool-snap-colors, #leather-colors, #vinyl-colors {
+	display: none;
+}
+	
+	.builder-text {
+		width: 42%;
+		top: 75px;
+	}
+	#discount-text {
+		font-size: 29px;
+	}
+	
+	.leather-inserts-opts {
+		width: 44%;
+		border-right: none;
+	}
+	
+	.hoods-block {
+		width: 90%;
+		border: none;
+	}
+	#top-hoods-row {
+		border: none;
+	}
+	
+	.knit-wrapper, .byron-wrapper {
+		width: 70%;
+		}
+	.knit-block, .byron-block {
+		width: 100%;
+	}
+	.knit-block h3 {
+		width: 100%;
+		text-align: center;
+	}
+	#stand-up-knit img {
+		height: auto;
+		width: 100%
+	}
+	#hug-knit {
+		border: none;
+		margin: 10px 0;
+	}
+	#hug-knit img {
+		height: auto;
+		width: 100%
+	}
+	#convert-knit img {
+		height: auto;
+		width: 100%
+	}
+	
+	.collar-inserts-wrapper {
+		width: 60%;
+		display: block;
+	}
+	.collar-block {
+		width: 100%;
+		text-align: center;
+	}
+	.collar-block img {
+		width: 60%;
+		height: auto;
+		margin: 15px auto 30px;
+	}
+	.collar-block, .byron-block {
+		border: none;
+		margin: 20px 0;
+	}
+
+	#access-container {
+		width: 60%;
+	}
+	.access-wrapper {
+		width:100%;
+		margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 660px) {
+	.header-container {
+		background-size: 140%;
+	}
+	.stock-detail {
+		width: 100%;
+		margin: 10px 0;
+	}
+	.stock-jkt-wrapper {
+		width: 95%;
+	}
+	.size-box-container {
+		width: 94%;
+	}
+	.size-wrapper {
+		width: 44%;
+	}
+	.size-wrapper img {
+		left: -24px;
+		width: 124%;
+	}
+	.builder-text {
+		padding: 10px;
+		top: 35px;
+	}
+	.builder-text h3 {
+		margin-bottom: 30px;
+		font-size: 14px;
+	}
+	#discount-text {
+		font-size: 23px;
+	}
+	#custom-jkt-logo {
+		width: 85%;
+	}
+	.addt-custom-opt {
+		width: 100%;
+	}
+	#more-info p {
+		width: 90%;
+		margin: auto;
+	}
+	
+}
+@media screen and (max-width: 500px) {
+	.icon-container {
+		margin: 20px 0;
+		width: 100%;
+	}
+	.icons-wrapper {
+		width: 100%;
+	}
+	#stock-icon img {
+		width: 200px;
+	}
+	.icon-container img {
+		width: 150px;
+	}
+	.header-container h2 {
+		font-size: 29px;
+    padding: 20px 0 35px 0;
+	}
+	
+	.three-block-wrapper {
+		width: 80%;
+	}
+	.size-box-container {
+		width: 87%;
+	}
+	.size-wrapper {
+		width: 92%;
+		margin-left: 30px;
+	}
+	.size-wrapper img {
+		left: -32px;
+    	width: 115%;
+	}
+	
+	#builder-img {
+		width: 100%;
+	}
+	.builder-text {
+		width: 100%;
+		top: 0;
+	}
+	
+	.custom-leather-options {
+		width: 65%;
+	}
+	.leather-inserts-opts {
+		width: 100%;
+	}
+	
+	.collar-block img {
+		width: 70%;
+	}
+	#access-container {
+		width: 75%;
+	}
+}
+@media screen and (max-width: 400px) {
+	.header-container {
+		height: 125px;
+	}
+	.size-wrapper img {
+		width: 126%;
+		left: -20px;
+	}
+	.size-wrapper {
+		width: 85%;
+	}
+	.custom-jkt-list {
+		width: 100%:
+	}
+	.three-block-wrapper {
+		width: 95%;
+	}
+	.three-block-image {
+		min-height: 300px;
+	}
+	.custom-opts-text-box {
+		padding: 0;
+	}
+	.custom-opts-text-box p, .custom-opts-table {
+		font-size: 11px;
+	}
+	#access-container {
+		width: 80%;
+		margin-left: 19px;
+	}
+}
+
+</style>
+
+<div class="header-container">
+	<h2>Varsity Jackets</h2>
+</div>
+
+
+	<div class="icons-wrapper">	
+	
+	  <div class="icon-container" id="stock-icon">
+	    <a href="#stock-anchor">
+	    <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5FNavIcons%5FHeritage.png" id="stockhover">
+	    <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5FNavIcons%5FHeritage.png" id="stocknohover">
+		<h3 class="section-title">THE HOLLOWAY & STOCK JACKETS</h3>
+		</a>
+	  </div>
+	  
+	  <div class="icon-container" id="swatches-icon">
+	    <a href="#swatches-anchor">
+	    <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5FNavIcons%5Fswatches.png" id="swatcheshover">
+	    <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5FNavIcons%5Fswatches.png" id="swatchesnohover">
+		<h3 class="section-title">SWATCH COLORS</h3>
+		</a>
+	  </div>
+	  
+	  <div class="icon-container" id="sizes-icon">
+	    <a href="#sizes-anchor">
+	    <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5FNavIcons%5Fsizechart.png" id="sizeshover">
+	    <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5FNavIcons%5Fsizechart.png" id="sizesnohover">
+		<h3 class="section-title">SIZING CHART</h3>
+		</a>
+	  </div>
+	  
+	  <div class="icon-container" id="builder-icon">
+	    <a href="#builder-anchor">
+	    <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5FNavIcons%5Fcustom.png" id="builderhover">
+	    <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5FNavIcons%5Fcustom.png" id="buildernohover">
+		<h3 class="section-title">BUILD YOUR CUSTOM JACKET</h3>
+		</a>
+	  </div>
+	  
+	  <div class="icon-container" id="custom-icon">
+	   <a href="#custom-anchor">
+	   <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5FNavIcons%5Fcustomjackets.png" id="customhover">
+	   <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5FNavIcons%5Fcustomjackets.png" id="customnohover">
+		<h3 class="section-title">CUSTOM JACKET OPTIONS</h3>
+		</a>
+	  </div>
+	  
+	  <div class="icon-container" id="accessories-icon">
+	    <a href="#access-anchor">
+	    <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5FNavIcons%5Faccessories.png" id="accessorieshover">
+	    <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5FNavIcons%5Faccessories.png" id="accessoriesnohover">
+		<h3 class="section-title">ACCESSORIES</h3>
+		</a>
+	  </div>
+	  
+	</div>
+
+
+<div class="wool-section" id="heritage-section">
+		 	<span id="stock-anchor"></span>
+	<div class="wool-container">
+	
+	<h3 class="section-title section-header">HOLLOWAY HERITAGE</h3>
+	
+	<div class="stock-detail">
+	  <h4 id="stock-detail-header">wool fabric</h4>
+	  <p>Made from the finest 24 oz. Melton wool blend with a fiber content of 80% virgin wool and 20% nylon, which improves performance and reduces pilling.</p>
+	</div>
+	
+	<div class="stock-detail">
+	  <h4 id="stock-detail-header">LINING/INTERIOR ZIPPER ACCESS</h4>
+	  <p>An improved quilted lining is used to maintain warmth & comfort. Access zipper for easy decoration.</p>
+	</div>
+	
+	<div class="stock-detail">
+	  <h4 id="stock-detail-header">leather/vinyl</h4>
+	  <p>The finest top grain steerhide leather specially treated to resist scuffs and cracks. The team carefully cuts around natural flaws and imperfections on the skin to provide the best looking leather around.</p>
+	</div>
+	
+	<div class="stock-detail">
+	  <h4 id="stock-detail-header">CONSTRUCTION</h4>
+	  <p>Double needle felled shoulder and sleeve seams resulting in a stronger and more durable seam than a single needle stitched seam can provide.</p>
+	</div>
+	
+	<div class="stock-detail">
+	  <h4 id="stock-detail-header">pockets</h4>
+	  <p>Matching quality, real leather is used for the double besom welt pockets. Offset with wide wool facing inside the pocket.</p>
+	</div>
+	
+	<div class="stock-detail">
+	  <h4 id="stock-detail-header">comfort</h4>
+	  <p>Ample sizing for comfortable fit.</p>
+	</div>
+	
+	<div class="stock-detail">
+	  <h4 id="stock-detail-header">knit trim</h4>
+	  <p>Our knit trim elasticity memory has top quality resistance to pilling.</p>
+	</div>
+	
+	<span class="bottom-divider-full"></span>
+	
+	</div>	
+
+</div>
+	
+<div class="wool-section" id="stock-section">
+	<div class="wool-container">
+	  <div class="stock-container">
+		<h3 class="section-title section-header" id="stock-header">STOCK JACKETS</h3>
+		
+		<div class="stock-jkt-wrapper" id="leather-slv">
+		
+		  <h3>LEATHER SLEEVES</h3>
+		  <img class="stock-jkt-image" src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fstock%5Fleathersleeves.png">
+		  
+		  <p class="in-stock-colors"><span class="stock-colors-number">40</span> In-Stock Colors</p>
+		  
+		  <h4>VARSITY JACKET</h4>
+		  <p>#224183</p>
+		  <a href="/holloway-varsity-jacket-224183">
+		  <button class="button secondary stock-btn">SHOP THIS STYLE</button>
+		  </a>
+		  
+		  <span id="leather-jkt-divider"></span>
+		  
+		  <p class="in-stock-colors"><span class="stock-colors-number">6</span> In-Stock Colors</p>
+		  
+		  <h4>VARSITY JACKET</h4>
+		  <p>#224683 <b>Tall</b></p>
+		  <a href="/holloway-varsity-tall-jacket-224683">
+		  <button class="button secondary stock-btn">SHOP THIS STYLE</button>
+		  </a>
+		</div>
+		
+		<div class="stock-jkt-wrapper" id="vinyl-slv">
+		  <h3>VINYL SLEEVES</h3>
+		  
+		  <img class="stock-jkt-image" src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fstock%5Fvinylsleeves.png">
+		  
+		 <p class="in-stock-colors"><span class="stock-colors-number">6</span> In-Stock Colors</p>
+		  		  
+		  <h4>AWARD JACKET</h4>
+		  <p>#224181</p>
+		  <a href="/holloway-award-jacket-224181">
+		  <button class="button secondary stock-btn">SHOP THIS STYLE</button>
+		  </a>
+		</div>
+		
+		<div class="stock-jkt-wrapper" id="wool-slv">
+		  <h3>WOOL SLEEVES</h3>
+		  
+		  <img class="stock-jkt-image" src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fstock%5Fwoolsleeves.png">
+		  
+		  <p class="in-stock-colors"><span class="stock-colors-number">9</span> In-Stock Colors</p>
+		  
+		  <h4>LETTERMAN JACKET</h4>
+		  <p>#224182</p>
+		  <a href="/holloway-letterman-jacket-224182">
+		  <button class="button secondary stock-btn">SHOP THIS STYLE</button>
+		  </a>
+		</div>
+	  </div>
+	</div>
+</div>
+
+<div class="wool-section" id="wool-flyer">
+	
+	
+
+	<div class="wool-container" style="position:relative;">
+	<h2 class="section-header" id="flyer-header">WOOL JACKET FLYER</h2>
+<a href="https://static.augustasportswear.com/marketing/Prebuilt_Wool_Program_2019pdf.PDF" target="blank">
+<img src="https://static.augustasportswear.com/marketing/Prebuilt_Wool_Program_2019.jpg" id="flyer-image">
+</a>
+
+	<div class="flyer-button-container">
+
+		<a class="secondary button" href="https://static.augustasportswear.com/marketing/Prebuilt_Wool_Program_2019pdf.PDF" target="blank">View & Download</a>
+		
+		<a class="secondary button" href="https://augustasportswear.zoomcustom.com/user/flyers/create?parent=13704" target="blank">Personalize</a>
+	</div> 
+	</div>
+</div>
+
+<div class="wool-section" id="swatches-section">
+ 	<span id="swatches-anchor"></span>
+	<div class="wool-container" id="swatches-container">
+	<h3 class="section-title section-header swatch-header">Swatch colors</h3>
+	
+		<span class="bottom-divider-full"></span>
+	
+	<h4 class="swatch-color-header">wool/snap colors</h4>
+		<img id="wool-snap-colors" src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fwool%5Fsnap%5Fcolors.png">
+		
+		<img id="wool-snap-mobile" src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DMOBILE%5Fwool%5Fsnap%5Fcolors.png">
+		<p>Any wool color can also be selected as a snap color option. When selecting leather or vinyl in the construction, that material carries over into any jacket addition to ensure optimum color matching and look. For this reason we are unable to use leather and vinyl on the same jacket.</p>
+	
+		<span class="bottom-divider-full"></span>
+
+		<h4 class="swatch-color-header">leather colors</h4>
+		<img id="leather-colors" src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fleather%5Fcolors.png">
+		
+		<img id="leather-snap-mobile" src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DMOBILE%5Fleather%5Fcolors.png">
+
+		<span class="bottom-divider-full"></span>
+
+		<h4 class="swatch-color-header">vinyl colors</h4>
+		<img id="vinyl-colors" src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fvinyl%5Fcolors.png">
+		
+			<img id="leather-snap-mobile" src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DMOBILE%5Fvinyl%5Fcolors.png">
+		<p>For youth styles, vinyl is only available in White, Cream, Light Gold, Black, Maroon, Purple, Grey, True Navy, Scarlet, Burnt Orange, Dark Navy, Kelly, Old Gold and Parchment.
+		</p>
+		
+		<p>Colors can look different based on individual's computer screen settings.</p>
+
+<p id="custom-color-contact"><b>NOTE:</b> For custom order fabric colors, please contact Customer Care for an
+actual color swatch at 800-237-6695 or <a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a></p>
+
+</div>
+</div>
+
+<div class="wool-section" id="sizes-section">
+ 	<span id="sizes-anchor"></span>
+	
+	<div class="wool-container" id="sizes-container">
+	<h3 class="section-title section-header">SIZING CHART</h3>
+	
+	<div class="size-box-container">
+	 <div class="size-wrapper" id="adult-size">
+	 	<img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fsizechart%5F.png">
+	 	<div class="sizes-text-box">
+	 	<h4>ADULT</h4>
+	 	<ul>
+	 	  <li>Generous, full cut through body and sleeves</li>
+	 	  <li>Hits below natural waist</li>
+	 	</ul>
+	 	</div>
+	 </div>
+	 
+	 <div class="size-wrapper">
+		<img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fsizechart%5F2.png">
+		<div class="sizes-text-box">
+		<h4>LADIES' FIT</h4>
+	 	<ul>
+	 	  <li>Modified version of the Ladies’ Original Fit but without the extra bulk through the body</li>
+	 	  <li>Comfortable, relaxed fit through sleeves and body</li>
+	 	  <li>Longer body, hits below natural waist</li>
+	 	</ul>
+	 	</div>
+	 </div>
+	 
+	 <div class="size-wrapper" id="youth-size">
+	 	<img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fsizechart%5F3.png">
+	 	<div class="sizes-text-box">
+	 	<h4>YOUTH TRADITIONAL/<br>CLASSIC FIT</h4>
+	 	<ul>
+	 	  <li>Youth-sized version of the Adult</li>
+	 	  <li>Generous, full cut through body and sleeves</li>
+	 	  <li>Hits below natural waist</li>
+	 	</ul>
+	 	</div>
+	 </div>
+	 
+	 <div class="size-wrapper" id="juniors-size">
+	 	<img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fsizechart%5F4.png">
+	 	<div class="sizes-text-box">
+	 	<h4>JUNIORS' FIT</h4>
+	 	<ul>
+	 	  <li>Modified version of Ladies’ Updated Fit but slimmer, streamlined fit through body and sleeves</li>
+	 	  <li>Shorter body, hits at natural waist</li>
+	 	</ul>
+	 	</div>
+	 </div>
+	</div>
+	</div>
+</div>
+
+<div class="wool-section" id="builder-section">
+	<span id="builder-anchor"></span>
+	
+	<div class="wool-container">
+	
+		<img id="builder-img" src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fbuildyourjacket.png">
+		
+		<div class="builder-text">
+			<img id="custom-jkt-logo" src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustomvj%5Flogo.png">
+			<h3>USE OUR ONLINE JACKET<br>BUILDER & RECEIVE A
+			<br><span id="discount-text">3% DISCOUNT</span>
+			<br>
+			<span id="builder-note">Not all jackets are available on the builder</span>
+			</h3>
+			
+			<a href="/webapp/wcs/stores/servlet/ConfiguratorStartView?langId=-1&storeId=10252&catalogId=10101&categoryId=11501&configuratorType=jackets?promo_name=wool_page&promo_id=builder-btn
+"><button class="primary button" id="builder-btn">START CUSTOMIZING</button></a>
+		</div>
+	
+	</div>
+</div> <!--end builder section -->
+
+<div class="wool-section" id="custom-section">
+	<span id="custom-anchor"></span>
+	
+	<div class="wool-container">
+	<h3 class="section-title section-header">CUSTOM JACKET OPTIONS</h3>
+	
+		<div>
+	 	  <div class="custom-jkt-list">
+	 	<ul>
+<li>Melton wool, 24 oz.</li>
+<li>Full color range of leather, wool or vinyl sleeve options</li>
+<li>Optional nylon lining or quilted lining</li>
+<li>Full snap front</li>
+<li>Collar and hood options</li>
+	</ul>
+  </div>
+  		  <div class="custom-jkt-list">
+		<ul>
+<li>High-quality, 1x1 rib-trim collar, cuffs and bottom band options</li>
+<li>Easy-entry front pockets</li>
+<li>Sizes: Adult XS-6X, Tall LT-6XT, Youth S-XL, Ladies’ XS-2X, Juniors’ XS-2X</li>
+	</ul>
+		  </div>
+		</div>
+		
+		<div class="three-block-wrapper set-in-slvs">
+<h3>SET-IN SLEEVES</h3>
+
+<div class="three-block-image" id="left-block">
+
+ 	<img id="three-block-left"  src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fsetinsleeve%5Fleather.png">
+ 	
+ 	<div class="custom-opts-text-box">
+ 	  <h4>LEATHER</h4>
+ 	  
+ 	  <table class="custom-opts-table" cellspacing="0" cellpadding="3">
+ 	    <tr>
+ 	   <td>#225101</td>
+ 	   <th>ADULT</th>
+ 	   <td>#225301</td>
+ 	   <th>LADIES</th>
+ 	  </tr>
+ 	    <tr>
+ 	   <td>#225101U</td>
+ 	   <th>adult</th>
+ 	   <td>#225401</td>
+ 	   <th>juniors</th>
+ 	  </tr>
+ 	    <tr>
+ 	   <td>#225501</td>
+ 	   <th>youth</th>
+ 	  </tr>
+ 	  </table>
+ 	  <p>Leather sleeves and pocket welts</p>
+ 	</div>
+ 	
+</div>
+
+<div class="three-block-image" id="mid-block">
+ 	 
+ 	<img id="three-block-mid" src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fsetinsleeve%5Fwool.png">
+ 	
+ 	<div class="custom-opts-text-box">
+ 	  <h4>WOOL</h4>
+ 	  
+ 	  <table class="custom-opts-table" cellspacing="0" cellpadding="3">
+ 	    <tr>
+ 	   <td>#225100</td>
+ 	   <th>adult</th>
+ 	   <td>#225300</td>
+ 	   <th>ladies</th>
+ 	  </tr>
+ 	    <tr>
+ 	   <td>#225100U</td>
+ 	   <th>adult</th>
+ 	   <td>#225400</td>
+ 	   <th>juniors</th>
+ 	  </tr>
+ 	    <tr>
+ 	   <td>#225500</td>
+ 	   <th>youth</th>
+ 	  </tr>
+ 	  </table>
+ 	  <p>Wool sleeves and genuine leather pocket welts</p>
+ 	</div>
+ 	
+</div>
+
+<div class="three-block-image" id="right-block">
+ 	
+ 	<img id="three-block-right" src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fsetinsleeve%5Fvinyl.png">
+ 	
+ 	 	<div class="custom-opts-text-box">
+ 	  <h4>VINYL</h4>
+ 	  
+ 	  <table class="custom-opts-table" cellspacing="0" cellpadding="3">
+ 	    <tr>
+ 	   <td>#225102</td>
+ 	   <th>adult</th>
+ 	   <td>#225302</td>
+ 	   <th>ladies</th>
+ 	  </tr>
+ 	    <tr>
+ 	   <td>#225102U</td>
+ 	   <th>adult</th>
+ 	   <td>#225402</td>
+ 	   <th>juniors</th>
+ 	  </tr>
+ 	    <tr>
+ 	   <td>#225502</td>
+ 	   <th>youth</th>
+ 	  </tr>
+ 	  </table>
+ 	  <p>Durable vinyl sleeves and pocket welts</p>
+ 	  <p>
+ 	  For Youth styles, vinyl is only available in <b>Black, Burnt Orange, Cream, Dark Navy, Grey, Light Gold, Kelly, Maroon, Old Gold, Parchment, Purple, Scarlet, True Navy and White.</b>
+ 	  </p>
+ 	</div>
+</div>
+
+</div>
+
+		<div class="three-block-wrapper raglan-slvs">
+<h3>RAGLAN SLEEVES</h3>
+
+<div class="three-block-image" id="left-block">
+ 	<img id="three-block-left"  src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fraglansleeve%5Fleather.png">
+ 	
+<div class="custom-opts-text-box">
+ 	  <h4>LEATHER</h4>
+ 	  
+ 	  <table class="custom-opts-table" cellspacing="0" cellpadding="3">
+ 	    <tr>
+ 	   <td>#225111</td>
+ 	   <th>adult</th>
+ 	   <td>#225311</td>
+ 	   <th>ladies</th>
+ 	  </tr>
+ 	    <tr>
+ 	   <td>#225111U</td>
+ 	   <th>adult</th>
+ 	   <td>#225411</td>
+ 	   <th>juniors</th>
+ 	  </tr>
+ 	    <tr>
+ 	   <td>#225511</td>
+ 	   <th>youth</th>
+ 	  </tr>
+ 	  </table>
+ 	  <p>Leather sleeves and pocket welts</p>
+ 	</div>
+</div>
+
+<div class="three-block-image" id="mid-block">
+ 	 
+ 	<img id="three-block-mid" src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fraglansleeve%5Fwool.png">
+ 	
+<div class="custom-opts-text-box">
+ 	  <h4>WOOL</h4>
+ 	  
+ 	  <table class="custom-opts-table" cellspacing="0" cellpadding="3">
+ 	    <tr>
+ 	   <td>#225110</td>
+ 	   <th>adult</th>
+ 	   <td>#225310</td>
+ 	   <th>ladies</th>
+ 	  </tr>
+ 	    <tr>
+ 	   <td>#225110U</td>
+ 	   <th>adult</th>
+ 	   <td>#225410</td>
+ 	   <th>juniors</th>
+ 	  </tr>
+ 	    <tr>
+ 	   <td>#225510</td>
+ 	   <th>youth</th>
+ 	  </tr>
+ 	  </table>
+ 	 <p>Wool sleeves and genuine leather pocket welts</p> 
+ 	</div>
+</div>
+
+<div class="three-block-image" id="right-block">
+ 	
+ 	<img id="three-block-right" src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fraglansleeve%5Fvinyl.png">
+ 	
+<div class="custom-opts-text-box">
+ 	  <h4>VINYL</h4>
+ 	  
+ 	  <table class="custom-opts-table" cellspacing="0" cellpadding="3">
+ 	    <tr>
+ 	   <td>#225112</td>
+ 	   <th>adult</th>
+ 	   <td>#225312</td>
+ 	   <th>ladies</th>
+ 	  </tr>
+ 	    <tr>
+ 	   <td>#225112U</td>
+ 	   <th>adult</th>
+ 	   <td>#225412</td>
+ 	   <th>juniors</th>
+ 	  </tr>
+ 	    <tr>
+ 	   <td>#225512</td>
+ 	   <th>youth</th>
+ 	  </tr>
+ 	  </table>
+ 	   	  <p>Durable vinyl sleeves and pocket welts</p>
+ 	  <p>
+ 	  For Youth styles, vinyl is only available in <b>Black, Burnt Orange, Cream, Dark Navy, Grey, Light Gold, Kelly, Maroon, Old Gold, Parchment, Purple, Scarlet, True Navy and White.</b>
+ 	  </p>
+ 	</div>
+</div>
+
+</div>
+
+		<div class="custom-order full-leather">
+		  <h2>WOOL CUSTOM ORDER: <b>FULL LEATHER INSERTS</b></h2>
+		  <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Ffullleatherinserts.png">
+		 
+	<div class="custom-leather-options">
+		<div class="leather-inserts-opts">
+		  <h3>SINGLE FULL INSERT</h3>
+		  <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Finserts%5F.png">
+		  
+		  <table class="custom-opts-table-inserts" cellpadding="3">
+		   <tr>
+		    <td>#226160</td>
+		    <th>ADULT</th>
+		   </tr>
+		   <tr>
+		    <td>#226560</td>
+		    <th>YOUTH</th>
+		   </tr>
+		  </table>
+		</div>
+		<div class="leather-inserts-opts">
+		  <h3>DOUBLE FULL INSERT</h3>
+		  <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Finserts%5F2.png">
+		  
+		  <table class="custom-opts-table" cellpadding="3">
+		   <tr>
+		    <td>#226161</td>
+		    <th>ADULT</th>
+		   </tr>
+		   <tr>
+		    <td>#226561</td>
+		    <th>YOUTH</th>
+		   </tr>
+		  </table>
+		</div>
+		<div class="leather-inserts-opts">
+		  <h3>TRIPLE FULL INSERT</h3>
+		  <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Finserts%5F3.png">
+		  
+		  <table class="custom-opts-table" cellpadding="3">
+		   <tr>
+		    <td>#226162</td>
+		    <th>ADULT</th>
+		   </tr>
+		   <tr>
+		    <td>#226562</td>
+		    <th>YOUTH</th>
+		   </tr>
+		  </table>
+		</div>		
+		<div class="leather-inserts-opts">
+		  <h3>CONTRASTING FULL INSERT</h3>
+		  <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Finserts%5F4.png">
+		  
+		  <table class="custom-opts-table" cellpadding="3">
+		   <tr>
+		    <td>#226150</td>
+		    <th>ADULT</th>
+		   </tr>
+		   <tr>
+		    <td>#226550</td>
+		    <th>YOUTH</th>
+		   </tr>
+		  </table>
+		</div>
+	</div>
+		  
+		</div>
+		
+	<span class="bottom-divider-full"></span>
+
+		<div class="custom-order part-leather">
+		  <h2>WOOL CUSTOM ORDER: <b>PARTIAL LEATHER INSERTS</b></h2>
+		  <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fpartialleatherinserts.png">
+		  
+	<div class="custom-leather-options">
+		<div class="leather-inserts-opts">
+		  <h3>SINGLE PARTIAL INSERT</h3>
+		  <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Finserts%5F5.png">
+		  
+		  <table class="custom-opts-table-inserts" cellpadding="3">
+		   <tr>
+		    <td>#225160</td>
+		    <th>ADULT</th>
+		   </tr>
+		   <tr>
+		    <td>#225560</td>
+		    <th>YOUTH</th>
+		   </tr>
+		  </table>
+		</div>
+		<div class="leather-inserts-opts">
+		  <h3>DOUBLE PARTIAL INSERT</h3>
+		  <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Finserts%5F6.png">
+		  
+		  <table class="custom-opts-table-inserts" cellpadding="3">
+		   <tr>
+		    <td>#225161</td>
+		    <th>ADULT</th>
+		   </tr>
+		   <tr>
+		    <td>#225561</td>
+		    <th>YOUTH</th>
+		   </tr>
+		  </table>
+		</div>
+		<div class="leather-inserts-opts">
+		  <h3>TRIPLE PARTIAL INSERT</h3>
+		  <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Finserts%5F7.png">
+		  
+		  <table class="custom-opts-table-inserts" cellpadding="3">
+		   <tr>
+		    <td>#225162</td>
+		    <th>ADULT</th>
+		   </tr>
+		   <tr>
+		    <td>#225562</td>
+		    <th>YOUTH</th>
+		   </tr>
+		  </table>
+		</div>		
+		<div class="leather-inserts-opts">
+		  <h3>CONTRASTING PARTIAL INSERT</h3>
+		  <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Finserts%5F8.png">
+		  
+		  <table class="custom-opts-table-inserts" cellpadding="3">
+		   <tr>
+		    <td>#225150</td>
+		    <th>ADULT</th>
+		   </tr>
+		   <tr>
+		    <td>#225550</td>
+		    <th>YOUTH</th>
+		   </tr>
+		  </table>
+		</div>
+	</div>
+	
+		</div>
+
+	<span class="bottom-divider-full"></span>
+
+		<div class="custom-order custom-hoods">
+		  <h2>HOODS:</h2>
+		  
+		  <div class="hoods-section">
+ 
+ <div class="hoods-wrapper" id="top-hoods-row">
+	<div class="hoods-block shallow-scallop-block">
+	   <h2>shallow scallop zippered hood</h2>
+	   <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fhoods%5F.png">
+	</div>
+	
+	<div class="hoods-block deep-scallop-block">
+	   <h2>deep scallop zippered hood</h2>
+	   <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fhoods%5F2.png">
+	</div>
+	
+</div>
+	
+  <div class="hoods-wrapper">
+	<div class="hoods-block straight-zip-block">
+	   <h2>straight-across zippered hood</h2>
+	   <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fhoods%5F3.png">
+	</div>
+	
+	<div class="hoods-block sailor-hood-block">
+	   <h2>sailor collar</h2>
+	   <img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fhoods%5F4.png">
+	</div>
+	
+</div>
+
+	<p>When hood reverses to White or Light Gold, poly fleece will be used. All other colors will be wool.</p>
+ 
+</div>
+
+		</div>
+
+	<span class="bottom-divider-full"></span>
+	 
+		<div class="custom-order knit-collars">
+			<h2>KNIT COLLARS:</h2>
+		  <div class="knit-wrapper">
+			<div class="knit-block" id="stand-up-knit">
+			<h3>STAND-UP KNIT COLLAR</h3>
+			<img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fcollars%5F5.png">
+			</div>
+			
+			<div class="knit-block" id="hug-knit">
+			<h3>HUG KNIT COLLAR</h3>
+			<img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fcollars%5F6.png">
+			</div>
+			
+			<div class="knit-block" id="convert-knit">
+			<h3>CONVERTIBLE KNIT COLLAR</h3>
+			<img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fcollars%5F7.png">
+			</div>
+		  </div>
+		</div>
+		
+	<span class="bottom-divider-full"></span>
+	
+		<div class="custom-order collar-inserts">
+			<h2>COLLAR INSERTS:</h2>
+			
+		<div class="collar-inserts-wrapper">
+			<div class="collar-block" id="horz-collar">
+			<h3>HORIZONTAL KNIT INSERT COLLAR</h3>
+			<p>Available in Pattern 13</p>
+			<img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fcollars%5F.png">
+			</div>
+			
+			<div class="collar-block" id="vert-collar">
+			<h3>VERTICAL KNIT INSERT COLLAR</h3>
+			<p>Available in Patterns 1, 2, 3, and 6</p>
+			<img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fcollars%5F2.png">
+			</div>
+			
+			<div class="collar-block" id="leather-collar">
+			<h3>LEATHER COLLAR WOOL INSERT</h3>
+			<p>See Wool colors</p>
+			<img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fcollars%5F3.png">
+			</div>
+			
+			<div class="collar-block" id="wool-collar">
+			<h3>WOOL COLLAR LEATHER INSERT</h3>
+			<p>See Wool colors</p>
+			<img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fcollars%5F4.png">
+			</div>
+			
+		</div>
+		</div>
+		
+	<span class="bottom-divider-full"></span>
+	
+		<div class="custom-order byron-collar">
+			<h2>BYRON COLLAR:</h2>
+			
+		<div class="byron-wrapper">
+			<div class="byron-block">
+			<h3>WOOL BYRON COLLAR</h3>
+			<img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fcollars%5F8.png">
+			</div>
+			
+			<div class="byron-block">
+			<h3>ROUND LEATHER BYRON COLLAR</h3>
+			<img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fcollars%5F9.png">
+			</div>
+			
+			<div class="byron-block">
+			<h3>THREE-PIECE BYRON COLLAR</h3>
+			<img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fcollars%5F10.png">
+			</div>
+			
+		  </div>
+		</div>
+		
+	<span class="bottom-divider-full"></span>
+	
+		<div class="custom-order stripe-patterns">
+			<h2>STRIPE PATTERNS:</h2>
+			
+			<table id="stripe-patterns" cellspacing="0" cellpadding="0">
+<!--pattern 1-3 -->	<tr>
+		    <th>PATTERN #1</th>
+		    <th>PATTERN #2</th>
+		    <th>PATTERN #3</th>
+		   </tr>
+<!--text 1-3-->		<tr>
+		    <td>TWO 1/2" STRIPES</td>
+		    <td>SOLID</td>
+		    <td>1/2" STRIPES OUTLINED</td>
+		   </tr>
+<!-- images 1-3 --> <tr>
+		    <td><img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fstripes%5F.png"></td>
+		    <td><img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fstripes%5F2.png"></td>
+		    <td><img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fstripes%5F3.png"></td>
+		   </tr>
+<!--pattern 4-6-->	<tr>
+		    <th>PATTERN #4</th>
+		    <th>PATTERN #5</th>
+		    <th>PATTERN #6</th>
+		   </tr>
+<!--text 4-6-->		<tr>
+		    <td>FOUR FEATHER STRIPES</td>
+		    <td>NORTHWESTERN</td>
+		    <td>THREE-COLOR ALTERNATING</td>
+		    </tr>
+<!-- images 4-6 --> <tr>
+		    <td><img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fstripes%5F4.png"></td>
+		    <td><img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fstripes%5F5.png"></td>
+		    <td><img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fstripes%5F6.png"></td>
+		   </tr>
+<!--pattern 7-9-->	<tr>
+		    <th>PATTERN #7</th>
+		    <th>PATTERN #8</th>
+		    <th>PATTERN #9</th>
+		   </tr>
+<!--text 7-9-->		<tr>
+		    <td>THREE DOUBLE-FEATHER STRIPES</td>
+		    <td>3/4" STRIPE OUTLINED</td>
+		    <td>1/4" ADJOINING STRIPES</td>
+		   </tr>
+<!-- images 7-9 --> <tr>
+		    <td><img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fstripes%5F7.png"></td>
+		    <td><img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fstripes%5F8.png"></td>
+		    <td><img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fstripes%5F9.png"></td>
+		   </tr>
+<!--pattern 10-12-->	<tr>
+		    <th>PATTERN #10</th>
+		    <th>PATTERN #11</th>
+		    <th>PATTERN #12</th>
+		   </tr>
+<!--text 10-12-->		<tr>
+		    <td>THREE EQUAL STRIPES</td>
+		    <td>SPLIT NORTHWESTERN</td>
+		    <td>THREE ADJOINING 1/2"</td>
+		   </tr>
+<!-- images 10-12--> <tr>
+		    <td><img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fstripes%5F10.png"></td>
+		    <td><img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fstripes%5F11.png"></td>
+		    <td><img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fstripes%5F12.png"></td>
+		   </tr>
+<!--pattern 13-15-->	<tr>
+		    <th>PATTERN #13</th>
+		    <th>PATTERN #14</th>
+		    <th>PATTERN #15</th>
+		   </tr>
+<!--text 13-15-->		<tr>
+
+		    <td>TWO-COLOR 1/2" ALTERNATING</td>
+		    <td>3/4" STRIPE</td>
+		    <td>ONE 1/2" STRIPE</td>
+		   </tr>
+<!-- images 13-15--> <tr>
+		    <td><img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fstripes%5F13.png"></td>
+		    <td><img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fstripes%5F14.png"></td>
+		    <td><img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fstripes%5F15.png"></td>
+		   </tr>
+<!--pattern 16-18-->	<tr>
+		    <th>PATTERN #16</th>
+		    <th>PATTERN #17</th>
+		    <th>PATTERN #18</th>
+		   </tr>
+<!--text 16-18-->		<tr>
+		    <td>ONE 3/4" STRIPE — OUTLINED IN 1/4" STRIPES</td>
+		    <td>ONE 1/2" STRIPE — OUTLINED IN 1/8" STRIPES</td>
+		    <td>1/2" STRIPE, TWO 1/8" STRIPES</td>
+		   </tr>
+<!-- images 16-18 --> <tr>
+		    <td><img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fstripes%5F16.png"></td>
+		    <td><img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fstripes%5F17.png"></td>
+		    <td><img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fstripes%5F18.png"></td>
+		   </tr>
+		  </table>
+		  
+		  <p>Patterns 1, 2, 3, 8, 14, 15, 16 and 17 available in Convertible Knit.
+				<br>
+			Patterns 6, 10, 13 and 18 are not available in Youth.</p>
+		</div>
+		
+	<span class="bottom-divider-full"></span>
+	
+		<div class="custom-order addt-custom">
+			<h2>ADDITIONAL CUSTOM OPTIONS & DETAILING:</h2>
+			
+			<div class="addt-custom-opt">
+			  <h3>LENGTHS</h3>
+			   <ul>
+			    <li>Standard sizes available for Adults XS–6X and Youth S–XL</li>
+			    <li>Various length adjustments available for body and sleeves starting at 2”</li>
+			    <li>2” longer body and sleeve is standard tall</li>
+			    <li>2” shorter body and sleeve is standard short</li>
+			   </ul>
+			</div>
+			
+			<div class="addt-custom-opt">
+			 <h3>CORDAGE AND BRAIDS</h3>
+			   <ul>
+			    <li>Cordage is available around shoulder inserts and pocket trim</li>
+			    <li>Braid is available down sides of shallow and deep scallop hoods, all around sailor collar and straight-across zippered hood</li>
+			   </ul>
+			</div>
+			
+			<div class="addt-custom-opt">
+			 <h3>HOODS AND COLLARS</h3>
+			   <ul>
+			    <li>Detachable snap-off hood available with stand-up knit collar</li>
+			    <li>All leather or vinyl Byron collars are available</li>
+			    <li>Wool Byron collar with leather or vinyl underside is available</li>
+			   </ul>
+			   </div>
+						
+			<div class="addt-custom-opt">
+			 <h3>LINING AND INSIDE POCKETS</h3>
+			   <ul>
+			    <li>Nylon or quilted lining is available; black is standard</li>
+			    <li>Inside patch pocket, slash single-welt and zippered double-besom pockets are available</li>
+			    <li>Hidden embroidery access zipper in lining</li>
+			    <li>Reversible construction to oxford nylon is available; some colors not available</li>
+			    <li>Brass zipper front closure</li>
+			   </ul>
+			 
+			 <div class="pocket-opts" id="single-welt">  
+			   <h3>SLASH SINGLE-WELT POCKET</h3>
+			<img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fzipper%5F.png">
+			</div>
+			
+			<div class="pocket-opts"> 
+			<h3>ZIPPERED DOUBLE-BESOM POCKET</h3>
+			<img src="https://static.augustasportswear.com/marketing/WoolLandingPage%2DDesktop%5Fcustom%5Fzipper%5F2.png">
+			</div>
+			
+		</div>
+		
+	</div>
+
+</div> 
+</div> <!--end custom section-->
+
+<div class="wool-section" id="accessories-section">
+	<span id="access-anchor"></span>
+	
+	<div class="wool-container" id="access-container">
+	<h3 class="section-title section-header" id="access-header">ACCESSORIES</h3>
+	
+	  <div class="access-wrapper custom-blkt">
+	  	<h2>BLANKETS</h2>
+	  	<img src="https://static.augustasportswear.com/marketing/223942%5F44%5Froy%5Fltg%5Fdp.png">
+	  	
+	   <div class="access-text">
+	  	<h4>WOOL CUSTOM ORDER: BLANKET</h4>
+	  	<p>#223942 | 60" X 72"<br>
+	  	#223944 | 60" X 84"</p>
+	  	<ul>
+	  	 <li>Melton Wool</li>
+	  	 <li>Rounded corners bound with contrasting wool felt</li>
+	  	 <li>See our spectrum of 37 colors to select the wool blanket color of your choice</li>
+	  	</ul>
+	   </div>
+	  </div>
+	  
+	  <div class="access-wrapper banners-wrappers">
+	    <h2>BANNERS</h2>
+	  	<img src="https://static.augustasportswear.com/marketing/224800%5FFF%5Fnvy%5Fdp.png">
+	  <div class="access-text">
+	  	<h4>CUSTOM RECOGNITION BANNER</h4>
+	  	<p>#225800</p>
+	  	<p><b>Don’t see your school colors?</b> <br>
+	  	The Recognition Banner is available for custom ordering. See all Wool colors.</p>
+	  	<p><b>Available felt trim colors are for custom:</b> <br>
+	  	Black, Burnt Orange, Cardinal, Columbia Blue, Dark Green, Dark Navy, Dark Orange, Grey, Kelly, Light Gold, Maroon, Old Gold, Purple, True Navy, Scarlet, White, Yellow</p>
+	  	<p><b>6 pc. minimum for any single available wool and trim color combination</b></p>
+	  </div>	
+	  	
+	  </div>		
+	  
+	  <span class="bottom-divider-full"></span>
+	  
+	</div> 
+		
+</div> <!-- end accessories section -->
+	
+<div class="wool-section" id="more-info">
+	<h2>NEED MORE INFO?</h2>
+	<p><b>Contact us for more information regarding our Booking Program or anything else.</b>
+	<br>
+	<a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a>
+	<br>
+	 800-237-6695</p>
+</div>
+
+<div class="wool-section-m-container">
+
+	<div class="wool-section-m" id="stock-section-m">
+		 	<span id="stock-anchor"></span>
+	<div class="wool-container">
+	
+	</div>	
+</div>
+
+	<div class="wool-section-m" id="swatches-section-m">
+ 	<span id="swatches-anchor"></span>
+	<div class="wool-container" id="swatches-container">
+	<h3 class="section-title section-header">Returns</h3>
+	</div>
+</div>
+
+	<div class="wool-section-m" id="sizes-section-m">
+ 	<span id="sizes-anchor"></span>
+</div>
+
+	<div class="wool-section-m" id="builder-section-m">
+	<span id="builder-anchor"></span>
+</div>
+
+</div>
+
+<script>
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 600, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+  
+
+$(document).ready(function(openFeedrequest){	
+    $('.data-button').click(function(){
+      $('.data-feed-jotform').slideToggle();
+    }); 
+  });
+  
+$(document).ready(function(faqMobile) {
+    if($(window).width() <= 1023) {
+        $('#faq-icon').click(function(){
+          $('#faq-section-m').toggle();
+        $('.help-section-m').not($('#faq-section-m')).hide();
+        });
+    }
+});
+$(document).ready(function(openFaqAnswer){	$('.faq-question').find('#faq-q-header').click(function(){
+
+      //Expand or collapse this panel
+      $(this).next().slideToggle('slow');
+      $(this).find('.open-faq').toggle();
+      $(this).find('.close-faq').toggle();
+    }); 
+  });
+
+$(document).ready(function(dataMobile) {
+    if($(window).width() <= 1023) {
+        $('#product-data-icon').click(function(){
+          $('#product-data-section-m').toggle();
+            $('.help-section-m').not($('#product-data-section-m')).hide();
+        });
+    }
+});
+   
+</script>
+

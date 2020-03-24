@@ -1,0 +1,625 @@
+<!-- Russell Athletic -->
+
+<style>
+.banner-wrapper {
+		max-width: 1920px;
+		position: relative;
+    	margin: 0 auto -6px auto;
+    	display: block;
+	}
+#header-main {
+	width: 100%;
+}
+#header-mobile {
+	display: none;
+	width: 100%;
+}
+#header-logo {
+	position: absolute;
+	top: 25%;
+	left: 0%;
+	width: 50%;
+}
+#header-btn {
+	position: absolute;
+    top: 59%;
+    left: 14%;
+    color: white;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px white solid;
+    width: 150px;
+    text-align: center;
+}	
+
+
+.russell-header {
+	font-size: 33px;
+    color: white;
+    background-color: #075699;
+    text-transform: uppercase;
+    font-family: "AvenirNextB";
+    letter-spacing: 1px;
+    text-align: center;
+    width: 100%;
+    line-height: 1.1;
+    padding: 90px 0;
+}
+
+/*Category Section*/
+.category-section {
+	display: block;
+	width: 100%;
+	max-width: 1920px;
+}
+.category-wrapper {
+	box-sizing: border-box;
+	position: relative;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+}
+.category-block {
+    float: left;
+    width: 50%;
+    position: relative;
+    left: 0%;
+    margin-bottom: -5px;
+    background-color: black;
+}
+.category-block img {
+	width: 100%;
+    height: auto;
+}
+
+.category-text {
+    position: absolute;
+    bottom: 20%;
+    left: 8%;
+    width: 90%;
+    color: white;
+    z-index: 1;
+}
+.category-text h2 {
+	font-family: "AvenirNextB";
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	width: 28%;
+	font-size: 20px;
+	    line-height: 1.3;
+    letter-spacing: 1.5px;
+}
+.category-text p {
+	margin-bottom: 15px;
+	width: 25%;
+}
+
+.category-btn-wht {
+	text-transform: uppercase;
+    padding: 5px 15px;
+    color: white;
+    border: 1px solid white;
+    font-size: 16px;
+    top: 15px;
+    position: relative;
+}
+.category-btn-wht:hover {
+	color: black;
+	background-color: white;
+	transition: 0.3s;
+}
+
+.baseball-text, .basketball-text {
+	top: 7%;
+}
+.basics-text h2 {
+	width: 26%;
+}
+
+.sublimation-section {
+    max-width: 1920px;
+    position: relative;
+    margin: 0 auto -6px auto;
+    display: inline-block;
+}
+#subl-bkg-img {
+	width: 100%;
+}
+
+#blitz-logo {
+    position: absolute;
+    top: 7%;
+    left: 3%;
+    width: 45%;
+}
+#subl-text {
+    position: absolute;
+    color: white;
+    top: 49%;
+    font-size: 22px;
+    left: 18%;
+}
+#ra-subl-btn {
+    position: absolute;
+    top: 71%;
+    left: 18%;
+    color: white;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px white solid;
+    width: 150px;
+    text-align: center;
+}
+
+#subl-mobile {
+		display: none;
+	}
+	
+.help-section {
+	width: 100%;
+    margin: 20px auto;
+    background-image: url(https://s7d4.scene7.com/is/image/OnlineSportswear/Russell-page-splash2?&fmt=png-alpha);
+    background-size: 35%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding: 50px 0 20px 0;
+}
+.help-section h3 {
+	text-align: center;
+	color: rgb(202,53,56);
+	margin: 10px auto;
+	text-transform: uppercase;
+	font-size: 25px;
+}
+.help-icons {
+	width: 1000px;
+	max-width: 100%;
+	margin: 30px auto 0 auto;
+}
+.icon-wrapper {
+	width: 22%;
+    margin: 10px;
+    vertical-align: top;
+    display: inline-block;
+    color: rgb(37,63,140);
+}
+.icon-wrapper:hover {
+	color:black;
+}
+.icon-wrapper img {
+	width: 100px;
+	height: auto;
+	margin: auto;
+	display: block;
+}
+.icon-wrapper p {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "AvenirNextB";
+	font-size: 16px;
+	line-height: 1.2;
+}
+#catalog-hover, #sizes-hover, #faq-hover, #decor-hover {
+	display:none;
+}
+#catalog:hover #catalog-hover {
+	display:block;
+}
+#catalog:hover #catalog-icon {
+	display: none;
+}
+
+#sizes:hover #sizes-hover {
+	display:block;
+}
+#sizes:hover #sizes-icon {
+	display: none;
+}
+
+#faqicon:hover #faq-hover {
+	display:block;
+}
+#faqicon:hover #faq-icon {
+	display: none;
+}
+
+#decor:hover #decor-hover {
+	display:block;
+}
+#decor:hover #decor-icon {
+	display: none;
+}
+
+.faq-section {
+	font-family: "AvenirNextN";
+	margin: 20px auto 0 auto;
+	width: 100%;
+	color: white;
+	background-color: rgb(202,53,56);
+	padding: 25px 0 50px 0;
+	background-image: url(https://s7d4.scene7.com/is/image/OnlineSportswear/Russell-page-splash1?&fmt=png-alpha);
+	background-size: 45%;
+    background-position: right 93%;
+    background-repeat: no-repeat;
+}
+.faq-wrapper {
+	padding: 0 50px;
+}
+.faq-section h2 {
+	text-transform: uppercase;
+	margin: 20px 0;
+	font-family: "AvenirNextB";
+	font-size: 22px;
+}
+.ra-faq {
+	width: 46%;
+    display: inline-block;
+    margin: 15px 30px 15px 0;
+    vertical-align: text-top;
+}
+#q-header {
+	font-family: "AvenirNextB";
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.press-release {
+	font-size: 13px;
+	text-align: center;
+	margin: 30px auto;
+	width: fit-content;
+	color: white;
+	text-transform: uppercase;
+	border: 1px solid white;
+	padding: 16px;
+	font-family: "AvenirNextB";
+}
+#pressrelease {
+	color:white;
+	font-size: 13px;
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-family: "AvenirNextB";
+}
+.press-release p {
+	font-size: 11px;
+	font-family: "AvenirNextN";
+}
+
+@media screen and (max-width:950px) {
+
+	.faq-wrapper {
+		padding: 0 10px;
+	}
+	.ra-faq {
+		margin: 15px 10px 15px 0;
+	}
+	#blitz-logo {
+		left: 4%;
+	}
+	#subl-text {
+		font-size: 20px;
+		left: 17%;
+	}
+	#ra-subl-btn {
+		left: 17%;
+		top: 72%;
+	}
+}
+@media screen and (max-width:768px) {
+	#header-main {
+		display: none;
+	}
+	#header-mobile {
+		display: block;
+	}
+	#header-logo {
+		width: 80%;
+    	left: 9%;
+    	top: 32%;
+	}
+	#header-btn {
+    	top: 51%;
+    	left: 37%;
+}
+	
+	.russell-header h2 {
+		width: 80%;
+		margin: auto;
+	}
+	
+	.category-block {
+		width: 100%;
+	}
+	.basics-block img {
+		position: relative;
+		left: -36%;
+	}
+	.basics-text {
+	    left: 62%;
+   		 top: 18%;
+	}
+	.baseball-text {
+		top: 11%;
+	}
+	.baseball-text h2 {
+		width: 30%;
+	}
+	.basketball-text {
+		top: 35%;
+	}
+	
+	#subl-bkg-img {
+		display: none;
+	}
+	#subl-mobile {
+		display: block;
+		width: 100%;
+	}
+	#blitz-logo {
+		top: 63%;
+    	left: 0%;
+    	width: 96%;
+	}
+	#subl-text {
+		 top: 83%;
+   	 	font-size: 24px;
+    	left: 33%;
+	}
+	#ra-subl-btn {
+		top: 91%;
+    	left: 35%;
+	}
+
+	.help-section {
+		background-size: 55%;
+	}
+	.help-section h3 {
+		padding-top: 75px;
+		font-size: 30px;
+	}
+	.help-icons {
+		width: 75%;
+	}
+	.icon-wrapper {
+		width: 40%;
+	}
+	.icon-wrapper img {
+	 	width: 100%;
+	 }
+	 .faq-wrapper {
+	 	width: 55%;
+	 	margin: auto;
+	 }
+	 .ra-faq {
+	 	width: 100%;
+	 }
+}
+@media screen and (max-width:660px) {
+	#header-logo {
+    width: 90%;
+    left: 3%;
+	}
+	#header-btn {
+    	top: 54%;
+    	left: 32%;
+	}
+}
+@media screen and (max-width:600px) {
+	.russell-header {
+		font-size: 25px;
+	}
+		#blitz-logo {
+		top: 60%;
+	}
+	#subl-text {
+		top: 81%;
+	}
+	#ra-subl-btn {
+
+	}
+}
+@media screen and (max-width:450px) {
+	#header-btn {
+    top: 54%;
+    left: 0;
+    margin: 0 33%;
+    width: 100px;
+    font-size: 14px;
+	}
+	
+	#blitz-logo {
+		top: 55%;
+	}
+	#subl-text {
+		font-size: 18px;
+		left: 31%;
+		top: 75%;
+	}
+	#ra-subl-btn {
+		left: 29%;
+		top: 86%;
+		padding: 5px 0;
+	}
+	
+	.help-section {
+		background-size:100%;
+	}
+	.help-section h3 {
+		font-size: 25px;
+	}
+	.faq-wrapper {
+		width: 90%;
+	}
+	.faq-section {
+		background-size:80%;
+	}
+	.press-release {
+		width: 75%;
+		border: none;
+	}
+	
+}
+</style>
+
+
+<div class="banner-wrapper">
+
+	<img id="header-main" src="https://s7d4.scene7.com/is/image/OnlineSportswear/RussellAthleticPage_header_desktop?wid=1920">
+	<img id="header-logo" src="https://s7d4.scene7.com/is/image/OnlineSportswear/RussellAthleticPage_header_text?$PNG-ALPHA-600$&wid=1200">
+	<a id="header-btn" href="/SearchDisplayView?searchTerm=russell+football&tag=russell-football-email-april-2019">SHOP HERE</a>
+	
+	<img id="header-mobile" src="https://s7d4.scene7.com/is/image/OnlineSportswear/RussellAthleticPage_header_mobile?wid=768">
+</div>
+
+<div class="russell-header">
+<h2>WELCOME TO OUR LINE-UP, RUSSELL ATHLETIC<span style="font-size:25px;vertical-align:top;">®</span>!</h2>
+</div>
+
+<div class="category-section">
+ 
+ <div class="category-wrapper">
+	<div class="category-block basics-block">
+	  <div class="category-text basics-text">
+	   <h2>basics that are anything but</h2>
+	   <a class="category-btn-wht" href="/SearchDisplayView?searchTerm=Russell+basics&tag=russell-athletic-basics&promo_name=ra-page-april&promo_id=category_block_basics&promo_creative=guy_green_shirt&promo_position=top_left">
+	    shop here
+	   </a>
+	     </div>
+	   <img src="https://s7d4.scene7.com/is/image/OnlineSportswear/RussellAthleticPage_Basics_desktop?wid=514">
+	</div>
+	
+	<div class="category-block baseball-block">
+	  <div class="category-text baseball-text">
+	   <h2>baseball & softball uniforms</h2>
+	   <a class="category-btn-wht" id="baseball-btn" href="/SearchDisplayView?searchTerm=Russell+baseball&tag=russell-athletic-baseball-softball&promo_name=ra-page-april&promo_id=category_block_base&promo_creative=pitching_guy&promo_position=top_right">
+	   shop here
+	   </a>
+	  </div>
+	  <img src="https://s7d4.scene7.com/is/image/OnlineSportswear/RussellAthleticPage_Baseball_desktop?wid=514">
+	</div>
+</div>
+	
+ <div class="category-wrapper">
+	<div class="category-block football-block">
+	  <div class="category-text football-text">
+	   <h2>football uniforms</h2>
+	   <a class="category-btn-wht" href="/SearchDisplayView?searchTerm=Russell+football&tag=russell-athletic-football&promo_name=ra-page-april&promo_id=category_block_football&promo_creative=green_dust&promo_position=bot_left">
+	    shop here
+	   </a>
+	  </div>
+	  <img src="https://s7d4.scene7.com/is/image/OnlineSportswear/RussellAthleticPage_Football_desktop?wid=514">
+	</div>
+	
+	<div class="category-block basketball-block">
+	  <div class="category-text basketball-text">
+	   <h2>basketball uniforms</h2>
+	   <a class="category-btn-wht" href="/SearchDisplayView?searchTerm=Russell+basketball&tag=russell-athletic-basketball&promo_name=ra-page-april&promo_id=category_block_basket&promo_creative=blue_uni_guy&promo_position=bot_right">
+	    shop here
+	   </a>
+	  </div>
+	  <img src="https://s7d4.scene7.com/is/image/OnlineSportswear/RussellAthleticPage_Basketball_desktop?wid=514">
+	</div>
+ </div>
+ 
+</div>
+
+<div class="sublimation-section">
+	<img id="subl-bkg-img" src="https://s7d4.scene7.com/is/image/OnlineSportswear/RussellAthleticPage_Blitz_desktop?wid=1920">
+
+
+	<img id="blitz-logo" src="https://s7d4.scene7.com/is/image/OnlineSportswear/RussellAthleticPage%5Fblitz%5Ftext?$PNG%2DALPHA%2D600$&wid=900">
+	
+	<p id="subl-text">SELECT COLORS <BR>& DECORATION </p>
+	
+	<a id="ra-subl-btn" href="/russellsublimation?promo_name=ra-page-april&promo_id=ra-subl-blitz&promo_creative=blitz-silver-blue&promo_position=subl-banner">START HERE</a>
+
+
+	<img id="subl-mobile" src="https://s7d4.scene7.com/is/image/OnlineSportswear/RussellAthleticPage_Blitz_mobile?wid=768">
+</div>
+
+<div class="help-section">
+	<h3>how can we help?</h3>
+	
+	<div class="help-icons">
+		
+	  <div class="icon-wrapper" id="catalog">
+		<a href="catalogs">
+		<img id="catalog-icon" src="https://s7d4.scene7.com/is/image/OnlineSportswear/icons_blue_download?&fmt=png-alpha">
+		<img id="catalog-hover" src="https://s7d4.scene7.com/is/image/OnlineSportswear/icons_download?&fmt=png-alpha">
+		<p>catalog<br>download</p>
+		</a>
+	  </div>
+	  
+	  <div class="icon-wrapper" id="sizes">
+		<a href="sizes-and-fits">
+		<img id="sizes-hover" src="https://s7d4.scene7.com/is/image/OnlineSportswear/icons_sizes_fits?&fmt=png-alpha">
+		<img id="sizes-icon" src="https://s7d4.scene7.com/is/image/OnlineSportswear/icons_blue_sizes_fits?&fmt=png-alpha">
+		<p>size<br>chart</p>
+		</a>
+	  </div>
+	  
+	  <div class="icon-wrapper" id="faqicon">
+		<a href="/faq">
+		<img id="faq-hover" src="https://s7d4.scene7.com/is/image/OnlineSportswear/icons_FAQs?&fmt=png-alpha">
+		<img id="faq-icon" src="https://s7d4.scene7.com/is/image/OnlineSportswear/icons_blue_FAQs?&fmt=png-alpha">
+		<p>FAQs</p>
+		</a>
+	  </div>
+	  
+	  <div class="icon-wrapper" id="decor">
+		<a href="/decoration">
+		<img id="decor-hover" src="https://s7d4.scene7.com/is/image/OnlineSportswear/icons_screenprint?&fmt=png-alpha">
+		<img id="decor-icon" src="https://s7d4.scene7.com/is/image/OnlineSportswear/icons_blue_screenprint?&fmt=png-alpha">
+		<p>russell<br>decoration</p>
+		</a>
+	  </div>
+		
+	</div>
+</div>
+
+<div class="faq-section">
+  <div class="faq-wrapper">
+  <h2>FAQs</h2>
+  
+   <div class="ra-faq">
+	<h3 id="q-header">Q: Why did Russell Athletic and Augusta Sportswear partner together?</h3>
+<p>A: Russell has an outstanding track record for high quality uniforms and has built a sterling reputation as a top supplier in the team uniform space.  Augusta Sportswear will put its industry leading service model behind the Russell brand to deliver an unmatched offering to the industry.</p> 
+	</div>
+	
+   <div class="ra-faq">	
+	<h3 id="q-header">Q: What Russell product categories and uniforms will be offered?</h3>
+<p>A:	Augusta Sportswear Brands offers Russell Athletic product in stock for  basketball, baseball, softball and basics categories. In addition, sublimation athletic uniforms are also offered for the above mentioned categories that can be customized for your team.  In early 2019, we will be offering uniforms for the football category. </p>
+  </div>
+
+  <div class="ra-faq">
+<h3 id="q-header">Q: Can I order Russell items on the same order as Augusta, Holloway, and High Five product?</h3>
+<p>A:	Yes, you can order all brands together. Russell Athletic product is eligible for the Augusta Sportswear freight programs including Fair & Simple with free freight starting at $200. Russell Athletic items will be on a separate shipment and invoice.</p>
+  </div>
+
+  <div class="ra-faq">
+<h3 id="q-header">Q: Who do I contact to learn more about the partnership and ordering?</h3>
+<p>A:	Orders can be placed through Augusta Sportswear’s sales representatives, online at augustasportswear.com, or by calling the Augusta Sportswear Customer Care Team at 1-800-237-6695. For inquires please email <a href="mailto:sales@augustasportswear.com" style="text-decoration:underline;">sales@augustasportswear.com</a>.
+</p>
+  </div>
+  
+  <div class="ra-faq">
+<h3 id="q-header">Q: Will Russell Athletic stock items ship same day?</h3>
+<p>A:	Yes, any in stock basics and uniforms will ship same day from our OH warehouse for orders placed prior to 5:30pm EST.
+</p>
+  </div>
+
+  <div class="ra-faq">
+<h3 id="q-header">Q: Who do I contact if I have a question about a Russell item purchased before August 1, 2018?</h3> 
+<p>A:	You can contact Russell directly on any previous order placed through them if you are a current customer.   You can email them at <a href="mailto:orderentryRA@fotlinc.com" style="text-decoration:underline;">orderentryRA@fotlinc.com</a> or call customer care at 1-888-606-5520.
+	</p>
+  </div>
+</div>
+
+<div class="press-release">
+To view the press release <a id="pressrelease" href="http://news.augustasportswear.com/russellpartnership/" target="blank">click here</a>.
+
+<p>For more information or questions email us at <a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a></p>
+</div>
+
+</div>

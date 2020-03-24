@@ -1,0 +1,290 @@
+<!-- Popup code -->
+<style>
+#playbutton {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: transparent;
+    border: 3px solid white;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+#playarrow {
+ 	width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 20px solid white;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 15px 0 0 7px;
+}
+#playbutton:hover {
+	background: white;
+	transition: .1s;
+}
+#playbutton:hover #playarrow {
+	border-left: 20px solid black;
+	transition: .1s;
+}
+
+.video-popup {
+	display: none;
+	 z-index: 999;
+}
+.vidoverlay {
+ 	width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.66);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.video-container iframe {
+    width: 600px;
+    height: 400px;
+    background: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden
+}
+.video-container span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    cursor: pointer;
+}
+#baseball-video-m {
+	display: none;
+}
+
+
+/* 3 Blocks */
+.three-blocks {
+	padding: 45px 0;
+}
+.three-blocks h2 {
+	margin: 10px 30px;
+	color: black;
+	font-size: 30px;
+	text-align: left;
+}
+.three-block-wrapper {
+	box-sizing: border-box;
+	position: relative;
+    bottom: 0;
+    margin: 0 20px;
+    display: flex;
+    z-index: 2000;
+}
+
+.three-block-image {
+    float: left;
+    width: 32%;
+    position: relative;
+    left: 0%;
+    padding: 10px;
+}
+
+.three-block-image img, .three-block-image-m img {
+    width: 100%;
+    height: auto;
+}
+.three-block-mobile {
+	display: none;
+}
+.three-block-image-m {
+	margin-bottom: -8px;
+}
+
+.three-block-text {
+  margin: 5px auto;
+}
+.three-block-link {
+	padding: 10px 0;
+	color: rgb(12,79,160);
+	text-transform: uppercase;
+}
+.three-block-link:hover {
+	text-decoration: underline;
+}
+.shop-arrow-blue {
+ width: 0; 
+  height: 0; 
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid rgb(12,79,160);
+  display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-left: 10px;
+}
+
+.three-block-text h3 {
+	color: black;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.mid-block-text h3, .right-block-text h3 {
+	font-family: "AvenirNextN";
+}
+
+
+
+
+/* ipad landscape parallax fix */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+	.ph-ship-wrapper {
+		background-attachment: scroll;
+		background-size: 100%;
+	}
+}
+</style>
+
+<div class="video-popup">
+  <div class="vidoverlay"></div>
+  <div class="video-container">
+    <span>X</span>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/3LnFARFWkxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+<script>
+//Open video
+$(function () {
+    "use strict";
+    
+    $("#playbutton").click(function () {
+        $(".video-popup").fadeIn();
+    });
+    
+    $("span, .vidoverlay").click(function () {
+        $(".video-popup").fadeOut();
+    });
+    
+});
+
+// Using Anchor tags
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 600, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
+</script>
+
+
+<!-- Play button in circle -->
+<div class="hero3-text">
+		<p>watch full video</p>
+		<a id="playbutton"><span id="playarrow"></span></a>
+	</div>
+	
+
+
+<!-- 3 blocks with scaling -->	
+<div class="three-blocks">
+
+<h2 id="new-for-you">NEW FOR YOU</h2>
+
+<div class="three-block-wrapper">
+
+<div class="three-block-image hideme3" id="left-block">
+
+ 	<img id="three-block-left"  src="https://s7d4.scene7.com/is/image/OnlineSportswear/August%5FHomepage%5FNewforYou%5F1?$BLOG%2DIMGS%2D620$&wid=650">
+ 	 	<div class="three-block-text left-block-text">
+ 	 	<h3>FINISHED GARMENT<br>SUBLIMATION</h3>
+ 		 	
+	<a class="three-block-link" href="/finished-garment?promo_name=aug_hp&promo_id=finished-garment&promo_creative=pink-tee&promo_position=three-block-left">
+ 		START DESIGNING HERE  <span class="shop-arrow-blue"></span>
+	</a> 	
+ 	 	
+	</div> 	
+
+</div>
+
+<div class="three-block-image hideme3" id="mid-block">
+ 	 	
+ 	<img id="three-block-mid" src="https://s7d4.scene7.com/is/image/OnlineSportswear/August%5FHomepage%5FNewforYou%5F2?$BLOG%2DIMGS%2D620$&wid=650">
+
+ 	<div class="three-block-text mid-block-text">
+ 	<h3><b>FULL ON FLEECE</b><br>
+ 	  with the most Inventory, styles & colors
+ 	</h3>
+ 	
+ 	<a class="three-block-link" href="/SearchDisplayView?tag=full-on-fleece-all">
+ 	SHOP ALL FLEECE  <span class="shop-arrow-blue"></span>
+	</a>
+	</div>
+</div>
+
+<div class="three-block-image hideme3" id="right-block">
+ 	<img id="three-block-right"  src="https://s7d4.scene7.com/is/image/OnlineSportswear/August%5FHomepage%5FNewforYou%5F3?$BLOG%2DIMGS%2D620$&wid=650">
+ 	
+ 	<div class="three-block-text right-block-text">
+ 	<h3><b>RUSSELL ATHLETIC®</b><br>
+ 		Hybrid Polo </h3>
+ 	
+ 	<a class="three-block-link" href="/russell-hybrid-polo-400psm">
+ 	SHOP HERE  <span class="shop-arrow-blue"></span>
+	</a>
+	</div>
+</div>
+
+</div>
+</div>
+
+
+
+<script>
+$(window).scroll(function(){
+   if ($(window).scrollTop() >= 100 && $(window).width() >= 769) {
+       $('.header-container').addClass('stickyheader');   
+      $('.icon-container').addClass('icon-container-sticky')
+    }
+   else {
+      $('.header-container').removeClass('stickyheader');
+      $('.icon-container').removeClass('icon-container-sticky')
+  }
+ });
+
+</script>
+

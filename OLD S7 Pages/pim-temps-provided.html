@@ -1,0 +1,260 @@
+<!-- Main body -->
+<html>
+    
+    <head>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone.js"></script>
+                           <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400" /> 
+             <style>
+            html {
+              background-color: #f3f3f3;
+              height: 1122px; /* to fit portrait A4 format */
+            }
+           
+            body {
+                                                     font-family: Ubuntu,sans-serif;
+                color: #333;
+                font-size: 16px;
+                margin: 0;
+            }
+ 
+            #top-area {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                height: 60px;
+                background: #414045;
+            }
+ 
+            h1 {
+                color: #666;
+                margin-left: 40px;
+            }
+ 
+            h2 {
+                margin-top: 0;
+                color: #999;
+            }
+ 
+            .flat-ul {
+                list-style-type: none;
+                margin: 90px 0 0 25px;
+                padding: 0;
+            }
+ 
+            .flat-ul li {
+                float: left;
+                display: inline-block;
+                margin: 5px;
+                padding: 30px;
+                background: #fff;
+                border-radius: 10px;
+                width: 300px;
+                height: 400px;
+            }
+        </style>
+       
+        <!-- This is the HTML for the page -->
+        <script type="text/template" id="page-template">
+            <div class="page-wrap">
+                <div id="top-area">
+
+                </div>               
+                <ul id="items-list" class="flat-ul">
+               
+                </ul>
+            </div>
+        </script>
+ 
+        <!-- HTML for each item -->
+        <script type="text/template" id="item-template">
+            <li class="item-wrap">
+                <div style="width: 300px; height: 300px;">
+            <img style=" max-width: 100%; max-height: 100%;" src="/cs/api<%= displayPicture%>">
+                </div>
+                <h2><%= displayName%></h2>
+                <div style="height: 20px; overflow: hidden; margin-top: 20px; color: #999;"><%= fields.productDescription%></div>
+            </li>
+        </script>
+       
+        <!-- Main script, create HTML using underscore.js -->
+        <script type="text/javascript">
+            var init = function () {
+                // Create templates
+                var pageTemplate = _.template($("#page-template").html());
+                var itemTemplate = _.template($("#item-template").html());
+               
+                // Render page template
+                var pageEl = $(pageTemplate());               
+    
+                // Render item templates
+                for(var i = 0; i < data.length; i++) {
+                    pageEl.find("ul").append(itemTemplate(data[i]));
+                }
+ 
+                // Put page in the DOM
+                $("#page-container").append(pageEl);
+            };
+        </script>      
+    </head>
+  
+  
+    <body>
+        <div id="page-container">
+ 
+        </div>
+ 
+        <script type="text/javascript">
+            $(document).ready(function () {
+                init();
+            });
+        </script>
+    </body>
+    
+    
+</html>
+ 
+ 
+ <!-- header text -->
+<html>
+   
+    <head>
+<!-- http://www.valuecityfurniture.com/blog/wp-content/uploads/conner2.jpeg -->
+             <style>
+            html { 
+                background: url(http://www.siwallpaperhd.com/wp-content/uploads/2015/08/digital_background_wallpaper-724x453.jpg) no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                height: 1122px; /* to fit portrait A4 format */
+            }
+         
+                                        #top-area {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                height: 80px;
+                background: #fff;
+            }
+ 
+            body {
+                          margin: 0;
+                text-color: #fff;
+                font-family: "Arial";
+            }
+ 
+            h1 {
+                position: absolute;
+                right: 30px;
+                top: 80px;
+                font-size: 60px;
+               color: #333;
+                font-family: "Arvo", Georgia, serif;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="top-area">
+                                        <img src="https://www.inriver.com/globalassets/images/logotypes-inriver/inriver-web-2016-logotype-fallback.png" style="max-height: 60px; margin-left: 35px; margin-top: 10px;">
+             </div>
+        <h1>Digital Assets</h1>
+    </body>
+    
+</html>
+ 
+ 
+<!-- header logo --> 
+<html>
+    <head>
+        <style>
+            html { 
+                background: url(http://sofadesignidea.com/wp-content/uploads/2016/02/modern-furniture-2013-pdf.Sofas_and_Sectionals_Catalog_pg122.jpg) no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                height: 1122px; /* to fit portrait A4 format */
+            }
+         
+                                        #top-area {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                height: 60px;
+                background: #414045;
+            }
+ 
+            body {
+                          margin: 0;
+                text-color: #fff;
+                font-family: "Arial";
+            }
+ 
+            h1 {
+                position: absolute;
+                right: 30px;
+                top: 30px;
+                font-size: 60px;
+                color: #333;
+                font-family: "Arvo", Georgia, serif;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="top-area">
+                                        <img src="http://za.sofacompany.com/image/data/common/logo/white/logo-300.png" style="max-height: 60px; margin-left: 35px; margin-top: 10px;">
+             </div>
+
+    </body>
+    
+</html>
+ 
+ 
+<!-- 
+<html>
+    <head>
+        <style>
+            html { 
+                background: url(https://dl.dropboxusercontent.com/u/2083904/backcover.png) no-repeat center center fixed;
+                
+                  -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                height: 1122px; /* to fit portrait A4 format */
+            }
+         
+                                        #top-area {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                height: 60px;
+                background: #414045;
+            }
+ 
+            body {
+                          margin: 0;
+                text-color: #fff;
+                font-family: "Arial";
+            }
+ 
+            h1 {
+                position: absolute;
+                right: 30px;
+                bottom: 30px;
+                font-size: 60px;
+                color: #666;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="top-area">
+                                        <img src="http://za.sofacompany.com/image/data/common/logo/white/logo-300.png" style="max-height: 60px; margin-left: 35px; margin-top: 10px;">
+             </div>
+    </body>
+</html>
+-->

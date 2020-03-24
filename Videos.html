@@ -1,0 +1,857 @@
+<!-- Videos -->
+<style>
+.video-header {
+	width: 100%;
+	max-width: 1024px;
+    text-transform: uppercase;
+    color: black;
+    display: -webkit-box;
+    border-bottom: 1px solid black;
+    margin: 10px auto 20px auto;
+    padding: 20px 0;
+}
+.header-left {
+	width: 40%;
+	height: auto;
+	margin-right: 30px;
+}
+.header-left p {
+	font-size: 16px;
+	width: 90%;
+}
+.header-right {
+	width: 57%;
+	height: auto;
+}
+.header-left img, .header-right img {
+	width: 100%;
+}
+.header-left img {
+	margin-bottom: 43px;
+}
+
+.feature-video {
+	display: flex;
+	width: 100%;
+	max-width: 1024px;
+	margin: 10px auto;
+	border-bottom: 1px solid black;
+	padding: 20px 0;
+		color: black;
+}
+.feature-video h2 {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.feature-text {
+	position: relative;
+    top: 75px;
+}
+#feat-vid {
+	margin-right: 20px;
+}
+#connected-by-team {
+	width: 45%;
+}
+#feat-embed-container {
+	margin: 5px auto 5px 20px;
+}
+
+.video-section {
+	width: 100%;
+	max-width: 1024px;
+	color: black;
+	padding: 20px 10px;
+	margin: auto;
+	border-bottom: 1px solid black;
+}
+.fabrics-tech {
+    margin: 10px auto 20px auto;
+}
+.video-section h2 {
+	font-size: 16px;
+	text-transform: uppercase;
+	margin: 10px 0;
+}
+
+
+.video-container {
+	width: 24%;
+	display: inline-block;
+	vertical-align: text-top;
+	margin-bottom: 25px;
+	position: relative;
+}
+
+.video-container > iframe {
+	width: 100%;
+	height: 150px;
+}
+.thumboverlay {
+	width: 100%;
+	height: 150px;
+	position: absolute;
+}
+
+.video-text {
+	width: 90%;
+}
+.video-text h2 {
+	font-size: 12px;
+	font-family: "AvenirNextB";
+	margin-bottom: 5px;
+}
+.copy-embed-container {
+    margin: 5px auto;
+    width: 100%;
+}
+.copy-embed {
+	color: #50a4d9;
+	border: none;
+	margin: 10px 0 5px 0;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+.copy-embed:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.embed-code {
+	/*width: 530px;
+	min-height: 46px;
+	font-size: 13px;
+	background-color: lightgray;
+	color: black;
+	resize: none;
+	padding: 5px;
+	text-align: center;
+	vertical-align: middle;
+	margin-bottom: 5px; */
+	display:none;
+}
+
+.video-popup {
+    z-index: 999;
+    display: none;
+}
+.video-popup .vidoverlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.66);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.video-popup .vid-show {
+    width: 600px;
+    height: 350px;
+    background: black;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden
+}
+.vid-show span{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    cursor: pointer;
+}
+.vid-show iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 1023px) {
+.video-header, .feature-video {
+		width: 97%;
+	}
+.video-container {
+	width: 48%;
+}
+.video-container > iframe, .thumboverlay {
+	width: 100%;
+	min-height: 247px;
+}
+ }
+ 
+@media screen and (max-width: 768px) {
+.video-container {
+	width: 70%;
+    margin: 0 auto 15px auto;
+    display: block;
+	}
+	.video-container > iframe {
+	width: 100%;
+	height: auto;
+}
+.video-section {
+	padding: 0;
+}
+ }
+ @media screen and (max-width: 550px) {
+.header-left {
+	width: 75%;
+	margin: auto;
+}
+.header-right {
+	display: none;
+}
+.feature-video {
+	display: block;
+}
+#brandnewday {
+	width: 90%;
+    margin: auto;
+    display: block;
+}
+.feature-text {
+	top: 0;
+	margin-top: 10px;
+	text-align: center;
+}
+.video-container {
+	width: 85%;
+    margin: auto;
+    display: block;
+	}
+	.video-container > iframe {
+	width: 100%;
+}
+ }
+ 
+</style>
+
+<div class="video-header">
+  <div class="header-left">
+	<img id="headerimage-1" src="https://static.augustasportswear.com/marketing/ASB-VIDEOpage-Header1.png">
+	<p>UTILIZE OUR VIDEOS ON YOUR OWN WEBSITE OR SOCIAL MEDIA.</p>
+  </div>
+  <div class="header-right">
+	<img id="headerimage-2" src="https://static.augustasportswear.com/marketing/ASB-VIDEO-HeaderImage.jpg">
+  </div>
+	
+</div>
+
+<!-- <div class="feature-video">
+
+    <iframe id="feat-vid" width="560" height="315" src="https://www.youtube.com/embed/K2jsRG8WfMM?rel=0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+   <div class="feature-text">
+     <h2>WE'RE ALL CONNECTED, CONNECTED BY TEAM</h2>
+   	
+   	<div class="copy-embed-container" id="feat-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(embedinputfeat)">Copy Share Link</div>
+    <textarea class="embed-code" id="embedinputfeat" type="text" readonly wrap="soft">https://youtu.be/K2jsRG8WfMM</textarea>
+     
+     <div class="copy-embed" onclick="copyEmbed(embedinputfeate)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedinputfeate" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://youtu.be/embed/K2jsRG8WfMM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+   </div>
+  </div> -->
+  
+
+<div class="video-section freestyle-vids">
+   <h2>FreeStyle Sublimation</h2>
+   
+	<!-- Promo Video -->
+ <div class="video-container">
+	<div class="thumboverlay">
+    </div>
+    <iframe id="videocode" width="560" height="315" src="https://www.youtube.com/embed/QvI0zIDY9Ps?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>FreeStyle Sublimation | The Next Generation Design Experience</h2>
+    
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(sharefspromo)">Copy Share Link</div>
+     <textarea class="embed-code" id="sharefspromo" type="text" readonly wrap="soft">https://youtu.be/QvI0zIDY9Ps</textarea>
+     
+    <div class="copy-embed" onclick="copyEmbed(embedfspromo)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedfspromo" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/QvI0zIDY9Ps?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div>
+
+	<!-- Tutorial -->
+ <div class="video-container">
+	<div class="thumboverlay">
+    </div>
+    <iframe id="videocode" width="560" height="315" src="https://www.youtube.com/embed/TtCY2vaDqFo?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>FreeStyle Sublimation | Full Length Tutorial</h2>
+    
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(sharefulltut)">Copy Share Link</div>
+     <textarea class="embed-code" id="sharefulltut" type="text" readonly wrap="soft">https://youtu.be/TtCY2vaDqFo</textarea>
+     
+    <div class="copy-embed" onclick="copyEmbed(embedfulltut)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedfulltut" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/TtCY2vaDqFo?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div>
+
+
+	<!-- Tutorial - Mobile -->
+ <div class="video-container">
+
+	<div class="thumboverlay">
+    </div>
+    <iframe id="videocode" width="560" height="315" src="https://www.youtube.com/embed/e0uXwljO3xQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    
+    
+    <div class="video-text">
+    <h2>FreeStyle Sublimation | Mobile, Save & Share Tutorial</h2>
+    
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(copymobiletut)">Copy Share Link</div>
+     <textarea class="embed-code" id="copymobiletut" type="text" readonly wrap="soft">https://youtu.be/e0uXwljO3xQ</textarea>
+     
+    <div class="copy-embed" onclick="copyEmbed(embedmobiletut)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedmobiletut" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/e0uXwljO3xQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div>
+
+
+	<!-- PPD Video -->
+ <div class="video-container">
+
+	<div class="thumboverlay">
+    </div>
+
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/aqIStdKAMps?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    
+    
+    <div class="video-text">
+    <h2>FreeStyle Sublimation | Small Business, Corporate & Events</h2>
+    
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(copyppdfs)">Copy Share Link</div>
+     <textarea class="embed-code" id="copyppdfs" type="text" readonly wrap="soft">https://youtu.be/aqIStdKAMps</textarea>
+     
+    <div class="copy-embed" onclick="copyEmbed(embedppdfs)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedppdfs" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/aqIStdKAMps?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div>
+
+</div>
+
+  
+<div class="video-section whats-new">
+   <h2>What's New</h2>
+
+     <!-- Full on Fleece -->
+ <div class="video-container">
+    <div class="thumboverlay">
+    </div>
+    <iframe id="connected-team" width="560" height="315" src="https://www.youtube.com/embed/FBD1iipFVgc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>Full On Fleece</h2>
+   
+    <!-- Copy Code -->
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(embedinputfof)">Copy Share Link</div>
+     <textarea class="embed-code" id="embedinputldsfof" type="text" readonly wrap="soft">https://youtu.be/FBD1iipFVgc</textarea>
+     <!-- Embed Code -->
+     
+    <div class="copy-embed" onclick="copyEmbed(embedinputfof2)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedinputlfof2" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/FBD1iipFVgc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div>
+
+     <!-- Ladies Collection -->
+ <div class="video-container">
+    <div class="thumboverlay">
+    </div>
+    <iframe id="connected-team" width="560" height="315" src="https://www.youtube.com/embed/ieUmsn4UpLU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>Ladies Collection</h2>
+   
+    <!-- Copy Code -->
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(embedinputldscat1)">Copy Share Link</div>
+     <textarea class="embed-code" id="embedinputldscat1" type="text" readonly wrap="soft">https://youtu.be/ieUmsn4UpLU</textarea>
+     <!-- Embed Code -->
+     
+    <div class="copy-embed" onclick="copyEmbed(embedinputldscat2)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedinputldscat2" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/ieUmsn4UpLU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div>
+ 
+     <!--2019 New Products-->
+ <div class="video-container">
+    <div class="thumboverlay">
+    </div>
+    <iframe id="base-play-ball" width="560" height="315" src="https://www.youtube.com/embed/6GooQd6T9so?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>May 2019 New Products</h2>
+    
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(embedinputnewmay)">Copy Share Link</div>
+     <textarea class="embed-code" id="embedinputnewmay" type="text" readonly wrap="soft">https://youtu.be/6GooQd6T9so</textarea>
+     
+    <div class="copy-embed" onclick="copyEmbed(embedinputmaynew)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedinputmaynew" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/6GooQd6T9so?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div>
+
+     <!--Lifestyle Products-->
+ <div class="video-container">
+    <div class="thumboverlay">
+    </div>
+    <iframe id="base-play-ball" width="560" height="315" src="https://www.youtube.com/embed/krpniDEAKT4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>2019 New Products - Lifestyle</h2>
+    
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(embedinputlifestyle)">Copy Share Link</div>
+     <textarea class="embed-code" id="embedinputlifestyle" type="text" readonly wrap="soft">https://youtu.be/krpniDEAKT4</textarea>
+     
+    <div class="copy-embed" onclick="copyEmbed(embedinputlifestyle1)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedinputlifestyle1" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/krpniDEAKT4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div>
+
+     <!-- Sports Products-->
+ <div class="video-container">
+    <div class="thumboverlay">
+    </div>
+    <iframe id="base-play-ball" width="560" height="315" src="https://www.youtube.com/embed/_8wEuyAx670?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>2019 New Products - Sports</h2>
+    
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(embedinputnewsports)">Copy Share Link</div>
+     <textarea class="embed-code" id="embedinputnewsports" type="text" readonly wrap="soft">https://youtu.be/_8wEuyAx670</textarea>
+     
+    <div class="copy-embed" onclick="copyEmbed(embedinputsportsnew)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedinputsportsnew" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/_8wEuyAx670?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div>
+
+
+
+	<!-- Custom Sub - Basketball
+ <div class="video-container">
+	<div class="thumboverlay">
+    </div>
+    <iframe id="videocode" width="560" height="315" src="https://www.youtube.com/embed/K4qvX6g6yqM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>Holloway | Experience Custom Sublimation</h2>
+    
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(embedinput10)">Copy Share Link</div>
+     <textarea class="embed-code" id="embedinput10" type="text" readonly wrap="soft">https://youtu.be/K4qvX6g6yqM</textarea>
+     
+    <div class="copy-embed" onclick="copyEmbed(embedinputj)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedinputj" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/K4qvX6g6yqM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div>
+
+	Custom Sub - Volleyball 30 
+ <div class="video-container">
+	<div class="thumboverlay">
+    </div>
+    <iframe id="videocode" width="560" height="315" src="https://www.youtube.com/embed/CufKSwxIDcI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>High Five Volleyball | Get Match Ready :30</h2>
+    
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(embedinput11)">Copy Share Link</div>
+     <textarea class="embed-code" id="embedinput11" type="text" readonly wrap="soft">https://youtu.be/K4qvX6g6yqM</textarea>
+     
+    <div class="copy-embed" onclick="copyEmbed(embedinputk)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedinputk" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/CufKSwxIDcI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div> -->
+	<!-- Custom Sub - Volleyball 60 
+ <div class="video-container">
+	<div class="thumboverlay">
+    </div>
+    <iframe id="videocode" width="560" height="315" src="https://www.youtube.com/embed/Tfo80GRbuBc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>High Five Volleyball | Get Match Ready :60</h2>
+    
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(embedinput7)">Copy Share Link</div>
+     <textarea class="embed-code" id="embedinput7" type="text" readonly wrap="soft">https://youtu.be/Tfo80GRbuBc</textarea>
+     
+    <div class="copy-embed" onclick="copyEmbed(embedinputg)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedinputg" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Tfo80GRbuBc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div> -->
+   <!-- Custom Sub - Soccer
+ <div class="video-container">
+    <div class="thumboverlay">
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Sf45i9V9NDQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>High Five Soccer | Custom Sublimated Uniforms</h2>
+    
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(embedinput2)">Copy Share Link</div>
+     <textarea class="embed-code" id="embedinput2" type="text" readonly wrap="soft">https://youtu.be/Sf45i9V9NDQ</textarea>
+     
+    <div class="copy-embed" onclick="copyEmbed(embedinputb)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedinputb" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Sf45i9V9NDQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div> -->
+</div>
+
+
+<div class="video-section connected-team">
+   <h2>Connected By Team</h2>
+
+     <!-- Connected By Team -->
+ <div class="video-container">
+    <div class="thumboverlay">
+    </div>
+    <iframe id="connected-team" width="560" height="315" src="https://www.youtube.com/embed/K2jsRG8WfMM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>Connected By Team</h2>
+   
+    <!-- Copy Code -->
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(embedinputconnectedteam)">Copy Share Link</div>
+     <textarea class="embed-code" id="embedinputconnectedteam" type="text" readonly wrap="soft">https://youtu.be/K2jsRG8WfMM</textarea>
+     <!-- Embed Code -->
+     
+    <div class="copy-embed" onclick="copyEmbed(embedinputconnectteam)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedinputconnectteam" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/K2jsRG8WfMM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div>
+
+   <!-- Brand New Day -->
+ <div class="video-container">
+    <div class="thumboverlay">
+    </div>
+    <iframe id="brandnewday" width="560" height="315" src="https://www.youtube.com/embed/gcQUWNp-ycU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>It's a Brand New Day</h2>
+    
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(embedinput1)">Copy Share Link</div>
+     <textarea class="embed-code" id="embedinput1" type="text" readonly wrap="soft">https://youtu.be/gcQUWNp-ycU</textarea>
+     
+    <div class="copy-embed" onclick="copyEmbed(embedinputa)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedinputa" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/gcQUWNp-ycU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div>
+
+   <!-- Special Olympics -->
+ <div class="video-container">
+    <div class="thumboverlay">
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OtEUNK_ZYzg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>Special Olympics 2019</h2>
+    
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(embedinputoly)">Copy Share Link</div>
+     <textarea class="embed-code" id="embedinputoly" type="text" readonly wrap="soft">https://youtu.be/OtEUNK_ZYzg</textarea>
+     
+    <div class="copy-embed" onclick="copyEmbed(embedinputspec)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedinputspec" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/OtEUNK_ZYzg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div>
+
+	<!-- Scott Video -->
+ <div class="video-container">
+    <div class="thumboverlay">
+    </div>
+    <iframe id="videocode" width="560" height="315" src="https://www.youtube.com/embed/su93v-1IxSI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>Scott Winkler: Paralympian & Our Newest Brand...</h2>
+    
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(embedinput3)">Copy Share Link</div>
+     <textarea class="embed-code" id="embedinput3" type="text" readonly wrap="soft">https://youtu.be/su93v-1IxSI</textarea>
+     
+    <div class="copy-embed" onclick="copyEmbed(embedinputc)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedinputc" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/su93v-1IxSI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div>
+
+
+</div>
+
+
+<div class="video-section products">
+  <h2>On-Field & Off</h2>
+   
+   <!-- Style on Diamond -->
+ <div class="video-container">
+    <div class="thumboverlay">
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3LnFARFWkxQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>Your Style on the Diamond</h2>
+   
+    <!-- Copy Code -->
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(embedinputdiamond)">Copy Share Link</div>
+     <textarea class="embed-code" id="embedinputdiamond" type="text" readonly wrap="soft">https://youtu.be/3LnFARFWkxQ</textarea>
+     <!-- Embed Code -->
+     
+    <div class="copy-embed" onclick="copyEmbed(embedinputdiamonde)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedinputdiamonde" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/3LnFARFWkxQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div>
+   
+   <!-- Baseball Play Ball-->
+ <div class="video-container">
+    <div class="thumboverlay">
+    </div>
+    <iframe id="base-play-ball" width="560" height="315" src="https://www.youtube.com/embed/5VJQNV2NBVM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>Let's Play Ball.</h2>
+    
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(embedinput1b)">Copy Share Link</div>
+     <textarea class="embed-code" id="embedinput1b" type="text" readonly wrap="soft">https://youtu.be/5VJQNV2NBVM</textarea>
+     
+    <div class="copy-embed" onclick="copyEmbed(embedinputa1)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedinputa1" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/5VJQNV2NBVM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div>
+
+	<!-- Veer 1.0 -->
+ <div class="video-container">
+		<div class="thumboverlay">
+    </div>
+    <iframe  id="videocode" width="560" height="315" src="https://www.youtube.com/embed/scXP0kqM7gg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>Holloway | Introducing the Veer 1.0</h2>
+    
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(embedinput4)">Copy Share Link</div>
+     <textarea class="embed-code" id="embedinput4" type="text" readonly wrap="soft">https://youtu.be/scXP0kqM7gg</textarea>
+     
+    <div class="copy-embed" onclick="copyEmbed(embedinputd)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedinputd" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/scXP0kqM7gg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div>
+
+	<!-- Cutter Jersey -->
+ <div class="video-container">
+		<div class="thumboverlay">
+    </div>
+    <iframe id="videocode" width="560" height="315" src="https://www.youtube.com/embed/6l7rfng5hy0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>Augusta Sportswear | The Cutter Baseball Jersey</h2>
+    
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(embedinput5)">Copy Share Link</div>
+     <textarea class="embed-code" id="embedinput5" type="text" readonly wrap="soft">https://youtu.be/6l7rfng5hy0</textarea>
+     
+    <div class="copy-embed" onclick="copyEmbed(embedinpute)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedinpute" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/6l7rfng5hy0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div>
+
+	<!-- 3D Regulate -->	
+ <div class="video-container">
+	<div class="thumboverlay">
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YC3ya7OlmmQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>Holloway | 3D Regulate Pullover</h2>
+    
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(embedinput6)">Copy Share Link</div>
+     <textarea class="embed-code" id="embedinput6" type="text" readonly wrap="soft">https://youtu.be/YC3ya7OlmmQ</textarea>
+     
+    <div class="copy-embed" onclick="copyEmbed(embedinputf)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedinputf" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/YC3ya7OlmmQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div>
+
+	 <!-- Deviate Jacket --> 
+ <div class="video-container">
+	<div class="thumboverlay">
+    </div>
+    <iframe id="videocode" width="560" height="315" src="https://www.youtube.com/embed/gaz5nJcovXw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>Holloway | The Deviate Jacket</h2>
+    
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(embedinput8)">Copy Share Link</div>
+     <textarea class="embed-code" id="embedinput8" type="text" readonly wrap="soft">https://youtu.be/gaz5nJcovXw</textarea>
+     
+    <div class="copy-embed" onclick="copyEmbed(embedinputh)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedinputh" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/gaz5nJcovXw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div>
+
+	<!-- Attain -->
+ <div class="video-container">
+	<div class="thumboverlay">
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5nN2Vl-B08k?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>Augusta Sportswear | Attain Wicking Tee</h2>
+    
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(embedinput9)">Copy Share Link</div>
+     <textarea class="embed-code" id="embedinput9" type="text" readonly wrap="soft">https://youtu.be/5nN2Vl-B08k</textarea>
+     
+    <div class="copy-embed" onclick="copyEmbed(embedinputi)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedinputi" type="text" readonly wrap="soft">lt;iframe width="560" height="315" src="https://www.youtube.com/embed/5nN2Vl-B08k?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div>
+
+</div>
+
+
+<div class="video-section tools-use">
+   <h2>tools for you</h2>
+
+
+	<!-- Custom Solutions -->
+	 <div class="video-container">
+    <div class="thumboverlay">
+    </div>
+    <iframe id="connected-team" width="560" height="315" src="https://www.youtube.com/embed/8rUdHUv2tIw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>Custom Solutions</h2>
+   
+    <!-- Copy Code -->
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(embedinputcustsol)">Copy Share Link</div>
+     <textarea class="embed-code" id="embedinputcustsol" type="text" readonly wrap="soft">https://youtu.be/8rUdHUv2tIw</textarea>
+     <!-- Embed Code -->
+     
+    <div class="copy-embed" onclick="copyEmbed(embedinputcustomsol)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedinputcustomsol" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/8rUdHUv2tIw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div>
+
+     <!-- Serchandising -->
+ 	<div class="video-container">
+    <div class="thumboverlay">
+    </div>
+    <iframe id="connected-team" width="560" height="315" src="https://www.youtube.com/embed/zb9tJ95f3lg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>Searchandising</h2>
+   
+    <!-- Copy Code -->
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(embedinputsearch1)">Copy Share Link</div>
+     <textarea class="embed-code" id="embedinputsearch1" type="text" readonly wrap="soft">https://youtu.be/zb9tJ95f3lg</textarea>
+     <!-- Embed Code -->
+     
+    <div class="copy-embed" onclick="copyEmbed(embedinputsearch2)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedinputsearch2" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/zb9tJ95f3lg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div>
+
+</div>
+
+
+<div class="video-section fabrics-tech">
+   <h2>FABRIC TECHNOLOGIES</h2>
+   
+	<!-- Storm Dfend Video -->
+ <div class="video-container">
+	<div class="thumboverlay">
+    </div>
+    <iframe id="videocode" width="560" height="315" src="https://www.youtube.com/embed/CKRRO8cYWL4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>Holloway | Storm Dfend™ Technology: A New...</h2>
+    
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(embedinput)">Copy Share Link</div>
+     <textarea class="embed-code" id="embedinput" type="text" readonly wrap="soft">https://youtu.be/CKRRO8cYWL4</textarea>
+     
+    <div class="copy-embed" onclick="copyEmbed(embedinput)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedinput" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/CKRRO8cYWL4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div>
+
+	<!-- ASB fabric Video -->
+ <div class="video-container">
+	<div class="thumboverlay">
+    </div>
+    <iframe id="videocode" width="560" height="315" src="https://www.youtube.com/embed/xF1aVHp243g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="video-text">
+    <h2>Augusta Sportswear Brands | Combing the Globe for Fabric..</h2>
+    
+    <div class="copy-embed-container">
+     <div class="copy-embed" onclick="copyEmbed(embedinput)">Copy Share Link</div>
+     <textarea class="embed-code" id="embedinput" type="text" readonly wrap="soft">https://youtu.be/xF1aVHp243g</textarea>
+     
+    <div class="copy-embed" onclick="copyEmbed(embedinput)">Copy Embed Code</div>
+     <textarea class="embed-code" id="embedinput" type="text" readonly wrap="soft">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/xF1aVHp243g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe></textarea>
+    </div>
+ </div>
+</div>
+
+</div>
+
+
+<div class="video-popup">
+  <div class="vidoverlay"></div>
+  <div class="vid-show">
+    <span>X</span>
+    <iframe id="popup-video-box" src="" width="560" height="315" frameborder="0" autoplay encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
+
+<script>
+function copyEmbed(id) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(id).text()).select();
+  document.execCommand("copy");
+  alert("Copied the text: " + id.value);
+  $temp.remove();
+}
+
+//Open video thumbnails
+$(function () {
+    "use strict";
+    
+    $(".thumboverlay").click(function () {
+        var $src = $(this).next("iframe").attr("src");
+        $(".video-popup").fadeIn();
+        $("#popup-video-box").attr("src", $src);
+    });
+    
+    $("span, .vidoverlay").click(function () {
+        $(".video-popup").fadeOut();
+    });
+    
+});
+</script>
+

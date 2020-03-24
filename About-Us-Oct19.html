@@ -1,0 +1,409 @@
+<!-- About Us -->
+<style>
+/* Bottom Banner */
+    #bottom-banner {
+    	width: 100%;
+    	display: flex;
+    }
+    .bottom-container {
+    	height: -webkit-fill-available;
+    	min-height: 350px;
+    	max-height: 700px;
+    	margin: 0 auto 15px auto;
+    	padding: 20px;
+    }
+    .bottom-container img {
+        width: 50%;
+    	margin: auto;
+    	display: block;
+    	top: 34%;
+    	position: relative;
+    }
+    #aug-bottom, #hol-bottom, #h5-bottom, #asb-bottom, #ra-bottom {
+    	background-size: cover;
+    	background-repeat: no-repeat;
+    	width: 100%;
+    	background-position: center;
+    	text-align:center;
+    }
+    #aug-bottom img, #hol-bottom img, #h5-bottom img, #ra-bottom img  {
+    	top:17%;
+    }
+    #aug-logo-hover {
+    	width: 70%;
+    }  
+     #hol-logo-hover {
+    	width: 80%;
+    }
+   #h5-logo-hover  {
+    	width: 75%;
+    }
+     #ra-logo-hover {
+    	width: 63%;
+    }
+    
+    #aug-bottom {
+  	  background-image: url(https://static.augustasportswear.com/marketing/PO1_Hero1_AUG_r2.jpg);
+  	  z-index: 900;
+    }
+    #aug-bottom img {
+    	top: 20%;
+    }
+    #aug-bottom:hover {
+    	background-image: url(https://static.augustasportswear.com/marketing/PO1_Hero1_AUG_Hover_r2.jpg);
+    	transition: width 0.5s ease;
+    	width:500%;
+    	background-size:auto;
+    }
+    #aug-bottom:hover #aug-logo {
+    	display:none;
+    }
+    #aug-bottom:hover #aug-hover {
+    	display: block;
+    	top: 15%;
+    	position: relative;
+    }
+    #aug-hover {
+    	display:none;
+    }
+    #aug-hover p, #hol-hover p, #h5-hover p, #ra-hover p {
+    	font-family:"AvenirNextB";
+    	font-size:15px;
+    	    width: 70%;
+    	margin: 25px auto;
+    }
+    
+    #hol-bottom {
+    	background-image: url(https://static.augustasportswear.com/marketing/PO1_Hero1_HW_r2.jpg);
+    }
+    #hol-hover {
+    	display:none;
+    }
+    #hol-bottom:hover {
+    	background-image: url(https://static.augustasportswear.com/marketing/PO1_Hero1_HW_Hover_r2.jpg);
+    	transition: width 0.5s ease;
+    	width:500%;
+    	background-size: auto;
+    } 
+    #hol-bottom:hover #hol-logo {
+    	display:none;
+    }
+    #hol-bottom:hover #hol-hover {
+    	display: block;
+    	top: 15%;
+    	position: relative;
+    }
+    
+    #asb-bottom {
+    	background-image: url(https://static.augustasportswear.com/marketing/PO1_Hero1_ASB.jpg); 
+    	background-color: #2a3339;
+    	min-width: 30%;
+    	margin: 0;
+    	text-align: center;
+    	z-index: 999;
+    }
+    #asb-bottom h1 {
+    	font-size: 12px;
+    	color:white;
+    	position: relative;
+   	 	margin-top: 20px;
+    	font: 400 normal 12px/14px "AvenirNextN","Helvetica Neue",Helvetica,sans-serif;
+    }
+    #asb-bottom p {
+    	color: white;
+    	text-transform: uppercase;
+    	position: relative;
+    	font-size: 13px;
+    	line-height: 1.2;
+    	margin: 20px auto;
+    }
+    #asb-logo {
+    	top: 0%;
+    	width: 100%;
+    	max-width:300px;
+    }
+    #bottom-button {
+    	margin-top: 10px;
+    	transition: 0.2s;
+    }
+    
+    #h5-bottom {
+    	background-image: url(https://static.augustasportswear.com/marketing/PO1_Hero1_H5_r2.jpg); 
+    }
+    #h5-hover {
+    	display:none;
+    }
+    #h5-bottom:hover #h5-logo {
+    	display:none;
+    }
+    #h5-bottom:hover #h5-hover {
+    	display: block;
+    	top: 15%;
+    	position: relative;
+    }
+    #h5-bottom:hover {
+    	background-image: url(https://static.augustasportswear.com/marketing/PO1_Hero1_H5_Hover_r2.jpg);
+    	transition: width 0.5s ease;
+    	width:500%;
+    	background-size:auto;
+    } 
+    
+    #ra-bottom {
+    	background-image: url(https://static.augustasportswear.com/marketing/PO1_Hero1_RA_r2.jpg); 
+    }
+    #ra-hover {
+    	display:none;
+    }
+    #ra-bottom:hover {
+    	background-image: url(https://static.augustasportswear.com/marketing/PO1_Hero1_RA_Hover_r2.jpg);
+    	transition: width 0.5s ease;
+    	width:500%;
+    	background-size:auto;
+    } 
+    #ra-bottom:hover #ra-logo {
+    	display:none;
+    }
+    #ra-bottom:hover #ra-hover {
+    	display: block;
+    	top: 15%;
+    	position: relative;
+    }
+    
+/* Bottom Banner Mobile */
+	#bottom-banner-m {
+    	width: 100%;
+    	display:none;
+    }
+    .bottom-container-m {
+    	height: 125px;
+    }
+    .bottom-container-m img {
+        width: 100px;
+    	margin: auto;
+    	display: block;
+    	top: 22%;
+    	position: relative;
+    }
+    #aug-bottom-m, #hol-bottom-m, #h5-bottom-m, #asb-bottom-m, #ra-bottom-m {
+    	background-size: cover;
+    	background-repeat: no-repeat;
+    	width: auto;
+    	background-position: center;
+    	text-align:center;
+    }
+     #aug-logo-hover-m, #hol-logo-hover-m, #h5-logo-hover-m, #ra-logo-hover-m {
+    	width: 75%;
+    }
+    
+    #aug-bottom-m {
+  	  background-image: url(https://static.augustasportswear.com/marketing/PO1_Mobile_Hero1_AUG.jpg);
+  	  z-index: 900;
+    }
+    #aug-bottom-m:hover,  #aug-bottom-m:focus,  #aug-bottom-m:active {
+    	background-image: url(https://static.augustasportswear.com/marketing/PO1_Mobile_Hero1_AUG_hover.jpg);
+    		transition:height 0.5s ease;
+    		height: 225px;
+    }
+    #aug-bottom-m:hover #aug-logo-m, #aug-bottom-m:focus #aug-logo-m, #aug-bottom-m:active #aug-logo-m {
+    	display:none;
+    }
+    #aug-bottom-m:hover #aug-hover-m, #aug-bottom-m:focus #aug-hover-m, #aug-bottom-m:active #aug-hover-m {
+    	display: block;
+    	top: 25%;
+    	position: relative;
+    }
+    #aug-hover-m {
+    	display:none;
+    }
+   
+    
+    #hol-bottom-m {
+    	background-image: url(https://static.augustasportswear.com/marketing/PO1_Mobile_Hero1_HW.jpg);
+    	height: 125px;
+    }
+    #hol-hover-m {
+    	display:none;
+    }
+    #hol-logo-m {
+    	width: 85px;
+    	top:18%;
+    }
+    #hol-bottom-m:hover, #hol-bottom-m:focus, #hol-bottom-m:active {
+    	background-image: url(https://static.augustasportswear.com/marketing/PO1_Mobile_Hero1_HW_hover.jpg);
+    	transition:height 0.5s ease;
+    	height:225px;
+    } 
+    #hol-bottom-m:hover #hol-hover-m, #hol-bottom-m:focus #hol-hover-m, #hol-bottom-m:active #hol-hover-m {
+    	display: block;
+    	top: 30%;
+    	position: relative;
+    } 
+     #hol-bottom-m:hover #hol-logo-m, #hol-bottom-m:focus #hol-logo-m, #hol-bottom-m:active #hol-logo-m {
+    	display: none;
+    } 
+    #hol-bottom-m:hover #hol-logo-hover-m, #hol-bottom-m:focus #hol-logo-hover-m, #hol-bottom-m:active #hol-logo-hover-m {
+    	display: block;
+    	top: 30%;
+    	position: relative;
+    }
+    
+    #asb-bottom-m {
+    	background-image: url(https://static.augustasportswear.com/marketing/PO1_Mobile_Hero1_ASB_background.jpg); 
+    	background-color: #2a3339;
+    	text-align: center;
+    	height: 450px;
+    	background-position:bottom;
+    }
+    #asb-bottom-m h1 {
+
+    }
+    #asb-bottom-m p {
+    	color: white;
+    	text-transform: uppercase;
+    	position: relative;
+    	top: 34%;
+    }
+    #asb-logo-m {
+    	width: 50%;
+    }
+    #bottom-button-m {
+    	margin-top: 10px;
+    	transition: 0.2s;
+    }
+    
+    #h5-bottom-m {
+    	background-image: url(https://static.augustasportswear.com/marketing/PO1_Mobile_Hero1_H5.jpg);
+    	height: 125px; 
+    }
+    #h5-bottom-m:hover, #h5-bottom-m:focus, #h5-bottom-m:active {
+    	background-image: url(https://static.augustasportswear.com/marketing/PO1_Mobile_Hero1_H5_hover.jpg);
+    	transition: height 0.5s ease;
+    	height:225px;
+    } 
+    #h5-hover-m {
+    	display:none;
+    }
+    #h5-bottom-m:hover #h5-logo-m, #h5-bottom-m:focus #h5-logo-m, #h5-bottom-m:active #h5-logo-m {
+    	display:none;
+    }
+    #h5-bottom-m:hover #h5-hover-m, #h5-bottom-m:active #h5-hover-m, #h5-bottom-m:focus #h5-hover-m {
+    	display: block;
+    	top: 30%;
+    	position: relative;
+    }
+    
+    #ra-bottom-m {
+    	background-image: url(https://static.augustasportswear.com/marketing/PO1_Mobile_Hero1_RA.jpg);
+    	height: 125px; 
+    }
+    #ra-hover-m {
+    	display:none;
+    }
+    #ra-bottom-m:hover, #ra-bottom-m:focus, #ra-bottom-m:active {
+    	background-image: url(https://static.augustasportswear.com/marketing/PO1_Mobile_Hero1_RA_hover.jpg);
+    	transition:height 0.5s ease;
+    	height:225px;
+    } 
+    #ra-bottom-m:hover #ra-logo-m, #ra-bottom-m:focus #ra-logo-m, #ra-bottom-m:active #ra-logo-m {
+    	display:none;
+    }
+    #ra-bottom-m:active #ra-hover-m, #ra-bottom-m:hover #ra-hover-m, #ra-bottom-m:focus #ra-hover-m {
+    	display: block;
+    	top: 30%;
+    	position: relative;
+    }
+</style>
+
+<!-- Bottom Banner -->
+<div class="left-espot" id="bottom-banner">
+
+  <div class="bottom-container" id="aug-bottom">
+    <img src="https://static.augustasportswear.com/marketing/PO1_Hero1_AUG_icon.png" id="aug-logo">
+    <div id="aug-hover">
+    <img src="https://static.augustasportswear.com/marketing/PO1_Hero1_AUG_icon_Hover.png" id="aug-logo-hover">
+    <p>The leader in quality, affordable, athletic apparel from sports, training, fanwear and corporate.</p>
+     </div>
+  </div>
+  
+  <div class="bottom-container" id="hol-bottom">
+    <img src="https://static.augustasportswear.com/marketing/PO1_Hero1_HW_icon.png" id="hol-logo">
+    <div id="hol-hover">
+    <img src="https://static.augustasportswear.com/marketing/PO1_Hero1_HW_icon_Hover.png" id="hol-logo-hover">
+    <p>With innovative designs and fabrics, Holloway® is the high-performance sports, corporate and outwear brand for your apparel needs.</p>
+     </div>
+  </div>
+  
+  <div class="bottom-container" id="asb-bottom">
+  	<img src="https://static.augustasportswear.com/marketing/PO1_Mobile_Hero1_ASB_logo.png" id="asb-logo">
+  	<p>Our new brand portfolio - reimagined, <br>refreshed and ready to win.
+  	<br>
+  	<a class="button primary dark" id="bottom-button" href="/adult-shop-by-brand">Shop All</a>
+  	</p>
+  	<h1>Augusta Sportswear Brands is driven by a mission to inspire a physically fit lifestyle, healthy families and connected communities. As a leading designer, manufacturer and marketer of high-performance active wear and spirit wear for teams, coaches, athletes, fans & corporate needs, our family of brands offers a complete source for performance and athletic apparel and uniforms.
+  	</h1>
+  </div>
+  
+  <div class="bottom-container" id="h5-bottom">
+  <img src="https://static.augustasportswear.com/marketing/PO1_Hero1_H5_icon.png" id="h5-logo">
+  <div id="h5-hover">
+    <img src="https://static.augustasportswear.com/marketing/PO1_Hero1_H5_icon_Hover.png" id="h5-logo-hover">
+    <p>Outfitting Volleyball teams and Soccer leagues through industry leading product, value and speed</p>
+     </div>
+  </div>
+  
+  <div class="bottom-container" id="ra-bottom">
+  <img src="https://static.augustasportswear.com/marketing/PO1_Hero1_RA_icon.png" id="ra-logo">
+  
+   <div id="ra-hover">
+    <img src="https://static.augustasportswear.com/marketing/PO1_Hero1_RA_icon_Hover.png" id="ra-logo-hover">
+    <p>Augusta Sportswear Brands is proud to be the Exclusive Team Uniform Partner, while also offering Russell Athletic basics.
+    <br>
+    Products available now.
+    </p>
+     </div>
+	</div>
+	
+</div>
+
+<!-- Bottom Banner MOBILE -->
+<div class="left-espot" id="bottom-banner-m">
+
+  <div class="bottom-container-m" id="asb-bottom-m">
+   <img src="https://static.augustasportswear.com/marketing/PO1_Mobile_Hero1_ASB_logo.png" id="asb-logo-m">
+  <!-- 	<h1>Augusta Sportswear Brands is driven by a mission to inspire a physically fit lifestyle, healthy families and connected communities. As a leading designer, manufacturer and marketer of high-performance active wear and spirit wear for teams, coaches, athletes, fans & corporate needs, our family of brands offers a complete source for performance and athletic apparel and uniforms. </h1> -->
+  	<p>Our new brand portfolio - reimagined, <br>refreshed and ready to win.
+  	<br>
+  	<a class="button primary dark" id="bottom-button-m" href="/adult-shop-by-brand">Shop All</a>
+  	</p>
+  </div>
+  
+  <div class="bottom-container-m" id="aug-bottom-m">
+    <img src="https://static.augustasportswear.com/marketing/PO1_Hero1_AUG_icon.png" id="aug-logo-m">
+    <div id="aug-hover-m">
+    <img src="https://static.augustasportswear.com/marketing/PO1_Hero1_AUG_icon_Hover.png" id="aug-logo-hover-m">
+     </div>
+  </div>
+  
+  <div class="bottom-container-m" id="hol-bottom-m">
+    <img src="https://static.augustasportswear.com/marketing/PO1_Hero1_HW_icon.png" id="hol-logo-m">
+    <div id="hol-hover-m">
+    <img src="https://static.augustasportswear.com/marketing/PO1_Hero1_HW_icon_Hover.png" id="hol-logo-hover-m">
+     </div>
+  </div>
+  
+  <div class="bottom-container-m" id="h5-bottom-m">
+  <img src="https://static.augustasportswear.com/marketing/PO1_Hero1_H5_icon.png" id="h5-logo-m">
+  <div id="h5-hover-m">
+    <img src="https://static.augustasportswear.com/marketing/PO1_Hero1_H5_icon_Hover?&fmt=png-alpha" id="h5-logo-hover-m">
+     </div>
+  </div>
+  
+  <div class="bottom-container-m" id="ra-bottom-m">
+  <img src="https://static.augustasportswear.com/marketing/PO1_Hero1_RA_icon.png" id="ra-logo-m">
+  
+   <div id="ra-hover-m">
+    <img src="https://static.augustasportswear.com/marketing/PO1_Hero1_RA_icon_Hover.png" id="ra-logo-hover-m">
+     </div>
+	</div>
+	
+</div>

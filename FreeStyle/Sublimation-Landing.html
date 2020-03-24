@@ -1,0 +1,386 @@
+<!-- Sublimation Landing Page -->
+
+<style>
+.landing-wrapper {
+background: rgb(10,37,56);
+background: linear-gradient(0deg, rgba(10,37,56,1) 0%, rgba(4,77,84,1) 25%, rgba(25,147,171,1) 50%, rgba(6,120,144,1) 75%, rgba(38,33,99,1) 100%);
+
+padding: 20px 0;
+}
+
+/* shop buttons B&W */
+.hp-btn-black {
+	background: black;
+	color: white;
+	padding: 7px 15px;
+	margin: 10px 0;
+	font-family: "AvenirNextB";
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+}
+.hp-btn-white {
+	background: white;
+	color: black;
+	padding: 7px 10px;
+	margin: 5px auto;
+	font-family: "AvenirNextB";
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+}
+.hp-btn-black:hover, .hp-btn-white:hover {
+	text-decoration: underline;
+}
+.shop-arrow {
+  width: 0; 
+  height: 0; 
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid black;
+  display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-left: 10px;
+}
+.shop-arrow-white {
+  width: 0; 
+  height: 0; 
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid white;
+  display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-left: 10px;
+}
+
+/* Header */
+.header-wrapper {
+	display:inline-block;
+	width:100%;
+}
+.header-wrapper img {
+	position:relative;
+    margin: 40px auto;
+    display: block;
+}
+.header-wrapper h2 {
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	margin: 15px auto 55px;
+}
+#freestyle-logo {
+	width: 40%;
+}
+#nextgen-text {
+	width: 50%;
+	padding: 20px 0;
+}
+
+
+/* builder transition info */
+.transition-info {
+	width: 100%;
+    text-align: center;
+	color: white;
+	margin: 50px auto 80px;
+    padding: 40px 0;
+}
+.transition-info h3 {
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+.transition-info p {
+	line-height: 1.2;
+	width: 65%;
+	margin: auto;
+}
+.readfaqs {
+	top: 20px;
+    padding: 7px 20px;
+}
+
+/* section wrappers */
+.custom-builder-container {
+	margin: 10px auto 30px;
+	width: 100%;
+	position: relative;
+	display: inline-block;
+}
+.custom-builder-container img {
+	width: 49%;
+	display: inline-block;
+}
+#rusimg {
+	float: right;
+}
+
+
+
+/* logos & text by image */
+.logos-text-box {
+	width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    top: 10%;
+    margin-left: 40px;
+}
+.text-container {
+	color: rgb(178,226,226);
+	margin-top: 20px;
+}
+.text-container h3 {
+	font-family: "AvenirNextB";
+	text-transform: uppercase;
+	font-size: 45px;
+}
+.text-container p {
+	width: 75%;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-top: 35px;
+}
+.builderenter {
+	position: relative;
+	top: 20px;
+}
+.rus-text-box {
+
+}
+#russ-login-text {
+    top: 60px;
+    position: relative;
+    color: white;
+}
+#russ-login-text a {
+	text-decoration: underline;
+}
+#russ-login-text a:hover {
+	cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+.text-container h3 {
+    	font-size: 30px;
+    }
+    .text-container p {
+    font-size: 14px;
+	}
+}
+@media screen and (max-width:768px) {
+	#freestyle-logo {
+    width: 85%;
+    margin: 20px auto;
+	}
+	#nextgen-text {
+    width: 90%;
+    padding: 0px 0;
+    }
+    .header-wrapper h2 {
+    	font-size: 20px;
+    	margin: auto;
+    }
+    .transition-info {
+    margin: 30px auto;
+    padding: 40px 0 60px;
+    }
+    .transition-info p {
+    	width: 91%;
+    }
+    .custom-builder-container {
+    	margin: 20px auto 30px;    
+    	padding-bottom: 40px;
+    }
+    .custom-builder-container img {
+    	width: 100%;
+    }
+    .logos-text-box {
+    width: 75%;
+    display: block;
+    vertical-align: top;
+    position: relative;
+    margin-left: 0;
+    margin: auto;
+    text-align: center;
+    }
+    .text-container h3 {
+    	font-size: 26px;
+    }
+    .text-container p {
+    width: 100%;
+    font-size: 12px;
+	}
+	#asb-logo, #russell-logo {
+		width: 75%;
+		margin-top: 10px;
+	}
+}
+@media screen and (max-width:320px) {
+	#freestyle-logo {
+    width: 85%;
+    margin: 20px auto;
+	}
+	#nextgen-text {
+    width: 90%;
+    padding: 0px 0;
+    }
+    .header-wrapper h2 {
+    	font-size: 20px;
+    	margin: auto;
+    }
+    .transition-info {
+    margin: 30px auto;
+    padding: 40px 0 60px;
+    }
+    .transition-info p {
+    	width: 91%;
+    }
+    .custom-builder-container {
+    	margin: 20px auto 30px;    
+    	padding-bottom: 40px;
+    }
+    .custom-builder-container img {
+    	width: 100%;
+    }
+    .logos-text-box {
+    width: 75%;
+    display: block;
+    vertical-align: top;
+    position: relative;
+    margin-left: 0;
+    margin: auto;
+    text-align: center;
+    }
+    .text-container h3 {
+    	font-size: 26px;
+    }
+    .text-container p {
+    width: 100%;
+    font-size: 12px;
+	}
+	#asb-logo, #russell-logo {
+		width: 75%;
+		margin-top: 10px;
+	}
+
+}
+
+</style>
+ 	
+<div class="landing-wrapper">
+
+<div class="header-wrapper">
+	<img src="https://static.augustasportswear.com/marketing/2019 WEBSITE/Sublimation/Landing-Page/FreeStyle_logo_stacked.png" id="freestyle-logo">
+	
+	<img src="https://static.augustasportswear.com/marketing/2019 WEBSITE/Sublimation/Landing-Page/FreeStyle_nextgen_text.png" id="nextgen-text">
+	
+	
+</div>
+
+
+
+<!-- Augusta Block -->
+<div class="custom-builder-container" id="aug-container">
+	
+	  <img src="https://static.augustasportswear.com/marketing/2019 WEBSITE/Sublimation/Landing-Page/FreeStyleLandingPage_ASB_Img.jpg">
+
+		<div class="logos-text-box">
+		 <img id="asb-logo" src="https://static.augustasportswear.com/marketing/ASB-3Logos-horizontal-White.png">
+		 
+			<div class="text-container"> 
+		 <p>Get custom uniforms for the entire team in 15 Business Days
+for builder orders. 20 business days for custom art orders.</p>
+		 
+		 
+		 <a href="/webapp/wcs/stores/servlet/ConfiguratorStartView?langId=-1&storeId=10252&catalogId=10101&categoryId=14001&configuratorType=uniforms" class="hp-btn-white builderenter" id="aug-enter">START DESIGNING <span class="shop-arrow"></span></a>
+		 </div>
+
+		</div>
+
+	</div>
+
+
+<!-- Russell Block -->
+<div class="custom-builder-container" id="russell-container">
+
+		  
+	<img id="rusimg" src="https://static.augustasportswear.com/marketing/2019 WEBSITE/Sublimation/Landing-Page/FreeStyleLandingPage_Russell_Img.jpg">
+
+
+ <div class="logos-text-box rus-text-box">
+ 	<img id="russell-logo" src="https://static.augustasportswear.com/marketing/Russell-Logo-horizontal-White.png">
+
+		<div class="text-container"> 
+	 <p>Russell Athletic branded sublimation will be ordered using the Russell Athletic sublimation builder and automated order form.
+		 To save a design or place an order you will need to create a login and password
+unique to the builder.</p>
+		
+		
+		 <a href="/russellsublimation" class="hp-btn-white builderenter">START DESIGNING <span class="shop-arrow"></span></a>
+		 
+		 
+		 <p id="russ-login-text">New to Russell Athletic Sublimation?<br> 
+		<a href="/russellsublimation-register">CREATE RUSSELL LOGIN</a>
+			  </p>
+ 		</div>
+		
+</div>
+	</div>
+
+
+<script>
+
+//slide in from left
+$(document).ready(function() {
+    
+/* Every time the window is scrolled ... */
+$(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.leftslide').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight() + 100;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},800);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
+//slide in from right
+$(document).ready(function() {
+    
+/* Every time the window is scrolled ... */
+$(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme2').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height() + 300;
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object){
+                
+                $(this).animate({'opacity':'1'},900);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
+</script>

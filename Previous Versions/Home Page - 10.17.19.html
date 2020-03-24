@@ -1,0 +1,1992 @@
+<!-- Homepage -->
+<style>
+.left-espot {
+        position: relative;
+        margin: auto;
+    }
+
+/* shop buttons B&W */
+.hp-btn-black {
+	background: black;
+	color: white;
+	padding: 7px 15px;
+	margin: 10px 0;
+	font-family: "AvenirNextB";
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+}
+.hp-btn-white {
+	background: white;
+	color: black;
+	padding: 7px 10px;
+	margin: 5px auto;
+	font-family: "AvenirNextB";
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+}
+.hp-btn-black:hover, .hp-btn-white:hover {
+	text-decoration: underline;
+}
+.shop-arrow {
+  width: 0; 
+  height: 0; 
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid black;
+  display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-left: 10px;
+}
+.shop-arrow-white {
+  width: 0; 
+  height: 0; 
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid white;
+  display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-left: 10px;
+}
+.shop-arrow-grey {
+  width: 0; 
+  height: 0; 
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 11px solid #808080;
+  display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-left: 10px;
+}
+
+.hideme, .hideme2, .hideme3 {
+    opacity:0;
+}
+b {
+	font-family: "AvenirNextB";
+}
+
+/* Shipping/Promo Top Bar */
+.top-promo-bar {
+	width: 100%;
+	background-color: rgb(240,241,243);
+	color: black;
+	position: sticky;
+	z-index: 100;
+	padding: 10px 0;
+	border: gray 1px solid;
+}
+.shipping-bar-wrapper {
+	width: 60%;
+	margin: auto;
+	display: flex;
+	max-width: 1100px;
+}
+.shipping-bar-wrapper-m {
+	width: 100%;
+	margin: auto;
+	display: none;
+}
+
+#left-arrow-ship {
+  width: 0; 
+  height: 0; 
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent; 
+  border-right: 8px solid black; 
+  display: inline-block;
+  margin: 0 15px;
+}
+#right-arrow-ship {
+  width: 0; 
+  height: 0; 
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid black;
+    display: inline-block;
+}
+#left-arrow-ship:hover, #right-arrow-ship:hover {
+	cursor: pointer;
+}
+.ship-divider {
+	margin: 0 8px;
+}
+
+.ship-text-wrapper {
+	display: block;
+	width: auto;
+	margin: auto;
+	height: 16px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.ship-msgs {
+	display: inline-block;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-family: "AvenirNextN";
+	text-align: center;
+}
+.ship-msgs-m {
+	font-size: 11px;
+	text-transform: uppercase;
+	font-family: "AvenirNextN";
+	text-align: center;
+}
+
+.ship-details-link {
+	text-decoration: underline;
+	cursor: pointer;
+	vertical-align: bottom;
+}
+#ship-details-box a {
+	color: #50a4d9;
+	text-decoration: underline;
+}
+.ship-detail-box p {
+	padding: 25px;
+	width: 75%;
+	margin: auto;
+	color: black;
+}
+.ship-detail-box h4 {
+	text-transform: uppercase;
+	margin: 6px auto;
+	color: black;
+	font-family: "AvenirNextN";
+}
+
+#free-ship-box, #ordertoday-details-box, #save-5-details-box {
+	display: none;
+    width: 45%;
+    position: fixed;
+    top: 35%;
+    left: 28%;
+    z-index: 1000;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px black solid;
+}
+.detailsoverlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.66);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+#close-details {
+	cursor: pointer;
+    left: 49%;
+    top: -3px;
+    position: relative;
+	padding: 8px;
+}
+
+.ship-details-graphic {
+	width: 16%;
+	margin: auto;
+	display: block;
+}
+#save-5-subtext {
+	font-size: 10px;
+	margin: 5px auto;
+}
+.details-subtext {
+	font-size: 9px;
+	margin: 5px auto;
+}
+.details-subtext a {
+	font-size: 9px;
+	color: #50a4d9;
+}
+.details-subtext a:hover {
+	text-decoration: underline;
+}
+.got-it {
+	text-align: center;
+	margin: 15px 10px;
+	border: 2px solid #50a4d9;
+	background: white;
+	color: #50a4d9;
+	font-family: "AvenirNextB";
+    font-size: 12px;
+}
+.got-it:hover {
+	background-color: #50a4d9;
+	color: white;
+	cursor: pointer;
+}
+
+#free-ship-box p {
+	padding: 10px 15px;
+}
+#save-5-details-box p {
+	padding: 15px 0;
+    width: 100%;
+}
+
+/* Hero 1 Banner */
+#hero1-mobile {
+	display: none;
+}
+.hero1-banner {
+	width: 100%;
+}
+.hero1-banner img {
+	width: 100%;
+}
+.hero1-text {
+	position: absolute;
+	top: 25%;
+	left: 5%;
+	width: 42vw;
+}
+.hero1-text h2 {
+	color: white;
+	line-height: 1;
+	margin-bottom: 15px;
+	font-size: 4vw;
+	text-shadow: rgba(0,0,0,0.4) -4px 0px 5px;
+}
+.hero1btn {
+	display: block;
+	margin: 0;
+	width: 215px;
+}
+.shoplds-btn {
+	position: relative;
+	top: 10px;
+}
+
+/* 3 Blocks */
+.three-blocks {
+	padding: 5px 0;
+}
+.three-block-wrapper {
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    z-index: 2000;
+    width: 100%;
+}
+
+.three-block-image {
+	float: left;
+    width: 33%;
+    position: relative;
+    left: 0%;
+    padding: 4px 0;
+    margin-right: 10px;
+}
+
+.three-block-image img, .three-block-image-m img {
+    width: 100%;
+    height: auto;
+}
+.three-block-image-m {
+	display: none;
+}
+#right-block {
+	margin: 0;
+}
+
+.three-block-btn{
+	    position: absolute;
+    vertical-align: middle;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+.three-block-btn > a {
+    padding: 7px 15px;
+}
+
+
+
+/* Hero 2 Banner */
+.hero2-banner {
+	box-sizing: border-box;
+	position: relative;
+    width: 100%;
+    margin: auto;
+}
+.hero2-banner img {
+	width: 100%;
+}
+.hero2-text {
+    position: absolute;
+    top: 33%;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+.hero2-btn {
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	border-bottom: 5px solid white;
+}
+.hero2-btn:hover {
+	border-bottom: 5px solid #808080;
+	transition: .1s;
+}
+#fof-mobile {
+  display: none;
+}
+
+/* Pacific Free Ship */
+.ph-ship-wrapper {
+	width: 100%;
+	max-height: 1100px;
+	margin-bottom: 15px;
+	overflow: hidden;
+	background: url(https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/OCTOBER%202019/2019October-homepage-10-PacificShippingBanner.jpg);
+    background-position: center 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: inline-block;
+    padding: 500px 0;
+}
+#ph-ship-logo {
+    width: 23%;
+    position: relative;
+    top: 25%;
+    left: 4%;
+}
+#ph-ship-logo-m {
+display: none;
+	width: 50%;
+    margin: 0px auto 30px;
+}
+
+.ph-freeship-btn {
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+.ph-free-container {
+	width: auto;
+    position: absolute;
+    right: 5%;
+    bottom: -50px;
+}
+.ph-freeship-btn h3 {
+    font-size: 3vw;
+    margin-bottom: 8px;
+    color: white;
+}
+.ph-freeship-btn p {
+	margin: auto;
+    color: white;
+    line-height: 1.3;
+    font-size: 1vw;
+}
+#ph-ship-details {
+    position: relative;
+    bottom: -375px;
+    font-size: 14px;
+}
+#ph-ship-btn {
+	background-color: white;
+	color: black;
+	font-family: "AvenirNextB";
+    padding: 16px 25px; 
+    top: 64px;
+    font-size: 15px;
+    text-transform: uppercase;
+    position: relative;
+}
+#ph-ship-mobile {
+	display: none;
+}
+
+/* Hero 3 Banner */
+#hero3-banner {
+	width: 100%;
+	position: relative;
+	margin-top: 5px;
+}
+#baseball-video-desk, #baseball-video-m {
+	width: 100%;
+	margin-bottom: -3px;
+}
+
+.hero3-text-play {
+	width: 100%;
+	position: absolute;
+	top: 42%;
+}
+#dugout-text {
+	width: 66%;
+	margin: 0 auto 15px;
+	display: block;
+}
+
+.hero3-text {
+	position: relative;
+	margin: auto;
+	margin-top: 20px;
+}
+.hero3-text p {
+	color: white;
+	text-transform: uppercase;
+	margin: 10px auto;
+	text-align: center;
+	font-size: 15px;
+}
+#playbutton {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: transparent;
+    border: 3px solid white;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+#playarrow {
+ 	width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 20px solid white;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 15px 0 0 7px;
+}
+#playbutton:hover {
+	background: white;
+	transition: .1s;
+}
+#playbutton:hover #playarrow {
+	border-left: 20px solid black;
+	transition: .1s;
+}
+
+.video-popup {
+	display: none;
+	 z-index: 999;
+}
+.vidoverlay {
+ 	width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.66);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.video-container iframe {
+	width: 75%;
+    max-width: 900px;
+    min-height: 500px;
+    height: auto;
+    background: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden
+}
+.video-container span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 99;
+    cursor: pointer;
+    color: white;
+    font-family: AvenirNextB;
+    font-size: 17px;
+}
+#baseball-video-m {
+	display: none;
+}
+
+/*Brand Text*/
+.brand-text {
+	background-color: #f2f2f2;
+	width: auto;
+	position: relative;
+	z-index: 1000;
+	padding: 100px 50px;
+}
+#asb-logo {
+    width: 60%;
+    margin: 0 auto 75px;
+    display: block;
+}
+#asb-logo-m {
+	display: none;
+	width: 90%;
+    margin: 40px auto;
+    padding-top: 30px;
+}
+
+.brand-text h1 {
+	text-align: center;
+	color: #001d4d;
+	width: 52%;
+	margin: 45px auto;
+	max-width: 75%;
+	font-family: "AvenirNextN";
+	font-size: 16px;
+	line-height: 1.4;
+	text-transform: uppercase;
+}
+#brand-text-lowercase {
+	text-transform: none;
+}
+.brand-text a {
+	display: block;
+    margin: auto;
+    width: fit-content;
+}
+
+/* Attain Section */
+.attain-container {
+	position: relative;
+	display: flex;
+}
+.attain-container img {
+	width: 100%;
+	margin: auto;
+}
+#attain-img-mobile {
+	display: none;
+}
+.attain-text {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 18%;
+	color: black;
+}
+.attain-text h2 {
+	text-align: center;
+	font-size: 35px;
+}
+.attain-text p {
+	margin: 10px;
+	font-size: 14px;
+}
+#attain-btn {
+	top: 10px;
+}
+
+
+/* Wool */
+.wool-container {
+	margin-bottom: -4px;
+	position: relative;
+}
+.wool-container img {
+	width: 100%;
+	display: -webkit-box;
+}
+.wool-text {
+	position: absolute;
+	bottom: 12%;
+	right: 8%;
+	color: white;
+	width: 25%;
+	text-align: center;
+}
+.wool-text h2 {
+	text-transform: uppercase;
+	font-size: 27px;
+}
+.wool-text p {
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 10px 0 20px;
+}
+#wool-btn {
+	border: 1px white solid;
+	padding: 10px;
+	text-transform: uppercase;
+	color: white;
+	margin: 10px auto;
+	font-family: "AvenirNextB";
+}
+#wool-btn:hover {
+	background-color: black;
+	border: none;
+	cursor: pointer;
+}
+#wool-mobile {
+	display: none;
+}
+
+/* News */
+.news-container {
+    margin: 40px auto 20px;
+    width: 90%;
+}
+.news-container h2 {
+	margin: 10px 30px;
+	color: black;
+	font-size: 30px;
+	text-align: left;
+}
+
+/* boxes/wrappers */
+.news-left {
+	width: 30%;
+	display: inline-block;
+	margin-right: 15px;
+	vertical-align: top;
+	overflow: hidden;
+}
+.news-right {
+	width: 66%;
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+}
+.news-box {
+	color: black;
+	text-align: center;
+	background: rgba(0,0,0,0.05);
+	margin: 10px auto;
+	overflow: hidden;
+}
+.left-news-box {
+
+}
+.right-news-box {
+
+}
+
+/* News Box Elements */
+.newsimage-box {
+	width: 100%;
+	overflow: hidden;
+}
+.newsimage {
+	width: 100%;
+ 	transition: all 2.5s ease-in-out;
+ 	display: block;
+ 	z-index: 3;
+}
+.news-text {
+	padding: 16px 5px;
+	z-index: 4;
+	position: relative;
+}
+.news-box p {
+	text-transform: uppercase;
+	font-size: 12px;
+	color: rgba(0,0,0,0.7);
+	margin: 10px auto 5px;
+}
+.category-divider {
+	display: block;
+	width: 80px;
+	margin: auto;
+	border-bottom: 1px solid darkgrey;
+}
+.news-box h3 {
+	line-height: 1.2;
+	font-size: 14px;
+	margin: 20px auto 15px;
+	width: 90%;
+}
+.read-link {
+	color: black;
+	text-align: left;
+	position: relative;
+    top: 7px;
+    left: 7px;
+}
+
+/* News IDs */
+#samedayship-news {
+    background-color: black;
+    width: 100%;
+    display: block;
+    padding: 110px 0;
+}
+#samedayship-news img {
+    width: 75%;
+    margin: auto;
+    display: block;
+}
+#learn-ship-news {
+	top: 30px;
+}
+#shipping-details {
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+    text-align: center;
+    margin: 10px auto;
+    position: relative;
+    bottom: -100px;
+    width: 90%;
+}
+
+/* News Hovers */
+.newsimage-box:hover .newsimage {
+ 	transform: scale(1.1);
+}
+.read-link:hover, .news-box h3:hover {
+	text-decoration: underline;
+}
+.news-box:hover {
+	background: rgba(0,0,0,0.1);
+}
+
+/* promo */
+.promo-banner {
+	width: 100%;
+	position: relative;
+}
+.promo-logo-text {
+	width: 35%;
+	position: relative;
+	top: 10px;
+	display: inline-block;
+}
+.promo-logo-text img {
+	width: 100%;
+}
+.promo-logo-text p {
+	font-size: 17px;
+	color: white;
+	text-align: center;
+	margin: -13px auto 10px;
+	text-transform: uppercase;
+	font-family: "AvenirNextN";
+	line-height: 1.2;
+}
+#promo-text-all {
+	font-size:15px;
+}
+
+.promo-text-btn {
+	text-align: center;
+	color: white;
+    width: 20%;
+    display: inline-block;
+    text-transform: uppercase;
+    position: absolute;
+    top: 26%;
+    right: 8%;
+}
+.promo-text-btn p {
+	margin-bottom: 20px;
+	font-family: "AvenirNextB";
+	line-height: 1;
+	font-size: 1vw;
+}
+.promo-text-btn h3 {
+	font-family: "AvenirNextN";
+	margin: 10px auto;
+	font-size: 1.5vw;
+    line-height: 1.1;
+}
+#promocode {
+	color: #e64f33;
+	font-family: "AvenirNextB";
+	font-size: 2vw;
+}
+#promobtn {
+
+	font-size: 1vw;
+}
+
+#promodetails {
+	color: lightgray;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-align: center;
+    position: relative;
+    top: 150px;
+    width: 100%;
+    line-height: 1.3;
+    font-family: AvenirNextN;
+}
+.detail-divider {
+	margin: 0 10px;
+    font-size: 23px;
+    vertical-align: super;
+    position: relative;
+    top: 8px;
+}
+#valid-text {
+	display: none;
+	margin: 5px auto;
+	width: 100%;
+}
+
+.promo-banner-preview {
+	width: 100%;
+	display: grid;
+}
+#promo-preview {
+	width: 100%;
+}
+#promo-banner {
+	width: 100%;
+	display: block;
+}
+#promo-banner-m {
+	display: none;
+}
+
+        
+        /*Media Queries*/
+        @media screen and (max-width: 1500px) {
+.hero1-text {
+	position: absolute;
+	left: 5%;
+	width: 375px;
+}
+.hero1-text h2 {
+	color: white;
+	line-height: 1;
+	margin-bottom: 15px;
+	font-size: 35px;
+	text-shadow: rgba(0,0,0,0.4) -4px 0px 5px;
+}
+.hero1btn {
+	display: block;
+	margin: 0;
+	width: 135px;
+}
+
+#hero2-image {
+    width: 64%;
+    right: -20%;
+}
+#hero2-image img {
+	left: -4%;
+}
+
+.ph-ship-wrapper {
+	background-size: 100%;
+	padding: 300px 0;
+}
+#ph-ship-logo {
+	top: 23%;
+}
+.ph-freeship-btn h3 {
+	font-size: 4vw
+}
+.ph-freeship-btn p {
+	font-size: 19px;
+}
+#ph-ship-btn {
+	padding: 12px 14px;
+    top: 50px;
+    font-size: 14px;
+}
+#ph-ship-details {
+	font-size: 12px;
+	bottom: -225px;
+}
+
+#promodetails {
+	top: 70px;
+}
+        }
+        @media screen and (max-width: 1320px) {
+        }
+        @media screen and (max-width: 1280px) {
+       .ph-ship-wrapper {
+       	padding: 250px 0;
+       	    background-size: cover;
+       }
+        .ph-free-container {
+        	right: 3%;
+        }
+        .ph-freeship-btn h3 {
+        	font-size: 47px;
+        }
+        .ph-freeship-btn p {
+        	font-size: 16px;
+        }
+        #ph-ship-details {
+        	bottom: -180px;
+        }
+        
+        .promo-text-btn {
+        	width: 300px;
+        }
+        #promodetails {
+        	top: 50px;
+        }
+        }
+        @media screen and (max-width: 1080px) {
+        	.shipping-bar-wrapper {
+        		width: 85%;
+        	}
+
+			
+        }
+        @media screen and (max-width: 1023px) {		       
+.hero2-container {
+	background-position: center 50px;
+}
+#hero2-banner {
+	width: 100%;
+}
+.hero2-section {
+	width: 100%;
+}
+#hero2-mid, #hero2-right {
+	display: none;
+}
+    
+.ph-ship-wrapper {
+	background-image: url(https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/OCTOBER%202019/Mobile/2019October-homepage-mobile-8-pacific-freeshipping.jpg);
+	background-position: center -42px;
+    background-size: cover;
+    background-attachment: initial;
+}
+        #ph-ship-btn {
+    padding: 9px 11px;
+    font-size: 12px;
+    top: 25px;
+    }
+    .ph-freeship-btn {
+    	width: 100%;
+    }
+    .ph-free-container {
+    	bottom: -85px;
+    	width: 55%;
+    }
+        .ph-freeship-btn h3 {
+        	font-size: 30px;
+        }
+        .ph-freeship-btn p {
+        	font-size: 14px;
+        }
+        #ph-ship-details {
+        	bottom: -140px;
+        }
+        #ph-ship-logo {
+        	display: none;
+        }
+        #ph-ship-logo-m {
+        	display: block;
+        }
+    
+.brands-text-wrapper {
+    	background-position: center 75px;
+    }
+#brands-text-logo {
+	width:100%;
+}
+#promobtn {
+	font-size: 12px;
+}   
+ .promo-text-btn {
+top: 16%;
+right: 4%;
+        }
+      
+
+        }
+        @media screen and (max-width:950px) {
+
+			#hero2-image {
+				height: 550px;
+			}
+			#hero2-image img {
+				top: -15%;
+				left: -18%;
+				width: 700px;
+			}
+			.hero2-text h2 {
+				font-size: 40px;				
+			}
+			
+			
+			.brand-text h1 {
+				width: 75%;
+			}
+			
+			.wool-text {
+				width: 35%;
+				bottom: 7%;
+				right: 4%;
+			}
+			.wool-text h2 {
+				font-size: 23px;
+			}
+            
+        }
+        @media screen and (max-width:900px) {
+    #ordertoday-details-box, #free-ship-box, #save-5-details-box {
+    top: 25%;
+    width: 55%;
+    left: 22%;
+}
+    
+
+      #hero3-model {
+	right: 10%;
+}
+      
+            .promo-text-btn {
+            	right: 0%;
+            }
+            #promocode {
+            	font-size: 25px;
+            }
+
+        }
+		@media screen and (max-width: 768px) {
+        	.shipping-bar-wrapper {
+        		width: 100%;
+        	}
+        	#left-arrow-ship {
+        		margin: 0 0 0 10px;
+        	}
+        	#right-arrow-ship {
+        		margin-right: 10px;
+        	}    	
+
+#hero1-desk {
+	display: none;
+}
+#hero1-mobile {
+	display: block;
+}
+.hero1-text {
+    width: 100%;
+    margin: auto;
+    left: 0;
+}
+.hero1-text h2 {
+    font-size: 30px;
+    text-align: center;
+    width: 360px;
+    margin: 0 auto 15px;
+}
+.hero1btn {
+	text-align: center;
+	margin: auto;
+}
+
+.hero2-text {
+	top: 40%;
+}
+.hero2-btn {
+	color: white;
+	border-bottom: 2px solid white;
+    font-size: 4vw;
+}
+#fof-desk {
+	display: none;
+}
+#fof-mobile {
+	display: block;
+	width: 100%;
+	margin: auto;
+}
+
+#baseball-video-desk, #dugout-text {
+	display: none;
+}
+#baseball-video-m {
+	display: block;
+}
+.hero3-text {
+	top: 200px;
+}
+.hero3-text p {
+	font-size: 14px;
+}
+#playbutton {
+	width: 40px;
+    height: 40px;
+    border: 2px solid white;
+}
+#playarrow {
+	border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid white;
+    margin: 10px 0 0 4px;
+}
+.video-container iframe {
+	min-width: 200px;
+    min-height: 200px;
+    width: 90%;
+}
+
+#asb-logo {
+	display: none;
+}
+#asb-logo-m {
+	display: block;
+}
+.brand-text {
+	padding: 30px;
+	margin-top: -4px;
+}
+.brand-text h1 {
+	width: 80%;
+	max-width: 100%;
+	font-size: 20px;
+}
+
+.three-block-wrapper {
+	display: inline-block;
+}
+.three-block-image {
+	width: 100%;
+	margin-right: 0;
+}
+.three-block-image-d {
+	display: none
+}
+.three-block-image-m {
+	display: block;
+}
+
+.three-block-btn {
+    text-align: center;
+}
+
+.ph-ship-wrapper {
+	padding: 250px 0;
+	background-size: 125%;
+}
+#ph-ship-logo-m {
+	width: 230px;
+}
+
+.attain-container {
+	display: block;
+}
+#attain-img-desk {
+	display: none;
+}
+#attain-img-mobile {
+	display: block;
+}
+.attain-text {
+	top: 22%;
+}
+.attain-text h2 {
+	font-size: 7vw;
+}
+
+#wool-mobile {
+	display: block;
+}
+#wool-desk {
+	display: none;
+}
+.wool-text {
+	width: 100%;
+    bottom: 12%;
+    right: 0;
+}
+.wool-text h2 {
+	font-size: 36px;
+	margin: 0 20px;
+}
+
+.news-left, .news-right {
+	width: 100%;
+}
+
+.promo-text-btn {
+	display: block;
+    width: 100%;
+    left: 0;
+    top: 56%;
+    position: absolute;
+}
+.promo-text-btn h3 {
+	font-size: 6vw;
+}
+.promo-text-btn p {
+	font-size: 18px;
+}
+#promocode {
+	font-size: 10vw;
+}
+#promodetails {
+	top: 175px;
+}
+
+#promo-banner {
+	display: none;
+}
+#promo-banner-m {
+	display: block;
+	width: 100%;
+	margin: auto;
+}
+        }        
+        @media screen and (max-width:660px) {
+.shipping-bar-wrapper-m {
+	display: flex;
+}
+.shipping-bar-wrapper {
+	display: none;
+}
+#ordertoday-details-box, #free-ship-box, #save-5-details-box {
+    top: 17%;
+    width: 85%;
+    left: 5%;
+}
+#tenship {
+	width: 245px;
+	margin-bottom: 10px;
+}
+#fifteenship {
+	margin-bottom: 10px;
+	width: 237px;	
+}
+#freeship {
+	width: 182px;
+}
+#free-ship-box p {
+    padding-bottom: 0;
+}
+
+
+.hero2-container {
+	height: 465px;
+	background-size: cover;
+	background-position: center;
+}
+
+
+.brand-text h1 {
+	width: 95%;
+}
+#asb-logo {
+	margin: 30px auto;
+}
+
+.wool-text {
+	bottom: 9%;
+}
+#promodetails {
+	top: 120px;
+}
+        }
+        @media screen and (max-width:500px) {
+#asb-logo-m {
+	margin: 20px auto;
+}
+
+
+#hero2-mobile-img img {
+	left: -51%;
+}
+
+.ph-ship-wrapper {
+	background-position: center 3px;
+	padding: 220px 0;
+}
+.ph-free-container {
+	width: 260px;
+}
+#ph-ship-btn {
+	font-size: 11px;
+}
+#ph-ship-details {
+    bottom: -116px;
+    font-size: 11px;
+}
+   
+   .hero3-text {
+   	top: 120px;
+   }
+   
+.attain-text {
+	top: 16%;
+}
+.attain-text p {
+	margin: 10px auto;
+	line-height: 1.3;
+	font-size: 11px;
+}
+#attain-btn {
+	font-size: 11px;
+}
+
+.wool-button {
+    left: 28%;
+}
+.wool-text {
+	bottom: 9%;
+}
+.wool-text h2 {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.news-container h2 {
+	text-align: center;
+	margin: 15px 0;
+}
+
+#promodetails {
+	top: 60px;
+}
+        }
+        @media screen and (max-width: 450px) {
+        #ship-details-box, #ordertoday-details-box {
+        	    width: 300px;
+    	left: 9%;
+    	top: 17%;
+        }
+
+        
+        #hero3-btn {
+        	font-size: 9px;
+        }
+        
+        .brand-text h1 {
+	font-size: 14px;
+}
+          
+          .wool-text h2 {
+          	font-size: 25px;
+    		width: 70%;
+          }
+          
+          .promo-text-btn h3 {
+          	font-size: 18px;
+          }
+          #promocode {
+          	font-size: 29px;
+          }
+          .promo-text-btn p {
+          	font-size: 11px;
+          }
+        }
+        @media screen and (max-width: 400px) {
+
+.hero1-text h2 {
+	font-size: 26px;
+	width: 315px;
+}
+
+
+.hero2-text-m h2 {
+	font-size: 44px;
+}
+.hero2-text-m p {
+	font-size: 16px;
+}
+.hero2-btn-m {
+	    font-size: 14px;
+    padding: 6px;
+}
+
+.ph-free-container {
+	right: 0;
+}
+#ph-ship-logo-m {
+	width: 200px;
+}
+.ph-freeship-btn h3 {
+	font-size: 22px;
+}
+.ph-freeship-btn p {
+	font-size: 12px;
+}
+
+.hero3-text {
+	top: 65px;
+}
+.hero3-text p {
+	font-size: 12px;
+}
+
+
+.wool-text {
+	bottom: 5%;
+}
+.wool-text h2 {
+	font-size: 21px;
+}
+#promodetails {
+	top: 50px;
+}
+    }
+
+</style>
+
+<!-- Shipping/Promo Bar -->
+<div class="top-promo-bar">
+  <div class="shipping-bar-wrapper">
+  
+	<div class="shipping-arrows left-arrow" onclick="plusDivs(-1)">
+		<span id="left-arrow-ship"></span>
+	</div>
+	
+<div class="ship-text-wrapper">
+	
+	<div id="ship-msg-1" class="ship-msgs">
+		<b>free shipping</b> on orders over $200* 
+		<span class="ship-divider">|</span> 
+		<span class="free-ship ship-details-link" onclick="openDetails('free-ship-box')">Details</span>
+	</div>	
+
+	<div id="ship-msg-2" class="ship-msgs">
+	
+		Same day shipping on in-stock orders placed by 6PM EST 
+		<span class="ship-divider">|</span> 
+		<span class="ordertoday-details ship-details-link" onclick="openDetails('ordertoday-details-box')">Details</span>
+	
+	</div>
+	
+	<div id="ship-msg-3" class="ship-msgs">
+	<b>save 5%</b> on orders over $3,000* 
+	<span class="ship-divider">|</span> 
+	<span class="save-5 ship-details-link" onclick="openDetails('save-5-details-box')">Details</span>
+	</div>
+	
+</div>
+	
+	  <div class="shipping-arrows right-arrow" onclick="plusDivs(1)" >
+		<span id="right-arrow-ship"></span>
+		</div>
+	</div>
+	
+    <div class="shipping-bar-wrapper-m">
+  
+	<div class="shipping-arrows left-arrow" onclick="plusDivsM(-1)">
+		<span id="left-arrow-ship"></span>
+	</div>
+	
+<div class="ship-text-wrapper">
+	
+	<div id="ship-msg-1-m" class="ship-msgs-m">
+		<b>free shipping</b> 
+		<span class="ship-divider">|</span> 
+		<span class="free-ship ship-details-link" onclick="openDetails('free-ship-box')">Details</span>
+	</div>
+
+	<div id="ship-msg-2-m" class="ship-msgs-m">	
+	
+	  Same day shipping*
+		<span class="ship-divider">|</span> 
+		<span class="ordertoday-details ship-details-link" onclick="openDetails('ordertoday-details-box')">Details</span>
+	</div>
+	
+	<div id="ship-msg-3-m" class="ship-msgs-m">
+	<b>save 5%</b> 
+	<span class="ship-divider">|</span> 
+	<span class="save-5 ship-details-link" onclick="openDetails('save-5-details-box')">Details</span>
+	</div>
+	
+</div>
+	
+	  <div class="shipping-arrows right-arrow" onclick="plusDivsM(1)" >
+		<span id="right-arrow-ship"></span>
+		</div>
+	</div>
+</div>
+
+<div class="detailsoverlay" id="detail-overlay"></div>
+
+<div class="ship-detail-box" id="ordertoday-details-box">
+	<span class="closeDetails" id="close-details" onclick="closeDetails('ordertoday-details-box')">X</span>
+	<img class="ship-details-graphic ordertoday-graphic" src="https://static.augustasportswear.com/marketing/ShippingBanner-Icon-3.jpg">
+	<p>
+	In-stock orders for the following services/carriers will ship same day if placed by: <br>
+	USPS – 2 P.M. EST <br>
+Fed Ex (all services) – 3 P.M. EST<br>
+International – 4 P.M. EST<br>
+UPS Air – 5 P.M. EST <br>
+UPS Ground - 6 P.M. EST
+	<br><span class="details-subtext"><a href="/faq#shipping-faqs">Learn more about our shipping</a></span>
+	</p>
+	<button class="got-it">got it, thanks!</button>
+</div>
+
+<div class="ship-detail-box" id="free-ship-box">
+	<span class="closeDetails" id="close-details" onclick="closeDetails('ship-details-box')">X</span>
+	<img class="ship-details-graphic free-ship-graphic" src="https://static.augustasportswear.com/marketing/ShippingBanner-Icon-2.jpg">
+	<p>Any order over $200 shipping UPS Ground<br>
+	qualifies* for <b>FREE</b> shipping.
+	<br>
+	<span class="details-subtext">*Excludes taxes, shipping and applicable discounts or promo codes. <br> This applies to only standard UPS shipments shipped to a single contiguous US Address and 3rd Day Priority USPS for Puerto Rico, Alaska & Hawaii shipments. Orders shipped via air freight, special ground freight, and COD are not eligible. 
+	<br>
+	For information regarding shipping our products to Canada, please contact us at <a href="mailto:canadasales@augustasportswear.com">canadasales@augustasportswear.com</a>.
+	</span>
+	</p>
+	<br>
+	<h4 id="tenship">Order Total of less than $100 = <b>$10 Flat Rate Shipping</b></h4>
+	<h4 id="fifteenship">Order Total of $100 – $200 = <b>$15 Flat Rate Shipping</b></h4>
+	<h4 id="freeship">Order Total over $200 = <span style="color:#579a55;"><b>FREE Shipping</b></span></h4>
+	<button class="got-it">got it, thanks!</button>
+</div>
+
+<div class="ship-detail-box" id="save-5-details-box">
+	<span class="closeDetails" id="close-details" onclick="closeDetails('save-5-details-box')">X</span>
+<img class="ship-details-graphic save-5-graphic" src="https://static.augustasportswear.com/marketing/ShippingBanner-Icon-.jpg">
+<p>
+Any order over $3,000 qualifies* for an additional 5% discount.
+<br>
+<span class="details-subtext">*Excludes taxes, shipping and applicable discounts or promo codes.</span>
+	</p>
+	<button class="got-it">got it, thanks!</button>
+</div>
+
+<script>
+function openDetails(target){
+document.getElementById(target).style.display = 'block';
+document.getElementById('detail-overlay').style.display = 'block';
+}
+function closeDetails(target){
+document.getElementById(target).style.display = 'none';
+document.getElementById('detail-overlay').style.display = 'none';
+}
+$(function () {
+  
+    $(".free-ship, .ordertoday-details, .save-5").click(function () {
+        $(".detailsoverlay").css('display', 'block');
+    });
+      
+    $(".closeDetails, .detailsoverlay, .got-it").click(function () {
+        $(".ship-detail-box").fadeOut();
+        $(".detailsoverlay").fadeOut();
+    });
+    
+});
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("ship-msgs");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+showDivsM(slideIndex);
+function plusDivsM(n) {
+  showDivsM(slideIndex += n);
+}
+function showDivsM(n) {
+  var i;
+  var x = document.getElementsByClassName("ship-msgs-m");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+<div id="homepagecontainer">
+
+<!-- Hero 1 -->
+<div class="hero1-banner">
+	<img id="hero1-desk" src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/OCTOBER%202019/2019October-homepage-1-Hero.jpg">
+
+	<img id="hero1-mobile" src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/OCTOBER%202019/Mobile/2019October-homepage-mobile-1-Hero.jpg">
+	
+	<div class="hero1-text">
+	<h2>WELCOME THE FALL SEASON WITH ALL NEW OUTERWEAR.</h2>
+	
+	<a class="hp-btn-white hero1btn" href="/adult-outerwear#sortBy=newest_product:desc">SHOP ADULT&nbsp;&nbsp;<span class="shop-arrow"></span></a>
+	
+	<a class="hp-btn-white hero1btn shoplds-btn" href="/ladies-outerwear#sortBy=newest_product:desc">SHOP LADIES <span class="shop-arrow"></span></a>
+	</div>
+
+</div> 
+
+
+<!-- 3 Blocks -->
+<div class="three-blocks">
+
+<div class="three-block-wrapper">
+
+<div class="three-block-image hideme3" id="left-block">
+
+ 	<img class="three-block-image-d"  src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/OCTOBER%202019/2019October-homepage-2-AdultBB.jpg">
+ 	<img class="three-block-image-m"  src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/OCTOBER%202019/Mobile/2019October-homepage-mobile-2-AdultBB.jpg">
+ 	
+ 	 	<div class="three-block-btn">
+ 	 	<a class="hp-btn-white" href="/adult-shop-by-sport-basketball">SHOP ADULT BASKETBALL <span class="shop-arrow"></span></a>
+	</div> 	
+
+</div>
+
+<div class="three-block-image hideme3" id="mid-block">
+
+ 	<img class="three-block-image-d"   src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/OCTOBER%202019/2019October-homepage-3-LadiesBB.jpg">
+ 	 	<img class="three-block-image-m"   src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/OCTOBER%202019/Mobile/2019October-homepage-mobile-3-LadiesBB.jpg">
+ 	
+ 	 	<div class="three-block-btn">
+ 	 	<a class="hp-btn-white" href="/ladies-shop-by-sport-basketball">SHOP LADIES BASKETBALL <span class="shop-arrow"></span></a>
+	</div> 	
+
+</div>
+
+<div class="three-block-image hideme3" id="right-block">
+
+ 	<img class="three-block-image-d"   src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/OCTOBER%202019/2019October-homepage-4-YouthBB.jpg">
+ 	<img class="three-block-image-m"  src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/OCTOBER%202019/Mobile/2019October-homepage-mobile-4-YouthBB.jpg">
+ 	
+ 	 	<div class="three-block-btn">
+ 	 	<a class="hp-btn-white" href="/youth-shop-by-sport-basketball">SHOP YOUTH BASKETBALL <span class="shop-arrow"></span></a>
+	</div> 	
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Pacific Free Ship -->
+<div class="ph-ship-wrapper">
+	<img id="ph-ship-logo" src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/OCTOBER%202019/2019October-homepage-10-PacificLogo.png">
+	
+	<div class="ph-freeship-btn">
+	   <div class="ph-free-container">
+	   <img id="ph-ship-logo-m" src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/OCTOBER%202019/2019October-homepage-10-PacificLogo.png">
+	 <h3>FREE FREIGHT</h3>
+	 <p><b>FREE</b> Ground Shipping on orders over $200*<br>
+	   <b>Extended through October!</b>
+	 </p>
+
+	<a id="ph-ship-btn" href="https://www.pacificheadwear.com" target="blank">
+	shop pacificheadwear.com <span class="shop-arrow"></span>
+	</a>
+
+	
+	<p id="ph-ship-details">Applies to the contiguous USA only.<br>Excludes AK, HI, Puerto Rico and Canada.</p>
+	  </div>
+	</div>
+
+</div>
+
+<!-- Hero 2 FoF -->
+<div class="hero2-banner">
+		<img id="fof-desk" src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/OCTOBER%202019/2019October-homepage-5-Fleece.jpg">
+		<img id="fof-mobile" src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/OCTOBER%202019/Mobile/2019October-homepage-mobile-5-Fleece.jpg">
+		
+		<div class="hero2-text">
+		<a href="/SearchDisplayView?tag=full-on-fleece-all" class="hero2-btn"><b>ALL COZY FLEECE THIS WAY</b> <span class="shop-arrow-white"></span></a>
+		</div>
+</div>
+
+<!-- Hero 3 video -->
+<div id="hero3-banner">	
+	<div class="hero3-wrapper">
+
+	<img id="baseball-video-desk" src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/OCTOBER%202019/2019October-homepage-6-Baseball.jpg">
+		<img id="baseball-video-m"  src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/OCTOBER%202019/Mobile/2019October-homepage-mobile-6-Baseball.jpg">
+		
+		<div class="hero3-text-play">
+	<img id="dugout-text" src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/OCTOBER%202019/2019October-homepage-7-BaseballText.png">
+		
+	<div class="hero3-text">
+		<p>watch full video</p>
+		<a id="playbutton"><span id="playarrow"></span></a>
+	</div>
+</div>
+
+<div class="video-popup">
+  <div class="vidoverlay"></div>
+  <div class="video-container">
+    <span>X</span>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/3LnFARFWkxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+	</div>
+</div>
+
+
+<!-- Attain Collection -->
+<div class="attain-container">
+  <img id="attain-img-desk" src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/OCTOBER%202019/2019October-homepage-8-Attain.jpg">
+  <img id="attain-img-mobile" src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/OCTOBER%202019/Mobile/2019October-homepage-mobile-7-Attain.jpg">
+
+  <div class="attain-text">
+		<h2 class="hideme">THE ATTAIN COLLECTION</h2>
+		
+		<p class="hideme">
+		Decorate confidently with <b>true hue technology®</b></p>
+		<a class="hp-btn-black hideme" id="attain-btn" href="/SearchDisplayView?categoryId=&beginIndex=0&pageSize=20&searchTerm=attain&promo_name=oct_hp_update&promo_id=attain-banner&promo_creative=all-colors">
+			SHOP COLLECTION <span class="shop-arrow-white"></span>
+		</a>
+		</div>
+  
+</div>
+
+<!-- Brand Text -->
+<div class="brand-text">
+	<img class="hideme" src="https://static.augustasportswear.com/marketing/ASB%5FHorizontal%5FwithLogos.png" id="asb-logo">
+	<img class="hideme" src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/OCTOBER%202019/Mobile/2019October-homepage-8-ASB-stacked.png" id="asb-logo-m">
+	<h1 class="hideme">
+	<b>we are driven by a mission to inspire a physically fit lifestyle, healthy families and connected communities.</b>
+	<br><br>
+<span id="brand-text-lowercase">As a leading designer, manufacturer and marketer of
+high-performance active wear and spirit wear for
+teams, coaches, athletes, fans and corporate needs,
+our family of brands offers a complete source for
+performance and athletic apparel and uniforms.</span></h1>
+
+
+	<a href="/about-us1"><button class="hp-btn-black">LEARN MORE<span class="shop-arrow-white"></span></button></a>
+</div>
+
+<!-- Wool Section -->
+<div class="wool-container">
+		
+	<img id="wool-desk" src="https://static.augustasportswear.com/marketing/Homepage%5FDesktop%5FVarsityJacket.png">
+	<div class="wool-text">
+	<h2>The Original Varsity Jacket</h2>
+	<p>Stock or Customize</p>
+	<a id="wool-btn" href="/varsity-jacket">
+	LEARN MORE
+	</a>
+	</div>
+	
+	<img id="wool-mobile" src="https://static.augustasportswear.com/marketing/Homepage%5FMobile%5Fvarsityjacket%5Fmay.png">
+</div>
+
+<!-- News -->
+<div class="news-container">
+	<h2>NEWS</h2>
+	
+<!-- Left News Boxes -->
+  <div class="news-left">
+	
+		 
+	 <!-- pacific announce --> 
+	  <div class="news-box left-news-box hideme2">
+	  
+	    <div class="newsimage-box">
+	    <a href="http://news.augustasportswear.com/augusta-sportswear-brands-announces-acquisition-of-pacific-headwear/" target="blank"><img class="newsimage" src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/OCTOBER%202019/2019October-homepage-9-PacificBlog.jpg"></a>
+	    </div>
+	    
+	  	<div class="news-text">
+	  	  <p>announcement</p>
+	  	  <span class="category-divider"></span>
+	  	  <a href="http://news.augustasportswear.com/augusta-sportswear-brands-announces-acquisition-of-pacific-headwear/"  target="blank"><h3>Augusta Sportswear Brands Announces Acquisition of Pacific Headwear</h3></a>
+	  	  <a class="read-link" href="http://news.augustasportswear.com/augusta-sportswear-brands-announces-acquisition-of-pacific-headwear/" target="blank"><h4>&#9776; READ</h4></a>
+	  	</div>
+	  	
+	  </div>
+	
+	<!-- AYSO -->
+	  <div class="news-box left-news-box hideme2">
+	  
+	    <div class="newsimage-box">
+	    <a href="http://news.augustasportswear.com/american-youth-soccer-organization-augusta-sportswear-brands-and-soccer-com-team-up-for-recreational-team-grassroots-partnership/" target="blank">
+	    <img class="newsimage" src="https://static.augustasportswear.com/marketing/August%5FHomepage%5FBlogs%5FAYSO.png">
+	    </a>
+	    </div>
+	    
+	  	<div class="news-text">
+	  	  <p>announcement</p>
+	  	  <span class="category-divider"></span>
+	  	  <a href="http://news.augustasportswear.com/american-youth-soccer-organization-augusta-sportswear-brands-and-soccer-com-team-up-for-recreational-team-grassroots-partnership/" target="blank"><h3>American Youth Soccer Organization, Augusta Sportswear Brands and SOCCER.COM Team Up</h3></a>
+	  	  <a class="read-link" href="http://news.augustasportswear.com/american-youth-soccer-organization-augusta-sportswear-brands-and-soccer-com-team-up-for-recreational-team-grassroots-partnership/" target="blank"><h4>&#9776; READ</h4></a>
+	  	</div>
+	  	
+	  </div>
+	  
+	 <!-- Connected By Team --> 	
+	  <div class="news-box left-news-box hideme2">
+	  
+	    <div class="newsimage-box">
+	    <a href="http://news.augustasportswear.com/augusta-sportswear-brands-connected-by-team/" target="blank">
+	    <img class="newsimage" src="https://static.augustasportswear.com/marketing/August%5FHomepage%5FBlogs%5FCBT.png">
+	    </a>
+	    </div>
+	    
+	  	<div class="news-text">
+	  	  <p>marketing</p>
+	  	  <span class="category-divider"></span>
+	  	  <a href="http://news.augustasportswear.com/augusta-sportswear-brands-connected-by-team/" target="blank"><h3>Augusta Sportswear Brands: Connected By Team</h3></a>
+	  	  <a class="read-link" href="http://news.augustasportswear.com/augusta-sportswear-brands-connected-by-team/" target="blank"><h4>&#9776; READ</h4></a>
+	  	</div>
+	  	
+	  </div>
+
+  </div>
+	
+<!-- Right News Boxes -->
+  <div class="news-right">
+	
+	<!-- Same Day Ship -->
+	  <div class="news-box right-news-box hideme2"  id="samedayship-news">
+	 	 <img class="newsimage" src="https://static.augustasportswear.com/marketing/Homepage%5FDesktop%5Fnewdeadline.png">
+	  	<a class="hp-btn-white" id="learn-ship-news" href="/faq#shipping-faqs">LEARN MORE <span class="shop-arrow"></span></a>
+	<p id="shipping-details">*SAME DAY SHIPPING ON IN-STOCK ORDERS PLACED BY 6:00 P.M. EST</p>
+	  
+	  </div>
+	  
+	<!-- 2xl Charges -->
+	  <div class="news-box right-news-box hideme2">
+	    <img class="newsimage" src="https://static.augustasportswear.com/marketing/August%5FHomepage%5FBlogs%5F2XL.png">
+	  </div>
+	
+  </div>
+
+</div>
+
+</div>
+
+<script>
+
+//Open video
+$(function () {
+    "use strict";
+    
+    $("#playbutton").click(function () {
+        $(".video-popup").fadeIn();
+    });
+    
+    $("span, .vidoverlay").click(function () {
+        $(".video-popup").fadeOut();
+    });
+    
+});
+
+//fade in
+$(document).ready(function() {
+    
+/* Every time the window is scrolled ... */
+$(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},800);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
+//fade in 2
+$(document).ready(function() {
+    
+/* Every time the window is scrolled ... */
+$(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme2').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height() + 300;
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object){
+                
+                $(this).animate({'opacity':'1'},900);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
+//fade in 3
+$(document).ready(function() {
+    
+/* Every time the window is scrolled ... */
+$(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme3').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height() + 500;
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},800);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
+</script>
+
+
+<!-- PROMO remember content recommendation widget -->
+	 
+	 <div class="promo-banner">
+		
+		 <img id="promo-banner" src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Landing%20Page%20Graphics/CS-3791-MidweekMadness-October-MainBanner.jpg"> 
+		 
+		 <img id="promo-banner-m" src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/OCTOBER%202019/Mobile/CS-3791-MidweekMadness-October-mobile.jpg"> 
+		 
+
+	 	 
+	 <div class="promo-text-btn">
+	 	<p>VALID UNTIL THURSDAY, OCTOBER 3RD
+			<br>
+			ENDING AT 11:59 PM EST</p>
+	 	<h3>USE PROMO CODE:<br> <span id="promocode">MMOCT35</span></h3>	 	
+	 	
+	 	<a id="promobtn" class="hp-btn-white" href="/SearchDisplayView?tag=midweek-madness&tag=midweek-madness&promo_name=MWM&promo_id=oct19&promo_position=hp_login">SHOP NOW<span class="shop-arrow"></span></a>	
+	 	<p id="promodetails">
+	blank stock <span class="detail-divider">&#183;</span> online orders only
+	<br>standard freight policies apply 
+	<br>max 72 pieces per order
+	</p>
+	
+	</div>
+	 </div> 
+	 
+	 
+<!-- 
+<div class="promo-banner-preview">
+	<a href="/SearchDisplayView?tag=midweek-madness&tag=midweek-madness&promo_name=MWM&promo_id=sept19&promo_position=hp_login">	
+		 <img id="promo-preview" src="https://static.augustasportswear.com/marketing/CS-3730-MidweekMadness-Sept-landingpage-banner1.jpg"> 
+		 
+		<img id="promo-preview-m" src="https://static.augustasportswear.com/marketing/CS-3730-MidweekMadness-Sept-MOBILEBANNER.jpg"> 
+	</a>
+	 
+</div> 
+-->
+<!-- preview 
+<div class="promo-banner-preview">
+		 <img id="promo-preview" src="https://static.augustasportswear.com/marketing/CS-3730-MidweekMadness-Sept-Comingsoon_banner.jpg"> 
+</div>
+-->

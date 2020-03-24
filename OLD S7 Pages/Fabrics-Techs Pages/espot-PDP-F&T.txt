@@ -1,0 +1,120 @@
+<!-- F & T espots on PDPs -->
+<style>
+.ft-thumbnail-wrapper {
+	width: 90%;
+    margin: 30px auto 0;
+    display: inline-block;
+}
+.ft-thumb-image {
+    width: auto;
+    height: 150px;
+}
+
+.ft-thumbnail-content-text {
+	margin: 20px 0 10px 10px;
+	color: black;
+	display: inline-block;
+	text-align: left;
+	width: 60%;
+	font-size: 14px;
+	vertical-align: top;
+}
+.ft-thumbnail-content-text h3 {
+	text-transform: uppercase;
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+.ft-thumbnail-content-text p {
+	line-height: 1.2;
+	font-size: 13px;
+}
+.ft-learnmore {
+	padding: 5px 25px!important;
+    margin-top: 16px;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+	.ft-thumbnail-content-text {
+	margin: 10px 0 10px 10px;
+	}
+}
+@media screen and (max-width: 550px) {
+	.ft-thumbnail-content-text {
+		width: 100%;
+	}
+}
+</style>
+
+
+  <div class="ft-thumbnail-wrapper" id="storm-dfend-pdp">
+    <img class="ft-thumb-image" src="https://s7d4.scene7.com/is/image/OnlineSportswear/FabricsTech%2DAlternative%2DStormDfend?$PNG%2DALPHA%2D600$&wid=400">
+    
+    <div class="ft-thumbnail-content-text">
+     <h3>STORM DFEND™</h3>
+     <p>Durable water resistant finish keeps you dry, while knit softshell breathes to keep you comfortable.</p>
+     
+    <a class="button primary ft-learnmore" href="/storm-dfend">Learn More</a>
+    </div>
+  </div>
+   
+  <div class="ft-thumbnail-wrapper" id="3d-softshell-pdp">
+    <img class="ft-thumb-image" src="https://s7d4.scene7.com/is/image/OnlineSportswear/FabricsTech%2DLandingPage%2D3DRegulateSoftshell?$PNG%2DALPHA%2D600$">
+    
+    <div class="ft-thumbnail-content-text">
+     <h3>3D Regulate Softshell</h3>
+     <p>3D fabric technology with patterned brushed back engineered to keep you comfortable in motion and Durable Water Resistance for protection.</p>
+     
+     <a class="button primary ft-learnmore" href="/3d-regulate-softshell">Learn More</a>
+    </div>
+    
+  </div>
+  
+  <div class="ft-thumbnail-wrapper" id="3d-lightweight-pdp">
+      <img class="ft-thumb-image" src="https://s7d4.scene7.com/is/image/OnlineSportswear/FabricsTech%2DLandingPage%2D3DRegulateLightweightKnit?$PNG%2DALPHA%2D600$">
+    	
+    <div class="ft-thumbnail-content-text">
+     <h3>3D Regulate Lightweight Knit</h3>
+     <p>3D fabric technology with patterned brushed back engineered to keep you comfortable in motion.</p>
+     
+     
+	<a class="button primary learnmore" href="/3d-regulate-lightweight-knit">Learn More</a>
+    </div>
+  </div>
+  
+  <div class="ft-thumbnail-wrapper" id="3d-seamless-pdp">
+   	<img class="ft-thumb-image" src="https://s7d4.scene7.com/is/image/OnlineSportswear/FabricsTech%2DLandingPage%2D3DRegulateSIKnit?$PNG%2DALPHA%2D600$">
+    	
+    <div class="ft-thumbnail-content-text">
+     <h3>3D Regulate Seamless Insulated Knit</h3>
+     <p>3D fabric technology with seamless quilted insulation engineered to keep you warm without sacrificing breathability.</p>
+     
+     
+     <a class="button primary ft-learnmore" href="/3d-regulate-seamless-knit">Learn More</a>
+    </div>
+  </div>
+  
+  <div class="ft-thumbnail-wrapper" id="truehue-pdp">
+    <img class="ft-thumb-image" src="https://s7d4.scene7.com/is/image/OnlineSportswear/FabricsTech%2DLandingPage%2Dtruehuetech?$PNG%2DALPHA%2D600$">
+    
+    <div class="ft-thumbnail-content-text">
+     <h3 id="truehue-title">true hue technology®</h3>
+     <p>true hue technology®  helps prevent dye migration so you can decorate confidently with color reliability you can count on, guaranteed!</p>
+     
+     
+     <a class="button primary ft-learnmore" href="/true-hue-technology">Learn More</a>
+    </div>
+  </div>
+  
+  
+  
+  <div class="ft-thumbnail-wrapper" id="converge-embossed-pdp">
+    <img class="ft-thumb-image" src="https://s7d4.scene7.com/is/image/OnlineSportswear/FabricsTech%2DLandingPage%2DConvergeEKnit?$PNG%2DALPHA%2D600$">
+    
+    <div class="ft-thumbnail-content-text">
+     <h3>Converge Embossed Knit</h3>
+     <p> Embossed active knit with subtle texture featuring true hue technology®.</p>
+      
+     <a class="button primary ft-learnmore" href="/converge-embossed-knit">Learn More</a>
+    </div>
+  </div>

@@ -1,0 +1,180 @@
+<!-- Product spec sheet PIM -->
+
+<html>
+    
+<head>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone.js"></script>
+            <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400" /> 
+             
+<style>
+html {
+	height: auto; 
+}
+           
+body {
+	color: black;
+	font-size: 16px;
+    margin: 0;
+    font-family: Helvetica;
+}
+
+.page-wrap {
+	border: 1px solid;
+    height: 100%;
+    margin: 10px auto;
+	width: 100%;
+}
+
+#top-area {
+    width: 100%;
+    top: 0;
+    margin: 20px auto;
+}
+#top-area img {
+	width: 40%;
+	margin: 10px auto;
+	display: block;
+}
+ 
+h1 {
+	font-size: 40px;
+	color: black;
+	text-transform: uppercase;
+	margin-bottom: 0px;
+	text-align: center;
+}
+ 
+h2 {
+	margin: 5px 0;
+    color: black;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.style-description {
+	text-align: center;
+}
+.style-description p {
+	margin: 0 auto;
+}
+.flat-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ 
+.flat-ul li {
+    display: inline-block;
+    margin: 10px 0px 20px;
+   /* padding: 0 30px; 
+    background: #fff; */
+    border-radius: 10px;
+    width: 49%;
+    height: auto;
+    vertical-align: top;
+}
+
+.image-wrapper {
+	width: 90%; 
+	height: auto; 
+	margin: auto;
+}
+.product-image {
+	max-width: 100%; 
+	max-height: 100%;
+	margin-bottom: 10px;	
+}
+
+@media print {
+	
+  html {
+  	height: 90%;
+  }
+  .flat-ul li {
+  	width: 46%;
+  }
+  .image-wrapper {
+  	width: 80%;
+  }
+   h2 {
+  	width: 80%;
+  	margin: auto;
+  }
+  .msrp-edit {
+  	border: none;
+  }
+}
+</style>
+       
+        <!-- This is the HTML for the page -->
+        <script type="text/template" id="page-template">
+            <div class="page-wrap">
+                <div id="top-area">
+					<h1>Product Specs</h1>
+                </div>             
+                
+                  
+                <ul id="items-list" class="flat-ul">
+               
+                </ul>
+            </div>
+        </script>
+ 
+        <!-- HTML for each item -->
+        <script type="text/template" id="item-template">
+            <li class="item-wrap">
+                <div class="image-wrapper">
+            <img class="product-image" src="/cs/api<%= displayPicture%>">
+                </div>
+                
+                <h2><%= fields.productGender%> <%= fields.productDescription%></h2>
+                
+                <div class="style-description">
+                <p>Style # <%= displayName%></p>
+                <p class="msrp-edit">$<%= fields.productMSRP%></p>
+                </div>
+                
+                <div class="">
+                  
+                </div>
+            </li>
+        </script>
+       
+        <!-- Main script, create HTML using underscore.js -->
+        <script type="text/javascript">
+            var init = function () {
+                // Create templates
+                var pageTemplate = _.template($("#page-template").html());
+                var itemTemplate = _.template($("#item-template").html());
+               
+                // Render page template
+                var pageEl = $(pageTemplate());               
+    
+                // Render item templates
+                for(var i = 0; i < data.length; i++) {
+                    pageEl.find("ul").append(itemTemplate(data[i]));
+                }
+ 
+                // Put page in the DOM
+                $("#page-container").append(pageEl);
+            };
+        </script>      
+    </head>
+  
+  
+  <body>
+        <div id="page-container">
+ 
+        </div>
+ 
+        <script type="text/javascript">
+            $(document).ready(function () {
+                init();
+            });
+        </script>
+  </body>
+    
+    
+</html>
