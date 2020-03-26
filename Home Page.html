@@ -329,30 +329,24 @@ b {
 /* Ohio Close */
 .ohioclose-banner {
 	background-color: #50A5D9;
-	padding: 6% 0;
+	padding: 10px 0;
 	margin: auto;
 }
 .ohiotext {
 	color: white;
 	text-align: center;
-	font-size: 20px;
-	width: 90%;
+	font-size: 12px;
+	font-family: "AvenirNextN";
+	width: 98%;
 margin: auto;
-max-width: 950px;
 }
-.ohiotext h2, .ohiotext p {
-	margin-bottom: 20px;
-}
-
 .ohiotext p {
-font-size: 16px;
+	display: inline-block;
 }
-
 .ohiobtn {
 	width: fit-content;
-	margin: 10px auto 0;
-	top: 10px;
-    position: relative;
+	margin: 0 auto 0 15px;
+	display: inline-block;
 }
 #ruslist {
 	text-decoration: underline;
@@ -360,6 +354,57 @@ font-size: 16px;
 	font-size: 16px;
 }
 
+/* Flag Hats*/
+.flaghats-banner {
+	margin-bottom: 20px;
+	position: relative;
+}
+#fh-bkg {
+	width: 100%;
+}
+.flag-content {
+	position: absolute;
+	top: 6%;
+}
+.flagtext {
+	width: 100%;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+}
+.flagtext h2 {
+	color: white;
+	width: 80%;
+	font-size: 6vw;
+	margin: auto;
+}
+.flagtext h3 {
+	font-size: 18px;
+	margin-top: 10px;
+	font-family: "AvenirNextN";
+}
+#phrc-logo {
+	width: 70%;
+	margin: 20px auto;
+}
+
+#flag-hats {
+	width: 90%;
+	margin: 0 auto 30px;
+	display: block;
+}
+.flag-bot-text {
+	color: white;
+	text-align: center;
+	font-size: 3vw;
+    text-transform: uppercase;
+}
+.flag-bot-text h4 {
+	margin-bottom: 15px;
+}
+.flag-bot-text a {
+	font-size: 13px;
+}
 
 /* Here for You */
 .hereforyou {
@@ -1431,10 +1476,6 @@ background: none;
     width: 55%;
     left: 22%;
 }
-
-.ohioclose-banner {
-padding: 9% 0;
-}
 .here-text {
 	top: 10%;
 }
@@ -1472,16 +1513,14 @@ padding: 9% 0;
         	#right-arrow-ship {
         		margin-right: 10px;
         	}    	
-.ohioclose-banner {
-	padding: 15% 0;
-}
-.ohiotext {
-	font-size: 16px;
-}
-.ohiotext p {
-	font-size: 13px;
-}
 
+
+#phrc-logo {
+	margin: 20px auto 0px;
+}
+#flag-hats {
+	margin: 0 auto;
+}
 
 #supportb-desk {
 	display: none;
@@ -2055,6 +2094,12 @@ display: block;
     	top: 21%;
         }
 
+
+.flaghats-banner {
+	padding-bottom: 15%;
+	background-color: black;
+}
+
 #here-m {
 	padding-bottom: 110px;
 }
@@ -2120,6 +2165,19 @@ top: 50%;
 	width: 315px;
 }
 
+
+.flagtext h2 {
+	width: 100%;
+	font-size: 8vw;
+}
+.flagtext h3, .flag-bot-text h4 {
+	font-size: 13px;
+}
+
+.ohiobtn {
+	margin: 0 auto;
+	display: block;
+}
 .lowmins-banner {
 	margin-bottom: -30px;
 }
@@ -2412,26 +2470,40 @@ function showDivsM(n) {
 <div class="ohioclose-banner">
 
 <div class="ohiotext">
-	<h2>Effective March 24th, our Sidney, OH distribution center will be CLOSED to comply with the Ohio At-Home Health Order, through April 6th, 2020.
-	</h2>
-
-<p>All blank garment orders and decorated orders for Russell Athletic (excluding certain styles; <a id="ruslist"  href="/SearchDisplayView?tag=russell-athletic-items-excluded-ohio-closure">see styles</a>), High Five, and Holloway product will begin shipping again on April 7th, pending a lift on the order.
-</p>
-
-<p>This does NOT affect custom sublimated orders for those brands which will continue to ship as normal.
-</p>
-
-<p>This does NOT affect certain Russell Athletic styles, which will be drop shipped from Montgomery, Alabama beginning on March 30th and continue through the period of the order. View full listing <a id="ruslist"  href="/SearchDisplayView?tag=russell-athletic-items-excluded-ohio-closure">here</a>.
-</p>
+	<p>Stay up to date on the latest COVID-19 news</p>
 	
 	<div class="ohiobtn">
-	<a href="/ohio-close-covid" class="hp-btn-white-ol">Learn More <span class="shop-arrow-white"></span></a>
+	<a href="/ohio-close-covid" class="btnlinktext">Learn More</a>
 	</div>
 	
 </div>
 
 </div>
 
+
+<!-- Flag Hats -->
+<div class="flaghats-banner">
+	<img id="fh-bkg" src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/MAR-2020/AmericanFlagCollection_ASB_Banner_bkgd.jpg" alt="American Red Cross and Pacific Headwear team up for the American Flag Collection hats.">
+  <div class="flag-content">
+
+<div class="flagtext">
+	<h2>The American Flag Collection</h2>
+	<h3>on the 104 C trucker snapback</h3>
+
+	<img id="phrc-logo" src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/MAR-2020/AmericanFlagCollection_ASB_logos.png" alt="American Red Cross and Pacific Headwear team up for the American Flag Collection hats.">
+	
+</div>
+
+<img id="flag-hats" src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/MAR-2020/AmericanFlagCollection_ASB_hats.png" alt="American Red Cross and Pacific Headwear team up for the American Flag Collection hats.">
+
+<div class="flag-bot-text">
+	<h4>benefiting the american red cross</h4>
+	<a href="https://www.pacificheadwear.com/" target="blank" class="btnlinktext">shop at pacificheadwear.com <span class="shop-arrow-white"></span></a>
+</div>
+
+</div>
+
+</div>
 
 <div class="hereforyou">
 	<img src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/March%202020/HeretoHelp-Banner1-desktop.jpg" id="here-desk">
@@ -2631,97 +2703,6 @@ function showDivsM(n) {
 
 
 
-<!-- Opening Day
-<div class="hero2-banner">
-  <img src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/JANUARY%202020/DESKTOP/JANUARY2020-HP-Baseball.jpg" alt="Baseball players" id="hero2desk">
-  
-  <img src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/JANUARY%202020/DESKTOP/JANUARY2020-HP-Baseball-mobile-2.jpg" alt="Baseball & Softball players" id="hero2-m">
-
-  <div class="hero2-text">
-   <img id="openingday"  src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/JANUARY%202020/DESKTOP/JANUARY2020-HP-OpeningDay.png" alt="Opening Day 2020">
-   
-   <a class="hp-btn-black" id="hero2-btn" href="/adult-shop-by-sport-baseball">shop 2020 baseball <span class="shop-arrow-white"></span></a>
-  </div>
-  
-     <div class="hero2-text-m">
-   <a class="hp-btn-black" id="hero2-btn-m" href="/adult-shop-by-sport-baseball">shop stock uniforms <span class="shop-arrow-white"></span></a>
-   </div>
-   
-</div> -->
-
-<!-- Baseball Bundle
-<div class="basebundle">
-	<div class="bundletext">
-	<h3><span style="color: #55428b;">20% OFF</span> JERSEY<br>& HAT BUNDLES</h3>
-		<h4><span style="color: #55428b;">20% OFF</span><br>JERSEY & HAT<br> BUNDLES</h4>
-	
-	<a href="/baseball-bundle-2020?promo_name=feb-hp&promo_id=baseball-bundle&promo_creative=textarea"><b>GET THE DETAILS</b> <span class="shop-arrow"></span></a>
-	
-	</div>
-</div> -->
-
-<!-- Softball 2020 
-<div class="hero3-banner">
-   <img src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/JANUARY%202020/DESKTOP/JANUARY2020-HP-Softball.jpg" alt="Softball players">
-  
-  
-  <div class="hero3-text">
-   <img id="softballtext" src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/JANUARY%202020/DESKTOP/JANUARY2020-HP-Softball-text.png" alt="Softball 2020">
-   
-   <a class="hp-btn-black" id="hero3-btn" href="/ladies-shop-by-sport-softball">shop stock uniforms <span class="shop-arrow-white"></span></a>
-   </div>
-   
-   
-</div> -->
-
-
-
-<!-- Pacific Free Ship -->
-<div class="ph-ship-wrapper">	
-
-	   <div class="ph-free-container">
-	   <img id="ph-model" src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/Feb/Feb2020-homepage-Pacific-bball.png" alt="Baseball player in a Pacific Headwear hat">
-	
-	  
-	  <div class="ph-text">
-	   <img id="ph-ship-logo" src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/Feb/Feb2020-homepage-Pacific-long-Logo.png" alt="Pacific Headwear logo">
-	   
-	   <img id="elite-text" src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/Feb/Feb2020-homepage-Pacific-EliteSeries-Logo-R1.png" alt="Elite Series hats from Pacific Headwear">
-	   
-	   <p>2 week turn time on embroidered stock hats</p>
-
-
-	<a id="ph-ship-btn" href="https://www.pacificheadwear.com/products/series/elite-series" target="blank">
-	shop now <span class="shop-arrow-white"></span></a>
-		</div>
-
-  <img id="ph-model-m" src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/Feb/Feb2020-homepage-Pacific-bkgd2-mobile.png" alt="Baseball player in a Pacific Headwear hat">
-
-	</div>
-
-</div>
-
-
-<!-- Outerwear collection -->
-<div class="ow-banner">
-
-<img src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/JANUARY%202020/DESKTOP/JANUARY2020-HP-Outerwear.jpg" alt="Outerwear Jacket" id="ow-bkg-d">
-
-<img src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/JANUARY%202020/DESKTOP/JANUARY2020-HP-Outerwear-mobile.jpg" alt="Outerwear Jacket" id="ow-bkg-m">
- 
- 
-  <div class="ow-text">
-  
-  <h3>Outdoor adventure or urban jungle &mdash; our Outerwear is ready for you.</h3>
-  
-  <a class="hp-btn-white" href="SearchDisplayView?categoryId=&beginIndex=0&pageSize=20&searchTerm=Outerwear">SHOP THE COLLECTION <span class="shop-arrow"></span></a>
-  
-  <p><b>the 2020 corporate<br>catalog is here! &nbsp; | &nbsp; </b> <a href="https://static.augustasportswear.com/marketing/2020-Website/Catalogs/Corporate-Catalog-2020.pdf" target="blank" alt="View 2020 Corporate Catalog">VIEW NOW</a></p>
-  </div>
-
-</div>
-
-
 <!-- Brand Text -->
 <div class="brand-text">
 	<img class="hideme lazyload" data-src="https://static.augustasportswear.com/marketing/2019%20WEBSITE/Home%20Page/NOVEMBER%202019/AugustaSportswearBrands_Horizontal_withLogos_WHITE.svg" id="asb-logo" alt="Augusta Sportswear Brands Logo">
@@ -2736,7 +2717,7 @@ our family of brands offers a complete source for
 performance and athletic apparel and uniforms.</span></h1>
 
 
-	<a href="/about-us1"><button class="hp-btn-white">LEARN MORE<span class="shop-arrow"></span></button></a>
+	<a href="/about-us"><button class="hp-btn-white">LEARN MORE<span class="shop-arrow"></span></button></a>
 </div>
 
 <!-- Wool Section -->
