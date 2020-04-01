@@ -1,3 +1,587 @@
 <!-- Appliques -->
 <style>
+  /* Show Templates */
+.show{
+    z-index: 999;
+    display: none;
+}
+.show .imgoverlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.66);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.show .img-show{
+    width: 600px;
+    height: 400px;
+    background: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden
+}
+.img-show span{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    cursor: pointer;
+}
+.img-show img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pricing {
+	display: inline;
+	clear: left;
+}
+.price-chart {
+	font-size: 12px;
+	float: left;
+	margin: 0 10px;
+	color: black;
+	width: 350px;
+	text-align: center;
+}
+.tablehead {
+	background-color: black;
+	color: white;
+}
+.alt-row-1 {
+	background-color: rgba(0,0,0,0.2);
+}
+.alt-row-2 {
+	background-color: white;
+}
+
+/* templates */
+.template-box-all {
+ 	display: inline-block;
+ 	height: auto;
+ 	width: 280px;
+ 	background-color: lightgray;
+ 	color: black;
+ 	margin: 5px;
+ 	border: 1px solid black;
+ 	overflow: hidden;
+ }
+ .template-box-all img {
+ 	width: 100%;
+	vertical-align: text-top;
+	cursor: pointer;
+    transition: 0.3s;
+ }
+ .template-box-all p {
+ 	text-transform: uppercase;
+ 	margin: 2px auto;
+ 	width: inherit;
+ 	text-align: center;
+ 	font-size: 12px;
+ }
+
+ /* Twill Colors */
+.twill-colors {
+      width: 98%;
+      margin: auto;	 
+      display: table;
+	}	
+.twill-color-block {
+	 float: left;
+	 margin: 2px;
+	 width: 80px;
+	 height: 40px;
+	 border: 1px solid black;
+	 text-align: center;
+	 color: white;
+	 font-size: 10px;
+	}
+.twill-color-block p {
+		position: relative;
+		top: 30%;
+		margin: 0;
+		line-height: 10px;
+	}
+ #c6, #c9, #c10, #c11, #c16, #c21, #c23, #c24, #c25 {
+ 	color: black;
+ }
+
+ /* Jersey Colors */
+.jersey-colors {
+      width: 98%;
+      margin: 10px;
+      float: left;
+      clear: both;	 
+	}	
+.jersey-color-block {
+	 float: left;
+	 margin: 2px;
+	 width: 80px;
+	 height: 40px;
+	 border: 1px solid black;
+	 text-align: center;
+	 color: white;
+	 font-size: 10px;
+	}
+.jersey-color-block p {
+		position: relative;
+		top: 30%;
+		margin: 0;
+		line-height: 10px;
+	}
+ #j1, #j2, #j5, #j7, #j11, #j15, #j17 {
+ 	color: black;
+ }
 </style>
+
+
+<div class="technique-content" id="applique">
+  <h3 class="techheader">Traditional, Reverse Laser and Jersey Appliqué</h3>
+  <div class="technique-info" id="technique3"><p><b>Traditional:</b><br>
+  Achieve virtually any look with your apparel. Our fantastic Full-Size Appliqué on the front or back of a garment creates a substantial, collegiate look. 
+  <br>
+  <b>Reverse Laser and Jersey:</b><br>
+  Want to create that vintage look? Utilize our stock designs and our Jersey Appliqué process or add real dimension with our Reverse Laser Appliqué technique. For even more dimension, consider adding an Etch design behind your Laser Appliqué. Cutting-edge technology at its best.
+  <br>
+  <b>Patterned:</b>
+   <a id="stock-decor-link" onclick="openDecoration(event, 'Decorations'), openOrder(event, 'pattern-app-temps');">View available patterns</a>
+  <br>
+  
+  <br>
+  <a id="stock-decor-link" onclick="openDecoration(event, 'Decorations')">Stock Decorations ></a></p>
+    <div class="pricing"> 
+ <table cellpadding="4" cellspacing="0" class="price-chart">
+  	<thead>	
+  		<tr class="tablehead">
+  			<th class="quantity">Quantity</th>
+  			<th class="quantity">12-23</th>
+  			<th class="quantity">24-144</th>
+  			<th class="quantity">145+</th>
+  		</tr></thead>
+  			<tbody>
+             <tr class="alt-row-1">
+  				<th></th>
+  				<td>$19.00</td>
+  				<td>$18.00</td>
+  				<td>$16.00</td>
+  			 </tr>
+  			 <tr class="alt-row-2">
+  			 	<td colspan="4">Maximum of 12 letters in the main word, including spaces</td>
+  			 	</tr>
+  			 	 <tr class="alt-row-1">
+  			 	<td colspan="4"><b>Appliqué Add-ons:</b></td>
+  			 	</tr>
+				<tr class="alt-row-2">
+  			 	<td colspan="2">Screen Print Pattern</td>
+  			 	<td colspan="2">Refer to screen print pricing</td>
+  			 	</tr>
+  			 	<tr class="alt-row-1">
+  			 	<td colspan="2">Laser Etching</td>
+  			 	<td colspan="2">$2.00</td>
+  			 	</tr>
+  			 	<tr class="alt-row-2">
+  			 	<td colspan="2">Sublimated Image</td>
+  			 	<td colspan="2">$10.00</td>
+  			 	</tr>
+  			 	<tr class="alt-row-1">
+  			 	<td colspan="2">Sports add on Appliqué</td>
+  			 	<td colspan="2">$10.00</td>
+  			 	</tr>
+  			 	<tr class="alt-row-2">
+  			 	<td colspan="4">
+  			 	Additional embroidery to Appliqué is <br>$0.50 per 1,000 stitches
+  			 	</td>
+  			 	</tr>
+  			 	<tr class="alt-row-2">
+  			 	<td colspan="4">
+  			 	Custom Appliqué: Call for quote. <br>12 piece minimum for each design
+  			 	</td>
+  			 	</tr>
+  			 	
+  			 	<th class="tablehead" colspan="5">Upcharge for less than minimum orders</th>
+  			 </tr>
+  			 <tr class="alt-row-1">
+  				<td colspan="5">$50.00</td>
+  			 </tr>
+  			</tbody>
+  		</table>
+</div>
+	<div class="twill-colors">
+	<p>Twill Colors</p>	
+		<div class="twill-color-block" id="c1" style="background-color:rgb(18,21,21)"><p>BLACK</p></div>
+		<div class="twill-color-block" id="c2" style="background-color: rgb(73,56,51)"><p>BROWN</p></div>
+		<div class="twill-color-block" id="c3" style="background-color: rgb(119,49,62)"><p>CARDINAL</p></div>
+		<div class="twill-color-block" id="c4" style="background-color: rgb(123,158,209)"><p>COLUMBIA</p></div>
+		<div class="twill-color-block" id="c5" style="background-color: rgb(48,89,72)"><p>DARK GREEN</p></div>
+		<div class="twill-color-block" id="c6" style="background-color: rgb(178,183,182)"><p>GRAY</p></div>
+		<div class="twill-color-block" id="c7" style="background-color: rgb(201,71,137)"><p>GREEK PINK</p></div>
+		<div class="twill-color-block" id="c8" style="background-color: rgb(48,130,77)"><p>KELLY</p></div>
+		<div class="twill-color-block" id="c9" style="background-color: rgb(242,194,46)"><p>LIGHT GOLD</p></div>
+		<div class="twill-color-block" id="c10" style="background-color: rgb(163,199,74)"><p>LIME</p></div>
+		<div class="twill-color-block" id="c11" style="background-color: rgb(255,233,42)"><p>MAIZE</p></div>
+		<div class="twill-color-block" id="c12" style="background-color: rgb(80,52,64)"><p>MAROON</p></div>
+		<div class="twill-color-block" id="c13" style="background-color: rgb(38,53,77)"><p>NAVY</p></div>
+		<div class="twill-color-block" id="c14" style="background-color: rgb(173,140,62)"><p>OLD GOLD</p></div>
+		<div class="twill-color-block" id="c15" style="background-color: rgb(205,72,40)"><p>ORANGE</p></div>
+		<div class="twill-color-block" id="c16" style="background-color: rgb(243,215,222)"><p>PINK</p></div>
+		<div class="twill-color-block" id="c17" style="background-color: rgb(63,56,139)"><p>PURPLE</p></div>
+		<div class="twill-color-block" id="c18" style="background-color: rgb(155,36,53)"><p>RED</p></div>
+		<div class="twill-color-block" id="c19" style="background-color: rgb(48,88,150)"><p>ROYAL</p></div>
+		<div class="twill-color-block" id="c20" style="background-color: rgb(77,148,153)"><p>SHARK TEAL</p></div>
+		<div class="twill-color-block" id="c21" style="background-color: rgb(224,145,46)"><p>TENNESSEE ORANGE</p></div>
+		<div class="twill-color-block" id="c22" style="background-color: rgb(164,89,43)"><p>TEXAS ORANGE</p></div>
+		<div class="twill-color-block" id="c23" style="background-color: rgb(243,175,47)"><p>VARSITY BRIGHT GOLD</p></div>
+		<div class="twill-color-block" id="c24" style="background-color: rgb(223,202,139)"><p>VEGAS GOLD</p></div>
+		<div class="twill-color-block" id="c25" style="background-color: rgb(255,255,255)"><p>WHITE</p></div>
+	</div>
+	<div class="jersey-colors">	
+	<p>Jersey Colors</p>
+		<div class="jersey-color-block" id="j1" style="background-color: rgb(227,227,229)"><p>ASH HEATHER</p></div>
+		<div class="jersey-color-block" id="j2" style="background-color: rgb(178,181,183)"><p>ATHLETIC HEATHER</p></div>
+		<div class="jersey-color-block" id="j3" style="background-color: rgb(32,35,36)"><p>BLACK</p></div>
+		<div class="jersey-color-block" id="j4" style="background-color: rgb(45,77,66)"><p>DARK GREEN</p></div>
+		<div class="jersey-color-block" id="j5" style="background-color: rgb(231,167,49)"><p>GOLD</p></div>
+		<div class="jersey-color-block" id="j6" style="background-color: rgb(48,122,82)"><p>KELLY</p></div>	
+		<div class="jersey-color-block" id="j7" style="background-color: rgb(168,200,226)"><p>LIGHT BLUE</p></div>
+		<div class="jersey-color-block" id="j8" style="background-color: rgb(101,47,59)"><p>MAROON</p></div>
+		<div class="jersey-color-block" id="j9" style="background-color: rgb(35,53,81)"><p>NAVY</p></div>
+		<div class="jersey-color-block" id="j10" style="background-color: rgb(205,71,41)"><p>ORANGE</p></div>
+		<div class="jersey-color-block" id="j11" style="background-color: rgb(240,209,218)"><p>PINK</p></div>
+		<div class="jersey-color-block" id="j12" style="background-color: rgb(86,66,128)"><p>PURPLE</p></div>
+		<div class="jersey-color-block" id="j13" style="background-color: rgb(185,34,45)"><p>RED</p></div>
+		<div class="jersey-color-block" id="j14" style="background-color: rgb(60,95,149)"><p>ROYAL</p></div>
+		<div class="jersey-color-block" id="j15" style="background-color: rgb(198,198,197)"><p>SILVER</p></div>
+		<div class="jersey-color-block" id="j16" style="background-color: rgb(88,151,154)"><p>TEAL</p></div>
+		<div class="jersey-color-block" id="j17" style="background-color: rgb(255,255,255)"><p>WHITE</p></div>
+	</div>
+	<p style="font-size: 9px; clear:both;">Note: Jersey colors are not dye matched to one another and may have variance in shades and, therefore, may not match garment trim or specific PMS school colors.</p>
+</div>
+  </div>
+
+
+  <div class="view-all-temps" id="all-applique">
+
+      <h3 class="view-all-header">Traditional Appliqué Templates</h3>
+      <div class="view-all-content">
+      
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW006.jpg">
+         <p>Template TW6</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW009.jpg">
+         <p>Template TW9</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW010.jpg">
+         <p>Template TW10</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW011.jpg">
+         <p>Template TW11</p>
+        </div>
+        
+      <!--	<div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW015.jpg">
+         <p>Template TW15</p>
+        </div>-->
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW018.jpg">
+         <p>Template TW18</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW020.jpg">
+         <p>Template TW20</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW021.jpg">
+         <p>Template TW21</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW022.jpg">
+         <p>Template TW22</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW023.jpg">
+         <p>Template TW23</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW024.jpg">
+         <p>Template TW24</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW025.jpg">
+         <p>Template TW25</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW026.jpg">
+         <p>Template TW26</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW027.jpg">
+         <p>Template TW27</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW028A.jpg">
+         <p>Template TW28A</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW028B.jpg">
+         <p>Template TW28B</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW029.jpg">
+         <p>Template TW29</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW030.jpg">
+         <p>Template TW30</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW032.jpg">
+         <p>Template TW32</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW033.jpg">
+         <p>Template TW33</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW034.jpg">
+         <p>Template TW34</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW035.jpg">
+         <p>Template TW35</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW037.jpg">
+         <p>Template TW37</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW038">
+         <p>Template TW38</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW039.jpg">
+         <p>Template TW39</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW040.jpg">
+         <p>Template TW40</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW041.jpg">
+         <p>Template TW41</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW042.jpg">
+         <p>Template TW42</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW043.jpg">
+         <p>Template TW43</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW044.jpg">
+         <p>Template TW44</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW045.jpg">
+         <p>Template TW45</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW046.jpg">
+         <p>Template TW46</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW047.jpg">
+         <p>Template TW47</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW048.jpg">
+         <p>Template TW48</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW049.jpg">
+         <p>Template TW49</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW050.jpg">
+         <p>Template TW50</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW051.jpg">
+         <p>Template TW51</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW052.jpg">
+         <p>Template TW52</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW053.jpg">
+         <p>Template TW53</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW054.jpg">
+         <p>Template TW54</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW056.jpg">
+         <p>Template TW56</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW057.jpg">
+         <p>Template TW57</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW058.jpg">
+         <p>Template TW58</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW066.jpg">
+         <p>Template TW66</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW068.jpg">
+         <p>Template TW68</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW069.jpg">
+         <p>Template TW69</p>
+        </div>
+        
+        <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW_77.jpg">
+         <p>TW77</p>
+        </div>  
+         <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW78.jpg">
+         <p>TW78</p>
+        </div>  
+         <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW79.jpg">
+         <p>TW79</p>
+        </div>  
+         <div class="template-box-all">
+        <img src="https://static.augustasportswear.com/marketing/TW80.jpg">
+         <p>TW80</p>
+        </div>
+           
+       </div>
+       
+    </div>
+
+<div class="show">
+  <div class="imgoverlay"></div>
+  <div class="img-show">
+    <span>X</span>
+    <img src="">
+  </div>
+</div>
+
+<script>
+  //Click to englarge template
+  $(function () {
+      "use strict";
+      
+      $(".template-box-all img").click(function () {
+          var $src = $(this).attr("src");
+          $(".show").fadeIn();
+          $(".img-show img").attr("src", $src);
+      });
+      
+      $("span, .imgoverlay").click(function () {
+          $(".show").fadeOut();
+      });
+      
+  });
+  
+  
+  // Select all links with hashes
+  $('a[href*="#"]')
+    // Remove links that don't actually link to anything
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function(event) {
+      // On-page links
+      if (
+        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+        && 
+        location.hostname == this.hostname
+      ) {
+        // Figure out element to scroll to
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        // Does a scroll target exist?
+        if (target.length) {
+          // Only prevent default if animation is actually gonna happen
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000, function() {
+            // Callback after animation
+            // Must change focus!
+            var $target = $(target);
+            $target.focus();
+            if ($target.is(":focus")) { // Checking if the target was focused
+              return false;
+            } else {
+              $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+              $target.focus(); // Set focus again
+            };
+          });
+        }
+      }
+    });
+    
+  </script>

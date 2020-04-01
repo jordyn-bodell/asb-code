@@ -1,3 +1,243 @@
 <!-- Etch -->
 <style>
+  /* Show Templates */
+.show{
+    z-index: 999;
+    display: none;
+}
+.show .imgoverlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.66);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.show .img-show{
+    width: 600px;
+    height: 400px;
+    background: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden
+}
+.img-show span{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    cursor: pointer;
+}
+.img-show img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pricing {
+	display: inline;
+	clear: left;
+}
+.price-chart {
+	font-size: 12px;
+	float: left;
+	margin: 0 10px;
+	color: black;
+	width: 350px;
+	text-align: center;
+}
+.tablehead {
+	background-color: black;
+	color: white;
+}
+.alt-row-1 {
+	background-color: rgba(0,0,0,0.2);
+}
+.alt-row-2 {
+	background-color: white;
+}
+
+/* templates */
+.template-box-all {
+ 	display: inline-block;
+ 	height: auto;
+ 	width: 280px;
+ 	background-color: lightgray;
+ 	color: black;
+ 	margin: 5px;
+ 	border: 1px solid black;
+ 	overflow: hidden;
+ }
+ .template-box-all img {
+ 	width: 100%;
+	vertical-align: text-top;
+	cursor: pointer;
+    transition: 0.3s;
+ }
+ .template-box-all p {
+ 	text-transform: uppercase;
+ 	margin: 2px auto;
+ 	width: inherit;
+ 	text-align: center;
+ 	font-size: 12px;
+ }
 </style>
+
+<div class="technique-content" id="laser-tonal-etch">
+  <h3 class="techheader">Laser Etch and Tonal Etch</h3>
+  <div class="technique-info" id="technique4"><p>The Tonal Etch technique gives a dimensional feel to your garment by using two (light and dark) contrasting tones. Our Single Tone Etch designs provide a more subtle tonal look or background. Choose stand-alone designs from our stock embroidery templates for Left Chest, Full-Size or even Jumbo Size. <br>
+  <a id="stock-decor-link" onclick="openDecoration(event, 'Decorations')">Stock Decorations &gt;</a></p>
+  <table cellpadding="4" cellspacing="0" class="price-chart">
+  	<thead>	
+  		<tr class="tablehead">
+  			<th class="quantity"></th>
+  			<th class="quantity">12-23</th>
+  			<th class="quantity">24-144</th>
+  			<th class="quantity">145+</th>
+  		</tr></thead>
+  			<tbody>
+             <tr class="alt-row-1">
+  				<th>Left Chest</th>
+  				<td>$8.00</td>
+  				<td>$7.00</td>
+  				<td>$6.00</td>
+  			 </tr>
+  			 <tr class="alt-row-2">
+  				<th>Full-Size</th>
+  				<td>$9.00</td>
+  				<td>$8.00</td>
+  				<td>$7.00</td>
+  			 </tr>
+  			 <tr class="alt-row-1">
+  				<th>Jumbo-Size</th>
+  				<td>$10.00</td>
+  				<td>$9.00</td>
+  				<td>$8.00</td>
+  			 </tr>
+  			 <tr class="alt-row-2">
+  				<th>Add to Embroidery or Appliqué</th>
+  				<td>$2.00</td>
+  				<td>$2.00</td>
+  				<td>$2.00</td>
+  			 </tr>
+  			</tbody>
+  		</table>
+  		
+  		<p style="font-size:12px;">- Minimum text height is 1/4"<br>
+- Visibility of fine detailed designs varies by fabric type<br>
+- Fabric must be 100% polyester; works best on mid-tone colors<br>
+- We do not recommend using this technique for:<br>
+&emsp;&emsp;&emsp;- Black, White or dark colors<br>
+&emsp;&emsp;&emsp;- Heathered fabrics<br>
+&emsp;&emsp;&emsp;- Blankets and high pile fleece garments</p>
+  </div>
+  </div>
+
+<div class="view-all-temps" id="all-etch">
+
+    <h3 class="view-all-header">Laser and Tonal Etch Templates</h3>
+    <div class="view-all-content">
+    
+      <div class="template-box-all">
+      <img src="https://static.augustasportswear.com/marketing/ET2.jpg">
+       <p>Template ET2</p>
+      </div>
+      
+      <div class="template-box-all">
+      <img src="https://static.augustasportswear.com/marketing/ET4.jpg">
+       <p>Template ET4</p>
+      </div>
+      
+      <div class="template-box-all">
+      <img src="https://static.augustasportswear.com/marketing/ET7.jpg">
+       <p>Template ET7</p>
+      </div>
+      
+      <div class="template-box-all">
+      <img src="https://static.augustasportswear.com/marketing/ET8.jpg">
+       <p>Template ET8</p>
+      </div>
+      
+      <div class="template-box-all">
+      <img src="https://static.augustasportswear.com/marketing/ET012.jpg">
+       <p>Template ET012</p>
+      </div>
+      
+      <div class="template-box-all">
+      <img src="https://static.augustasportswear.com/marketing/ETCH19-1.jpg">
+       <p>ETCH19-1</p>
+      </div>  	
+      
+         
+     </div>
+     
+  </div>
+
+<div class="show">
+  <div class="imgoverlay"></div>
+  <div class="img-show">
+    <span>X</span>
+    <img src="">
+  </div>
+</div>
+
+<script>
+  //Click to englarge template
+  $(function () {
+      "use strict";
+      
+      $(".template-box-all img").click(function () {
+          var $src = $(this).attr("src");
+          $(".show").fadeIn();
+          $(".img-show img").attr("src", $src);
+      });
+      
+      $("span, .imgoverlay").click(function () {
+          $(".show").fadeOut();
+      });
+      
+  });
+  
+  
+  // Select all links with hashes
+  $('a[href*="#"]')
+    // Remove links that don't actually link to anything
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function(event) {
+      // On-page links
+      if (
+        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+        && 
+        location.hostname == this.hostname
+      ) {
+        // Figure out element to scroll to
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        // Does a scroll target exist?
+        if (target.length) {
+          // Only prevent default if animation is actually gonna happen
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000, function() {
+            // Callback after animation
+            // Must change focus!
+            var $target = $(target);
+            $target.focus();
+            if ($target.is(":focus")) { // Checking if the target was focused
+              return false;
+            } else {
+              $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+              $target.focus(); // Set focus again
+            };
+          });
+        }
+      }
+    });
+    
+  </script>

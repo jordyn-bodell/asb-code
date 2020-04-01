@@ -1,3 +1,754 @@
 <!-- Embroidery -->
 <style>
+  /* Show Templates */
+.show{
+    z-index: 999;
+    display: none;
+}
+.show .imgoverlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.66);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.show .img-show{
+    width: 600px;
+    height: 400px;
+    background: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden
+}
+.img-show span{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    cursor: pointer;
+}
+.img-show img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pricing {
+	display: inline;
+	clear: left;
+}
+.price-chart {
+	font-size: 12px;
+	float: left;
+	margin: 0 10px;
+	color: black;
+	width: 350px;
+	text-align: center;
+}
+.tablehead {
+	background-color: black;
+	color: white;
+}
+.alt-row-1 {
+	background-color: rgba(0,0,0,0.2);
+}
+.alt-row-2 {
+	background-color: white;
+}
+
+/* templates */
+.template-box-all {
+ 	display: inline-block;
+ 	height: auto;
+ 	width: 280px;
+ 	background-color: lightgray;
+ 	color: black;
+ 	margin: 5px;
+ 	border: 1px solid black;
+ 	overflow: hidden;
+ }
+ .template-box-all img {
+ 	width: 100%;
+	vertical-align: text-top;
+	cursor: pointer;
+    transition: 0.3s;
+ }
+ .template-box-all p {
+ 	text-transform: uppercase;
+ 	margin: 2px auto;
+ 	width: inherit;
+ 	text-align: center;
+ 	font-size: 12px;
+ }
 </style>
+
+
+<div class="technique-content" id="embroidery">
+  <h3 class="techheader">embroidery</h3>
+  <div class="technique-info" id="technique2"><p>With Embroidery, it's all in the details. Augusta Sportswear's expert Embroidery department employs the latest technologies and fully controls every aspect of production. That way, you can be assured of superior products and the highest standards with every stitch, on every order.
+<br><br>
+Add mascots to your designs. Choose from our library of mascots or send us your own. Customer Service Representatives are happy to work with you and your teams!  <br>
+  <a id="stock-decor-link" onclick="openDecoration(event, 'Decorations')">Stock Decorations ></a>
+  </p>
+    <div class="pricing" id="embroid-price-chart"> 
+ <table cellpadding="4" cellspacing="0" class="price-chart">
+  	<thead>	
+  		<tr class="tablehead">
+  			<th class="quantity">Embroidery</th>
+  			<th class="quantity" colspan="5">Run Size</th>
+  		</tr></thead>
+  			<tbody>
+             <tr class="alt-row-1">
+  				<th># of Stitches</th>
+  				<td>1-36</td>
+  				<td>37-144</td>
+  				<td>145-500</td>
+  				<td>501+</td>
+  				<td>1000+</td>
+  			 </tr>
+  			 <tr class="alt-row-2">
+  				<th>Up to 7k stitches</th>
+  				<td>$10.00</td>
+  				<td>$8.00</td>
+  				<td>$6.00</td>
+  				<td>$4.00</td>
+  				<td>Email</td>
+  			 </tr>
+  			 <tr class="alt-row-1">
+  				<th>7,001 to 15k stitches</th>
+  				<td>$14.00</td>
+  				<td>$12.00</td>
+  				<td>$10.00</td>
+  				<td>$8.00</td>
+  				<td>Email</td>
+  			 </tr>
+
+  			 <tr class="alt-row-2" style="font-size: 10px;">
+  			 <td colspan="2">Each additional 2k stitch - add $1.00 per piece</td>
+  			 <td colspan="4">Run size < 12 = $50.00 LTM fee per hit</td>
+  			 </tr>
+  			 
+  			</tbody>
+  		</table>
+</div>
+
+<div class="pricing" id="embroid-personal-letters"> 
+ <table cellpadding="4" cellspacing="0" class="price-chart">
+  	<thead>	
+  		<tr class="tablehead">
+  		  <th class="quantity" colspan="4">Embroidery Personalized Letters (1-color only)
+  		  </th></tr>
+  		<tr class="tablehead">
+  			<th class="quantity" colspan="4">Full-Size Lettering (1 Piece Min.)</th>
+  		</tr>
+  		</thead>
+  			<tbody>
+             <tr class="alt-row-1">
+  				<th colspan="2">1" letters (max 15 letters per line*)</th>
+  				<td colspan="2">$10.00 per line</td>
+  			 </tr>
+ 			 <tr class="alt-row-2">
+  				<th colspan="2">2" letters (max 10 letters per line*)</th>
+  				<td colspan="2">$12.00 per line</td>
+  			 </tr>
+  			  <tr class="alt-row-1">
+  				<th colspan="2">3" letters (max 8 letters per line*)</th>
+  				<td colspan="2">$14.00 per line</td>
+  			 </tr>
+  			 <tr class="alt-row-1">
+  			 <th colspan="4">*When determining letters per line, remember spaces count as letters</th>
+  			</tbody>
+  		</table>
+</div>
+
+	<span id="embroid-details">For additional information, <span onclick="openDecoration(event, 'FAQs'); openOrder(event, 'guidelines-faq');" style="color:rgb(199,44,52);text-decoration:underline;cursor:pointer;">view Order Guidelines</span> in our FAQs.</span>
+	<span class="stitch-request">
+	
+    <iframe
+      id="JotFormIFrame-81153804415148"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allowfullscreen="true"
+      allow="geolocation; microphone; camera"
+      src="https://form.jotform.com/81153804415148"
+      frameborder="0"
+      style="width: 1px;
+      min-width: 100%;
+      height:539px;
+      border:none;"
+      scrolling="yes"
+    >
+    </iframe>
+    <script type="text/javascript">
+      var ifr = document.getElementById("JotFormIFrame-81153804415148");
+      if(window.location.href && window.location.href.indexOf("?") > -1) {
+        var get = window.location.href.substr(window.location.href.indexOf("?") + 1);
+        if(ifr && get.length > 0) {
+          var src = ifr.src;
+          src = src.indexOf("?") > -1 ? src + "&" + get : src  + "?" + get;
+          ifr.src = src;
+        }
+      }
+      window.handleIFrameMessage = function(e) {
+        var args = e.data.split(":");
+        if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+        if (!iframe) { return; }
+        switch (args[0]) {
+          case "scrollIntoView":
+            iframe.scrollIntoView();
+            break;
+          case "setHeight":
+            iframe.style.height = args[1] + "px";
+            break;
+          case "collapseErrorPage":
+            if (iframe.clientHeight > window.innerHeight) {
+              iframe.style.height = window.innerHeight + "px";
+            }
+            break;
+          case "reloadPage":
+            window.location.reload();
+            break;
+          case "loadScript":
+            var src = args[1];
+            if (args.length > 3) {
+                src = args[1] + ':' + args[2];
+            }
+            var script = document.createElement('script');
+            script.src = src;
+            script.type = 'text/javascript';
+            document.body.appendChild(script);
+            break;
+          case "exitFullscreen":
+            if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+            else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+            else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+            else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+            else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+            break;
+        }
+        var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+        if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+          var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+          iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+        }
+      };
+      if (window.addEventListener) {
+        window.addEventListener("message", handleIFrameMessage, false);
+      } else if (window.attachEvent) {
+        window.attachEvent("onmessage", handleIFrameMessage);
+      }
+      </script>
+      </span>
+  </div>
+  </div>
+
+  
+  <div class="view-all-temps" id="all-embroidery">
+    
+    <h3 class="view-all-header">Embroidery Templates</h3>
+   <div class="view-all-content">
+   
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/A001.jpg">
+      <p>Template A1</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/A002.jpg">
+      <p>Template A2</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/A3.jpg">
+      <p>Template A3</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/B001.jpg">
+      <p>Template B1</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/B002.jpg">
+      <p>Template B2</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/C002.jpg">
+      <p>Template C2</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/C3.jpg">
+      <p>Template C3</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/D001.jpg">
+      <p>Template D1</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/D3.jpg">
+      <p>Template D3</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/E001.jpg">
+      <p>Template E1</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/E002.jpg">
+      <p>Template E2</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/E3.jpg">
+      <p>Template E3</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/F002.jpg">
+      <p>Template F2</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/FF.jpg">
+      <p>Template FF</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/FS018.jpg">
+      <p>Template FS18</p>
+     </div>
+   
+   <!--<div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/FS019.jpg">
+      <p>Template FS19</p>
+     </div>-->
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/FS023.jpg">
+      <p>Template FS23</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/FS024.jpg">
+      <p>Template FS24</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/FS025.jpg">
+      <p>Template FS25</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/FS027.jpg">
+      <p>Template FS27</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/FS030.jpg">
+      <p>Template FS30</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/FS031.jpg">
+      <p>Template FS31</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/FS032A.jpg">
+      <p>Template FS32A</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/FS032B.jpg">
+      <p>Template FS32B</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/FS033.jpg">
+      <p>Template FS33</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/FS034.jpg">
+      <p>Template FS34</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/FS035.jpg">
+      <p>Template FS35</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/FS037.jpg">
+      <p>Template FS37</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/FS039.jpg">
+      <p>Template FS39</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/FS040.jpg">
+      <p>Template FS40</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/FS041.jpg">
+      <p>Template FS41</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/FS042.jpg">
+      <p>Template FS42</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/FS043.jpg">
+      <p>Template FS43</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/FS044.jpg">
+      <p>Template FS44</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/FS045.jpg">
+      <p>Template FS45</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/FS047.jpg">
+      <p>Template FS47</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/G002.jpg">
+      <p>Template G2</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/H001.jpg">
+      <p>Template H1</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/H002.jpg">
+      <p>Template H2</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/H3.jpg">
+      <p>Template H3</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/I001.jpg">
+      <p>Template I1</p>
+     </div>
+     
+   <!--	<div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/J001.jpg">
+      <p>Template J1</p>
+     </div>-->
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/J002.jpg">
+      <p>Template J2</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/K001.jpg">
+      <p>Template K1</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/K002.jpg">
+      <p>Template K2</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/K3.jpg">
+      <p>Template K3</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/L001.jpg">
+      <p>Template L1</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/L002.jpg">
+      <p>Template L2</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/L3.jpg">
+      <p>Template L3</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/M001.jpg">
+      <p>Template M1</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/M002.jpg">
+      <p>Template M2</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/MS38.jpg">
+      <p>Template MS38</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/N002.jpg">
+      <p>Template N2</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/O001.jpg">
+      <p>Template O1</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/O002.jpg">
+      <p>Template O2</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/O3.jpg">
+      <p>Template O3</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/P002.jpg">
+      <p>Template P2</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/Q001.jpg">
+      <p>Template Q1</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/Q002.jpg">
+      <p>Template Q2</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/R002.jpg">
+      <p>Template R2</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/S001.jpg">
+      <p>Template S1</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/SS.jpg">
+      <p>Template SS</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/T001.jpg">
+      <p>Template T1</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/U001.jpg">
+      <p>Template U1</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/U002.jpg">
+      <p>Template U2</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/UU.jpg">
+      <p>Template UU</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/V001A.jpg">
+      <p>Template V1A</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/V001B.jpg">
+      <p>Template V1B</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/V2.jpg">
+      <p>Template V2</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/W001.jpg">
+      <p>Template W1</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/WW.jpg">
+      <p>Template WW</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/X001.jpg">
+      <p>Template X1</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/X002.jpg">
+      <p>Template X2</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/Y001.jpg">
+      <p>Template Y1</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/Y002.jpg">
+      <p>Template Y2</p>
+     </div>
+   
+   <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/Z001.jpg">
+      <p>Template Z1</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/Z002.jpg">
+      <p>Template Z2</p>
+     </div>
+     
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/EMB19-1.jpg">
+      <p>EMB19-1</p>
+     </div>
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/EMB19-2.jpg">
+      <p>EMB19-2</p>
+     </div>
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/EMB19-3.jpg">
+      <p>EMB19-3</p>
+     </div>
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/EMB19-4.jpg">
+      <p>EMB19-4</p>
+     </div>
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/EMB19-5.jpg">
+      <p>EMB19-5</p>
+     </div>
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/EMB19-6.jpg">
+      <p>EMB19-6</p>
+     </div>
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/EMB19-7.jpg">
+      <p>EMB19-7</p>
+     </div>
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/EMB19-8.jpg">
+      <p>EMB19-8</p>
+     </div>
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/EMB19-9.jpg">
+      <p>EMB19-9</p>
+     </div>
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/EMB19-10.jpg">
+      <p>EMB19-10</p>
+     </div>
+     <div class="template-box-all">
+     <img src="https://static.augustasportswear.com/marketing/EMB19-11.jpg">
+      <p>EMB19-11</p>
+     </div>
+        
+    </div>
+    
+ </div>
+
+
+  <div class="show">
+    <div class="imgoverlay"></div>
+    <div class="img-show">
+      <span>X</span>
+      <img src="">
+    </div>
+  </div>
+
+ <script>
+  //Click to englarge template
+  $(function () {
+      "use strict";
+      
+      $(".template-box-all img").click(function () {
+          var $src = $(this).attr("src");
+          $(".show").fadeIn();
+          $(".img-show img").attr("src", $src);
+      });
+      
+      $("span, .imgoverlay").click(function () {
+          $(".show").fadeOut();
+      });
+      
+  });
+  
+  
+  // Select all links with hashes
+  $('a[href*="#"]')
+    // Remove links that don't actually link to anything
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function(event) {
+      // On-page links
+      if (
+        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+        && 
+        location.hostname == this.hostname
+      ) {
+        // Figure out element to scroll to
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        // Does a scroll target exist?
+        if (target.length) {
+          // Only prevent default if animation is actually gonna happen
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000, function() {
+            // Callback after animation
+            // Must change focus!
+            var $target = $(target);
+            $target.focus();
+            if ($target.is(":focus")) { // Checking if the target was focused
+              return false;
+            } else {
+              $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+              $target.focus(); // Set focus again
+            };
+          });
+        }
+      }
+    });
+    
+  </script>
