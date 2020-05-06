@@ -1,0 +1,82 @@
+<style>
+.ph-espot-container {
+width: 400px;
+height: auto;
+display: flex;
+margin: 10px auto;
+position: relative;
+}
+.ph-espot-container > a {
+  display: inherit;
+}
+.ph-espot-container img {
+  width: 100%;
+}
+.espot-overlay {
+  display: none;
+  background-color: rgba(0,0,0,0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: ease 0.5s;
+}
+.ph-custom-btn {
+  position: absolute;
+  top: 85px;
+  left: 85px;
+  width: 200px;
+  padding: 8px 16px!important;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-align: center;
+    border: 1px solid transparent;
+    display: inline-block!important;
+    background-color: #50a4d9;
+    color: #fff!important;
+}
+.ph-espot-container:hover .ph-custom-btn {
+  text-decoration: underline;
+}
+.ph-espot-container:hover .espot-overlay {
+  display: block;
+}
+
+@media screen and (max-width: 400px) {
+  .ph-espot-container {
+width: 300px;
+}
+.ph-custom-btn {
+  top: 60px;
+  left: 40px;
+}
+}
+</style>
+
+<div class="ph-espot-container" id="stock-customize-hat">
+<a href="">
+  <div class="espot-overlay"></div>
+
+<img src="https://static.augustasportswear.com/marketing/2020-Website/PDP/Pacific-PDP-textlogo-img.jpg" alt="Pacific Headwear Customize Hat">
+
+<span class="ph-custom-btn">add text & logo</span>
+
+</a>
+
+</div>
+
+
+
+
+
+<div class="ph-espot-container" id="full-custom-hat">
+<a href="">
+  <div class="espot-overlay"></div>
+
+<img src="https://static.augustasportswear.com/marketing/2020-Website/PDP/Pacific-PDP-custom-img.jpg" alt="Pacific Headwear Customize Hat">
+
+<a href="" class="ph-custom-btn">CUSTOMIZE</a>
+</a>
+</div>
