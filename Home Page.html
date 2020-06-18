@@ -9,34 +9,42 @@
 .hp-btn-black {
 	background: black;
 	color: white;
-	padding: 14px 20px!important;
+	/* OLD padding: 14px 20px!important; */
+	border-radius: 3px;
+    padding: 8px 15px!important;
 	margin: 10px 0;
 	font-family: "AvenirNextB";
 	text-align: center;
 	text-transform: uppercase;
 	position: relative;
-	
+	font-size: 14px;
 }
 .hp-btn-white {
 	background: white;
 	color: black;
-	padding: 14px 20px!important;
+	border-radius: 3px;
+    padding: 8px 15px!important;
+	/* OLD padding: 14px 20px!important; */
 	margin: 5px auto;
 	font-family: "AvenirNextB";
 	text-transform: uppercase;
 	text-align: center;
 	position: relative;
+	font-size: 14px;
 }
 .hp-btn-white-ol {
 	background: transparent;
 	color: white;
 	border: 1px solid white;
-	padding: 14px 20px!important;
+		/* OLD padding: 14px 20px!important; */
+		border-radius: 3px;
+    padding: 8px 15px!important;
 	margin: 5px auto;
 	font-family: "AvenirNextB";
 	text-transform: uppercase;
 	text-align: center;
 	position: relative;
+	font-size: 14px;
 }
 .hp-btn-black:hover, .hp-btn-white:hover, .hp-btn-white-ol:hover {
 	text-decoration: underline;
@@ -328,10 +336,10 @@ b {
 
 /* Ohio Close */
 .ohioclose-banner {
-	background-color: #ffc31f;
+	background-color: teal;
 	padding: 10px 0;
 	margin: auto;
-	color: black;
+	color: white;
 }
 .ohiotext {
 	color: white;
@@ -345,7 +353,7 @@ margin: 10px auto 5px;
 	display: inline-block;
 	text-transform: uppercase;
 	font-size: 16px;
-	color: black;
+	color: white;
 }
 .ohiobtn {
 	width: fit-content;
@@ -353,7 +361,8 @@ margin: 10px auto 5px;
 	display: block;
 }
 .ohiobtn a {
-	color: black!important;
+	color: inherit;
+	font-size: inherit;
 }
 #ruslist {
 	text-decoration: underline;
@@ -361,111 +370,266 @@ margin: 10px auto 5px;
 	font-size: 16px;
 }
 
-/* Face Shield Banner */
-.faceshields {
-display: block;
-margin-bottom: 10px;
+
+/* Ship Update*/
+.shipping-update {
+	background-color: teal;
+	padding: 10px 0;
+	margin: auto;
+	color: white;
 }
-.faceblock {
-	display: inline-block;
-}
-.faceshields img {
-	width: 32%;
-}
-#maskgirl, #gaiterguy {
-	display: inline-block;
-}
-#maskgirl {
-	float: left;
-}
-#gaiterguy {
-	float: right;
-}
-.shield-text {
-	background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 30%, rgba(229,229,229,1) 47%, rgba(218,218,218,1) 100%);
-width: 36%;
-display: inline-block;
-vertical-align: top;
-}
-.shield-text-box {
+.shipupdate-text {
 	text-align: center;
-	width: 90%;
-	margin: 20px auto;
-	padding: 15% 0;
-	color: rgb(20, 40, 74);
+	font-family: "AvenirNextN";
+	width: 98%;
+margin: 10px auto 5px;
 }
-.shield-text-box img {
-	width: 23%;
-	margin: 20px auto 30px;
+.shipupdate-text h2 {
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 13px;
+	color: white;
 }
-.shield-text h2 {
-	font-size: 4vw;
-	margin-bottom: 50px;
+#covid-link {
+	font-size: 12px;
+	margin-top: 5px;
+	color: white;
 }
-.shield-text p {
-	font-size: 2vw;
-	margin-top: 25%;
-	line-height: 1.4;
-}
-.masksbtn {
-	background-color: rgb(20, 40, 74);
-	top: 25px;
-	padding: 10px 27px!important;
+.covidbtn {
+	color: white;
+	text-transform: none;
 }
 
 
-/* Flag Hats*/
-.flaghats-banner {
-	margin-bottom: 20px;
+/* New Catalog */
+.newcatalog-wrapper {
+	width: 100%;
 	position: relative;
 }
-#fh-bkg {
+#newcat-bkg-d {
 	width: 100%;
+	position: relative;
 }
-.flag-content {
+#newcat-bkg-m {
+ display: none;
+ width: 100%;
+}
+.newcatalog-info {
 	position: absolute;
-	top: 6%;
+	width: 90%;
+	bottom: 9%;
+	left: 2%;
 }
-.flagtext {
-	width: 100%;
-	text-align: center;
+.catalog-block {
+	display: inline-block;
+    text-align: center;
+}
+.catalog-block:hover .viewcatalog {
+padding-top: 20px;
+	transition: ease .5s;
+}
+#catalog-image {
+width: 220px;
+height: auto;
+margin-right: 10px;
+display: block;
+}
+.viewcatalog {
+	display: block;
+	padding-top: 10px;
+transition: padding-top .5s;
+text-decoration: none;
+}
+.viewcatalog:hover {
+	text-decoration: underline;
+}
+.newcatalog-text {
+display: inline-block;
+position: relative;
+bottom: 50px;
+}
+.newcatalog-text h2 {
+	font-size: 35px;
+	margin-bottom: 10px;
 	color: white;
-	text-transform: uppercase;
+	width: 250px;
 }
-.flagtext h2 {
+.newcatalog-text p {
+	font-size: 16px;
+	margin-bottom: 30px;
 	color: white;
-	width: 80%;
-	font-size: 6vw;
-	margin: auto;
+	line-height: 1.2;
+	width: 190px;
 }
-.flagtext h3 {
-	font-size: 18px;
-	margin-top: 10px;
-	font-family: "AvenirNextN";
+.catalogbtn {
+	display: none;
 }
-#phrc-logo {
-	width: 70%;
-	margin: 20px auto;
+.catalog-bot-gradient {
+width: 100%;
+height: 100%;
+background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(0,0,0,.6) 10%, rgba(255,255,255,0) 35%, rgba(255,255,255,0) 100%);
+position: absolute;
+bottom: 0;
+display: none;
 }
 
-#flag-hats {
-	width: 90%;
-	margin: 0 auto 30px;
+
+/* PPE Blocks */
+.ppe-container {
 	display: block;
+	margin: 20px 0;
+	width: 100%;
 }
-.flag-bot-text {
+.ppe-wrapper {
+	display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "ppe-reg comfort-mask" "ppe-reg fs-ppe";
+	gap: 20px;
+}
+
+.ppe-block {
+	position: relative;
+	height: 100%;
+}
+.ppe-reg {
+	grid-area: ppe-reg;
+}
+.comfort-mask {
+	grid-area: comfort-mask;
+}
+.fs-ppe {
+	grid-area: fs-ppe;
+}
+.ppe-block:hover .ppe-overlay {
+	background-color: rgba(0,0,0,0);
+	transition: ease .5s;
+	cursor: pointer;
+}
+.ppe-overlay {
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background-color: rgba(0,0,0,.2);
+z-index: 1;
+}
+.ppe-bkg {
+	width: 100%;
+	height: 100%;
+    position: relative;
+}
+.ppe-text {
+	position: absolute;
+	bottom: 5%;
+	left: 5%;
+	width: 90%;
 	color: white;
-	text-align: center;
-	font-size: 2.5vw;
+	z-index: 2;
+}
+.maskstext h3 {
+	font-size: 45px;
     text-transform: uppercase;
+    display: block;
+    margin: 10px 0;
 }
-.flag-bot-text h4 {
-	margin-bottom: 15px;
+.ppe-text p {
+	font-size: 18px;
+	line-height: 1.3;
+}
+.masksbtn {
+	top: 15px;
+    display: block;
+    width: 120px;
+    margin: 0;
+}
+#masklogo {
+	width: 70px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.fstext {
+	display: inline-block;
+}
+.fstext p {
+	display: inline-block;
+}
+.fsbtn {
+	display: inline-block;
+    top: 0px;
+    float: right;
+}
+
+.comfort-text {
+	bottom: 15%;
+}
+.comfort-text h3 {
+	width: 200px;
+	color: black;
+	margin-bottom: 20px;
+	font-size: 30px;
 	text-transform: uppercase;
+    display: block;
 }
-.flag-bot-text a {
-	font-size: 13px;
+
+
+/* Prism Polo */
+.prism-container {
+display: flex;
+position: relative;
+margin-bottom: 20px;
+}
+.prism-left, .prism-right {
+	display: flex;
+	height: 100%;
+}
+.prism-left {
+	width: 65%;
+}
+.prism-right {
+	width: 35%;
+	position: relative;
+}
+.prism-right img, .prism-left img {
+	width: 100%;
+	height: 100%;
+	max-height: 100%;
+}
+.prism-text {
+	position: absolute;
+	bottom: 10%;
+	left: 9%;
+	color: white;
+	font-size: 55px;
+}
+.prism-text h2 {
+	font-family: "AvenirNextN";
+	line-height: 1.1;
+	margin-bottom: 20px;
+	margin-left: -3px;
+}
+#prism-intro {
+	font-size: 19px;
+}
+.prism-text p {
+	font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+.prismbtn {
+	top: 15px;
+    display: block;
+    width: 120px;
+    margin: 0;
+    border-radius: 3px;
+    padding: 6px 15px!important;
+}
+#prism-m {
+	display: none;
+	width: 100%;
 }
 
 
@@ -569,106 +733,6 @@ height: inherit;
 	width: 100%;
 	margin-top: 30px;
 	display: block;
-}
-
-/* Here for You */
-.hereforyou {
-	display: grid;
-	position: relative;
-}
-#here-m {
-	display: none;
-}
-.hereforyou img {
-	width: 100%;
-}
-.here-text {
-	position: absolute;
-	left: 6%;
-	top: 12%;
-}
-.here-text h3 {
-	color: white;
-	font-size: 30px;
-	margin-top: 5%;
-}
-.here-block {
-	color: white;
-
-}
-.here-block img {
-	width: 50px;
-	margin-right: 5px;
-	vertical-align: middle;
-	display: inline-block;
-}
-.here-block h2 {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 25px;
-}
-
-.hereto-btn {
-	top: 60px;
-}
-
-
-/* low mins items */
-.lowmins-banner {
-	position: relative;
-    display: flex;
-}
-.lowmins-banner img {
-	width: 100%;
-}
-#lowmin-prods-d {
-
-	width: 55%;
-	float: right;
-	position: relative;
-	top: 30px;
-}
-#lowmin-bkg-m {
-	display: none;
-}
-.lowmins-mobile {
-	width: 100%;
-	display: none;
-}
-.lowmin-content {
-	position: absolute;
-    top: 0;
-    width: 100%;
-    height: -webkit-fill-available;
-}
-.lowmin-text {
-	color: white;
-    width: 35%;
-    background-color: rgba(20, 29, 87, 0.7);
-    padding: 40px 40px;
-
-    float: left;
-    height: inherit;
-}
-.lowmin-text h2 {
-	font-size: 6vw;
-    padding-bottom: 20px;
-    border-bottom: 5px white solid;
-    margin-bottom: 50px;
-}
-.lowmin-text p {
-	margin: 10px auto 30px;
-    font-size: 3vw;
-    line-height: 1.3;
-}
-.trendingbtn {
-    left: 4%;
-    bottom: 10%;
-    display: inline-block;
-    position: absolute;
-}
-#lowminbar {
-	display: none;
 }
 
 
@@ -1062,46 +1126,36 @@ background: none;
         	.shipping-bar-wrapper {
         		width: 85%;
         	}
-    .ph-free-container {
-    	padding-top: 0;
-    }
-    .ow-text p {
-    	top: 100px;
-    }
-
-.mega-block img {
-	margin: 10px auto 35px;
-}
-.supporttext img {
-	top: 160px;
-}
+					.comfort-text h3 {
+						font-size: 2.5vw;
+						width: 180px;
+					}
 
         }
         @media screen and (max-width: 1023px) {		       
-.hero2-container {
-	background-position: center 50px;
-}
-#hero2-banner {
-	width: 100%;
-}
-.hero2-section {
-	width: 100%;
-}
-#hero2-mid, #hero2-right {
-	display: none;
-}
 
-.bundletext {
-	width: 70%;
-}
-.bundletext a {
-	margin-left: 40px;
-}
 
-.ph-free-container {
-	min-height: 470px;
-}
+					#catalog-image {
+						width: 150px;
+					}
+					.newcatalog-text h2 {
+						font-size: 25px;
+					}
+					.newcatalog-text p {
+						font-size: 14px;
+						margin-bottom: 20px;
+					}
 
+
+					.maskstext h3 {
+						font-size: 35px;
+					}
+					.ppe-text p {
+						font-size: 14px;
+					}
+					.fstext p {
+						width: 180px;
+					}
 
 .brands-text-wrapper {
     	background-position: center 75px;
@@ -1109,8 +1163,6 @@ background: none;
 #brands-text-logo {
 	width:100%;
 }
-
-      
 
         }
         @media screen and (max-width:950px) {
@@ -1179,35 +1231,16 @@ background: none;
     width: 55%;
     left: 22%;
 }
-.here-text {
-	top: 10%;
+
+.comfort-text h3 {
+	width: 150px;
 }
-
-
-.supporttext img {
-	top: 130px;
-}
-
-.lowmin-text {
-	padding: 30px;
-}
-.trendingbtn {
-	bottom: 6%;
-}
-
-
-		   .ow-text p {
-    	top: 60px;
-    }
-.ph-text p {
-	font-size: 25px;
-	width: 330px;
-}
-
 
         }
 		@media screen and (max-width: 768px) {
-        	.shipping-bar-wrapper {
+        
+					
+					.shipping-bar-wrapper {
         		width: 100%;
         	}
         	#left-arrow-ship {
@@ -1217,38 +1250,97 @@ background: none;
         		margin-right: 10px;
         	}    	
 
+					#newcat-bkg-d, .catalog-block {
+						display: none;
+					}
+					#newcat-bkg-m {
+						display: block;
+					}
+					.newcatalog-info {
+						bottom: 4%;
+						left: 0;
+						width: 100%;
+						text-align: center;
+					}
+					.newcatalog-text {
+						bottom: 40px;
+						display: block;
+						width: 98%;
+    margin: auto;
+					}
+					.newcatalog-text h2 {
+						font-size: 45px;
+						margin: 0 auto 10px;
+    width: 100%;
+					}
+					.newcatalog-text p {
+						width: 370px;
+    				margin: 0 auto 20px;
+    			font-size: 24px;
+					}
+					
 
-.faceshields {
+					.catalogbtn,.shopnewprods {
+						display: inline-block;
+						width: 230px;
+					}
+					.catalogbtn {
+						margin-left: 10px;
+					}
+					.catalog-bot-gradient {
+						display: block;
+					}
+
+
+					.ppe-wrapper {
+						grid-template-areas:
+        "ppe-reg"
+        "comfort-mask"
+        "fs-ppe";
+					}
+					.ppe-text p {
+						font-size: 22px;
+					}
+					.fsbtn {
+						top: 0;
+					}
+					.ppe-overlay {
+						display: none;
+					}
+					.comfort-text h3 {
+	width: 200px;
+	font-size: 29px;
+}
+
+
+.prism-left, #prismfabric {
+display: none;
+}
+#prism-m, .prism-container {
 	display: block;
-	position: relative;
-    margin-bottom: 40px;
 }
-.faceblock {
-	display: block;
-}
-#maskgirl {
+.prism-right {
 	width: 100%;
-	float: none;
 }
-#gaiterguy {
-	display: none;
-}
-.shield-text {
+.prism-text {
+	text-align: center;
+	left: 0;
+	bottom: 140px;
 	width: 100%;
-    position: absolute;
-    bottom: -20px;
-		display: block;
+	font-size: 75px;
 }
-.shield-text-box {
-	padding: 0% 0 10%;
+#prism-intro {
+	font-size: 24px;
 }
-.shield-text h2 {
-	font-size: 45px;
-    margin-bottom: 20px;
+.prism-text h2 {
+	margin: 10px auto;
 }
-.shield-text p {
-	font-size: 18px;
-    margin-top: 6%;
+.prism-text p {
+	font-size: 22px;
+}
+.prismbtn {
+	margin: auto;
+    width: 140px;
 }
 
 
@@ -1295,166 +1387,6 @@ display: none;
 }
 
 
-#phrc-logo {
-	margin: 20px auto 0px;
-}
-#flag-hats {
-	margin: 0 auto;
-}
-
-#here-desk {
-	display: none;
-}
-#here-m {
-display: block;
-width: 100%;
-padding-bottom: 50px;
-background-color: rgb(0, 20, 61);
-}
-.here-text {
-	top: 60%;
-    width: 100%;
-    text-align: center;
-    left: 0;
-}
-.here-block {
-	margin: 10px auto;
-}
-.here-block img {
-	width: 35px;
-}
-.here-block h2 {
-	font-size: 18px;
-}
-.hereto-btn {
-	top: 40px;
-}
-
-.lowmins-banner {
-	display: block;
-	margin-bottom: -30px;
-}
-.lowmins-banner img {
-	width: 100%;
-	margin: 0 auto 40px;
-}
-.lowmin-content {
-	height: auto;
-	padding-bottom: 90px;
-}
-.lowmins-mobile {
-	display: block;
-	z-index: 100;
-	width: 100%;
-}
-#lowmin-bkg-d, #lowmin-prods-d {
-	display: none;
-}
-#lowmin-bkg-m {
-	display: block;
-	width: 100%;
-}
-.lowmin-text {
-	display: block;
-	width: 100%;
-	background-color: transparent;
-	padding: 0;
-}
-.lowmin-text h2 {
-    background-color: rgba(20, 29, 87, 0.7);
-    padding: 70px 20px;
-    border-bottom: none;
-    font-size: 9vw;
-}
-#lowminbar {
-	width: 100%;
-	border-bottom: 5px solid white;
-	margin-top: 20px;
-	display: block;
-}
-.lowmin-text p {
-	padding: 50px 0;
-	    background-color: rgba(20, 29, 87, 0.7);
-	    font-size: 5vw;
-	    text-align: center;
-	    margin: 50px auto;
-	    position: relative;
-}
-.trendingbtn {
-	display: block;
-	left: 34%;
-	bottom: 2%;
-	margin: auto;
-}
-#visor-apron {
-	width: 80%;
-}
-
-.mega-text h2 {
-	font-size: 16vw;
-}
-.mega-text h3 {
-	font-size: 5.2vw;
-}
-.promo-text h3 {
-	line-height: 1.3;
-	margin-bottom: 20px;
-}
-.promo-text {
-width: 60%;
-    text-align: center;
-}
-.promobtn {
-	margin-left: 0;
-}
-
-.hero1-container {
-	padding: 0 0 40px;
-}
-.hero1-top {
-	top: 20px;
-	left: 0;
-	width: 100%;
-	display: block;
-}
-
-#freestyle-logo {
-	width: 70%;
-	margin: 0 auto;
-}
-.hero1-banner h2 {
-	margin: 20px auto;
-	font-size: 7vw;
-}
-#hero1-bkg {
-	margin-bottom: 0;
-	    width: 170%;
-    left: -38%;
-}
-.hero1-text {
-	top: 70px;
-}
-.hero1-text p {
-	width: 90%;
-	font-size: 5vw;
-	line-height: 1.3;
-}
-
-
-.phonescroll {
-	top: 40px;
-	width: 90%;
-	left: 0;
-	margin: auto;
-	display: block;
-}
-.fs-scroll-container {
-	width: 90%;
-}
-.fs-phone-box {
-	width: 80%;
-}
-
 #shipbanner-d, #freeship-div {
 	 display: none;
 	}
@@ -1481,83 +1413,6 @@ display: block;
 }
 
 
-#hero2-m, .hero2-text-m {
-	display: block;
-}
-#hero2desk, .hero2-text, .hero3-banner  {
-	display: none;
-}
-
-.bundletext h3 {
-display: none;
-}
-.bundletext h4 {
-display: block;
-}
-.bundletext a {
-	margin-left: 0;
-}
-
-.ph-ship-wrapper {
-    background-attachment: unset;
-    background-image: url("https://static.augustasportswear.com/marketing/2020-Website/Home-Page/Feb/Feb2020-homepage-Pacific-bkgd1-mobile.jpg");
-}
-
-#ph-model {
-	display: none;
-}
-#ph-model-m {
-	display: block;
-}
-.ph-text {
-    width: 100%;
-    left: 0;
-    position: absolute;
-}
-#ph-ship-logo {
-	margin-bottom: 10%;
-	width: 70%;
-}
-#elite-text {
-	margin: 0 auto 30px;
-	width: 60%;
-}
-#ph-ship-btn {
-	margin: auto;
-}
-.ph-text p {
-	text-align: center;
-	line-height: 1.2;
-	font-size: 20px;
-}
-#ph-ship-btn {
-	font-size: 14px;
-}
-
-#ow-bkg-d {
-	display: none;
-}
-#ow-bkg-m {
-	display: block;
-}
-.ow-text {
-	width: 80%;
-}
-.ow-text h3 {
-	font-size: 8vw;
-}
-	   .ow-text p {
-    	top: 120px;
-    }
-
-.ow-text p, .ow-text p > a {
-	font-size: 14px;
-}
-
-.video-container iframe {
-    width: 90%;
-}
-
 #asb-logo {
 	display: none;
 }
@@ -1572,24 +1427,6 @@ display: block;
 	width: 80%;
 	max-width: 100%;
 	font-size: 20px;
-}
-
-.three-block-wrapper {
-	display: inline-block;
-}
-.three-block-image {
-	width: 100%;
-	margin-right: 0;
-}
-.three-block-image-d {
-	display: none
-}
-.three-block-image-m {
-	display: block;
-}
-
-.three-block-btn {
-    text-align: center;
 }
 
 
@@ -1673,40 +1510,27 @@ display: block;
     padding-bottom: 0;
 }
 
-.here-text h3 {
-	margin-top: 3%;
-}
-.hereto-btn {
-	top: 20px;
-}
 
+.catalogbtn,.shopnewprods {
+						width: 240px;
+					}
+					.catalogbtn {
+						margin-left: 0;
+					}
+
+					.fsbtn {
+							top: 6px;
+					}
+.fstext p {
+	width: 250px;
+}
+.prism-text {
+	bottom: 70px;
+}
 
 .ph-multicam {
 		min-height: 1000px;
 }
-
-
-
-.lowmins-banner img {
-	margin: 0 auto;
-}
-.lowmin-text h2 {
-	margin-bottom: 20px;
-}
-.lowmin-text p {
-	margin: 20px auto;
-	padding: 20px 0;
-}
-.trendingbtn {
-	left: 28%;
-}
-
-
-
-#fs-ipad {
-	top: 90%;
-}
-
 
 .freeship-text {
 	bottom: 30px;
@@ -1769,6 +1593,22 @@ display: block;
 	font-size: 16px;
 }
 
+.comfort-text h3 {
+	font-size: 20px;
+	width: 160px;
+}
+
+.prism-text {
+	font-size: 50px;
+}
+#prism-intro p {
+	font-size: 20px;
+}
+.prism-text p {
+	font-size: 18px;
+}
+
+
 .multicam-text h2 {
 	font-size: 22px;
 }
@@ -1812,45 +1652,26 @@ display: block;
     	top: 21%;
         }
 
-.shield-text-box {
-	padding: 0 0 5%;
-}
-.shield-text-box {
-	padding: 0% 0 10%;
-}
-.shield-text h2 {
-	font-size: 35px;
-    margin-bottom: 20px;
-}
-.shield-text p {
-	font-size: 14px;
-}
+				.hp-btn-black, .hp-btn-white {
+						font-size: 12px;
+					}
 
-
-.flaghats-banner {
-	padding-bottom: 15%;
-	background-color: black;
+					.newcatalog-text {
+						bottom: 10px;
+					}
+.ppe-text p {
+	font-size: 15px;
 }
-
-#here-m {
-	padding-bottom: 110px;
-}
-.here-text {
-top: 50%;
-}
-.here-text h3 {
-	margin-top: 8%;
-	font-size: 24px;
-}
-#worryfree {
+.fstext p {
 	width: 200px;
 }
-.mega-block img {
-	margin-bottom: 16%;
-}
 
-.trendingbtn {
-	left: 24%;
+				.prism-text {
+	bottom: 40px;
+	font-size: 40px;
+}
+#prism-intro {
+	font-size: 18px;
 }
 
 
@@ -1887,74 +1708,68 @@ top: 50%;
 }
         }
         @media screen and (max-width: 400px) {
-
-
-.hero1-text h2 {
-	font-size: 26px;
-	width: 315px;
-}
-
-
-.flagtext h2 {
-	width: 100%;
-	font-size: 8vw;
-}
-.flagtext h3, .flag-bot-text h4 {
-	font-size: 13px;
-	width: 95%;
-    margin: 0 auto 10px;
-}
-
 .ohiobtn {
 	margin: 0 auto;
 	display: block;
 }
-.lowmins-banner {
-	margin-bottom: -30px;
+
+.newcatalog-text {
+	width: 90%;
+    margin: auto;
 }
-.lowmins-banner img {
-	margin: 0 auto;
+.newcatalog-text h2 {
+	font-size: 27px;
 }
-.lowmin-text h2 {
-	padding: 30px 20px;
+.newcatalog-text p {
+	width: 90%;
+    margin: 0 auto 20px;
+		font-size: 15px;
 }
-.lowmin-text p {
-	font-size: 6vw;
-	padding: 20px 0;
-	margin: 10px 0;
-}
-.trendingbtn {
-	left: 17%;
+.catalogbtn {
+	margin: 10px 0 0 0;
 }
 
-
-.newstyles-text img {
-	width: 300px;
+.ppe-text {
+	width: 95%;
+	left: 3%;
 }
 
-.hero2-text-m h2 {
-	font-size: 44px;
+#masklogo {
+	width: 50px;
 }
-.hero2-text-m p {
-	font-size: 16px;
+.masksbtn {
+	top: 8px;
 }
-.hero2-btn-m {
-	    font-size: 14px;
-    padding: 6px;
+.maskstext h3 {
+	font-size: 20px;
+	margin: 5px 0;
+}
+.comfort-text {
+	bottom: 15%;
+}
+.comfort-text h3 {
+	margin-bottom: 10px;
+	font-size: 17px;
+    width: 140px;
+}
+.fstext p {
+font-size: 12px;
+width: 150px;
+}
+.fsbtn {
+	top: 0;
 }
 
-
-.hero3-text {
-	top: 65px;
+.prism-text {
+	bottom: 30px;
 }
-.hero3-text p {
+.prism-text h2 {
+	margin-bottom: 10px;
+}
+.prism-text p {
 	font-size: 12px;
+	margin-bottom: 5px;
 }
-
-	   .ow-text p {
-    	top: 80px;
-    }
-
 
 .wool-text {
 	bottom: 5%;
@@ -2182,49 +1997,133 @@ function showDivsM(n) {
 </div>
 
 
-<!-- Face Shield Banner -->
-<div class="faceshields">
-	<div class="faceblock">
-	<img src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/APR-2020/April2020-Homepage-girl.jpg" alt="Face Masks, gaiters and bandanas for your protection" id="maskgirl">
+ <!-- <div class="shipping-update">
+<div class="shipupdate-text">
+	<h2>Due to COVID-19 we are experiencing shipping delays of up to 24 hours - we apologize for the inconvenience.</h2>
 
-	<div class="shield-text">
+<p id="covid-link">
+	<a href="https://news.augustasportswear.com/covid-19-related-news-resources-and-programs/" target="blank" class="btnlinktext covidbtn">Click Here</a> for COVID-19 related news.</p>
+</div>
+</div> -->
 
-		<div class="shield-text-box">
-		<img src="https://static.augustasportswear.com/marketing/2020-Website/Landing%20Pages/face-shield-logo.png" alt="Face Masks, gaiters and bandanas for your protection">
-		<h2>YOUR<br>PROTECTION<br>PARTNER</h2>
-		<p>THE BEST SOURCE FOR<br><b>FACE MASKS, GAITERS</b><br>& <b>BANDANAS</b></p>
-		<a href="/face-shield?promo_name=shield-banner&promo_creative=two-masks&promo_position=hero1" class="hp-btn-black masksbtn">SHOP ALL <span class="shop-arrow-white"></span></a>
-		</div>
+
+<!-- New Catalog -->
+<div class="newcatalog-wrapper">
+
+	<div class="catalog-bot-gradient"></div>
+
+	<img src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/JUNE-2020/June2020-Homepage-Hero1.jpg" alt="New Augusta Sportswear Brands Fall 2020 Catalog" id="newcat-bkg-d">
+
+	<img src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/JUNE-2020/June2020-Homepage-MOBILE-1.jpg" alt="New Augusta Sportswear Brands Fall 2020 Catalog" id="newcat-bkg-m">
+
+
+<div class="newcatalog-info">
+
+	<div class="catalog-block">
+		<a href="/catalogs">
+	<img src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/JUNE-2020/June2020-Homepage-Hero1-Catalog.png" alt="New Augusta Sportswear Brands Fall 2020 Catalog" id="catalog-image">
+	<p class="btnlinktext viewcatalog">View Catalog</p>
+</a>
+</div>
+
+	<div class="newcatalog-text">
+		<h2><span style="color: #F7C44B">NEW!</span><br>CATALOG & PRODUCTS</h2>
+		<p>Featuring new athletic apparel for sport & every day life.</p>
+		<a href="/SearchDisplayView?tag=new-products-spring-summer-2020" class="hp-btn-white shopnewprods">Shop New Products</a>
+		<a href="/catalogs" class="hp-btn-white catalogbtn">Download Catalog</a>
+	</div>
+
+</div>
+
+</div>
+
+<!-- PPE FS & Reg-->
+<div class="ppe-container">
+
+<div class="ppe-wrapper">
+	<div class="ppe-block ppe-reg">
+		<div class="ppe-overlay"></div>
+	<img src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/JUNE-2020/June2020-Homepage-Banner2-Left-R1.jpg" alt="Face Masks, gaiters and bandanas for your protection" class="ppe-bkg">
+
+	<div class="ppe-text maskstext">
+	
+		<img src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/JUNE-2020/Facemask-Icon-white.png" alt="Face Masks, gaiters and bandanas for your protection" id="masklogo">
+
+		<h3>Masks &<br>Gaiters</h3>
+	
+		<p>Provides every day comfort<br>and protection.</p>
+
+	<a href="/face-shield?promo_name=ppe-block&promo_creative=two-masks" class="hp-btn-white masksbtn">ORDER HERE</a>
+  </div>
+
+</div>
+
+
+<div class="ppe-block comfort-mask">
+	<div class="ppe-overlay"></div>
+
+	<img src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/JUNE-2020/June2020-Homepage-Banner2-TopRight-ComfotMasks.jpg" alt="Comfort Wear Mask in stock now!" class="ppe-bkg">
+	
+<div class="ppe-text comfort-text">
+	<h3>COMFORT WEAR MASK IN STOCK & READY TO SHIP</h3>
+	<a href="/augusta-comfort-wear-mask-25-piece-case-pack-orders-only-6836?promo_name=june-hp&promo_id=catalog-launch&promo_creative=comfort-mask&promo_position=top-right-ppe" class="hp-btn-black">SHOP NOW</a>
+</div>
+
+
+<!-- <div class="ppe-text comfort-text">
+	<h3>COMFORT WEAR MASK AVAILABLE FOR ORDER</h3>
+	<a href="/face-shield?promo_name=june-hp&promo_id=catalog-launch&promo_creative=comfort-mask&promo_position=top-right-ppe" class="hp-btn-black">SHOP NOW</a>
+</div> -->
+
+</div>
+
+
+<div class="ppe-block fs-ppe">
+	<div class="ppe-overlay"></div>
+	<img src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/JUNE-2020/June2020-Homepage-Banner2-Right-FreeStyle.jpg" alt="Face Masks, gaiters and bandanas for your protection" class="ppe-bkg">
+	
+	<div class="ppe-text fstext">
+
+	<p>Custom sublimated masks & gaiters</p>
+	<a href="/custom-sublimation-accessories" class="hp-btn-white masksbtn fsbtn">DESIGN NOW</a>
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<!-- Prism Polo -->
+<div class="prism-container">
+
+	<img src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/JUNE-2020/June2020-Homepage-MOBILE-4.jpg" alt="New Prism Polo" id="prism-m">
+
+
+
+	<div class="prism-left">
+	<img src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/JUNE-2020/June2020-Homepage-Banner3-PrismPolo.jpg" alt="New Prism Polo" id="prism-left-d">
+</div>
+	
+	<div class="prism-right">
+		<img src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/JUNE-2020/June2020-Homepage-Banner3-Fabric.jpg" alt="New Prism Polo" id="prismfabric">
+
+
+		<div class="prism-text">
+			<span id="prism-intro">INTRODUCING</span>
+			<h2>PRISM <b>POLO</b></h2>
+
+<p>Dry-Excel™ 100% Polyester
+	<br>Wicking Honeycomb Knit</p>
+
+<a href="/SearchDisplayView?beginIndex=0&pageSize=20&searchTerm=prism%20polo" class="hp-btn-white prismbtn">shop polos</a>
+			</div>
 
 	</div>
 
-	<img src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/APR-2020/April2020-Homepage-guy.jpg" alt="Face Masks, gaiters and bandanas for your protection" id="gaiterguy">
-	</div>	
 
-</div>
-
-
-<!-- Flag Hats -->
-<div class="flaghats-banner">
-	<img id="fh-bkg" src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/MAR-2020/AmericanFlagCollection_ASB_Banner_bkgd.jpg" alt="American Red Cross and Pacific Headwear team up for the American Flag Collection hats.">
-  <div class="flag-content">
-
-<div class="flagtext">
-	<h2>The American Flag Collection</h2>
-	<h3>on the 104 C trucker snapback</h3>
-
-	<img id="phrc-logo" src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/MAR-2020/AmericanFlagCollection_ASB_logos_1.png" alt="American Red Cross and Pacific Headwear team up for the American Flag Collection hats.">
-	
-</div>
-
-<img id="flag-hats" src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/MAR-2020/AmericanFlagCollection_ASB_hats.png" alt="American Red Cross and Pacific Headwear team up for the American Flag Collection hats.">
-
-<div class="flag-bot-text">
-	<h4>$4 per hat will be donated to The American Red Cross</h4>
-	<a href="https://www.pacificheadwear.com/" target="blank" class="btnlinktext">shop at pacificheadwear.com <span class="shop-arrow-white"></span></a>
-</div>
-
-</div>
 
 </div>
 
@@ -2247,96 +2146,11 @@ function showDivsM(n) {
 	outdoor adventurer.
 	</h3>
 
-<a href="https://www.pacificheadwear.com/cap/M08" class="hp-btn-white multicam-btn" target="blank">SHOP NEW STYLE<span class="shop-arrow"></span></a>
+<a href="https://www.pacificheadwear.com/cap/M08" class="hp-btn-white multicam-btn" target="blank">SHOP NEW STYLE</a>
 
 </div>
 
 <img src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/May-2020/CS-May2020-Homepage-m08-represent.png" alt="Pacific Headwear Multicam" id="represent-text">
-
-</div>
-
-
-<!-- Russell builder
-<div class="ra-subl">
-	<img id="fsra-logo" class="hideme" src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/MAR-2020/CS4110-FS-RUSSELL-logos.png" alt="Russell Athletic is now on the FreeStyle Sublimation builder.">
-
-<div class="ra-subl-text">
-	<h2  class="hideme">NOW YOU CAN DESIGN<br>THE WAY YOU WANT TO.</h2>
-	<a href="/SearchDisplayView?tag=freestyle-sublimation-russell-athletic" class="hp-btn-white hideme">Jump in here <span class="shop-arrow"></span></a>
-</div>
-
-	<img id="ra-models" src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/MAR-2020/CS4110-FS-RUSSELL-models.png" alt="Russell Athletic sublimation models">
-</div>
--->
-
-
-<div class="hereforyou">
-	<img src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/March%202020/HeretoHelp-Banner1-desktop.jpg" id="here-desk">
-	<img src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/March%202020/HeretoHelp-Banner1-mobile.jpg" id="here-m">
-
-	
-	<div class="here-text">
-		<div class="here-block">
-		<img src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/March%202020/March2020-CheckMark-Icon.png" alt="check mark">
-		<h2>Inventory on Hand</h2>
-		</div>
-		
-		<div class="here-block">
-		<img src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/March%202020/March2020-CheckMark-Icon.png" alt="check mark">
-		<h2>Same Day Shipping</h2>
-		</div>
-		
-		<div class="here-block">
-		<img src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/March%202020/March2020-CheckMark-Icon.png" alt="check mark">
-		<h2 id="worryfree">NEW Worry-Free Return Policy</h2>
-	</div>
-	
-	
-	<h3>WE'RE HERE FOR YOU.</h3>
-	
-	
-	
-	<a href="/here-to-help" class="hp-btn-white hereto-btn">LEARN MORE <span class="shop-arrow"></span></a>
-	
-	</div>
-</div>
-
-
-<!-- Low Mins -->
-<div class="lowmins-banner">
-
-<img src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/March%202020/Low-Mins-Banner/lowmins-banner-march-desktop.png" alt="Low minimums, quick turn on customization" id="lowmin-bkg-d">
-
-<img src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/March%202020/Low-Mins-Banner/lowmins-bkg-mobile.png" alt="Low minimums, quick turn on customization" id="lowmin-bkg-m">
-
-
-<div class="lowmin-content">
-
-  <div class="lowmin-text">
-
-<h2>TRENDING<br>ITEMS
-<span id="lowminbar"></span>
-
-</h2>
-
-<img src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/March%202020/Low-Mins-Banner/lowmins-prods-mobile-.png" class="lowmins-mobile">
-
-<p id="low-mins">LOW MINIMUMS</p>
-
-<img id="visor-apron" src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/March%202020/Low-Mins-Banner/lowmins-prods-mobile-2.png" class="lowmins-mobile">
-
-<p>QUICK TURN<br>ON CUSTOMIZATION</p>
-
-<img src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/March%202020/Low-Mins-Banner/lowmins-prods-mobile-3.png" class="lowmins-mobile">
-
-</div>
-
-
-  <img src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/March%202020/Low-Mins-Banner/lowmins-products-march-desktop.png" id="lowmin-prods-d">
-
-  <a class="hp-btn-white trendingbtn" href="/SearchDisplayView?tag=trending-items">shop trending items <span class="shop-arrow"></span></a>
-
-</div>
 
 </div>
 
@@ -2355,7 +2169,7 @@ our family of brands offers a complete source for
 performance and athletic apparel and uniforms.</span></h1>
 
 
-	<a href="/about-us"><button class="hp-btn-white">LEARN MORE<span class="shop-arrow"></span></button></a>
+	<a href="/about-us"><button class="hp-btn-white">LEARN MORE</button></a>
 </div>
 
 <!-- Wool Section -->
@@ -2366,7 +2180,7 @@ performance and athletic apparel and uniforms.</span></h1>
 	<h2>The Original Varsity Jacket</h2>
 	<p>Stock or Customize</p>
 	<a class="hp-btn-white-ol" href="/varsity-jacket">
-	LEARN MORE <span class="shop-arrow-white"></span>
+	LEARN MORE
 	</a>
 	</div>
 	
@@ -2384,7 +2198,7 @@ performance and athletic apparel and uniforms.</span></h1>
 	  <div class="news-box left-news-box hideme2">
 	  
 	    <div class="newsimage-box">
-	    <a href="https://news.augustasportswear.com/covid-19-related-news-resources-and-programs/" target="blank"><img class="newsimage lazyload" data-src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/March%202020/COVID-NEWS.png" alt="View updated news, resources, programs and more related to covid-19."></a>
+	    <a href="https://news.augustasportswear.com/covid-19-related-news-resources-and-programs/" target="blank"><img class="newsimage lazyload" data-src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/March%202020/COVID-NEWS.png" alt="View updated news, resources, programs and more related to covid-19." style="padding: 21px 0; background-color: rgb(254, 194, 56);"></a>
 	    </div>
 	    
 	  	<div class="news-text">
@@ -2401,7 +2215,7 @@ performance and athletic apparel and uniforms.</span></h1>
 	  
 	    <div class="newsimage-box">
 	    <a href="http://news.augustasportswear.com/freestyle-sublimation-taking-small-business-corporate-event-apparel-to-the-next-level" target="blank">
-	    <img class="newsimage lazyload" data-src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/Feb/Feb2020-homepage-Blog-1.jpg" alt="FreeStyle Sublimation for Small business, corporate, and event apparel Blog Post">
+	    <img class="newsimage lazyload" data-src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/JUNE-2020/FS-Blog-Image-June2020.jpg" alt="FreeStyle Sublimation for Small business, corporate, and event apparel Blog Post">
 	    </a>
 	    </div>
 	    
@@ -3081,36 +2895,3 @@ window.onload = function() {
   return Rellax;
 }));
 </script>
-
-<!-- PROMO  content recommendation widget
-	 
-	 <div class="promo-banner">
-		
-		 <img id="promo-banner" src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/Feb/MWM-Feb-DESKTOP_text.png"> 
-		 
-		 <img id="promo-banner-m" src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/Feb/MWM-Feb-MOBILE_text.png"> 
-		 
-
-	 	 
-	 <div class="promo-text-btn">
-	 	<h3>USE PROMO CODE:<br> <span id="promocode">MWMFEB35</span></h3>	 	
-	 	
-	 	<a id="promobtn" class="hp-btn-white-ol" href="/SearchDisplayView?tag=midweek-madness&tag=midweek-madness&promo_name=MWM&promo_id=feb20&promo_position=hp_login">SHOP SALE<span class="shop-arrow-white"></span></a>	
-	 	<p id="promodetails">
-	blank stock <span class="detail-divider">&#183;</span> online orders only
-	<br>standard freight policies apply 
-	<br>max 72 pieces per order
-	</p>
-	
-	</div>
-	
-		 <div class="promo-text-btn-m">
-	 	<h3>USE PROMO CODE:<br> <span id="promocode-m">MWMFEB35</span></h3>
-	 		 	
-	 	
-	 	<a id="promobtn-m" class="hp-btn-white-ol" href="/SearchDisplayView?tag=midweek-madness&tag=midweek-madness&promo_name=MWM&promo_id=feb20&promo_position=hp_login-mobile">SHOP SALE <span class="shop-arrow-white"></span></a>	
-	 
-	
-	</div>
-	 </div> 
--->
