@@ -1,0 +1,485 @@
+<style>
+  b {
+    font-family: "AvenirNextB";
+  }
+
+.prolid-offshore-wrapper {
+  width: 80%;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.prolid-offshore-header {
+display: block;
+position: relative;
+margin-bottom: 7%;
+}
+.hatoverlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+
+#header-hat {
+  width: 100%;
+  display: block;
+}
+
+.hat-header-text {
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+}
+.hat-header-text h2 {
+  font-size: 45px;
+}
+.hat-header-text p {
+  font-size: 20px;
+    width: 560px;
+    margin: 20px auto 0;
+    line-height: 1.3;
+}
+
+.customsection {
+    color: black;
+    width: 100%;
+    margin: 20px auto;
+  }
+  #prolid-logo {
+width: 200px;
+display: block;
+margin: 20px auto 40px;
+  }
+  .customsection h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    margin: 0 0 20px;
+  }
+  .customsection p {
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+.placeorder {
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+  background-color: rgb(183, 21, 44);
+  color: white;
+  margin: 40px auto;
+}
+.placeorder p {
+  font-size: 15px;
+}
+.placeorder p > a {
+  font-size: inherit;
+  cursor: pointer;
+  color: inherit;
+}
+.placeorder p > a:hover {
+  text-decoration: underline;
+}
+.prolid-orderform {
+  font-size: 15px;
+    margin-top: 20px;
+    font-family: "AvenirNextB";
+    text-transform: uppercase;
+    display: block;
+}
+.prolid-orderform:hover {
+  text-decoration: underline;
+}
+.offshoreorder {
+  background-color: #004841;
+}
+
+.prolid-step-block {
+  width: 90%;
+  margin: 50px auto;
+}
+.prolid-step-block h3 {
+  color: black;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+.prolid-step-block img {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.prolid-pricing {
+  padding: 30px 0;
+  overflow-x: scroll;
+}
+.prolid-pricing h3 {
+  color: black;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 10px;
+}
+.pricing-table {
+color: black;
+border-collapse: collapse;
+text-align: center;
+margin: 10px auto 30px;
+}
+.pricing-table thead, .pricing-table tbody {
+  border: 1px solid black;
+}
+.pricing-table thead > tr > th {
+    padding: 15px 10px;
+    font-family: "AvenirNextB";
+    background-color: lightgray;
+    font-size: 14px;
+    border: 1px solid black;
+}
+.pricing-table tbody > tr > td {
+  padding: 10px 7px;
+    border: 1px solid black;
+}
+#add-emb {
+  padding: 7px 5px;
+}
+
+.prolid-timing {
+  border-top: 1px solid darkgrey;
+    padding: 30px 0;
+width: 70%;
+margin: auto;
+}
+.time-mins {
+  width: 400px;
+  margin-top: 30px;
+}
+
+
+.offshore-section {
+  border-top: 2px solid;
+    padding-top: 50px;
+}
+.offshore-features {
+  width: 100%;
+  display: block;
+  margin: 10px auto;
+}
+
+.offshore-block {
+  display: inline-block;
+  width: 32%;
+  vertical-align: top;
+  margin: 5px;
+}
+.offshore-row {
+  display: inline-flex;
+}
+.offshore-block img {
+  width: 100%;
+  margin: 10px auto 5px;
+}
+.offshore-titles {
+  color: black;
+  font-size: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1280px) {
+.hat-header-text {
+  top: 50px;
+}
+}
+@media screen and (max-width: 1080px) {
+.hat-header-text {
+  top: 50px;
+}
+
+}
+@media screen and (max-width: 900px) {
+.prolid-offshore-wrapper {
+  width: 95%;
+}
+.hat-header-text h2 {
+  font-size: 35px;
+}
+.hat-header-text p {
+  font-size: 17px;
+  width: 520px;
+}
+}
+@media screen and (max-width: 650px) {
+  .hat-header-text {
+    top: 40px;
+  }
+.hat-header-text h2 {
+  font-size: 25px;
+}
+.hat-header-text p {
+  font-size: 14px;
+  width: 440px;
+  margin: 10px auto 0;
+}
+}
+@media screen and (max-width: 500px) {
+  .hat-header-text {
+    top: 25px;
+  }
+  .placeorder p {
+    width: 90%;
+    margin: auto;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hat-header-text {
+    top: 14px;
+  }
+.hat-header-text h2 {
+  font-size: 28px;
+}
+.hat-header-text p {
+display: none;
+}
+.prolid-timing {
+  width: 95%;
+}
+.time-mins {
+  width: inherit;
+}
+
+.offshore-row {
+  display: block;
+  width: 100%;
+}
+.offshore-block {
+  width: 100%;
+  margin: 5px auto;
+}
+
+}
+
+</style>
+
+<div class="prolid-offshore-wrapper">
+
+<div class="prolid-offshore-header">
+<img id="header-hat" src="https://static.augustasportswear.com/marketing/2020-Website/Landing%20Pages/ProLid_Offshore/prolid-hero-crop.png" alt="">
+  
+<div class="hatoverlay"></div>
+
+<div class="hat-header-text">
+    <h2>CUSTOM PACIFIC HEADWEAR</h2>
+
+    <p>Learn about ProLid Custom and Custom Offshore hat options to customize your hats the way you want.</p>
+  </div>
+</div>
+
+
+<div class="prolid-section customsection">
+
+<h2>ProLid Custom</h2>
+
+<img src="https://static.augustasportswear.com/marketing/2020-Website/Landing%20Pages/ProLid_Offshore/prolid-logo.png" id="prolid-logo" alt="ProLid logo">
+
+<p>Our ProLid Custom program gives you the ability to customize the colors of individual crown panels, eyelets, undervisor, and stitching. Additionally, ProLid offers oversized embroidery options if needed. When Custom USA doesn’t achieve the look you want, ProLid custom caps are sure to provide you with the versatile options that will meet your needs.</p>
+
+
+<div class="placeorder">
+  <p><b>Ready to place a ProLid Custom order?</b>
+    <br>
+    Fill out this PDF and email to <a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a>.</p>
+    <a href="https://static.augustasportswear.com/marketing/2020-Website/Landing%20Pages/ProLid_Offshore/prolid-order-form-fillable_2020.pdf" class="prolid-orderform" target="_blank">Download Order Form</a>
+</div>
+
+
+<div class="prolid-steps">
+
+  <div class="prolid-step-block">
+    <h3>1. choose your fabric</h3> 
+    <img src="https://static.augustasportswear.com/marketing/2020-Website/Landing%20Pages/ProLid_Offshore/prolid-fabric-choices.png" alt="ProLid Fabric Choices Pacific Headwear">
+  </div>
+
+  <div class="prolid-step-block">
+    <h3>2. select your cap construction</h3> 
+    <img src="https://static.augustasportswear.com/marketing/2020-Website/Landing%20Pages/ProLid_Offshore/prolid-cap_construction.png" alt="ProLid cap construction">
+  </div>
+
+  <div class="prolid-step-block">
+    <h3>3. prolid color options</h3> 
+    <img src="https://static.augustasportswear.com/marketing/2020-Website/Landing%20Pages/ProLid_Offshore/pro-lid-fabric-colors.jpg" alt="ProLid fabric colors">
+  </div>
+
+  <div class="prolid-step-block">
+    <h3>4. apply your colors</h3> 
+    <img src="https://static.augustasportswear.com/marketing/2020-Website/Landing%20Pages/ProLid_Offshore/prolid-anatomy.png" alt="ProLid anatomy of hat Pacific Headwear">
+  </div>
+
+</div>
+
+
+<div class="placeorder">
+  <p><b>Ready to place a ProLid Custom order?</b>
+    <br>
+    Fill out this PDF and email to <a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a>.</p>
+    <a href="https://static.augustasportswear.com/marketing/2020-Website/Landing%20Pages/ProLid_Offshore/prolid-order-form-fillable_2020.pdf" class="prolid-orderform" target="_blank">Download Order Form</a>
+</div>
+
+
+  <div class="prolid-pricing">
+    <h3>ProLid Custom Pricing</h3>
+
+    <table class="pricing-table" >
+  <thead>
+    <tr>
+      <th>18-35 PIECES</th>
+      <th>36-53 PIECES</th>
+      <th>54-71 PIECES</th>
+      <th>72+ PIECES</th>
+      <th>ADDITIONAL EMBROIDERY</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$32.00(P)</td>
+      <td>$30.40(P)</td>
+      <td>$27.20(P)</td>
+      <td>$25.60(P)</td>
+      <td>+$1.50(P) PER SIDE</td>
+    </tr>
+    <tr>
+      <td id="add-emb" colspan="5">*Additional embroidery charges will apply if you are requesting more than two embroidery locations.</td>
+    </tr>
+  </tbody>
+    </table>
+  </div>
+
+  <div class="prolid-timing">
+
+    <table class="pricing-table time-mins">
+      <thead>
+        <tr>
+          <th>LEAD TIME</th>
+          <th>MINIMUM</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>7-9 Weeks</td>
+          <td>18 Pieces</td>
+        </tr>
+      </tbody>
+
+    </table>
+
+  </div>
+
+</div>
+
+
+
+  <div class="offshore-section customsection">
+     <h2>CUSTOM OFFSHORE</h2>
+     <p>Bring your cap ideas to life using custom features that go beyond our typical stock caps. From custom labeling and seam tape to screen printing and sublimation, we’re able to deliver your unique project.</p>
+
+
+     <div class="offshore-features">
+
+      <div class="offshore-row">
+      <div class="offshore-block">
+        <img src="https://static.augustasportswear.com/marketing/2020-Website/Landing%20Pages/ProLid_Offshore/offshore_images/visor-screen-printing.png" alt="">
+        <h3 class="offshore-titles">VISOR SCREEN PRINTING</h3>
+      </div>
+
+      <div class="offshore-block">
+        <img src="https://static.augustasportswear.com/marketing/2020-Website/Landing%20Pages/ProLid_Offshore/offshore_images/sandwich-print.png" alt="">
+        <h3 class="offshore-titles">SANDWICH PRINT</h3>
+      </div>
+
+      <div class="offshore-block">
+        <img src="https://static.augustasportswear.com/marketing/2020-Website/Landing%20Pages/ProLid_Offshore/offshore_images/visor-embroidery.png" alt="">
+        <h3 class="offshore-titles">VISOR EMBROIDERY</h3>
+      </div>
+    </div>
+
+
+    <div class="offshore-row">
+      <div class="offshore-block">
+        <img src="https://static.augustasportswear.com/marketing/2020-Website/Landing%20Pages/ProLid_Offshore/offshore_images/high-end-labeling.png" alt="">
+        <h3 class="offshore-titles">HIGH END LABELING</h3>
+      </div>
+
+      <div class="offshore-block">
+        <img src="https://static.augustasportswear.com/marketing/2020-Website/Landing%20Pages/ProLid_Offshore/offshore_images/multi-technique-decoration.png" alt="">
+        <h3 class="offshore-titles">MULTI-TECHNIQUE DECORATION</h3>
+      </div>
+
+      <div class="offshore-block">
+        <img src="https://static.augustasportswear.com/marketing/2020-Website/Landing%20Pages/ProLid_Offshore/offshore_images/unique-stitch.png" alt="">
+        <h3 class="offshore-titles">UNIQUE STITCH</h3>
+      </div>
+
+    </div>
+
+
+    <div class="offshore-row">
+      <div class="offshore-block">
+        <img src="https://static.augustasportswear.com/marketing/2020-Website/Landing%20Pages/ProLid_Offshore/offshore_images/rubber-patch.png" alt="">
+        <h3 class="offshore-titles">RUBBER PATCH</h3>
+      </div>
+
+      <div class="offshore-block">
+        <img src="https://static.augustasportswear.com/marketing/2020-Website/Landing%20Pages/ProLid_Offshore/offshore_images/custom-tags.png" alt="">
+        <h3 class="offshore-titles">CUSTOM TAGS</h3>
+      </div>
+
+      <div class="offshore-block">
+        <img src="https://static.augustasportswear.com/marketing/2020-Website/Landing%20Pages/ProLid_Offshore/offshore_images/seam-tape.png" alt="">
+        <h3 class="offshore-titles">SEAM TAPE</h3>
+      </div>
+    </div>
+
+    <div class="offshore-row">
+      <div class="offshore-block">
+        <img src="https://static.augustasportswear.com/marketing/2020-Website/Landing%20Pages/ProLid_Offshore/offshore_images/embossed-embroidery.png" alt="">
+        <h3 class="offshore-titles">EMBOSSED EMBROIDERY</h3>
+      </div>
+
+      <div class="offshore-block">
+        <img src="https://static.augustasportswear.com/marketing/2020-Website/Landing%20Pages/ProLid_Offshore/offshore_images/sublimation.png" alt="">
+        <h3 class="offshore-titles">SUBLIMATION</h3>
+      </div>
+
+      <div class="offshore-block">
+        <img src="https://static.augustasportswear.com/marketing/2020-Website/Landing%20Pages/ProLid_Offshore/offshore_images/full-cap-branding.png" alt="">
+        <h3 class="offshore-titles">FULL CAP BRANDING</h3>
+      </div>
+    
+    </div>
+
+     </div>
+
+
+     <div class="placeorder offshoreorder">
+      <p><b>Ready to place a Custom Offshore order?</b>
+        <br>
+        Email your customization details to <a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a> 
+        
+        <br>
+
+        We'll work with you to create a stunning and unique product.</p>
+    </div>
+
+  </div>
+
+
+</div>
