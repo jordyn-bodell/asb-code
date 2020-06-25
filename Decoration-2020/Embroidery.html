@@ -1,9 +1,22 @@
 <!-- Embroidery -->
 <style>
-  /* Show Templates */
+b {
+	font-family: "AvenirNextB";
+}
+
+#decorheaderimg {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+/* Show Templates */
 .show{
     z-index: 999;
     display: none;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
 }
 .show .imgoverlay{
     width: 100%;
@@ -14,13 +27,13 @@
     left: 0;
 }
 .show .img-show{
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     background: #FFF;
     position: absolute;
-    top: 50%;
+		top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     overflow: hidden
 }
 .img-show span{
@@ -38,17 +51,131 @@
     left: 0;
 }
 
+
+.techheader {
+	color: black;
+	text-transform: uppercase;
+	font-size: 55px;
+	font-family: "AvenirNextN";
+	margin: 10px auto;
+	text-align: center;
+	padding: 20px 0;
+	width: 90%;
+
+}
+.tech-info {
+	width: 90%;
+    display: block;
+    margin: auto;
+    color: black;
+}
+.tech-info img {
+	width: 32%;
+	display: inline-block;
+	margin: 0 40px;
+}
+.tech-content {
+	display: inline-block;
+	width: 53%;
+	margin-top: 20px;
+	vertical-align: top;
+}
+.tech-content p {
+	font-size: 16px;
+	margin: 20px auto;
+	line-height: 1.4;
+}
+
+
+/* Show Templates */
+.show{
+    z-index: 999;
+    display: none;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+}
+.show .imgoverlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.66);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.show .img-show{
+    width: 500px;
+    height: 500px;
+    background: #FFF;
+    position: absolute;
+		top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden
+}
+.img-show span{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    cursor: pointer;
+}
+.img-show img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.techheader {
+	color: black;
+	text-transform: uppercase;
+	font-size: 55px;
+	font-family: "AvenirNextN";
+	margin: 10px auto;
+	text-align: center;
+	padding: 20px 0;
+	width: 90%;
+
+}
+.tech-info {
+	width: 90%;
+    display: block;
+    margin: auto;
+    color: black;
+}
+.tech-info img {
+	width: 32%;
+	display: inline-block;
+	margin: 0 40px;
+}
+.tech-content {
+	display: inline-block;
+	width: 53%;
+	margin-top: 20px;
+	vertical-align: top;
+}
+.tech-content p {
+	font-size: 16px;
+	margin: 20px auto;
+	line-height: 1.4;
+}
+
 .pricing {
-	display: inline;
-	clear: left;
+	display: block;
+	width: 90%;
+	margin: 80px auto;
 }
 .price-chart {
-	font-size: 12px;
-	float: left;
-	margin: 0 10px;
+  width: 60%;
+	font-size: 14px;
+	margin: 20px auto;
 	color: black;
-	width: 350px;
 	text-align: center;
+	vertical-align: top;
 }
 .tablehead {
 	background-color: black;
@@ -58,16 +185,49 @@
 	background-color: rgba(0,0,0,0.2);
 }
 .alt-row-2 {
-	background-color: white;
+	background-color: rgba(0,0,0,0.1);
+}
+.pricing p {
+	font-size: 12px;
+    width: 43%;
+    margin: 0 auto 0 20px;
+    display: inline-block;
 }
 
+#embroid-details, #embroid-details a {
+  font-size: 14px;
+    text-align: center;
+    width: 100%;
+    margin: 10px auto 0;
+}
+#embroid-details a {
+  color: #50a4d9;
+  cursor: pointer;
+}
+#embroid-details a:hover {
+  text-decoration: underline;
+}
+
+.sub-sect-header {
+	color: black;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin: 10px auto 20px;
+	text-align: center;
+}
+
+
 /* templates */
+.template-wrapper {
+	width: 90%;
+	margin: 70px auto 50px;
+}
 .template-box-all {
  	display: inline-block;
  	height: auto;
- 	width: 280px;
- 	background-color: lightgray;
- 	color: black;
+ 	width: 23%;
+ 	background-color: black;
+ 	color: white;
  	margin: 5px;
  	border: 1px solid black;
  	overflow: hidden;
@@ -81,22 +241,50 @@
  .template-box-all p {
  	text-transform: uppercase;
  	margin: 2px auto;
- 	width: inherit;
  	text-align: center;
  	font-size: 12px;
+ }
+
+ .section-divider {
+	border-bottom: 1px solid black;
+	width: 100%;
+	margin: 40px auto;
  }
 </style>
 
 
 <div class="technique-content" id="embroidery">
+
+
+  <img id="decorheaderimg" src="https://static.augustasportswear.com/marketing/2020-Website/Decoration/ASB_Deco_Hero_Desktop.jpg" alt="Augusta Sportswear Decoration">
+
+
+  
+
+  <div class="tech-info">
+		
+    <div class="section-divider"></div>
+    
+
+
   <h3 class="techheader">embroidery</h3>
-  <div class="technique-info" id="technique2"><p>With Embroidery, it's all in the details. Augusta Sportswear's expert Embroidery department employs the latest technologies and fully controls every aspect of production. That way, you can be assured of superior products and the highest standards with every stitch, on every order.
-<br><br>
-Add mascots to your designs. Choose from our library of mascots or send us your own. Customer Service Representatives are happy to work with you and your teams!  <br>
-  <a id="stock-decor-link" onclick="openDecoration(event, 'Decorations')">Stock Decorations ></a>
-  </p>
-    <div class="pricing" id="embroid-price-chart"> 
- <table cellpadding="4" cellspacing="0" class="price-chart">
+
+  <img src="https://static.augustasportswear.com/product/222539_aws_640.jpg" alt="">
+
+  <div class="tech-content">
+    
+    <p>With Embroidery, it's all in the details. Augusta Sportswear's expert Embroidery department employs the latest technologies and fully controls every aspect of production. That way, you can be assured of superior products and the highest standards with every stitch, on every order.</p>
+
+    <p>Add mascots to your designs. Choose from our library of mascots or send us your own. Customer Service Representatives are happy to work with you and your teams!</p>
+
+</div>
+
+
+
+<div class="pricing"> 
+  <h3 class="sub-sect-header">PRICING</h3>
+ 
+  <table cellpadding="6" cellspacing="0" class="price-chart">
   	<thead>	
   		<tr class="tablehead">
   			<th class="quantity">Embroidery</th>
@@ -135,10 +323,8 @@ Add mascots to your designs. Choose from our library of mascots or send us your 
   			 
   			</tbody>
   		</table>
-</div>
 
-<div class="pricing" id="embroid-personal-letters"> 
- <table cellpadding="4" cellspacing="0" class="price-chart">
+ <table cellpadding="6" cellspacing="0" class="price-chart personal-letters">
   	<thead>	
   		<tr class="tablehead">
   		  <th class="quantity" colspan="4">Embroidery Personalized Letters (1-color only)
@@ -164,94 +350,34 @@ Add mascots to your designs. Choose from our library of mascots or send us your 
   			 <th colspan="4">*When determining letters per line, remember spaces count as letters</th>
   			</tbody>
   		</table>
+      
+      <p id="embroid-details">For additional information, <a href="/decoration-faqs">view Order Guidelines</a> in our FAQs.</p>
+
 </div>
 
-	<span id="embroid-details">For additional information, <span onclick="openDecoration(event, 'FAQs'); openOrder(event, 'guidelines-faq');" style="color:rgb(199,44,52);text-decoration:underline;cursor:pointer;">view Order Guidelines</span> in our FAQs.</span>
-	<span class="stitch-request">
-	
-    <iframe
-      id="JotFormIFrame-81153804415148"
-      onload="window.parent.scrollTo(0,0)"
-      allowtransparency="true"
-      allowfullscreen="true"
-      allow="geolocation; microphone; camera"
-      src="https://form.jotform.com/81153804415148"
-      frameborder="0"
-      style="width: 1px;
-      min-width: 100%;
-      height:539px;
-      border:none;"
-      scrolling="yes"
-    >
-    </iframe>
-    <script type="text/javascript">
-      var ifr = document.getElementById("JotFormIFrame-81153804415148");
-      if(window.location.href && window.location.href.indexOf("?") > -1) {
-        var get = window.location.href.substr(window.location.href.indexOf("?") + 1);
-        if(ifr && get.length > 0) {
-          var src = ifr.src;
-          src = src.indexOf("?") > -1 ? src + "&" + get : src  + "?" + get;
-          ifr.src = src;
-        }
-      }
-      window.handleIFrameMessage = function(e) {
-        var args = e.data.split(":");
-        if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
-        if (!iframe) { return; }
-        switch (args[0]) {
-          case "scrollIntoView":
-            iframe.scrollIntoView();
-            break;
-          case "setHeight":
-            iframe.style.height = args[1] + "px";
-            break;
-          case "collapseErrorPage":
-            if (iframe.clientHeight > window.innerHeight) {
-              iframe.style.height = window.innerHeight + "px";
-            }
-            break;
-          case "reloadPage":
-            window.location.reload();
-            break;
-          case "loadScript":
-            var src = args[1];
-            if (args.length > 3) {
-                src = args[1] + ':' + args[2];
-            }
-            var script = document.createElement('script');
-            script.src = src;
-            script.type = 'text/javascript';
-            document.body.appendChild(script);
-            break;
-          case "exitFullscreen":
-            if      (window.document.exitFullscreen)        window.document.exitFullscreen();
-            else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
-            else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
-            else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
-            else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
-            break;
-        }
-        var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
-        if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
-          var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
-          iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
-        }
-      };
-      if (window.addEventListener) {
-        window.addEventListener("message", handleIFrameMessage, false);
-      } else if (window.attachEvent) {
-        window.attachEvent("onmessage", handleIFrameMessage);
-      }
-      </script>
-      </span>
-  </div>
+  
+
+  <script type="text/javascript" src="https://form.jotform.com/jsform/81153804415148"></script>
+
+
+  <div class="section-divider"></div>
+
   </div>
 
+
+
+  <div class="show">
+    <div class="imgoverlay"></div>
+    <div class="img-show">
+      <span>X</span>
+      <img src="">
+    </div>
+  </div>
   
-  <div class="view-all-temps" id="all-embroidery">
+  
+  <div class="template-wrapper">
     
-    <h3 class="view-all-header">Embroidery Templates</h3>
-   <div class="view-all-content">
+    <h3 class="sub-sect-header">Embroidery Templates</h3>
    
      <div class="template-box-all">
      <img src="https://static.augustasportswear.com/marketing/A001.jpg">
@@ -683,18 +809,11 @@ Add mascots to your designs. Choose from our library of mascots or send us your 
       <p>EMB19-11</p>
      </div>
         
-    </div>
+
     
  </div>
 
 
-  <div class="show">
-    <div class="imgoverlay"></div>
-    <div class="img-show">
-      <span>X</span>
-      <img src="">
-    </div>
-  </div>
 
  <script>
   //Click to englarge template
@@ -714,41 +833,13 @@ Add mascots to your designs. Choose from our library of mascots or send us your 
   });
   
   
-  // Select all links with hashes
-  $('a[href*="#"]')
-    // Remove links that don't actually link to anything
-    .not('[href="#"]')
-    .not('[href="#0"]')
-    .click(function(event) {
-      // On-page links
-      if (
-        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-        && 
-        location.hostname == this.hostname
-      ) {
-        // Figure out element to scroll to
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        // Does a scroll target exist?
-        if (target.length) {
-          // Only prevent default if animation is actually gonna happen
-          event.preventDefault();
-          $('html, body').animate({
-            scrollTop: target.offset().top
-          }, 1000, function() {
-            // Callback after animation
-            // Must change focus!
-            var $target = $(target);
-            $target.focus();
-            if ($target.is(":focus")) { // Checking if the target was focused
-              return false;
-            } else {
-              $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-              $target.focus(); // Set focus again
-            };
-          });
-        }
-      }
+  $(document).ready(function() {
+    $('.dec-subnav').hover(function() {
+  
+    $('.tech-info').toggleClass('margtop');
+  
     });
-    
+  });
+  
   </script>
+  

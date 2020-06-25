@@ -1,0 +1,295 @@
+<style>
+
+/* Navigation */
+.dec-navbar {
+  overflow: hidden;
+	display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1000px;
+}
+.dec-navbar a {
+  float: left;
+  font-size: 14px;
+  color: black;
+  text-align: center;
+  padding: 8px 20px;
+  text-decoration: none;
+	text-transform: uppercase;
+  width: 100px;
+}
+.dec-subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.dec-subnav .dec-subnavbtn {
+  font-size: 14px;  
+  border: none;
+  outline: none;
+  color: black;
+	background-color: transparent;
+  padding: 10px 20px!important;
+  margin: 0;
+}
+
+.dec-navbar a:hover, .dec-subnav:hover .dec-subnavbtn {
+text-decoration: underline;
+}
+
+.dec-subnav-block {
+	display: none;
+  width: 100%;
+  margin: 0 auto 40px;
+  position: absolute;
+  padding-left: 0%;
+	transition: 0.5s ease;
+  left: 0;
+}
+
+.dec-subnav-content {
+  z-index: 1;
+	margin: auto;
+  height: 100%;
+
+}
+.apparelsubnav {
+  width: 712px;
+}
+.hatsubnav {
+  width: 950px;
+}
+
+.dec-subnav-content a {
+  float: left;
+	color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0px;
+    border: 2px solid;
+    display: inline-block;
+    width: 223px;
+    height: 140px;
+    margin: 5px;
+    position: relative;
+}
+.dec-subnav-content a:hover .subnav-overlay {
+  background-color: rgba(0,0,0,0);
+  transition: ease .3s;
+}
+.subnav-overlay {
+  width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    z-index: 1;
+}
+.dec-subnav-content img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.dec-subnav-content p {
+  position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+
+.subnav-img {
+	height: 40px;
+    display: block;
+    margin: auto;
+}
+
+.dec-subnav:hover .dec-subnav-block {
+  display: block;
+}
+
+
+.margtop {
+	margin-top: 24%;
+	transition: 0.5s ease;
+}
+
+#ordernow-btn {
+  background-color: #50a4d9;
+    color: white;
+    float: right;
+    margin-left: 40px;
+}
+</style>
+
+
+		<div class="dec-navbar">
+
+
+			<div class="dec-subnav tech-subnav">
+				<button class="dec-subnavbtn">Apparel Techniques</button>
+				
+				<div class="dec-subnav-block">
+				<div class="dec-subnav-content apparelsubnav">
+
+          <a href="/screenprint1">
+            <div class="subnav-overlay"></div>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/Techniques-Nav-img-screenprint-hover.jpg" alt="">
+						<p>Screen Print</p>
+          </a>
+          
+          <a href="/embroidery1">
+            <div class="subnav-overlay"></div>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/Techniques-Nav-img-embroidery-hover.jpg" alt="">
+						<p>Embroidery</p>
+          </a>
+          
+          <a href="/heat-transfer">
+            <div class="subnav-overlay"></div>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/Techniques-Nav-img-HT-hover.jpg" alt="">
+						<p>Heat Transfer</p>
+          </a>
+          
+          <a href="/etch">
+            <div class="subnav-overlay"></div>
+            <img src="https://static.augustasportswear.com/marketing/Decoration/Techniques-Nav-img-LE-hover.jpg" alt="">
+						<p>etch</p>
+          </a>
+          
+					<a href="applique1">
+            <div class="subnav-overlay"></div>
+            <img src="https://static.augustasportswear.com/marketing/Decoration/Techniques-Nav-img-applique-hover.jpg" alt="">
+						<p>Appliqué</p>
+          </a>
+          
+					<a href="mascots">
+            <div class="subnav-overlay"></div>
+            <img src="https://static.augustasportswear.com/marketing/Decoration/Techniques-Nav-img-mascots.jpg" alt="">
+						<p>mascots</p>
+          </a>
+          
+				</div>
+			</div>
+		
+      </div> 
+      
+			 <a href="/uniform-decoration">Uniforms</a>
+			<div class="dec-subnav ph-subnav">
+				<button class="dec-subnavbtn">Pacific Headwear Techniques</button>
+				
+				<div class="dec-subnav-block">
+				<div class="dec-subnav-content hatsubnav">
+
+          <a href="/custom-embroidery">
+            <div class="subnav-overlay"></div>
+            <img src="https://static.augustasportswear.com/marketing/" alt="">
+            <p>Custom Embroidery</p>
+          </a>
+
+          <a href="/premium-stock">
+            <div class="subnav-overlay"></div>
+            <img src="https://static.augustasportswear.com/marketing/" alt="">
+            <p>Premium Stock</p>
+          </a>
+
+          <a href="/stock-hat-decoration">
+            <div class="subnav-overlay"></div>
+            <img src="https://static.augustasportswear.com/marketing/" alt="">
+            <p>Stock Decoration</p>
+          </a>
+
+          <a href="/patches">
+            <div class="subnav-overlay"></div>
+            <img src="https://static.augustasportswear.com/marketing/" alt="">
+            <p>Patches</p>
+          </a>
+          
+          <a href="/flexstyle">
+            <div class="subnav-overlay"></div>
+            <img src="https://static.augustasportswear.com/marketing/" alt="">
+            <p>Flexstyle®</p>
+          </a>
+           
+          <a href="/wording-fonts">
+            <div class="subnav-overlay"></div>
+            <img src="https://static.augustasportswear.com/marketing/" alt="">
+            <p>Wording Fonts</p>
+          </a>
+          
+          <a href="/clip-tags">
+            <div class="subnav-overlay"></div>
+            <img src="https://static.augustasportswear.com/marketing/" alt="">
+            <p>Clip Tags</p>
+          </a>
+          
+          <a href="/private-label">
+            <div class="subnav-overlay"></div>
+            <img src="https://static.augustasportswear.com/marketing/" alt="">
+            <p>Private Label</p>
+          </a>
+				</div>
+				</div>
+				
+		
+			</div>
+			<a href="/decoration-faqs">FAQs</a>
+			<a href="https://form.jotform.com/90843645413155" id="ordernow-btn" target="blank">Order Now</a>
+		</div>
+
+
+		<script>
+			
+			$(document).ready(function() {
+				$('.dec-subnav').hover(function() {
+			
+				$('.tech-info').toggleClass('margtop');
+			
+				});
+			});
+			
+
+
+  // Select all links with hashes
+  $('a[href*="#"]')
+    // Remove links that don't actually link to anything
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function(event) {
+      // On-page links
+      if (
+        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+        && 
+        location.hostname == this.hostname
+      ) {
+        // Figure out element to scroll to
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        // Does a scroll target exist?
+        if (target.length) {
+          // Only prevent default if animation is actually gonna happen
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000, function() {
+            // Callback after animation
+            // Must change focus!
+            var $target = $(target);
+            $target.focus();
+            if ($target.is(":focus")) { // Checking if the target was focused
+              return false;
+            } else {
+              $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+              $target.focus(); // Set focus again
+            };
+          });
+        }
+      }
+    });
+    
+
+			</script>
+			

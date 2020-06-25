@@ -3,10 +3,35 @@
 b {
 	font-family: "AvenirNextB";
 }
-  /* Show Templates */
+.section-divider {
+	border-bottom: 1px solid black;
+	width: 100%;
+	margin: 40px auto;
+ }
+
+ #decorheaderimg {
+	width: 100%;
+	display: block;
+}
+.dec-header-sect h2 {
+	background-color: rgb(71, 20, 32);
+	color: white;
+	text-align: center;
+    padding: 15px 0;
+    font-size: 30px;
+    font-family: "AvenirNextN";
+    width: 100%;
+		text-transform: uppercase;
+
+}
+/* Show Templates */
 	.show{
     z-index: 999;
     display: none;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
 }
 .show .imgoverlay{
     width: 100%;
@@ -17,13 +42,13 @@ b {
     left: 0;
 }
 .show .img-show{
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     background: #FFF;
     position: absolute;
-    top: 50%;
+		top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     overflow: hidden
 }
 .img-show span{
@@ -41,17 +66,53 @@ b {
     left: 0;
 }
 
+
+.techheader {
+	color: black;
+	text-transform: uppercase;
+	font-size: 55px;
+	font-family: "AvenirNextN";
+	margin: 10px auto;
+	text-align: center;
+	padding: 20px 0;
+	width: 90%;
+
+}
+.tech-info {
+	width: 90%;
+    display: block;
+    margin: auto;
+    color: black;
+}
+.tech-info img {
+	width: 32%;
+	display: inline-block;
+	margin: 0 40px;
+}
+.tech-content {
+	display: inline-block;
+	width: 53%;
+	margin-top: 20px;
+	vertical-align: top;
+}
+.tech-content p {
+	font-size: 16px;
+	margin: 20px auto;
+	line-height: 1.4;
+}
+
 .pricing {
-	display: inline;
-	clear: left;
+	display: block;
+	width: 90%;
+	margin: 80px auto;
 }
 .price-chart {
-	font-size: 12px;
-	float: left;
-	margin: 0 10px;
+	display: inline-block;
+	font-size: 14px;
+	margin: 10px auto;
 	color: black;
-	width: 350px;
 	text-align: center;
+	vertical-align: top;
 }
 .tablehead {
 	background-color: black;
@@ -61,17 +122,35 @@ b {
 	background-color: rgba(0,0,0,0.2);
 }
 .alt-row-2 {
-	background-color: white;
+	background-color: rgba(0,0,0,0.1);
+}
+.pricing p {
+	font-size: 12px;
+    width: 43%;
+    margin: 0 auto 0 20px;
+    display: inline-block;
+}
+
+.sub-sect-header {
+	color: black;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin: 10px auto 20px;
+	text-align: center;
 }
 
 
 /* templates */
+.template-wrapper {
+	width: 90%;
+	margin: 70px auto 50px;
+}
 .template-box-all {
  	display: inline-block;
  	height: auto;
- 	width: 280px;
- 	background-color: lightgray;
- 	color: black;
+ 	width: 23%;
+ 	background-color: black;
+ 	color: white;
  	margin: 5px;
  	border: 1px solid black;
  	overflow: hidden;
@@ -85,85 +164,121 @@ b {
  .template-box-all p {
  	text-transform: uppercase;
  	margin: 2px auto;
- 	width: inherit;
  	text-align: center;
  	font-size: 12px;
  }
+
+ 
 
 </style>
 
 
 
-<div>
 
 
- <div class="technique-content">
-  <h3 class="techheader">Screen Print</h3>
-  <div class="technique-info" id="technique1">
-  <p>Whether you want to say something simple or complex, Screen Print is a popular way to express yourself! Check our selection of Neon Inks in Pink, Orange, Yellow and Green. 
-<br><br>
-Add mascots to your designs. Choose from our Stock Decoration Library of Mascots or send us your own. We’re happy to work with you and your teams!
-<br><br>
-We encourage you to consult our knowledgeable Customer Service Representatives about the latest specialty treatments, products and other trends in Screen Printing before finalizing project ideas.<br>
-  <a id="stock-decor-link" onclick="openDecoration(event, 'Decorations')">Stock Decorations ></a>
-  <br>
- <div class="pricing"> 
- <table cellpadding="4" cellspacing="0" class="price-chart">
-  	<thead>	
-  		<tr class="tablehead">
-  			<th class="quantity">Screen Print</th>
-  			<th class="quantity" colspan="5">Run Size</th>
-  		</tr>
-  	</thead>
-  			<tbody>
-             <tr class="alt-row-1">
-  				<th># of Colors</th>
-  				<td>24-50</td>
-  				<td>51-149</td>
-  				<td>150-500</td>
-  				<td>501-1000</td>
-  				<td>1000+</td>
-  			 </tr>
-             <tr class="alt-row-2">
-  				<th>1-2 colors</th>
-  				<td>$10.00</td>
-  				<td>$6.00</td>
-  				<td>$4.00</td>
-  				<td>$2.00</td>
-  				<td>Email</td>
-  			 </tr>
-  			 <tr class="alt-row-1">
-  				<th>3-color</th>
-  				<td>$11.00</td>
-  				<td>$7.00</td>
-  				<td>$5.00</td>
-  				<td>$3.00</td>
-  				<td>Email</td>
-  			 </tr>
-  			 <tr class="alt-row-2">
-  				<th>4-color</th>
-  				<td>$12.00</td>
-  				<td>$8.00</td>
-  				<td>$6.00</td>
-  				<td>$4.00</td>
-  				<td>Email</td>
-  			 </tr>
-  			 <tr class="alt-row-2" style="font-size: 10px;">
-  				<th colspan="3">Each additional color, add $1.00 per piece (Limit 6 Colors)</th>
-  				<td colspan="3">Minimum Run = 24 pieces</td>
-  			 </tr>  			 
-  			</tbody>
-  		</table>
-  			 
-	<p style="font-size:12px;">Additional Screen Print Options: Color changes, $20.00 per color <br>15% upcharge applies for 1-color Billboard prints.<br>
- *Distressed templates – These templates are not recommended for garments with fabric patterns. <br>
-- 24 piece minimum for all screen print orders<br>
-- 25% surcharge for metallic ink <br>
-- $50 charge will be applied to create multiple
-screens for various sizes</p>
+	<div class="dec-header-sect">
+		<img id="decorheaderimg" src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/ASB_ScreenPrint_Hero_Desktop.jpg" alt="Augusta Sportswear Decoration">
+		<h2>SCREEN PRINT</h2>
+	</div>
+	<script>
+        
+        
+		$(document).ready(function() {
+		$('.dec-subnav').hover(function() {
+	
+		$('.tech-info').toggleClass('margtop');
+	
+		});
+	});
+
+	</script>
+
+	
+  <div class="tech-info">
+		
+		<div class="section-divider"></div>
+
+
+		<h3 class="techheader">Screen Print</h3>
+
+<img src="https://static.augustasportswear.com/product/222539_aws_640.jpg" alt="">
+
+<div class="tech-content">
+	<p>Whether you want to say something simple or complex, Screen Print is a popular way to express yourself! Check our selection of Neon Inks in Pink, Orange, Yellow and Green.</p>
+	
+	<p>Add mascots to your designs. Choose from our Stock Decoration Library of Mascots or send us your own. We’re happy to work with you and your teams!</p>
+
+	<p>We encourage you to consult our knowledgeable Customer Service Representatives about the latest specialty treatments, products and other trends in Screen Printing before finalizing project ideas.</p>
 </div>
-  </div>
-  </div>
+
+
+<div class="section-divider"></div>
+
+<div class="pricing"> 
+
+<h3 class="sub-sect-header">PRICING</h3>
+
+	<table cellpadding="6" cellspacing="0" class="price-chart">
+		 <thead>	
+			 <tr class="tablehead">
+				 <th class="quantity">Screen Print</th>
+				 <th class="quantity" colspan="5">Run Size</th>
+			 </tr>
+		 </thead>
+				 <tbody>
+							<tr class="alt-row-1">
+					 <th># of Colors</th>
+					 <td>24-50</td>
+					 <td>51-149</td>
+					 <td>150-500</td>
+					 <td>501-1000</td>
+					 <td>1000+</td>
+					</tr>
+							<tr>
+					 <th>1-2 colors</th>
+					 <td>$10.00</td>
+					 <td>$6.00</td>
+					 <td>$4.00</td>
+					 <td>$2.00</td>
+					 <td rowspan="3">Email</td>
+					</tr>
+					<tr>
+					 <th>3-color</th>
+					 <td>$11.00</td>
+					 <td>$7.00</td>
+					 <td>$5.00</td>
+					 <td>$3.00</td>
+
+					</tr>
+					<tr>
+					 <th>4-color</th>
+					 <td>$12.00</td>
+					 <td>$8.00</td>
+					 <td>$6.00</td>
+					 <td>$4.00</td>
+
+					</tr>
+					<tr class="alt-row-2" style="font-size: 10px;">
+					 <th colspan="3">Each additional color, add $1.00 per piece (Limit 6 Colors)</th>
+					 <td colspan="3">Minimum Run = 24 pieces</td>
+					</tr>  			 
+				 </tbody>
+			 </table>
+					
+	 <p>Additional Screen Print Options: Color changes, $20.00 per color <br>15% upcharge applies for 1-color Billboard prints.<br>
+	*Distressed templates – These templates are not recommended for garments with fabric patterns. <br>
+ - 24 piece minimum for all screen print orders<br>
+ - 25% surcharge for metallic ink <br>
+ - $50 charge will be applied to create multiple
+ screens for various sizes</p>
+ </div>
+
+ <div class="section-divider"></div>
+	
+
+</div>
+
+
  
   <div class="show">
   <div class="imgoverlay"></div>
@@ -173,10 +288,10 @@ screens for various sizes</p>
   </div>
 </div>
 
- <div class="all-templates">
 
   <div class="template-wrapper">
-  
+	
+		<h3 class="sub-sect-header">TEMPLATES</h3>
 
   	<div class="template-box-all">
 			<img src="https://static.augustasportswear.com/marketing/SP001.jpg">
@@ -808,9 +923,9 @@ screens for various sizes</p>
 			 <p>Template SP144</p>
 			</div>
 			
-			<div class="template-box-all" style="height: 198px;background-color: white;">
-			<img src="https://static.augustasportswear.com/marketing/SP155.jpg" style="background-color: white;">
-			 <p style="background-color: lightgrey; padding: 2px 0;">Template SP155</p>
+			<div class="template-box-all">
+			<img src="https://static.augustasportswear.com/marketing/SP155.jpg">
+			 <p>Template SP155</p>
 			</div>
 			
 			<div class="template-box-all">
@@ -859,11 +974,9 @@ screens for various sizes</p>
 			</div>
 	
   	   
-   </div>
    
 </div>
 
-</div>
 
 
 
@@ -872,7 +985,7 @@ screens for various sizes</p>
 $(function () {
     "use strict";
     
-    $(".template-box img").click(function () {
+    $(".template-box-all img").click(function () {
         var $src = $(this).attr("src");
         $(".show").fadeIn();
         $(".img-show img").attr("src", $src);
@@ -885,42 +998,13 @@ $(function () {
 });
 
 
-// Select all links with hashes
-$('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
-        });
-      }
-    }
+$(document).ready(function() {
+  $('.dec-subnav').hover(function() {
+
+	$('.tech-info').toggleClass('margtop');
+
   });
-  
+});
+
 </script>
 

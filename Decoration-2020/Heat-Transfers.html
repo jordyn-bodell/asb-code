@@ -1,3 +1,286 @@
 <!-- Heat Transfers -->
 <style>
-</style>
+  b {
+    font-family: "AvenirNextB";
+  }
+  
+  #decorheaderimg {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  /* Show Templates */
+    .show{
+      z-index: 999;
+      display: none;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+  }
+  .show .imgoverlay{
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,.66);
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+  .show .img-show{
+      width: 500px;
+      height: 500px;
+      background: #FFF;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      overflow: hidden
+  }
+  .img-show span{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 99;
+      cursor: pointer;
+  }
+  .img-show img{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+  
+  
+  .techheader {
+    color: black;
+    text-transform: uppercase;
+    font-size: 55px;
+    font-family: "AvenirNextN";
+    margin: 10px auto;
+    text-align: center;
+    padding: 20px 0;
+    width: 90%;
+  
+  }
+  .tech-info {
+    width: 90%;
+      display: block;
+      margin: auto;
+      color: black;
+  }
+  .tech-info img {
+    width: 32%;
+    display: inline-block;
+    margin: 0 40px;
+  }
+  .tech-content {
+    display: inline-block;
+    width: 53%;
+    margin-top: 20px;
+    vertical-align: top;
+  }
+  .tech-content p {
+    font-size: 16px;
+    margin: 20px auto;
+    line-height: 1.4;
+  }
+  
+  .pricing {
+    display: block;
+    width: 90%;
+    margin: 80px auto;
+  }
+  .price-chart {
+    display: inline-block;
+    font-size: 14px;
+    margin: 10px auto;
+    color: black;
+    text-align: center;
+    vertical-align: top;
+  }
+  .tablehead {
+    background-color: black;
+    color: white;
+  }
+  .alt-row-1 {
+    background-color: rgba(0,0,0,0.2);
+  }
+  .alt-row-2 {
+    background-color: rgba(0,0,0,0.1);
+  }
+  .pricing p {
+    font-size: 12px;
+      width: 43%;
+      margin: 0 auto 0 20px;
+      display: inline-block;
+  }
+  #price-text {
+  font-size: 12px;
+  margin: 10px auto 0 10px;
+    width: 50%;
+}
+#price-text a {
+  color: #50a4d9;
+  cursor: pointer;
+  font-size: 12px;
+}
+  .sub-sect-header {
+    color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 10px auto 20px;
+    text-align: center;
+  }
+  
+  
+  /* templates */
+  .template-wrapper {
+    width: 90%;
+    margin: 70px auto 50px;
+  }
+  .template-box-all {
+     display: inline-block;
+     height: auto;
+     width: 23%;
+     background-color: black;
+     color: white;
+     margin: 5px;
+     border: 1px solid black;
+     overflow: hidden;
+   }
+   .template-box-all img {
+     width: 100%;
+    vertical-align: text-top;
+    cursor: pointer;
+      transition: 0.3s;
+   }
+   .template-box-all p {
+     text-transform: uppercase;
+     margin: 2px auto;
+     text-align: center;
+     font-size: 12px;
+   }
+  
+   .section-divider {
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin: 40px auto;
+   }
+  
+  </style>
+  
+
+<div class="technique-content">
+
+	<img id="decorheaderimg" src="https://static.augustasportswear.com/marketing/2020-Website/Decoration/ASB_Deco_Hero_Desktop.jpg" alt="Augusta Sportswear Decoration">
+
+  
+
+  <div class="tech-info">
+
+    <div class="section-divider"></div>
+
+    <h3 class="techheader">Premium Heat Transfers</h3>
+    
+    <img src="https://static.augustasportswear.com/product/222539_aws_640.jpg" alt="">
+
+
+    <div class="tech-content">
+    <p>Decorate team name and numbers using Heat Transfer. Premium Transfers are an upgrade on traditional film that looks and feels like screen print.</p>
+  </div>
+
+    <div class="section-divider"></div>
+
+    
+   <div class="pricing"> 
+
+    <h3 class="sub-sect-header">PRICING</h3>
+
+   <table cellpadding="6" cellspacing="0" class="price-chart">
+      <thead>	
+        <tr class="tablehead">
+          <th class="quantity" rowspan="2">Premium Transfers</th>
+          <th class="quantity" colspan="5">Run Size</th>
+        </tr>
+            <tr class="tablehead">
+          <th class="quantity" colspan="3" style="border: 1px solid;">Logos</th>
+          <th class="quantity" style="border: 1px solid;">Names</th>
+          <th class="quantity" style="border: 1px solid;">Numbers</th>
+        </tr>
+      </thead>
+          <tbody>
+               <tr class="alt-row-1">
+            <th># of Colors/Logo Size</th>
+            <th style="border-left: 2px solid; border-right: 1px solid;">1-11</th>
+            <th>12+</th>
+            <th style="border-left: 1px solid; border-right: 2px solid;">1000+</th>
+            <th style="border-right: 2px solid;">All</th>
+            <th style="border-right: 2px solid;">All</th>
+           </tr>
+        <tr class="alt-row-2">
+            <th>1-color</th>
+            <td style="border-left: 2px solid; border-right: 1px solid;">$20.00</td>
+            <td>$8.00</td>
+            <td style="border-left: 1px solid; border-right: 2px solid;">Email</td>
+            <td style="border-right: 2px solid;">$8.00</td>
+            <td style="border-right: 2px solid;">$6.00</td>
+           </tr>
+           <tr class="alt-row-1">
+            <th>2-color</th>
+            <td style="border-left: 2px solid; border-right: 1px solid;">$24.00</td>
+            <td>$14.00</td>
+            <td style="border-left: 1px solid; border-right: 2px solid;">Email</td>
+            <td style="border-right: 2px solid;">N/A</td>
+            <td style="border-right: 2px solid;">$10.00</td>
+           </tr>
+           <tr class="alt-row-2" style="font-size: 10px;">
+          <td>Each additional color, add $2.00 per piece</td>
+          <td colspan="5">Run size < 12 = $50.00 LTM fee per hit</td>
+          </tr>
+          </tbody>
+        </table>
+           
+    
+    <p id="price-text">Recommendation is a screen-printed team name and premium transfer numbers. 
+      <br>Please refer to Screen Print pricing.
+      <br><br>
+      Large Logo (greater than 4x10) - $10.00 addt'l per piece
+  <br><br>
+    Name/Number - Full or Block font
+    <br><br>
+    For logos with 3+ colors, please email <a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a> for a quote
+      </p>
+  </div>
+
+  </div>
+
+</div>
+
+
+<script>
+  //Click to englarge template
+  $(function () {
+      "use strict";
+      
+      $(".template-box-all img").click(function () {
+          var $src = $(this).attr("src");
+          $(".show").fadeIn();
+          $(".img-show img").attr("src", $src);
+      });
+      
+      $("span, .imgoverlay").click(function () {
+          $(".show").fadeOut();
+      });
+      
+  });
+  
+  
+  $(document).ready(function() {
+    $('.dec-subnav').hover(function() {
+  
+    $('.tech-info').toggleClass('margtop');
+  
+    });
+  });
+  
+  </script>
