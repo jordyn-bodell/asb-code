@@ -254,6 +254,15 @@ b {
 	text-decoration: underline;
 }
 
+
+#covid-update {
+  width: 90%;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  margin: 15px auto;
+}
+
 /* Tutorial Videos */
 .video-wrapper {
 	padding: 0 25px;
@@ -454,11 +463,11 @@ width: 250px;
 	   <li><a href="#contactus-fs" class="scroll-link">Contact us</a></li>
 	   <li><a href="#full-custom-anchor" class="scroll-link">Full Custom</a></li>
 	    <li><a href="#mockup-anchor" class="scroll-link">Mock Up Request</a></li>
-	   <li><a href="#pre-order-anchor" class="scroll-link">Pre-Order</a></li>
+ <li><a href="#pre-order-anchor" class="scroll-link">Pre-Order</a></li> 
 	   <li><a href="#fs-faq-anchor" class="scroll-link">General Info</a></li>
 	   <li><a href="#tutorial-videos" class="scroll-link">Tutorial Videos</a></li>
 	   <li><a href="#design-lookup-anchor" class="scroll-link">Retrieve FreeStyle Design</a></li>
-	   <li><a href="#large-opps-anchor" class="scroll-link">Large Opportunites</a></li>
+	   <li><a href="#large-opps-anchor" class="scroll-link">Large Opportunities</a></li>
 	   <li><a href="/freestyle-web-banners" class="scroll-link">Connect Your Site</a></li>
 	  </ul>
 	</div>
@@ -608,7 +617,7 @@ width: 250px;
 	
 	</div>
 	
-		<div class="fs-section fullcustom">
+ <div class="fs-section fullcustom preorder">
 	  <span id="pre-order-anchor" class="section-anchor"></span>
 		<h2 class="fs-section-header">Pre-Order Sublimation</h2>
 				
@@ -696,7 +705,8 @@ width: 250px;
 	<div class="fs-section fs-faqs">
 	  <span id="fs-faq-anchor" class="section-anchor"></span>
 		<h2 class="fs-section-header">General Info</h2>
-		
+   
+
 <p id="newprices">Check out our new price drops for 2020! <a href="https://static.augustasportswear.com/marketing/2020-Website/Sublimation-Price-List_Jan2020_MSRP-Comparison.pdf" target="blank">View Comparisons Here</a></p>
 
 
@@ -709,13 +719,15 @@ width: 250px;
   <tr class="table-topheader">
     <th>Type</th>
     <th>Definition</th>
+    <th>Order Placement Method</th>
     <th>Art Approval</th>
     <th>Art Fee</th>
     <th>Minimum Per Order</th>
   </tr>
   <tr>
     <th>Standard Builder</th>
-    <td>Orders placed on the builder, where all artwork is selected from the builder.</td>
+    <td>Orders placed on the builder, where all artwork is selected from the builder (including size of decoration).</td>
+    <td>FreeStyle Builder</td>
     <td>No</td>
     <td>No</td>
     <td>0</td>
@@ -723,6 +735,7 @@ width: 250px;
   <tr>
     <th>Builder with Custom Logo</th>
     <td>Orders placed on the builder that utilize a custom logo supplied by the customer in a vector format.</td>
+    <td>FreeStyle Builder</td>
     <td>Yes</td>
     <td>No</td>
     <td>0</td>
@@ -730,6 +743,7 @@ width: 250px;
   <tr>
     <th>Full Custom</th>
     <td>Full custom orders that contain either a logo redraw, custom design lines, or custom placements.</td>
+    <td>Full Custom Design Web Form</td>
     <td>Yes</td>
     <td>$6.00 MSRP per unit. Max charge up to 50 units.</td>
     <td>12</td>
@@ -758,12 +772,6 @@ width: 250px;
     <td>20</td>
   </tr>
   <tr>
-    <td>Reversible</td>
-    <td>20</td>
-    <td>20</td>
-    <td>25</td>
-  </tr>
-  <tr>
     <td>Turbo Styles</td>
     <td>5</td>
     <td>5</td>
@@ -771,19 +779,24 @@ width: 250px;
   </tr>
 </table>
 
-<p class="table-subtext">*Turbo styles are select cut & sew garments that give you the highest quality and coverage with the fastest lead times. These styles are notated on the builder. Although all Turbo orders using our design templates and vector artwork will get our fastest lead time, please ensure no delay in order entry by placing your order on our FreeStyle builder. If you do not place it on the builder your order could be subject to delays in order entry.   
-</p>
+<p class="table-subtext">*Orders placed over email and not using the preferred order placement method will receive 5 additional days of lead time</p>
+<p class="table-subtext">*Turbo styles are select cut & sew garments that give you the highest quality and coverage with the fastest lead times. These styles are notated on the builder. Although all Turbo orders using our design templates and vector artwork will get our fastest lead time, please ensure no delay in order entry by placing your order on our FreeStyle builder.</p>
+
+<p class="table-subtext">*Custom colors and fonts require additional lead time as addressed below.</p>
+
 <p class="table-subtext">
 *For Turbo styles please allow 1 extra day of lead time for every 100 pcs on an order. A 300 pc order would have 3 additional days of lead time.
 </p>
+
 <p class="table-subtext">
 *Augusta Sportswear Brands will not be responsible for production delays caused by natural disasters, strikes, labor disputes, war, riots, civil discord, terrorism, US holidays, local Mexico holidays, government actions, customs delays, Fed Ex delays.
 </p>
+
 <p class="table-subtext">
 *Lead times are based on available capacity and may be adjusted during peak periods.
 </p>
 <p class="table-subtext">
-*Lead time starts from art approval. Supplying artwork in vector format and supplying detailed information around placement and colors will help speed up the process.</p>
+*Lead time starts from art approval. Supplying artwork in vector format and supplying detailed information around placement, size, and colors will help speed up the process.</p>
 
 
 <!-- Rush Times -->
@@ -803,13 +816,6 @@ width: 250px;
     <td>10</td>
     <td>10</td>
     <td>15</td>
-  </tr>
-    <tr>
-    <td>Reversible Garments</td>
-    <td>15</td>
-    <td>15</td>
-    <td>20</td>
-  </tr>
 </table>
 
 
@@ -841,11 +847,11 @@ width: 250px;
 
 <h4 class="sub-sect-header">Artwork</h4>
 
-<p><b>How to submit:</b> For quickest and most economical order process, please submit artwork in vector format. We accept either .eps, pdf, or .ai files.   Files submitted in this format must be of proper resolution and true vector artwork or they will need to be resent or redrawn.  All other file types can be redrawn but will not be exact match and will extend lead-time.</p>
+<p><b>How to submit:</b> For quickest and most economical order process, please submit artwork in vector format. We accept either .eps, pdf, or .ai files. All other file types can be redrawn but will not be exact match and will extend lead-time.</p>
 
-<p><b>Art approval:</b> Art approval is your sign off on the artwork, sizes, quantities, and roster telling us to proceed with an order you have already placed.  We do everything possible to ensure order accuracy, but ultimately need your final sign off to produce the garment accurately.  It is critical to give the art approval process a thorough review. <u>Lead times do not start until you have provided approval on the artwork, roster, and all relevant order information.</u></p>
+<p><b>Art approval:</b> Art approval is your sign off on the artwork and roster telling us to proceed with an order you have already placed.  We do everything possible to ensure order accuracy, but ultimately need your final sign off to produce the garment accurately.  It is critical to give the art approval process a thorough review. <u>Lead times do not start until you have provided approval on the artwork, roster, and all relevant order information.</u></p>
 
-<p><b>Roster approval:</b> It is important to preview each image during roster entry to ensure that the selections render correctly. This step allows the opportunity to go back and make changes to the design prior to order submission.  The customer is responsible for proofing and approving all names and numbers. Utilize our online roster form for ease of submission. Please follow roster instructions to ensure correct information is applied to your order.</p>
+<p><b>Roster approval:</b> It is important to preview each image during roster entry to ensure that the selections render correctly. This step allows the opportunity to go back and make changes to the design prior to order submission.  The customer is responsible for proofing and approving all names and numbers. This includes ensuring font is in desired upper or lower case format. Utilize our online roster form for ease of submission. Please follow roster instructions to ensure correct information is applied to your order.</p>
 
 <p><b>Mock ups:</b> Mock-ups are requests for artwork without supplying an order.  Augusta Sportswear Brands offers free custom mock-ups and logo redraws. In the rare instance that art requires over 3 hours to complete and is not accompanied with an order, you will be charged an additional charge for the time.  We will request your approval to move forward before proceeding with the charges. In these instances when you pay for a mock up and come back to place your order we will not charge the custom art fee associated with that order. If you place an order from a mock-up you will still receive the final art with your roster to approve.</p>
 
@@ -957,11 +963,11 @@ width: 250px;
   </tr>
   <tr>
     <td>Turn garment inside out before washing (this is not required, but may extend the life of the garment)</td>
-    <td>Do not dry clean, store damp, or wash or dry with items containing velcro zipper, or other rough surfaces</td>
+    <td>Do not dry clean, store damp, or wash or dry with items containing Velcro zipper, or other rough surfaces</td>
   </tr>
   <tr>
     <td></td>
-	<td>Do not rub fabric against abrasive surfaces like a fence or velcro from a bag</td>
+	<td>Do not rub fabric against abrasive surfaces like a fence or Velcro from a bag</td>
   </tr>
 </table>
 
