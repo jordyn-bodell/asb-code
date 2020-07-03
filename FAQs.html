@@ -3,6 +3,9 @@
 b {
 	font-family: "AvenirNextB";
 }
+u {
+	text-decoration: underline;
+}
 
 .faq-page-wrapper {
 	color: black;
@@ -161,7 +164,7 @@ b {
 .questionheader {
 	padding: 10px 0;
 	cursor: pointer;
-	font-size: 15px;
+	font-size: 16px;
 	color: #50a4d9;
 }
 .questionheader:hover {
@@ -175,6 +178,11 @@ b {
 }
 .post-list {
 	margin: 10px 0;
+	line-height: 1.2;
+}
+.post-list > li {
+	line-height: 1.3;
+	margin: 10px auto;
 }
 .faq-content a {
 	color: #50a4d9;
@@ -254,11 +262,7 @@ b {
 	font-size: 12px!important;
 	margin: 5px 0 0;
 }
-#russ-builder-list li {
-	font-size: 13px;
-    line-height: 1.2;
-    margin: 5px 0;
-}
+
 
 @media screen and (max-width: 1080px) {
 	.shipping-bar-wrapper {
@@ -394,25 +398,22 @@ b {
 		<ul>
 	  <li><a href="#general-anchor" class="scroll-link"><h2>GENERAL FAQs</h2></a></li>
 	  <li><a href="#customer-anchor" class="scroll-link"><h2>CUSTOMER INFO</h2></a></li>
-	  <li><a href="#returns-anchor" class="scroll-link"><h2>RETURNS</h2></a></li>
-	  <li><a href="#credit-anchor" class="scroll-link"><h2>CREDIT/AR</h2></a></li>
-	  <li><a href="#shipping-anchor" class="scroll-link"><h2>SHIPPING</h2></a></li>
+		<li><a href="#returns-anchor" class="scroll-link"><h2>RETURNS</h2></a></li>
+		<li><a href="#samples-anchor" class="scroll-link"><h2>SAMPLES</h2></a></li>
+	  <li><a href="#credit-anchor" class="scroll-link"><h2>CREDIT</h2></a></li>
+		<li><a href="#shipping-anchor" class="scroll-link"><h2>SHIPPING</h2></a></li>
+		<li><a href="#pricing-anchor" class="scroll-link"><h2>PRICING</h2></a></li>
+		<li><a href="#deco-anchor" class="scroll-link"><h2>DECORATION</h2></a></li>
 	  <li><a href="#varsity-anchor" class="scroll-link"><h2>VARSITY JACKETS</h2></a></li>  
 	  <li><a href="#subl-anchor" class="scroll-link"><h2>SUBLIMATION</h2></a></li>
-
 	  </ul>
 	  
-	  <!-- <h3>RUSSELL ATHLETIC <span class="open-faq-menu">+</span><span class="close-faq-menu">&mdash;</span></h3>
+	  <h3>PACIFIC HEADWEAR <span class="open-faq-menu">+</span><span class="close-faq-menu">&mdash;</span></h3>
 	  <ul>
-	  <li><a href="#russell-anchor" class="scroll-link"><h2>RUSSELL ATHLETIC SUBLIMATION</h2></a></li>
-	  <li><a href="#rus-art-anchor" class="scroll-link"><h2>RUSSELL ATHLETIC ARTWORK</h2></a></li>
-	</ul> -->
-	  
-	  <h3>PRICING <span class="open-faq-menu">+</span><span class="close-faq-menu">&mdash;</span></h3>
-	   <ul>	
-	     <li><a href="#pricing-anchor" class="scroll-link"><h2>FAIR & SIMPLE PRICING</h2></a></li>
-	  	<li><a href="#price-answer-anchor" class="scroll-link" id="price-quest-link"><h2>QUESTIONS</h2></a></li>
-	  </ul>
+	    <li><a href="#ph-anchor" class="scroll-link"><h2>PACIFIC HEADWEAR INTEGRATION</h2></a></li>
+  	</ul>
+	
+
 	  	   
 	  <div class="contact-us-sidebar">
 	   <h3>Contact Us:</h3>
@@ -433,15 +434,16 @@ b {
 	  <div class="menu-bar-wrapper-m">
 	  <a href="#general-anchor" class="scroll-link-m"><h2>GENERAL FAQs</h2></a>
 	  <a href="#customer-anchor" class="scroll-link-m"><h2>CUSTOMER INFO</h2></a>
-	  <a href="#returns-anchor" class="scroll-link-m"><h2>RETURNS</h2></a>
-	  <a href="#credit-anchor" class="scroll-link-m"><h2>CREDIT/AR</h2></a>
-	  <a href="#shipping-anchor" class="scroll-link-m"><h2>SHIPPING</h2></a>
+		<a href="#returns-anchor" class="scroll-link-m"><h2>RETURNS</h2></a>
+		<a href="#samples-anchor" class="scroll-link-m"><h2>SAMPLES</h2></a>
+	  <a href="#credit-anchor" class="scroll-link-m"><h2>CREDIT</h2></a>
+		<a href="#shipping-anchor" class="scroll-link-m"><h2>SHIPPING</h2></a>
+		<a href="#pricing-anchor" class="scroll-link-m"><h2>PRICING</h2></a>
+		<li><a href="#deco-anchor" class="scroll-link"><h2>DECORATION</h2></a></li>
 	  <a href="#varsity-anchor" class="scroll-link-m"><h2>VARSITY JACKETS</h2></a> 
 	  <a href="#subl-anchor" class="scroll-link-m"><h2>SUBLIMATION</h2></a>
-	  <a href="#russell-anchor" class="scroll-link-m"><h2>RUSSELL ATHLETIC SUBLIMATION</h2></a>
-	  <a href="#rus-art-anchor" class="scroll-link-m"><h2>RUSSELL ATHLETIC ARTWORK</h2></a>
-	  	  <a href="#pricing-anchor" class="scroll-link-m"><h2>FAIR & SIMPLE PRICING</h2></a>
-	  	   <a href="#price-answer-anchor" class="scroll-link-m" id="price-quest-link"><h2>QUESTIONS</h2></a>
+	  <a href="#ph-anchor" class="scroll-link-m"><h2>PACIFIC HEADWEAR</h2></a>
+	  	
 	</div>
 </div>
 
@@ -449,11 +451,33 @@ b {
 	<span id="general-anchor" class="section-anchor"></span>
 <h2 class="faq-page-header">General FAQs</h2>
 
+
+
+<div class="faq-content">
+	<h2 class="questionheader">What does Pacific Headwear joining Augusta Sportswear, Inc. mean to me? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	<p>Now there is one experience for all of the Augusta Sportswear Brands: Augusta Sportswear, Holloway® Sportswear, High Five Sportswear, Russell Athletic and Pacific Headwear. Even if you had only ordered one brand in the past, it is now easier to order any of these on a single order, earn free shipping faster, and earn more savings.</p>
+</div>
+
+
+<div class="faq-content">
+	<h2 class="questionheader">Is there a new company name? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	<p>We are now a house of brands operating under Augusta Sportswear, Inc. </p>
+</div>
+
+
+<div class="faq-content">
+	<h2 class="questionheader">Is there a new website? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	<p>You can now utilize one website for all these brands: www.augustasportswear.com</p>
+</div>
+
+
 	<div class="faq-content">
 	    <h2 class="questionheader">How do I reach Customer Care? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
 	    <p>Customer Care is available 8am-7pm EST MON - FRI. <br>
 	   <span style="font-size: 12px;"> Hours may be reduced to 8AM to 6PM during non-peak season</span>
-	    <br>
+			<br>
+			Pacific Headwear specific customer care is available 10am – 7pm EST
+			<br>
  <b>Phone:</b> <a href="tel:800-237-6695">800-237-6695</a>
  <br>
  <b>Email:</b> <a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a>
@@ -468,40 +492,103 @@ b {
 	</div>
 	
 	<div class="faq-content">
-	    <h2 class="questionheader">How do I submit my order? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
-	    <p>You can submit your order by checking out at <a href="www.augustasportswear.com">www.augustasportswear.com</a>, by emailing <a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a>, or by calling Customer Care.</p>
-	</div>
-	
-	<div class="faq-content">
-	    <h2 class="questionheader">How are back orders handled? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
-	    <p>The next available date will be given for out-of-stock items. Based on availability, when placing orders on the website, you can now select to have back orders ship as available and they can be tracked individually. If emailing your P.O. to <a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a>, all orders will be shipped and backordered unless noted on the P.O. to ship complete.</p>
+	    <h2 class="questionheader">How are backorders handled? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	    <p>The next available date will be given for out-of-stock items. Based on availability, when placing orders on the website, you can now select to have backorders ship as available and they can be tracked individually. If emailing your P.O. to <a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a>, all orders will be shipped and backordered unless noted on the P.O. to ship complete. For custom items, please specify on your P.O. if you would like to ship and backorder, or all custom orders will ship complete.</p>
 	</div>
 	
 	<div class="faq-content">
 	    <h2 class="questionheader">Can I still get Fair and Simple shipping? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
 	    <p>Yes. Fair and Simple still applies to only standard UPS shipments shipped to a single contiguous US Address and 3rd Day Priority USPS for Puerto Rico, Alaska & Hawaii shipments. Orders shipped via air freight, special ground freight, and COD are not eligible for fair and simple freight.</p>
 	</div>
+
+	<div class="faq-content">
+		<h2 class="questionheader">Can I view my order history on the website? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+		<p><a href="/TrackOrderStatus">View your order history</a>, located under My Account at the top right of your screen. Order history prior to 2018 will not be available online. If you need information on previous orders, please contact Customer Care.</p>
+</div>
+
 	
+<div class="faq-content">
+	<h2 class="questionheader">How do I track my order? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	<p>Order tracking information is available via the automated shipping notification. Track your order <a href="/TrackOrderStatus">here</a> or by calling Customer Care.</p>
+</div>
+
+
+<div class="faq-content">
+	<h2 class="questionheader">Do you have sizing information? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	<p>Yes, <a href="/sizes-and-fits">view our Sizing chart</a>. To view product specific specs, please click the link provided on the product page.</p>
+</div>
+
+<div class="faq-content">
+	<h2 class="questionheader">How does the volume discount apply? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	<p>You can now get volume level discounting across all brands. Once you reach $3,000 or more you will receive an additional 5% off of your pricing level. Wool, decoration, samples and discontinued items do not count toward the $3,000.</p>
+</div>
+
+<div class="faq-content">
+	<h2 class="questionheader">Where are you located? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	<p>We have offices, production facilities, and distribution centers in Grovetown, Georgia, Sidney, Ohio, Coburg, Oregon and South Boston, Virginia.</p>
+</div>
+
+<div class="faq-content">
+	<h2 class="questionheader">How do I submit my Blank stock order? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	<p>•	You can submit your blank stock order by checking out at www.augustasportswear.com, by emailing <a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a>, or by calling Customer Care.</p>
+</div>
+
+<div class="faq-content">
+	<h2 class="questionheader">How do I submit my Sublimation Order? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	<p>Please submit all Sublimation orders through our online builder. <a href="/custom-sublimation">Start building now</a>.</p>
+</div>
+
+<div class="faq-content">
+	<h2 class="questionheader">How do I submit my Wool order? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	<p>•	Please submit all Wool orders through our <a href="https://www.augustasportswear.com/webapp/wcs/stores/servlet/ConfiguratorStartView?langId=-1&storeId=10252&catalogId=10101&categoryId=11501&configuratorType=jackets">online builder</a> or email your P.O. to <a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a></p>
+</div>
+
+
+<div class="faq-content">
+	<h2 class="questionheader">How do I submit my Decoration order? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	<p>Apparel: <a>Submit your decorated apparel order</a> or email <a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a>.
+		<br>Custom Caps: You must be logged in to your dealer portal. Select the caps you wish to purchase, customize as desired, and click place order.
+	</p>
+</div>
+
+<div class="faq-content">
+	<h2 class="questionheader">Do you have minimums? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	<p>On blank stock items we do not have a minimum order quantity. We do have minimums on our custom products. </p>
+</div>
+
+<div class="faq-content">
+	<h2 class="questionheader">Do all of your products meet compliance standards? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	<p>It is your responsibility to insure that the products you have ordered are compliant by consulting the governing body of your state or league.</p>
+</div>
+
+
+
 	<div class="faq-content">
 	    <h2 class="questionheader">How do I request a return authorization(RA)? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
 	    <p>To begin the returns process please <a href="/help#returns-anchor">click here</a>.</p>
 	</div>
 	
-	<div class="faq-content">
-	    <h2 class="questionheader">Can I view my order history on the website? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
-	    <p>Yes, view your <a href="/TrackOrderStatus">order history here</a>, located under My Account at the top right of your screen. Order history prior to 2018 will not be available online. If you need information on previous orders, please contact Customer Care.</p>
-	</div>
 	
-	<div class="faq-content">
-	    <h2 class="questionheader">How do I track my order? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
-	    <p>Order tracking information is available via the automated shipping notification. Track your order <a href="/TrackOrderStatus">here</a> or by calling Customer Care.</p>
-	</div>
+
 
 </div>
+
 
  <div class="faq-container" id="customer-faqs">
 	<span id="customer-anchor" class="section-anchor"></span>
 <h2 class="faq-page-header">Customer Info</h2>
+
+
+<div class="faq-content">
+	<h2 class="questionheader">What is my account number now that Pacific Headwear is a part of Augusta Sportswear, Inc.? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	<p>If you had an account with both Augusta Sportswear and Pacific Headwear, your account number going forward will be your Augusta account number. 
+		<br>
+		If you did not have an account with Pacific Headwear, but had one with Augusta Sportswear, you can now use your Augusta account number to order Pacific Headwear items. 
+		<br>
+		If you did not have an account with Augusta Sportswear, but had one with Pacific Headwear, please email <a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a> to see if you have an account number set up, or you can <a href="/New-Account">apply for a new account number</a> to continue ordering Pacific Headwear and Augusta Sportswear.  
+		</p>
+</div>
+
 
 	<div class="faq-content">
 	    <h2 class="questionheader">How do I become a customer? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
@@ -518,33 +605,10 @@ b {
 	    <p>Please email customer care at <a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a> to request any account changes.</p>
 	</div>
 	
-	<div class="faq-content">
-	    <h2 class="questionheader">Do you offer a sample program? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
-	    <p>Yes, all sample orders are 50% net price and limited to one piece per style, color, and size. Please call Customer Care at 800-237-6695 or <a href="/help#samples-anchor">click here</a> to place sample orders.</p>
-	</div>
-	
-	<div class="faq-content">
-	    <h2 class="questionheader">Do you offer a package program? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
-	    <p>Only High Five has a package program. Please <a class="link-direct" href="/package-program">click here</a> to read more.</p>
-	</div>
-	
-	<div class="faq-content">
-	    <h2 class="questionheader">Do you have a sizing chart? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
-	    <p>Yes, <a href="/Sizes-And-Fits">view our Sizing chart here.</a> To view product specific specs, please click the link provided on the product page.</p>
-	</div>
-	
-	<div class="faq-content">
-	    <h2 class="questionheader">Will there be one shipping fee if my order ships from different locations? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
-	    <p>With our new Fair and Simple shipping you will be able to order more than one brand and only be charged one shipment fee, even if it's shipping from multiple warehouses. Only when shipping expedited or COD will you have a shipping fee per delivery.</p>
-	</div>
-	
-	<div class="faq-content">
-	    <h2 class="questionheader">How does the volume discount apply? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
-	    <p>You can now get volume level discounting across all brands. Once you reach $3,000 or more you will receive an additional 5% off of your pricing level. <br>
-	 Wool, decoration, samples and discontinued items do not count toward the $3,000.</p>
-	</div>
+
 
 </div>
+
 
  <div class="faq-container" id="returns-faqs">
 <span id="returns-anchor" class="section-anchor"></span>
@@ -553,33 +617,38 @@ b {
 	<div class="faq-content">
 	    <h2 class="questionheader">What is the return policy? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
 	    <div class="answer-list">
-	    We will gladly replace merchandise or provide a refund if the order has shortages, damages or for items no longer needed.
+				All Returns require a valid Augusta Sportswear Return Authorization number. Returns are subject to a 15% restocking charge. Restock fee will be waived if a replacement order of equal or greater value is placed at the time the Return Authorization is issued.
 	    <br>
-
 <ul class="post-list">
-<li>Claims for damages or shortages must be made within 10 days of receipt of the order.</li>
-<li>Requests for returns must be made within 30 days from date of shipment and returned in the original packaging.</li>
-<li>Closeout merchandise may not be returned; all sales final.</li>
-<li>Decorated products may not be returned including third party shipments.</li>
-<li>All returns require a Return Authorization. Request a return <a href="/help">here</a> or email <a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a>.</li>
-<li>Returned merchandise must be received within 30 days of receiving the Return Authorization.</li>
-<li>Returns are subject to a 15% restocking charge.</li>
-<li>Restock fee will be waived if a replacement order of equal or greater value is placed at the time the Return Authorization is issued.</li>
+
+	<li>Blank Stock:</li>
+	<ul class="post-list blank-returns">
+		<li>We will gladly replace merchandise or provide a refund if the order has shortages, damages or for items no longer needed.</li>
+		<li>Claims for damages or shortages must be made within 10 days of receipt of the order.</li>
+		<li>Requests for returns must be made within 30 days from date of shipment and returned in the original packaging.</li>
+		<li>Closeout merchandise may not be returned; all sales final.</li>
+		<li>All caps must be returned unworn within 30 days of the RMA issue date in order to receive a refund.</li>
+	</ul>
+
+	<li>Custom Apparel Decoration, Wool and Sublimation and Custom Caps:</li>
+	<ul class="post-list custom-returns">
+		<li>Custom orders produced according to customer specifications and meeting production standards, including 3rd party shipments, may not be returned.</li>
+	</ul>
+
+	<li>Missing Cap Elements:</li>
+	<ul class="post-list missingcap-returns">
+		<li>Customers receiving caps that are missing elements such as buttons, button changes, custom piping, side or back logos may elect to return the caps for repair or receive a discount for the cost of the missing element. Caps with missing elements will not be replaced.</li>
+	</ul>
+
+	<li>Foam:</li>
+	<ul class="post-list foam-returns">
+		<li>Foam may be returned for any reason within 30 days of receipt. Returned foam must be full sheet and undamaged in order to receive a refund.</li>
+	</ul>
+
 </ul> 
 
 </div>
 
-<p class="em-text">Send Augusta Sportswear® Product Returns (with Shipping Pre-Paid) to:</p>
-
-<p>Augusta Sportswear Returns<br>
-425 Park West Drive<br>
-Grovetown, GA 30813</p>
-
-<p class="em-text">Holloway®, High Five® and Russell Athletic Returns (with Shipping Pre-Paid) to:</p>
-
-<p>Holloway Returns<br>
-600 N Stolle Drive<br>
-Sidney, OH 45365</p>
 	</div>
 	
 	<div class="faq-content">
@@ -592,16 +661,68 @@ Sidney, OH 45365</p>
 	    <p>Once the return is received and processed, a credit will be issued within 3 weeks.</p>
 	</div>
 	
-	<div class="faq-content">
-	    <h2 class="questionheader">Who do I contact if there is a problem with my order? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
-	    <p>Please call Customer Care at <a href="tel:800-237-6695">800-237-6695</a>, email us at <a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a>, or  use the “Live Chat” link in the bottom right corner of the website.  Monday – Friday, from 8am – 7pm EST.</p>
-	</div>
 
 </div>
 	
+
+<div class="faq-container" id="samples-faqs">
+	<span id="samples-anchor" class="section-anchor"></span>
+<h2 class="faq-page-header">Samples</h2>
+
+
+
+<div class="faq-content">
+
+
+<p>Yes, we have various ways to take advantage of receiving a sample based on which type you are needing:
+
+
+<ul class="post-list">
+	<li><b>Blank Apparel & Caps:</b></li>
+	<ul class="post-list sample-sublist">
+		<li>All sample orders are 50% net price and limited to one piece per style, color, and size. <a href="/help#samples-anchor">Click here</a> to place sample orders.</li>
+	</ul>
+
+	<li><b>Custom Wool:</b></li>
+	<ul class="post-list sample-sublist">
+		<li>You may order 1 custom wool jacket at standard net pricing. This item would be non-returnable. We do offer sizing samples which are to be returned once sizing information is obtained.</li>
+	</ul>
+
+	<li><b>Decorated Apparel:</b></li>
+	<ul class="post-list sample-sublist">
+		<li>You may order a 1 piece decorated sample at 50% net price for the garment and full price for the decoration based on the minimum quantity charge.</li>
+	</ul>
+
+	<li><b>Spec Sample Cap:</b></li>
+	<ul class="post-list sample-sublist">
+		<li>Each stock cap with embroidered logo spec sample will be a flat $35 fee which includes: cap, embroidery and setup fee. For each additional cap with the same logo, it will be $10 MSRP.</li>
+		<li>If the sample results in an order for 144+ caps using exact artwork, a request can be submitted to credit for the spec sample.</li>
+		<li>Sew-outs, a sample cap we run and email a picture, are available for $25 MSRP, and adds 3 days to the production time. The fee is waived if the order is for 72 pieces or more.</li>
+	</ul>
+
+	<li><b>Sublimation</b></li>
+	<ul class="post-list sample-sublist">
+		<li><u>STANDARD BUILDER SAMPLE</u> – Customer can create their own sample on the builder for 50% off dealer price. It will ship in standard 3 weeks. It must be noted that this is a sample order in the comments. (1 piece limit)</li>
+		<li><u>STANDARD BUILDER SAMPLE EXPEDITED</u> - Customer can create their own sample on the builder and have it delivered in 2 weeks. They will pay net (dealer) price and must note this is a 2-week sample in the order comments. (1 piece limit)</li>
+		<li><u>CUSTOM ARTWORK SAMPLES</u> – Customer can create their own sample with artwork on the builder or email their PO and artwork to <a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a>, pay 50% off dealer price and will ship standard 4 weeks from the time art is approved. (1 piece limit)</li>
+		<li><u>CUSTOM ARTWORK SAMPLES EXPEDITED</u> – Customer can create their own sample with artwork on the builder or email their PO and artwork to <a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a>, and have it delivered in 2 weeks from art approval. They will pay net (dealer) price and must note this is a 2-week sample in the order comments. (1 piece limit)</li>
+		<li style="list-style-type: none; margin:10px auto;"><b>**All of the ABOVE are non-returnable**</b></li>
+		<li><u>PRE-SELECTED SUBLIMATION SAMPLES</u> (stock decorated – The letter S will be in the style number) - These will ship same day and are 50% off net price (which is dealer price). (M3 already has reduced price populated – no need to adjust pricing). These can be returned without a restocking fee.</li>
+		<li><u>BLANK SIZE RUN SAMPLES</u> (stock decorated – The letter S will be in the style number) – These are solid white (no decoration) and are used for sizing. They use the same style numbers as the stock decorated just make sure to choose white. These can be returned without a restocking fee.</li>
+	</ul>
+</ul>
+
+</p>
+
+</div>
+
+
+</div>
+
+
  <div class="faq-container" id="credit-faqs">
 <span id="credit-anchor" class="section-anchor"></span>
-<h2 class="faq-page-header">Credit/AR</h2>
+<h2 class="faq-page-header">Credit</h2>
 	
 	<div class="faq-content">
 	    <h2 class="questionheader">How do I pay my invoices? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
@@ -613,12 +734,12 @@ Augusta Sportswear Brands <br>
 	
 	<div class="faq-content">
 	    <h2 class="questionheader">How do I apply for terms? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
-	    <p>Augusta Sportswear Brands extends lines of credit to our customers. To get started, you will need to complete a Credit Application and return it to our Credit Department. It may take up to 30 days before credit is approved or denied. <a href="/credit">Start credit application here</a>.</p>
+	    <p>Augusta Sportswear Brands extends lines of credit to our customers. To get started, you will need to complete a Credit Application and return it to our Credit Department. It may take up to 30 days before credit is approved or denied. Email <a href="mailto:creditapplications@augustasportswear.com.">creditapplications@augustasportswear.com.</a> to apply for terms.</p>
 	</div>
 	
 	<div class="faq-content">
 	    <h2 class="questionheader">What is the terms policy? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
-	    <p>Our normal terms are net 30 days with prior credit approval. A <a href="/Credit">credit application form</a> is available upon request. We also accept MasterCard® , Visa®, American Express® or Discover®. There is no surcharge or extra processing fee for credit card payment at the time of purchase. All other accounts will be shipped C.O.D., certified check or money order. In order to obtain company check privileges, a complete credit review must be completed. All returned checks will be charged a $30.00 fee. Augusta Sportswear Brands requires a re-sale certificate or state tax identification certificate prior to opening an account or receiving a catalog.</p>
+	    <p>Our normal terms are net 30 days with prior credit approval. A credit application form is available upon request. We also accept MasterCard®, Visa®, American Express® or Discover®. There is no surcharge or extra processing fee for credit card payment at the time of purchase. All other accounts will be shipped C.O.D., certified check or money order. In order to obtain company check privileges, a complete credit review must be completed. All returned checks will be charged a $30.00 fee. Augusta Sportswear Brands requires a re-sale certificate or state tax identification certificate prior to opening an account or receiving a catalog.</p>
 	</div>
 	
 </div>
@@ -641,34 +762,19 @@ Our goal is to ship every order on time and free from errors. We employ industry
 </p>
 
 
-	<div class="faq-content" id="twodayship">
-	    <h2 class="questionheader">How do I earn Free 2-Day Shipping? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
-	    
-	    <p>Place an order over $200 between February 1, 2020 - March 31, 2020 and select UPS Ground at checkout. You will be automatically upgraded to <b>FREE</b> 2-Day Shipping!
-	    <br><br>
-	    <span style="font-size: 13px;">Online Only. Excludes Pacific Headwear.</span>
-	    
-	    <br><br>   
-	<span style="font-size: 12px;">*Excludes taxes, shipping and applicable discounts or promo codes. <br> This applies to only standard UPS shipments shipped to a single contiguous US Address and 3rd Day Priority USPS for Puerto Rico, Alaska &amp; Hawaii shipments. Orders shipped via air freight, special ground freight, and COD are not eligible. 
-	<br>
-	For information regarding shipping our products to Canada, please contact us at <a  style="font-size: 12px;"  href="mailto:canadasales@augustasportswear.com">canadasales@augustasportswear.com</a>.	<br><br>
-	Flat rate $15 shipping on orders under $200
-	</span>
-</p>
 
-	</div>
-
-
-	<div class="faq-content">
-	    <h2 class="questionheader">Will I be able to order all brands on one order? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
-	    <p>Yes, Augusta Sportswear, Holloway, High Five Sportswear and Russell Athletic may be ordered during the same checkout process.</p>
-	</div>
-	
 	<div class="faq-content">
 	    <h2 class="questionheader">How do I get free shipping? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
 	    <p>Any order shipping via UPS Ground with an Order Total over $200 qualifies for free shipping.</p>
 	</div>
 	
+
+	<div class="faq-content">
+		<h2 class="questionheader">Will there be one shipping fee if my order ships from different locations? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+		<p>You will be able to order more than one brand and only be charged one shipment fee, even if it's shipping from multiple warehouses, and on the same P.O.. Only when shipping expedited or COD will you have a shipping fee per delivery.</p>
+</div>
+
+
 	<div class="faq-content">
 	    <h2 class="questionheader">What is included to determine my shipping cost? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
 	    <p>The Order Total amount is the sum total of the order, including items that are excluded from discounting, such as wool, decoration, discontinued items, samples, etc., less all applicable discounts or promo codes that are part of the order.</p>
@@ -700,11 +806,7 @@ Order Total over $200 = FREE Shipping</p>
 	    <p>No, this is a per order charge. Multiple orders on the same day cannot be combined to reach the $200 limit.</p>
 	</div>
 	
-	<div class="faq-content">
-	    <h2 class="questionheader">Will there be one shipping fee if my order ships from different locations? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
-	    <p>With our new Fair and Simple shipping you will be able to order more than one brand and only be charged one shipment fee, even if it's shipping from multiple warehouses. Only when shipping expedited or COD will you have a shipping fee per delivery.</p>
-	</div>
-	
+
 	<div class="faq-content">
 	    <h2 class="questionheader">What is the policy on unclaimed COD shipments? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
 	   <div class="answer-list">Any refused COD shipment is subject to freight charges and a 20% or $25.00 minimum re-handling charge. These charges will be added to the next order and may be subject to pre-payment prior to shipping. 
@@ -721,6 +823,72 @@ Order Total over $200 = FREE Shipping</p>
 	
 </div>
  
+<div class="faq-container" id="pricing-faqs">
+	<span id="pricing-anchor" class="section-anchor"></span>
+<h2 class="faq-page-header">Pricing</h2>
+	
+
+
+	<div class="faq-content">
+	    <h2 class="questionheader">Do I receive the same pricing on all brands? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	    <p>There are specific Augusta, Russell Athletic and Pacific Headwear styles that offer additional discounts. </p>
+	</div>
+	
+	<div class="faq-content">
+	    <h2 class="questionheader">Are there any discounts I am eligible to receive? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	    <p>Augusta Sportswear, Inc. offers account level discounts based on yearly purchases, some cap decoration discounts, quantity discounts, as well as specific style discounts. </p>
+	</div>
+	
+	<div class="faq-content">
+	    <h2 class="questionheader">How do I find out the price of an item for my business? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	    <p>When you login you will see prices displayed on the product page for each style. Click the link “show prices” on the product page once you are logged in on the website.</p>
+	</div>
+	
+	<div class="faq-content">
+	    <h2 class="questionheader">Are quantity discounts still available? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	    <p>Yes. You can receive an additional 5% on any order over $3,000! This is a stackable discount, meaning it is in addition to any account level discount.
+	    <br>
+	 Wool, decoration, samples and discontinued items do not count toward the $3,000.</p>
+	</div>
+
+	<div class="faq-content">
+	    <h2 class="questionheader">What about the charges for larger sizes? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	    <p>We have standardized the price of larger sizes. Now, you only pay $3.00 for 3X; $4.50 for 4X; $6.00 for 5X; and $7.50 for 6X. This excludes wool products, which maintain our current charges.</p>
+	</div>
+
+	<div class="faq-content">
+		<h2 class="questionheader">Do you officer Discounts on your decoration? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+		<p>
+			Apparel:
+			<ul class="post-list">
+				<li>There are no discounts on garment decoration charges.</li>
+			</ul>
+
+			<br><br>
+
+			Caps:
+			<ul class="post-list">
+				<li>There are account level discounts on some cap decoration. Please see the most up-to-date price list or contact <a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a> for more information. </li>
+			</ul>
+
+		</p>
+</div>
+
+</div>
+
+
+
+<div class="faq-container" id="decor-faqs">
+	<span id="decor-anchor" class="section-anchor"></span>
+<h2 class="faq-page-header">Decoration</h2>
+	
+
+
+
+</div>
+
+
+
  <div class="faq-container" id="varsity-faqs">
 	<span id="varsity-anchor" class="section-anchor"></span>
 <h2 class="faq-page-header">Varsity Jackets</h2>
@@ -788,96 +956,126 @@ Sidney, OH 45365<br>
 	
 </div>
 
- <!-- <div class="faq-container" id="rev-sub-faqs">
-	<span id="rev-subl-anchor" class="section-anchor"></span>
-<h2 class="faq-page-header">Custom Sublimated Reversible Basketball</h2>
-	
-	<div class="faq-content">
-	    <h2 class="questionheader">What is the lead time for sublimated reversible basketball styles? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
-	    <p>The lead time is 20 business days.</p>
-	</div>
-	
-	<div class="faq-content">
-	    <h2 class="questionheader">Can I create a custom design? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
-	    <p>We currently offer 5 designs on our Augusta sublimation builder. You can upload a custom mascot or logo. We cannot accept custom design requests.</p>
-	</div>
-	
-	<div class="faq-content">
-	    <h2 class="questionheader">How do I design both sides of my garment? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
-	    
-	    <div class="answer-list">
-	    <b>SIDE ONE (Create a design for side one):</b>
-<ol>
- <li>Fill out attached roster (on the next slide.  Double click to open it in Excel to edit)</li>
- <li>Design side one</li>
- <li>Upload the roster</li>
- <li>Put in the comments “reversible”</li>
- <li>Click to Submit your order and follow the screens to enter your account number and shipping address.</li>
-</ol>
-<br>
 
-<b>SIDE TWO (Create a separate design for side two):</b>
-<ol>
- <li>Go back to the home page of the builder www.augustasportswear.com/sublimation</li>
- <li>Type in the side one design number in the area “retrieve a saved design” and click go</li>
- <li>Design the reverse side (side two) </li>
- <li>Put in the comments “reversible.  Goes with design _______” (and list side one design number)</li>
- <li>Place your order putting in your account number and shipping address</li>
-</ol></p>
+<div class="faq-container" id="ph-faqs">
+	<span id="ph-anchor" class="section-anchor"></span>
+<h2 class="faq-page-header">PACIFIC HEADWEAR INTEGRATION</h2>
+
+
+<div class="faq-content">
+	<h2 class="questionheader">What does Pacific Headwear joining Augusta Sportswear, Inc. mean to me? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	<p>Now there is one experience for all of the Augusta Sportswear Brands: Augusta Sportswear, Holloway® Sportswear, High Five Sportswear, Russell Athletic and Pacific Headwear. Even if you had only ordered one brand in the past, it is now easier to order any of these on a single order, earn free shipping faster, and earn more savings.</p>
+</div>
+
+
+<div class="faq-content">
+	<h2 class="questionheader">Is there a new company name? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	<p>We are now a house of brands operating under Augusta Sportswear, Inc. </p>
+</div>
+
+
+<div class="faq-content">
+	<h2 class="questionheader">Is there a new website? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	<p>You can now utilize one website for all these brands: www.augustasportswear.com</p>
+</div>
+
+	
+<div class="faq-content">
+	<h2 class="questionheader">Can I view my order history on the website? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	<p><a href="/TrackOrderStatus">View your order history</a>, located under My Account at the top right of your screen. Order history prior to 2018 will not be available online. If you need information on previous orders, please contact Customer Care.</p>
+</div>
+
+
+<div class="faq-content">
+<h2 class="questionheader">How do I track my order? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+<p>Order tracking information is available via the automated shipping notification. Track your order <a href="/TrackOrderStatus">here</a> or by calling Customer Care.</p>
+</div>
+
+
+<div class="faq-content">
+	<h2 class="questionheader">What is the return policy? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	<div class="answer-list">
+		All Returns require a valid Augusta Sportswear Return Authorization number. Returns are subject to a 15% restocking charge. Restock fee will be waived if a replacement order of equal or greater value is placed at the time the Return Authorization is issued.
+	<br>
+<ul class="post-list">
+
+<li>Missing Cap Elements:</li>
+<ul class="post-list missingcap-returns">
+<li>Customers receiving caps that are missing elements such as buttons, button changes, custom piping, side or back logos may elect to return the caps for repair or receive a discount for the cost of the missing element. Caps with missing elements will not be replaced.</li>
+</ul>
+
+</ul> 
 
 </div>
-	</div>
-	
-</div> -->
+
+</div>
+
+<div class="faq-content">
+	<h2 class="questionheader">How do I request a return authorization (RA)? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	<p>To begin the returns process please <a href="/help#returns-anchor">click here</a>.</p>
+</div>
+
+
+<div class="faq-content">
+	<h2 class="questionheader">What is my account number now that Pacific Headwear is a part of Augusta Sportswear, Inc.? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	<p>If you had an account with both Augusta Sportswear and Pacific Headwear, your account number going forward will be your Augusta account number. 
+		<br>
+		If you did not have an account with Pacific Headwear, but had one with Augusta Sportswear, you can now use your Augusta account number to order Pacific Headwear items. 
+		<br>
+		If you did not have an account with Augusta Sportswear, but had one with Pacific Headwear, please email <a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a> to see if you have an account number set up, or you can <a href="/New-Account">apply for a new account number</a> to continue ordering Pacific Headwear and Augusta Sportswear.  
+		</p>
+</div>
+
+
+<div class="faq-content">
+
+
+<p>We have various ways to take advantage of receiving a sample based on which type you are needing:
+
+
+<ul class="post-list">
+<li>Spec Sample Cap:</li>
+<ul class="post-list sample-sublist">
+	<li>Each stock cap with embroidered logo spec sample will be a flat $35 fee which includes: cap, embroidery and setup fee. For each additional cap with the same logo, it will be $10 MSRP.</li>
+	<li>If the sample results in an order for 144+ caps using exact artwork, a request can be submitted to credit for the spec sample.</li>
+	<li>Sew-outs, a sample cap we run and email a picture, are available for $25 MSRP, and adds 3 days to the production time. The fee is waived if the order is for 72 pieces or more.</li>
+</ul>
+
+</ul>
+
+</p>
+
+</div>
+
+<div class="faq-content">
+	<h2 class="questionheader">How do I pay my invoices? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	<p>Invoices wil be paid to: <br>
+Augusta Sportswear Brands <br>
+P.O. Box 205601<br>
+Dallas, TX 75320-5601</p>
+</div>
+
+
+<div class="faq-content">
+	<h2 class="questionheader">How do I get free shipping? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	<p>Any order shipping via UPS Ground with an Order Total over $200 qualifies for free shipping.</p>
+</div>
+
+
+<div class="faq-content">
+	<h2 class="questionheader">How much is shipping? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	<p>Order Total of $200 or less = $15 Flat Rate Shipping<br>
+Order Total over $200 = FREE Shipping</p>
+</div>
+
+<div class="faq-content">
+	<h2 class="questionheader">Do I receive the same pricing on all brands? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
+	<p>There are specific Augusta, Russell Athletic and Pacific Headwear styles that offer additional discounts. </p>
+</div>
+
+</div> <!-- End PH section -->
 
  
- <div class="faq-container" id="pricing-faqs">
-	<span id="pricing-anchor" class="section-anchor"></span>
-<h2 class="faq-page-header">Pricing</h2>
-	
-	<p style="margin-top:15px;">
-	With the Fair and Simple Pricing Program, customers will receive the same account level discount for all brands. Now, customers can simply look up the price of an item based on their Account Level status. In addition, when customers log onto the wholesale website, their Account Level status will be clearly stated and automatically used in transactions going forward. Account Level discounts are determined by annual sales.
-<br><br>
-Augusta Sportswear Brands program benefits also include order level discounts where customers will receive an additional 5% off any order over $3,000. This stackable discount allows customers to receive this discount on top of their Account Level discount. Note - wool, decoration, samples and discontinued items do not count toward the $3,000.
-<br><br>
-Furthermore, handling fees have been eliminated to reduce costs and simplify business.
-	</p>
-	
-	
-		<span id="price-answer-anchor" class="section-anchor"></span>
-	<div class="faq-content">
-	    <h2 class="questionheader">How do I find out the price of an item for my business? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
-	    <p>When you login you will see prices displayed on the product page for each style. Click the link “show prices” on the product page once you are logged in on the website.</p>
-	</div>
-	
-	<div class="faq-content">
-	    <h2 class="questionheader">Do I get the same discount for any brand? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
-	    <p>Yes, discount levels are the same for all Augusta Sportswear brands</p>
-	</div>
-	
-	<div class="faq-content">
-	    <h2 class="questionheader">Do all styles get the same account level discount? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
-	    <p>Yes, except basic wicking tees under the Augusta Sportswear Brand. These items will have a steeper discount percentage due to the highly competitive nature of that category.</p>
-	</div>
-	
-	<div class="faq-content">
-	    <h2 class="questionheader">Are quantity discounts still available? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
-	    <p>Yes. You can receive an additional 5% on any order over $3,000! This is a stackable discount, meaning it is in addition to any account level discount.
-	    <br>
-	 Wool, decoration, samples and discontinued items do not count toward the $3,000.</p>
-	</div>
-	
-	<div class="faq-content">
-	    <h2 class="questionheader">Are we continuing with the High Five package discounts? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
-	    <p>Yes. The High Five package program discounts remain intact. However, these programs effectively replace the 5% order level discount. Thus, for High Five package orders, you will automatically receive the better of package program pricing or the 5% account level discount if over $3,000.</p>
-	</div>
-	
-	<div class="faq-content">
-	    <h2 class="questionheader">What about the charges for larger sizes? <span class="open-faq">+</span><span class="close-faq">&mdash;</span></h2>
-	    <p>Another great benefit with this new program. We have standardized the price of larger sizes. Now, you only pay $3.00 for 3X; $4.50 for 4X; $6.00 for 5X; and $7.50 for 6X. This excludes wool products, which maintain our current charges.</p>
-	</div>
-
-</div>
 
 </div>
 
@@ -947,8 +1145,8 @@ $(document).ready(function(closeMobileNav) {
 
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-    var os = $('#pricing-anchor').offset().top;
-    var ht = $('#pricing-anchor').height();
+    var os = $('#ph-anchor').offset().top;
+    var ht = $('#ph-anchor').height();
     if(scroll > os + ht){
         $('.menu-bar-wrapper').addClass('menu-bar-bottom');
     } else {
