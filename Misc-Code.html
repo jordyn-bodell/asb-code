@@ -212,6 +212,163 @@ $('a[href*="#"]')
 </script>
 
 
+
+<!-- Shipping/Promo Bar -->
+<div class="top-promo-bar">
+  <div class="shipping-bar-wrapper">
+  
+<div class="shipping-arrows left-arrow" onclick="plusDivs(-1)">
+		<span id="left-arrow-ship"></span>
+	</div>
+	
+ <div class="ship-text-wrapper">
+
+
+	<!-- <div id="ship-msg-2" class="ship-msgs">
+	
+		Same day shipping on in-stock orders placed by 6PM EST 
+		<span class="ship-divider">|</span> 
+		<span class="ordertoday-details ship-details-link" onclick="openDetails('ordertoday-details-box')">Details</span>
+	
+	</div> -->
+	
+	<!-- <div id="ship-msg-3" class="ship-msgs">
+	<b>save 5%</b> on orders over $3,000* 
+	<span class="ship-divider">|</span> 
+	<span class="save-5 ship-details-link" onclick="openDetails('save-5-details-box')">Details</span>
+	</div> -->
+	
+</div> 
+	
+	  <!-- <div class="shipping-arrows right-arrow" onclick="plusDivs(1)" >
+		<span id="right-arrow-ship"></span>
+		</div> -->
+
+
+	</div>
+	
+  <div class="shipping-bar-wrapper-m">
+
+<!-- <div class="shipping-arrows left-arrow" onclick="plusDivsM(-1)">
+  <span id="left-arrow-ship"></span>
+</div> -->
+
+<div class="ship-text-wrapper">
+
+<!-- <div id="ship-msg-1-m" class="ship-msgs-m">
+  <b>FREE 2-DAY SHIPPING</b> 
+  <span class="ship-divider">|</span> 
+  <span class="free-ship ship-details-link" onclick="openDetails('free-ship-box')">Details</span>
+</div> -->
+
+<!-- <div id="ship-msg-2-m" class="ship-msgs-m">	
+
+  Same day shipping*
+  <span class="ship-divider">|</span> 
+  <span class="ordertoday-details ship-details-link" onclick="openDetails('ordertoday-details-box')">Details</span>
+</div> -->
+
+<div id="ship-msg-3-m" class="ship-msgs-m">
+<b>save 5%</b> 
+<span class="ship-divider">|</span> 
+<span class="save-5 ship-details-link" onclick="openDetails('save-5-details-box')">Details</span>
+</div>
+
+</div>
+
+  <!-- <div class="shipping-arrows right-arrow" onclick="plusDivsM(1)" >
+  <span id="right-arrow-ship"></span>
+  </div> -->
+
+</div>
+
+</div>
+
+<div class="detailsoverlay" id="detail-overlay"></div>
+
+<div class="ship-detail-box" id="ordertoday-details-box">
+<span class="closeDetails" onclick="closeDetails('ordertoday-details-box')">X</span>
+<img class="ship-details-graphic ordertoday-graphic lazyload" data-src="https://static.augustasportswear.com/marketing/ShippingBanner-Icon-3.jpg" alt="Shipping Icon">
+<p>
+In-stock orders for the following services/carriers will ship same day if placed by: <br>
+USPS – 2 P.M. EST <br>
+Fed Ex (all services) – 3 P.M. EST<br>
+International – 4 P.M. EST<br>
+UPS Air – 5 P.M. EST <br>
+UPS Ground - 6 P.M. EST
+<br><span class="details-subtext"><a href="/faq#shipping-faqs">Learn more about our shipping</a></span>
+</p>
+<button class="got-it">got it, thanks!</button>
+</div>
+
+<div class="ship-detail-box" id="save-5-details-box">
+<span class="closeDetails"  onclick="closeDetails('save-5-details-box')">X</span>
+<img class="ship-details-graphic save-5-graphic lazyload" data-src="https://static.augustasportswear.com/marketing/ShippingBanner-Icon-.jpg" alt="Shipping Icon">
+<p>
+Any order over $3,000 qualifies* for an additional 5% discount.
+<br>
+<span class="details-subtext">*Excludes taxes, shipping and applicable discounts or promo codes.</span>
+</p>
+<button class="got-it">got it, thanks!</button>
+</div>
+
+
+<script>
+  function openDetails(target){
+  document.getElementById(target).style.display = 'block';
+  document.getElementById('detail-overlay').style.display = 'block';
+  }
+  function closeDetails(target){
+  document.getElementById(target).style.display = 'none';
+  document.getElementById('detail-overlay').style.display = 'none';
+  }
+  $(function () {
+    
+      $(".free-ship, .ordertoday-details, .save-5").click(function () {
+          $(".detailsoverlay").css('display', 'block');
+      });
+        
+      $(".closeDetails, .detailsoverlay, .got-it").click(function () {
+          $(".ship-detail-box").fadeOut();
+          $(".detailsoverlay").fadeOut();
+      });
+      
+  });
+  
+  
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("ship-msgs");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  
+  showDivsM(slideIndex);
+  function plusDivsM(n) {
+    showDivsM(slideIndex += n);
+  }
+  function showDivsM(n) {
+    var i;
+    var x = document.getElementsByClassName("ship-msgs-m");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+
+
 <!-- Play button in circle -->
 <div class="hero3-text">
 		<p>watch full video</p>
@@ -287,4 +444,7 @@ $(window).scroll(function(){
  });
 
 </script>
+
+
+
 
