@@ -168,12 +168,12 @@ b {
 /* Shipping/Promo Top Bar */
 .top-promo-bar {
 	width: 100%;
-	background-color: rgb(240,241,243);
-	color: black;
+	background-color: black;
+	color: white;
 	position: sticky;
 	z-index: 100;
 	padding: 10px 0;
-	border: gray 1px solid;
+	border: black 1px solid;
 }
 .shipping-bar-wrapper {
 	width: 60%;
@@ -192,7 +192,7 @@ b {
   height: 0; 
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent; 
-  border-right: 8px solid black; 
+  border-right: 8px solid white; 
   display: inline-block;
   margin: 0 15px;
 }
@@ -201,7 +201,7 @@ b {
   height: 0; 
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
-  border-left: 8px solid black;
+  border-left: 8px solid white;
     display: inline-block;
 }
 #left-arrow-ship:hover, #right-arrow-ship:hover {
@@ -332,13 +332,11 @@ b {
 }
 
 
-
-
 /* Ohio Close */
 .ohioclose-banner {
-	background-color: teal;
+	background-color: black;
 	padding: 10px 0;
-	margin: auto;
+	margin: 0 auto 20px;
 	color: white;
 }
 .ohiotext {
@@ -352,7 +350,7 @@ margin: 10px auto 5px;
 .ohiotext p {
 	display: inline-block;
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 18px;
 	color: white;
 }
 .ohiobtn {
@@ -361,44 +359,70 @@ margin: 10px auto 5px;
 	display: block;
 }
 .ohiobtn a {
-	color: inherit;
+	color: white;
 	font-size: inherit;
 }
-#ruslist {
-	text-decoration: underline;
-	cursor: pointer;
-	font-size: 16px;
-}
 
 
-/* Ship Update*/
-.shipping-update {
-	background-color: teal;
-	padding: 10px 0;
-	margin: auto;
-	color: white;
+
+/* PH Integration Banner */
+.ph-int-wrapper {
+background-color: #F73D3A;
+display: block;
+position: relative;
+overflow: hidden;
 }
-.shipupdate-text {
-	text-align: center;
-	font-family: "AvenirNextN";
-	width: 98%;
-margin: 10px auto 5px;
+#hero1-hats {
+width: 60%;
+display: inline-block;
+position: relative;
+right: 9%;
+top: -100px;
+margin-bottom: -12%;
+z-index: 1;
 }
-.shipupdate-text h2 {
+#hero1-hats-m {
+	display: none;
+	width: 130%;
+	right: 15%;
+	position: relative;
+	margin: 20px auto 0;
+	z-index: 1;
+}
+.ph-int-text {
+	width: 50%;
 	display: inline-block;
-	text-transform: uppercase;
-	font-size: 13px;
-	color: white;
+	position: absolute;
+	top: 8%;
+	right: 2%;
 }
-#covid-link {
-	font-size: 12px;
-	margin-top: 5px;
-	color: white;
+#ph-logo-stacked {
+	display: block;
+	width: 60%;
+	margin: 10px auto 30px;
 }
-.covidbtn {
-	color: white;
-	text-transform: none;
+#styles100 {
+margin: 10px auto;
+width: 100%;
+display: block;
 }
+.shopall-ph {
+display: block;
+width: 160px;
+}
+.shopall-ph:hover {
+	background-color: white;
+	color: #F73D3A;
+	transition: .2s ease;
+}
+
+#hero1-represent {
+	width: 140%;
+	position: absolute;
+	bottom: -20px;
+	left: -15%;
+}
+
 
 
 /* New Catalog */
@@ -1130,6 +1154,15 @@ background: none;
 						font-size: 2.5vw;
 						width: 180px;
 					}
+					#hero1-hats {
+						top: -60px;
+					}
+					#ph-logo-stacked {
+						width: 50%;
+					}
+					#styles100 {
+						width: 80%;
+					}
 
         }
         @media screen and (max-width: 1023px) {		       
@@ -1232,6 +1265,10 @@ background: none;
     left: 22%;
 }
 
+#hero1-hats {
+	top: -50px;
+}
+
 .comfort-text h3 {
 	width: 150px;
 }
@@ -1249,6 +1286,29 @@ background: none;
         	#right-arrow-ship {
         		margin-right: 10px;
         	}    	
+
+
+					#hero1-hats {
+						display: none;
+					}
+					#hero1-hats-m {
+						display: block;
+					}
+					.ph-int-text {
+						position: relative;
+						width: 100%;
+						display: block;
+						left: 0;
+						top: 30px;
+					}
+					#hero1-represent {
+						transform: rotate(90deg);
+						left: -134%;
+						bottom: 29%;
+						width: 280%;
+					}
+
+
 
 					#newcat-bkg-d, .catalog-block {
 						display: none;
@@ -1803,41 +1863,47 @@ width: 150px;
 
 </style>
 
-<!-- Shipping/Promo Bar
+
+
+
+<!-- Shipping/Promo Bar -->
 <div class="top-promo-bar">
-  <div class="shipping-bar-wrapper">
+ 
+	<div class="shipping-bar-wrapper">
   
-	<div class="shipping-arrows left-arrow" onclick="plusDivs(-1)">
+	 <div class="shipping-arrows left-arrow" onclick="plusDivs(-1)">
 		<span id="left-arrow-ship"></span>
-	</div>
+	</div> 
 	
 <div class="ship-text-wrapper">
+
+	<div id="ship-msg-2" class="ship-msgs">
 	
+		<b>Same day shipping</b> on in-stock orders placed by 6PM EST 
+		<span class="ship-divider">|</span> 
+		<span class="ordertoday-details ship-details-link" onclick="openDetails('ordertoday-details-box')">Details</span>
+	
+	</div> 
+
 	<div id="ship-msg-1" class="ship-msgs">
-		<b>NEW! FREE 2-DAY SHIPPING</b> 
+		<b>Free Shipping</b> On Orders Over $200 
 		<span class="ship-divider">|</span> 
 		<span class="free-ship ship-details-link" onclick="openDetails('free-ship-box')">Details</span>
 	</div>	
 
-	<div id="ship-msg-2" class="ship-msgs">
 	
-		Same day shipping on in-stock orders placed by 6PM EST 
-		<span class="ship-divider">|</span> 
-		<span class="ordertoday-details ship-details-link" onclick="openDetails('ordertoday-details-box')">Details</span>
-	
-	</div>
-	
-	<div id="ship-msg-3" class="ship-msgs">
+	<!-- <div id="ship-msg-3" class="ship-msgs">
 	<b>save 5%</b> on orders over $3,000* 
 	<span class="ship-divider">|</span> 
 	<span class="save-5 ship-details-link" onclick="openDetails('save-5-details-box')">Details</span>
-	</div>
+	</div> -->
 	
 </div>
 	
 	  <div class="shipping-arrows right-arrow" onclick="plusDivs(1)" >
 		<span id="right-arrow-ship"></span>
 		</div>
+	
 	</div>
 	
     <div class="shipping-bar-wrapper-m">
@@ -1848,32 +1914,41 @@ width: 150px;
 	
 <div class="ship-text-wrapper">
 	
+	<div id="ship-msg-2-m" class="ship-msgs-m">	
+	
+	  <b>Same day shipping*</b>
+		<span class="ship-divider">|</span> 
+		<span class="ordertoday-details ship-details-link" onclick="openDetails('ordertoday-details-box')">Details</span>
+	</div>
+
 	<div id="ship-msg-1-m" class="ship-msgs-m">
-		<b>FREE 2-DAY SHIPPING</b> 
+		<b>FREE SHIPPING*</b> 
 		<span class="ship-divider">|</span> 
 		<span class="free-ship ship-details-link" onclick="openDetails('free-ship-box')">Details</span>
 	</div>
 
-	<div id="ship-msg-2-m" class="ship-msgs-m">	
+
 	
-	  Same day shipping*
-		<span class="ship-divider">|</span> 
-		<span class="ordertoday-details ship-details-link" onclick="openDetails('ordertoday-details-box')">Details</span>
-	</div>
-	
-	<div id="ship-msg-3-m" class="ship-msgs-m">
+	<!-- <div id="ship-msg-3-m" class="ship-msgs-m">
 	<b>save 5%</b> 
 	<span class="ship-divider">|</span> 
 	<span class="save-5 ship-details-link" onclick="openDetails('save-5-details-box')">Details</span>
 	</div>
 	
-</div>
+</div> -->
 	
+</div>
+
 	  <div class="shipping-arrows right-arrow" onclick="plusDivsM(1)" >
 		<span id="right-arrow-ship"></span>
+		</div> 
+
 		</div>
-	</div>
+
+
 </div>
+
+
 
 <div class="detailsoverlay" id="detail-overlay"></div>
 
@@ -1895,17 +1970,17 @@ UPS Ground - 6 P.M. EST
 <div class="ship-detail-box" id="free-ship-box">
 	<span class="closeDetails" onclick="closeDetails('ship-details-box')">X</span>
 	<img class="ship-details-graphic free-ship-graphic lazyload" data-src="https://static.augustasportswear.com/marketing/ShippingBanner-Icon-2.jpg" alt="Shipping Icon">
-	<h4><b>Free 2-day Shipping<br>
-	February 1, 2020 - March 31, 2020</b></h4>
+	<h4><b>Free Shipping on Orders over $200</b></h4>
 	
-	<p>Any order over $200 shipping UPS Ground qualifies for <b>FREE</b> 2-Day Shipping</p>
+	<p>Any order over $200 shipping UPS Ground qualifies for <b>FREE</b> Shipping</p>
 	
 	<p class="details-subtext">
 	Online Orders Only. Pacific Headwear excluded.<br>
-		<b><a id="twoday-details" href="/free-2-day-shipping">Click Here</a></b> to view details and exclusions.
+
+	The Order Total amount is the sum total of the order, including items that are excluded from discounting, such as wool, decoration, discontinued items, samples, etc., less all applicable discounts or promo codes that are part of the order.
+
 		</p>
 
-	
 	
 	
 	<button class="got-it">got it, thanks!</button>
@@ -1921,90 +1996,90 @@ Any order over $3,000 qualifies* for an additional 5% discount.
 	</p>
 	<button class="got-it">got it, thanks!</button>
 </div>
--->
+
 
 <script>
-function openDetails(target){
-document.getElementById(target).style.display = 'block';
-document.getElementById('detail-overlay').style.display = 'block';
-}
-function closeDetails(target){
-document.getElementById(target).style.display = 'none';
-document.getElementById('detail-overlay').style.display = 'none';
-}
-$(function () {
-  
-    $(".free-ship, .ordertoday-details, .save-5").click(function () {
-        $(".detailsoverlay").css('display', 'block');
-    });
-      
-    $(".closeDetails, .detailsoverlay, .got-it").click(function () {
-        $(".ship-detail-box").fadeOut();
-        $(".detailsoverlay").fadeOut();
-    });
-    
-});
+	function openDetails(target){
+	document.getElementById(target).style.display = 'block';
+	document.getElementById('detail-overlay').style.display = 'block';
+	}
+	function closeDetails(target){
+	document.getElementById(target).style.display = 'none';
+	document.getElementById('detail-overlay').style.display = 'none';
+	}
+	$(function () {
+		
+			$(".free-ship, .ordertoday-details, .save-5").click(function () {
+					$(".detailsoverlay").css('display', 'block');
+			});
+				
+			$(".closeDetails, .detailsoverlay, .got-it").click(function () {
+					$(".ship-detail-box").fadeOut();
+					$(".detailsoverlay").fadeOut();
+			});
+			
+	});
+	
+	
+	var slideIndex = 1;
+	showDivs(slideIndex);
+	function plusDivs(n) {
+		showDivs(slideIndex += n);
+	}
+	function showDivs(n) {
+		var i;
+		var x = document.getElementsByClassName("ship-msgs");
+		if (n > x.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = x.length}
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		}
+		x[slideIndex-1].style.display = "block";  
+	}
+	
+	showDivsM(slideIndex);
+	function plusDivsM(n) {
+		showDivsM(slideIndex += n);
+	}
+	function showDivsM(n) {
+		var i;
+		var x = document.getElementsByClassName("ship-msgs-m");
+		if (n > x.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = x.length}
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		}
+		x[slideIndex-1].style.display = "block";  
+	}
+	</script>
 
-
-var slideIndex = 1;
-showDivs(slideIndex);
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("ship-msgs");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-
-showDivsM(slideIndex);
-function plusDivsM(n) {
-  showDivsM(slideIndex += n);
-}
-function showDivsM(n) {
-  var i;
-  var x = document.getElementsByClassName("ship-msgs-m");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
 
 
 <div id="homepagecontainer">
 
-
-<!-- Ohio Closed -->
-<div class="ohioclose-banner">
-
-<div class="ohiotext">
-	<p><b>COVID-19 related news, resources and programs</b></p>
 	
-	<div class="ohiobtn">
-	<a href="https://news.augustasportswear.com/covid-19-related-news-resources-and-programs/" target="blank" class="btnlinktext">Learn More</a>
-	</div>
-	
-</div>
+<div class="ph-int-wrapper">
+
+	<img id="hero1-hats" src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/JULY-2020/Hats-homepage.png" alt="Pacific Headwear Now on AugustaSportswear.com">
+
+
+<div class="ph-int-text">
+
+	<img id="ph-logo-stacked" src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/JULY-2020/PacificHeadwear_Logo_Stacked_White.png" alt="Pacific Headwear Now on AugustaSportswear.com">
+
+	<img id="styles100" src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/JULY-2020/PH-IntegrationComm-Graphic-100styles-nowavailable.png" alt="Pacific Headwear Now on AugustaSportswear.com">
+
+<a href="/headwear-shop-by-brand-pacific-headwear?promo_name=PH-Integ&promo_id=PH-Shop-All&promo_creative=Stacked_Hats&promo_position=hero1" class="hp-btn-white-ol shopall-ph">shop all</a>
 
 </div>
 
 
- <!-- <div class="shipping-update">
-<div class="shipupdate-text">
-	<h2>Due to COVID-19 we are experiencing shipping delays of up to 24 hours - we apologize for the inconvenience.</h2>
 
-<p id="covid-link">
-	<a href="https://news.augustasportswear.com/covid-19-related-news-resources-and-programs/" target="blank" class="btnlinktext covidbtn">Click Here</a> for COVID-19 related news.</p>
+<img id="hero1-hats-m" src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/JULY-2020/Hats-homepage.png" alt="Pacific Headwear Now on AugustaSportswear.com">
+
+<img id="hero1-represent" src="https://static.augustasportswear.com/marketing/2020-Website/Home-Page/JULY-2020/REPRESENT-REPEATED.png" alt="Pacific Headwear Now on AugustaSportswear.com">
+
 </div>
-</div> -->
 
 
 <!-- New Catalog -->
@@ -2053,7 +2128,7 @@ function showDivsM(n) {
 	
 		<p>Provides every day comfort<br>and protection.</p>
 
-	<a href="/face-shield?promo_name=ppe-block&promo_creative=two-masks" class="hp-btn-white masksbtn">ORDER HERE</a>
+	<a href="/accessories-masks?promo_name=ppe-block&promo_creative=two-masks" class="hp-btn-white masksbtn">ORDER HERE</a>
   </div>
 
 </div>
@@ -2094,6 +2169,23 @@ function showDivsM(n) {
 </div>
 
 </div>
+
+
+
+<!-- Covid Banner -->
+<div class="ohioclose-banner">
+
+	<div class="ohiotext">
+		<p><b>COVID-19 related news, resources and programs</b></p>
+		
+		<div class="ohiobtn">
+		<a href="https://news.augustasportswear.com/covid-19-related-news-resources-and-programs/" target="blank" class="btnlinktext">Learn More</a>
+		</div>
+		
+	</div>
+	
+	</div>
+	
 
 
 <!-- Prism Polo -->
