@@ -34,16 +34,14 @@ border-spacing: 0;
 table.sizechart {
 text-align: center;
     width: 90%;
-    margin: auto;
-    margin-bottom: 1.5em;
-    border: 1px solid #bbb;
+    margin: 0 auto 30px;
+    border: 2px solid black;
     border-collapse: collapse;
     color: black;
 }
 th.tabletitle {
     background-color: black;
     color: white;
-    font-weight: 500;
     font-size: 17px;
     padding: 12px 0;
     font-family: 'Avenir', Arial, sans-serif;
@@ -78,10 +76,11 @@ h2.section-title {
     padding: 40px 0 0 0;
     border-bottom: 1px solid gray;
     font-size: 20px;
-    font-weight: 500;
     text-transform: uppercase;
-    margin: 0 30px 10px 30px;
+    margin: 20px auto;
 		color: black;
+		width: 90%;
+		display: block;
 }
 .cm {
 	background-color: rgb(199,200,202)
@@ -103,11 +102,18 @@ h2.section-title {
 }
 
 
+.ph-sizes {
+	width: 90%;
+	margin: auto;
+}
+.ph-title {
+	width: 99%!important;
+}
 .ph-universal {
-		width: 30%;
+		width: 31.8%;
     display: inline-table;
     margin: 10px;
-    border: 1px solid black;
+    border: 2px solid black;
 		border-collapse: collapse;
     color: black;
 		text-align: center;
@@ -135,7 +141,7 @@ h2.section-title {
 	background-color: rgba(15, 136, 25, 0.658);
 	color: black;
 }
-#ph-anchor {
+.anchortags {
 	position: relative;
     top: -150px;
 }
@@ -180,7 +186,11 @@ This Fit Guide allows you to see how you can expect a product to fit, before you
 The measurements below are based on body measurements. You can find product measurements on its product page under Style Measurements.
 </div>
 
-
+<div class="reg-sizes">
+	<span class="anchortags" id="augusta"></span>
+	<span class="anchortags" id="holloway"></span>
+	<span class="anchortags" id="highfive"></span>
+</div>
 <table cellpadding="0" cellspacing="0" class="sizechart adult">
   	
   			  <thead>
@@ -624,8 +634,8 @@ The measurements below are based on body measurements. You can find product meas
 <!-- PH Sizes -->
 
 <div class="ph-sizes">
-	<span id="ph-anchor"></span>
-<h2 class="section-title">Pacific Headwear Universal Sizes</h2>
+	<span class="anchortags" id="pacificheadwear"></span>
+<h2 class="section-title ph-title">Pacific Headwear Universal Sizes</h2>
 
 <table cellpadding="0" cellspacing="0" class="ph-universal">
 	<thead>
@@ -1015,6 +1025,9 @@ The measurements below are based on body measurements. You can find product meas
 
 <!-- Russell Sizes -->
 
+<div class="ra-sizing">
+	<span class="anchortags" id="russell"></span>
+
 <h2 class="section-title">Russell Athletic Basics Sizes</h2>
 <table cellpadding="0" cellspacing="0" class="sizechart adult" id="russell-adult">
   	
@@ -1268,6 +1281,9 @@ The measurements below are based on body measurements. You can find product meas
   					</tr> -->
   				</tbody>
   			</table>
+
+
+			</div>
 
 
 <h2 class="section-title">Cheer Uniform Size Chart</h2>
