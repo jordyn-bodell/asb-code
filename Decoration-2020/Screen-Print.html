@@ -14,7 +14,7 @@ b {
 	display: block;
 }
 .dec-header-sect h2 {
-	background-color: rgb(71, 20, 32);
+	background-color: rgb(63,18,29);
 	color: white;
 	text-align: center;
     padding: 15px 0;
@@ -22,10 +22,11 @@ b {
     font-family: "AvenirNextN";
     width: 100%;
 		text-transform: uppercase;
-
 }
+
+
 /* Show Templates */
-	.show{
+.show{
     z-index: 999;
     display: none;
 		width: 100%;
@@ -70,29 +71,27 @@ b {
 .techheader {
 	color: black;
 	text-transform: uppercase;
-	font-size: 55px;
-	font-family: "AvenirNextN";
+	font-size: 35px;
 	margin: 10px auto;
-	text-align: center;
-	padding: 20px 0;
-	width: 90%;
+	text-align: left;
 
 }
 .tech-info {
 	width: 90%;
+  max-width: 1300px;
     display: block;
     margin: auto;
     color: black;
 }
 .tech-info img {
-	width: 32%;
+	width: 40%;
 	display: inline-block;
-	margin: 0 40px;
+	margin: 0 20px;
+  max-width: 550px;
 }
 .tech-content {
 	display: inline-block;
-	width: 53%;
-	margin-top: 20px;
+	width: 50%;
 	vertical-align: top;
 }
 .tech-content p {
@@ -100,6 +99,10 @@ b {
 	margin: 20px auto;
 	line-height: 1.4;
 }
+.tech-content p > a {
+	font-size: inherit;
+}
+
 
 .pricing {
 	display: block;
@@ -107,29 +110,38 @@ b {
 	margin: 80px auto;
 }
 .price-chart {
-	display: inline-block;
+  width: 600px;
 	font-size: 14px;
-	margin: 10px auto;
+	margin: 20px auto;
 	color: black;
 	text-align: center;
 	vertical-align: top;
+  border-bottom: 1px solid rgb(63, 73, 74);
+    border-collapse: collapse;
 }
 .tablehead {
-	background-color: black;
+	background-color: rgb(63, 73, 74);
 	color: white;
 }
-.alt-row-1 {
-	background-color: rgba(0,0,0,0.2);
+.price-chart > tbody > tr {
+  border-bottom: 1px solid rgba(63, 73, 74, 0.8);
+    border-collapse: collapse;
 }
-.alt-row-2 {
-	background-color: rgba(0,0,0,0.1);
-}
+
 .pricing p {
-	font-size: 12px;
-    width: 43%;
-    margin: 0 auto 0 20px;
-    display: inline-block;
+	font-size: 14px;
+    width: 600px;
+    margin: 10px auto;
+		display: block;
 }
+#deco-place-guide {
+	color: #50a4d9;
+	font-size: 14px;
+}
+#deco-place-guide:hover {
+	text-decoration: underline;
+}
+
 
 .sub-sect-header {
 	color: black;
@@ -138,7 +150,6 @@ b {
 	margin: 10px auto 20px;
 	text-align: center;
 }
-
 
 /* templates */
 .template-wrapper {
@@ -174,15 +185,12 @@ b {
 
 
 
-
-
 	<div class="dec-header-sect">
 		<img id="decorheaderimg" src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/ASB_ScreenPrint_Hero_Desktop.jpg" alt="Augusta Sportswear Decoration">
 		<h2>SCREEN PRINT</h2>
 	</div>
-	<script>
-        
-        
+
+	<script> 
 		$(document).ready(function() {
 		$('.dec-subnav').hover(function() {
 	
@@ -190,25 +198,30 @@ b {
 	
 		});
 	});
-
 	</script>
+		
 
 	
+
+
   <div class="tech-info">
 		
 		<div class="section-divider"></div>
 
 
-		<h3 class="techheader">Screen Print</h3>
-
-<img src="https://static.augustasportswear.com/product/222539_aws_640.jpg" alt="">
+<img src="https://static.augustasportswear.com/marketing/Decoration/Decor-Examples/ASB_screenprint_closeup.jpg" alt="Augusta Sportswear Brands Screen Print">
 
 <div class="tech-content">
+
+
+	<h3 class="techheader">tried and true quality that goes the distance.</h3>
+
 	<p>Whether you want to say something simple or complex, Screen Print is a popular way to express yourself! Check our selection of Neon Inks in Pink, Orange, Yellow and Green.</p>
 	
-	<p>Add mascots to your designs. Choose from our Stock Decoration Library of Mascots or send us your own. We’re happy to work with you and your teams!</p>
+	<p>Add mascots to your designs. Choose from our Stock library of <a href="/mascots" style="text-decoration:underline;">mascots</a> or send us your own. We’re happy to work with you and your teams!</p>
 
-	<p>We encourage you to consult our knowledgeable Customer Service Representatives about the latest specialty treatments, products and other trends in Screen Printing before finalizing project ideas.</p>
+	
+
 </div>
 
 
@@ -258,19 +271,21 @@ b {
 					 <td>$4.00</td>
 
 					</tr>
-					<tr class="alt-row-2" style="font-size: 10px;">
-					 <th colspan="3">Each additional color, add $1.00 per piece (Limit 6 Colors)</th>
-					 <td colspan="3">Minimum Run = 24 pieces</td>
+					<tr class="alt-row-2" style="font-size: 12px;">
+					 <th colspan="6">Each additional color, add $1.00 per piece (Limit 6 Colors)</th>
 					</tr>  			 
 				 </tbody>
 			 </table>
-					
-	 <p>Additional Screen Print Options: Color changes, $20.00 per color <br>15% upcharge applies for 1-color Billboard prints.<br>
-	*Distressed templates – These templates are not recommended for garments with fabric patterns. <br>
- - 24 piece minimum for all screen print orders<br>
- - 25% surcharge for metallic ink <br>
- - $50 charge will be applied to create multiple
- screens for various sizes</p>
+				
+			 <p>24 piece minimums</p>
+	 		<p><b>Additional Screen Print Options:</b>
+		 <br>$20.00 per color for color changes</p>
+		 <p>15% upcharge applies for 1-color Billboard prints.</p>
+	 		<p>Distressed templates are not recommended for garments with fabric patterns.</p>
+			<p>25% surcharge for metallic ink</p>
+			<p>$50 charge will be applied to create multiple screens for various sizes</p>
+
+			<p><a id="deco-place-guide" href="https://static.augustasportswear.com/marketing/decoration-guide-standard.pdf" target="_blank">View Decoration Placement Guideline</a></p>
  </div>
 
  <div class="section-divider"></div>
@@ -294,690 +309,688 @@ b {
 		<h3 class="sub-sect-header">TEMPLATES</h3>
 
   	<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP001.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP001.jpg">
 			 <p>Template SP1</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP003.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP003.jpg">
 			 <p>Template SP3</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP004.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP004.jpg">
 			 <p>Template SP4</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP005.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP005.jpg">
 			 <p>Template SP5</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP006.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP006.jpg">
 			 <p>Template SP6</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP007.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP007.jpg">
 			 <p>Template SP7</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP008.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP008.jpg">
 			 <p>Template SP8</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP010.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP010.jpg">
 			 <p>Template SP10</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP011.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP011.jpg">
 			 <p>Template SP11</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP012.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP012.jpg">
 			 <p>Template SP12</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP013.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP013.jpg">
 			 <p>Template SP13</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP014.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP014.jpg">
 			 <p>Template SP14</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP015.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP015.jpg">
 			 <p>Template SP15</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP016.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP016.jpg">
 			 <p>Template SP16</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP017.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP017.jpg">
 			 <p>Template SP17</p>
 			</div>
 		
 		<!--<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP018.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP018.jpg">
 			 <p>Template SP18</p>
 			</div>-->
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP019.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP019.jpg">
 			 <p>Template SP19</p>
 			</div>
 			
 		<!--	<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP020.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP020.jpg">
 			 <p>Template SP20</p>
 			</div>-->
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP021.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP021.jpg">
 			 <p>Template SP21</p>
 			</div>
 			
 			<!--<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP022.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP022.jpg">
 			 <p>Template SP22</p>
 			</div>-->
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP023.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP023.jpg">
 			 <p>Template SP23</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP024.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP024.jpg">
 			 <p>Template SP24</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP025.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP025.jpg">
 			 <p>Template SP25</p>
 			</div>
 			
 			<!--<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP026.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP026.jpg">
 			 <p>Template SP26</p>
 			</div>-->
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP027.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP027.jpg">
 			 <p>Template SP27</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP028.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP028.jpg">
 			 <p>Template SP28</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP029.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP029.jpg">
 			 <p>Template SP29</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP030.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP030.jpg">
 			 <p>Template SP30</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP031.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP031.jpg">
 			 <p>Template SP31</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP032.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP032.jpg">
 			 <p>Template SP32</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP033.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP033.jpg">
 			 <p>Template SP33</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP034.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP034.jpg">
 			 <p>Template SP34</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP035.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP035.jpg">
 			 <p>Template SP35</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP036.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP036.jpg">
 			 <p>Template SP36</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP037.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP037.jpg">
 			 <p>Template SP37</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP038.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP038.jpg">
 			 <p>Template SP38</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP039.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP039.jpg">
 			 <p>Template SP39</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP040.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP040.jpg">
 			 <p>Template SP40</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP041.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP041.jpg">
 			 <p>Template SP41</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP042.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP042.jpg">
 			 <p>Template SP42</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP043.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP043.jpg">
 			 <p>Template SP43</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP044.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP044.jpg">
 			 <p>Template SP44</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP045.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP045.jpg">
 			 <p>Template SP45</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP046.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP046.jpg">
 			 <p>Template SP46</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP047.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP047.jpg">
 			 <p>Template SP47</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP048.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP048.jpg">
 			 <p>Template SP48</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP049.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP049.jpg">
 			 <p>Template SP49</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP050.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP050.jpg">
 			 <p>Template SP50</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP051.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP051.jpg">
 			 <p>Template SP51</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP052.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP052.jpg">
 			 <p>Template SP52</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP053.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP053.jpg">
 			 <p>Template SP53</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP054.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP054.jpg">
 			 <p>Template SP54</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP055.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP055.jpg">
 			 <p>Template SP55</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP056.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP056.jpg">
 			 <p>Template SP56</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP057.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP057.jpg">
 			 <p>Template SP57</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP058.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP058.jpg">
 			 <p>Template SP58</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP059.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP059.jpg">
 			 <p>Template SP59</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP060.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP060.jpg">
 			 <p>Template SP60</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP061.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP061.jpg">
 			 <p>Template SP61</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP063.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP063.jpg">
 			 <p>Template SP63</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP064.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP064.jpg">
 			 <p>Template SP64</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP065.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP065.jpg">
 			 <p>Template SP65</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP066.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP066.jpg">
 			 <p>Template SP66</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP067.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP067.jpg">
 			 <p>Template SP67</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP068.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP068.jpg">
 			 <p>Template SP68</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP069.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP069.jpg">
 			 <p>Template SP69</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP070.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP070.jpg">
 			 <p>Template SP70</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP071.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP071.jpg">
 			 <p>Template SP71</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP072.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP072.jpg">
 			 <p>Template SP72</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP073.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP073.jpg">
 			 <p>Template SP73</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP074.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP074.jpg">
 			 <p>Template SP74</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP075.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP075.jpg">
 			 <p>Template SP75</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP077.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP077.jpg">
 			 <p>Template SP77</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP078.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP078.jpg">
 			 <p>Template SP78</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP079.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP079.jpg">
 			 <p>Template SP79</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP081.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP081.jpg">
 			 <p>Template SP58</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP082.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP082.jpg">
 			 <p>Template SP82</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP083.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP083.jpg">
 			 <p>Template SP83</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP084.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP084.jpg">
 			 <p>Template SP84</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP085.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP085.jpg">
 			 <p>Template SP85</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP086.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP086.jpg">
 			 <p>Template SP86</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP087.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP087.jpg">
 			 <p>Template SP87</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP088.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP088.jpg">
 			 <p>Template SP88</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP089.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP089.jpg">
 			 <p>Template SP89</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP090.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP090.jpg">
 			 <p>Template SP90</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP091.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP091.jpg">
 			 <p>Template SP91</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP092.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP092.jpg">
 			 <p>Template SP92</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP093.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP093.jpg">
 			 <p>Template SP93</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP094.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP094.jpg">
 			 <p>Template SP94</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP096.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP096.jpg">
 			 <p>Template SP96</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP097.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP097.jpg">
 			 <p>Template SP97</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP098.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP098.jpg">
 			 <p>Template SP98</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP099.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP099.jpg">
 			 <p>Template SP99</p>
 			</div>
 			<!-- SP100 -->
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP100.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP100.jpg">
 			 <p>Template SP100</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP101.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP101.jpg">
 			 <p>Template SP101</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP102.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP102.jpg">
 			 <p>Template SP102</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP104.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP104.jpg">
 			 <p>Template SP104</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP105.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP105.jpg">
 			 <p>Template SP105</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP106.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP106.jpg">
 			 <p>Template SP106</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP107.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP107.jpg">
 			 <p>Template SP107</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP108.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP108.jpg">
 			 <p>Template SP108</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP111.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP111.jpg">
 			 <p>Template SP111</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP112.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP112.jpg">
 			 <p>Template SP112</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP113.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP113.jpg">
 			 <p>Template SP113</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP114.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP114.jpg">
 			 <p>Template SP114</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP115.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP115.jpg">
 			 <p>Template SP115</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP116.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP116.jpg">
 			 <p>Template SP116</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP117.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP117.jpg">
 			 <p>Template SP117</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP118.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP118.jpg">
 			 <p>Template SP118</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP119.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP119.jpg">
 			 <p>Template SP119</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP120.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP120.jpg">
 			 <p>Template SP120</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP121.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP121.jpg">
 			 <p>Template SP121</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP122.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP122.jpg">
 			 <p>Template SP122</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP123.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP123.jpg">
 			 <p>Template SP123</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP124.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP124.jpg">
 			 <p>Template SP124</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP125.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP125.jpg">
 			 <p>Template SP125</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP126.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP126.jpg">
 			 <p>Template SP126</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP127.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP127.jpg">
 			 <p>Template SP127</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP128.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP128.jpg">
 			 <p>Template SP128</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP129.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP129.jpg">
 			 <p>Template SP129</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP130.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP130.jpg">
 			 <p>Template SP130</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP131.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP131.jpg">
 			 <p>Template SP131</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP132.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP132.jpg">
 			 <p>Template SP132</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP137.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP137.jpg">
 			 <p>Template SP137</p>
 			</div>
 		
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP141.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP141.jpg">
 			 <p>Template SP141</p>
 			</div>
 			
 		<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP144.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP144.jpg">
 			 <p>Template SP144</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP155.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP155.jpg">
 			 <p>Template SP155</p>
 			</div>
 			
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP-168.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP-168.jpg">
 			 <p>SP168</p>
 			</div>
 			 <div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP169_Page_1.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP169_Page_1.jpg">
 			 <p>SP169 - 1</p>
 			</div>
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP169_Page_2.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP169_Page_2.jpg">
 			 <p>SP169 - 2</p>
 			</div>
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP170.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP170.jpg">
 			 <p>SP170</p>
 			</div>
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP171.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP171.jpg">
 			 <p>SP171</p>
 			</div>
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP172.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP172.jpg">
 			 <p>SP172</p>
 			</div>
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP173.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP173.jpg">
 			 <p>SP173</p>
 			</div>
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP174.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP174.jpg">
 			 <p>SP174</p>
 			</div>
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP175.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP175.jpg">
 			 <p>SP175</p>
 			</div>
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP176.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP176.jpg">
 			 <p>SP176</p>
 			</div>
 			<div class="template-box-all">
-			<img src="https://static.augustasportswear.com/marketing/SP177.jpg">
+			<img src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/SP177.jpg">
 			 <p>SP177</p>
 			</div>
 	
   	   
    
 </div>
-
-
 
 
 <script>
@@ -995,15 +1008,6 @@ $(function () {
         $(".show").fadeOut();
     });
     
-});
-
-
-$(document).ready(function() {
-  $('.dec-subnav').hover(function() {
-
-	$('.tech-info').toggleClass('margtop');
-
-  });
 });
 
 </script>

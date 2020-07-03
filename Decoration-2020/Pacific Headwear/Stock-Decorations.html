@@ -13,7 +13,7 @@
 	display: block;
 }
 .dec-header-sect h2 {
-	background-color: rgb(71, 20, 32);
+	background-color: rgb(223,160,26);
 	color: white;
 	text-align: center;
     padding: 15px 0;
@@ -41,8 +41,8 @@
 			left: 0;
 	}
 	.show .img-show{
-			width: 500px;
-			height: 500px;
+			width: 550px;
+			height: 300px;
 			background: #FFF;
 			position: absolute;
 			top: 50%;
@@ -65,41 +65,59 @@
 			left: 0;
 	}
 	
-	
-	.techheader {
-		color: black;
-		text-transform: uppercase;
-		font-size: 55px;
-		font-family: "AvenirNextN";
-		margin: 10px auto;
-		text-align: center;
-		padding: 20px 0;
-		width: 90%;
-	
-	}
-	.tech-info {
-		width: 90%;
-			display: block;
-			margin: auto;
-			color: black;
-	}
-	.tech-info img {
-		width: 32%;
+
+.techheader {
+	color: black;
+	text-transform: uppercase;
+	font-size: 40px;
+	margin: 10px auto;
+	text-align: left;
+
+}
+.tech-info {
+	width: 90%;
+    display: block;
+    margin: auto;
+    color: black;
+}
+.tech-content {
+	display: inline-block;
+	width: 100%;
+	margin-top: 20px;
+	vertical-align: top;
+}
+.tech-content p {
+	font-size: 16px;
+	margin: 20px auto;
+	line-height: 1.4;
+}
+
+.top-text {
+width: 50%;
+display: inline-block;
+vertical-align: top;
+padding-right: 20px;
+}
+	.dec-details {
+		width: 45%;
 		display: inline-block;
-		margin: 0 40px;
-	}
-	.tech-content {
-		display: inline-block;
-		width: 53%;
-		margin-top: 20px;
 		vertical-align: top;
-	}
-	.tech-content p {
 		font-size: 16px;
-		margin: 20px auto;
-		line-height: 1.4;
+		text-align: left;
 	}
-	
+	.dec-details > tbody > tr {
+		height: 50px;
+	}
+	.dec-details > tbody > tr > th {
+		font-family: "AvenirNextB";
+		width: 140px;
+	}
+	.dec-details > tbody > tr > td {
+font-size: 14px;
+line-height: 1.3;
+	}
+
+
 	.pricing {
 		display: block;
 		width: 90%;
@@ -138,36 +156,104 @@
 		text-align: center;
 	}
 	
-	
-	/* templates */
-	.template-wrapper {
-		width: 90%;
-		margin: 70px auto 50px;
+
+	.stock-example {
+		width: 60%;
+		display: block;
+		margin: 10px auto 30px;
 	}
-	.template-box-all {
-		 display: inline-block;
+.order-steps {
+	width: 50%;
+	margin: auto;
+}
+.order-steps p {
+text-align: left;
+}
+
+.template-wrapper p {
+		text-align: center;
+		font-size: 15px;
+	}
+	.template-wrapper p > a {
+		text-decoration: underline;
+		font-size: inherit;
+	}
+.stock-layout-block {
+	display: inline-block;
 		 height: auto;
-		 width: 23%;
-		 background-color: black;
-		 color: white;
-		 margin: 5px;
+		 width: 30%;
+		 min-height: 150px;
+		 margin: 5px 2px;
 		 border: 1px solid black;
-		 overflow: hidden;
-	 }
-	 .template-box-all img {
-		 width: 100%;
-		vertical-align: text-top;
+		 padding: 10px;
+		 vertical-align: top;
+}
+.stock-layout-block img {
+		 display: block;
+		 width: auto;
+		 height: 80px;
+		 margin: auto;
+		vertical-align: top;
 		cursor: pointer;
 			transition: 0.3s;
 	 }
-	 .template-box-all p {
-		 text-transform: uppercase;
-		 margin: 2px auto;
+	 .stock-layout-block p {
 		 text-align: center;
+		 color: darkgrey;
 		 font-size: 12px;
+		 min-height: 30px;
+		 margin-top: 10px;
+		 line-height: 1.3;
 	 }
-	
-	 
+
+	.stock-icon-block {
+		 display: inline-block;
+		 height: auto;
+		 width: 13.4%;
+		 min-height: 145px;
+		 margin: 5px 2px;
+		 border: 1px solid black;
+		 padding: 10px;
+		 vertical-align: top;
+	 }
+	 .stock-icon-block img {
+		 display: block;
+		 width: 100%;
+		 margin: auto;
+		cursor: pointer;
+			transition: 0.3s;
+	 }
+	 .stock-icon-block p {
+		 text-align: center;
+		 color: darkgrey;
+		 font-size: 12px;
+		 min-height: 20px;
+		 margin-top: 15px;
+		 line-height: 1.3;
+	 }
+	 .icon-title {
+		text-align: center;
+    padding: 5px 0;
+    width: 100%;
+    display: block;
+    margin: 0 auto 10px;
+	 }
+
+	 .letters-block {
+		padding: 30px 0;
+    border-bottom: 1px solid;
+    margin: 30px auto;
+	 }
+	 .letters-block h4 {
+		font-size: 18px;
+    margin: 0 auto 14px;
+    text-align: left;
+	 }
+	 .letters-block img {
+    display: block;
+    margin: auto;
+    width: 80%;
+	 }
 	
 	</style>
 	
@@ -177,80 +263,1087 @@
 		
 		
 		<div class="dec-header-sect">
-			<img id="decorheaderimg" src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/ASB_ScreenPrint_Hero_Desktop.jpg" alt="Augusta Sportswear Decoration">
+			<img id="decorheaderimg" src="https://static.augustasportswear.com/marketing/Decoration/Hero-Header-Images/Hero-StockIcons.jpg" alt="Augusta Sportswear Decoration">
 			<h2>Stock Decorations</h2>
 		</div>
 	
 	
 	
+
 		
 		<div class="tech-info">
 			
 			<div class="section-divider"></div>
 	
 	
-			<h3 class="techheader">stock decorations</h3>
-	
-			<img src="https://static.augustasportswear.com/product/222539_aws_640.jpg" alt="">
-	
 			  <div class="tech-content">
 
-<p>Choose from our stock options to start customizing your hat.</p>
+					<div class="top-text">
+						<h3 class="techheader">TRADITIONAL &<br>MODERN.</h3>
+	
+				<p>Stock options make decoration fast and easy. Traditional and modern design templates ready for you to customze.</p>
 
-					<p>Stock Icons features some of the most popular designs and team mascots from across the country. Rep your team by selecting one of these icons for your Stock Layout, or give your cap something extra with an icon in an alternative location.</p>
+				<p>Below you will find templates to choose from with steps for ordering.</p>
 
-					<p><ol>
-					
-						<li>Choose your layout from the options below</li>
+			</div>
 
-						<li>(Optional) Replace design element with a Stock Icon of your choice</li>
-							
-							<li>Personalize with your colors and text</li>
-					</ol></p>
+			
+			<table cellpadding="3" class="dec-details">
+				<tbody>
+					<tr>
+						<th>MOQ:</th>
+						<td>12 Pieces</td>
+					</tr>
+				<tr>
+					<th>Standard Turn:</th>
+					<td>2 Weeks</td>
+				</tr>
+				<tr>
+					<th>Location:</th>
+					<td>Front Panel</td>
+				</tr>
+				<tr>
+					<th>Best For:</th>
+					<td>Quick-turn team caps, booster and fan caps, and caps for your small business</td>
+				</tr>
+				<tr>
+					<th>Sizing:</th>
+					<td>Variable depending on cap style and layout</td>
+				</tr>
+			</tbody>
+			</table>
 
-
-					<p>
-						<b>MOQ:</b> 12 Pieces <br>
-
-						<b>Standard Turn:</b> 2 weeks <br>
-						
-						<b>Location:</b> Front Panel <br>
-						
-						<b>Best For:</b> Quick-turn team caps, booster and fan caps, and caps for your small business
-						<br>
-						<b>Sizing:</b> Variable depending on cap style and layout</p>
-					
-
-				<p>Our stock letters are available in a variety of fonts and arrangements to best represent your team.</p>
-				<p>Choose one, two or three letters and your <a href="custom-embroidery#thread-colors">thread colors</a> to make it your own! </p>
 
 				</div>
 
 
 				<div class="section-divider"></div>
 
+
+
 				<div class="template-wrapper" id="stock-layouts">
 	
 					<h3 class="sub-sect-header">STOCK LAYOUTS</h3>
 
+					<img src="https://static.augustasportswear.com/marketing/Decoration/Decor-Examples/Stock-Layout-Trio.jpg" alt="Stock Decoration Pacific Headwear" class="stock-example">
+
+						<div class="order-steps">
+							<p>1. Choose a layout from below</p>
+							<p>2. (Optional) Replace design element with a Stock Icon of your choice below</p>
+							<p>3. Personalize with your colors and text</p>
+						</div>
+
+
+							<div class="stock-layout-block">
+								<h3>PH-18</h3>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Layouts/PH-18.png" alt="PH-18">
+							<p>Text is 1 color. Banner is 1 color outline with no fill.
+								<br>
+								Not available on visors or 3D.
+							</p>
+											</div>
+
+
+							<div class="stock-layout-block">
+								<h3>PH-12</h3>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Layouts/PH-12.png" alt="PH-12">
+								<p >Text is 1 color. Team letter is 1 or 2 colors.
+									<br>
+								Not available on visors or 3D.
+								</p>
+											</div>
+
+
+							<div class="stock-layout-block">
+								<h3>PH-5</h3>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Layouts/PH-5.png" alt="PH-5">
+													<p>All text is 1 color.
+													<br>
+								Not available on visors or 3D.</p>
+											</div>
+
+
+							<div class="stock-layout-block">
+								<h3>PH-2</h3>
+								<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Layouts/PH-2.png" alt="PH-2">
+													<p>All text is 1 color.
+														<br>
+								Not available on visors or 3D.
+													</p>
+											</div>
+
+
+							<div class="stock-layout-block">
+								<h3>PH-8</h3>
+								<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Layouts/PH-8.png" alt="PH-8">
+													<p>Text is 1 color. Oval is 1 or 2 colors.
+														<br>
+								Not available on visors or 3D.
+													</p>
+											</div>
+
+
+							<div class="stock-layout-block">
+								<h3>PH-4</h3>
+								<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Layouts/PH-4.png" alt="PH-4">
+													<p>Text in tail is 8 letters maximum.
+														<br>
+								Not available on visors or 3D.
+													</p>
+											</div>
+
+
+							<div class="stock-layout-block">
+								<h3>PH-3</h3>
+								<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Layouts/PH-3.png" alt="PH-3">
+													<p>All text is 1 color.
+														<br>
+								Not available on visors or 3D.
+													</p>
+											</div>
+
+
+							<div class="stock-layout-block">
+								<h3>PH-1</h3>
+								<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Layouts/PH-1.png" alt="PH-1">
+													<p>Top text is 10 letters maximum.
+														<br>
+								Not available on visors or 3D.
+													</p>
+											</div>
+
+
+							<div class="stock-layout-block">
+								<h3>PH-28</h3>
+								<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Layouts/ph-28.png" alt="PH-28">
+									<p>Not available on visors or 3D.</p>
+											</div>
+
+
+							<div class="stock-layout-block">
+								<h3>PH-17</h3>
+								<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Layouts/PH-17.png" alt="PH-17">
+													<p>Small text in tail is 1 color.
+														<br>
+								Not available on visors or 3D.
+													</p>
+											</div>
+
+
+							<div class="stock-layout-block">
+								<h3>PH-15</h3>
+								<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Layouts/PH-15.png" alt="PH-15">
+													<p>Main text is 10 letters maximum. Any ball in circle.
+														<br>
+								Not available on visors or 3D.
+													</p>
+											</div>
+
+
+							<div class="stock-layout-block">
+								<h3>PH-13</h3>
+								<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Layouts/Ph-13.png" alt="PH-13">
+													<p>Text is 1 color. Any stock ball with 1 color swoosh.
+														<br>
+								Not available on visors or 3D.
+													</p>
+											</div>
+
+
+							<div class="stock-layout-block">
+								<h3>PH-6</h3>
+								<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Layouts/PH-6.png" alt="PH-6">
+													<p>Text is 10 letters maximum.
+														<br>
+								Not available on visors or 3D.
+													</p>
+											</div>
+
+
+
+
+
+
 					</div>
 
+
 					<div class="section-divider"></div>
+
 
 					<div class="template-wrapper" id="stock-icons">
 	
 						<h3 class="sub-sect-header">STOCK ICONS</h3>
+						<p>Rep your team by selecting one of these icons for your Stock Layout, or give your cap something extra with an icon in an alternative location.</p>
 	
+						<img src="https://static.augustasportswear.com/marketing/Decoration/Decor-Examples/Stock-Icons-Trio.jpg" alt="Stock Decoration Pacific Headwear" class="stock-example">
+
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-058</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-058.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
 						</div>
 
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-059</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-059.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-060</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-060.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">CAN-20</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/CAN-20.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-001</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-001.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-002</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-002.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-003</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-003.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-004</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-004.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-005</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-005.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-007</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-007.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-008</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-008.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-009</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-009.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-010</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-010.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-011</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-011.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-012</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-012.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-014</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-014.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-015</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-015.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-016</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-016.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-019</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-019.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-020</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-020.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-022</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-022.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-023</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-023.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-024</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-024.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-025</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-025.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-026</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-026.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-027</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-027.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-028</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-028.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-029</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-029.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-030</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-030.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-031</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-031.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-032</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-032.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-033</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-033.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-034</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-034.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-035</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-035.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-036</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-036.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-037</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-037.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-038</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-038.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-039</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-039.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-040</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-040.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-041</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-041.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-042</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-042.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-043</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-043.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-044</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-044.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-045</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-045.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-046</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-046.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-047</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-047.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-048</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-048.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-049</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-049.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+						
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-050</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-050.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+						
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-051</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-051.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-052</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-052.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-054</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-054.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-056</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-056.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-057</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-057.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-062</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-062.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-065</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-065.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-066</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-066.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-067</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-067.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-068</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-068.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-071</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-071.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-072</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-072.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-073</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-073.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-074</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-074.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-075</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-075.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-076</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-076.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-078</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-078.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-079</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-079.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-080</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-080.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-081</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-081.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-082</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-082.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-083</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-083.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-084</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-084.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-086</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-086.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-087</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-087.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-088</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-088.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-089</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-089.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-091</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-091.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-092</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-092.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-093</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-093.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-096</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-096.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-097</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-097.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-099</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-099.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-101</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-101.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-104</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-104.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-105</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-105.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-106</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-106.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-107</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-107.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-108</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-108.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-109</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-109.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-110</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-110.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-111</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-111.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-112</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-112.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-113</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-113.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-114</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-114.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-118</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-118.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-119</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-119.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-120</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-120.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-121</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-121.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-122</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-122.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-123</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-123.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-124</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-124.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-125</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-125.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-126</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-126.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-128</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-128.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-129</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-129.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-131</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-131.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-132</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-132.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p></p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-133</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-133.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-134</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-134.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-135</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-135.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-136</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-136.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-137</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-137.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-138</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-138.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-139</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-139.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-140</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-140.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-141</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-141.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-142</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-142.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-143</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-143.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-144</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-144.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+
+						<div class="stock-icon-block">
+							<h4 class="temp-title icon-title">SL-145</h4>
+							<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Icons/SL-145.png" alt="Pacific Headwear Stock Layout & Icons">
+							<p>Some objects can be 3D</p>
+						</div>
+						
+
+						</div>
+
+
+
 						<div class="section-divider"></div>
+
+
 
 						<div class="template-wrapper" id="stock-letters">
 	
 							<h3 class="sub-sect-header">STOCK LETTERS</h3>
+				
+							<p>With a variety of fonts and arrangements, our stock letters can fit any style.</p>
+							<p>Get started by choosing one, two or three letters and your <a href="/custom-embroidery#thread-colors">thread colors</a> to make it your own!</p>
 		
+							<img src="https://static.augustasportswear.com/marketing/Decoration/Decor-Examples/Stock-Letters-Trio.jpg" alt="Stock Decoration Pacific Headwear" class="stock-example">
+
+
+								<div class="stock-letters-wrapper">
+									
+									<div class="letters-block">
+										<h4>ATHLETIC BLOCK</h4>
+									  <img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Letters/Athletic-Block.png" alt="Stock Decoration Pacific Headwear">
+									</div>
+
+									<div class="letters-block">
+										<h4>BOX BLOCK</h4>
+									  <img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Letters/Box-Block.png" alt="Stock Decoration Pacific Headwear">
+									</div>
+
+									<div class="letters-block">
+										<h4>FULL BLOCK</h4>
+									  <img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Letters/Full-Block.png" alt="Stock Decoration Pacific Headwear">
+									</div>
+
+									<div class="letters-block">
+										<h4>GOTHIC BLOCK</h4>
+									  <img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Letters/Gothic-Block.png" alt="Stock Decoration Pacific Headwear">
+									</div>
+
+									<div class="letters-block">
+										<h4>SLAB BLOCK</h4>
+									  <img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Letters/Slab-Block.png" alt="Stock Decoration Pacific Headwear">
+									</div>
+
+									<div class="letters-block">
+										<h4>TIFFANY</h4>
+									  <img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Letters/Tiffany.png" alt="Stock Decoration Pacific Headwear">
+									</div>
+
+									<div class="letters-block">
+										<h4>OLD ENGLISH</h4>
+									  <img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Letters/Old-English.png" alt="Stock Decoration Pacific Headwear">
+									</div>
+
+									<div class="letters-block">
+										<h4>MEDIEVAL</h4>
+									  <img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Letters/Medieval.png" alt="Stock Decoration Pacific Headwear">
+									</div>
+									
+									<div class="letters-block">
+										<h4>MONSTER</h4>
+									  <img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Letters/Monster.png" alt="Stock Decoration Pacific Headwear">
+									</div>
+
+									<div class="letters-block">
+										<h4>REGULAR SCRIPT</h4>
+									  <img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Letters/Regular-Script.png" alt="Stock Decoration Pacific Headwear">
+									</div>
+
+									<div class="letters-block">
+										<h4>BRUSH SCRIPT</h4>
+									  <img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Letters/Brush-Script.png" alt="Stock Decoration Pacific Headwear">
+									</div>
+
+									<div class="letters-block">
+										<h4>LIGHTNING SCRIPT</h4>
+									  <img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Letters/Lightning-Script.png" alt="Stock Decoration Pacific Headwear">
+									</div>
+									
+									
+									<div class="letters-block">
+										<h4>SLANT BLOCK</h4>
+									  <img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Letters/Slant-Block.png" alt="Stock Decoration Pacific Headwear">
+									</div>
+
+									<div class="letters-block">
+										<h4>SHADOW BLOCK</h4>
+									  <img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Letters/Shadow-Block.png" alt="Stock Decoration Pacific Headwear">
+									</div>
+
+									<div class="letters-block">
+										<h4>FLEX</h4>
+									  <img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Letters/Flex.png" alt="Stock Decoration Pacific Headwear">
+									</div>
+									
+									<div class="letters-block">
+										<h4>SPEED</h4>
+									  <img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Letters/Speed.png" alt="Stock Decoration Pacific Headwear">
+									</div>
+
+									<div class="letters-block">
+										<h4>FREEDOM</h4>
+									  <img src="https://static.augustasportswear.com/marketing/Decoration/PH-Stock-Letters/Freedom.png" alt="Stock Decoration Pacific Headwear">
+									</div>
+
+								</div>
+
+
 							</div>
 
 			</div>	
 
 </div>
+
+
+<div class="show">
+  <div class="imgoverlay"></div>
+  <div class="img-show">
+    <span>X</span>
+    <img src="">
+  </div>
+</div>
+
+
+ <script>
+  //Click to englarge template
+  $(function () {
+      "use strict";
+      
+      $(".stock-icon-block img").click(function () {
+          var $src = $(this).attr("src");
+          $(".show").fadeIn();
+          $(".img-show img").attr("src", $src);
+      });
+      
+      $("span, .imgoverlay").click(function () {
+          $(".show").fadeOut();
+      });
+      
+  });
+	</script>

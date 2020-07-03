@@ -1,127 +1,137 @@
 <style>
   b {
-    font-family: "AvenirNextB";
-  }
-  
-  #decorheaderimg {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  /* Show Templates */
-    .show{
-      z-index: 999;
-      display: none;
-      width: 100%;
-      height: 100%;
-      position: fixed;
-      top: 0;
-  }
-  .show .imgoverlay{
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,.66);
-      position: absolute;
-      top: 0;
-      left: 0;
-  }
-  .show .img-show{
-      width: 600px;
-      height: 500px;
-      background: #FFF;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      overflow: hidden
-  }
-  .img-show span{
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      z-index: 99;
-      cursor: pointer;
-  }
-  .img-show img{
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-  }
-  
-  
-  .techheader {
-    color: black;
-    text-transform: uppercase;
-    font-size: 55px;
+	font-family: "AvenirNextB";
+}
+.section-divider {
+	border-bottom: 1px solid black;
+	width: 100%;
+	margin: 40px auto;
+ }
+
+ #decorheaderimg {
+	width: 100%;
+	display: block;
+}
+.dec-header-sect h2 {
+	background-color: rgb(0,67,42);
+	color: white;
+	text-align: center;
+    padding: 15px 0;
+    font-size: 30px;
     font-family: "AvenirNextN";
-    margin: 10px auto;
-    text-align: center;
-    padding: 20px 0;
-    width: 90%;
-  
-  }
-  .tech-info {
-    width: 90%;
-      display: block;
-      margin: auto;
-      color: black;
-  }
-  .tech-info img {
-    width: 32%;
-    display: inline-block;
-    margin: 0 40px;
-  }
-  .tech-content {
-    display: inline-block;
-    width: 53%;
-    margin-top: 20px;
-    vertical-align: top;
-  }
-  .tech-content p {
-    font-size: 16px;
-    margin: 20px auto;
-    line-height: 1.4;
-  }
-  
-  .pricing {
+    width: 100%;
+		text-transform: uppercase;
+}
+
+
+/* Show Templates */
+.show{
+    z-index: 999;
+    display: none;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+}
+.show .imgoverlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.66);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.show .img-show{
+    width: 500px;
+    height: 500px;
+    background: #FFF;
+    position: absolute;
+		top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden
+}
+.img-show span{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    cursor: pointer;
+}
+.img-show img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.techheader {
+	color: black;
+	text-transform: uppercase;
+	font-size: 45px;
+	margin: 10px auto;
+	text-align: center;
+	padding: 20px 0;
+
+}
+.tech-info {
+	width: 90%;
     display: block;
-    width: 90%;
-    margin: 80px auto;
-  }
-  .price-chart {
-    display: inline-block;
-    font-size: 14px;
-    margin: 10px auto;
+    margin: auto;
     color: black;
-    text-align: center;
-    vertical-align: top;
-  }
-  .tablehead {
-    background-color: black;
-    color: white;
-  }
-  .alt-row-1 {
-    background-color: rgba(0,0,0,0.2);
-  }
-  .alt-row-2 {
-    background-color: rgba(0,0,0,0.1);
-  }
-  .pricing p {
-    font-size: 12px;
-      width: 43%;
-      margin: 0 auto 0 20px;
-      display: inline-block;
-  }
-  
-  .sub-sect-header {
-    color: black;
-    text-transform: uppercase;
-    font-size: 20px;
-    margin: 10px auto 20px;
-    text-align: center;
-  }
-  
+}
+.tech-info img {
+	width: 32%;
+	display: inline-block;
+	margin: 0 40px;
+}
+.tech-content {
+	display: block;
+	width: 100%;
+	margin-top: 20px;
+	vertical-align: top;
+}
+.tech-content p {
+	font-size: 16px;
+	margin: 20px auto;
+	line-height: 1.4;
+  text-align: center;
+}
+
+
+.pricing {
+	display: block;
+	width: 90%;
+	margin: 80px auto;
+}
+.price-chart {
+  width: 60%;
+	font-size: 14px;
+	margin: 20px auto;
+	color: black;
+	text-align: center;
+	vertical-align: top;
+  border-bottom: 1px solid rgb(63, 73, 74);
+    border-collapse: collapse;
+}
+.tablehead {
+	background-color: rgb(63, 73, 74);
+	color: white;
+}
+.price-chart > tbody > tr {
+  border-bottom: 1px solid rgba(63, 73, 74, 0.8);
+    border-collapse: collapse;
+}
+
+.sub-sect-header {
+	color: black;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin: 10px auto 20px;
+	text-align: center;
+}
   
   /* templates */
   .template-wrapper {
@@ -131,7 +141,7 @@
   .template-box-all {
      display: inline-block;
      height: auto;
-     width: 32%;
+     width: 31%;
      background-color: black;
      color: white;
      margin: 5px;
@@ -157,258 +167,283 @@
     width: 100%;
     margin: 40px auto;
    }
+
+   #deco-place-guide {
+	color: #50a4d9;
+	font-size: 14px;
+}
+#deco-place-guide:hover {
+	text-decoration: underline;
+}
   
   </style>
 
 
 
-<div class="technique-content">
 
-	<img id="decorheaderimg" src="https://static.augustasportswear.com/marketing/2020-Website/Decoration/ASB_Deco_Hero_Desktop.jpg" alt="Augusta Sportswear Decoration">
+<div class="dec-header-sect">
+  <img id="decorheaderimg" src="https://static.augustasportswear.com/marketing/Decoration/Hero-Header-Images/ASB_Deco_Hero_Desktop_R1.jpg" alt="Augusta Sportswear Decoration - Etching">
+  <h2>MASCOTS</h2>
+</div>
+
+<script>
+  $(document).ready(function() {
+  $('.dec-subnav').hover(function() {
+
+  $('.tech-info').toggleClass('margtop');
+
+  });
+});
+
+</script>
+
+
 
 
 
   <div class="tech-info">
 		
 		<div class="section-divider"></div>
-
-  <h3 class="techheader">Mascots</h3>
+<div class="tech-content">
+  <h3 class="techheader">Mascot Templates</h3>
+<p>Add a mascot to your apparel decoration to enhance your design.</p>
+<p><a id="deco-place-guide" href="https://static.augustasportswear.com/marketing/decoration-guide-standard.pdf" target="_blank">View Decoration Placement Guideline</a></p>
+</div>
 
   <div class="template-wrapper">
-
-    <h3 class="sub-sect-header">TEMPLATES</h3>
   	
    <div class="template-box-all mascot-temps">
-  	<img src="https://static.augustasportswear.com/marketing/Baseball_Templates-Edit.jpg">
+  	<img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Baseball_Templates-Edit.jpg">
   	 <p>Baseball - 1</p>
   	</div>
    <div class="template-box-all mascot-temps">
-  	<img src="https://static.augustasportswear.com/marketing/Baseball_Templates2-Edit.jpg">
+  	<img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Baseball_Templates2-Edit.jpg">
   	 <p>Baseball - 2</p>
   	</div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Basketball_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Basketball_Templates-Edit.jpg">
    <p>Basketball - 1</p>
    </div> 
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Basketball_Templates2-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Basketball_Templates2-Edit.jpg">
    <p>Basketball - 2</p>
    </div> 
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Bears_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Bears_Templates-Edit.jpg">
    <p>Bears</p>
    </div>
    <div class="template-box-all mascot-temps">
-    <img src="https://static.augustasportswear.com/marketing/Beavers_Templates-Edit.jpg">
+    <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Beavers_Templates-Edit.jpg">
    <p>Beavers</p>
    </div> 
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Bees_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Bees_Templates-Edit.jpg">
    <p>Bees</p>
    </div>
    <div class="template-box-all mascot-temps">
-    <img src="https://static.augustasportswear.com/marketing/Bobcats_Wildcats_Templates-Edit.jpg">
+    <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Bobcats_Wildcats_Templates-Edit.jpg">
    <p>Bobcats & Wildcats</p>
    </div> 
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Braves_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Braves_Templates-Edit.jpg">
    <p>Braves</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Bulldogs_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Bulldogs_Templates-Edit.jpg">
    <p>Bulldogs - 1</p>
    </div> 
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Bulldogs_Templates2-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Bulldogs_Templates2-Edit.jpg">
    <p>Bulldogs - 2</p>
    </div> 
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Cardinals_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Cardinals_Templates-Edit.jpg">
    <p>Cardinals</p>
    </div> 
    <div class="template-box-all mascot-temps">
-    <img src="https://static.augustasportswear.com/marketing/Cavaliers_Templates-Edit.jpg">
+    <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Cavaliers_Templates-Edit.jpg">
    <p>Cavaliers</p>
    </div> 
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Cheerleading_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Cheerleading_Templates-Edit.jpg">
    <p>Cheerleading</p>
    </div>
    <div class="template-box-all mascot-temps">
-    <img src="https://static.augustasportswear.com/marketing/Chiefs_Templates-Edit.jpg">
+    <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Chiefs_Templates-Edit.jpg">
    <p>Chiefs</p>
    </div> 
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Cougars_Panthers_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Cougars_Panthers_Templates-Edit.jpg">
    <p>Cougars</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Cowboys_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Cowboys_Templates-Edit.jpg">
    <p>Cowboys</p>
    </div> 
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Devils_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Devils_Templates-Edit.jpg">
    <p>Devils</p>
    </div>
    <div class="template-box-all mascot-temps">
-    <img src="https://static.augustasportswear.com/marketing/Dragons_Templates-Edit.jpg">
+    <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Dragons_Templates-Edit.jpg">
    <p>Dragons</p>
    </div> 
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Eagles_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Eagles_Templates-Edit.jpg">
    <p>Eagles</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Eagles_Templates2-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Eagles_Templates2-Edit.jpg">
    <p>Eagles</p>
    </div>
    <div class="template-box-all mascot-temps">
-    <img src="https://static.augustasportswear.com/marketing/Football_Templates-Edit.jpg">
+    <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Football_Templates-Edit.jpg">
    <p>Football</p>
    </div> 
    <div class="template-box-all mascot-temps">
-    <img src="https://static.augustasportswear.com/marketing/Football_Templates2-Edit.jpg">
+    <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Football_Templates2-Edit.jpg">
    <p>Football</p>
    </div> 
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Frontiersman_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Frontiersman_Templates-Edit.jpg">
    <p>Frontiersman</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Gators_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Gators_Templates-Edit.jpg">
    <p>Gators</p>
    </div> 
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Golf_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Golf_Templates-Edit.jpg">
    <p>Golf</p>
    </div>
    <div class="template-box-all mascot-temps">
-    <img src="https://static.augustasportswear.com/marketing/Hockey_Templates-Edit.jpg">
+    <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Hockey_Templates-Edit.jpg">
    <p>Hockey</p>
    </div> 
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Huskies_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Huskies_Templates-Edit.jpg">
    <p>Huskies</p>
    </div>
    <div class="template-box-all mascot-temps">
-    <img src="https://static.augustasportswear.com/marketing/Jaguars_Templates-Edit.jpg">
+    <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Jaguars_Templates-Edit.jpg">
    <p>Jaguars</p>
    </div> 
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Jets_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Jets_Templates-Edit.jpg">
    <p>Jets</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Knights_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Knights_Templates-Edit.jpg">
    <p>Knights</p>
    </div> 
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Lacrosse_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Lacrosse_Templates-Edit.jpg">
    <p>Lacrosse</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Lions_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Lions_Templates-Edit.jpg">
    <p>Lions</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Misc-Mascots_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Misc-Mascots_Templates-Edit.jpg">
    <p>Miscellaneous Mascots</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Misc-Sport-Object_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Misc-Sport-Object_Templates-Edit.jpg">
    <p>Miscellaneous Sports-Objects</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Mustangs_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Mustangs_Templates-Edit.jpg">
    <p>Mustangs</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Patriots_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Patriots_Templates-Edit.jpg">
    <p>Patriots</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Pawprints_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Pawprints_Templates-Edit.jpg">
    <p>Pawprints</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Pirates_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Pirates_Templates-Edit.jpg">
    <p>Pirates</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Rams_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Rams_Templates-Edit.jpg">
    <p>Rams</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Razorbacks_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Razorbacks_Templates-Edit.jpg">
    <p>Razorbacks</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Rockets_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Rockets_Templates-Edit.jpg">
    <p>Rockets</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/running-mascots_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/running-mascots_Templates-Edit.jpg">
    <p>Running Mascots - 1</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/running-mascots_Templates2-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/running-mascots_Templates2-Edit.jpg">
    <p>Running Mascots - 2</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Sharks_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Sharks_Templates-Edit.jpg">
    <p>Sharks</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Soccer_Templates-Edits.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Soccer_Templates-Edits.jpg">
    <p>Soccer</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Swimming_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Swimming_Templates-Edit.jpg">
    <p>Swimming</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Tennis_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Tennis_Templates-Edit.jpg">
    <p>Tennis</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Tigers_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Tigers_Templates-Edit.jpg">
    <p>Tigers - 1</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Tigers_Templates2-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Tigers_Templates2-Edit.jpg">
    <p>Tigers - 2</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Track-Field_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Track-Field_Templates-Edit.jpg">
    <p>Track & Field</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Trojans_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Trojans_Templates-Edit.jpg">
    <p>Trojans - 1</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Trojans_Templates2-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Trojans_Templates2-Edit.jpg">
    <p>Trojans - 2</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Vikings_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Vikings_Templates-Edit.jpg">
    <p>Vikings</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Volleyball_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Volleyball_Templates-Edit.jpg">
    <p>Volleyball</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Wolves_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Wolves_Templates-Edit.jpg">
    <p>Wolves</p>
    </div>
    <div class="template-box-all mascot-temps">
-   <img src="https://static.augustasportswear.com/marketing/Wrestling_Templates-Edit.jpg">
+   <img src="https://static.augustasportswear.com/marketing/Decoration/Mascots-Logos/Wrestling_Templates-Edit.jpg">
    <p>Wrestling</p>
    </div>
   </div>
 
 </div>
+
   </div>
 
 

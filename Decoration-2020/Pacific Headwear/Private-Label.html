@@ -13,7 +13,7 @@
 	display: block;
 }
 .dec-header-sect h2 {
-	background-color: rgb(71, 20, 32);
+	background-color: black;
 	color: white;
 	text-align: center;
     padding: 15px 0;
@@ -21,85 +21,69 @@
     font-family: "AvenirNextN";
     width: 100%;
 		text-transform: uppercase;
+}
+
+.techheader {
+	color: black;
+	text-transform: uppercase;
+	font-size: 35px;
+	margin: 10px auto;
+	text-align: left;
+	padding: 10px 0;
 
 }
-	/* Show Templates */
-		.show{
-			z-index: 999;
-			display: none;
-			width: 100%;
-			height: 100%;
-			position: fixed;
-			top: 0;
-	}
-	.show .imgoverlay{
-			width: 100%;
-			height: 100%;
-			background: rgba(0,0,0,.66);
-			position: absolute;
-			top: 0;
-			left: 0;
-	}
-	.show .img-show{
-			width: 500px;
-			height: 500px;
-			background: #FFF;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			overflow: hidden
-	}
-	.img-show span{
-			position: absolute;
-			top: 10px;
-			right: 10px;
-			z-index: 99;
-			cursor: pointer;
-	}
-	.img-show img{
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
-	}
-	
-	
-	.techheader {
-		color: black;
-		text-transform: uppercase;
-		font-size: 55px;
-		font-family: "AvenirNextN";
-		margin: 10px auto;
-		text-align: center;
-		padding: 20px 0;
-		width: 90%;
-	
-	}
-	.tech-info {
-		width: 90%;
-			display: block;
-			margin: auto;
-			color: black;
-	}
-	.tech-info img {
-		width: 32%;
+.tech-info {
+	width: 90%;
+    display: block;
+    margin: auto;
+    color: black;
+}
+.tech-content {
+	display: inline-block;
+	width: 100%;
+	margin-top: 20px;
+	vertical-align: top;
+}
+.tech-content p {
+	font-size: 16px;
+	margin: 20px auto;
+	line-height: 1.4;
+}
+
+.top-text {
+width: 50%;
+display: inline-block;
+vertical-align: top;
+padding-right: 20px;
+}
+	.dec-details {
+		width: 45%;
 		display: inline-block;
-		margin: 0 40px;
-	}
-	.tech-content {
-		display: inline-block;
-		width: 53%;
-		margin-top: 20px;
 		vertical-align: top;
-	}
-	.tech-content p {
 		font-size: 16px;
-		margin: 20px auto;
-		line-height: 1.4;
+		text-align: left;
+	}
+	.dec-details > tbody > tr {
+		height: 55px;
+	}
+	.dec-details > tbody > tr > th {
+		font-family: "AvenirNextB";
+		width: 140px;
+	}
+	.dec-details > tbody > tr > td {
+font-size: 14px;
+line-height: 1.3;
+	}
+	.dec-details > tbody > tr > td > a {
+		font-size: inherit;
+		text-decoration: underline;
 	}
 	
+#label-ex {
+	width: 100%;
+	margin: 30px auto 50px;
+}
+
 	.pricing {
 		display: block;
 		width: 90%;
@@ -138,37 +122,6 @@
 		text-align: center;
 	}
 	
-	
-	/* templates */
-	.template-wrapper {
-		width: 90%;
-		margin: 70px auto 50px;
-	}
-	.template-box-all {
-		 display: inline-block;
-		 height: auto;
-		 width: 23%;
-		 background-color: black;
-		 color: white;
-		 margin: 5px;
-		 border: 1px solid black;
-		 overflow: hidden;
-	 }
-	 .template-box-all img {
-		 width: 100%;
-		vertical-align: text-top;
-		cursor: pointer;
-			transition: 0.3s;
-	 }
-	 .template-box-all p {
-		 text-transform: uppercase;
-		 margin: 2px auto;
-		 text-align: center;
-		 font-size: 12px;
-	 }
-	
-	 
-	
 	</style>
 	
 	
@@ -176,39 +129,52 @@
 	 <div class="technique-content">
 	
 		<div class="dec-header-sect">
-			<img id="decorheaderimg" src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/ASB_ScreenPrint_Hero_Desktop.jpg" alt="Augusta Sportswear Decoration">
 			<h2>Private Label</h2>
 		</div>
 	
 	
-	
-		
+
 		<div class="tech-info">
-			
 			<div class="section-divider"></div>
-	
-	
-			<h3 class="techheader">private label</h3>
-	
-			<img src="https://static.augustasportswear.com/product/222539_aws_640.jpg" alt="">
-	
-			  <div class="tech-content">
 
-				<p>Put your brand inside our most popular styles! Our domestic Private Label program offers smoking fast turn times and the lowest minimums around. Pacific Headwear quality with your name on it for a personal touch.</p>
+		<div class="tech-content">
 
-				<p>
-					<b>MOQ:</b> 48 Pieces <br>
+			<div class="top-text">
+			<h3 class="techheader">CUSTOM DETAILS TO ELEVATE YOUR CAPS.</h3>
 
-					<b>Standard Turn:</b> 5 weeks from Final Proof Approval<br>
-					
-					<b>Location:</b> Inside of crown sweatband <br>
-					
-					<b>Sizing:</b> 60mm x 30mm</p>
+			<p>Put your brand inside our most popular styles! Our domestic Private Label program offers smoking fast turn times and the lowest minimums around. Pacific Headwear quality with your name on it for a personal touch.</p>
+			</div>
 
-					<p>Available Cap Styles: <a href="">104C</a>, <a href="">106C</a>, <a href="">108C</a>, <a href="">110C</a>
-					</p>
-					
-				</div>
-			</div>	
+			<table cellpadding="5" class="dec-details">
+				<tbody>
+					<tr>
+						<th>MOQ:</th>
+						<td>48 Pieces</td>
+					</tr>
+				<tr>
+					<th>Standard Turn:</th>
+					<td>5 Weeks from Final Proof Approval</td>
+				</tr>
+				<tr>
+					<th>Location:</th>
+					<td>Inside of crown sweatband</td>
+				</tr>
+				<tr>
+					<th>Sizing:</th>
+					<td>60mm x 30mm</td>
+				</tr>
+				<tr>
+					<th>Available Caps:</th>
+					<td><a href="/pacific-headwear-104c-trucker-snapback-cap">104C</a> | <a href="/pacific-headwear-106c-aggressive-heather-trucker-snapback-cap">106C</a> | <a href="/pacific-headwear-camo-snapback-trucker-cap-108c">108C</a> | <a href="/pacific-headwear-110c-heather-trucker-snapback-cap">110C</a></td>
+				</tr>
+			</tbody>
+			</table>
+
+
+				<img id="label-ex" src="https://static.augustasportswear.com/marketing/Decoration/Decor-Examples/Private-Label-TRIO.jpg" alt="Pacific Headwear Private Label">
+
+			</div>
+	</div>
+
 
 </div>

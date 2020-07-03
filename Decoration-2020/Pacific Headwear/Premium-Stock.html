@@ -1,4 +1,7 @@
 <style>
+i {
+  font-style: italic;
+}
 	b {
 		font-family: "AvenirNextB";
 	}
@@ -13,7 +16,7 @@
 	display: block;
 }
 .dec-header-sect h2 {
-	background-color: rgb(71, 20, 32);
+	background-color: rgb(106,20,39);
 	color: white;
 	text-align: center;
     padding: 15px 0;
@@ -66,108 +69,184 @@
 	}
 	
 	
-	.techheader {
-		color: black;
-		text-transform: uppercase;
-		font-size: 55px;
-		font-family: "AvenirNextN";
-		margin: 10px auto;
-		text-align: center;
-		padding: 20px 0;
-		width: 90%;
-	
-	}
-	.tech-info {
-		width: 90%;
-			display: block;
-			margin: auto;
-			color: black;
-	}
-	.tech-info img {
-		width: 32%;
+.techheader {
+	color: black;
+	text-transform: uppercase;
+	font-size: 45px;
+	margin: 10px auto;
+	text-align: left;
+	padding: 20px 0;
+
+}
+.tech-info {
+	width: 90%;
+    display: block;
+    margin: auto;
+    color: black;
+}
+
+.tech-content {
+	display: inline-block;
+	width: 100%;
+	margin-top: 20px;
+	vertical-align: top;
+}
+.tech-content p {
+	font-size: 16px;
+	margin: 20px auto;
+	line-height: 1.4;
+}
+
+.top-text {
+width: 50%;
+display: inline-block;
+vertical-align: top;
+padding-right: 20px;
+}
+	.dec-details {
+		width: 45%;
 		display: inline-block;
-		margin: 0 40px;
-	}
-	.tech-content {
-		display: inline-block;
-		width: 53%;
-		margin-top: 20px;
 		vertical-align: top;
-	}
-	.tech-content p {
 		font-size: 16px;
-		margin: 20px auto;
-		line-height: 1.4;
+		text-align: left;
 	}
+	.dec-details > tbody > tr {
+		height: 80px;
+	}
+	.dec-details > tbody > tr > th {
+		font-family: 'OctinSportsRg-Regular';
+		width: 40px;
+		font-size: 40px;
+		color: rgb(106,20,39);
+	}
+	.dec-details > tbody > tr > td {
+font-size: 14px;
+line-height: 1.3;
+	}
+	.dec-details > tbody > tr > td > a {
+		font-size: inherit;
+		text-decoration: underline;
+	}
+	.dec-details > tbody > tr > td > a:hover {
+		
+	}
+
+.custemb-ex {
+	margin: 20px auto;
+	width: 100%;
+	display: block;
+}
+
+
+.prem-examples {
+	width: 100%;
+	margin: 20px auto;
+}
+.prem-ex {
+	width: 31%;
+	display: inline-block;
+	margin: 10px auto;
+}
+
+
+.pricing {
+	display: block;
+	width: 90%;
+	margin: 80px auto;
+}
+.price-chart {
+  width: 60%;
+	font-size: 14px;
+	margin: 20px auto;
+	color: black;
+	text-align: center;
+	vertical-align: top;
+  border-bottom: 1px solid rgb(63, 73, 74);
+    border-collapse: collapse;
+}
+.tablehead {
+	background-color: rgb(63, 73, 74);
+	color: white;
+}
+.price-chart > tbody > tr {
+  border-bottom: 1px solid rgba(63, 73, 74, 0.8);
+    border-collapse: collapse;
+}
+
+.sub-sect-header {
+	color: black;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin: 10px auto 20px;
+	text-align: center;
+}
 	
-	.pricing {
-		display: block;
-		width: 90%;
-		margin: 80px auto;
-	}
-	.price-chart {
-		display: inline-block;
-		font-size: 14px;
-		margin: 10px auto;
-		color: black;
-		text-align: center;
-		vertical-align: top;
-	}
-	.tablehead {
-		background-color: black;
-		color: white;
-	}
-	.alt-row-1 {
-		background-color: rgba(0,0,0,0.2);
-	}
-	.alt-row-2 {
-		background-color: rgba(0,0,0,0.1);
-	}
-	.pricing p {
-		font-size: 12px;
-			width: 43%;
-			margin: 0 auto 0 20px;
-			display: inline-block;
-	}
-	
-	.sub-sect-header {
-		color: black;
-		text-transform: uppercase;
-		font-size: 20px;
-		margin: 10px auto 20px;
-		text-align: center;
-	}
-	
-	
+
 	/* templates */
 	.template-wrapper {
 		width: 90%;
 		margin: 70px auto 50px;
 	}
-	.template-box-all {
+	.prem-temp-container {
+		 display: block;
+		 width: 100%;
+		margin: 10px auto;
+		padding: 40px 0;
+		border-bottom: 1px solid black;
+	 }
+	 .temp-title {
+		 color: black;
+		 font-size: 15px;
+		 text-transform: uppercase;
+		 margin: 10px 0;
+	 }
+	 .premlayouts p {
+		text-align: center;
+		color: black;
+		font-size: 14px;
+		margin: 10px auto;
+	}
+	 .prem-temp {
+		 width: 27%;
+		vertical-align: top;
+		display: inline-block;
+		padding: 0 20px 0 0;
+	 }
+	 .temp-replace {
+		width: 65%;
+		vertical-align: top;
+		display: inline-block;
+	 }
+
+	 .prem-icon-container {
 		 display: inline-block;
 		 height: auto;
-		 width: 23%;
-		 background-color: black;
-		 color: white;
-		 margin: 5px;
+		 width: 21.4%;
+		 margin: 5px 2px;
 		 border: 1px solid black;
-		 overflow: hidden;
+		 padding: 10px;
 	 }
-	 .template-box-all img {
+	 .prem-icon-container img {
 		 width: 100%;
 		vertical-align: text-top;
 		cursor: pointer;
 			transition: 0.3s;
 	 }
-	 .template-box-all p {
-		 text-transform: uppercase;
-		 margin: 2px auto;
-		 text-align: center;
-		 font-size: 12px;
+	 .icon-title {
+		text-align: center;
+    padding: 5px 0;
+    width: 100%;
+    display: block;
+    margin: 0 auto 10px;
 	 }
-	
+
+
 	 
+
+	 .tempanchor {
+		 position: relative;
+		 top: -150px;
+	 }
 	
 	</style>
 	
@@ -176,50 +255,528 @@
 	 <div class="technique-content">
 	
 		<div class="dec-header-sect">
-			<img id="decorheaderimg" src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/ASB_ScreenPrint_Hero_Desktop.jpg" alt="Augusta Sportswear Decoration">
+			<img id="decorheaderimg" src="https://static.augustasportswear.com/marketing/Decoration/Hero-Header-Images/ASB_StockLayout_Hero_Desktop.jpg" alt="Augusta Sportswear Decoration">
 			<h2>Premium Stock</h2>
 		</div>
 	
 	
 	
-	
 		
+
 		<div class="tech-info">
 			
 			<div class="section-divider"></div>
 	
-	
-			<h3 class="techheader">premium stock</h3>
-	
-			<img src="https://static.augustasportswear.com/product/222539_aws_640.jpg" alt="">
-	
+
 			  <div class="tech-content">
 
-<p>Premium Stock Layouts are designed for embroidery but are available in any of our decoration styles (Patches, FlexStyle®, etc.). Pricing and turnaround time varies based on decoration style.</p>
+		<div class="top-text">
+					<h3 class="techheader">FAST & EASY ARE TWO OF OUR FAVORITE WORDS.</h3>
 
+			<p>Premium Stock Layouts are designed for embroidery but are available in any of our decoration styles (Patches, FlexStyle®, etc.). Pricing and turnaround time varies based on decoration style.</p>
 
-<p><ol>
-	<li>Choose the layout that best represents your brand or adventure</li>
+			<p style="font-size: 14px;"><i>Not available for Visors or 3D</i></p>
+		</div>
 
-	<li>Click layout image for example</li>
-	
-		<li>[Optional] Replace design element (highlighted pink) with a Premium Stock Icon of your choice.</li>
-	
-			<li>Personalize with your own Text and <a href="/custom-embroidery#thread-colors">Thread Colors</a> or PMS Colors</li>
-	
-				<li>Send us your PREM Number, ICON Number(s), Wording and Colors</li>
-</ol></p>
-
-<p>Not available for Visors or 3D</p>
+			<table cellpadding="5" class="dec-details">
+				<tbody>
+					<tr>
+						<th>1.</th>
+						<td>Choose the layout below that best represents your brand or adventure</td>
+					</tr>
+					<tr>
+						<th>2.</th>
+						<td>[Optional] Replace design element (highlighted pink) with a Premium Stock Icon of your choice. See options below.</td>
+					</tr>
+					<tr>
+						<th>3.</th>
+						<td>Personalize with your own text and <a href="/custom-embroidery#thread-colors">Thread Colors</a> or PMS Colors</td>
+					</tr>
+					<tr>
+						<th>4.</th>
+						<td>Send your PREM number, ICON number(s), wording and colors to <a href="mailto:sales@augustasportswear.com?subject=Premium Stock Order - PH">sales@augustasportswear.com</a></td>
+					</tr>
+			</tbody>
+		</table>
 					
+
+			<div class="prem-examples">
+
+				<img class="prem-ex" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PHTechniques-STOCKLAYOUT-exmples-.jpg" alt="Pacific Headwear Premium Stock Layouts & Icons">
+				<img class="prem-ex" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PHTechniques-STOCKLAYOUT-exmples-2.jpg" alt="Pacific Headwear Premium Stock Layouts & Icons">
+				<img class="prem-ex" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PHTechniques-STOCKLAYOUT-exmples-3.jpg" alt="Pacific Headwear Premium Stock Layouts & Icons">
+
+			</div>
+
 				</div>
 
 				<div class="section-divider"></div>
 
 
-				<div class="template-wrapper">
-	
-					<h3 class="sub-sect-header">TEMPLATES</h3>
+				<div class="template-wrapper premlayouts">
+					<span class="tempanchor" id="prem-layouts"></span>
+					<h3 class="sub-sect-header">PREMIUM STOCK LAYOUT TEMPLATES</h3>
+
+					<div class="prem-temp-container">
+						<h4 class="temp-title">PREM-1</h4>
+						<img class="prem-temp" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_1.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+
+						<img class="temp-replace" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_1_replace.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-temp-container">
+						<h4 class="temp-title">PREM-2</h4>
+						<img class="prem-temp" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_2.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+
+						<img class="temp-replace" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_2_replace.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-temp-container">
+						<h4 class="temp-title">PREM-3</h4>
+						<img class="prem-temp" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_3.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+
+						<img class="temp-replace" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_3_replace.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					
+					<div class="prem-temp-container">
+						<h4 class="temp-title">PREM-4</h4>
+						<img class="prem-temp" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_4.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+
+						<img class="temp-replace" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_4_replace.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-temp-container">
+						<h4 class="temp-title">PREM-5</h4>
+						<img class="prem-temp" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_5.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+
+						<img class="temp-replace" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_5_replace.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-temp-container">
+						<h4 class="temp-title">PREM-6</h4>
+						<img class="prem-temp" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_6.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+
+						<img class="temp-replace" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_6_replace.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-temp-container">
+						<h4 class="temp-title">PREM-7</h4>
+						<img class="prem-temp" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_7.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+
+						<img class="temp-replace" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_7_replace.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					
+					<div class="prem-temp-container">
+						<h4 class="temp-title">PREM-8</h4>
+						<img class="prem-temp" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_8.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+
+						<img class="temp-replace" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_8_replace.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-temp-container">
+						<h4 class="temp-title">PREM-9</h4>
+						<img class="prem-temp" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_9.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+
+						<img class="temp-replace" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_9_replace.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-temp-container">
+						<h4 class="temp-title">PREM-10</h4>
+						<img class="prem-temp" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_10.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+
+						<img class="temp-replace" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_10_replace.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-temp-container">
+						<h4 class="temp-title">PREM-11</h4>
+						<img class="prem-temp" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_11.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+
+						<img class="temp-replace" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_11_replace.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					
+					<div class="prem-temp-container">
+						<h4 class="temp-title">PREM-12</h4>
+						<img class="prem-temp" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_12.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+
+						<img class="temp-replace" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_12_replace.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-temp-container">
+						<h4 class="temp-title">PREM-13</h4>
+						<img class="prem-temp" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_13.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+
+						<img class="temp-replace" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_13_replace.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-temp-container">
+						<h4 class="temp-title">PREM-14</h4>
+						<img class="prem-temp" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_14.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+
+						<img class="temp-replace" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_14_replace.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-temp-container">
+						<h4 class="temp-title">PREM-15</h4>
+						<img class="prem-temp" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_15.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+
+						<img class="temp-replace" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_15_replace.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					
+					<div class="prem-temp-container">
+						<h4 class="temp-title">PREM-16</h4>
+						<img class="prem-temp" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_16.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+
+						<img class="temp-replace" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_16_replace.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-temp-container">
+						<h4 class="temp-title">PREM-17</h4>
+						<img class="prem-temp" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_17.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+
+						<img class="temp-replace" src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Layouts/PREM_17_replace.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+				</div>
+
+
+				<div class="template-wrapper premicons">
+					<span class="tempanchor" id="prem-icons"></span>
+					<h3 class="sub-sect-header">PREMIUM STOCK ICONS</h3>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-1</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-1.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-2</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-2.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-3</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-3.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-4</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-4.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-5</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-5.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-6</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-6.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-7</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-7.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-10</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-10.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-11</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-11.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-12</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-12.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-17</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-17.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-19</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-19.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-20</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-20.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-23</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-23.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-26</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-26.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-27</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-27.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-28</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-28.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-32</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-32.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-34</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-34.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-35</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-35.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-36</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-36.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-37</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-37.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-38</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-38.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-39</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-39.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-40</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-40.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-41</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-41.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-49</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-49.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-52</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-52.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-53</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-53.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-54</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-54.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-55</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-55.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-56</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-56.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-57</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-57.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-58</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-58.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<br><br>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-8</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-8.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-9</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-9.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-13</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-13.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-14</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-14.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-15</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-15.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-16</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-16.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-18</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-18.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-21</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-21.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-22</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-22.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-24</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-24.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-25</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-25.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-29</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-29.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-30</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-30.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-31</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-31.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-33</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-33.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-42</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-42.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-43</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-43.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-44</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-44.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-45</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-45.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-46</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-46.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-47</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-47.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-48</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-48.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-50</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-50.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
+
+					<div class="prem-icon-container">
+						<h4 class="temp-title icon-title">ICON-51</h4>
+						<img src="https://static.augustasportswear.com/marketing/Decoration/PH-Premium-Stock-Icons/ICON-51.png" alt="Pacific Headwear Premium Stock Layout & Icons">
+					</div>
 
 				</div>
 

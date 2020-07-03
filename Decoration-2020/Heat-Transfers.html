@@ -1,129 +1,109 @@
 <!-- Heat Transfers -->
 <style>
-  b {
-    font-family: "AvenirNextB";
-  }
-  
-  #decorheaderimg {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  /* Show Templates */
-    .show{
-      z-index: 999;
-      display: none;
-      width: 100%;
-      height: 100%;
-      position: fixed;
-      top: 0;
-  }
-  .show .imgoverlay{
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,.66);
-      position: absolute;
-      top: 0;
-      left: 0;
-  }
-  .show .img-show{
-      width: 500px;
-      height: 500px;
-      background: #FFF;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      overflow: hidden
-  }
-  .img-show span{
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      z-index: 99;
-      cursor: pointer;
-  }
-  .img-show img{
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-  }
-  
-  
-  .techheader {
-    color: black;
-    text-transform: uppercase;
-    font-size: 55px;
-    font-family: "AvenirNextN";
-    margin: 10px auto;
-    text-align: center;
-    padding: 20px 0;
-    width: 90%;
-  
-  }
-  .tech-info {
-    width: 90%;
-      display: block;
-      margin: auto;
-      color: black;
-  }
-  .tech-info img {
-    width: 32%;
-    display: inline-block;
-    margin: 0 40px;
-  }
-  .tech-content {
-    display: inline-block;
-    width: 53%;
-    margin-top: 20px;
-    vertical-align: top;
-  }
-  .tech-content p {
-    font-size: 16px;
-    margin: 20px auto;
-    line-height: 1.4;
-  }
-  
-  .pricing {
-    display: block;
-    width: 90%;
-    margin: 80px auto;
-  }
-  .price-chart {
-    display: inline-block;
-    font-size: 14px;
-    margin: 10px auto;
-    color: black;
-    text-align: center;
-    vertical-align: top;
-  }
-  .tablehead {
-    background-color: black;
-    color: white;
-  }
-  .alt-row-1 {
-    background-color: rgba(0,0,0,0.2);
-  }
-  .alt-row-2 {
-    background-color: rgba(0,0,0,0.1);
-  }
-  .pricing p {
-    font-size: 12px;
-      width: 43%;
-      margin: 0 auto 0 20px;
-      display: inline-block;
-  }
-  #price-text {
-  font-size: 12px;
-  margin: 10px auto 0 10px;
-    width: 50%;
+ b {
+	font-family: "AvenirNextB";
 }
-#price-text a {
+.section-divider {
+	border-bottom: 1px solid black;
+	width: 100%;
+	margin: 40px auto;
+ }
+
+ #decorheaderimg {
+	width: 100%;
+	display: block;
+}
+.dec-header-sect h2 {
+	background-color: rgb(169,193,223);
+	color: white;
+	text-align: center;
+    padding: 15px 0;
+    font-size: 30px;
+    font-family: "AvenirNextN";
+    width: 100%;
+		text-transform: uppercase;
+}
+
+  
+.tech-info {
+	width: 90%;
+    display: block;
+    margin: auto;
+    color: black;
+}
+.tech-info img {
+	width: 100%;
+	display: block;
+	margin: 40px 0;
+}
+.tech-content {
+	display: inline-block;
+	width: 100%;
+	margin-top: 20px;
+	vertical-align: top;
+}
+.techheader {
+	color: black;
+	text-transform: uppercase;
+	font-size: 35px;
+	margin: 10px auto;
+	text-align: center;
+	padding: 20px 0;
+
+}
+.tech-content p {
+	font-size: 16px;
+	margin: 20px auto;
+  line-height: 1.4;
+  text-align: center;
+}
+  
+ 
+.pricing {
+	display: block;
+	width: 90%;
+	margin: 80px auto;
+}
+.price-chart {
+  width: 650px;
+	font-size: 14px;
+	margin: 20px auto;
+	color: black;
+	text-align: center;
+	vertical-align: top;
+  border-bottom: 1px solid rgb(63, 73, 74);
+    border-collapse: collapse;
+}
+.tablehead {
+	background-color: rgb(63, 73, 74);
+	color: white;
+}
+.price-chart > tbody > tr {
+  border-bottom: 1px solid rgba(63, 73, 74, 0.8);
+    border-collapse: collapse;
+}
+
+.pricing p {
+	font-size: 14px;
+    width: 650px;
+    margin: 5px auto;
+    display: block;
+}
+
+.pricing p > a {
   color: #50a4d9;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 14px;
+  text-align: center;
 }
+#deco-place-guide {
+	color: #50a4d9;
+	font-size: 14px;
+}
+#deco-place-guide:hover {
+	text-decoration: underline;
+}
+
   .sub-sect-header {
     color: black;
     text-transform: uppercase;
@@ -170,23 +150,39 @@
   </style>
   
 
-<div class="technique-content">
-
-	<img id="decorheaderimg" src="https://static.augustasportswear.com/marketing/2020-Website/Decoration/ASB_Deco_Hero_Desktop.jpg" alt="Augusta Sportswear Decoration">
-
+  <div class="dec-header-sect">
+    <img id="decorheaderimg" src="https://static.augustasportswear.com/marketing/Decoration/Hero-Header-Images/ASB_Heat_Hero_Desktop.jpg" alt="Augusta Sportswear Decoration - HEAT TRANSFER">
+    <h2>HEAT TRANSFER</h2>
+  </div>
   
+  <script>
+        
+        
+    $(document).ready(function() {
+    $('.dec-subnav').hover(function() {
+  
+    $('.tech-info').toggleClass('margtop');
+  
+    });
+  });
+  
+  </script>
+
+
+
+
 
   <div class="tech-info">
 
     <div class="section-divider"></div>
-
-    <h3 class="techheader">Premium Heat Transfers</h3>
     
-    <img src="https://static.augustasportswear.com/product/222539_aws_640.jpg" alt="">
-
-
     <div class="tech-content">
-    <p>Decorate team name and numbers using Heat Transfer. Premium Transfers are an upgrade on traditional film that looks and feels like screen print.</p>
+      
+      <h3 class="techheader">Upgrade your uniform with our lightweight and versatile Heat Transfers.</h3>
+      
+      <p>Decorate team name and numbers using Heat Transfer. Premium Transfers are an upgrade on traditional film that looks and feels like screen print.</p>
+
+      <img src="https://static.augustasportswear.com/marketing/Decoration/Decor-Examples/ASB_HeatTransfer-Example.jpg" alt="">
   </div>
 
     <div class="section-divider"></div>
@@ -215,7 +211,7 @@
             <th>12+</th>
             <th style="border-left: 1px solid; border-right: 2px solid;">1000+</th>
             <th style="border-right: 2px solid;">All</th>
-            <th style="border-right: 2px solid;">All</th>
+            <th>All</th>
            </tr>
         <tr class="alt-row-2">
             <th>1-color</th>
@@ -223,7 +219,7 @@
             <td>$8.00</td>
             <td style="border-left: 1px solid; border-right: 2px solid;">Email</td>
             <td style="border-right: 2px solid;">$8.00</td>
-            <td style="border-right: 2px solid;">$6.00</td>
+            <td>$6.00</td>
            </tr>
            <tr class="alt-row-1">
             <th>2-color</th>
@@ -231,25 +227,28 @@
             <td>$14.00</td>
             <td style="border-left: 1px solid; border-right: 2px solid;">Email</td>
             <td style="border-right: 2px solid;">N/A</td>
-            <td style="border-right: 2px solid;">$10.00</td>
+            <td>$10.00</td>
            </tr>
-           <tr class="alt-row-2" style="font-size: 10px;">
-          <td>Each additional color, add $2.00 per piece</td>
-          <td colspan="5">Run size < 12 = $50.00 LTM fee per hit</td>
+           <tr class="alt-row-2" style="font-size: 12px;">
+          <td colspan="6">Each additional color, add $2.00 per piece</td>
           </tr>
           </tbody>
         </table>
            
     
-    <p id="price-text">Recommendation is a screen-printed team name and premium transfer numbers. 
-      <br>Please refer to Screen Print pricing.
-      <br><br>
-      Large Logo (greater than 4x10) - $10.00 addt'l per piece
-  <br><br>
-    Name/Number - Full or Block font
-    <br><br>
-    For logos with 3+ colors, please email <a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a> for a quote
-      </p>
+        <p>12 piece minimum</p>
+        <p>$50.00 less-than-minimum fee per hit</p>
+
+      <p>Large Logo (greater than 4x10) - $10.00 addtional per piece</p>
+    <p>Name/Number - Full or Block font</p>
+    <p>Recommendation is a screen printed team name and premium transfer numbers.
+      <br>Please refer to <a href="screen-print">Screen Print</a> pricing.</p>
+
+    <p>For logos with 3+ colors, please email <a href="mailto:sales@augustasportswear.com">sales@augustasportswear.com</a> for a quote.</p>
+
+    <p><a id="deco-place-guide" href="https://static.augustasportswear.com/marketing/decoration-guide-standard.pdf" target="_blank">View Decoration Placement Guideline</a></p>
+
+
   </div>
 
   </div>

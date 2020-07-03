@@ -1,32 +1,30 @@
 <!-- Appliques -->
 <style>
+b {
+	font-family: "AvenirNextB";
+}
 .section-divider {
 	border-bottom: 1px solid black;
 	width: 100%;
 	margin: 40px auto;
  }
- b {
-	font-family: "AvenirNextB";
-}
 
-
-#decorheaderimg {
+ #decorheaderimg {
 	width: 100%;
-	margin-bottom: 10px;
+	display: block;
 }
-
-
-.techheader {
-	color: black;
-	text-transform: uppercase;
-	font-size: 55px;
-	font-family: "AvenirNextN";
-	margin: 10px auto;
+.dec-header-sect h2 {
+	background-color: #2e2263;
+	color: white;
 	text-align: center;
-	padding: 20px 0;
-	width: 90%;
-
+    padding: 15px 0;
+    font-size: 30px;
+    font-family: "AvenirNextN";
+    width: 100%;
+		text-transform: uppercase;
 }
+
+
 .tech-info {
 	width: 90%;
     display: block;
@@ -40,16 +38,44 @@
 }
 .tech-content {
 	display: inline-block;
-	width: 53%;
+	width: 100%;
 	margin-top: 20px;
-	vertical-align: top;
+  vertical-align: top;
+  text-align: center;
+}
+.techheader {
+	color: black;
+	text-transform: uppercase;
+	font-size: 40px;
+	margin: 10px auto;
+	text-align: center;
+	padding: 20px 0 10px;
+}
+.tech-content h4 {
+	font-size: 18px;
+	margin: 5% auto 20px;
+	line-height: 1.4;
+  font-family: "AvenirNextB";
+  border-top: 1px solid lightgrey;
+    padding-top: 40px;
+}
+.tech-content h4:first-of-type {
+  margin: 20px auto;
+  border: none;
+  padding-top: 0;
 }
 .tech-content p {
 	font-size: 16px;
-	margin: 20px auto;
+	margin: 10px auto;
 	line-height: 1.4;
 }
-
+.tech-content p > a {
+	font-size: inherit;
+  padding: 0 10px;
+}
+.tech-content p > a:first-of-type {
+  padding: 0 10px 0 0px;
+}
 
 
  /* Show Templates */
@@ -94,34 +120,44 @@
     left: 0;
 }
 
+
 .pricing {
 	display: block;
 	width: 90%;
 	margin: 80px auto;
 }
-.price-chart {
-	display: block;
-  width: fit-content;
+  .pricing p {
 	font-size: 14px;
-	margin: 10px auto;
+    width: 600px;
+    margin: 10px auto;
+		display: block;
+
+}
+.price-chart {
+  width: 600px;
+	font-size: 14px;
+	margin: 20px auto;
 	color: black;
 	text-align: center;
+	vertical-align: top;
+  border-bottom: 1px solid rgb(63, 73, 74);
+    border-collapse: collapse;
 }
 .tablehead {
-	background-color: black;
+	background-color: rgb(63, 73, 74);
 	color: white;
 }
-.alt-row-1 {
-	background-color: rgba(0,0,0,0.2);
+.price-chart > tbody > tr {
+  border-bottom: 1px solid rgba(63, 73, 74, 0.8);
+    border-collapse: collapse;
 }
-.alt-row-2 {
-	background-color: rgba(0,0,0,0.1);
+
+#deco-place-guide {
+	color: #50a4d9;
+	font-size: 14px;
 }
-.pricing p {
-	font-size: 12px;
-    width: 43%;
-    margin: 0 auto 0 20px;
-    display: inline-block;
+#deco-place-guide:hover {
+	text-decoration: underline;
 }
 
 .sub-sect-header {
@@ -132,6 +168,48 @@
 	text-align: center;
 }
 
+
+/* Show Templates */
+.show{
+    z-index: 999;
+    display: none;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+}
+.show .imgoverlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.66);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.show .img-show{
+    width: 500px;
+    height: 500px;
+    background: #FFF;
+    position: absolute;
+		top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden
+}
+.img-show span{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    cursor: pointer;
+}
+.img-show img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 /* templates */
 .template-wrapper {
 	width: 90%;
@@ -167,29 +245,44 @@
  	margin: 5px 0;
  }
  .patt-app-box {
- 	width: 46%;
+ 	width: 42%;
  	height:100%;
- 	float: left;
- 	background-color: white;
+   background-color: white;
+   display: inline-block;
+   vertical-align: middle;
+   margin-right: 20px;
  }
  .patt-app-box img {
- 	min-height: 200px;
+   width: 100%;
  }
 .patt-app-text {
  	text-align: left;
- 	font-size: 11px;
  	text-transform: uppercase;
+   color: black;
+   width: 50%;
+   display: inline-block;
+   vertical-align: middle;
+ }
+ .patt-app-text p {
+   font-size: 14px;
  }
 
- /* Twill Colors */
-.twill-colors {
-      margin: auto;	 
-      display: table;
-	}	
-.twill-color-block {
-	 margin: 2px;
-	 width: 80px;
-	 height: 40px;
+ .colors-wrapper {
+  width: 47%;
+  display: inline-block;
+  padding: 0 10px;
+  vertical-align: top;
+ }
+.colors-wrapper h4 {
+  text-transform: uppercase;
+  font-size: 15px;
+  margin: 10px auto;
+  text-align: center;
+}
+.color-block {
+	 margin: 4px 2px;
+	 width: 90px;
+	 height: 50px;
 	 border: 1px solid black;
 	 text-align: center;
 	 color: white;
@@ -197,34 +290,20 @@
    display: inline-block;
    vertical-align: top;
 	}
-.twill-color-block p {
-  position: relative;
-    top: 20%;
-    margin: auto;
-    font-size: 11px;
-    line-height: 10px;
+
+.color-block p {
+    margin: 4px auto 0;
+    font-size: 12px;
+    line-height: 14px;
     vertical-align: middle;
     display: inline-block;
-    height: 30px;
+    height: 40px;
 	}
+
  #c6, #c9, #c10, #c11, #c16, #c21, #c23, #c24, #c25 {
  	color: black;
  }
 
- /* Jersey Colors */
-.jersey-colors {
-  display: inline-block;
-	}	
-.jersey-color-block {
-	 margin: 2px;
-	 width: 80px;
-	 height: 40px;
-	 border: 1px solid black;
-	 text-align: center;
-	 color: white;
-	 font-size: 10px;
-   display: inline-block;
-	}
 .jersey-color-block p {
   position: relative;
     top: 20%;
@@ -240,96 +319,117 @@
  }
 </style>
 
-
-<div class="technique-content" id="applique">
  
-  <img id="decorheaderimg" src="https://static.augustasportswear.com/marketing/2020-Website/Decoration/ASB_Deco_Hero_Desktop.jpg" alt="Augusta Sportswear Decoration">
+	<div class="dec-header-sect">
+    <img id="decorheaderimg" src="https://static.augustasportswear.com/marketing/Decoration/Hero-Header-Images/ASB_Applique_Hero_Desktop.jpg" alt="Augusta Sportswear Decoration - Applique">
+		<h2>Traditional, Reverse Laser and Jersey Appliqué</h2>
+  </div>
+  
+	<script>
+        
+        
+		$(document).ready(function() {
+		$('.dec-subnav').hover(function() {
+	
+		$('.tech-info').toggleClass('margtop');
+	
+		});
+	});
+
+	</script>
+
 
 
 
   <div class="tech-info">
 		
 		<div class="section-divider"></div>
-
-
-
-  <h3 class="techheader">Traditional, Reverse Laser and Jersey Appliqué</h3>
   
-  <img src="https://static.augustasportswear.com/product/222539_aws_640.jpg" alt="">
+    <h3 class="techheader">Classic or vintage style, appliqué is perfect for any design.</h3>
   
-  <div class="tech-content">
+    <div class="tech-content">
     
-    <p><a href="#tradition-app"><b>Traditional:</b></a></p>
+    <h4>Traditional Appliqué:</h4>
 
-    <p>Achieve virtually any look with your apparel. Our fantastic Full-Size Appliqué on the front or back of a garment creates a substantial, collegiate look.</p>
-    <p><a href="#app-patterns"><b>View patterns for traditional.</b></a></p>
-    <p><a href="#subl-images"><b>View sublimated images for traditional.</b></a></p>
+    <p>Achieve virtually any look with your apparel.<br>Our fantastic Full-Size Appliqué on the front or back of a garment creates a substantial, collegiate look.</p>
+    
+    <p><a href="#tradition-app" style="color:#50a4d9;">View templates</a> | <a href="#app-patterns" style="color:#50a4d9;">View patterns</a> | <a href="#subl-images" style="color:#50a4d9;">View sublimated images</a></p>
 
-    <p><a href="#rev-laser"><b>Reverse Laser and Jersey:</b></a></p>
+    <h4>Reverse Laser and Jersey Appliqué:</h4>
     
     <p>Want to create that vintage look? Utilize our stock designs and our Jersey Appliqué process or add real dimension with our Reverse Laser Appliqué technique. For even more dimension, consider adding an Etch design behind your Laser Appliqué. Cutting-edge technology at its best.</p>
 
-    <p><a href="#pattern-app"><b>Patterned:</b></a></p>
+    <p><a href="#rev-laser" style="color:#50a4d9;">View templates</a></p>
 
-    
+    <h4>Patterned Appliqué:</h4>
+    <p>Elevate your design with 1-color patterned appliqué.<br>Choose from digital camo, space dye and maze mesh to add a unique feature to your design.</p>
 
-   
+    <p><a href="#pattern-app" style="color:#50a4d9;">View templates</a></p>
 
-
-	<div class="twill-colors">
-	<p>Twill Colors</p>	
-		<div class="twill-color-block" id="c1" style="background-color:rgb(18,21,21)"><p>BLACK</p></div>
-		<div class="twill-color-block" id="c2" style="background-color: rgb(73,56,51)"><p>BROWN</p></div>
-		<div class="twill-color-block" id="c3" style="background-color: rgb(119,49,62)"><p>CARDINAL</p></div>
-		<div class="twill-color-block" id="c4" style="background-color: rgb(123,158,209)"><p>COLUMBIA</p></div>
-		<div class="twill-color-block" id="c5" style="background-color: rgb(48,89,72)"><p>DARK GREEN</p></div>
-		<div class="twill-color-block" id="c6" style="background-color: rgb(178,183,182)"><p>GRAY</p></div>
-		<div class="twill-color-block" id="c7" style="background-color: rgb(201,71,137)"><p>GREEK PINK</p></div>
-		<div class="twill-color-block" id="c8" style="background-color: rgb(48,130,77)"><p>KELLY</p></div>
-		<div class="twill-color-block" id="c9" style="background-color: rgb(242,194,46)"><p>LIGHT GOLD</p></div>
-		<div class="twill-color-block" id="c10" style="background-color: rgb(163,199,74)"><p>LIME</p></div>
-		<div class="twill-color-block" id="c11" style="background-color: rgb(255,233,42)"><p>MAIZE</p></div>
-		<div class="twill-color-block" id="c12" style="background-color: rgb(80,52,64)"><p>MAROON</p></div>
-		<div class="twill-color-block" id="c13" style="background-color: rgb(38,53,77)"><p>NAVY</p></div>
-		<div class="twill-color-block" id="c14" style="background-color: rgb(173,140,62)"><p>OLD GOLD</p></div>
-		<div class="twill-color-block" id="c15" style="background-color: rgb(205,72,40)"><p>ORANGE</p></div>
-		<div class="twill-color-block" id="c16" style="background-color: rgb(243,215,222)"><p>PINK</p></div>
-		<div class="twill-color-block" id="c17" style="background-color: rgb(63,56,139)"><p>PURPLE</p></div>
-		<div class="twill-color-block" id="c18" style="background-color: rgb(155,36,53)"><p>RED</p></div>
-		<div class="twill-color-block" id="c19" style="background-color: rgb(48,88,150)"><p>ROYAL</p></div>
-		<div class="twill-color-block" id="c20" style="background-color: rgb(77,148,153)"><p>SHARK TEAL</p></div>
-		<div class="twill-color-block" id="c21" style="background-color: rgb(224,145,46)"><p>TENNESSEE ORANGE</p></div>
-		<div class="twill-color-block" id="c22" style="background-color: rgb(164,89,43)"><p>TEXAS ORANGE</p></div>
-		<div class="twill-color-block" id="c23" style="background-color: rgb(243,175,47)"><p>VARSITY BRIGHT GOLD</p></div>
-		<div class="twill-color-block" id="c24" style="background-color: rgb(223,202,139)"><p>VEGAS GOLD</p></div>
-		<div class="twill-color-block" id="c25" style="background-color: rgb(255,255,255)"><p>WHITE</p></div>
-	</div>
-	<div class="jersey-colors">	
-	<p>Jersey Colors</p>
-		<div class="jersey-color-block" id="j1" style="background-color: rgb(227,227,229)"><p>ASH HEATHER</p></div>
-		<div class="jersey-color-block" id="j2" style="background-color: rgb(178,181,183)"><p>ATHLETIC HEATHER</p></div>
-		<div class="jersey-color-block" id="j3" style="background-color: rgb(32,35,36)"><p>BLACK</p></div>
-		<div class="jersey-color-block" id="j4" style="background-color: rgb(45,77,66)"><p>DARK GREEN</p></div>
-		<div class="jersey-color-block" id="j5" style="background-color: rgb(231,167,49)"><p>GOLD</p></div>
-		<div class="jersey-color-block" id="j6" style="background-color: rgb(48,122,82)"><p>KELLY</p></div>	
-		<div class="jersey-color-block" id="j7" style="background-color: rgb(168,200,226)"><p>LIGHT BLUE</p></div>
-		<div class="jersey-color-block" id="j8" style="background-color: rgb(101,47,59)"><p>MAROON</p></div>
-		<div class="jersey-color-block" id="j9" style="background-color: rgb(35,53,81)"><p>NAVY</p></div>
-		<div class="jersey-color-block" id="j10" style="background-color: rgb(205,71,41)"><p>ORANGE</p></div>
-		<div class="jersey-color-block" id="j11" style="background-color: rgb(240,209,218)"><p>PINK</p></div>
-		<div class="jersey-color-block" id="j12" style="background-color: rgb(86,66,128)"><p>PURPLE</p></div>
-		<div class="jersey-color-block" id="j13" style="background-color: rgb(185,34,45)"><p>RED</p></div>
-		<div class="jersey-color-block" id="j14" style="background-color: rgb(60,95,149)"><p>ROYAL</p></div>
-		<div class="jersey-color-block" id="j15" style="background-color: rgb(198,198,197)"><p>SILVER</p></div>
-		<div class="jersey-color-block" id="j16" style="background-color: rgb(88,151,154)"><p>TEAL</p></div>
-		<div class="jersey-color-block" id="j17" style="background-color: rgb(255,255,255)"><p>WHITE</p></div>
-    <p>Note: Jersey colors are not dye matched to one another and may have variance in shades and, therefore, may not match garment trim or specific PMS school colors.</p>
-	</div>
+  
 </div>
 
 
 <div class="section-divider"></div>
 
+<div class="app-colors">
+  <h3 class="sub-sect-header">COLOR OPTIONS</h3>
+
+<div class="twill-colors colors-wrapper">
+	<h4>Twill Colors</h4>	
+		<div class="twill-color-block color-block" id="c1" style="background-color:rgb(18,21,21)"><p>BLACK</p></div>
+		<div class="twill-color-block color-block" id="c2" style="background-color: rgb(73,56,51)"><p>BROWN</p></div>
+		<div class="twill-color-block color-block" id="c3" style="background-color: rgb(119,49,62)"><p>CARDINAL</p></div>
+		<div class="twill-color-block color-block" id="c4" style="background-color: rgb(123,158,209)"><p>COLUMBIA</p></div>
+		<div class="twill-color-block color-block" id="c5" style="background-color: rgb(48,89,72)"><p>DARK GREEN</p></div>
+		<div class="twill-color-block color-block" id="c6" style="background-color: rgb(178,183,182)"><p>GRAY</p></div>
+		<div class="twill-color-block color-block" id="c7" style="background-color: rgb(201,71,137)"><p>GREEK PINK</p></div>
+		<div class="twill-color-block color-block" id="c8" style="background-color: rgb(48,130,77)"><p>KELLY</p></div>
+		<div class="twill-color-block color-block" id="c9" style="background-color: rgb(242,194,46)"><p>LIGHT GOLD</p></div>
+		<div class="twill-color-block color-block" id="c10" style="background-color: rgb(163,199,74)"><p>LIME</p></div>
+		<div class="twill-color-block color-block" id="c11" style="background-color: rgb(255,233,42)"><p>MAIZE</p></div>
+		<div class="twill-color-block color-block" id="c12" style="background-color: rgb(80,52,64)"><p>MAROON</p></div>
+		<div class="twill-color-block color-block" id="c13" style="background-color: rgb(38,53,77)"><p>NAVY</p></div>
+		<div class="twill-color-block color-block" id="c14" style="background-color: rgb(173,140,62)"><p>OLD GOLD</p></div>
+		<div class="twill-color-block color-block" id="c15" style="background-color: rgb(205,72,40)"><p>ORANGE</p></div>
+		<div class="twill-color-block color-block" id="c16" style="background-color: rgb(243,215,222)"><p>PINK</p></div>
+		<div class="twill-color-block color-block" id="c17" style="background-color: rgb(63,56,139)"><p>PURPLE</p></div>
+		<div class="twill-color-block color-block" id="c18" style="background-color: rgb(155,36,53)"><p>RED</p></div>
+		<div class="twill-color-block color-block" id="c19" style="background-color: rgb(48,88,150)"><p>ROYAL</p></div>
+		<div class="twill-color-block color-block" id="c20" style="background-color: rgb(77,148,153)"><p>SHARK TEAL</p></div>
+		<div class="twill-color-block color-block" id="c21" style="background-color: rgb(224,145,46)"><p>TENNESSEE ORANGE</p></div>
+		<div class="twill-color-block color-block" id="c22" style="background-color: rgb(164,89,43)"><p>TEXAS ORANGE</p></div>
+		<div class="twill-color-block color-block" id="c23" style="background-color: rgb(243,175,47)"><p>VARSITY BRIGHT GOLD</p></div>
+		<div class="twill-color-block color-block" id="c24" style="background-color: rgb(223,202,139)"><p>VEGAS GOLD</p></div>
+		<div class="twill-color-block color-block" id="c25" style="background-color: rgb(255,255,255)"><p>WHITE</p></div>
+  </div>
+  
+
+	<div class="jersey-colors colors-wrapper">	
+	<h4>Jersey Colors</h4>
+		<div class="jersey-color-block color-block" id="j1" style="background-color: rgb(227,227,229)"><p>ASH HEATHER</p></div>
+		<div class="jersey-color-block color-block" id="j2" style="background-color: rgb(178,181,183)"><p>ATHLETIC HEATHER</p></div>
+		<div class="jersey-color-block color-block" id="j3" style="background-color: rgb(32,35,36)"><p>BLACK</p></div>
+		<div class="jersey-color-block color-block" id="j4" style="background-color: rgb(45,77,66)"><p>DARK GREEN</p></div>
+		<div class="jersey-color-block color-block" id="j5" style="background-color: rgb(231,167,49)"><p>GOLD</p></div>
+		<div class="jersey-color-block color-block" id="j6" style="background-color: rgb(48,122,82)"><p>KELLY</p></div>	
+		<div class="jersey-color-block color-block" id="j7" style="background-color: rgb(168,200,226)"><p>LIGHT BLUE</p></div>
+		<div class="jersey-color-block color-block" id="j8" style="background-color: rgb(101,47,59)"><p>MAROON</p></div>
+		<div class="jersey-color-block color-block" id="j9" style="background-color: rgb(35,53,81)"><p>NAVY</p></div>
+		<div class="jersey-color-block color-block" id="j10" style="background-color: rgb(205,71,41)"><p>ORANGE</p></div>
+		<div class="jersey-color-block color-block" id="j11" style="background-color: rgb(240,209,218)"><p>PINK</p></div>
+		<div class="jersey-color-block color-block" id="j12" style="background-color: rgb(86,66,128)"><p>PURPLE</p></div>
+		<div class="jersey-color-block color-block" id="j13" style="background-color: rgb(185,34,45)"><p>RED</p></div>
+		<div class="jersey-color-block color-block" id="j14" style="background-color: rgb(60,95,149)"><p>ROYAL</p></div>
+		<div class="jersey-color-block color-block" id="j15" style="background-color: rgb(198,198,197)"><p>SILVER</p></div>
+		<div class="jersey-color-block color-block" id="j16" style="background-color: rgb(88,151,154)"><p>TEAL</p></div>
+		<div class="jersey-color-block color-block" id="j17" style="background-color: rgb(255,255,255)"><p>WHITE</p></div>
+    <p style="margin-top:10px; line-height: 1.3;">Note: Jersey colors are not dye matched to one another and may have variance in shades and, therefore, may not match garment trim or specific PMS school colors.</p>
+	</div>
+
+</div>
+
+  <div class="section-divider"></div>
 
 <div class="pricing"> 
 
@@ -353,8 +453,8 @@
           <tr class="alt-row-2">
             <td colspan="4">Maximum of 12 letters in the main word, including spaces</td>
             </tr>
-             <tr class="alt-row-1">
-            <td colspan="4"><b>Appliqué Add-ons:</b></td>
+             <tr class="tablehead">
+            <td colspan="4">Appliqué Add-ons:</td>
             </tr>
          <tr class="alt-row-2">
             <td colspan="2">Screen Print Pattern</td>
@@ -374,22 +474,17 @@
             </tr>
             <tr class="alt-row-2">
             <td colspan="4">
-            Additional embroidery to Appliqué is <br>$0.50 per 1,000 stitches
+            Additional embroidery to Appliqué is $0.50 per 1,000 stitches
             </td>
             </tr>
-            <tr class="alt-row-2">
-            <td colspan="4">
-            Custom Appliqué: Call for quote. <br>12 piece minimum for each design
-            </td>
-            </tr>
-            
-            <th class="tablehead" colspan="5">Upcharge for less than minimum orders</th>
-          </tr>
-          <tr class="alt-row-1">
-           <td colspan="5">$50.00</td>
-          </tr>
          </tbody>
        </table>
+
+
+       <p>12 piece minimum</p>
+       <p>$50.00 upcharge for less than minimum orders</p>
+       <p>Custom Appliqué: Call for quote. 12 piece minimum for each design</p>
+       <p><a id="deco-place-guide" href="https://static.augustasportswear.com/marketing/decoration-guide-standard.pdf" target="_blank">View Decoration Placement Guideline</a></p>
  </div>
 
  <div class="section-divider"></div>
@@ -412,249 +507,249 @@
       <h3 class="sub-sect-header">Traditional Appliqué Templates</h3>
       
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW006.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW006.jpg">
          <p>Template TW6</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW009.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW009.jpg">
          <p>Template TW9</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW010.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW010.jpg">
          <p>Template TW10</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW011.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW011.jpg">
          <p>Template TW11</p>
         </div>
         
       <!--	<div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW015.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW015.jpg">
          <p>Template TW15</p>
         </div>-->
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW018.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW018.jpg">
          <p>Template TW18</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW020.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW020.jpg">
          <p>Template TW20</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW021.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW021.jpg">
          <p>Template TW21</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW022.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW022.jpg">
          <p>Template TW22</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW023.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW023.jpg">
          <p>Template TW23</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW024.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW024.jpg">
          <p>Template TW24</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW025.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW025.jpg">
          <p>Template TW25</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW026.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW026.jpg">
          <p>Template TW26</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW027.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW027.jpg">
          <p>Template TW27</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW028A.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW028A.jpg">
          <p>Template TW28A</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW028B.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW028B.jpg">
          <p>Template TW28B</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW029.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW029.jpg">
          <p>Template TW29</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW030.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW030.jpg">
          <p>Template TW30</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW032.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW032.jpg">
          <p>Template TW32</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW033.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW033.jpg">
          <p>Template TW33</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW034.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW034.jpg">
          <p>Template TW34</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW035.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW035.jpg">
          <p>Template TW35</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW037.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW037.jpg">
          <p>Template TW37</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW038">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW038.jpg">
          <p>Template TW38</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW039.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW039.jpg">
          <p>Template TW39</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW040.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW040.jpg">
          <p>Template TW40</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW041.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW041.jpg">
          <p>Template TW41</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW042.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW042.jpg">
          <p>Template TW42</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW043.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW043.jpg">
          <p>Template TW43</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW044.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW044.jpg">
          <p>Template TW44</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW045.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW045.jpg">
          <p>Template TW45</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW046.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW046.jpg">
          <p>Template TW46</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW047.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW047.jpg">
          <p>Template TW47</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW048.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW048.jpg">
          <p>Template TW48</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW049.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW049.jpg">
          <p>Template TW49</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW050.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW050.jpg">
          <p>Template TW50</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW051.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW051.jpg">
          <p>Template TW51</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW052.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW052.jpg">
          <p>Template TW52</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW053.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW053.jpg">
          <p>Template TW53</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW054.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW054.jpg">
          <p>Template TW54</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW056.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW056.jpg">
          <p>Template TW56</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW057.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW057.jpg">
          <p>Template TW57</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW058.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW058.jpg">
          <p>Template TW58</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW066.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW066.jpg">
          <p>Template TW66</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW068.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW068.jpg">
          <p>Template TW68</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW069.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW069.jpg">
          <p>Template TW69</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW_77.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW_77.jpg">
          <p>TW77</p>
         </div>  
          <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW78.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW78.jpg">
          <p>TW78</p>
         </div>  
          <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW79.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW79.jpg">
          <p>TW79</p>
         </div>  
          <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/TW80.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW80.jpg">
          <p>TW80</p>
         </div>
            
@@ -666,27 +761,27 @@
       <h3 class="sub-sect-header">Traditional Appliqué Pattern Templates</h3>
       
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/ST001-Pawprint.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/ST001-Pawprint.jpg">
          <p>Template Pawprint</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/ST002-Diamond_Plate.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/ST002-Diamond_Plate.jpg">
          <p>Template Diamond Plate</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/ST003-Tiger_Stripe.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/ST003-Tiger_Stripe.jpg">
          <p>Template Tiger Stripe</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/ST004-Crackle.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/ST004-Crackle.jpg">
          <p>Template Crackle</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/ST005-Net.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/ST005-Net.jpg">
          <p>Template Net</p>
         </div>
         
@@ -699,277 +794,277 @@
       <h3 class="sub-sect-header">Traditional Appliqué Sublimation Image Templates</h3>
       
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM001.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM001.jpg">
          <p>Template SM1</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM002.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM002.jpg">
          <p>Template SM2</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM003.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM003.jpg">
          <p>Template SM3</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM004.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM004.jpg">
          <p>Template SM4</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM005.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM005.jpg">
          <p>Template SM5</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM006.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM006.jpg">
          <p>Template SM6</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM007.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM007.jpg">
          <p>Template SM7</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM008.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM008.jpg">
          <p>Template SM8</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM009.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM009.jpg">
          <p>Template SM9</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM010.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM010.jpg">
          <p>Template SM10</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM011.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM011.jpg">
          <p>Template SM11</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM012.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM012.jpg">
          <p>Template SM12</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM013.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM013.jpg">
          <p>Template SM13</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM014.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM014.jpg">
          <p>Template SM14</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM015.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM015.jpg">
          <p>Template SM15</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM016.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM016.jpg">
          <p>Template SM16</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM017.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM017.jpg">
          <p>Template SM17</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM018.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM018.jpg">
          <p>Template SM18</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM019.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM019.jpg">
          <p>Template SM19</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM020.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM020.jpg">
          <p>Template SM20</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM021.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM021.jpg">
          <p>Template SM21</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM022.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM022.jpg">
          <p>Template SM22</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM023.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM023.jpg">
          <p>Template SM23</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM024.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM024.jpg">
          <p>Template SM24</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM025.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM025.jpg">
          <p>Template SM25</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM026.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM026.jpg">
          <p>Template SM26</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM027.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM027.jpg">
          <p>Template SM27</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM028.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM028.jpg">
          <p>Template SM28</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM029.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM029.jpg">
          <p>Template SM29</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM030.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM030.jpg">
          <p>Template SM30</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM031.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM031.jpg">
          <p>Template SM31</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM032.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM032.jpg">
          <p>Template SM32</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SM033.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SM033.jpg">
          <p>Template SM33</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SN001.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SN001.jpg">
          <p>Template SN1</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SN002.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SN002.jpg">
          <p>Template SN2</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SN003.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SN003.jpg">
          <p>Template SN3</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SN004.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SN004.jpg">
          <p>Template SN4</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SN005.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SN005.jpg">
          <p>Template SN5</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SN006.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SN006.jpg">
          <p>Template SN6</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SN007.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SN007.jpg">
          <p>Template SN7</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SN008.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SN008.jpg">
          <p>Template SN8</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SN009.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SN009.jpg">
          <p>Template SN9</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SN010.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SN010.jpg">
          <p>Template SN10</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SN011.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SN011.jpg">
          <p>Template SN11</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SN012.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SN012.jpg">
          <p>Template SN12</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SN013.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SN013.jpg">
          <p>Template SN13</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SS001.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SS001.jpg">
          <p>Template SS1</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SS002.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SS002.jpg">
          <p>Template SS2</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SS003.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SS003.jpg">
          <p>Template SS3</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SS004.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SS004.jpg">
          <p>Template SS4</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SS005.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SS005.jpg">
          <p>Template SS5</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SS006.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SS006.jpg">
          <p>Template SS6</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SS007.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SS007.jpg">
          <p>Template SS7</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SS008.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SS008.jpg">
          <p>Template SS8</p>
         </div>
         
         <div class="template-box-all">
-        <img src="https://static.augustasportswear.com/marketing/SS009.jpg">
+        <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/SS009.jpg">
          <p>Template SS9</p>
         </div>
            
@@ -979,89 +1074,92 @@
   <div class="template-wrapper" id="rev-laser"> 
         <h3 class="sub-sect-header">Reverse Laser and Jersey Appliqué Templates</h3>
 
+
+
         <div class="template-box-all">
-          <img src="https://static.augustasportswear.com/marketing/RLB1.jpg">
+          <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/RLB1.jpg">
            <p>RLB1</p>
           </div>
 
         <div class="template-box-all">
-          <img src="https://static.augustasportswear.com/marketing/RLB002.jpg">
+          <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/RLB002.jpg">
           <p>Template RLB2</p>
         </div>
 
          <div class="template-box-all">
-         <img src="https://static.augustasportswear.com/marketing/RLB3.jpg">
+         <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/RLB3.jpg">
          <p>RLB3</p>
          </div> 
 
          <div class="template-box-all">
-          <img src="https://static.augustasportswear.com/marketing/RLB004.jpg">
+          <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/RLB004.jpg">
            <p>Template RLB4</p>
           </div>
 
           <div class="template-box-all">
-            <img src="https://static.augustasportswear.com/marketing/RLB007.jpg">
+            <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/RLB007.jpg">
              <p>Template RLB7</p>
             </div>
             
             <div class="template-box-all">
-            <img src="https://static.augustasportswear.com/marketing/RLB008-1.jpg">
+            <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/RLB008-1.jpg">
              <p>Template RLB8-1</p>
             </div>
             
             <div class="template-box-all">
-            <img src="https://static.augustasportswear.com/marketing/RLB008-2.jpg">
+            <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/RLB008-2.jpg">
              <p>Template RLB8-2</p>
             </div>
          <div class="template-box-all">
-         <img src="https://static.augustasportswear.com/marketing/RLB9.jpg">
+         <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/RLB9.jpg">
          <p>RLB9</p>
          </div>
          <div class="template-box-all">
-          <img src="https://static.augustasportswear.com/marketing/RLB011.jpg">
+          <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/RLB011.jpg">
            <p>Template RLB11</p>
           </div>
              
          <div class="template-box-all">
-         <img src="https://static.augustasportswear.com/marketing/RLB15.jpg">
+         <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/RLB15.jpg">
          <p>RLB15</p>
          </div>
          <div class="template-box-all">
-         <img src="https://static.augustasportswear.com/marketing/RLB16.jpg">
+         <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/RLB16.jpg">
          <p>RLB16</p>
          </div> 
 
          <div class="template-box-all">
-         <img src="https://static.augustasportswear.com/marketing/RLB17.jpg">
+         <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/RLB17.jpg">
          <p>RLB17</p>
          </div> 
          <div class="template-box-all">
-          <img src="https://static.augustasportswear.com/marketing/RLB18.jpg">
+          <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/RLB18.jpg">
            <p>RLB18</p>
           </div>
             <div class="template-box-all">
-          <img src="https://static.augustasportswear.com/marketing/RLB19.jpg">
+          <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/RLB19.jpg">
            <p>RLB19</p>
           </div>
             <div class="template-box-all">
-          <img src="https://static.augustasportswear.com/marketing/RLB20.jpg">
+          <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/RLB20.jpg">
            <p>RLB20</p>
           </div>
              
           <div class="template-box-all">
-            <img style="height:69%" src="https://static.augustasportswear.com/marketing/TW59.jpg">
+            <img style="height:69%" src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW59.jpg">
             <p style="font-size:11px;">TW59-JERSEY APPLIQUÉ SAMPLE SHOWN</p>
             </div>
+
          
   </div>
 
   <div class="template-wrapper" id="pattern-app">
         <h3 class="sub-sect-header">Patterned Appliqué Templates</h3>
 
-        
+
         <div class="patt-app-container"> 	
          <div class="template-box patt-app-box">
-           <img src="https://static.augustasportswear.com/marketing/RLB17%5F%20RaiderFootball%5FPatterned.jpg">
+           <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/RLB17%5F%20RaiderFootball%5FPatterned.jpg">
            </div>
            <div class="patt-app-text patt-app-box"> 
            <p><b>RLB17 <br>1-COLOR APPLIQUé WITH DIGITAL CAMO</b></p>
@@ -1071,7 +1169,7 @@
            
          <div class="patt-app-container"> 
           <div class="template-box patt-app-box">
-           <img src="https://static.augustasportswear.com/marketing/TW75%5FArtilleryCheerleading.jpg">
+           <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW75%5FArtilleryCheerleading.jpg">
            </div>
            <div class="patt-app-text patt-app-box">
             <p><b>TW75 <br>1-COLOR APPLIQUé WITH SPACE DYE</b></p>
@@ -1083,7 +1181,7 @@
        
          <div class="patt-app-container"> 
            <div class="template-box patt-app-box">
-           <img src="https://static.augustasportswear.com/marketing/TW55%5FHawksMadison.jpg"></div>
+           <img src="https://static.augustasportswear.com/marketing/Decoration/Applique/TW55%5FHawksMadison.jpg"></div>
            <div class="patt-app-text patt-app-box">
             <p><b>TW55 <br>1-COLOR APPLIQUé WITH MAZE MESH</b></p>
             <p><b>Available in</b><br>
@@ -1092,6 +1190,7 @@
             </div>
          </div>
          
+
   </div>
 
 
@@ -1121,6 +1220,8 @@
 
   });
 });
+
+
 
   // Select all links with hashes
   $('a[href*="#"]')

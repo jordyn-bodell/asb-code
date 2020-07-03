@@ -13,7 +13,7 @@
 	display: block;
 }
 .dec-header-sect h2 {
-	background-color: rgb(71, 20, 32);
+	background-color: rgb(137,41,24);
 	color: white;
 	text-align: center;
     padding: 15px 0;
@@ -23,85 +23,91 @@
 		text-transform: uppercase;
 
 }
-	/* Show Templates */
-		.show{
-			z-index: 999;
-			display: none;
-			width: 100%;
-			height: 100%;
-			position: fixed;
-			top: 0;
-	}
-	.show .imgoverlay{
-			width: 100%;
-			height: 100%;
-			background: rgba(0,0,0,.66);
-			position: absolute;
-			top: 0;
-			left: 0;
-	}
-	.show .img-show{
-			width: 500px;
-			height: 500px;
-			background: #FFF;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			overflow: hidden
-	}
-	.img-show span{
-			position: absolute;
-			top: 10px;
-			right: 10px;
-			z-index: 99;
-			cursor: pointer;
-	}
-	.img-show img{
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
-	}
 	
-	
-	.techheader {
-		color: black;
-		text-transform: uppercase;
-		font-size: 55px;
-		font-family: "AvenirNextN";
-		margin: 10px auto;
-		text-align: center;
-		padding: 20px 0;
-		width: 90%;
-	
-	}
-	.tech-info {
-		width: 90%;
-			display: block;
-			margin: auto;
-			color: black;
-	}
-	.tech-info img {
-		width: 70%;
-		display: inline-block;
-		margin: 0 40px;
-	}
-	.tech-content {
-		display: inline-block;
-		width: 100%;
-		margin-top: 20px;
-		vertical-align: top;
-	}
-	.tech-content p {
-		font-size: 16px;
-		margin: 20px auto;
-		line-height: 1.4;
-		display: inline-block;
+.techheader {
+	color: black;
+	text-transform: uppercase;
+	font-size: 40px;
+	margin: 10px auto;
+	text-align: left;
+	padding: 0 0 20px;
+
+}
+.leagueheader {
+	text-align: center;
+}
+.tech-info {
+	width: 90%;
+    display: block;
+    margin: auto;
+    color: black;
+}
+.tech-content {
+	display: inline-block;
+	width: 100%;
+	margin-top: 20px;
+	vertical-align: top;
+}
+.tech-content p {
+	font-size: 16px;
+	margin: 20px auto;
+	line-height: 1.4;
+}
+
+.top-text {
+width: 50%;
+display: inline-block;
+vertical-align: top;
+padding-right: 20px;
+}
+	.dec-details {
 		width: 45%;
+		display: inline-block;
 		vertical-align: top;
+		font-size: 16px;
+		text-align: left;
 	}
+	.dec-details > tbody > tr {
+		height: 50px;
+	}
+	.dec-details > tbody > tr > th {
+		font-family: "AvenirNextB";
+		width: 140px;
+	}
+	.dec-details > tbody > tr > td {
+font-size: 14px;
+line-height: 1.3;
+	}
+
+.league-text {
+width: 100%;
+display: block;
+text-align: center;
+}
+.patch-ex {
+	width: 100%;
+	margin: 20px auto;
+}
+
+.leather-header {
+	margin: 20px auto 0;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 4px;
+    font-size: 18px;
+}
+.gl-color {
+width: 33%;
+display: inline-block;
+vertical-align: top;
+}
+.gl-color img {
+	width: 100%;
+}
+.gl-text {
+	min-height: 70px;
+	line-height: 1.2;
+}
+
 	
 	.pricing {
 		display: block;
@@ -140,38 +146,7 @@
 		margin: 10px auto 20px;
 		text-align: center;
 	}
-	
-	
-	/* templates */
-	.template-wrapper {
-		width: 90%;
-		margin: 70px auto 50px;
-	}
-	.template-box-all {
-		 display: inline-block;
-		 height: auto;
-		 width: 23%;
-		 background-color: black;
-		 color: white;
-		 margin: 5px;
-		 border: 1px solid black;
-		 overflow: hidden;
-	 }
-	 .template-box-all img {
-		 width: 100%;
-		vertical-align: text-top;
-		cursor: pointer;
-			transition: 0.3s;
-	 }
-	 .template-box-all p {
-		 text-transform: uppercase;
-		 margin: 2px auto;
-		 text-align: center;
-		 font-size: 12px;
-	 }
-	
-	 
-	
+		
 	</style>
 	
 	
@@ -179,7 +154,7 @@
 	 <div class="technique-content">
 	
 		<div class="dec-header-sect">
-			<img id="decorheaderimg" src="https://static.augustasportswear.com/marketing/Decoration/Screen-Print/ASB_ScreenPrint_Hero_Desktop.jpg" alt="Augusta Sportswear Decoration">
+			<img id="decorheaderimg" src="https://static.augustasportswear.com/marketing/Decoration/Hero-Header-Images/Hero-LeatherPatches.jpg" alt="Augusta Sportswear Decoration">
 			<h2>Patches</h2>
 		</div>
 	
@@ -188,125 +163,211 @@
 		<div class="tech-info">
 			
 			<div class="section-divider"></div>
-	
-	
-			<h3 class="techheader">patches</h3>
 
 			  <div class="tech-content">
 
-					<p><b>Genuine Leather Patches</b> <br>
-					This year's hottest deco trend, genuine leather patches offer a high-quality, artisanal look for your cap. Laser-etching provides sharp lines on one of three leather colors for a variety of styles. <br>
-						Genuine leather colors (pictured) include:
-						
-						&mdash; Natural (High-Contrast Design) 
-						
-						&mdash; English Tan (Medium Contrast Design) 
-						
-						&mdash; Black (Tone-on-Tone Minimal Contrast Design)</p>
+					<div class="patch-block" id="gen-leather">
+					<div class="top-text">
+					<h3 class="techheader">LEATHER PATCHES</h3>
 
+					<p>This year's hottest deco trend, genuine leather patches offer a high-quality, artisanal look for your cap. Laser-etching provides sharp lines on one of three leather colors for a variety of styles.</p>
+					<p>Ask about our Patch Fulfillment Program!</p>
+					</div>
 
-				<p>
-	<b>MOQ:</b> 24 Pieces
-<br>
-	<b>Standard Turn:</b> 3 Weeks from Final Proof Approval
-	<br>
-	<b>Location:</b> Front Panel (Centered or Offset)
-	<br>
-	<b><Best For:</b> Bold, one-color designs
-	<br>
-	<b>Sizing:</b> Max = (H+W)/2 < 2.5"
-	<br>
-	Ask your CSR about our Patch Fulfillment Program!</p>
+					<table cellpadding="5" class="dec-details">
+						<tbody>
+							<tr>
+								<th>MOQ:</th>
+								<td>24 Pieces</td>
+							</tr>
+						<tr>
+							<th>Standard Turn:</th>
+							<td>3 Weeks from Final Proof Approval</td>
+						</tr>
+						<tr>
+							<th>Location:</th>
+							<td>Front Panel (Centered or Offset)</td>
+						</tr>
+						<tr>
+							<th>Best For:</th>
+							<td>Bold, one-color designs</td>
+						</tr>
+						<tr>
+							<th>Sizing:</th>
+							<td>Max = (H+W)/2 < 2.5"</td>
+						</tr>
+					</tbody>
+		      </table>
 
-	<img src="https://www.pacificheadwear.com/assets/uploads/2019/06/28/leather-patches-trio.jpg" alt="">
+					<div class="patch-examples leather-examples">
+						<h3 class="leather-header">GENUINE LEATHER COLORS:</h3>
+
+						<div class="gl-color">
+							<p class="gl-text"><b>Natural</b><br>
+							High-Contrast Design</p>
+							<img class="leather-ex" src="https://static.augustasportswear.com/marketing/Decoration/Patches/PHTechniques-PATCHES-exmples-1.jpg" alt="Pacific Headwear Leather Patches">
+					</div>
+
+					<div class="gl-color">
+						<p class="gl-text"><b>English Tan</b><br>
+							Medium Contrast Design</p>
+							<img class="leather-ex" src="https://static.augustasportswear.com/marketing/Decoration/Patches/PHTechniques-PATCHES-exmples-2.jpg" alt="Pacific Headwear Leather Patches">
+					</div>
+
+					<div class="gl-color">
+						<p class="gl-text"><b>Black</b><br>
+							Tone-on-Tone Minimal Contrast Design</p>
+							<img class="leather-ex" src="https://static.augustasportswear.com/marketing/Decoration/Patches/PHTechniques-PATCHES-exmples-3.jpg" alt="Pacific Headwear Leather Patches">
+					</div>
+
+					</div>
+
+					</div>
 
 					
 					<div class="section-divider"></div>
 
-					<p><b>Woven Patches</b>
-					<br>
-					Our most popular patch style, the tight weave allows for more design detail, clean lines and flatter appearance. Made with thinner thread and continuous stitching, woven patches achieve fine detail and flexibility to better contour to the shape of the crown.</p>
 
-					<p>
-						<b>MOQ:</b> 48 Pieces
-					<br>
-						<b>Standard Turn:</b> 5 Weeks from Final Proof Approval
-						<br>
-						<b>Location:</b> Front Panel (Centered or Offset), Side
-						<br>
-						<b>Best For:</b> Fine detail and smaller type
-						<br>
-						<b>Sizing:</b> Max Height: 2.5"H | Max Width: 4.5"
-						</p>
+						<div class="patch-block" id="woven-patches">
+							<div class="top-text">
+							<h3 class="techheader">WOVEN PATCHES</h3>
+		
+							<p>Our most popular patch style, the tight weave allows for more design detail, clean lines and flatter appearance. Made with thinner thread and continuous stitching, woven patches achieve fine detail and flexibility to better contour to the shape of the crown.</p>
+							</div>
+		
+							<table cellpadding="5" class="dec-details">
+								<tbody>
+									<tr>
+										<th>MOQ:</th>
+										<td>48 Pieces</td>
+									</tr>
+								<tr>
+									<th>Standard Turn:</th>
+									<td>5 Weeks from Final Proof Approval</td>
+								</tr>
+								<tr>
+									<th>Location:</th>
+									<td>Front Panel (Centered or Offset), Side</td>
+								</tr>
+								<tr>
+									<th>Best For:</th>
+									<td>Fine detail and smaller type</td>
+								</tr>
+								<tr>
+									<th>Sizing:</th>
+									<td>Max Height: 2.5"H<br>Max Width: 4.5"</td>
+								</tr>
+							</tbody>
+							</table>
 
+							<img class="patch-ex" src="https://static.augustasportswear.com/marketing/Decoration/Decor-Examples/Woven-Patches-Trio.jpg" alt="Pacific Headwear Woven Patches">
+		
+							</div>
 
-<img src="https://www.pacificheadwear.com/assets/uploads/2019/06/24/woven-patches-trio.jpg" alt="">
-
-
-					<div class="section-divider"></div>
-
-					<p><b>Embroidered Patches</b>
-<br>
-						Embroidered patches are created with traditional embroidery thread on high-quality twill for a classic, bold patch look. Embroidered stitching creates three-dimensional texture and a vintage feel.
-							<br>
-							Ask your CSR about our Patch Fulfillment Program!</p>
-
-
-					<p>
-						<b>MOQ:</b> 48 Pieces
-					<br>
-						<b>Standard Turn:</b> 5 Weeks from Final Proof Approval
-						<br>
-						<b>Location:</b> Front Panel (Centered or Offset), Side
-						<br>
-						<b>Best For:</b> Bold, basic shapes and designs
-						<br>
-						<b>Sizing:</b> Max Height: 2.5"H | Max Width: 4.5"
-						</p>
-
-
-
-<img src="https://www.pacificheadwear.com/assets/uploads/2019/06/24/embroidered-patches-trio.jpg" alt="">
+							
 
 					<div class="section-divider"></div>
 
 
-					<p><b>Sublimated Patches</b>
-<br>
-					Sublimated Patches are digitally printed for a photorealistic representation of your design. 
-						<br>
-						If you've been struggling to get those last details and colors to come through with embroidery or a woven patch, sublimation is your new best option. </p>
+
+					<div class="patch-block" id="embr-patches">
+						<div class="top-text">
+						<h3 class="techheader">Embroidered PATCHES</h3>
+	
+						<p>Embroidered patches are created with traditional embroidery thread on high-quality twill for a classic, bold patch look. Embroidered stitching creates three-dimensional texture and a vintage feel.</p>
+						<p>Ask about our Patch Fulfillment Program!</p>
+						</div>
+	
+						<table cellpadding="5" class="dec-details">
+							<tbody>
+								<tr>
+									<th>MOQ:</th>
+									<td>48 Pieces</td>
+								</tr>
+							<tr>
+								<th>Standard Turn:</th>
+								<td>5 Weeks from Final Proof Approval</td>
+							</tr>
+							<tr>
+								<th>Location:</th>
+								<td>Front Panel (Centered or Offset), Side</td>
+							</tr>
+							<tr>
+								<th>Best For:</th>
+								<td>Bold, basic shapes and designs</td>
+							</tr>
+							<tr>
+								<th>Sizing:</th>
+								<td>Max Height: 2.5"H<br>Max Width: 4.5"</td>
+							</tr>
+						</tbody>
+						</table>
+
+						<img class="patch-ex" src="https://static.augustasportswear.com/marketing/Decoration/Decor-Examples/Embroidered-Patches-Trio.jpg" alt="Pacific Headwear Embroidered Patches">
+	
+						</div>
+
+			
+
+					<div class="section-divider"></div>
+
+					<div class="patch-block" id="subl-patches">
+						<div class="top-text">
+						<h3 class="techheader">Sublimated PATCHES</h3>
+	
+						<p>Sublimated Patches are digitally printed for a photorealistic representation of your design. If you've been struggling to get those last details and colors to come through with embroidery or a woven patch, sublimation is your best option.</p>
+						</div>
+	
+						<table cellpadding="5" class="dec-details">
+							<tbody>
+								<tr>
+									<th>MOQ:</th>
+									<td>48 Pieces</td>
+								</tr>
+							<tr>
+								<th>Standard Turn:</th>
+								<td>4 Weeks from Final Proof Approval</td>
+							</tr>
+							<tr>
+								<th>Location:</th>
+								<td>Front Panel</td>
+							</tr>
+							<tr>
+								<th>Best For:</th>
+								<td>Photorealistic images and graphics</td>
+							</tr>
+							<tr>
+								<th>Sizing:</th>
+								<td>Max Height: 2.5"H<br>Max Width: 4.5"</td>
+							</tr>
+						</tbody>
+						</table>
+
+						<img class="patch-ex" src="https://static.augustasportswear.com/marketing/Decoration/Decor-Examples/Sublimated-Patches-Trio.jpg" alt="Pacific Headwear Embroidered Patches">
+	
+						</div>
 
 
-					<p>
-						<b>MOQ:</b> 48 Pieces
-					<br>
-						<b>Standard Turn:</b> 4 Weeks from Final Proof Approval
-						<br>
-						<b>Location:</b> Front Panel
-						<br>
-						<b>Best For:</b> Photorealistic images and graphics
-						<br>
-						<b>Sizing:</b> Max Height: 2.5"H | Max Width: 4.5"
-						</p>
-
-
-
-<img src="https://www.pacificheadwear.com/assets/uploads/2019/07/03/sublimated-trio-2.jpg" alt="">
 
 					<div class="section-divider"></div>
 
 
-					<p><b>League Affliations</b>
-<br>
-					Rep your team and your league with an Officially Licensed Babe Ruth or Cal Ripken patch on the side of your caps. We hold all patches in stock so there is no additional turn time added to embroidery orders - standard turnaround still applies!</p>
-					<p>Caps with League patches and no other decoration will ship in 3 days. </p>
+					<div class="patch-block" id="league-affl">
+						<div class="league-text">
+						<h3 class="techheader leagueheader">League Affliations</h3>
+	
+						<p>Rep your team and your league with an Officially Licensed Babe Ruth or Cal Ripken patch on the side of your caps. We hold all patches in stock so there is no additional turn time added to embroidery orders - standard turnaround still applies!</p>
 
-<img src="https://www.pacificheadwear.com/assets/uploads/2019/07/09/league-affilitaion-update.jpg" alt="">
-					
-					<img src="https://www.pacificheadwear.com/assets/uploads/2019/07/16/league-affiliations-patches-copy.jpg" alt="">
-					
+						<p>Caps with League patches and no other decoration will ship in 3 days. </p>
+
+						</div>
+	
+						<img class="patch-ex" src="https://www.pacificheadwear.com/assets/uploads/2019/07/16/league-affiliations-patches-copy.jpg" alt="Pacific Headwear League Affliations">
+	
+						</div>
+			
 				</div>
+
 			</div>	
 
 </div>
